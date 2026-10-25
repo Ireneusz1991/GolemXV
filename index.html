@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Golem XV — Ludzie: Droga do Rzeczywistości | Platforma Badawcza</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Nagłówek platformy -->
+  <header class="top-header">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="brand-logo">G15</div>
+        <div class="brand-text">
+          <h1>Golem XV — Ludzie: Droga do Rzeczywistości</h1>
+          <p>Mapa projektu badawczego — siedem powiązanych ścieżek (A–G) oraz środowiska badawcze</p>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <div id="serverStatusBadge" class="server-indicator">
+          <span class="status-dot"></span> Inicjalizacja...
+        </div>
+        <div id="roleBadge" class="role-badge guest">
+          Tryb Gościa / Obserwatora
+        </div>
+        <button id="authToggleBtn" class="btn btn-sm btn-primary" onclick="toggleAdminMode()">
+          Zaloguj jako Administrator
+        </button>
+      </div>
+    </div>
+
+    <!-- Nawigacja główna -->
+    <nav class="main-nav">
+      <button class="nav-tab active" data-tab="map" onclick="switchTab('map')">
+        🗺️ Mapa 7 Ścieżek (A–G)
+      </button>
+      <button class="nav-tab" data-tab="workspaces" onclick="switchTab('workspaces')">
+        🔬 Środowiska Badawcze i Podprojekty
+        <span id="navSubprojectsCount" class="badge-count">0</span>
+      </button>
+      <button class="nav-tab" data-tab="materials" onclick="switchTab('materials')">
+        📚 Repozytorium Materiałów
+        <span id="navMaterialsCount" class="badge-count">0</span>
+      </button>
+      <button class="nav-tab" data-tab="graph" onclick="switchTab('graph')">
+        🕸️ Graf Powiązań (A–G)
+      </button>
+      <button class="nav-tab" data-tab="moderation" onclick="switchTab('moderation')">
+        🛡️ Autoryzacja Administratora
+        <span id="navModerationCount" class="badge-count">0</span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Główny obszar roboczy -->
+  <main class="main-container">
+    <!-- WIDOK 1: MAPA 7 ŚCIEŻEK (A-G) -->
+    <section id="view-map" class="tab-view">
+      <div id="overviewBanner" class="overview-banner"></div>
+      <div class="filter-bar">
+        <div>
+          <h3 style="font-size:1.02rem;">Siedem powiązanych ścieżek badawczych (Projekty A–G)</h3>
+          <p style="font-size:0.82rem; color:var(--text-muted);">
+            Każdy gość może zgłaszać materiały oraz uruchamiać nowe podprojekty i środowiska badawcze dla dowolnej odnogi projektu.
+          </p>
+        </div>
+        <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+          <button class="btn btn-primary" onclick="openNewSubprojectModal('A', '')">
+            🚀 Uruchom nowe środowisko badawcze
+          </button>
+          <button class="btn" onclick="openNewMaterialModal('A', '')">
+            + Dodaj materiał badawczy
+          </button>
+        </div>
+      </div>
+      <div id="tracksGrid" class="tracks-grid"></div>
+    </section>
+
+    <!-- WIDOK 2: ŚRODOWISKA BADAWCZE I PODPROJEKTY -->
+    <section id="view-workspaces" class="tab-view" style="display:none;">
+      <div class="filter-bar">
+        <div style="display:flex; align-items:center; gap:0.75rem; flex-wrap:wrap;">
+          <label for="wsTrackFilter" style="font-size:0.86rem; font-weight:600; color:var(--text-secondary);">Filtruj wg ścieżki:</label>
+          <select id="wsTrackFilter" class="select-field" style="width:auto; min-width:260px;" onchange="onWorkspaceTrackFilterChange(this.value)">
+            <option value="ALL">Wszystkie ścieżki (Projekty A–G)</option>
+            <option value="A">Projekt A — Człowiek biocyfrowo-robotyczny</option>
+            <option value="B">Projekt B — Cyfrowy umysł</option>
+            <option value="C">Projekt C — Maszyny analogowe i obliczanie przez fizykę</option>
+            <option value="D">Projekt D — „Frankenstein”: tworzenie człowieka i SF</option>
+            <option value="E">Projekt E — Filozofia jako warstwa przekrojowa</option>
+            <option value="F">Projekt F — Człowiek w kosmosie</option>
+            <option value="G">Projekt G — Człowiek na Ziemi: adaptacja i ochrona</option>
+          </select>
+        </div>
+        <button class="btn btn-primary" onclick="openNewSubprojectModal(appState.selectedTrackFilter === 'ALL' ? 'A' : appState.selectedTrackFilter, '')">
+          + Nowy podprojekt i środowisko badawcze
+        </button>
+      </div>
+
+      <div class="workspace-layout">
+        <aside class="sidebar-list">
+          <h4 style="font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--text-muted);">
+            Dostępne podprojekty i środowiska
+          </h4>
+          <div id="subprojectsList" style="display:flex; flex-direction:column; gap:0.65rem;"></div>
+        </aside>
+
+        <div id="activeWorkspacePanel" class="workspace-panel"></div>
+      </div>
+    </section>
+
+    <!-- WIDOK 3: REPOZYTORIUM MATERIAŁÓW -->
+    <section id="view-materials" class="tab-view" style="display:none;">
+      <div class="filter-bar">
+        <div style="display:flex; gap:0.75rem; flex-wrap:wrap; flex:1; max-width:720px;">
+          <select class="select-field" style="max-width:280px;" onchange="appState.materialFilterTrack = this.value; renderMaterialsView();">
+            <option value="ALL">Wszystkie ścieżki (A–G)</option>
+            <option value="A">Projekt A — Człowiek biocyfrowo-robotyczny</option>
+            <option value="B">Projekt B — Cyfrowy umysł</option>
+            <option value="C">Projekt C — Maszyny analogowe i fizyka</option>
+            <option value="D">Projekt D — „Frankenstein” i bioinżynieria</option>
+            <option value="E">Projekt E — Filozofia (warstwa przekrojowa)</option>
+            <option value="F">Projekt F — Człowiek w kosmosie</option>
+            <option value="G">Projekt G — Człowiek na Ziemi</option>
+          </select>
+          <input
+            type="search"
+            class="input-field"
+            style="max-width:340px;"
+            placeholder="Szukaj w tytułach, treści, odnogach..."
+            oninput="appState.materialSearch = this.value; renderMaterialsView();"
+          />
+        </div>
+        <button class="btn btn-primary" onclick="openNewMaterialModal('A', '')">
+          + Zgłoś / Dodaj materiał badawczy
+        </button>
+      </div>
+
+      <div id="materialsListContainer" style="display:flex; flex-direction:column; gap:0.9rem;"></div>
+    </section>
+
+    <!-- WIDOK 4: INTERAKTYWNY GRAF POWIĄZAŃ (A-G) -->
+    <section id="view-graph" class="tab-view" style="display:none;">
+      <div class="graph-container">
+        <div style="margin-bottom:1rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem;">
+          <div>
+            <h3>Topologia Projektu: Ścieżki A–G, oś F↔G oraz przekrojowa rola Filozofii (E)</h3>
+            <p style="font-size:0.83rem; color:var(--text-muted);">
+              Kliknij wybrany węzeł ścieżki na grafie, aby przefiltrować jej relacje badawcze.
+            </p>
+          </div>
+        </div>
+        <div id="graphSvgWrapper" class="graph-svg-wrapper"></div>
+        <div id="graphLinksList" style="margin-top:1.25rem;"></div>
+      </div>
+    </section>
+
+    <!-- WIDOK 5: CENTRUM AUTORYZACJI ADMINISTRATORA -->
+    <section id="view-moderation" class="tab-view" style="display:none;">
+      <div id="moderationContainer"></div>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div id="modalBackdrop" class="modal-backdrop" onclick="if(event.target===this) closeModal()">
+    <div id="modalContentBox" class="modal-content"></div>
+  </div>
+
+  <!-- Powiadomienia Toast -->
+  <div id="toastContainer" class="toast-container"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
