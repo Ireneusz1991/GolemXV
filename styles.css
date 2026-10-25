@@ -843,4 +843,189 @@ body {
   .filter-bar {
     padding: 0.75rem;
   }
+  .manhattan-kpi-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .fission-split-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================================================
+   ROZPROSZONY SYSTEM PROJEKTOWY MANHATTAN & GRAF ROZSZCZEPIEŃ AI (STRONA 1)
+   ============================================================================ */
+.manhattan-hero {
+  background:
+    radial-gradient(circle at 88% 15%, rgba(244, 63, 94, 0.14) 0%, transparent 40%),
+    radial-gradient(circle at 12% 85%, rgba(245, 158, 11, 0.12) 0%, transparent 42%),
+    linear-gradient(135deg, rgba(15, 23, 42, 0.98) 0%, rgba(22, 31, 51, 0.95) 100%);
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  margin-bottom: 1.35rem;
+  box-shadow: 0 18px 40px -12px rgba(0, 0, 0, 0.65);
+}
+
+.manhattan-codename-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: rgba(245, 158, 11, 0.16);
+  border: 1px solid rgba(245, 158, 11, 0.5);
+  color: #fcd34d;
+  margin-bottom: 0.6rem;
+}
+
+.manhattan-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(195px, 1fr));
+  gap: 0.85rem;
+  margin-top: 1.1rem;
+}
+
+.manhattan-kpi-card {
+  background: rgba(11, 15, 25, 0.78);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 10px;
+  padding: 0.85rem 1rem;
+}
+
+.manhattan-kpi-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  font-weight: 700;
+}
+
+.manhattan-kpi-val {
+  font-size: 1.38rem;
+  font-weight: 800;
+  color: #f8fafc;
+  margin-top: 0.2rem;
+}
+
+.manhattan-sites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+  gap: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.manhattan-site-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-top: 3px solid var(--site-color, #f59e0b);
+  border-radius: 10px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.manhattan-site-card:hover,
+.manhattan-site-card.active {
+  border-color: var(--site-color, #f59e0b);
+  background: var(--bg-card-hover);
+  transform: translateY(-2px);
+}
+
+.seq-ribbon {
+  display: flex;
+  gap: 0.45rem;
+  overflow-x: auto;
+  padding: 0.65rem 0.2rem 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.seq-ribbon-step {
+  flex: 0 0 auto;
+  min-width: 175px;
+  max-width: 235px;
+  background: rgba(15, 23, 42, 0.88);
+  border: 1px solid rgba(148, 163, 184, 0.24);
+  border-left: 4px solid var(--step-color, #38bdf8);
+  border-radius: 8px;
+  padding: 0.55rem 0.75rem;
+  font-size: 0.78rem;
+}
+
+.seq-year-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  padding: 0.55rem 0.7rem;
+  border-radius: 8px;
+  background: rgba(11, 15, 25, 0.58);
+  border: 1px solid rgba(148, 163, 184, 0.14);
+  margin-bottom: 0.45rem;
+}
+
+.seq-year-row.done {
+  border-color: rgba(16, 185, 129, 0.45);
+  background: rgba(16, 185, 129, 0.08);
+}
+
+.topic-selector-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.32rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.76rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  background: rgba(15, 23, 42, 0.75);
+  color: var(--text-secondary);
+  transition: all 0.15s ease;
+}
+
+.topic-selector-chip.selected {
+  background: rgba(56, 189, 248, 0.18);
+  border-color: #38bdf8;
+  color: #f8fafc;
+}
+
+.fission-split-layout {
+  display: grid;
+  grid-template-columns: 1.75fr 1fr;
+  gap: 1.15rem;
+  align-items: start;
+}
+
+@media (max-width: 1080px) {
+  .fission-split-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.fission-svg-box {
+  background:
+    radial-gradient(circle at 50% 10%, rgba(245, 158, 11, 0.08) 0%, transparent 55%),
+    rgba(11, 15, 25, 0.92);
+  border: 1px solid rgba(148, 163, 184, 0.24);
+  border-radius: 12px;
+  padding: 0.75rem;
+  overflow-x: auto;
+}
+
+.fission-inspector-box {
+  background: var(--bg-card);
+  border: 1px solid rgba(56, 189, 248, 0.32);
+  border-radius: 12px;
+  padding: 1.15rem;
+  position: sticky;
+  top: 6.2rem;
+}
+
+.agent-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 0.9rem;
 }

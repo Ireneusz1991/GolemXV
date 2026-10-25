@@ -2778,7 +2778,1315 @@ DEFAULT_SEED = {'projectMeta': {'title': "The Golem 15: A Human's Road to Realit
                  'target': 'H',
                  'label': 'Filozofia i etyka energii jądrowej: bezpieczeństwo systemowe i odpowiedzialność '
                           'międzypokoleniowa',
-                 'status': 'approved'}]}
+                 'status': 'approved'}],
+ 'manhattanSystem': {'codename': 'MED-G15 // MANHATTAN DISTRIBUTED SYSTEM',
+                     'startCalendarYear': 2026,
+                     'doctrine': {'titlePl': 'Doktryna Rozproszonego Systemu Projektowego „Manhattan Golem 15”',
+                                  'titleEn': "Doctrine of the 'Manhattan Golem 15' Distributed Project System",
+                                  'summaryPl': 'Architektura organizacyjna wzorowana na Projekcie Manhattan (Dual '
+                                               'Command: Sztab Administracyjno-Inżynieryjny + Rozproszone Ośrodki '
+                                               'Badawcze). System rozpoczyna się od 3-letniego fundamentu studiów '
+                                               'Administracji (Lata 1–3), po którym następuje nieprzerwany ciąg '
+                                               '5-letnich studiów magisterskich z każdej wybranej tematyki '
+                                               'realizowanych ściśle z rzędu (3 + 5×N lat). Równolegle cel nadrzędny '
+                                               'ulega kontrolowanemu rozszczepieniu (Fission) w bazie operacyjnej '
+                                               'zarządzanej przez wyspecjalizowane Agenty AI.',
+                                  'summaryEn': 'Organizational architecture modeled on the Manhattan Project (Dual '
+                                               'Command: Administrative-Engineering HQ + Compartmentalized Distributed '
+                                               'Labs). The timeline begins with a mandatory 3-year Administration '
+                                               'degree (Years 1–3), followed by a continuous back-to-back sequence of '
+                                               "5-year Master's curricula for each selected discipline (3 + 5×N "
+                                               'years). Simultaneously, the overarching goal undergoes controlled '
+                                               'chain-reaction fission across a project database orchestrated by '
+                                               'specialized AI Agents.',
+                                  'rulesPl': ['1. Prymat Sztabu Administracyjnego (Lata 1–3): Zanim ruszą 5-letnie '
+                                              'bloki badawcze, właściciel buduje aparat prawny, finansowy, logistyczny '
+                                              'i regulacyjny (prawo B+R, atomowe, medyczne, kosmiczne i nadzór nad '
+                                              'AI).',
+                                              '2. Sekwencyjna Głębia Akademicka (5 lat z rzędu na każdą wybraną '
+                                              'tematykę): Brak powierzchownej wielozadaniowości — każda wybrana '
+                                              'dziedzina otrzymuje pełny 5-letni cykl studiów I+II stopnia (10 '
+                                              'semestrów, 300 ECTS) realizowany jeden po drugim.',
+                                              '3. Kompartmentalizacja Ośrodków (5 Sektorów Manhattan): Prace są '
+                                              'rozproszone pomiędzy autonomiczne laboratoria (District W-0, Los Alamos '
+                                              'Y-15, Oak Ridge X-10, Hanford B-7, Trinity-Biosphere T-9).',
+                                              '4. Reakcja Łańcuchowa Agentów AI (Graf Rozszczepień): Każdy złożony '
+                                              'problem badawczy jest rozszczepiany przez Agenta-Kierownika na mniejsze '
+                                              'fragmenty robocze oraz neutrony międzyścieżkowe zasilające sąsiednie '
+                                              'projekty.'],
+                                  'rulesEn': ['1. Primacy of Administrative Command (Years 1–3): Before 5-year '
+                                              'scientific blocks begin, the owner establishes legal, financial, '
+                                              'logistical, and regulatory mastery (R&D, nuclear, medical, space, and '
+                                              'AI law).',
+                                              '2. Sequential Academic Depth (5 consecutive years per selected topic): '
+                                              'Zero shallow multitasking — every selected topic receives a full 5-year '
+                                              'B.Sc.+M.Sc. cycle (10 semesters, 300 ECTS) executed back-to-back.',
+                                              '3. Site Compartmentalization (5 Manhattan Sectors): Research is '
+                                              'distributed across autonomous sites (District W-0, Los Alamos Y-15, Oak '
+                                              'Ridge X-10, Hanford B-7, Trinity-Biosphere T-9).',
+                                              '4. AI-Agent Chain Reaction (Fission Graph): Every complex research '
+                                              'challenge is fissioned by a Director AI Agent into atomic work packages '
+                                              'and cross-sector neutrons feeding neighboring tracks.']},
+                     'sites': [{'id': 'SITE-W0',
+                                'code': 'DISTRICT W-0',
+                                'historicalAnalog': 'Washington HQ & Oak Ridge Admin',
+                                'namePl': 'Sztab Centralny Administracji, Prawa i Epistemologii',
+                                'nameEn': 'Central HQ for Administration, Law & Epistemology',
+                                'color': '#f59e0b',
+                                'clearance': 'POZIOM OMEGA (DYREKCJA)',
+                                'scopePl': '3-letnie studia Administracji, prawo sektorowe (atomowe, medyczne, '
+                                           'kosmiczne, AI), finanse B+R oraz Projekt E (Filozofia i rygor '
+                                           'epistemiczny).',
+                                'scopeEn': '3-year Administration core, sector law (nuclear, medical, space, AI), R&D '
+                                           'finance, and Project E (Philosophy & epistemic rigor).',
+                                'linkedIds': ['ADMIN-3Y', 'E']},
+                               {'id': 'SITE-Y15',
+                                'code': 'LOS ALAMOS Y-15',
+                                'historicalAnalog': 'Site Y — Los Alamos Theoretical & Computing Division',
+                                'namePl': 'Laboratorium Teorii, Obliczeń, AI i Cyfrowego Umysłu',
+                                'nameEn': 'Laboratory for Theory, Computing, AI & Digital Mind',
+                                'color': '#38bdf8',
+                                'clearance': 'POZIOM ALFA-TEORIA',
+                                'scopePl': 'Matematyka (FND-1), Informatyka (FND-2), Programowanie (FND-3), AI (FND-8) '
+                                           'oraz Projekt B (Cyfrowy umysł / WBE) i Projekt C (Maszyny analogowe i '
+                                           'neuromorficzne).',
+                                'scopeEn': 'Mathematics (FND-1), CS (FND-2), Programming (FND-3), AI (FND-8), Project '
+                                           'B (Digital Mind / WBE), and Project C (Analog & Neuromorphic Computing).',
+                                'linkedIds': ['FND-1', 'FND-2', 'FND-3', 'FND-8', 'B', 'C']},
+                               {'id': 'SITE-X10',
+                                'code': 'OAK RIDGE X-10',
+                                'historicalAnalog': 'Site X — Clinton Pile Reactor & Electromagnetic Plant',
+                                'namePl': 'Kompleks Fizyki, Elektroniki i Mocy Jądrowej / Fuzji',
+                                'nameEn': 'Physics, Electronics & Nuclear/Fusion Power Complex',
+                                'color': '#f43f5e',
+                                'clearance': 'POZIOM SIGMA-ATOM',
+                                'scopePl': 'Fizyka (FND-4), Elektronika (FND-5) oraz Super-Projekt H (Reaktory SMR, '
+                                           'HTGR-POLA, MARIA, fuzja termojądrowa i architektura mocy dla A–G).',
+                                'scopeEn': 'Physics (FND-4), Electronics (FND-5), and Super-Project H (SMR, HTGR-POLA, '
+                                           'MARIA reactor, nuclear fusion, and power architecture for A–G).',
+                                'linkedIds': ['FND-4', 'FND-5', 'H']},
+                               {'id': 'SITE-B7',
+                                'code': 'HANFORD B-7',
+                                'historicalAnalog': 'Site W — Hanford Chemical & Synthesis Complex',
+                                'namePl': 'Kompleks Chemii, Biologii, Neurobioniki i Bioinżynierii',
+                                'nameEn': 'Chemistry, Biology, Neurobionics & Bioengineering Complex',
+                                'color': '#10b981',
+                                'clearance': 'POZIOM BIO-DELTA',
+                                'scopePl': 'Chemia (FND-6), Biologia (FND-7) oraz Projekt A (Człowiek '
+                                           'biocyfrowo-robotyczny, BCI) i Projekt D (Organoidy, inżynieria tkankowa, '
+                                           'biologia syntetyczna).',
+                                'scopeEn': 'Chemistry (FND-6), Biology (FND-7), Project A (Bio-Digital-Robotic Human, '
+                                           'BCI), and Project D (Organoids, tissue engineering, synthetic biology).',
+                                'linkedIds': ['FND-6', 'FND-7', 'A', 'D']},
+                               {'id': 'SITE-T9',
+                                'code': 'TRINITY T-9',
+                                'historicalAnalog': 'Trinity Proving Ground & Field Systems Integration',
+                                'namePl': 'Poligon Integracji Środowiskowej: Kosmos (F) ↔ Biosfera Ziemi (G)',
+                                'nameEn': 'Environmental Proving Ground: Space (F) ↔ Earth Biosphere (G)',
+                                'color': '#a855f7',
+                                'clearance': 'POZIOM TERRA-ORBIT',
+                                'scopePl': 'Projekt F (Człowiek w kosmosie, zamknięte obiegi BLSS, ochrona radiacyjna) '
+                                           'oraz Projekt G (Adaptacja na Ziemi, ochrona ekosystemów i klimatu).',
+                                'scopeEn': 'Project F (Humans in Space, closed-loop BLSS, radiation shielding) and '
+                                           'Project G (Earth adaptation, ecosystem & climate protection).',
+                                'linkedIds': ['FND-4', 'FND-6', 'FND-7', 'F', 'G']}],
+                     'adminCore3Y': {'id': 'ADMIN-3Y',
+                                     'durationYears': 3,
+                                     'semesters': 6,
+                                     'ects': 180,
+                                     'siteId': 'SITE-W0',
+                                     'sourceLang': 'PL+EN',
+                                     'titlePl': 'Etap Zerowy (Obowiązkowy Rdzeń Manhattan): 3 Lata Studiów '
+                                                'Administracji (Licencjat — 180 ECTS)',
+                                     'titleEn': 'Stage Zero (Mandatory Manhattan Core): 3-Year Administration Degree '
+                                                '(B.A. — 180 ECTS)',
+                                     'subtitlePl': 'Fundament organizacyjny, prawny, finansowy i regulacyjny '
+                                                   'otwierający kaskadę 5-letnich studiów specjalistycznych',
+                                     'subtitleEn': 'Organizational, legal, financial, and regulatory foundation '
+                                                   'preceding the continuous sequence of 5-year specialist degrees',
+                                     'completedYears': [],
+                                     'years': [{'year': 1,
+                                                'semesters': 'Semestry I–II (60 ECTS)',
+                                                'titlePl': 'Rok 1 Administracji: Architektura Prawna, Teoria '
+                                                           'Organizacji i Logika Systemowa',
+                                                'titleEn': 'Year 1 Administration: Legal Architecture, Organization '
+                                                           'Theory & Systems Logic',
+                                                'coursesPl': ['🇵🇱 [PL] Wstęp do prawoznawstwa, logika prawnicza i '
+                                                              'teoria wykładni norm',
+                                                              '🇵🇱/🇬🇧 [PL+EN] Nauka o administracji i teoria '
+                                                              'organizacji rozproszonych (modele Webera, Manhattan '
+                                                              'MED, DARPA)',
+                                                              '🇵🇱 [PL] Prawo konstytucyjne i ustrój instytucji '
+                                                              'publicznych oraz agencji międzynarodowych (UE, ONZ, '
+                                                              'ESA, MAEA)',
+                                                              '🇵🇱 [PL] Ekonomia sektora publicznego, finanse B+R i '
+                                                              'budżetowanie zadaniowe',
+                                                              '🇵🇱 [PL] Statystyka, bazy danych i systemy '
+                                                              'teleinformatyczne w administracji (EZD, bezpieczeństwo '
+                                                              'rejestrów)'],
+                                                'coursesEn': ['🇵🇱 [PL] Jurisprudence fundamentals, legal logic, and '
+                                                              'statutory interpretation',
+                                                              '🇵🇱/🇬🇧 [PL+EN] Public administration science & '
+                                                              'distributed organization theory (Weber, Manhattan MED, '
+                                                              'DARPA models)',
+                                                              '🇵🇱 [PL] Constitutional law & international regulatory '
+                                                              'bodies (EU, UN, ESA, IAEA)',
+                                                              '🇵🇱 [PL] Public economics, R&D finance, and '
+                                                              'mission-oriented budgeting',
+                                                              '🇵🇱 [PL] Administrative statistics, databases, and '
+                                                              'e-governance information security'],
+                                                'deliverablePl': 'Statut organizacyjny i matryca uprawnień Sztabu '
+                                                                 'Centralnego Golem 15 (District W-0).',
+                                                'deliverableEn': 'Organizational charter and clearance matrix for '
+                                                                 'Golem 15 Central HQ (District W-0).'},
+                                               {'year': 2,
+                                                'semesters': 'Semestry III–IV (60 ECTS)',
+                                                'titlePl': 'Rok 2 Administracji: Postępowanie Administracyjne, Patenty '
+                                                           'Deep-Tech i Inżynieria Programów',
+                                                'titleEn': 'Year 2 Administration: Administrative Procedure, Deep-Tech '
+                                                           'IP & Program Engineering',
+                                                'coursesPl': ['🇵🇱 [PL] Postępowanie administracyjne (KPA) i '
+                                                              'sądowoadministracyjne (decyzje środowiskowe, '
+                                                              'lokalizacyjne i regulacyjne)',
+                                                              '🇵🇱/🇬🇧 [PL+EN] Prawo cywilne, konsorcja badawcze oraz '
+                                                              'własność intelektualna i prawo patentowe (UPRP, EPO, '
+                                                              'WIPO)',
+                                                              '🇵🇱/🇬🇧 [PL+EN] Zamówienia publiczne w nauce, granty '
+                                                              'badawcze (NCN, NCBR, Horizon Europe) i logistyka '
+                                                              'aparaturowa',
+                                                              '🇬🇧 [EN] Zarządzanie megaprojektami technologicznymi '
+                                                              '(NASA Systems Engineering, PRINCE2, analiza ścieżki '
+                                                              'krytycznej)',
+                                                              '🇵🇱/🇬🇧 [PL+EN] Cyberbezpieczeństwo, ochrona tajemnicy '
+                                                              'badawczej i kompartmentalizacja dostępu'],
+                                                'coursesEn': ['🇵🇱 [PL] Administrative & judicial-administrative '
+                                                              'procedure (environmental, siting, and licensing '
+                                                              'decisions)',
+                                                              '🇵🇱/🇬🇧 [PL+EN] Civil law, R&D consortia, intellectual '
+                                                              'property, and patent law (UPRP, EPO, WIPO)',
+                                                              '🇵🇱/🇬🇧 [PL+EN] Scientific public procurement, research '
+                                                              'grants (NCN, NCBR, Horizon Europe), and lab logistics',
+                                                              '🇬🇧 [EN] Megaproject management (NASA Systems '
+                                                              'Engineering, PRINCE2, Critical Path Method)',
+                                                              '🇵🇱/🇬🇧 [PL+EN] Cybersecurity, research secrecy '
+                                                              'protection, and compartmentalized access governance'],
+                                                'deliverablePl': 'System obiegu dokumentacji badawczej, polityka IP '
+                                                                 'oraz procedury zakupowo-logistyczne dla 5 ośrodków.',
+                                                'deliverableEn': 'Research documentation workflow, IP policy, and '
+                                                                 'procurement protocols across all 5 distributed '
+                                                                 'sites.'},
+                                               {'year': 3,
+                                                'semesters': 'Semestry V–VI (60 ECTS)',
+                                                'titlePl': 'Rok 3 Administracji: Prawo Sektorów Strategicznych (Atom, '
+                                                           'Bioetyka, Kosmos, AI) i Dyplom',
+                                                'titleEn': 'Year 3 Administration: Strategic Sector Law (Nuclear, '
+                                                           'Bioethics, Space, AI) & B.A. Thesis',
+                                                'coursesPl': ['🇵🇱/🇬🇧 [PL+EN] Prawo atomowe, dozór jądrowy (PAA, '
+                                                              'Euratom, IAEA) i certyfikacja reaktorów SMR/HTGR (pod '
+                                                              'Super-Projekt H)',
+                                                              '🇵🇱/🇬🇧 [PL+EN] Prawo medyczne, komisje bioetyczne, '
+                                                              'badania kliniczne i regulacje wyrobów medycznych/BCI '
+                                                              'MDR (pod Projekty A i D)',
+                                                              '🇵🇱/🇬🇧 [PL+EN] Międzynarodowe prawo kosmiczne (POLSA, '
+                                                              'traktaty ONZ) oraz prawo ochrony środowiska i klimatu '
+                                                              '(pod Projekty F i G)',
+                                                              '🇵🇱/🇬🇧 [PL+EN] Regulacje sztucznej inteligencji (EU AI '
+                                                              'Act), audyt algorytmiczny i nadzór nad flotą Agentów AI '
+                                                              '(pod Projekty B, C, E)',
+                                                              '🇵🇱 [PL] Seminarium dyplomowe (Licencjat): Projekt '
+                                                              'rozproszonego instytutu badawczego na kanwie Projektu '
+                                                              'Manhattan'],
+                                                'coursesEn': ['🇵🇱/🇬🇧 [PL+EN] Nuclear law, radiological oversight (PAA, '
+                                                              'Euratom, IAEA) & SMR/HTGR licensing (for Super-Project '
+                                                              'H)',
+                                                              '🇵🇱/🇬🇧 [PL+EN] Medical law, bioethics committees, '
+                                                              'clinical trials & BCI medical device regulations (for '
+                                                              'Projects A & D)',
+                                                              '🇵🇱/🇬🇧 [PL+EN] International space law (POLSA, UN '
+                                                              'treaties) & environmental/climate protection law (for '
+                                                              'Projects F & G)',
+                                                              '🇵🇱/🇬🇧 [PL+EN] AI governance (EU AI Act), algorithmic '
+                                                              'auditing & multi-agent AI supervision (for Projects B, '
+                                                              'C, E)',
+                                                              '🇵🇱 [PL] B.A. Thesis Seminar: Blueprint of a '
+                                                              'Manhattan-style distributed research institute'],
+                                                'deliverablePl': 'Obrona licencjatu z Administracji i pełne '
+                                                                 'odblokowanie sekwencji 5-letnich studiów '
+                                                                 'kierunkowych.',
+                                                'deliverableEn': 'Administration B.A. defense and full operational '
+                                                                 'clearance for the continuous 5-year specialist study '
+                                                                 'queue.'}]},
+                     'fiveYearCatalog': [{'id': 'STU-FND-1',
+                                          'group': 'FOUNDATION',
+                                          'refId': 'FND-1',
+                                          'siteId': 'SITE-Y15',
+                                          'icon': '📐',
+                                          'color': '#38bdf8',
+                                          'sourceLang': 'PL+EN',
+                                          'titlePl': 'Matematyka i Logika Matematyczna (5 lat — I+II stopień)',
+                                          'titleEn': 'Mathematics & Mathematical Logic (5 Years — B.Sc.+M.Sc.)',
+                                          'years': [{'year': 1,
+                                                     'pl': 'Logika formalna, teoria mnogości, analiza matematyczna '
+                                                           'I–II, algebra liniowa z geometrią (OpenAGH, Skoczylas, '
+                                                           'Strang).',
+                                                     'en': 'Formal logic, set theory, calculus I–II, linear algebra '
+                                                           'with geometry (OpenAGH, Strang).'},
+                                                    {'year': 2,
+                                                     'pl': 'Równania różniczkowe zwyczajne i cząstkowe, topologia '
+                                                           'ogólna, analiza zespolona, matematyka dyskretna i teoria '
+                                                           'grafów.',
+                                                     'en': 'ODEs & PDEs, general topology, complex analysis, discrete '
+                                                           'math & graph theory.'},
+                                                    {'year': 3,
+                                                     'pl': 'Rachunek prawdopodobieństwa, statystyka matematyczna, '
+                                                           'analiza funkcjonalna, metody numeryczne i obrona I '
+                                                           'stopnia.',
+                                                     'en': 'Probability theory, mathematical statistics, functional '
+                                                           'analysis, numerical methods & B.Sc. thesis.'},
+                                                    {'year': 4,
+                                                     'pl': 'Układy dynamiczne i teoria chaosu, geometria różniczkowa i '
+                                                           'rachunek tensorowy (Penrose), teoria informacji i '
+                                                           'entropia.',
+                                                     'en': 'Dynamical systems & chaos, differential geometry & tensor '
+                                                           'calculus (Penrose), information theory.'},
+                                                    {'year': 5,
+                                                     'pl': 'Procesy stochastyczne, wnioskowanie bayesowskie, topologia '
+                                                           'algebraiczna konektomów i praca magisterska dla Projektów '
+                                                           'B/C/H.',
+                                                     'en': 'Stochastic processes, Bayesian inference, algebraic '
+                                                           'topology of connectomes & M.Sc. thesis for B/C/H.'}]},
+                                         {'id': 'STU-FND-2',
+                                          'group': 'FOUNDATION',
+                                          'refId': 'FND-2',
+                                          'siteId': 'SITE-Y15',
+                                          'icon': '💻',
+                                          'color': '#60a5fa',
+                                          'sourceLang': 'PL+EN',
+                                          'titlePl': 'Informatyka Teoretyczna i Systemowa (5 lat — I+II stopień)',
+                                          'titleEn': 'Computer Science & Distributed Systems (5 Years — B.Sc.+M.Sc.)',
+                                          'years': [{'year': 1,
+                                                     'pl': 'Logika układów cyfrowych i architektura komputerów '
+                                                           '(Petzold), algorytmy i struktury danych (Cormen, Ważniak '
+                                                           'MIMUW).',
+                                                     'en': 'Digital logic & computer architecture (Petzold), '
+                                                           'algorithms & data structures (Cormen).'},
+                                                    {'year': 2,
+                                                     'pl': 'Systemy operacyjne, programowanie współbieżne, sieci '
+                                                           'komputerowe, relacyjne i grafowe bazy danych.',
+                                                     'en': 'Operating systems, concurrency, computer networks, '
+                                                           'relational & graph databases.'},
+                                                    {'year': 3,
+                                                     'pl': 'Teoria obliczeń i złożoności, systemy czasu rzeczywistego '
+                                                           '(RTOS), kryptografia stosowana i projekt inżynierski.',
+                                                     'en': 'Theory of computation & complexity, RTOS, applied '
+                                                           'cryptography & B.Eng. project.'},
+                                                    {'year': 4,
+                                                     'pl': 'Systemy rozproszone wielkiej skali, obliczenia wysokiej '
+                                                           'wydajności (HPC / klastry GPU), architektury odporne na '
+                                                           'błędy (fault-tolerant).',
+                                                     'en': 'Large-scale distributed systems, HPC / GPU clusters, '
+                                                           'fault-tolerant space/medical architectures.'},
+                                                    {'year': 5,
+                                                     'pl': 'Reprezentacja wiedzy, ontologie grafowe, bezpieczeństwo '
+                                                           'systemów krytycznych i praca magisterska z architektury '
+                                                           'rozproszonej.',
+                                                     'en': 'Knowledge representation, graph ontologies, critical '
+                                                           'systems security & M.Sc. thesis.'}]},
+                                         {'id': 'STU-FND-3',
+                                          'group': 'FOUNDATION',
+                                          'refId': 'FND-3',
+                                          'siteId': 'SITE-Y15',
+                                          'icon': '⌨️',
+                                          'color': '#818cf8',
+                                          'sourceLang': 'PL+EN',
+                                          'titlePl': 'Inżynieria Oprogramowania i Symulacji Naukowych (5 lat — I+II '
+                                                     'stopień)',
+                                          'titleEn': 'Software Engineering & Scientific Simulation (5 Years — '
+                                                     'B.Sc.+M.Sc.)',
+                                          'years': [{'year': 1,
+                                                     'pl': 'Programowanie strukturalne, obiektowe i funkcyjne (Python, '
+                                                           'C, C++), kontrola wersji Git i testowanie jednostkowe.',
+                                                     'en': 'Procedural, OOP & functional programming (Python, C, C++), '
+                                                           'Git & unit testing.'},
+                                                    {'year': 2,
+                                                     'pl': 'Programowanie systemowe i niskopoziomowe (Rust, C++20), '
+                                                           'interfejsy sprzętowe, sterowniki i akwizycja danych '
+                                                           'pomiarowych.',
+                                                     'en': 'Systems & low-level programming (Rust, C++20), hardware '
+                                                           'APIs & sensor data acquisition.'},
+                                                    {'year': 3,
+                                                     'pl': 'Obliczenia naukowe (NumPy, SciPy, Julia), architektura '
+                                                           'aplikacji webowych/mobilnych i inżynierski system '
+                                                           'symulacyjny.',
+                                                     'en': 'Scientific computing (NumPy, SciPy, Julia), web/mobile '
+                                                           'architecture & B.Eng. simulation platform.'},
+                                                    {'year': 4,
+                                                     'pl': 'Symulatory fizyczne, biologiczne i neuronalne (NEURON, '
+                                                           'Brian2, OpenMM), programowanie równoległe CUDA/Triton.',
+                                                     'en': 'Physical, biological & neural simulators (NEURON, Brian2, '
+                                                           'OpenMM), CUDA/Triton parallel kernels.'},
+                                                    {'year': 5,
+                                                     'pl': 'Weryfikacja formalna kodu krytycznego, reprodukowalne '
+                                                           'potoki badawcze MLOps i magisterium z inżynierii '
+                                                           'symulacyjnej.',
+                                                     'en': 'Formal verification of safety-critical code, reproducible '
+                                                           'MLOps pipelines & M.Sc. thesis.'}]},
+                                         {'id': 'STU-FND-4',
+                                          'group': 'FOUNDATION',
+                                          'refId': 'FND-4',
+                                          'siteId': 'SITE-X10',
+                                          'icon': '⚛️',
+                                          'color': '#f59e0b',
+                                          'sourceLang': 'PL+EN',
+                                          'titlePl': 'Fizyka Techniczna, Kwantowa i Jądrowa (5 lat — I+II stopień)',
+                                          'titleEn': 'Technical, Quantum & Nuclear Physics (5 Years — B.Sc.+M.Sc.)',
+                                          'years': [{'year': 1,
+                                                     'pl': 'Mechanika klasyczna i relatywistyczna, fale i optyka, '
+                                                           'pracownia fizyczna I (OpenStax Fizyka, Feynman).',
+                                                     'en': 'Classical & relativistic mechanics, waves & optics, '
+                                                           'physics lab I (OpenStax, Feynman).'},
+                                                    {'year': 2,
+                                                     'pl': 'Elektrodynamika klasyczna (równania Maxwella), '
+                                                           'termodynamika i fizyka statystyczna, mechanika analityczna '
+                                                           'Lagrange’a–Hamiltona.',
+                                                     'en': 'Classical electrodynamics (Maxwell), thermodynamics & '
+                                                           'statistical physics, Lagrangian/Hamiltonian mechanics.'},
+                                                    {'year': 3,
+                                                     'pl': 'Mechanika kwantowa I (Griffiths), fizyka ciała stałego i '
+                                                           'półprzewodników, podstawy fizyki jądrowej i dyplom I '
+                                                           'stopnia.',
+                                                     'en': 'Quantum mechanics I (Griffiths), solid-state & '
+                                                           'semiconductor physics, nuclear basics & B.Sc.'},
+                                                    {'year': 4,
+                                                     'pl': 'Fizyka reaktorów jądrowych i transportu neutronów, fizyka '
+                                                           'plazmy i syntezy termojądrowej, dozymetria i ochrona '
+                                                           'radiacyjna.',
+                                                     'en': 'Nuclear reactor physics & neutron transport, plasma '
+                                                           'physics & fusion, radiation dosimetry.'},
+                                                    {'year': 5,
+                                                     'pl': 'Termodynamika nierównowagowa układów żywych, informacja '
+                                                           'kwantowa (Nielsen & Chuang) i praca magisterska (Projekty '
+                                                           'C/F/H).',
+                                                     'en': 'Non-equilibrium thermodynamics of life, quantum '
+                                                           'information & M.Sc. thesis (Projects C/F/H).'}]},
+                                         {'id': 'STU-FND-5',
+                                          'group': 'FOUNDATION',
+                                          'refId': 'FND-5',
+                                          'siteId': 'SITE-X10',
+                                          'icon': '🔌',
+                                          'color': '#eab308',
+                                          'sourceLang': 'PL+EN',
+                                          'titlePl': 'Elektronika, Bioelektronika i Układy Neuromorficzne (5 lat — '
+                                                     'I+II stopień)',
+                                          'titleEn': 'Electronics, Bioelectronics & Neuromorphic Hardware (5 Years — '
+                                                     'B.Sc.+M.Sc.)',
+                                          'years': [{'year': 1,
+                                                     'pl': 'Teoria obwodów elektrycznych, metrologia elektroniczna, '
+                                                           'elementy półprzewodnikowe (Horowitz & Hill „Sztuka '
+                                                           'elektroniki”).',
+                                                     'en': 'Circuit theory, electronic metrology, semiconductor '
+                                                           'devices (The Art of Electronics).'},
+                                                    {'year': 2,
+                                                     'pl': 'Elektronika analogowa (wzmacniacze operacyjne, filtry, '
+                                                           'oscylatory), elektronika cyfrowa i języki opisu sprzętu '
+                                                           'Verilog/VHDL (FPGA).',
+                                                     'en': 'Analog circuits (op-amps, filters, oscillators), digital '
+                                                           'logic & FPGA design (Verilog/VHDL).'},
+                                                    {'year': 3,
+                                                     'pl': 'Mikrokontrolery, systemy wbudowane SoC, cyfrowe '
+                                                           'przetwarzanie sygnałów (DSP), przetworniki ADC/DAC i '
+                                                           'projekt inżynierski.',
+                                                     'en': 'Microcontrollers, embedded SoCs, DSP, precision ADC/DAC & '
+                                                           'B.Eng. hardware prototype.'},
+                                                    {'year': 4,
+                                                     'pl': 'Aparatura biomedyczna niskoszumowa (EEG, ECoG, EMG, '
+                                                           'fNIRS), elektronika mocy i sterowanie napędami '
+                                                           'bioniczno-robotycznymi.',
+                                                     'en': 'Low-noise biomedical front-ends (EEG, ECoG, EMG, fNIRS), '
+                                                           'power electronics & bionic actuators.'},
+                                                    {'year': 5,
+                                                     'pl': 'Układy VLSI, memrystory, procesory neuromorficzne i '
+                                                           'fotoniczne oraz praca magisterska dla Projektów A i C.',
+                                                     'en': 'VLSI design, memristors, neuromorphic & photonic '
+                                                           'processors, and M.Sc. thesis for A & C.'}]},
+                                         {'id': 'STU-FND-6',
+                                          'group': 'FOUNDATION',
+                                          'refId': 'FND-6',
+                                          'siteId': 'SITE-B7',
+                                          'icon': '🧪',
+                                          'color': '#10b981',
+                                          'sourceLang': 'PL+EN',
+                                          'titlePl': 'Chemia, Biochemia i Inżynieria Materiałowa (5 lat — I+II '
+                                                     'stopień)',
+                                          'titleEn': 'Chemistry, Biochemistry & Biomaterials Engineering (5 Years — '
+                                                     'B.Sc.+M.Sc.)',
+                                          'years': [{'year': 1,
+                                                     'pl': 'Chemia ogólna i nieorganiczna, stechiometria, równowagi '
+                                                           'jonowe i analiza jakościowo-ilościowa (OpenStax Chemia, '
+                                                           'Bielański).',
+                                                     'en': 'General & inorganic chemistry, stoichiometry, ionic '
+                                                           'equilibria & analytical lab.'},
+                                                    {'year': 2,
+                                                     'pl': 'Chemia organiczna I–II (mechanizmy reakcji, stereochemia, '
+                                                           'synteza), chemia fizyczna, termodynamika chemiczna i '
+                                                           'elektrochemia.',
+                                                     'en': 'Organic chemistry I–II, physical chemistry, chemical '
+                                                           'thermodynamics & electrochemistry.'},
+                                                    {'year': 3,
+                                                     'pl': 'Biochemia strukturalna i metaboliczna (Stryer: białka, '
+                                                           'enzymy, kwasy nukleinowe), spektroskopia (NMR, MS, IR) i '
+                                                           'dyplom I stopnia.',
+                                                     'en': 'Structural & metabolic biochemistry (Stryer), spectroscopy '
+                                                           '(NMR, MS, IR) & B.Sc. thesis.'},
+                                                    {'year': 4,
+                                                     'pl': 'Chemia polimerów biokompatybilnych i hydrożeli tkankowych, '
+                                                           'radiochemia izotopów medycznych i chemia jądrowego cyklu '
+                                                           'paliwowego.',
+                                                     'en': 'Biocompatible polymers & hydrogels, medical isotope '
+                                                           'radiochemistry & nuclear fuel chemistry.'},
+                                                    {'year': 5,
+                                                     'pl': 'Zamknięte obiegi katalityczne (regeneracja O2/H2O '
+                                                           'Sabatiera–Boscha dla kosmosu), chemia środowiska i praca '
+                                                           'magisterska.',
+                                                     'en': 'Closed-loop catalytic life-support chemistry '
+                                                           '(Sabatier/Bosch), environmental chemistry & M.Sc.'}]},
+                                         {'id': 'STU-FND-7',
+                                          'group': 'FOUNDATION',
+                                          'refId': 'FND-7',
+                                          'siteId': 'SITE-B7',
+                                          'icon': '🧬',
+                                          'color': '#22c55e',
+                                          'sourceLang': 'PL+EN',
+                                          'titlePl': 'Biologia Molekularna, Neurobiologia i Fizjologia Człowieka (5 '
+                                                     'lat — I+II stopień)',
+                                          'titleEn': 'Molecular Biology, Neurobiology & Human Physiology (5 Years — '
+                                                     'B.Sc.+M.Sc.)',
+                                          'years': [{'year': 1,
+                                                     'pl': 'Biologia komórki, histologia, anatomia prawidłowa '
+                                                           'człowieka i podstawy ewolucjonizmu (Biologia Campbella, '
+                                                           'Alberts).',
+                                                     'en': 'Cell biology, histology, human anatomy & evolutionary '
+                                                           'biology (Campbell, Alberts).'},
+                                                    {'year': 2,
+                                                     'pl': 'Biologia molekularna, genetyka klasyczna i genomika (Brown '
+                                                           '„Genomy”), mikrobiologia i immunologia podstawowa.',
+                                                     'en': 'Molecular biology, genetics & genomics (Brown), '
+                                                           'microbiology & immunology.'},
+                                                    {'year': 3,
+                                                     'pl': 'Fizjologia układów człowieka (nerwowy, krążenia, '
+                                                           'oddechowy, hormonalny), biofizyka błon komórkowych i '
+                                                           'licencjat.',
+                                                     'en': 'Human systems physiology, membrane biophysics & B.Sc. '
+                                                           'thesis.'},
+                                                    {'year': 4,
+                                                     'pl': 'Neurobiologia komórkowa i systemowa (Kandel), '
+                                                           'elektrofizjologia synaps, embriologia, komórki macierzyste '
+                                                           'i organoidy.',
+                                                     'en': 'Cellular & systems neurobiology (Kandel), synaptic '
+                                                           'electrophysiology, stem cells & organoids.'},
+                                                    {'year': 5,
+                                                     'pl': 'Ekologia systemowa biosfery, fizjologia ekstremalna '
+                                                           '(mikrograwitacja, radiacja) i praca magisterska (Projekty '
+                                                           'A/B/D/F/G).',
+                                                     'en': 'Systems biosphere ecology, extreme space physiology & '
+                                                           'M.Sc. thesis (Projects A/B/D/F/G).'}]},
+                                         {'id': 'STU-FND-8',
+                                          'group': 'FOUNDATION',
+                                          'refId': 'FND-8',
+                                          'siteId': 'SITE-Y15',
+                                          'icon': '🤖',
+                                          'color': '#a855f7',
+                                          'sourceLang': 'PL+EN',
+                                          'titlePl': 'Sztuczna Inteligencja, Uczenie Maszynowe i Systemy Wieloagentowe '
+                                                     '(5 lat — I+II stopień)',
+                                          'titleEn': 'Artificial Intelligence, Deep Learning & Multi-Agent Systems (5 '
+                                                     'Years — B.Sc.+M.Sc.)',
+                                          'years': [{'year': 1,
+                                                     'pl': 'Matematyczne podstawy ML, optymalizacja wypukła, klasyczne '
+                                                           'uczenie maszynowe i eksploracja danych (Géron, '
+                                                           'scikit-learn).',
+                                                     'en': 'Mathematical foundations of ML, convex optimization & '
+                                                           'classical machine learning (Géron).'},
+                                                    {'year': 2,
+                                                     'pl': 'Głębokie sieci neuronowe (PyTorch/JAX): architektury CNN, '
+                                                           'rekurencyjne, Transformery i modele generatywne.',
+                                                     'en': 'Deep neural networks (PyTorch/JAX): CNNs, sequence models, '
+                                                           'Transformers & generative models.'},
+                                                    {'year': 3,
+                                                     'pl': 'Uczenie ze wzmocnieniem (RL), sterowanie robotyczne, wizja '
+                                                           'komputerowa, przetwarzanie języka i projekt inżynierski '
+                                                           'AI.',
+                                                     'en': 'Reinforcement learning (RL), robotic control, computer '
+                                                           'vision, NLP & B.Eng. AI project.'},
+                                                    {'year': 4,
+                                                     'pl': 'Impulsowe sieci neuronowe (SNN), dekodowanie sygnałów '
+                                                           'mózgowych BCI/fMRI, AI w biologii strukturalnej i fizyce '
+                                                           'reaktorowej.',
+                                                     'en': 'Spiking Neural Networks (SNN), BCI/fMRI neural decoding, '
+                                                           'AI for structural biology & reactor physics.'},
+                                                    {'year': 5,
+                                                     'pl': 'Architektury wieloagentowe (MAS), interpretowalność (XAI), '
+                                                           'alignment, bezpieczeństwo AI i praca magisterska.',
+                                                     'en': 'Multi-Agent Systems (MAS), interpretability (XAI), AI '
+                                                           'safety/alignment & M.Sc. thesis.'}]},
+                                         {'id': 'STU-TRK-A',
+                                          'group': 'TRACK',
+                                          'refId': 'A',
+                                          'siteId': 'SITE-B7',
+                                          'icon': '🦾',
+                                          'color': '#38bdf8',
+                                          'sourceLang': 'PL+EN',
+                                          'titlePl': 'Projekt A: Inżynieria Biomedyczna, Bionika i Neuroinżynieria (5 '
+                                                     'lat)',
+                                          'titleEn': 'Project A: Biomedical Engineering, Bionics & Neuroengineering (5 '
+                                                     'Years)',
+                                          'years': [{'year': 1,
+                                                     'pl': 'Anatomia i biomechanika układu ruchu, materiałoznawstwo '
+                                                           'medyczne, podstawy elektroniki i sygnałów biomedycznych.',
+                                                     'en': 'Musculoskeletal biomechanics, medical materials, '
+                                                           'biomedical signals & electronics.'},
+                                                    {'year': 2,
+                                                     'pl': 'Sensory i aktuatory medyczne, biokompatybilność implantów, '
+                                                           'przetwarzanie sygnałów EEG/EMG/EKG/fNIRS.',
+                                                     'en': 'Medical sensors & actuators, implant biocompatibility, '
+                                                           'EEG/EMG/ECG/fNIRS signal processing.'},
+                                                    {'year': 3,
+                                                     'pl': 'Mechatronika protetyczna, egzoszkielety rehabilitacyjne, '
+                                                           'sztuczne narządy wspomagające i projekt inżynierski.',
+                                                     'en': 'Prosthetic mechatronics, rehabilitation exoskeletons, '
+                                                           'artificial organs & B.Eng. design.'},
+                                                    {'year': 4,
+                                                     'pl': 'Inwazyjne i nieinwazyjne interfejsy mózg–komputer (BCI), '
+                                                           'neurostymulacja zamkniętej pętli i dekodowanie intencji '
+                                                           'ruchowej.',
+                                                     'en': 'Invasive & non-invasive Brain-Computer Interfaces (BCI), '
+                                                           'closed-loop neurostimulation.'},
+                                                    {'year': 5,
+                                                     'pl': 'Integracja kliniczna człowiek–maszyna, bezpieczeństwo '
+                                                           'cybernetyczne implantów i praca magisterska z '
+                                                           'neurobioniki.',
+                                                     'en': 'Clinical human-machine integration, implant cybersecurity '
+                                                           '& M.Sc. thesis in neurobionics.'}]},
+                                         {'id': 'STU-TRK-B',
+                                          'group': 'TRACK',
+                                          'refId': 'B',
+                                          'siteId': 'SITE-Y15',
+                                          'icon': '🧠',
+                                          'color': '#818cf8',
+                                          'sourceLang': 'PL+EN',
+                                          'titlePl': 'Projekt B: Neuronauka Obliczeniowa i Modelowanie Cyfrowego '
+                                                     'Umysłu (5 lat)',
+                                          'titleEn': 'Project B: Computational Neuroscience & Digital Mind Modeling (5 '
+                                                     'Years)',
+                                          'years': [{'year': 1,
+                                                     'pl': 'Kognitywistyka, neuroanatomia funkcjonalna, psychologia '
+                                                           'poznawcza (pamięć, uwaga, percepcja) i modelowanie '
+                                                           'matematyczne.',
+                                                     'en': 'Cognitive science, functional neuroanatomy, '
+                                                           'memory/perception & mathematical modeling.'},
+                                                    {'year': 2,
+                                                     'pl': 'Biofizyczne modele pojedynczych neuronów (Hodgkin–Huxley, '
+                                                           'Izhikevich), plastyczność synaptyczna STDP i kodowanie '
+                                                           'neuronalne.',
+                                                     'en': 'Biophysical neuron models (Hodgkin-Huxley, Izhikevich), '
+                                                           'STDP plasticity & neural coding.'},
+                                                    {'year': 3,
+                                                     'pl': 'Obrazowanie mózgu (fMRI, MEG, mikroskopia elektronowa), '
+                                                           'konektomika grafowa i dyplom licencjacki.',
+                                                     'en': 'Neuroimaging (fMRI, MEG, EM), graph connectomics & B.Sc. '
+                                                           'thesis.'},
+                                                    {'year': 4,
+                                                     'pl': 'Wielkoskalowe symulacje sieci korowo-wzgórzowych, '
+                                                           'konsolidacja pamięci i cyfrowy sen w sieciach sztucznych i '
+                                                           'biologicznych.',
+                                                     'en': 'Large-scale thalamocortical simulations, memory '
+                                                           'consolidation & digital sleep dynamics.'},
+                                                    {'year': 5,
+                                                     'pl': ' Metodologia i ograniczenia Whole Brain Emulation (WBE), '
+                                                           'problem tożsamości i świadomości oraz praca magisterska.',
+                                                     'en': 'Methodology & physical limits of Whole Brain Emulation '
+                                                           '(WBE), consciousness & M.Sc. thesis.'}]},
+                                         {'id': 'STU-TRK-C',
+                                          'group': 'TRACK',
+                                          'refId': 'C',
+                                          'siteId': 'SITE-Y15',
+                                          'icon': '〰️',
+                                          'color': '#f59e0b',
+                                          'sourceLang': 'PL+EN',
+                                          'titlePl': 'Projekt C: Obliczanie Fizyczne, Fotonika i Maszyny '
+                                                     'Analogowo-Neuromorficzne (5 lat)',
+                                          'titleEn': 'Project C: Physical Computing, Photonics & Analog-Neuromorphic '
+                                                     'Machines (5 Years)',
+                                          'years': [{'year': 1,
+                                                     'pl': 'Historia i teoria komputerów analogowych, równania '
+                                                           'różniczkowe realizowane w obwodach ciągłych RC/RLC.',
+                                                     'en': 'Analog computing theory, continuous differential analyzers '
+                                                           '& RC/RLC dynamical circuits.'},
+                                                    {'year': 2,
+                                                     'pl': 'Nieliniowe układy dynamiczne, obliczenia zbiornikowe '
+                                                           '(Reservoir Computing) i oscylatorowe sieci sprzężone.',
+                                                     'en': 'Nonlinear dynamical systems, Reservoir Computing & coupled '
+                                                           'oscillator networks.'},
+                                                    {'year': 3,
+                                                     'pl': 'Fizyka memrystorów, macierze skrzyżowane in-memory '
+                                                           'computing, energetyka obliczeń (limit Landauera) i projekt '
+                                                           'inżynierski.',
+                                                     'en': 'Memristor physics, crossbar in-memory computing, Landauer '
+                                                           'thermodynamic limits & B.Eng.'},
+                                                    {'year': 4,
+                                                     'pl': 'Procesory fotoniczne i optyczne mnożenie macierzy, '
+                                                           'obliczenia kwantowe i hybrydowe biokomputery (Brainoware).',
+                                                     'en': 'Photonic processors & optical matrix multiplication, '
+                                                           'quantum & organoid biocomputing.'},
+                                                    {'year': 5,
+                                                     'pl': 'Projektowanie ultra-energooszczędnych akceleratorów '
+                                                           'fizycznych dla AI/BCI i praca magisterska.',
+                                                     'en': 'Ultra-low-power physical AI/BCI accelerators & M.Sc. '
+                                                           'thesis.'}]},
+                                         {'id': 'STU-TRK-D',
+                                          'group': 'TRACK',
+                                          'refId': 'D',
+                                          'siteId': 'SITE-B7',
+                                          'icon': '🧫',
+                                          'color': '#10b981',
+                                          'sourceLang': 'PL+EN',
+                                          'titlePl': 'Projekt D: Biotechnologia Medyczna, Inżynieria Tkankowa i '
+                                                     'Biologia Syntetyczna (5 lat)',
+                                          'titleEn': 'Project D: Medical Biotechnology, Tissue Engineering & Synthetic '
+                                                     'Biology (5 Years)',
+                                          'years': [{'year': 1,
+                                                     'pl': 'Biologia komórki i rozwoju, hodowle komórkowe in vitro, '
+                                                           'sterylność laboratoryjna i podstawy genetyki molekularnej.',
+                                                     'en': 'Developmental cell biology, aseptic cell culture & '
+                                                           'molecular genetics.'},
+                                                    {'year': 2,
+                                                     'pl': 'Inżynieria genetyczna, edycja genomu (CRISPR-Cas, prime '
+                                                           'editing), epigenetyka i przeprogramowywanie komórek '
+                                                           '(iPSC).',
+                                                     'en': 'Genetic engineering, genome editing (CRISPR/prime '
+                                                           'editing), epigenetics & iPSC reprogramming.'},
+                                                    {'year': 3,
+                                                     'pl': 'Biomateriały rusztowaniowe, biodruk 3D tkanek '
+                                                           'unaczynionych, bioreaktory perfuzyjne i dyplom I stopnia.',
+                                                     'en': 'Scaffold biomaterials, 3D bioprinting of vascularized '
+                                                           'tissues, perfusion bioreactors & B.Sc.'},
+                                                    {'year': 4,
+                                                     'pl': 'Hodowla organoidów (mózgowych, przysadkowych, '
+                                                           'wątrobowych), biologia syntetyczna obwodów genowych i '
+                                                           'terapie genowe.',
+                                                     'en': 'Organoid engineering (cerebral, pituitary, hepatic), '
+                                                           'synthetic gene circuits & gene therapies.'},
+                                                    {'year': 5,
+                                                     'pl': 'Medycyna regeneracyjna i transplantacyjna, analiza '
+                                                           'kulturowo-bioetyczna („Frankenstein”) i praca magisterska.',
+                                                     'en': 'Regenerative transplantation medicine, bioethical '
+                                                           'boundaries & M.Sc. thesis.'}]},
+                                         {'id': 'STU-TRK-E',
+                                          'group': 'TRACK',
+                                          'refId': 'E',
+                                          'siteId': 'SITE-W0',
+                                          'icon': '⚖️',
+                                          'color': '#eab308',
+                                          'sourceLang': 'PL+EN',
+                                          'titlePl': 'Projekt E: Filozofia Nauki, Umysłu, Technologii i Bioetyka '
+                                                     'Stosowana (5 lat)',
+                                          'titleEn': 'Project E: Philosophy of Science, Mind, Technology & Applied '
+                                                     'Bioethics (5 Years)',
+                                          'years': [{'year': 1,
+                                                     'pl': 'Logika klasyczna i nieklasyczna, epistemologia, teoria '
+                                                           'prawdy i historia metodologii nauk przyrodniczych.',
+                                                     'en': 'Classical & non-classical logic, epistemology & history of '
+                                                           'scientific methodology.'},
+                                                    {'year': 2,
+                                                     'pl': 'Filozofia nauki (Popper, Kuhn, Lakatos), kryteria '
+                                                           'falsyfikowalności, wnioskowanie przyczynowe i status '
+                                                           'modeli naukowych.',
+                                                     'en': 'Philosophy of science (Popper, Kuhn, Lakatos), '
+                                                           'falsifiability, causal inference & scientific models.'},
+                                                    {'year': 3,
+                                                     'pl': 'Filozofia umysłu i kognitywistyki (funkcjonalizm, '
+                                                           'emergencja, problem świadomości, tożsamość osobowa) i '
+                                                           'licencjat.',
+                                                     'en': 'Philosophy of mind (functionalism, emergence, '
+                                                           'consciousness, personal identity) & B.A. thesis.'},
+                                                    {'year': 4,
+                                                     'pl': 'Bioetyka kliniczna i regulacyjna, etyka inżynierii '
+                                                           'genetycznej, neuroetyka (prawa neuronalne / neurorights) i '
+                                                           'etyka AI.',
+                                                     'en': 'Clinical & regulatory bioethics, genetic ethics, '
+                                                           'neuroethics (neurorights) & AI alignment ethics.'},
+                                                    {'year': 5,
+                                                     'pl': 'Filozofia techniki, etyka środowiskowa i kosmiczna oraz '
+                                                           'magisterium z rygoru epistemicznego megaprojektów.',
+                                                     'en': 'Philosophy of technology, planetary/space ethics & M.A. '
+                                                           'thesis on epistemic rigor.'}]},
+                                         {'id': 'STU-TRK-F',
+                                          'group': 'TRACK',
+                                          'refId': 'F',
+                                          'siteId': 'SITE-T9',
+                                          'icon': '🚀',
+                                          'color': '#ec4899',
+                                          'sourceLang': 'PL+EN',
+                                          'titlePl': 'Projekt F: Inżynieria Kosmiczna, Systemy BLSS i Medycyna '
+                                                     'Astronautyczna (5 lat)',
+                                          'titleEn': 'Project F: Space Systems Engineering, BLSS & Bioastronautics (5 '
+                                                     'Years)',
+                                          'years': [{'year': 1,
+                                                     'pl': 'Mechanika orbitalna, środowisko kosmiczne (próżnia, '
+                                                           'termika, mikrometeoroidy, promieniowanie GCR/SPE) i '
+                                                           'inżynieria systemowa.',
+                                                     'en': 'Orbital mechanics, space environment (vacuum, thermal, '
+                                                           'GCR/SPE radiation) & systems engineering.'},
+                                                    {'year': 2,
+                                                     'pl': 'Fizjologia człowieka w mikrograwitacji (zanik '
+                                                           'kostno-mięśniowy, układ krążenia, neuro-okulistyka, '
+                                                           'immunologia kosmiczna).',
+                                                     'en': 'Human physiology in microgravity (bone/muscle loss, '
+                                                           'cardiovascular, space immunology).'},
+                                                    {'year': 3,
+                                                     'pl': 'Fizyczno-chemiczne systemy podtrzymywania życia (ECLSS: '
+                                                           'tlen, CO2, recykling wody), skafandry i projekt '
+                                                           'inżynierski.',
+                                                     'en': 'Physicochemical ECLSS (O2, CO2 scrubbing, water recovery), '
+                                                           'EVA suits & B.Eng. project.'},
+                                                    {'year': 4,
+                                                     'pl': 'Bioregeneracyjne systemy BLSS (algi, hydroponika, '
+                                                           'mikrobiomy zamknięte), osłony radiacyjne i architektura '
+                                                           'baz Księżyc/Mars.',
+                                                     'en': 'Bioregenerative BLSS (algae, hydroponics), radiation '
+                                                           'shielding & Lunar/Martian habitats.'},
+                                                    {'year': 5,
+                                                     'pl': 'Zasilanie jądrowe misji (RTG/Kilopower), telemedycyna '
+                                                           'autonomiczna i praca magisterska z inżynierii habitatów.',
+                                                     'en': 'Space nuclear power (RTG/Kilopower), autonomous space '
+                                                           'medicine & M.Sc. thesis.'}]},
+                                         {'id': 'STU-TRK-G',
+                                          'group': 'TRACK',
+                                          'refId': 'G',
+                                          'siteId': 'SITE-T9',
+                                          'icon': '🌍',
+                                          'color': '#22c55e',
+                                          'sourceLang': 'PL+EN',
+                                          'titlePl': 'Projekt G: Inżynieria Środowiska, Klimatologia i Ochrona '
+                                                     'Biosfery Ziemi (5 lat)',
+                                          'titleEn': 'Project G: Environmental Engineering, Climatology & Biosphere '
+                                                     'Protection (5 Years)',
+                                          'years': [{'year': 1,
+                                                     'pl': 'Nauka o systemie Ziemi, cykle biogeochemiczne (C, N, P, '
+                                                           'H2O), meteorologia, hydrologia i chemia środowiska.',
+                                                     'en': 'Earth system science, biogeochemical cycles (C, N, P, '
+                                                           'H2O), hydrology & environmental chemistry.'},
+                                                    {'year': 2,
+                                                     'pl': 'Ekologia populacji i ekosystemów, bioróżnorodność, '
+                                                           'mikrobiologia gleby i wód oraz toksykologia środowiskowa.',
+                                                     'en': 'Ecosystem ecology, biodiversity, soil/water microbiology & '
+                                                           'environmental toxicology.'},
+                                                    {'year': 3,
+                                                     'pl': 'Technologie oczyszczania wody, powietrza i remediacji '
+                                                           'gleb, gospodarka obiegu zamkniętego i projekt inżynierski.',
+                                                     'en': 'Water/air purification, soil remediation, circular economy '
+                                                           '& B.Eng. thesis.'},
+                                                    {'year': 4,
+                                                     'pl': 'Modelowanie klimatu, mikroklimat leśny i miejski, zdrowie '
+                                                           'środowiskowe (One Health) i bezemisyjna transformacja '
+                                                           'energetyczna.',
+                                                     'en': 'Climate modeling, forest/urban microclimates, One Health & '
+                                                           'zero-emission energy transition.'},
+                                                    {'year': 5,
+                                                     'pl': 'Teledetekcja satelitarna Ziemi, inżynieria regeneracji '
+                                                           'ekosystemów i praca magisterska z ochrony biosfery.',
+                                                     'en': 'Satellite Earth observation, ecosystem regeneration '
+                                                           'engineering & M.Sc. thesis.'}]},
+                                         {'id': 'STU-TRK-H',
+                                          'group': 'TRACK',
+                                          'refId': 'H',
+                                          'siteId': 'SITE-X10',
+                                          'icon': '☢️',
+                                          'color': '#f43f5e',
+                                          'sourceLang': 'PL+EN',
+                                          'titlePl': 'Super-Projekt H: Energetyka Jądrowa, Reaktory SMR/HTGR i Fuzja '
+                                                     'Termojądrowa (5 lat)',
+                                          'titleEn': 'Super-Project H: Nuclear Engineering, SMR/HTGR Reactors & Fusion '
+                                                     'Energy (5 Years)',
+                                          'years': [{'year': 1,
+                                                     'pl': 'Fizyka jądrowa, reakcje rozszczepienia i syntezy, '
+                                                           'termodynamika techniczna, mechanika płynów i wymiana '
+                                                           'ciepła.',
+                                                     'en': 'Nuclear physics, fission & fusion reactions, engineering '
+                                                           'thermodynamics & heat transfer.'},
+                                                    {'year': 2,
+                                                     'pl': 'Teoria reaktorów jądrowych (równanie dyfuzji i transportu '
+                                                           'neutronów, współczynnik k_eff), materiały jądrowe i paliwa '
+                                                           'TRISO.',
+                                                     'en': 'Nuclear reactor theory (neutron transport, k_eff '
+                                                           'criticality), nuclear materials & TRISO fuels.'},
+                                                    {'year': 3,
+                                                     'pl': 'Eksploatacja i bezpieczeństwo reaktorów PWR, SMR oraz '
+                                                           'wysokotemperaturowych HTGR (HTGR-POLA, NCBJ Świerk) i '
+                                                           'dyplom inżynierski.',
+                                                     'en': 'PWR, SMR & high-temperature HTGR reactor safety/operations '
+                                                           '(HTGR-POLA) & B.Eng.'},
+                                                    {'year': 4,
+                                                     'pl': 'Fuzja magnetyczna i inercyjna (tokamaki ITER/DEMO, '
+                                                           'stellaratory), produkcja radioizotopów medycznych (MARIA) '
+                                                           'i napędy kosmiczne.',
+                                                     'en': 'Magnetic/inertial fusion (ITER/DEMO, stellarators), '
+                                                           'medical radioisotopes (MARIA) & space reactors.'},
+                                                    {'year': 5,
+                                                     'pl': 'Integracja gigawatowych bloków jądrowych z klastrami '
+                                                           'AI/WBE, kogeneracja wodoru i praca magisterska dla '
+                                                           'podwariantów A–G.',
+                                                     'en': 'Gigawatt nuclear power integration for AI/WBE clusters, '
+                                                           'hydrogen cogeneration & M.Sc. thesis.'}]}],
+                     'selectedQueue': ['STU-FND-1',
+                                       'STU-FND-2',
+                                       'STU-FND-3',
+                                       'STU-FND-4',
+                                       'STU-FND-5',
+                                       'STU-FND-6',
+                                       'STU-FND-7',
+                                       'STU-FND-8',
+                                       'STU-TRK-H'],
+                     'completedTopicYears': {},
+                     'aiAgents': [{'id': 'AGT-00',
+                                   'codename': 'GROVES-OPPENHEIMER-00',
+                                   'namePl': 'Agent Naczelny Sztabu Rozproszonego',
+                                   'nameEn': 'Supreme Distributed Command Agent',
+                                   'siteId': 'SITE-W0',
+                                   'color': '#f59e0b',
+                                   'rolePl': 'Orkiestracja 3-letniego rdzenia Administracji, kolejki 5-letnich studiów '
+                                             'i globalnego bilansu rozszczepień k_eff.',
+                                   'roleEn': 'Orchestrates the 3-year Administration core, 5-year sequential study '
+                                             'queue, and global fission balance k_eff.',
+                                   'promptTemplate': 'Działasz jako Agent Naczelny Sztabu Manhattan Golem 15 (District '
+                                                     'W-0). Rozbij podany cel strategiczny na kompartmentalizowane '
+                                                     'pakiety badawcze dla 5 ośrodków (W-0, Y-15, X-10, B-7, T-9), '
+                                                     'wskaż wymogi prawno-administracyjne oraz określ punkty krytyczne '
+                                                     'integracji.'},
+                                  {'id': 'AGT-01',
+                                   'codename': 'EPISTEMIC-LAW-01',
+                                   'namePl': 'Agent Administracji, Prawa i Demarkacji Epistemicznej',
+                                   'nameEn': 'Administration, Law & Epistemic Demarcation Agent',
+                                   'siteId': 'SITE-W0',
+                                   'color': '#eab308',
+                                   'rolePl': 'Audyt zgodności regulacyjnej (PAA, MDR, AI Act, traktaty kosmiczne) i '
+                                             'oznaczanie statusu twierdzeń (wiedza potwierdzona vs hipoteza).',
+                                   'roleEn': 'Regulatory compliance audit (nuclear, medical, AI, space law) and '
+                                             'epistemic demarcation of scientific claims.',
+                                   'promptTemplate': 'Działasz jako Agent Audytu Prawno-Epistemicznego (District W-0 / '
+                                                     'Projekt E). Oceń badany problem pod kątem: 1) faktów '
+                                                     'empirycznych vs hipotez, 2) wymogów prawa '
+                                                     'atomowego/medycznego/kosmicznego/AI, 3) ryzyk bioetycznych.'},
+                                  {'id': 'AGT-02',
+                                   'codename': 'TURING-NEUMANN-02',
+                                   'namePl': 'Agent Teorii, Obliczeń i Cyfrowego Umysłu',
+                                   'nameEn': 'Theory, Computing & Digital Mind Agent',
+                                   'siteId': 'SITE-Y15',
+                                   'color': '#38bdf8',
+                                   'rolePl': 'Rozszczepianie zagadnień matematycznych, algorytmicznych, konektomiki, '
+                                             'dekodowania mózgu i emulacji poznawczej (Projekt B).',
+                                   'roleEn': 'Fissions mathematical, algorithmic, connectomic, neural decoding, and '
+                                             'cognitive emulation problems (Project B).',
+                                   'promptTemplate': 'Działasz jako Agent Laboratorium Los Alamos Y-15 (Matematyka, '
+                                                     'Informatyka, AI, Projekt B). Sformułuj model formalny, złożoność '
+                                                     'obliczeniową, architekturę symulacji oraz hipotezy '
+                                                     'falsyfikowalne dla zadanego zagadnienia.'},
+                                  {'id': 'AGT-03',
+                                   'codename': 'SHANNON-ANALOG-03',
+                                   'namePl': 'Agent Obliczania Fizycznego i Układów Neuromorficznych',
+                                   'nameEn': 'Physical Computing & Neuromorphic Hardware Agent',
+                                   'siteId': 'SITE-Y15',
+                                   'color': '#fb923c',
+                                   'rolePl': 'Projektowanie obliczeń ciągłych, memrystorowych, fotonicznych i '
+                                             'energooszczędnych sieci impulsowych SNN (Projekt C).',
+                                   'roleEn': 'Designs continuous analog, memristive, photonic, and ultra-low-power '
+                                             'spiking neural architectures (Project C).',
+                                   'promptTemplate': 'Działasz jako Agent Układów Analogowo-Neuromorficznych (Y-15 / '
+                                                     'Projekt C). Zaproponuj fizyczny nośnik obliczeń, bilans '
+                                                     'termodynamiczny (limit Landauera) i architekturę sprzętową dla '
+                                                     'zadanego problemu.'},
+                                  {'id': 'AGT-04',
+                                   'codename': 'FERMI-PILE-04',
+                                   'namePl': 'Agent Energetyki Jądrowej, SMR/HTGR i Fuzji',
+                                   'nameEn': 'Nuclear Fission, SMR/HTGR & Fusion Power Agent',
+                                   'siteId': 'SITE-X10',
+                                   'color': '#f43f5e',
+                                   'rolePl': 'Obliczenia mocy reaktorowej, ciepła procesowego HTGR-POLA, izotopów '
+                                             'MARIA oraz zasilania dla klastrów AI i baz kosmicznych (Super-Projekt '
+                                             'H).',
+                                   'roleEn': 'Reactor power balances, HTGR-POLA process heat, MARIA medical isotopes, '
+                                             'and nuclear power for AI & space (Super-Project H).',
+                                   'promptTemplate': 'Działasz jako Agent Kompleksu Oak Ridge X-10 (Super-Projekt H). '
+                                                     'Wyznacz architekturę zasilania jądrowego/termojądrowego, bilans '
+                                                     'cieplno-elektryczny, bariery bezpieczeństwa radiacyjnego i '
+                                                     'sprzężenia ze ścieżkami A–G.'},
+                                  {'id': 'AGT-05',
+                                   'codename': 'CYBORG-SYNTH-05',
+                                   'namePl': 'Agent Neurobioniki, BCI i Bioinżynierii Tkankowej',
+                                   'nameEn': 'Neurobionics, BCI & Tissue Bioengineering Agent',
+                                   'siteId': 'SITE-B7',
+                                   'color': '#10b981',
+                                   'rolePl': 'Rozszczepianie problemów interfejsów mózg–maszyna (fNIRS/EEG/implanty), '
+                                             'bioniki oraz hodowli organoidów i edycji genów (Projekty A i D).',
+                                   'roleEn': 'Fissions BCI (fNIRS/EEG/implants), bionic prosthetics, organoid '
+                                             'engineering, and genome editing tasks (Projects A & D).',
+                                   'promptTemplate': 'Działasz jako Agent Kompleksu Hanford B-7 (Chemia, Biologia, '
+                                                     'Projekty A i D). Rozpisz protokół biokompatybilności, sprzężenia '
+                                                     'tkanka–elektronika, hodowli komórkowej/organoidowej oraz '
+                                                     'kryteria bezpieczeństwa klinicznego.'},
+                                  {'id': 'AGT-06',
+                                   'codename': 'BIOSFERA-ORBIT-06',
+                                   'namePl': 'Agent Systemów Podtrzymywania Życia: Kosmos ↔ Ziemia',
+                                   'nameEn': 'Life-Support & Biosphere Agent: Space ↔ Earth',
+                                   'siteId': 'SITE-T9',
+                                   'color': '#a855f7',
+                                   'rolePl': 'Integracja zamkniętych obiegów materii (BLSS), ochrony radiacyjnej '
+                                             'astronautów i inżynierii regeneracji ekosystemów Ziemi (Projekty F i G).',
+                                   'roleEn': 'Integrates closed-loop BLSS, astronaut radiation shielding, and Earth '
+                                             'ecosystem regeneration engineering (Projects F & G).',
+                                   'promptTemplate': 'Działasz jako Agent Poligonu Trinity T-9 (Oś Kosmos F ↔ Ziemia '
+                                                     'G). Przeprowadź bilans masy, energii, tlenu, wody i odporności '
+                                                     'biologicznej dla badanego habitatu pozaziemskiego lub ekosystemu '
+                                                     'ziemskiego.'}],
+                     'fissionNodes': [{'id': 'FIS-00',
+                                       'parentId': None,
+                                       'generation': 0,
+                                       'code': 'CORE-235',
+                                       'siteId': 'SITE-W0',
+                                       'agentId': 'AGT-00',
+                                       'trackRef': 'ADMIN-3Y',
+                                       'status': 'active',
+                                       'titlePl': 'Rdzeń Rozszczepialny Golem 15 + 3-Letni Sztab Administracji',
+                                       'titleEn': 'Golem 15 Fissile Core + 3-Year Administrative HQ',
+                                       'descPl': 'Punkt inicjacji reakcji łańcuchowej: cel nadrzędny zrozumienia, '
+                                                 'wspomagania i ochrony człowieka rozszczepiany z poziomu 3-letniego '
+                                                 'aparatu administracyjno-prawnego na 5 autonomicznych ośrodków '
+                                                 'Manhattan.',
+                                       'descEn': 'Chain-reaction initiation point: overarching human research mission '
+                                                 'fissioned through a 3-year administrative-legal command core into 5 '
+                                                 'autonomous Manhattan laboratories.',
+                                       'neutronTargets': ['FIS-S1', 'FIS-S2', 'FIS-S3', 'FIS-S4', 'FIS-S5'],
+                                       'deliverablePl': 'Globalna dyrektywa kompartmentalizacji i harmonogram 3 + 5×N '
+                                                        'lat.',
+                                       'deliverableEn': 'Global compartmentalization directive and 3 + 5×N year master '
+                                                        'schedule.'},
+                                      {'id': 'FIS-S1',
+                                       'parentId': 'FIS-00',
+                                       'generation': 1,
+                                       'code': 'W0-GOV',
+                                       'siteId': 'SITE-W0',
+                                       'agentId': 'AGT-01',
+                                       'trackRef': 'E',
+                                       'status': 'active',
+                                       'titlePl': 'Dyrekcja W-0: Prawo Sektorowe, Finanse B+R i Filtr Epistemiczny (E)',
+                                       'titleEn': 'Directorate W-0: Sector Law, R&D Finance & Epistemic Filter (E)',
+                                       'descPl': 'Rozszczepia wymogi formalno-prawne (PAA, komisje bioetyczne, AI Act, '
+                                                 'POLSA) oraz metodologiczne kryteria demarkacji nauki od spekulacji '
+                                                 'dla wszystkich ośrodków.',
+                                       'descEn': 'Fissions legal-regulatory compliance and epistemological demarcation '
+                                                 'criteria across all distributed laboratories.',
+                                       'neutronTargets': ['FIS-H1', 'FIS-D1'],
+                                       'deliverablePl': 'Matryca legalności i rygoru epistemicznego (4 poziomy '
+                                                        'pewności wiedzy).',
+                                       'deliverableEn': 'Legality and epistemic rigor matrix (4 certainty tiers).'},
+                                      {'id': 'FIS-S2',
+                                       'parentId': 'FIS-00',
+                                       'generation': 1,
+                                       'code': 'Y15-MIND',
+                                       'siteId': 'SITE-Y15',
+                                       'agentId': 'AGT-02',
+                                       'trackRef': 'B',
+                                       'status': 'active',
+                                       'titlePl': 'Dyrekcja Y-15: Teoria, AI, Cyfrowy Umysł (B) i Fizyka Obliczeń (C)',
+                                       'titleEn': 'Directorate Y-15: Theory, AI, Digital Mind (B) & Physical Computing '
+                                                  '(C)',
+                                       'descPl': 'Ośrodek obliczeniowy rozszczepiający fundamenty '
+                                                 'matematyczno-informatyczne (FND 1–3, 8) na modele konektomu, '
+                                                 'dekodery AI oraz maszyny analogowo-neuromorficzne.',
+                                       'descEn': 'Theoretical hub splitting mathematical/CS foundations (FND 1–3, 8) '
+                                                 'into connectome models, AI decoders, and neuromorphic machines.',
+                                       'neutronTargets': ['FIS-A1', 'FIS-H1'],
+                                       'deliverablePl': 'Stos symulacyjny mózg–AI–sprzęt neuromorficzny.',
+                                       'deliverableEn': 'Brain–AI–neuromorphic simulation stack.'},
+                                      {'id': 'FIS-S3',
+                                       'parentId': 'FIS-00',
+                                       'generation': 1,
+                                       'code': 'X10-ATOM',
+                                       'siteId': 'SITE-X10',
+                                       'agentId': 'AGT-04',
+                                       'trackRef': 'H',
+                                       'status': 'critical',
+                                       'titlePl': 'Dyrekcja X-10: Rozszczepienie Jądrowe, Fuzja i Architektura Mocy '
+                                                  '(H)',
+                                       'titleEn': 'Directorate X-10: Nuclear Fission, Fusion & Power Architecture (H)',
+                                       'descPl': 'Serce energetyczne systemu: reaktory SMR/HTGR-POLA, fuzja '
+                                                 'termojądrowa i elektronika mocy dostarczające gęstą, bezemisyjną '
+                                                 'energię dla podwariantów A–G.',
+                                       'descEn': 'Energetic core: SMR/HTGR-POLA reactors, fusion, and power '
+                                                 'electronics supplying dense zero-emission power to sub-variants A–G.',
+                                       'neutronTargets': ['FIS-B1', 'FIS-F1', 'FIS-G1'],
+                                       'deliverablePl': 'Architektura mocy jądrowej i izotopowej dla klastrów AI, '
+                                                        'medycyny i kosmosu.',
+                                       'deliverableEn': 'Nuclear & isotope power architecture for AI clusters, '
+                                                        'medicine, and space.'},
+                                      {'id': 'FIS-S4',
+                                       'parentId': 'FIS-00',
+                                       'generation': 1,
+                                       'code': 'B7-BIO',
+                                       'siteId': 'SITE-B7',
+                                       'agentId': 'AGT-05',
+                                       'trackRef': 'A',
+                                       'status': 'active',
+                                       'titlePl': 'Dyrekcja B-7: Integracja Biocyfrowa (A) i Inżynieria Życia (D)',
+                                       'titleEn': 'Directorate B-7: Bio-Digital Integration (A) & Life Engineering (D)',
+                                       'descPl': 'Łączy chemię biomateriałów i biologię molekularną (FND 6–7) w '
+                                                 'interfejsy mózg–maszyna, bionikę oraz hodowlę organoidów i medycynę '
+                                                 'regeneracyjną.',
+                                       'descEn': 'Combines biomaterials chemistry & molecular biology (FND 6–7) into '
+                                                 'BCIs, bionics, organoids, and regenerative medicine.',
+                                       'neutronTargets': ['FIS-B1', 'FIS-F1'],
+                                       'deliverablePl': 'Platforma interfejsów tkankowo-elektronicznych i organoidów.',
+                                       'deliverableEn': 'Tissue-electronic interface & organoid platform.'},
+                                      {'id': 'FIS-S5',
+                                       'parentId': 'FIS-00',
+                                       'generation': 1,
+                                       'code': 'T9-HAB',
+                                       'siteId': 'SITE-T9',
+                                       'agentId': 'AGT-06',
+                                       'trackRef': 'F',
+                                       'status': 'active',
+                                       'titlePl': 'Dyrekcja T-9: Habitacja Kosmiczna (F) ↔ Ochrona Biosfery Ziemi (G)',
+                                       'titleEn': 'Directorate T-9: Space Habitation (F) ↔ Earth Biosphere Protection '
+                                                  '(G)',
+                                       'descPl': 'Poligon weryfikacji środowiskowej: zamknięte systemy podtrzymywania '
+                                                 'życia poza Ziemią w lustrzanym sprzężeniu z regeneracją ziemskich '
+                                                 'ekosystemów.',
+                                       'descEn': 'Environmental proving ground: closed extraterrestrial life support '
+                                                 'coupled with terrestrial biosphere regeneration.',
+                                       'neutronTargets': ['FIS-G1', 'FIS-F1'],
+                                       'deliverablePl': 'Zunifikowany model obiegu materii i odporności środowiskowej '
+                                                        'F↔G.',
+                                       'deliverableEn': 'Unified matter-cycle and environmental resilience model F↔G.'},
+                                      {'id': 'FIS-ADM1',
+                                       'parentId': 'FIS-S1',
+                                       'generation': 2,
+                                       'code': 'W0-LIC',
+                                       'siteId': 'SITE-W0',
+                                       'agentId': 'AGT-01',
+                                       'trackRef': 'E',
+                                       'status': 'active',
+                                       'titlePl': 'Licencjonowanie B+R: Dozór Jądrowy PAA, Komisje Bioetyczne i AI Act',
+                                       'titleEn': 'R&D Licensing: Nuclear Oversight, Bioethics Boards & AI Act',
+                                       'descPl': 'Pakiet procedur administracyjnych z 3-letnich studiów pozwalający '
+                                                 'legalnie prowadzić badania nad izotopami, BCI, organoidami i '
+                                                 'autonomicznymi agentami.',
+                                       'descEn': 'Administrative compliance suite derived from the 3-year degree for '
+                                                 'legal research on isotopes, BCIs, organoids, and AI agents.',
+                                       'neutronTargets': ['FIS-H1', 'FIS-A1', 'FIS-D1'],
+                                       'deliverablePl': 'Repozytorium wniosków regulacyjnych i matryc ryzyka.',
+                                       'deliverableEn': 'Regulatory filings and risk assessment repository.'},
+                                      {'id': 'FIS-B1',
+                                       'parentId': 'FIS-S2',
+                                       'generation': 2,
+                                       'code': 'Y15-WBE',
+                                       'siteId': 'SITE-Y15',
+                                       'agentId': 'AGT-02',
+                                       'trackRef': 'B',
+                                       'status': 'active',
+                                       'titlePl': 'Dekodowanie Sygnałów Mózgu (fMRI/EEG) i Konsolidacja Pamięci '
+                                                  '(„Cyfrowy Sen”)',
+                                       'titleEn': "Brain Decoding (fMRI/EEG) & Memory Consolidation ('Digital Sleep')",
+                                       'descPl': 'Rozszczepienie Projektu B na dekodery semantyczne aktywności korowej '
+                                                 'oraz algorytmy snu falowego zapobiegające katastroficznemu '
+                                                 'zapominaniu w sieciach neuronowych.',
+                                       'descEn': 'Splits Project B into semantic cortical decoders and slow-wave '
+                                                 'digital sleep algorithms preventing catastrophic forgetting.',
+                                       'neutronTargets': ['FIS-A1', 'FIS-C1'],
+                                       'deliverablePl': 'Benchmark dekodowania neuronalnego i ciągłego uczenia SNN.',
+                                       'deliverableEn': 'Neural decoding & continual SNN learning benchmark.'},
+                                      {'id': 'FIS-C1',
+                                       'parentId': 'FIS-S2',
+                                       'generation': 2,
+                                       'code': 'Y15-NEURO',
+                                       'siteId': 'SITE-Y15',
+                                       'agentId': 'AGT-03',
+                                       'trackRef': 'C',
+                                       'status': 'active',
+                                       'titlePl': 'Procesory Neuromorficzne, Memrystory i Hybrydowe Biokomputery '
+                                                  '(Brainoware)',
+                                       'titleEn': 'Neuromorphic Processors, Memristors & Hybrid Biocomputers '
+                                                  '(Brainoware)',
+                                       'descPl': 'Fizyczne obliczanie niskiej mocy redukujące zapotrzebowanie '
+                                                 'energetyczne sztucznej inteligencji o rzędy wielkości względem '
+                                                 'klasycznych klastrów GPU.',
+                                       'descEn': 'Low-power physical computing slashing AI energy demand by orders of '
+                                                 'magnitude compared to von Neumann GPU clusters.',
+                                       'neutronTargets': ['FIS-B1', 'FIS-D1'],
+                                       'deliverablePl': 'Specyfikacja hybrydowego koprocesora analogowo-impulsowego.',
+                                       'deliverableEn': 'Hybrid analog-spiking coprocessor specification.'},
+                                      {'id': 'FIS-H1',
+                                       'parentId': 'FIS-S3',
+                                       'generation': 2,
+                                       'code': 'X10-HTGR',
+                                       'siteId': 'SITE-X10',
+                                       'agentId': 'AGT-04',
+                                       'trackRef': 'H',
+                                       'status': 'critical',
+                                       'titlePl': 'Bloki SMR / HTGR-POLA dla Centrów Danych AI/WBE i Kogeneracji '
+                                                  'Wodoru',
+                                       'titleEn': 'SMR / HTGR-POLA Units for AI/WBE Data Centers & Hydrogen '
+                                                  'Cogeneration',
+                                       'descPl': 'Bezpośrednie sprzężenie reaktorów wysokotemperaturowych z '
+                                                 'infrastrukturą obliczeniową Projektu B oraz dekarbonizacją przemysłu '
+                                                 'w Projekcie G.',
+                                       'descEn': 'Direct coupling of high-temperature reactors with Project B '
+                                                 'supercomputing clusters and Project G industrial decarbonization.',
+                                       'neutronTargets': ['FIS-B1', 'FIS-G1'],
+                                       'deliverablePl': 'Model bilansu mocy 300 MWe SMR + ciepło procesowe 750°C.',
+                                       'deliverableEn': '300 MWe SMR + 750°C process heat power-balance model.'},
+                                      {'id': 'FIS-H2',
+                                       'parentId': 'FIS-S3',
+                                       'generation': 2,
+                                       'code': 'X10-MEDSPC',
+                                       'siteId': 'SITE-X10',
+                                       'agentId': 'AGT-04',
+                                       'trackRef': 'H',
+                                       'status': 'active',
+                                       'titlePl': 'Radioizotopy Medyczne (MARIA: Lu-177/Mo-99) oraz Mikroreaktory '
+                                                  'Kosmiczne Kilopower',
+                                       'titleEn': 'Medical Radioisotopes (MARIA: Lu-177/Mo-99) & Space Kilopower '
+                                                  'Microreactors',
+                                       'descPl': 'Dwuwektorowe rozszczepienie technologii jądrowych: medycyna '
+                                                 'nuklearna dla ochrony zdrowia (A/D) oraz zasilanie baz '
+                                                 'księżycowo-marsjańskich w nocy polarnej (F).',
+                                       'descEn': 'Dual-vector nuclear fission spin-off: targeted radionuclide therapy '
+                                                 '(A/D) and surface fission power for Moon/Mars habitats (F).',
+                                       'neutronTargets': ['FIS-A1', 'FIS-F1'],
+                                       'deliverablePl': 'Karta izotopowo-energetyczna H→A/D/F.',
+                                       'deliverableEn': 'Isotope & space nuclear power datasheet H→A/D/F.'},
+                                      {'id': 'FIS-A1',
+                                       'parentId': 'FIS-S4',
+                                       'generation': 2,
+                                       'code': 'B7-BCI',
+                                       'siteId': 'SITE-B7',
+                                       'agentId': 'AGT-05',
+                                       'trackRef': 'A',
+                                       'status': 'active',
+                                       'titlePl': 'Optyczne i Elektryczne Interfejsy BCI (fNIRS PhotonGrav / ECoG) i '
+                                                  'Neuroprotetyka',
+                                       'titleEn': 'Optical & Electrical BCIs (fNIRS PhotonGrav / ECoG) & '
+                                                  'Neuroprosthetics',
+                                       'descPl': 'Dwukierunkowa komunikacja układ nerwowy ↔ maszyna testowana zarówno '
+                                                 'w klinice rehabilitacyjnej na Ziemi, jak i na orbicie ISS (misja '
+                                                 'IGNIS).',
+                                       'descEn': 'Bidirectional nervous system ↔ machine interfaces validated in '
+                                                 'clinical rehabilitation and orbital microgravity (ISS IGNIS).',
+                                       'neutronTargets': ['FIS-F1', 'FIS-B1'],
+                                       'deliverablePl': 'Architektura niskoszumowego toru akwizycji i dekodowania BCI.',
+                                       'deliverableEn': 'Low-noise BCI acquisition and decoding pipeline.'},
+                                      {'id': 'FIS-D1',
+                                       'parentId': 'FIS-S4',
+                                       'generation': 2,
+                                       'code': 'B7-ORG',
+                                       'siteId': 'SITE-B7',
+                                       'agentId': 'AGT-05',
+                                       'trackRef': 'D',
+                                       'status': 'active',
+                                       'titlePl': 'Organoidy Funkcjonalne z Komórek Macierzystych i Regeneracja '
+                                                  'Tkankowa',
+                                       'titleEn': 'Stem-Cell Functional Organoids & Regenerative Tissue Engineering',
+                                       'descPl': 'Od różnicowania iPSC do unaczynionych organoidów (mózgowych, '
+                                                 'przysadkowych, narządowych) z pełną kontrolą bezpieczeństwa '
+                                                 'onkologicznego i bioetycznego.',
+                                       'descEn': 'From iPSC differentiation to vascularized organoids under strict '
+                                                 'oncological and bioethical safety gates.',
+                                       'neutronTargets': ['FIS-A1', 'FIS-C1'],
+                                       'deliverablePl': 'Drzewo decyzyjne regeneracja vs syntetyczna konstrukcja '
+                                                        'organizmu.',
+                                       'deliverableEn': 'Regeneration vs. synthetic organism construction decision '
+                                                        'tree.'},
+                                      {'id': 'FIS-F1',
+                                       'parentId': 'FIS-S5',
+                                       'generation': 2,
+                                       'code': 'T9-BLSS',
+                                       'siteId': 'SITE-T9',
+                                       'agentId': 'AGT-06',
+                                       'trackRef': 'F',
+                                       'status': 'active',
+                                       'titlePl': 'Zamknięty Habitat Pozaziemski BLSS, Osłony Radiacyjne i Immunologia '
+                                                  'Kosmiczna',
+                                       'titleEn': 'Closed Extraterrestrial BLSS Habitat, Radiation Shielding & Space '
+                                                  'Immunology',
+                                       'descPl': 'Integracja fotobioreaktorów algowych, recyklingu wody/tlenu, ochrony '
+                                                 'przed GCR oraz monitoringu ekspresji genów odpornościowych '
+                                                 'astronautów.',
+                                       'descEn': 'Integrates algal photobioreactors, O2/H2O recycling, GCR shielding, '
+                                                 'and astronaut immune gene-expression monitoring.',
+                                       'neutronTargets': ['FIS-G1'],
+                                       'deliverablePl': 'Bilans pętli podtrzymywania życia dla załogi 4-osobowej.',
+                                       'deliverableEn': 'Closed-loop life-support balance for a 4-person crew.'},
+                                      {'id': 'FIS-G1',
+                                       'parentId': 'FIS-S5',
+                                       'generation': 2,
+                                       'code': 'T9-EARTH',
+                                       'siteId': 'SITE-T9',
+                                       'agentId': 'AGT-06',
+                                       'trackRef': 'G',
+                                       'status': 'active',
+                                       'titlePl': 'Odporność Biosfery Ziemi: Mikroklimat Leśny, Retencja i '
+                                                  'Dekarbonizacja Jądrowo-OZE',
+                                       'titleEn': 'Earth Biosphere Resilience: Forest Microclimates, Retention & '
+                                                  'Nuclear-Renewable Grid',
+                                       'descPl': 'Transfer czystych technologii zamkniętego obiegu z kosmosu (F) oraz '
+                                                 'energetyki jądrowej (H) do ochrony klimatu i ekosystemów '
+                                                 'lądowo-wodnych Ziemi.',
+                                       'descEn': 'Transfers closed-loop space tech (F) and nuclear baseload (H) to '
+                                                 "protect Earth's climate and terrestrial-aquatic ecosystems.",
+                                       'neutronTargets': ['FIS-F1'],
+                                       'deliverablePl': 'Model synergii energetyczno-ekologicznej H + G.',
+                                       'deliverableEn': 'Nuclear-ecological synergy model H + G.'},
+                                      {'id': 'FIS-G3-1',
+                                       'parentId': 'FIS-H1',
+                                       'generation': 3,
+                                       'code': 'NTR-HB-01',
+                                       'siteId': 'SITE-X10',
+                                       'agentId': 'AGT-04',
+                                       'trackRef': 'H',
+                                       'status': 'critical',
+                                       'titlePl': 'Neutron Kaskadowy: Zasilanie 100 MW SMR dla Klastra Emulacji Kory '
+                                                  'Mózgowej',
+                                       'titleEn': 'Cascade Neutron: 100 MW SMR Power Feed for Cortical Emulation '
+                                                  'Supercluster',
+                                       'descPl': 'Atomowe zadanie łączące 5-letnie studia Energetyki Jądrowej (H) ze '
+                                                 'studiami Neuronauki Obliczeniowej (B): porównanie kosztu '
+                                                 'energetycznego mózgu (20 W) z klastrem krzemowym i neuromorficznym.',
+                                       'descEn': 'Atomic task bridging 5-year Nuclear Engineering (H) and '
+                                                 'Computational Neuroscience (B): 20 W biological brain vs. '
+                                                 'silicon/neuromorphic cluster power budget.',
+                                       'neutronTargets': ['FIS-B1', 'FIS-C1'],
+                                       'deliverablePl': 'Raport porównawczy: 20 W mózg vs GPU vs Neuromorf + SMR.',
+                                       'deliverableEn': 'Comparative report: 20 W brain vs. GPU vs. Neuromorphic + '
+                                                        'SMR.'},
+                                      {'id': 'FIS-G3-2',
+                                       'parentId': 'FIS-A1',
+                                       'generation': 3,
+                                       'code': 'NTR-AF-02',
+                                       'siteId': 'SITE-B7',
+                                       'agentId': 'AGT-05',
+                                       'trackRef': 'A',
+                                       'status': 'active',
+                                       'titlePl': 'Neutron Kaskadowy: Telemetria BCI + Immunologia w Misjach '
+                                                  'Długotrwałych',
+                                       'titleEn': 'Cascade Neutron: BCI Telemetry + Space Immunology in Long-Duration '
+                                                  'Missions',
+                                       'descPl': 'Pakiet roboczy Agenta B-7 i T-9: nieinwazyjne monitorowanie '
+                                                 'obciążenia poznawczego fNIRS oraz markerów zapalnych u operatorów w '
+                                                 'izolowanych habitatach.',
+                                       'descEn': 'Joint B-7 & T-9 agent work package: non-invasive fNIRS cognitive '
+                                                 'load and immune biomarker tracking in isolated habitats.',
+                                       'neutronTargets': ['FIS-F1'],
+                                       'deliverablePl': 'Protokół diagnostyczny operatora w habitacie analogowym.',
+                                       'deliverableEn': 'Operator diagnostic protocol for analog space habitats.'}]}}
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
 DB_FILE = os.path.join(DATA_DIR, "database.json")
@@ -2833,6 +4141,32 @@ def ensure_db_schema(data):
         if lnk["id"] not in existing_lnk_ids:
             data["graphLinks"].append(json.loads(json.dumps(lnk)))
     data["supplementaryLibrary"] = json.loads(json.dumps(DEFAULT_SEED["supplementaryLibrary"]))
+    seed_ms = DEFAULT_SEED.get("manhattanSystem")
+    if seed_ms:
+        if "manhattanSystem" not in data or not isinstance(data["manhattanSystem"], dict):
+            data["manhattanSystem"] = json.loads(json.dumps(seed_ms))
+        else:
+            ms = data["manhattanSystem"]
+            ms["doctrine"] = json.loads(json.dumps(seed_ms["doctrine"]))
+            ms["sites"] = json.loads(json.dumps(seed_ms["sites"]))
+            ms["fiveYearCatalog"] = json.loads(json.dumps(seed_ms["fiveYearCatalog"]))
+            done_admin = ms.get("adminCore3Y", {}).get("completedYears", [])
+            ms["adminCore3Y"] = json.loads(json.dumps(seed_ms["adminCore3Y"]))
+            ms["adminCore3Y"]["completedYears"] = done_admin
+            if not ms.get("selectedQueue"):
+                ms["selectedQueue"] = json.loads(json.dumps(seed_ms["selectedQueue"]))
+            ms.setdefault("completedTopicYears", {})
+            ms.setdefault("startCalendarYear", 2026)
+            existing_agt = {a["id"] for a in ms.get("aiAgents", [])}
+            ms.setdefault("aiAgents", [])
+            for a in seed_ms["aiAgents"]:
+                if a["id"] not in existing_agt:
+                    ms["aiAgents"].append(json.loads(json.dumps(a)))
+            existing_fis = {n["id"] for n in ms.get("fissionNodes", [])}
+            ms.setdefault("fissionNodes", [])
+            for n in seed_ms["fissionNodes"]:
+                if n["id"] not in existing_fis:
+                    ms["fissionNodes"].append(json.loads(json.dumps(n)))
     return data
 
 
@@ -2879,7 +4213,7 @@ def get_all_branches_for_track(tracks, track_id):
 # ==============================================================================
 I18N = {
     "pl": {
-        "subtitle": "Prywatny portal badawczo-naukowy właściciela — 8 dziedzin podstawowych oraz 7 ścieżek (A–G)",
+        "subtitle": "Prywatny portal badawczo-naukowy właściciela — Rozproszony System Manhattan (3 lata Administracji + 5×N lat) i Graf Rozszczepień AI",
         "overarchingGoal": (
             "Zrozumieć człowieka jako organizm biologiczny, umysł, twórcę technologii "
             "i część ziemskiej biosfery, a jednocześnie zbadać możliwości jego "
@@ -2908,13 +4242,14 @@ I18N = {
         "langAll": "Wszystkie języki ([PL] + [EN])",
         "langOnlyPL": "🇵🇱 Tylko źródła polskojęzyczne [PL]",
         "langOnlyEN": "🇬🇧 Tylko źródła anglojęzyczne [EN]",
-        "tab1": "🎓 1. Materiały do nauki",
-        "tab2": "🗺️ 2. Mapa 7 Ścieżek (A–G)",
-        "tab3": "🔬 3. Środowiska Badawcze",
-        "tab4": "📚 4. Biblioteka i Repozytorium",
-        "tab5": "➕ 5. Dodaj Własny Materiał / Projekt",
-        "tab6": "🕸️ 6. Graf Powiązań (A–G)",
-        "tab7": "🔒 7. Bezpieczeństwo i Urządzenie",
+        "tab0": "☢️ 1. System Manhattan i Graf Rozszczepień AI",
+        "tab1": "🎓 2. Materiały do nauki",
+        "tab2": "🗺️ 3. Mapa Ścieżek (A–H)",
+        "tab3": "🔬 4. Środowiska Badawcze",
+        "tab4": "📚 5. Biblioteka i Repozytorium",
+        "tab5": "➕ 6. Dodaj Własny Materiał / Projekt",
+        "tab6": "🕸️ 7. Graf Powiązań (A–H)",
+        "tab7": "🔒 8. Bezpieczeństwo i Urządzenie",
         "studyModeLabel": "Wybierz warstwę architektury nauki:",
         "studyMode1": "1️⃣ Wspólne podstawy naukowe — 8 dziedzin po kolei (Matematyka → AI)",
         "studyMode2": "2️⃣ Odnogi tematyczne Ścieżek Badawczych (Projekty A–G po kolei)",
@@ -2929,7 +4264,7 @@ I18N = {
         "deleteBtn": "🗑️ Usuń",
     },
     "en": {
-        "subtitle": "Private Owner Research Portal — 8 Foundational Disciplines & 7 Research Tracks (A–G)",
+        "subtitle": "Private Owner Research Portal — Manhattan Distributed System (3Y Admin + 5×N Back-to-Back Years) & AI Fission Graph",
         "overarchingGoal": (
             "To understand the human being as a biological organism, a mind, a creator of technology, "
             "and part of Earth's biosphere, while investigating the possibilities of human functioning "
@@ -2957,13 +4292,14 @@ I18N = {
         "langAll": "All languages ([PL] + [EN])",
         "langOnlyPL": "🇵🇱 Polish sources only [PL]",
         "langOnlyEN": "🇬🇧 English sources only [EN]",
-        "tab1": "🎓 1. Study Materials",
-        "tab2": "🗺️ 2. 7 Research Tracks (A–G)",
-        "tab3": "🔬 3. Research Workspaces",
-        "tab4": "📚 4. Library & Repository",
-        "tab5": "➕ 5. Add Own Material / Project",
-        "tab6": "🕸️ 6. Connection Graph (A–G)",
-        "tab7": "🔒 7. Security & Device Access",
+        "tab0": "☢️ 1. Manhattan System & AI Fission Graph",
+        "tab1": "🎓 2. Study Materials",
+        "tab2": "🗺️ 3. Research Tracks (A–H)",
+        "tab3": "🔬 4. Research Workspaces",
+        "tab4": "📚 5. Library & Repository",
+        "tab5": "➕ 6. Add Own Material / Project",
+        "tab6": "🕸️ 7. Connection Graph (A–H)",
+        "tab7": "🔒 8. Security & Device Access",
         "studyModeLabel": "Select learning architecture layer:",
         "studyMode1": "1️⃣ Shared Scientific Foundations — 8 Disciplines in Sequence (Math → AI)",
         "studyMode2": "2️⃣ Thematic Branches of Research Tracks (Projects A–G in Sequence)",
@@ -3112,6 +4448,12 @@ TRACK_EN = {
         "name": "Humans on Earth & Ecosystem Protection",
         "goal": "Understand the functioning of Earth's biosphere, environmental pressures, and sustainable engineering technologies.",
         "guidingQuestion": "How can technological civilization function without destroying the planetary ecosystems that sustain human life?",
+    },
+    "H": {
+        "code": "Super-Project H",
+        "name": "Nuclear & Fusion Energy (Power Architecture Across Sub-Variants A–G)",
+        "goal": "Fission reactors (SMR, HTGR-POLA), MARIA research reactor, medical radioisotopes, space nuclear power (RTG, Kilopower), fusion energy, and powering gigawatt AI/WBE clusters.",
+        "guidingQuestion": "How can we provide safe, zero-emission, ultra-dense nuclear and fusion energy to power AI/brain emulation clusters, space habitats, nuclear medicine, and Earth's decarbonization?",
     },
 }
 
@@ -3584,9 +4926,12 @@ if global_search_q.strip():
 
 
 # ==============================================================================
-# ZAKŁADKI GŁÓWNE PORTALU
+# ZAKŁADKI GŁÓWNE PORTALU (STRONA PIERWSZA: ROZPROSZONY SYSTEM MANHATTAN + GRAF ROZSZCZEPIEŃ AI)
 # ==============================================================================
-tab_study, tab_map, tab_ws, tab_mat, tab_new, tab_graph, tab_security = st.tabs([
+ms_state = db.setdefault("manhattanSystem", json.loads(json.dumps(DEFAULT_SEED.get("manhattanSystem", {}))))
+
+tab_manhattan, tab_study, tab_map, tab_ws, tab_mat, tab_new, tab_graph, tab_security = st.tabs([
+    f"{L['tab0']} ({len(ms_state.get('fissionNodes', []))})",
     L["tab1"],
     L["tab2"],
     f"{L['tab3']} ({len(db['subprojects'])})",
@@ -3605,6 +4950,395 @@ def render_link_with_lang_badge(lnk: dict, ui_lang: str) -> str:
     else:
         tag = "`[EN 🇬🇧]`"
     return f"- {tag} [{label}]({url})"
+
+
+def build_streamlit_fission_svg(ms_data: dict, sel_node_id: str, site_flt: str, en_mode: bool) -> str:
+    all_nodes = ms_data.get("fissionNodes", [])
+    vis_nodes = all_nodes if site_flt == "ALL" else [n for n in all_nodes if n.get("siteId") == site_flt or n.get("id") == "FIS-00"]
+    sites_map = {s["id"]: s for s in ms_data.get("sites", [])}
+    agents_map = {a["id"]: a for a in ms_data.get("aiAgents", [])}
+
+    by_gen = {}
+    max_g = 0
+    for n in vis_nodes:
+        g = int(n.get("generation", 0))
+        max_g = max(max_g, g)
+        by_gen.setdefault(g, []).append(n)
+
+    max_rows = max([1] + [len(v) for v in by_gen.values()])
+    svg_w = max(980, (max_g + 1) * 265 + 90)
+    svg_h = max(520, max_rows * 72 + 80)
+
+    coords = {}
+    for g in range(max_g + 1):
+        col = by_gen.get(g, [])
+        x = 115 + g * 260
+        for idx, n in enumerate(col):
+            y = ((idx + 1) * svg_h) / (len(col) + 1)
+            coords[n["id"]] = (x, y)
+
+    parts = [f'<div style="overflow-x:auto; background:#0b0f19; border:1px solid #26334d; border-radius:12px; padding:0.75rem;"><svg viewBox="0 0 {svg_w} {svg_h}" width="100%" height="{svg_h}" style="min-width:860px; display:block;">']
+    for g in range(max_g + 1):
+        x = 115 + g * 260
+        lbl = (
+            ("GEN 0 • FISSILE CORE" if en_mode else "GEN 0 • RDZEŃ ROZSZCZEPIALNY") if g == 0 else
+            ("GEN 1 • MANHATTAN SITES" if en_mode else "GEN 1 • DYREKCJE MANHATTAN") if g == 1 else
+            ("GEN 2 • 5Y RESEARCH STREAMS" if en_mode else "GEN 2 • STRUMIENIE 5-LETNIE") if g == 2 else
+            (f"GEN {g} • AI MICRO-FISSION" if en_mode else f"GEN {g} • MIKRO-ROZSZCZEPIENIA AI")
+        )
+        parts.append(f'<line x1="{x}" y1="36" x2="{x}" y2="{svg_h - 18}" stroke="rgba(148,163,184,0.12)" stroke-dasharray="4 6" />')
+        parts.append(f'<text x="{x}" y="23" text-anchor="middle" fill="#94a3b8" font-size="10.5" font-weight="700">{lbl}</text>')
+
+    for n in vis_nodes:
+        src = coords.get(n["id"])
+        if not src:
+            continue
+        for tid in n.get("neutronTargets", []):
+            dst = coords.get(tid)
+            if not dst or tid == n["id"]:
+                continue
+            rel = n["id"] == sel_node_id or tid == sel_node_id
+            if not rel and site_flt == "ALL" and n.get("generation", 0) < 2:
+                continue
+            cx = (src[0] + dst[0]) / 2 + 26
+            cy = (src[1] + dst[1]) / 2 - 32
+            parts.append(
+                f'<path d="M {src[0]} {src[1]} Q {cx} {cy} {dst[0]} {dst[1]}" fill="none" '
+                f'stroke="{"#fcd34d" if rel else "#64748b"}" stroke-width="{"2.1" if rel else "1.1"}" '
+                f'stroke-dasharray="5 4" opacity="{"0.9" if rel else "0.32"}" />'
+            )
+
+    for n in vis_nodes:
+        pid = n.get("parentId")
+        if not pid or pid not in coords or n["id"] not in coords:
+            continue
+        px, py = coords[pid]
+        cx, cy = coords[n["id"]]
+        s_col = sites_map.get(n.get("siteId"), {}).get("color", "#38bdf8")
+        hi = n["id"] == sel_node_id or pid == sel_node_id
+        mx = (px + cx) / 2
+        parts.append(
+            f'<path d="M {px + 68} {py} C {mx} {py}, {mx} {cy}, {cx - 72} {cy}" fill="none" '
+            f'stroke="{s_col}" stroke-width="{"3.0" if hi else "1.7"}" opacity="{"0.95" if hi else "0.5"}" />'
+        )
+
+    for n in vis_nodes:
+        if n["id"] not in coords:
+            continue
+        px, py = coords[n["id"]]
+        s_col = sites_map.get(n.get("siteId"), {}).get("color", "#38bdf8")
+        b_col = "#f43f5e" if n.get("status") == "critical" else ("#10b981" if n.get("status") == "synthesized" else s_col)
+        agt_short = agents_map.get(n.get("agentId"), {}).get("codename", "AI").split("-")[0]
+        raw_t = (n.get("titleEn") if en_mode else n.get("titlePl")) or n.get("code", "")
+        short_t = (raw_t[:24] + "…") if len(raw_t) > 25 else raw_t
+        short_t = short_t.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+        code_esc = str(n.get("code", "")).replace("&", "&amp;").replace("<", "&lt;")
+        is_sel = n["id"] == sel_node_id
+        bw, bh = 148, 50
+        if is_sel:
+            parts.append(f'<rect x="{px - bw/2 - 4}" y="{py - bh/2 - 4}" width="{bw + 8}" height="{bh + 8}" rx="12" fill="none" stroke="#f8fafc" stroke-width="2" stroke-dasharray="4 3" />')
+        parts.append(
+            f'<rect x="{px - bw/2}" y="{py - bh/2}" width="{bw}" height="{bh}" rx="9" '
+            f'fill="{"#1e293b" if is_sel else "#0f172a"}" stroke="{b_col}" stroke-width="{"2.8" if is_sel else "1.8"}" />'
+            f'<text x="{px - bw/2 + 8}" y="{py - 7}" fill="{b_col}" font-size="10" font-weight="800">☢ {code_esc}</text>'
+            f'<text x="{px + bw/2 - 8}" y="{py - 7}" text-anchor="end" fill="#94a3b8" font-size="8.8" font-weight="600">{agt_short}</text>'
+            f'<text x="{px - bw/2 + 8}" y="{py + 11}" fill="#f1f5f9" font-size="9.5" font-weight="600">{short_t}</text>'
+        )
+
+    parts.append("</svg></div>")
+    return "".join(parts)
+
+
+# ------------------------------------------------------------------------------
+# ZAKŁADKA 0 (STRONA PIERWSZA PROJEKTOWA): ROZPROSZONY SYSTEM MANHATTAN + GRAF ROZSZCZEPIEŃ AI
+# ------------------------------------------------------------------------------
+with tab_manhattan:
+    if ms_state:
+        q_ids = ms_state.get("selectedQueue", [])
+        tot_years = 3 + 5 * len(q_ids)
+        tot_sems = 6 + 10 * len(q_ids)
+        tot_ects = 180 + 300 * len(q_ids)
+        start_cal = int(ms_state.get("startCalendarYear", 2026))
+        admin_done_list = ms_state.get("adminCore3Y", {}).get("completedYears", [])
+        topics_done_map = ms_state.setdefault("completedTopicYears", {})
+        done_total = len(admin_done_list) + sum(len(topics_done_map.get(qid, [])) for qid in q_ids)
+        pct_done = int(round((done_total / tot_years) * 100)) if tot_years else 0
+
+        fis_nodes = ms_state.get("fissionNodes", [])
+        parent_buckets = {}
+        for fn in fis_nodes:
+            if fn.get("parentId"):
+                parent_buckets[fn["parentId"]] = parent_buckets.get(fn["parentId"], 0) + 1
+        k_eff_val = f"{(sum(parent_buckets.values()) / len(parent_buckets)):.2f}" if parent_buckets else "1.00"
+
+        doc = ms_state.get("doctrine", {})
+        st.markdown(
+            f"""
+            <div style="background:linear-gradient(135deg, rgba(15,23,42,0.98), rgba(22,31,51,0.95)); border:1px solid rgba(245,158,11,0.45); border-radius:16px; padding:1.35rem 1.5rem; margin-bottom:1rem;">
+                <div style="font-size:0.74rem; font-weight:800; color:#fcd34d; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:0.35rem;">
+                    ☢️ {ms_state.get('codename', 'MED-G15')} • {'FIRST PROJECT COMMAND PAGE' if is_en else 'STRONA PIERWSZA PROJEKTOWA'}
+                </div>
+                <h2 style="margin:0 0 0.4rem 0; font-size:1.35rem; color:#f8fafc;">
+                    {doc.get('titleEn') if is_en else doc.get('titlePl')}
+                </h2>
+                <p style="margin:0; font-size:0.88rem; color:#cbd5e1; line-height:1.55;">
+                    {doc.get('summaryEn') if is_en else doc.get('summaryPl')}
+                </p>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
+        kpi1, kpi2, kpi3, kpi4 = st.columns(4)
+        kpi1.metric(
+            "Continuous Study Pipeline" if is_en else "Szlak Studiów z Rzędu (3 + 5×N)",
+            f"{tot_years} {'yrs' if is_en else 'lat'}",
+            f"{start_cal}–{start_cal + tot_years} • {tot_ects} ECTS",
+        )
+        kpi2.metric(
+            "Academic Progress" if is_en else "Zaliczone Lata Studiów",
+            f"{done_total} / {tot_years} ({pct_done}%)",
+            f"{tot_sems} {'semesters' if is_en else 'semestrów'}",
+        )
+        kpi3.metric(
+            "AI Fission Factor k_eff" if is_en else "Współczynnik Rozszczepienia k_eff",
+            f"k_eff = {k_eff_val}",
+            "Chain Reaction Active" if is_en else "Reakcja łańcuchowa B+R",
+        )
+        kpi4.metric(
+            "Fission Nodes & AI Agents" if is_en else "Baza Rozszczepień i Agenci AI",
+            f"{len(fis_nodes)} {'nodes' if is_en else 'węzłów'}",
+            f"{len(ms_state.get('aiAgents', []))} AI Agents • 5 Sites",
+        )
+
+        with st.expander("📜 " + ("Manhattan Organizational Rules (1–4) & 5 Compartmentalized Sites" if is_en else "Doktryna Projektu Manhattan (1–4) oraz 5 Rozproszonych Ośrodków Badawczych"), expanded=True):
+            for r_txt in (doc.get("rulesEn", []) if is_en else doc.get("rulesPl", [])):
+                st.markdown(f"- {r_txt}")
+            s_cols = st.columns(len(ms_state.get("sites", [])) or 1)
+            for idx_s, s_obj in enumerate(ms_state.get("sites", [])):
+                with s_cols[idx_s]:
+                    st.markdown(
+                        f"<div style='border-top:3px solid {s_obj['color']}; background:#111827; padding:0.7rem; border-radius:8px; min-height:175px;'>"
+                        f"<div style='color:{s_obj['color']}; font-size:0.74rem; font-weight:800;'>☢ {s_obj['code']}</div>"
+                        f"<div style='font-weight:700; font-size:0.86rem; color:#f8fafc; margin:0.2rem 0;'>{s_obj['nameEn'] if is_en else s_obj['namePl']}</div>"
+                        f"<div style='font-size:0.7rem; color:#fcd34d; margin-bottom:0.25rem;'>{s_obj['clearance']}</div>"
+                        f"<div style='font-size:0.75rem; color:#94a3b8;'>{s_obj['scopeEn'] if is_en else s_obj['scopePl']}</div>"
+                        f"</div>",
+                        unsafe_allow_html=True,
+                    )
+
+        st.markdown("### ☢️ " + ("AI-Agent Project Fission Graph (Chain-Reaction Cascade G0 → G3+)" if is_en else "Graf Rozszczepień Projektu Oparty na Agentach AI (Kaskada Reakcji Łańcuchowej G0 → G3+)"))
+        fg_c1, fg_c2 = st.columns([1.2, 2.2])
+        sites_lookup = {s["id"]: s for s in ms_state.get("sites", [])}
+        agents_lookup = {a["id"]: a for a in ms_state.get("aiAgents", [])}
+
+        with fg_c1:
+            sel_site_flt = st.selectbox(
+                "Filtruj ośrodek Manhattan / Filter Manhattan Site",
+                options=["ALL"] + [s["id"] for s in ms_state.get("sites", [])],
+                format_func=lambda x: ("🌐 Wszystkie 5 ośrodków / All 5 Sites") if x == "ALL" else f"☢ {sites_lookup[x]['code']} — {sites_lookup[x]['nameEn'] if is_en else sites_lookup[x]['namePl']}",
+                key="st_manhattan_site_flt",
+            )
+        with fg_c2:
+            sel_fis_id = st.selectbox(
+                "Wybierz węzeł w grafie rozszczepień do inspekcji lub dalszego rozszczepienia przez Agenta AI:",
+                options=[n["id"] for n in fis_nodes],
+                format_func=lambda nid: next((f"[G{n['generation']} • {n['code']}] {n['titleEn'] if is_en else n['titlePl']}" for n in fis_nodes if n["id"] == nid), nid),
+                key="st_selected_fission_node",
+            )
+
+        st.markdown(build_streamlit_fission_svg(ms_state, sel_fis_id, sel_site_flt, is_en), unsafe_allow_html=True)
+
+        active_fnode = next((n for n in fis_nodes if n["id"] == sel_fis_id), fis_nodes[0])
+        active_fagent = agents_lookup.get(active_fnode.get("agentId"), (ms_state.get("aiAgents") or [{}])[0])
+
+        with st.container(border=True):
+            ins_c1, ins_c2 = st.columns([2.2, 1.3])
+            with ins_c1:
+                st.markdown(f"#### ☢️ `[{active_fnode['code']} • GEN G{active_fnode['generation']}]` {active_fnode['titleEn'] if is_en else active_fnode['titlePl']}")
+                st.write(active_fnode["descEn"] if is_en else active_fnode["descPl"])
+                st.success(f"🎯 **{'Deliverable' if is_en else 'Artefakt wyjściowy'}:** {active_fnode['deliverableEn'] if is_en else active_fnode['deliverablePl']}")
+            with ins_c2:
+                st.markdown(f"**🤖 Agent AI:** `{active_fagent.get('codename', '')}` — {active_fagent.get('nameEn') if is_en else active_fagent.get('namePl')}")
+                st.code(active_fagent.get("promptTemplate", ""), language="text")
+                act_b1, act_b2 = st.columns(2)
+                if act_b1.button("☢️ " + ("Split Node (AI 1→2)" if is_en else "Rozszczep węzeł (AI 1→2)"), type="primary", use_container_width=True, key="btn_st_fission_split"):
+                    nxt_g = int(active_fnode.get("generation", 0)) + 1
+                    sfx = f"{len(fis_nodes) + 1:02d}"
+                    ts_now = int(time.time() * 1000)
+                    c1_id = f"FIS-AI-{ts_now}-A"
+                    c2_id = f"FIS-AI-{ts_now}-B"
+                    fis_nodes.extend([
+                        {
+                            "id": c1_id,
+                            "parentId": active_fnode["id"],
+                            "generation": nxt_g,
+                            "code": f"{active_fnode['code'][:6]}-{sfx}A",
+                            "siteId": active_fnode["siteId"],
+                            "agentId": active_fnode["agentId"],
+                            "trackRef": active_fnode.get("trackRef", "H"),
+                            "status": "active",
+                            "titlePl": f"Model teoretyczno-formalny i weryfikacja: {active_fnode['code']}",
+                            "titleEn": f"Formal Theoretical Model & Verification: {active_fnode['code']}",
+                            "descPl": f"Fragment rozszczepienia G{nxt_g} wygenerowany przez Agenta {active_fagent.get('codename')} dla zadania „{active_fnode['titlePl']}”.",
+                            "descEn": f"G{nxt_g} fission fragment generated by {active_fagent.get('codename')} for '{active_fnode['titleEn']}'.",
+                            "neutronTargets": [],
+                            "deliverablePl": "Specyfikacja matematyczno-regulacyjna i hipoteza testowa.",
+                            "deliverableEn": "Mathematical-regulatory specification & testable hypothesis.",
+                        },
+                        {
+                            "id": c2_id,
+                            "parentId": active_fnode["id"],
+                            "generation": nxt_g,
+                            "code": f"{active_fnode['code'][:6]}-{sfx}B",
+                            "siteId": active_fnode["siteId"],
+                            "agentId": active_fnode["agentId"],
+                            "trackRef": active_fnode.get("trackRef", "H"),
+                            "status": "active",
+                            "titlePl": f"Prototyp symulacyjny i integracja międzyośrodkowa: {active_fnode['code']}",
+                            "titleEn": f"Simulation Prototype & Cross-Site Integration: {active_fnode['code']}",
+                            "descPl": f"Drugi fragment kaskady G{nxt_g} z emisją neutronu sprzęgającego sąsiednie ścieżki projektu Golem 15.",
+                            "descEn": f"Second G{nxt_g} cascade fragment coupling neighboring Golem 15 tracks.",
+                            "neutronTargets": [c1_id],
+                            "deliverablePl": "Prototyp obliczeniowy / laboratoryjny i raport walidacyjny.",
+                            "deliverableEn": "Computational / lab prototype & validation report.",
+                        },
+                    ])
+                    save_db(db)
+                    st.rerun()
+
+                if act_b2.button("🚀 " + ("Create Workspace" if is_en else "Utwórz Środowisko"), use_container_width=True, key="btn_st_fis_ws"):
+                    tr_ref = active_fnode.get("trackRef", "H")
+                    if tr_ref not in tracks_by_id:
+                        tr_ref = "H"
+                    db["subprojects"].insert(0, {
+                        "id": f"sub-fis-{int(time.time()*1000)}",
+                        "trackId": tr_ref,
+                        "secondaryTracks": ["E", "H"],
+                        "branchTopic": f"Rozszczepienie Manhattan [{active_fnode['code']}]",
+                        "title": f"[{active_fnode['code']}] {active_fnode['titlePl']}",
+                        "author": "Ireneusz",
+                        "status": "approved",
+                        "createdAt": datetime.utcnow().isoformat() + "Z",
+                        "description": active_fnode["descPl"],
+                        "philosophicalNote": f"Nadzór Agenta {active_fagent.get('codename', 'AI')}",
+                        "workspace": {"hypotheses": [], "notes": [], "bibliography": []},
+                    })
+                    save_db(db)
+                    st.success("Utworzono nowe Środowisko Badawcze w zakładce Środowiska Badawcze!")
+
+            with st.popover("➕ " + ("Add Custom Fission Node to Graph" if is_en else "Dodaj własny węzeł rozszczepienia do bazy"), use_container_width=True):
+                with st.form("st_custom_fission_form", clear_on_submit=True):
+                    cf_code = st.text_input("Kryptonim węzła / Short Code*", placeholder="np. X10-FUS-09")
+                    cf_title = st.text_input("Tytuł zadania / Node Title*")
+                    cf_site = st.selectbox("Ośrodek Manhattan", options=[s["id"] for s in ms_state.get("sites", [])], format_func=lambda x: f"{sites_lookup[x]['code']} — {sites_lookup[x]['namePl']}")
+                    cf_agent = st.selectbox("Przypisany Agent AI", options=[a["id"] for a in ms_state.get("aiAgents", [])], format_func=lambda x: f"{agents_lookup[x]['codename']} — {agents_lookup[x]['namePl']}")
+                    cf_desc = st.text_area("Opis operacyjny*")
+                    cf_deliv = st.text_input("Oczekiwany artefakt / Deliverable*")
+                    if st.form_submit_button(L["saveBtn"], type="primary"):
+                        if cf_code.strip() and cf_title.strip() and cf_desc.strip():
+                            fis_nodes.append({
+                                "id": f"FIS-USR-{int(time.time()*1000)}",
+                                "parentId": active_fnode["id"],
+                                "generation": int(active_fnode.get("generation", 0)) + 1,
+                                "code": cf_code.strip().upper(),
+                                "siteId": cf_site,
+                                "agentId": cf_agent,
+                                "trackRef": active_fnode.get("trackRef", "H"),
+                                "status": "active",
+                                "titlePl": cf_title.strip(),
+                                "titleEn": cf_title.strip(),
+                                "descPl": cf_desc.strip(),
+                                "descEn": cf_desc.strip(),
+                                "neutronTargets": [],
+                                "deliverablePl": cf_deliv.strip() or "Raport badawczy",
+                                "deliverableEn": cf_deliv.strip() or "Research deliverable",
+                            })
+                            save_db(db)
+                            st.rerun()
+
+        st.divider()
+        st.markdown("### 🎓 " + ("Continuous Back-to-Back Study Pipeline: 3 Years of Administration + 5 Consecutive Years per Selected Topic" if is_en else "Ciągły System Studiów: 3 Lata Administracji + Po 5 Lat Studiów z Każdej Wybranej Tematyki Cały Czas z Rzędu"))
+
+        catalog_list = ms_state.get("fiveYearCatalog", [])
+        catalog_map = {c["id"]: c for c in catalog_list}
+
+        cfg_c1, cfg_c2 = st.columns([1, 3.2])
+        with cfg_c1:
+            new_start_yr = st.number_input("Rok startu / Start Year", min_value=1990, max_value=2100, value=start_cal, step=1, key="st_man_start_yr")
+            if new_start_yr != start_cal:
+                ms_state["startCalendarYear"] = int(new_start_yr)
+                save_db(db)
+                st.rerun()
+        with cfg_c2:
+            new_queue = st.multiselect(
+                "Wybierz i ułóż w kolejności 5-letnie kierunki studiów realizowane bez przerwy z rzędu po 3 latach Administracji:",
+                options=[c["id"] for c in catalog_list],
+                default=[qid for qid in q_ids if qid in catalog_map],
+                format_func=lambda cid: f"{catalog_map[cid]['icon']} {(catalog_map[cid]['titleEn'] if is_en else catalog_map[cid]['titlePl']).split('(')[0].strip()}",
+            )
+            if new_queue and new_queue != q_ids:
+                ms_state["selectedQueue"] = new_queue
+                save_db(db)
+                st.rerun()
+
+        # Blok 0: 3 Lata Studiów Administracji (Lata 1-3)
+        admin_core = ms_state.get("adminCore3Y", {})
+        with st.expander(f"🏛️ LATA 1–3 ({start_cal}–{start_cal + 3}) • {admin_core.get('titleEn') if is_en else admin_core.get('titlePl')} [{len(admin_done_list)}/3]", expanded=True):
+            st.caption(admin_core.get("subtitleEn") if is_en else admin_core.get("subtitlePl"))
+            for yr_obj in admin_core.get("years", []):
+                yr_num = yr_obj["year"]
+                checked = yr_num in admin_done_list
+                new_chk = st.checkbox(
+                    f"**{yr_obj['titleEn'] if is_en else yr_obj['titlePl']}** — {yr_obj['semesters']} ({start_cal + yr_num - 1}/{start_cal + yr_num})",
+                    value=checked,
+                    key=f"chk_admin_yr_{yr_num}",
+                )
+                if new_chk != checked:
+                    if new_chk:
+                        admin_done_list.append(yr_num)
+                    else:
+                        admin_done_list.remove(yr_num)
+                    ms_state["adminCore3Y"]["completedYears"] = sorted(list(set(admin_done_list)))
+                    save_db(db)
+                    st.rerun()
+                for crs in (yr_obj.get("coursesEn", []) if is_en else yr_obj.get("coursesPl", [])):
+                    st.markdown(f"  - {crs}")
+                st.info(f"🎯 {yr_obj.get('deliverableEn') if is_en else yr_obj.get('deliverablePl')}")
+
+        # Bloki 1..N: Po 5 lat studiów z każdej wybranej tematyki cały czas z rzędu
+        running_yr = 4
+        for idx_q, study_id in enumerate(ms_state.get("selectedQueue", []), start=1):
+            c_item = catalog_map.get(study_id)
+            if not c_item:
+                continue
+            p_start = running_yr
+            p_end = p_start + 4
+            cal_s = start_cal + p_start - 1
+            cal_e = cal_s + 5
+            running_yr = p_end + 1
+            done_yrs_topic = topics_done_map.setdefault(study_id, [])
+
+            with st.expander(
+                f"{c_item['icon']} OGNIWO #{idx_q} • LATA {p_start}–{p_end} ({cal_s}–{cal_e}) • {c_item['titleEn'] if is_en else c_item['titlePl']} [{len(done_yrs_topic)}/5]",
+                expanded=(idx_q in (1, len(ms_state.get("selectedQueue", [])))),
+            ):
+                for y_row in c_item.get("years", []):
+                    yn = y_row["year"]
+                    is_y_done = yn in done_yrs_topic
+                    toggled = st.checkbox(
+                        f"**Rok {yn} z 5 (Rok projektowy {p_start + yn - 1} • {cal_s + yn - 1}/{cal_s + yn})** — {y_row['en'] if is_en else y_row['pl']}",
+                        value=is_y_done,
+                        key=f"chk_{study_id}_y{yn}",
+                    )
+                    if toggled != is_y_done:
+                        if toggled:
+                            done_yrs_topic.append(yn)
+                        else:
+                            done_yrs_topic.remove(yn)
+                        topics_done_map[study_id] = sorted(list(set(done_yrs_topic)))
+                        save_db(db)
+                        st.rerun()
 
 
 # ------------------------------------------------------------------------------

@@ -2816,7 +2816,1242 @@ const DEFAULT_SEED = {
       "label": "Filozofia i etyka energii jądrowej: bezpieczeństwo systemowe i odpowiedzialność międzypokoleniowa",
       "status": "approved"
     }
-  ]
+  ],
+  "manhattanSystem": {
+    "codename": "MED-G15 // MANHATTAN DISTRIBUTED SYSTEM",
+    "startCalendarYear": 2026,
+    "doctrine": {
+      "titlePl": "Doktryna Rozproszonego Systemu Projektowego „Manhattan Golem 15”",
+      "titleEn": "Doctrine of the 'Manhattan Golem 15' Distributed Project System",
+      "summaryPl": "Architektura organizacyjna wzorowana na Projekcie Manhattan (Dual Command: Sztab Administracyjno-Inżynieryjny + Rozproszone Ośrodki Badawcze). System rozpoczyna się od 3-letniego fundamentu studiów Administracji (Lata 1–3), po którym następuje nieprzerwany ciąg 5-letnich studiów magisterskich z każdej wybranej tematyki realizowanych ściśle z rzędu (3 + 5×N lat). Równolegle cel nadrzędny ulega kontrolowanemu rozszczepieniu (Fission) w bazie operacyjnej zarządzanej przez wyspecjalizowane Agenty AI.",
+      "summaryEn": "Organizational architecture modeled on the Manhattan Project (Dual Command: Administrative-Engineering HQ + Compartmentalized Distributed Labs). The timeline begins with a mandatory 3-year Administration degree (Years 1–3), followed by a continuous back-to-back sequence of 5-year Master's curricula for each selected discipline (3 + 5×N years). Simultaneously, the overarching goal undergoes controlled chain-reaction fission across a project database orchestrated by specialized AI Agents.",
+      "rulesPl": [
+        "1. Prymat Sztabu Administracyjnego (Lata 1–3): Zanim ruszą 5-letnie bloki badawcze, właściciel buduje aparat prawny, finansowy, logistyczny i regulacyjny (prawo B+R, atomowe, medyczne, kosmiczne i nadzór nad AI).",
+        "2. Sekwencyjna Głębia Akademicka (5 lat z rzędu na każdą wybraną tematykę): Brak powierzchownej wielozadaniowości — każda wybrana dziedzina otrzymuje pełny 5-letni cykl studiów I+II stopnia (10 semestrów, 300 ECTS) realizowany jeden po drugim.",
+        "3. Kompartmentalizacja Ośrodków (5 Sektorów Manhattan): Prace są rozproszone pomiędzy autonomiczne laboratoria (District W-0, Los Alamos Y-15, Oak Ridge X-10, Hanford B-7, Trinity-Biosphere T-9).",
+        "4. Reakcja Łańcuchowa Agentów AI (Graf Rozszczepień): Każdy złożony problem badawczy jest rozszczepiany przez Agenta-Kierownika na mniejsze fragmenty robocze oraz neutrony międzyścieżkowe zasilające sąsiednie projekty."
+      ],
+      "rulesEn": [
+        "1. Primacy of Administrative Command (Years 1–3): Before 5-year scientific blocks begin, the owner establishes legal, financial, logistical, and regulatory mastery (R&D, nuclear, medical, space, and AI law).",
+        "2. Sequential Academic Depth (5 consecutive years per selected topic): Zero shallow multitasking — every selected topic receives a full 5-year B.Sc.+M.Sc. cycle (10 semesters, 300 ECTS) executed back-to-back.",
+        "3. Site Compartmentalization (5 Manhattan Sectors): Research is distributed across autonomous sites (District W-0, Los Alamos Y-15, Oak Ridge X-10, Hanford B-7, Trinity-Biosphere T-9).",
+        "4. AI-Agent Chain Reaction (Fission Graph): Every complex research challenge is fissioned by a Director AI Agent into atomic work packages and cross-sector neutrons feeding neighboring tracks."
+      ]
+    },
+    "sites": [
+      {
+        "id": "SITE-W0",
+        "code": "DISTRICT W-0",
+        "historicalAnalog": "Washington HQ & Oak Ridge Admin",
+        "namePl": "Sztab Centralny Administracji, Prawa i Epistemologii",
+        "nameEn": "Central HQ for Administration, Law & Epistemology",
+        "color": "#f59e0b",
+        "clearance": "POZIOM OMEGA (DYREKCJA)",
+        "scopePl": "3-letnie studia Administracji, prawo sektorowe (atomowe, medyczne, kosmiczne, AI), finanse B+R oraz Projekt E (Filozofia i rygor epistemiczny).",
+        "scopeEn": "3-year Administration core, sector law (nuclear, medical, space, AI), R&D finance, and Project E (Philosophy & epistemic rigor).",
+        "linkedIds": [
+          "ADMIN-3Y",
+          "E"
+        ]
+      },
+      {
+        "id": "SITE-Y15",
+        "code": "LOS ALAMOS Y-15",
+        "historicalAnalog": "Site Y — Los Alamos Theoretical & Computing Division",
+        "namePl": "Laboratorium Teorii, Obliczeń, AI i Cyfrowego Umysłu",
+        "nameEn": "Laboratory for Theory, Computing, AI & Digital Mind",
+        "color": "#38bdf8",
+        "clearance": "POZIOM ALFA-TEORIA",
+        "scopePl": "Matematyka (FND-1), Informatyka (FND-2), Programowanie (FND-3), AI (FND-8) oraz Projekt B (Cyfrowy umysł / WBE) i Projekt C (Maszyny analogowe i neuromorficzne).",
+        "scopeEn": "Mathematics (FND-1), CS (FND-2), Programming (FND-3), AI (FND-8), Project B (Digital Mind / WBE), and Project C (Analog & Neuromorphic Computing).",
+        "linkedIds": [
+          "FND-1",
+          "FND-2",
+          "FND-3",
+          "FND-8",
+          "B",
+          "C"
+        ]
+      },
+      {
+        "id": "SITE-X10",
+        "code": "OAK RIDGE X-10",
+        "historicalAnalog": "Site X — Clinton Pile Reactor & Electromagnetic Plant",
+        "namePl": "Kompleks Fizyki, Elektroniki i Mocy Jądrowej / Fuzji",
+        "nameEn": "Physics, Electronics & Nuclear/Fusion Power Complex",
+        "color": "#f43f5e",
+        "clearance": "POZIOM SIGMA-ATOM",
+        "scopePl": "Fizyka (FND-4), Elektronika (FND-5) oraz Super-Projekt H (Reaktory SMR, HTGR-POLA, MARIA, fuzja termojądrowa i architektura mocy dla A–G).",
+        "scopeEn": "Physics (FND-4), Electronics (FND-5), and Super-Project H (SMR, HTGR-POLA, MARIA reactor, nuclear fusion, and power architecture for A–G).",
+        "linkedIds": [
+          "FND-4",
+          "FND-5",
+          "H"
+        ]
+      },
+      {
+        "id": "SITE-B7",
+        "code": "HANFORD B-7",
+        "historicalAnalog": "Site W — Hanford Chemical & Synthesis Complex",
+        "namePl": "Kompleks Chemii, Biologii, Neurobioniki i Bioinżynierii",
+        "nameEn": "Chemistry, Biology, Neurobionics & Bioengineering Complex",
+        "color": "#10b981",
+        "clearance": "POZIOM BIO-DELTA",
+        "scopePl": "Chemia (FND-6), Biologia (FND-7) oraz Projekt A (Człowiek biocyfrowo-robotyczny, BCI) i Projekt D (Organoidy, inżynieria tkankowa, biologia syntetyczna).",
+        "scopeEn": "Chemistry (FND-6), Biology (FND-7), Project A (Bio-Digital-Robotic Human, BCI), and Project D (Organoids, tissue engineering, synthetic biology).",
+        "linkedIds": [
+          "FND-6",
+          "FND-7",
+          "A",
+          "D"
+        ]
+      },
+      {
+        "id": "SITE-T9",
+        "code": "TRINITY T-9",
+        "historicalAnalog": "Trinity Proving Ground & Field Systems Integration",
+        "namePl": "Poligon Integracji Środowiskowej: Kosmos (F) ↔ Biosfera Ziemi (G)",
+        "nameEn": "Environmental Proving Ground: Space (F) ↔ Earth Biosphere (G)",
+        "color": "#a855f7",
+        "clearance": "POZIOM TERRA-ORBIT",
+        "scopePl": "Projekt F (Człowiek w kosmosie, zamknięte obiegi BLSS, ochrona radiacyjna) oraz Projekt G (Adaptacja na Ziemi, ochrona ekosystemów i klimatu).",
+        "scopeEn": "Project F (Humans in Space, closed-loop BLSS, radiation shielding) and Project G (Earth adaptation, ecosystem & climate protection).",
+        "linkedIds": [
+          "FND-4",
+          "FND-6",
+          "FND-7",
+          "F",
+          "G"
+        ]
+      }
+    ],
+    "adminCore3Y": {
+      "id": "ADMIN-3Y",
+      "durationYears": 3,
+      "semesters": 6,
+      "ects": 180,
+      "siteId": "SITE-W0",
+      "sourceLang": "PL+EN",
+      "titlePl": "Etap Zerowy (Obowiązkowy Rdzeń Manhattan): 3 Lata Studiów Administracji (Licencjat — 180 ECTS)",
+      "titleEn": "Stage Zero (Mandatory Manhattan Core): 3-Year Administration Degree (B.A. — 180 ECTS)",
+      "subtitlePl": "Fundament organizacyjny, prawny, finansowy i regulacyjny otwierający kaskadę 5-letnich studiów specjalistycznych",
+      "subtitleEn": "Organizational, legal, financial, and regulatory foundation preceding the continuous sequence of 5-year specialist degrees",
+      "completedYears": [],
+      "years": [
+        {
+          "year": 1,
+          "semesters": "Semestry I–II (60 ECTS)",
+          "titlePl": "Rok 1 Administracji: Architektura Prawna, Teoria Organizacji i Logika Systemowa",
+          "titleEn": "Year 1 Administration: Legal Architecture, Organization Theory & Systems Logic",
+          "coursesPl": [
+            "🇵🇱 [PL] Wstęp do prawoznawstwa, logika prawnicza i teoria wykładni norm",
+            "🇵🇱/🇬🇧 [PL+EN] Nauka o administracji i teoria organizacji rozproszonych (modele Webera, Manhattan MED, DARPA)",
+            "🇵🇱 [PL] Prawo konstytucyjne i ustrój instytucji publicznych oraz agencji międzynarodowych (UE, ONZ, ESA, MAEA)",
+            "🇵🇱 [PL] Ekonomia sektora publicznego, finanse B+R i budżetowanie zadaniowe",
+            "🇵🇱 [PL] Statystyka, bazy danych i systemy teleinformatyczne w administracji (EZD, bezpieczeństwo rejestrów)"
+          ],
+          "coursesEn": [
+            "🇵🇱 [PL] Jurisprudence fundamentals, legal logic, and statutory interpretation",
+            "🇵🇱/🇬🇧 [PL+EN] Public administration science & distributed organization theory (Weber, Manhattan MED, DARPA models)",
+            "🇵🇱 [PL] Constitutional law & international regulatory bodies (EU, UN, ESA, IAEA)",
+            "🇵🇱 [PL] Public economics, R&D finance, and mission-oriented budgeting",
+            "🇵🇱 [PL] Administrative statistics, databases, and e-governance information security"
+          ],
+          "deliverablePl": "Statut organizacyjny i matryca uprawnień Sztabu Centralnego Golem 15 (District W-0).",
+          "deliverableEn": "Organizational charter and clearance matrix for Golem 15 Central HQ (District W-0)."
+        },
+        {
+          "year": 2,
+          "semesters": "Semestry III–IV (60 ECTS)",
+          "titlePl": "Rok 2 Administracji: Postępowanie Administracyjne, Patenty Deep-Tech i Inżynieria Programów",
+          "titleEn": "Year 2 Administration: Administrative Procedure, Deep-Tech IP & Program Engineering",
+          "coursesPl": [
+            "🇵🇱 [PL] Postępowanie administracyjne (KPA) i sądowoadministracyjne (decyzje środowiskowe, lokalizacyjne i regulacyjne)",
+            "🇵🇱/🇬🇧 [PL+EN] Prawo cywilne, konsorcja badawcze oraz własność intelektualna i prawo patentowe (UPRP, EPO, WIPO)",
+            "🇵🇱/🇬🇧 [PL+EN] Zamówienia publiczne w nauce, granty badawcze (NCN, NCBR, Horizon Europe) i logistyka aparaturowa",
+            "🇬🇧 [EN] Zarządzanie megaprojektami technologicznymi (NASA Systems Engineering, PRINCE2, analiza ścieżki krytycznej)",
+            "🇵🇱/🇬🇧 [PL+EN] Cyberbezpieczeństwo, ochrona tajemnicy badawczej i kompartmentalizacja dostępu"
+          ],
+          "coursesEn": [
+            "🇵🇱 [PL] Administrative & judicial-administrative procedure (environmental, siting, and licensing decisions)",
+            "🇵🇱/🇬🇧 [PL+EN] Civil law, R&D consortia, intellectual property, and patent law (UPRP, EPO, WIPO)",
+            "🇵🇱/🇬🇧 [PL+EN] Scientific public procurement, research grants (NCN, NCBR, Horizon Europe), and lab logistics",
+            "🇬🇧 [EN] Megaproject management (NASA Systems Engineering, PRINCE2, Critical Path Method)",
+            "🇵🇱/🇬🇧 [PL+EN] Cybersecurity, research secrecy protection, and compartmentalized access governance"
+          ],
+          "deliverablePl": "System obiegu dokumentacji badawczej, polityka IP oraz procedury zakupowo-logistyczne dla 5 ośrodków.",
+          "deliverableEn": "Research documentation workflow, IP policy, and procurement protocols across all 5 distributed sites."
+        },
+        {
+          "year": 3,
+          "semesters": "Semestry V–VI (60 ECTS)",
+          "titlePl": "Rok 3 Administracji: Prawo Sektorów Strategicznych (Atom, Bioetyka, Kosmos, AI) i Dyplom",
+          "titleEn": "Year 3 Administration: Strategic Sector Law (Nuclear, Bioethics, Space, AI) & B.A. Thesis",
+          "coursesPl": [
+            "🇵🇱/🇬🇧 [PL+EN] Prawo atomowe, dozór jądrowy (PAA, Euratom, IAEA) i certyfikacja reaktorów SMR/HTGR (pod Super-Projekt H)",
+            "🇵🇱/🇬🇧 [PL+EN] Prawo medyczne, komisje bioetyczne, badania kliniczne i regulacje wyrobów medycznych/BCI MDR (pod Projekty A i D)",
+            "🇵🇱/🇬🇧 [PL+EN] Międzynarodowe prawo kosmiczne (POLSA, traktaty ONZ) oraz prawo ochrony środowiska i klimatu (pod Projekty F i G)",
+            "🇵🇱/🇬🇧 [PL+EN] Regulacje sztucznej inteligencji (EU AI Act), audyt algorytmiczny i nadzór nad flotą Agentów AI (pod Projekty B, C, E)",
+            "🇵🇱 [PL] Seminarium dyplomowe (Licencjat): Projekt rozproszonego instytutu badawczego na kanwie Projektu Manhattan"
+          ],
+          "coursesEn": [
+            "🇵🇱/🇬🇧 [PL+EN] Nuclear law, radiological oversight (PAA, Euratom, IAEA) & SMR/HTGR licensing (for Super-Project H)",
+            "🇵🇱/🇬🇧 [PL+EN] Medical law, bioethics committees, clinical trials & BCI medical device regulations (for Projects A & D)",
+            "🇵🇱/🇬🇧 [PL+EN] International space law (POLSA, UN treaties) & environmental/climate protection law (for Projects F & G)",
+            "🇵🇱/🇬🇧 [PL+EN] AI governance (EU AI Act), algorithmic auditing & multi-agent AI supervision (for Projects B, C, E)",
+            "🇵🇱 [PL] B.A. Thesis Seminar: Blueprint of a Manhattan-style distributed research institute"
+          ],
+          "deliverablePl": "Obrona licencjatu z Administracji i pełne odblokowanie sekwencji 5-letnich studiów kierunkowych.",
+          "deliverableEn": "Administration B.A. defense and full operational clearance for the continuous 5-year specialist study queue."
+        }
+      ]
+    },
+    "fiveYearCatalog": [
+      {
+        "id": "STU-FND-1",
+        "group": "FOUNDATION",
+        "refId": "FND-1",
+        "siteId": "SITE-Y15",
+        "icon": "📐",
+        "color": "#38bdf8",
+        "sourceLang": "PL+EN",
+        "titlePl": "Matematyka i Logika Matematyczna (5 lat — I+II stopień)",
+        "titleEn": "Mathematics & Mathematical Logic (5 Years — B.Sc.+M.Sc.)",
+        "years": [
+          {
+            "year": 1,
+            "pl": "Logika formalna, teoria mnogości, analiza matematyczna I–II, algebra liniowa z geometrią (OpenAGH, Skoczylas, Strang).",
+            "en": "Formal logic, set theory, calculus I–II, linear algebra with geometry (OpenAGH, Strang)."
+          },
+          {
+            "year": 2,
+            "pl": "Równania różniczkowe zwyczajne i cząstkowe, topologia ogólna, analiza zespolona, matematyka dyskretna i teoria grafów.",
+            "en": "ODEs & PDEs, general topology, complex analysis, discrete math & graph theory."
+          },
+          {
+            "year": 3,
+            "pl": "Rachunek prawdopodobieństwa, statystyka matematyczna, analiza funkcjonalna, metody numeryczne i obrona I stopnia.",
+            "en": "Probability theory, mathematical statistics, functional analysis, numerical methods & B.Sc. thesis."
+          },
+          {
+            "year": 4,
+            "pl": "Układy dynamiczne i teoria chaosu, geometria różniczkowa i rachunek tensorowy (Penrose), teoria informacji i entropia.",
+            "en": "Dynamical systems & chaos, differential geometry & tensor calculus (Penrose), information theory."
+          },
+          {
+            "year": 5,
+            "pl": "Procesy stochastyczne, wnioskowanie bayesowskie, topologia algebraiczna konektomów i praca magisterska dla Projektów B/C/H.",
+            "en": "Stochastic processes, Bayesian inference, algebraic topology of connectomes & M.Sc. thesis for B/C/H."
+          }
+        ]
+      },
+      {
+        "id": "STU-FND-2",
+        "group": "FOUNDATION",
+        "refId": "FND-2",
+        "siteId": "SITE-Y15",
+        "icon": "💻",
+        "color": "#60a5fa",
+        "sourceLang": "PL+EN",
+        "titlePl": "Informatyka Teoretyczna i Systemowa (5 lat — I+II stopień)",
+        "titleEn": "Computer Science & Distributed Systems (5 Years — B.Sc.+M.Sc.)",
+        "years": [
+          {
+            "year": 1,
+            "pl": "Logika układów cyfrowych i architektura komputerów (Petzold), algorytmy i struktury danych (Cormen, Ważniak MIMUW).",
+            "en": "Digital logic & computer architecture (Petzold), algorithms & data structures (Cormen)."
+          },
+          {
+            "year": 2,
+            "pl": "Systemy operacyjne, programowanie współbieżne, sieci komputerowe, relacyjne i grafowe bazy danych.",
+            "en": "Operating systems, concurrency, computer networks, relational & graph databases."
+          },
+          {
+            "year": 3,
+            "pl": "Teoria obliczeń i złożoności, systemy czasu rzeczywistego (RTOS), kryptografia stosowana i projekt inżynierski.",
+            "en": "Theory of computation & complexity, RTOS, applied cryptography & B.Eng. project."
+          },
+          {
+            "year": 4,
+            "pl": "Systemy rozproszone wielkiej skali, obliczenia wysokiej wydajności (HPC / klastry GPU), architektury odporne na błędy (fault-tolerant).",
+            "en": "Large-scale distributed systems, HPC / GPU clusters, fault-tolerant space/medical architectures."
+          },
+          {
+            "year": 5,
+            "pl": "Reprezentacja wiedzy, ontologie grafowe, bezpieczeństwo systemów krytycznych i praca magisterska z architektury rozproszonej.",
+            "en": "Knowledge representation, graph ontologies, critical systems security & M.Sc. thesis."
+          }
+        ]
+      },
+      {
+        "id": "STU-FND-3",
+        "group": "FOUNDATION",
+        "refId": "FND-3",
+        "siteId": "SITE-Y15",
+        "icon": "⌨️",
+        "color": "#818cf8",
+        "sourceLang": "PL+EN",
+        "titlePl": "Inżynieria Oprogramowania i Symulacji Naukowych (5 lat — I+II stopień)",
+        "titleEn": "Software Engineering & Scientific Simulation (5 Years — B.Sc.+M.Sc.)",
+        "years": [
+          {
+            "year": 1,
+            "pl": "Programowanie strukturalne, obiektowe i funkcyjne (Python, C, C++), kontrola wersji Git i testowanie jednostkowe.",
+            "en": "Procedural, OOP & functional programming (Python, C, C++), Git & unit testing."
+          },
+          {
+            "year": 2,
+            "pl": "Programowanie systemowe i niskopoziomowe (Rust, C++20), interfejsy sprzętowe, sterowniki i akwizycja danych pomiarowych.",
+            "en": "Systems & low-level programming (Rust, C++20), hardware APIs & sensor data acquisition."
+          },
+          {
+            "year": 3,
+            "pl": "Obliczenia naukowe (NumPy, SciPy, Julia), architektura aplikacji webowych/mobilnych i inżynierski system symulacyjny.",
+            "en": "Scientific computing (NumPy, SciPy, Julia), web/mobile architecture & B.Eng. simulation platform."
+          },
+          {
+            "year": 4,
+            "pl": "Symulatory fizyczne, biologiczne i neuronalne (NEURON, Brian2, OpenMM), programowanie równoległe CUDA/Triton.",
+            "en": "Physical, biological & neural simulators (NEURON, Brian2, OpenMM), CUDA/Triton parallel kernels."
+          },
+          {
+            "year": 5,
+            "pl": "Weryfikacja formalna kodu krytycznego, reprodukowalne potoki badawcze MLOps i magisterium z inżynierii symulacyjnej.",
+            "en": "Formal verification of safety-critical code, reproducible MLOps pipelines & M.Sc. thesis."
+          }
+        ]
+      },
+      {
+        "id": "STU-FND-4",
+        "group": "FOUNDATION",
+        "refId": "FND-4",
+        "siteId": "SITE-X10",
+        "icon": "⚛️",
+        "color": "#f59e0b",
+        "sourceLang": "PL+EN",
+        "titlePl": "Fizyka Techniczna, Kwantowa i Jądrowa (5 lat — I+II stopień)",
+        "titleEn": "Technical, Quantum & Nuclear Physics (5 Years — B.Sc.+M.Sc.)",
+        "years": [
+          {
+            "year": 1,
+            "pl": "Mechanika klasyczna i relatywistyczna, fale i optyka, pracownia fizyczna I (OpenStax Fizyka, Feynman).",
+            "en": "Classical & relativistic mechanics, waves & optics, physics lab I (OpenStax, Feynman)."
+          },
+          {
+            "year": 2,
+            "pl": "Elektrodynamika klasyczna (równania Maxwella), termodynamika i fizyka statystyczna, mechanika analityczna Lagrange’a–Hamiltona.",
+            "en": "Classical electrodynamics (Maxwell), thermodynamics & statistical physics, Lagrangian/Hamiltonian mechanics."
+          },
+          {
+            "year": 3,
+            "pl": "Mechanika kwantowa I (Griffiths), fizyka ciała stałego i półprzewodników, podstawy fizyki jądrowej i dyplom I stopnia.",
+            "en": "Quantum mechanics I (Griffiths), solid-state & semiconductor physics, nuclear basics & B.Sc."
+          },
+          {
+            "year": 4,
+            "pl": "Fizyka reaktorów jądrowych i transportu neutronów, fizyka plazmy i syntezy termojądrowej, dozymetria i ochrona radiacyjna.",
+            "en": "Nuclear reactor physics & neutron transport, plasma physics & fusion, radiation dosimetry."
+          },
+          {
+            "year": 5,
+            "pl": "Termodynamika nierównowagowa układów żywych, informacja kwantowa (Nielsen & Chuang) i praca magisterska (Projekty C/F/H).",
+            "en": "Non-equilibrium thermodynamics of life, quantum information & M.Sc. thesis (Projects C/F/H)."
+          }
+        ]
+      },
+      {
+        "id": "STU-FND-5",
+        "group": "FOUNDATION",
+        "refId": "FND-5",
+        "siteId": "SITE-X10",
+        "icon": "🔌",
+        "color": "#eab308",
+        "sourceLang": "PL+EN",
+        "titlePl": "Elektronika, Bioelektronika i Układy Neuromorficzne (5 lat — I+II stopień)",
+        "titleEn": "Electronics, Bioelectronics & Neuromorphic Hardware (5 Years — B.Sc.+M.Sc.)",
+        "years": [
+          {
+            "year": 1,
+            "pl": "Teoria obwodów elektrycznych, metrologia elektroniczna, elementy półprzewodnikowe (Horowitz & Hill „Sztuka elektroniki”).",
+            "en": "Circuit theory, electronic metrology, semiconductor devices (The Art of Electronics)."
+          },
+          {
+            "year": 2,
+            "pl": "Elektronika analogowa (wzmacniacze operacyjne, filtry, oscylatory), elektronika cyfrowa i języki opisu sprzętu Verilog/VHDL (FPGA).",
+            "en": "Analog circuits (op-amps, filters, oscillators), digital logic & FPGA design (Verilog/VHDL)."
+          },
+          {
+            "year": 3,
+            "pl": "Mikrokontrolery, systemy wbudowane SoC, cyfrowe przetwarzanie sygnałów (DSP), przetworniki ADC/DAC i projekt inżynierski.",
+            "en": "Microcontrollers, embedded SoCs, DSP, precision ADC/DAC & B.Eng. hardware prototype."
+          },
+          {
+            "year": 4,
+            "pl": "Aparatura biomedyczna niskoszumowa (EEG, ECoG, EMG, fNIRS), elektronika mocy i sterowanie napędami bioniczno-robotycznymi.",
+            "en": "Low-noise biomedical front-ends (EEG, ECoG, EMG, fNIRS), power electronics & bionic actuators."
+          },
+          {
+            "year": 5,
+            "pl": "Układy VLSI, memrystory, procesory neuromorficzne i fotoniczne oraz praca magisterska dla Projektów A i C.",
+            "en": "VLSI design, memristors, neuromorphic & photonic processors, and M.Sc. thesis for A & C."
+          }
+        ]
+      },
+      {
+        "id": "STU-FND-6",
+        "group": "FOUNDATION",
+        "refId": "FND-6",
+        "siteId": "SITE-B7",
+        "icon": "🧪",
+        "color": "#10b981",
+        "sourceLang": "PL+EN",
+        "titlePl": "Chemia, Biochemia i Inżynieria Materiałowa (5 lat — I+II stopień)",
+        "titleEn": "Chemistry, Biochemistry & Biomaterials Engineering (5 Years — B.Sc.+M.Sc.)",
+        "years": [
+          {
+            "year": 1,
+            "pl": "Chemia ogólna i nieorganiczna, stechiometria, równowagi jonowe i analiza jakościowo-ilościowa (OpenStax Chemia, Bielański).",
+            "en": "General & inorganic chemistry, stoichiometry, ionic equilibria & analytical lab."
+          },
+          {
+            "year": 2,
+            "pl": "Chemia organiczna I–II (mechanizmy reakcji, stereochemia, synteza), chemia fizyczna, termodynamika chemiczna i elektrochemia.",
+            "en": "Organic chemistry I–II, physical chemistry, chemical thermodynamics & electrochemistry."
+          },
+          {
+            "year": 3,
+            "pl": "Biochemia strukturalna i metaboliczna (Stryer: białka, enzymy, kwasy nukleinowe), spektroskopia (NMR, MS, IR) i dyplom I stopnia.",
+            "en": "Structural & metabolic biochemistry (Stryer), spectroscopy (NMR, MS, IR) & B.Sc. thesis."
+          },
+          {
+            "year": 4,
+            "pl": "Chemia polimerów biokompatybilnych i hydrożeli tkankowych, radiochemia izotopów medycznych i chemia jądrowego cyklu paliwowego.",
+            "en": "Biocompatible polymers & hydrogels, medical isotope radiochemistry & nuclear fuel chemistry."
+          },
+          {
+            "year": 5,
+            "pl": "Zamknięte obiegi katalityczne (regeneracja O2/H2O Sabatiera–Boscha dla kosmosu), chemia środowiska i praca magisterska.",
+            "en": "Closed-loop catalytic life-support chemistry (Sabatier/Bosch), environmental chemistry & M.Sc."
+          }
+        ]
+      },
+      {
+        "id": "STU-FND-7",
+        "group": "FOUNDATION",
+        "refId": "FND-7",
+        "siteId": "SITE-B7",
+        "icon": "🧬",
+        "color": "#22c55e",
+        "sourceLang": "PL+EN",
+        "titlePl": "Biologia Molekularna, Neurobiologia i Fizjologia Człowieka (5 lat — I+II stopień)",
+        "titleEn": "Molecular Biology, Neurobiology & Human Physiology (5 Years — B.Sc.+M.Sc.)",
+        "years": [
+          {
+            "year": 1,
+            "pl": "Biologia komórki, histologia, anatomia prawidłowa człowieka i podstawy ewolucjonizmu (Biologia Campbella, Alberts).",
+            "en": "Cell biology, histology, human anatomy & evolutionary biology (Campbell, Alberts)."
+          },
+          {
+            "year": 2,
+            "pl": "Biologia molekularna, genetyka klasyczna i genomika (Brown „Genomy”), mikrobiologia i immunologia podstawowa.",
+            "en": "Molecular biology, genetics & genomics (Brown), microbiology & immunology."
+          },
+          {
+            "year": 3,
+            "pl": "Fizjologia układów człowieka (nerwowy, krążenia, oddechowy, hormonalny), biofizyka błon komórkowych i licencjat.",
+            "en": "Human systems physiology, membrane biophysics & B.Sc. thesis."
+          },
+          {
+            "year": 4,
+            "pl": "Neurobiologia komórkowa i systemowa (Kandel), elektrofizjologia synaps, embriologia, komórki macierzyste i organoidy.",
+            "en": "Cellular & systems neurobiology (Kandel), synaptic electrophysiology, stem cells & organoids."
+          },
+          {
+            "year": 5,
+            "pl": "Ekologia systemowa biosfery, fizjologia ekstremalna (mikrograwitacja, radiacja) i praca magisterska (Projekty A/B/D/F/G).",
+            "en": "Systems biosphere ecology, extreme space physiology & M.Sc. thesis (Projects A/B/D/F/G)."
+          }
+        ]
+      },
+      {
+        "id": "STU-FND-8",
+        "group": "FOUNDATION",
+        "refId": "FND-8",
+        "siteId": "SITE-Y15",
+        "icon": "🤖",
+        "color": "#a855f7",
+        "sourceLang": "PL+EN",
+        "titlePl": "Sztuczna Inteligencja, Uczenie Maszynowe i Systemy Wieloagentowe (5 lat — I+II stopień)",
+        "titleEn": "Artificial Intelligence, Deep Learning & Multi-Agent Systems (5 Years — B.Sc.+M.Sc.)",
+        "years": [
+          {
+            "year": 1,
+            "pl": "Matematyczne podstawy ML, optymalizacja wypukła, klasyczne uczenie maszynowe i eksploracja danych (Géron, scikit-learn).",
+            "en": "Mathematical foundations of ML, convex optimization & classical machine learning (Géron)."
+          },
+          {
+            "year": 2,
+            "pl": "Głębokie sieci neuronowe (PyTorch/JAX): architektury CNN, rekurencyjne, Transformery i modele generatywne.",
+            "en": "Deep neural networks (PyTorch/JAX): CNNs, sequence models, Transformers & generative models."
+          },
+          {
+            "year": 3,
+            "pl": "Uczenie ze wzmocnieniem (RL), sterowanie robotyczne, wizja komputerowa, przetwarzanie języka i projekt inżynierski AI.",
+            "en": "Reinforcement learning (RL), robotic control, computer vision, NLP & B.Eng. AI project."
+          },
+          {
+            "year": 4,
+            "pl": "Impulsowe sieci neuronowe (SNN), dekodowanie sygnałów mózgowych BCI/fMRI, AI w biologii strukturalnej i fizyce reaktorowej.",
+            "en": "Spiking Neural Networks (SNN), BCI/fMRI neural decoding, AI for structural biology & reactor physics."
+          },
+          {
+            "year": 5,
+            "pl": "Architektury wieloagentowe (MAS), interpretowalność (XAI), alignment, bezpieczeństwo AI i praca magisterska.",
+            "en": "Multi-Agent Systems (MAS), interpretability (XAI), AI safety/alignment & M.Sc. thesis."
+          }
+        ]
+      },
+      {
+        "id": "STU-TRK-A",
+        "group": "TRACK",
+        "refId": "A",
+        "siteId": "SITE-B7",
+        "icon": "🦾",
+        "color": "#38bdf8",
+        "sourceLang": "PL+EN",
+        "titlePl": "Projekt A: Inżynieria Biomedyczna, Bionika i Neuroinżynieria (5 lat)",
+        "titleEn": "Project A: Biomedical Engineering, Bionics & Neuroengineering (5 Years)",
+        "years": [
+          {
+            "year": 1,
+            "pl": "Anatomia i biomechanika układu ruchu, materiałoznawstwo medyczne, podstawy elektroniki i sygnałów biomedycznych.",
+            "en": "Musculoskeletal biomechanics, medical materials, biomedical signals & electronics."
+          },
+          {
+            "year": 2,
+            "pl": "Sensory i aktuatory medyczne, biokompatybilność implantów, przetwarzanie sygnałów EEG/EMG/EKG/fNIRS.",
+            "en": "Medical sensors & actuators, implant biocompatibility, EEG/EMG/ECG/fNIRS signal processing."
+          },
+          {
+            "year": 3,
+            "pl": "Mechatronika protetyczna, egzoszkielety rehabilitacyjne, sztuczne narządy wspomagające i projekt inżynierski.",
+            "en": "Prosthetic mechatronics, rehabilitation exoskeletons, artificial organs & B.Eng. design."
+          },
+          {
+            "year": 4,
+            "pl": "Inwazyjne i nieinwazyjne interfejsy mózg–komputer (BCI), neurostymulacja zamkniętej pętli i dekodowanie intencji ruchowej.",
+            "en": "Invasive & non-invasive Brain-Computer Interfaces (BCI), closed-loop neurostimulation."
+          },
+          {
+            "year": 5,
+            "pl": "Integracja kliniczna człowiek–maszyna, bezpieczeństwo cybernetyczne implantów i praca magisterska z neurobioniki.",
+            "en": "Clinical human-machine integration, implant cybersecurity & M.Sc. thesis in neurobionics."
+          }
+        ]
+      },
+      {
+        "id": "STU-TRK-B",
+        "group": "TRACK",
+        "refId": "B",
+        "siteId": "SITE-Y15",
+        "icon": "🧠",
+        "color": "#818cf8",
+        "sourceLang": "PL+EN",
+        "titlePl": "Projekt B: Neuronauka Obliczeniowa i Modelowanie Cyfrowego Umysłu (5 lat)",
+        "titleEn": "Project B: Computational Neuroscience & Digital Mind Modeling (5 Years)",
+        "years": [
+          {
+            "year": 1,
+            "pl": "Kognitywistyka, neuroanatomia funkcjonalna, psychologia poznawcza (pamięć, uwaga, percepcja) i modelowanie matematyczne.",
+            "en": "Cognitive science, functional neuroanatomy, memory/perception & mathematical modeling."
+          },
+          {
+            "year": 2,
+            "pl": "Biofizyczne modele pojedynczych neuronów (Hodgkin–Huxley, Izhikevich), plastyczność synaptyczna STDP i kodowanie neuronalne.",
+            "en": "Biophysical neuron models (Hodgkin-Huxley, Izhikevich), STDP plasticity & neural coding."
+          },
+          {
+            "year": 3,
+            "pl": "Obrazowanie mózgu (fMRI, MEG, mikroskopia elektronowa), konektomika grafowa i dyplom licencjacki.",
+            "en": "Neuroimaging (fMRI, MEG, EM), graph connectomics & B.Sc. thesis."
+          },
+          {
+            "year": 4,
+            "pl": "Wielkoskalowe symulacje sieci korowo-wzgórzowych, konsolidacja pamięci i cyfrowy sen w sieciach sztucznych i biologicznych.",
+            "en": "Large-scale thalamocortical simulations, memory consolidation & digital sleep dynamics."
+          },
+          {
+            "year": 5,
+            "pl": " Metodologia i ograniczenia Whole Brain Emulation (WBE), problem tożsamości i świadomości oraz praca magisterska.",
+            "en": "Methodology & physical limits of Whole Brain Emulation (WBE), consciousness & M.Sc. thesis."
+          }
+        ]
+      },
+      {
+        "id": "STU-TRK-C",
+        "group": "TRACK",
+        "refId": "C",
+        "siteId": "SITE-Y15",
+        "icon": "〰️",
+        "color": "#f59e0b",
+        "sourceLang": "PL+EN",
+        "titlePl": "Projekt C: Obliczanie Fizyczne, Fotonika i Maszyny Analogowo-Neuromorficzne (5 lat)",
+        "titleEn": "Project C: Physical Computing, Photonics & Analog-Neuromorphic Machines (5 Years)",
+        "years": [
+          {
+            "year": 1,
+            "pl": "Historia i teoria komputerów analogowych, równania różniczkowe realizowane w obwodach ciągłych RC/RLC.",
+            "en": "Analog computing theory, continuous differential analyzers & RC/RLC dynamical circuits."
+          },
+          {
+            "year": 2,
+            "pl": "Nieliniowe układy dynamiczne, obliczenia zbiornikowe (Reservoir Computing) i oscylatorowe sieci sprzężone.",
+            "en": "Nonlinear dynamical systems, Reservoir Computing & coupled oscillator networks."
+          },
+          {
+            "year": 3,
+            "pl": "Fizyka memrystorów, macierze skrzyżowane in-memory computing, energetyka obliczeń (limit Landauera) i projekt inżynierski.",
+            "en": "Memristor physics, crossbar in-memory computing, Landauer thermodynamic limits & B.Eng."
+          },
+          {
+            "year": 4,
+            "pl": "Procesory fotoniczne i optyczne mnożenie macierzy, obliczenia kwantowe i hybrydowe biokomputery (Brainoware).",
+            "en": "Photonic processors & optical matrix multiplication, quantum & organoid biocomputing."
+          },
+          {
+            "year": 5,
+            "pl": "Projektowanie ultra-energooszczędnych akceleratorów fizycznych dla AI/BCI i praca magisterska.",
+            "en": "Ultra-low-power physical AI/BCI accelerators & M.Sc. thesis."
+          }
+        ]
+      },
+      {
+        "id": "STU-TRK-D",
+        "group": "TRACK",
+        "refId": "D",
+        "siteId": "SITE-B7",
+        "icon": "🧫",
+        "color": "#10b981",
+        "sourceLang": "PL+EN",
+        "titlePl": "Projekt D: Biotechnologia Medyczna, Inżynieria Tkankowa i Biologia Syntetyczna (5 lat)",
+        "titleEn": "Project D: Medical Biotechnology, Tissue Engineering & Synthetic Biology (5 Years)",
+        "years": [
+          {
+            "year": 1,
+            "pl": "Biologia komórki i rozwoju, hodowle komórkowe in vitro, sterylność laboratoryjna i podstawy genetyki molekularnej.",
+            "en": "Developmental cell biology, aseptic cell culture & molecular genetics."
+          },
+          {
+            "year": 2,
+            "pl": "Inżynieria genetyczna, edycja genomu (CRISPR-Cas, prime editing), epigenetyka i przeprogramowywanie komórek (iPSC).",
+            "en": "Genetic engineering, genome editing (CRISPR/prime editing), epigenetics & iPSC reprogramming."
+          },
+          {
+            "year": 3,
+            "pl": "Biomateriały rusztowaniowe, biodruk 3D tkanek unaczynionych, bioreaktory perfuzyjne i dyplom I stopnia.",
+            "en": "Scaffold biomaterials, 3D bioprinting of vascularized tissues, perfusion bioreactors & B.Sc."
+          },
+          {
+            "year": 4,
+            "pl": "Hodowla organoidów (mózgowych, przysadkowych, wątrobowych), biologia syntetyczna obwodów genowych i terapie genowe.",
+            "en": "Organoid engineering (cerebral, pituitary, hepatic), synthetic gene circuits & gene therapies."
+          },
+          {
+            "year": 5,
+            "pl": "Medycyna regeneracyjna i transplantacyjna, analiza kulturowo-bioetyczna („Frankenstein”) i praca magisterska.",
+            "en": "Regenerative transplantation medicine, bioethical boundaries & M.Sc. thesis."
+          }
+        ]
+      },
+      {
+        "id": "STU-TRK-E",
+        "group": "TRACK",
+        "refId": "E",
+        "siteId": "SITE-W0",
+        "icon": "⚖️",
+        "color": "#eab308",
+        "sourceLang": "PL+EN",
+        "titlePl": "Projekt E: Filozofia Nauki, Umysłu, Technologii i Bioetyka Stosowana (5 lat)",
+        "titleEn": "Project E: Philosophy of Science, Mind, Technology & Applied Bioethics (5 Years)",
+        "years": [
+          {
+            "year": 1,
+            "pl": "Logika klasyczna i nieklasyczna, epistemologia, teoria prawdy i historia metodologii nauk przyrodniczych.",
+            "en": "Classical & non-classical logic, epistemology & history of scientific methodology."
+          },
+          {
+            "year": 2,
+            "pl": "Filozofia nauki (Popper, Kuhn, Lakatos), kryteria falsyfikowalności, wnioskowanie przyczynowe i status modeli naukowych.",
+            "en": "Philosophy of science (Popper, Kuhn, Lakatos), falsifiability, causal inference & scientific models."
+          },
+          {
+            "year": 3,
+            "pl": "Filozofia umysłu i kognitywistyki (funkcjonalizm, emergencja, problem świadomości, tożsamość osobowa) i licencjat.",
+            "en": "Philosophy of mind (functionalism, emergence, consciousness, personal identity) & B.A. thesis."
+          },
+          {
+            "year": 4,
+            "pl": "Bioetyka kliniczna i regulacyjna, etyka inżynierii genetycznej, neuroetyka (prawa neuronalne / neurorights) i etyka AI.",
+            "en": "Clinical & regulatory bioethics, genetic ethics, neuroethics (neurorights) & AI alignment ethics."
+          },
+          {
+            "year": 5,
+            "pl": "Filozofia techniki, etyka środowiskowa i kosmiczna oraz magisterium z rygoru epistemicznego megaprojektów.",
+            "en": "Philosophy of technology, planetary/space ethics & M.A. thesis on epistemic rigor."
+          }
+        ]
+      },
+      {
+        "id": "STU-TRK-F",
+        "group": "TRACK",
+        "refId": "F",
+        "siteId": "SITE-T9",
+        "icon": "🚀",
+        "color": "#ec4899",
+        "sourceLang": "PL+EN",
+        "titlePl": "Projekt F: Inżynieria Kosmiczna, Systemy BLSS i Medycyna Astronautyczna (5 lat)",
+        "titleEn": "Project F: Space Systems Engineering, BLSS & Bioastronautics (5 Years)",
+        "years": [
+          {
+            "year": 1,
+            "pl": "Mechanika orbitalna, środowisko kosmiczne (próżnia, termika, mikrometeoroidy, promieniowanie GCR/SPE) i inżynieria systemowa.",
+            "en": "Orbital mechanics, space environment (vacuum, thermal, GCR/SPE radiation) & systems engineering."
+          },
+          {
+            "year": 2,
+            "pl": "Fizjologia człowieka w mikrograwitacji (zanik kostno-mięśniowy, układ krążenia, neuro-okulistyka, immunologia kosmiczna).",
+            "en": "Human physiology in microgravity (bone/muscle loss, cardiovascular, space immunology)."
+          },
+          {
+            "year": 3,
+            "pl": "Fizyczno-chemiczne systemy podtrzymywania życia (ECLSS: tlen, CO2, recykling wody), skafandry i projekt inżynierski.",
+            "en": "Physicochemical ECLSS (O2, CO2 scrubbing, water recovery), EVA suits & B.Eng. project."
+          },
+          {
+            "year": 4,
+            "pl": "Bioregeneracyjne systemy BLSS (algi, hydroponika, mikrobiomy zamknięte), osłony radiacyjne i architektura baz Księżyc/Mars.",
+            "en": "Bioregenerative BLSS (algae, hydroponics), radiation shielding & Lunar/Martian habitats."
+          },
+          {
+            "year": 5,
+            "pl": "Zasilanie jądrowe misji (RTG/Kilopower), telemedycyna autonomiczna i praca magisterska z inżynierii habitatów.",
+            "en": "Space nuclear power (RTG/Kilopower), autonomous space medicine & M.Sc. thesis."
+          }
+        ]
+      },
+      {
+        "id": "STU-TRK-G",
+        "group": "TRACK",
+        "refId": "G",
+        "siteId": "SITE-T9",
+        "icon": "🌍",
+        "color": "#22c55e",
+        "sourceLang": "PL+EN",
+        "titlePl": "Projekt G: Inżynieria Środowiska, Klimatologia i Ochrona Biosfery Ziemi (5 lat)",
+        "titleEn": "Project G: Environmental Engineering, Climatology & Biosphere Protection (5 Years)",
+        "years": [
+          {
+            "year": 1,
+            "pl": "Nauka o systemie Ziemi, cykle biogeochemiczne (C, N, P, H2O), meteorologia, hydrologia i chemia środowiska.",
+            "en": "Earth system science, biogeochemical cycles (C, N, P, H2O), hydrology & environmental chemistry."
+          },
+          {
+            "year": 2,
+            "pl": "Ekologia populacji i ekosystemów, bioróżnorodność, mikrobiologia gleby i wód oraz toksykologia środowiskowa.",
+            "en": "Ecosystem ecology, biodiversity, soil/water microbiology & environmental toxicology."
+          },
+          {
+            "year": 3,
+            "pl": "Technologie oczyszczania wody, powietrza i remediacji gleb, gospodarka obiegu zamkniętego i projekt inżynierski.",
+            "en": "Water/air purification, soil remediation, circular economy & B.Eng. thesis."
+          },
+          {
+            "year": 4,
+            "pl": "Modelowanie klimatu, mikroklimat leśny i miejski, zdrowie środowiskowe (One Health) i bezemisyjna transformacja energetyczna.",
+            "en": "Climate modeling, forest/urban microclimates, One Health & zero-emission energy transition."
+          },
+          {
+            "year": 5,
+            "pl": "Teledetekcja satelitarna Ziemi, inżynieria regeneracji ekosystemów i praca magisterska z ochrony biosfery.",
+            "en": "Satellite Earth observation, ecosystem regeneration engineering & M.Sc. thesis."
+          }
+        ]
+      },
+      {
+        "id": "STU-TRK-H",
+        "group": "TRACK",
+        "refId": "H",
+        "siteId": "SITE-X10",
+        "icon": "☢️",
+        "color": "#f43f5e",
+        "sourceLang": "PL+EN",
+        "titlePl": "Super-Projekt H: Energetyka Jądrowa, Reaktory SMR/HTGR i Fuzja Termojądrowa (5 lat)",
+        "titleEn": "Super-Project H: Nuclear Engineering, SMR/HTGR Reactors & Fusion Energy (5 Years)",
+        "years": [
+          {
+            "year": 1,
+            "pl": "Fizyka jądrowa, reakcje rozszczepienia i syntezy, termodynamika techniczna, mechanika płynów i wymiana ciepła.",
+            "en": "Nuclear physics, fission & fusion reactions, engineering thermodynamics & heat transfer."
+          },
+          {
+            "year": 2,
+            "pl": "Teoria reaktorów jądrowych (równanie dyfuzji i transportu neutronów, współczynnik k_eff), materiały jądrowe i paliwa TRISO.",
+            "en": "Nuclear reactor theory (neutron transport, k_eff criticality), nuclear materials & TRISO fuels."
+          },
+          {
+            "year": 3,
+            "pl": "Eksploatacja i bezpieczeństwo reaktorów PWR, SMR oraz wysokotemperaturowych HTGR (HTGR-POLA, NCBJ Świerk) i dyplom inżynierski.",
+            "en": "PWR, SMR & high-temperature HTGR reactor safety/operations (HTGR-POLA) & B.Eng."
+          },
+          {
+            "year": 4,
+            "pl": "Fuzja magnetyczna i inercyjna (tokamaki ITER/DEMO, stellaratory), produkcja radioizotopów medycznych (MARIA) i napędy kosmiczne.",
+            "en": "Magnetic/inertial fusion (ITER/DEMO, stellarators), medical radioisotopes (MARIA) & space reactors."
+          },
+          {
+            "year": 5,
+            "pl": "Integracja gigawatowych bloków jądrowych z klastrami AI/WBE, kogeneracja wodoru i praca magisterska dla podwariantów A–G.",
+            "en": "Gigawatt nuclear power integration for AI/WBE clusters, hydrogen cogeneration & M.Sc. thesis."
+          }
+        ]
+      }
+    ],
+    "selectedQueue": [
+      "STU-FND-1",
+      "STU-FND-2",
+      "STU-FND-3",
+      "STU-FND-4",
+      "STU-FND-5",
+      "STU-FND-6",
+      "STU-FND-7",
+      "STU-FND-8",
+      "STU-TRK-H"
+    ],
+    "completedTopicYears": {},
+    "aiAgents": [
+      {
+        "id": "AGT-00",
+        "codename": "GROVES-OPPENHEIMER-00",
+        "namePl": "Agent Naczelny Sztabu Rozproszonego",
+        "nameEn": "Supreme Distributed Command Agent",
+        "siteId": "SITE-W0",
+        "color": "#f59e0b",
+        "rolePl": "Orkiestracja 3-letniego rdzenia Administracji, kolejki 5-letnich studiów i globalnego bilansu rozszczepień k_eff.",
+        "roleEn": "Orchestrates the 3-year Administration core, 5-year sequential study queue, and global fission balance k_eff.",
+        "promptTemplate": "Działasz jako Agent Naczelny Sztabu Manhattan Golem 15 (District W-0). Rozbij podany cel strategiczny na kompartmentalizowane pakiety badawcze dla 5 ośrodków (W-0, Y-15, X-10, B-7, T-9), wskaż wymogi prawno-administracyjne oraz określ punkty krytyczne integracji."
+      },
+      {
+        "id": "AGT-01",
+        "codename": "EPISTEMIC-LAW-01",
+        "namePl": "Agent Administracji, Prawa i Demarkacji Epistemicznej",
+        "nameEn": "Administration, Law & Epistemic Demarcation Agent",
+        "siteId": "SITE-W0",
+        "color": "#eab308",
+        "rolePl": "Audyt zgodności regulacyjnej (PAA, MDR, AI Act, traktaty kosmiczne) i oznaczanie statusu twierdzeń (wiedza potwierdzona vs hipoteza).",
+        "roleEn": "Regulatory compliance audit (nuclear, medical, AI, space law) and epistemic demarcation of scientific claims.",
+        "promptTemplate": "Działasz jako Agent Audytu Prawno-Epistemicznego (District W-0 / Projekt E). Oceń badany problem pod kątem: 1) faktów empirycznych vs hipotez, 2) wymogów prawa atomowego/medycznego/kosmicznego/AI, 3) ryzyk bioetycznych."
+      },
+      {
+        "id": "AGT-02",
+        "codename": "TURING-NEUMANN-02",
+        "namePl": "Agent Teorii, Obliczeń i Cyfrowego Umysłu",
+        "nameEn": "Theory, Computing & Digital Mind Agent",
+        "siteId": "SITE-Y15",
+        "color": "#38bdf8",
+        "rolePl": "Rozszczepianie zagadnień matematycznych, algorytmicznych, konektomiki, dekodowania mózgu i emulacji poznawczej (Projekt B).",
+        "roleEn": "Fissions mathematical, algorithmic, connectomic, neural decoding, and cognitive emulation problems (Project B).",
+        "promptTemplate": "Działasz jako Agent Laboratorium Los Alamos Y-15 (Matematyka, Informatyka, AI, Projekt B). Sformułuj model formalny, złożoność obliczeniową, architekturę symulacji oraz hipotezy falsyfikowalne dla zadanego zagadnienia."
+      },
+      {
+        "id": "AGT-03",
+        "codename": "SHANNON-ANALOG-03",
+        "namePl": "Agent Obliczania Fizycznego i Układów Neuromorficznych",
+        "nameEn": "Physical Computing & Neuromorphic Hardware Agent",
+        "siteId": "SITE-Y15",
+        "color": "#fb923c",
+        "rolePl": "Projektowanie obliczeń ciągłych, memrystorowych, fotonicznych i energooszczędnych sieci impulsowych SNN (Projekt C).",
+        "roleEn": "Designs continuous analog, memristive, photonic, and ultra-low-power spiking neural architectures (Project C).",
+        "promptTemplate": "Działasz jako Agent Układów Analogowo-Neuromorficznych (Y-15 / Projekt C). Zaproponuj fizyczny nośnik obliczeń, bilans termodynamiczny (limit Landauera) i architekturę sprzętową dla zadanego problemu."
+      },
+      {
+        "id": "AGT-04",
+        "codename": "FERMI-PILE-04",
+        "namePl": "Agent Energetyki Jądrowej, SMR/HTGR i Fuzji",
+        "nameEn": "Nuclear Fission, SMR/HTGR & Fusion Power Agent",
+        "siteId": "SITE-X10",
+        "color": "#f43f5e",
+        "rolePl": "Obliczenia mocy reaktorowej, ciepła procesowego HTGR-POLA, izotopów MARIA oraz zasilania dla klastrów AI i baz kosmicznych (Super-Projekt H).",
+        "roleEn": "Reactor power balances, HTGR-POLA process heat, MARIA medical isotopes, and nuclear power for AI & space (Super-Project H).",
+        "promptTemplate": "Działasz jako Agent Kompleksu Oak Ridge X-10 (Super-Projekt H). Wyznacz architekturę zasilania jądrowego/termojądrowego, bilans cieplno-elektryczny, bariery bezpieczeństwa radiacyjnego i sprzężenia ze ścieżkami A–G."
+      },
+      {
+        "id": "AGT-05",
+        "codename": "CYBORG-SYNTH-05",
+        "namePl": "Agent Neurobioniki, BCI i Bioinżynierii Tkankowej",
+        "nameEn": "Neurobionics, BCI & Tissue Bioengineering Agent",
+        "siteId": "SITE-B7",
+        "color": "#10b981",
+        "rolePl": "Rozszczepianie problemów interfejsów mózg–maszyna (fNIRS/EEG/implanty), bioniki oraz hodowli organoidów i edycji genów (Projekty A i D).",
+        "roleEn": "Fissions BCI (fNIRS/EEG/implants), bionic prosthetics, organoid engineering, and genome editing tasks (Projects A & D).",
+        "promptTemplate": "Działasz jako Agent Kompleksu Hanford B-7 (Chemia, Biologia, Projekty A i D). Rozpisz protokół biokompatybilności, sprzężenia tkanka–elektronika, hodowli komórkowej/organoidowej oraz kryteria bezpieczeństwa klinicznego."
+      },
+      {
+        "id": "AGT-06",
+        "codename": "BIOSFERA-ORBIT-06",
+        "namePl": "Agent Systemów Podtrzymywania Życia: Kosmos ↔ Ziemia",
+        "nameEn": "Life-Support & Biosphere Agent: Space ↔ Earth",
+        "siteId": "SITE-T9",
+        "color": "#a855f7",
+        "rolePl": "Integracja zamkniętych obiegów materii (BLSS), ochrony radiacyjnej astronautów i inżynierii regeneracji ekosystemów Ziemi (Projekty F i G).",
+        "roleEn": "Integrates closed-loop BLSS, astronaut radiation shielding, and Earth ecosystem regeneration engineering (Projects F & G).",
+        "promptTemplate": "Działasz jako Agent Poligonu Trinity T-9 (Oś Kosmos F ↔ Ziemia G). Przeprowadź bilans masy, energii, tlenu, wody i odporności biologicznej dla badanego habitatu pozaziemskiego lub ekosystemu ziemskiego."
+      }
+    ],
+    "fissionNodes": [
+      {
+        "id": "FIS-00",
+        "parentId": null,
+        "generation": 0,
+        "code": "CORE-235",
+        "siteId": "SITE-W0",
+        "agentId": "AGT-00",
+        "trackRef": "ADMIN-3Y",
+        "status": "active",
+        "titlePl": "Rdzeń Rozszczepialny Golem 15 + 3-Letni Sztab Administracji",
+        "titleEn": "Golem 15 Fissile Core + 3-Year Administrative HQ",
+        "descPl": "Punkt inicjacji reakcji łańcuchowej: cel nadrzędny zrozumienia, wspomagania i ochrony człowieka rozszczepiany z poziomu 3-letniego aparatu administracyjno-prawnego na 5 autonomicznych ośrodków Manhattan.",
+        "descEn": "Chain-reaction initiation point: overarching human research mission fissioned through a 3-year administrative-legal command core into 5 autonomous Manhattan laboratories.",
+        "neutronTargets": [
+          "FIS-S1",
+          "FIS-S2",
+          "FIS-S3",
+          "FIS-S4",
+          "FIS-S5"
+        ],
+        "deliverablePl": "Globalna dyrektywa kompartmentalizacji i harmonogram 3 + 5×N lat.",
+        "deliverableEn": "Global compartmentalization directive and 3 + 5×N year master schedule."
+      },
+      {
+        "id": "FIS-S1",
+        "parentId": "FIS-00",
+        "generation": 1,
+        "code": "W0-GOV",
+        "siteId": "SITE-W0",
+        "agentId": "AGT-01",
+        "trackRef": "E",
+        "status": "active",
+        "titlePl": "Dyrekcja W-0: Prawo Sektorowe, Finanse B+R i Filtr Epistemiczny (E)",
+        "titleEn": "Directorate W-0: Sector Law, R&D Finance & Epistemic Filter (E)",
+        "descPl": "Rozszczepia wymogi formalno-prawne (PAA, komisje bioetyczne, AI Act, POLSA) oraz metodologiczne kryteria demarkacji nauki od spekulacji dla wszystkich ośrodków.",
+        "descEn": "Fissions legal-regulatory compliance and epistemological demarcation criteria across all distributed laboratories.",
+        "neutronTargets": [
+          "FIS-H1",
+          "FIS-D1"
+        ],
+        "deliverablePl": "Matryca legalności i rygoru epistemicznego (4 poziomy pewności wiedzy).",
+        "deliverableEn": "Legality and epistemic rigor matrix (4 certainty tiers)."
+      },
+      {
+        "id": "FIS-S2",
+        "parentId": "FIS-00",
+        "generation": 1,
+        "code": "Y15-MIND",
+        "siteId": "SITE-Y15",
+        "agentId": "AGT-02",
+        "trackRef": "B",
+        "status": "active",
+        "titlePl": "Dyrekcja Y-15: Teoria, AI, Cyfrowy Umysł (B) i Fizyka Obliczeń (C)",
+        "titleEn": "Directorate Y-15: Theory, AI, Digital Mind (B) & Physical Computing (C)",
+        "descPl": "Ośrodek obliczeniowy rozszczepiający fundamenty matematyczno-informatyczne (FND 1–3, 8) na modele konektomu, dekodery AI oraz maszyny analogowo-neuromorficzne.",
+        "descEn": "Theoretical hub splitting mathematical/CS foundations (FND 1–3, 8) into connectome models, AI decoders, and neuromorphic machines.",
+        "neutronTargets": [
+          "FIS-A1",
+          "FIS-H1"
+        ],
+        "deliverablePl": "Stos symulacyjny mózg–AI–sprzęt neuromorficzny.",
+        "deliverableEn": "Brain–AI–neuromorphic simulation stack."
+      },
+      {
+        "id": "FIS-S3",
+        "parentId": "FIS-00",
+        "generation": 1,
+        "code": "X10-ATOM",
+        "siteId": "SITE-X10",
+        "agentId": "AGT-04",
+        "trackRef": "H",
+        "status": "critical",
+        "titlePl": "Dyrekcja X-10: Rozszczepienie Jądrowe, Fuzja i Architektura Mocy (H)",
+        "titleEn": "Directorate X-10: Nuclear Fission, Fusion & Power Architecture (H)",
+        "descPl": "Serce energetyczne systemu: reaktory SMR/HTGR-POLA, fuzja termojądrowa i elektronika mocy dostarczające gęstą, bezemisyjną energię dla podwariantów A–G.",
+        "descEn": "Energetic core: SMR/HTGR-POLA reactors, fusion, and power electronics supplying dense zero-emission power to sub-variants A–G.",
+        "neutronTargets": [
+          "FIS-B1",
+          "FIS-F1",
+          "FIS-G1"
+        ],
+        "deliverablePl": "Architektura mocy jądrowej i izotopowej dla klastrów AI, medycyny i kosmosu.",
+        "deliverableEn": "Nuclear & isotope power architecture for AI clusters, medicine, and space."
+      },
+      {
+        "id": "FIS-S4",
+        "parentId": "FIS-00",
+        "generation": 1,
+        "code": "B7-BIO",
+        "siteId": "SITE-B7",
+        "agentId": "AGT-05",
+        "trackRef": "A",
+        "status": "active",
+        "titlePl": "Dyrekcja B-7: Integracja Biocyfrowa (A) i Inżynieria Życia (D)",
+        "titleEn": "Directorate B-7: Bio-Digital Integration (A) & Life Engineering (D)",
+        "descPl": "Łączy chemię biomateriałów i biologię molekularną (FND 6–7) w interfejsy mózg–maszyna, bionikę oraz hodowlę organoidów i medycynę regeneracyjną.",
+        "descEn": "Combines biomaterials chemistry & molecular biology (FND 6–7) into BCIs, bionics, organoids, and regenerative medicine.",
+        "neutronTargets": [
+          "FIS-B1",
+          "FIS-F1"
+        ],
+        "deliverablePl": "Platforma interfejsów tkankowo-elektronicznych i organoidów.",
+        "deliverableEn": "Tissue-electronic interface & organoid platform."
+      },
+      {
+        "id": "FIS-S5",
+        "parentId": "FIS-00",
+        "generation": 1,
+        "code": "T9-HAB",
+        "siteId": "SITE-T9",
+        "agentId": "AGT-06",
+        "trackRef": "F",
+        "status": "active",
+        "titlePl": "Dyrekcja T-9: Habitacja Kosmiczna (F) ↔ Ochrona Biosfery Ziemi (G)",
+        "titleEn": "Directorate T-9: Space Habitation (F) ↔ Earth Biosphere Protection (G)",
+        "descPl": "Poligon weryfikacji środowiskowej: zamknięte systemy podtrzymywania życia poza Ziemią w lustrzanym sprzężeniu z regeneracją ziemskich ekosystemów.",
+        "descEn": "Environmental proving ground: closed extraterrestrial life support coupled with terrestrial biosphere regeneration.",
+        "neutronTargets": [
+          "FIS-G1",
+          "FIS-F1"
+        ],
+        "deliverablePl": "Zunifikowany model obiegu materii i odporności środowiskowej F↔G.",
+        "deliverableEn": "Unified matter-cycle and environmental resilience model F↔G."
+      },
+      {
+        "id": "FIS-ADM1",
+        "parentId": "FIS-S1",
+        "generation": 2,
+        "code": "W0-LIC",
+        "siteId": "SITE-W0",
+        "agentId": "AGT-01",
+        "trackRef": "E",
+        "status": "active",
+        "titlePl": "Licencjonowanie B+R: Dozór Jądrowy PAA, Komisje Bioetyczne i AI Act",
+        "titleEn": "R&D Licensing: Nuclear Oversight, Bioethics Boards & AI Act",
+        "descPl": "Pakiet procedur administracyjnych z 3-letnich studiów pozwalający legalnie prowadzić badania nad izotopami, BCI, organoidami i autonomicznymi agentami.",
+        "descEn": "Administrative compliance suite derived from the 3-year degree for legal research on isotopes, BCIs, organoids, and AI agents.",
+        "neutronTargets": [
+          "FIS-H1",
+          "FIS-A1",
+          "FIS-D1"
+        ],
+        "deliverablePl": "Repozytorium wniosków regulacyjnych i matryc ryzyka.",
+        "deliverableEn": "Regulatory filings and risk assessment repository."
+      },
+      {
+        "id": "FIS-B1",
+        "parentId": "FIS-S2",
+        "generation": 2,
+        "code": "Y15-WBE",
+        "siteId": "SITE-Y15",
+        "agentId": "AGT-02",
+        "trackRef": "B",
+        "status": "active",
+        "titlePl": "Dekodowanie Sygnałów Mózgu (fMRI/EEG) i Konsolidacja Pamięci („Cyfrowy Sen”)",
+        "titleEn": "Brain Decoding (fMRI/EEG) & Memory Consolidation ('Digital Sleep')",
+        "descPl": "Rozszczepienie Projektu B na dekodery semantyczne aktywności korowej oraz algorytmy snu falowego zapobiegające katastroficznemu zapominaniu w sieciach neuronowych.",
+        "descEn": "Splits Project B into semantic cortical decoders and slow-wave digital sleep algorithms preventing catastrophic forgetting.",
+        "neutronTargets": [
+          "FIS-A1",
+          "FIS-C1"
+        ],
+        "deliverablePl": "Benchmark dekodowania neuronalnego i ciągłego uczenia SNN.",
+        "deliverableEn": "Neural decoding & continual SNN learning benchmark."
+      },
+      {
+        "id": "FIS-C1",
+        "parentId": "FIS-S2",
+        "generation": 2,
+        "code": "Y15-NEURO",
+        "siteId": "SITE-Y15",
+        "agentId": "AGT-03",
+        "trackRef": "C",
+        "status": "active",
+        "titlePl": "Procesory Neuromorficzne, Memrystory i Hybrydowe Biokomputery (Brainoware)",
+        "titleEn": "Neuromorphic Processors, Memristors & Hybrid Biocomputers (Brainoware)",
+        "descPl": "Fizyczne obliczanie niskiej mocy redukujące zapotrzebowanie energetyczne sztucznej inteligencji o rzędy wielkości względem klasycznych klastrów GPU.",
+        "descEn": "Low-power physical computing slashing AI energy demand by orders of magnitude compared to von Neumann GPU clusters.",
+        "neutronTargets": [
+          "FIS-B1",
+          "FIS-D1"
+        ],
+        "deliverablePl": "Specyfikacja hybrydowego koprocesora analogowo-impulsowego.",
+        "deliverableEn": "Hybrid analog-spiking coprocessor specification."
+      },
+      {
+        "id": "FIS-H1",
+        "parentId": "FIS-S3",
+        "generation": 2,
+        "code": "X10-HTGR",
+        "siteId": "SITE-X10",
+        "agentId": "AGT-04",
+        "trackRef": "H",
+        "status": "critical",
+        "titlePl": "Bloki SMR / HTGR-POLA dla Centrów Danych AI/WBE i Kogeneracji Wodoru",
+        "titleEn": "SMR / HTGR-POLA Units for AI/WBE Data Centers & Hydrogen Cogeneration",
+        "descPl": "Bezpośrednie sprzężenie reaktorów wysokotemperaturowych z infrastrukturą obliczeniową Projektu B oraz dekarbonizacją przemysłu w Projekcie G.",
+        "descEn": "Direct coupling of high-temperature reactors with Project B supercomputing clusters and Project G industrial decarbonization.",
+        "neutronTargets": [
+          "FIS-B1",
+          "FIS-G1"
+        ],
+        "deliverablePl": "Model bilansu mocy 300 MWe SMR + ciepło procesowe 750°C.",
+        "deliverableEn": "300 MWe SMR + 750°C process heat power-balance model."
+      },
+      {
+        "id": "FIS-H2",
+        "parentId": "FIS-S3",
+        "generation": 2,
+        "code": "X10-MEDSPC",
+        "siteId": "SITE-X10",
+        "agentId": "AGT-04",
+        "trackRef": "H",
+        "status": "active",
+        "titlePl": "Radioizotopy Medyczne (MARIA: Lu-177/Mo-99) oraz Mikroreaktory Kosmiczne Kilopower",
+        "titleEn": "Medical Radioisotopes (MARIA: Lu-177/Mo-99) & Space Kilopower Microreactors",
+        "descPl": "Dwuwektorowe rozszczepienie technologii jądrowych: medycyna nuklearna dla ochrony zdrowia (A/D) oraz zasilanie baz księżycowo-marsjańskich w nocy polarnej (F).",
+        "descEn": "Dual-vector nuclear fission spin-off: targeted radionuclide therapy (A/D) and surface fission power for Moon/Mars habitats (F).",
+        "neutronTargets": [
+          "FIS-A1",
+          "FIS-F1"
+        ],
+        "deliverablePl": "Karta izotopowo-energetyczna H→A/D/F.",
+        "deliverableEn": "Isotope & space nuclear power datasheet H→A/D/F."
+      },
+      {
+        "id": "FIS-A1",
+        "parentId": "FIS-S4",
+        "generation": 2,
+        "code": "B7-BCI",
+        "siteId": "SITE-B7",
+        "agentId": "AGT-05",
+        "trackRef": "A",
+        "status": "active",
+        "titlePl": "Optyczne i Elektryczne Interfejsy BCI (fNIRS PhotonGrav / ECoG) i Neuroprotetyka",
+        "titleEn": "Optical & Electrical BCIs (fNIRS PhotonGrav / ECoG) & Neuroprosthetics",
+        "descPl": "Dwukierunkowa komunikacja układ nerwowy ↔ maszyna testowana zarówno w klinice rehabilitacyjnej na Ziemi, jak i na orbicie ISS (misja IGNIS).",
+        "descEn": "Bidirectional nervous system ↔ machine interfaces validated in clinical rehabilitation and orbital microgravity (ISS IGNIS).",
+        "neutronTargets": [
+          "FIS-F1",
+          "FIS-B1"
+        ],
+        "deliverablePl": "Architektura niskoszumowego toru akwizycji i dekodowania BCI.",
+        "deliverableEn": "Low-noise BCI acquisition and decoding pipeline."
+      },
+      {
+        "id": "FIS-D1",
+        "parentId": "FIS-S4",
+        "generation": 2,
+        "code": "B7-ORG",
+        "siteId": "SITE-B7",
+        "agentId": "AGT-05",
+        "trackRef": "D",
+        "status": "active",
+        "titlePl": "Organoidy Funkcjonalne z Komórek Macierzystych i Regeneracja Tkankowa",
+        "titleEn": "Stem-Cell Functional Organoids & Regenerative Tissue Engineering",
+        "descPl": "Od różnicowania iPSC do unaczynionych organoidów (mózgowych, przysadkowych, narządowych) z pełną kontrolą bezpieczeństwa onkologicznego i bioetycznego.",
+        "descEn": "From iPSC differentiation to vascularized organoids under strict oncological and bioethical safety gates.",
+        "neutronTargets": [
+          "FIS-A1",
+          "FIS-C1"
+        ],
+        "deliverablePl": "Drzewo decyzyjne regeneracja vs syntetyczna konstrukcja organizmu.",
+        "deliverableEn": "Regeneration vs. synthetic organism construction decision tree."
+      },
+      {
+        "id": "FIS-F1",
+        "parentId": "FIS-S5",
+        "generation": 2,
+        "code": "T9-BLSS",
+        "siteId": "SITE-T9",
+        "agentId": "AGT-06",
+        "trackRef": "F",
+        "status": "active",
+        "titlePl": "Zamknięty Habitat Pozaziemski BLSS, Osłony Radiacyjne i Immunologia Kosmiczna",
+        "titleEn": "Closed Extraterrestrial BLSS Habitat, Radiation Shielding & Space Immunology",
+        "descPl": "Integracja fotobioreaktorów algowych, recyklingu wody/tlenu, ochrony przed GCR oraz monitoringu ekspresji genów odpornościowych astronautów.",
+        "descEn": "Integrates algal photobioreactors, O2/H2O recycling, GCR shielding, and astronaut immune gene-expression monitoring.",
+        "neutronTargets": [
+          "FIS-G1"
+        ],
+        "deliverablePl": "Bilans pętli podtrzymywania życia dla załogi 4-osobowej.",
+        "deliverableEn": "Closed-loop life-support balance for a 4-person crew."
+      },
+      {
+        "id": "FIS-G1",
+        "parentId": "FIS-S5",
+        "generation": 2,
+        "code": "T9-EARTH",
+        "siteId": "SITE-T9",
+        "agentId": "AGT-06",
+        "trackRef": "G",
+        "status": "active",
+        "titlePl": "Odporność Biosfery Ziemi: Mikroklimat Leśny, Retencja i Dekarbonizacja Jądrowo-OZE",
+        "titleEn": "Earth Biosphere Resilience: Forest Microclimates, Retention & Nuclear-Renewable Grid",
+        "descPl": "Transfer czystych technologii zamkniętego obiegu z kosmosu (F) oraz energetyki jądrowej (H) do ochrony klimatu i ekosystemów lądowo-wodnych Ziemi.",
+        "descEn": "Transfers closed-loop space tech (F) and nuclear baseload (H) to protect Earth's climate and terrestrial-aquatic ecosystems.",
+        "neutronTargets": [
+          "FIS-F1"
+        ],
+        "deliverablePl": "Model synergii energetyczno-ekologicznej H + G.",
+        "deliverableEn": "Nuclear-ecological synergy model H + G."
+      },
+      {
+        "id": "FIS-G3-1",
+        "parentId": "FIS-H1",
+        "generation": 3,
+        "code": "NTR-HB-01",
+        "siteId": "SITE-X10",
+        "agentId": "AGT-04",
+        "trackRef": "H",
+        "status": "critical",
+        "titlePl": "Neutron Kaskadowy: Zasilanie 100 MW SMR dla Klastra Emulacji Kory Mózgowej",
+        "titleEn": "Cascade Neutron: 100 MW SMR Power Feed for Cortical Emulation Supercluster",
+        "descPl": "Atomowe zadanie łączące 5-letnie studia Energetyki Jądrowej (H) ze studiami Neuronauki Obliczeniowej (B): porównanie kosztu energetycznego mózgu (20 W) z klastrem krzemowym i neuromorficznym.",
+        "descEn": "Atomic task bridging 5-year Nuclear Engineering (H) and Computational Neuroscience (B): 20 W biological brain vs. silicon/neuromorphic cluster power budget.",
+        "neutronTargets": [
+          "FIS-B1",
+          "FIS-C1"
+        ],
+        "deliverablePl": "Raport porównawczy: 20 W mózg vs GPU vs Neuromorf + SMR.",
+        "deliverableEn": "Comparative report: 20 W brain vs. GPU vs. Neuromorphic + SMR."
+      },
+      {
+        "id": "FIS-G3-2",
+        "parentId": "FIS-A1",
+        "generation": 3,
+        "code": "NTR-AF-02",
+        "siteId": "SITE-B7",
+        "agentId": "AGT-05",
+        "trackRef": "A",
+        "status": "active",
+        "titlePl": "Neutron Kaskadowy: Telemetria BCI + Immunologia w Misjach Długotrwałych",
+        "titleEn": "Cascade Neutron: BCI Telemetry + Space Immunology in Long-Duration Missions",
+        "descPl": "Pakiet roboczy Agenta B-7 i T-9: nieinwazyjne monitorowanie obciążenia poznawczego fNIRS oraz markerów zapalnych u operatorów w izolowanych habitatach.",
+        "descEn": "Joint B-7 & T-9 agent work package: non-invasive fNIRS cognitive load and immune biomarker tracking in isolated habitats.",
+        "neutronTargets": [
+          "FIS-F1"
+        ],
+        "deliverablePl": "Protokół diagnostyczny operatora w habitacie analogowym.",
+        "deliverableEn": "Operator diagnostic protocol for analog space habitats."
+      }
+    ]
+  }
 };
 
 const STORAGE_KEY = "the_golem_15_state_v8_private";
@@ -2831,7 +4066,11 @@ const appState = {
   lang: localStorage.getItem(LANG_STORAGE_KEY) === "en" ? "en" : "pl",
   sourceLangFilter: "ALL",
   serverOnline: false,
-  activeTab: "study",
+  activeTab: "manhattan",
+  manhattanSiteFilter: "ALL",
+  selectedFissionNodeId: "FIS-00",
+  fissionDbSearch: "",
+  expandedStudyIds: { "ADMIN-3Y": true, "STU-FND-1": true, "STU-TRK-H": true },
   selectedTrackFilter: "ALL",
   selectedSubprojectId: "sub-1",
   materialFilterTrack: "ALL",
@@ -3066,16 +4305,21 @@ function applyStaticTranslations() {
   setTxt("gatekeeperSubmitBtn", "🔓 Odblokuj prywatny portal", "🔓 Unlock Private Portal");
   setTxt(
     "headerSubtitleText",
-    "Prywatny Portal Badawczy Właściciela • 8 Dziedzin Podstawowych (1–8) • 7 Ścieżek (A–G)",
-    "Private Owner Research Portal • 8 Core Foundations (1–8) • 7 Research Tracks (A–G)"
+    "Prywatny Portal Właściciela • Rozproszony System Manhattan (3 lata Administracji + 5×N lat z rzędu) • Graf Rozszczepień AI",
+    "Private Owner Portal • Manhattan Distributed System (3Y Admin + 5×N Back-to-Back Years) • AI Fission Graph"
   );
   setTxt("authToggleBtn", "🔒 Zablokuj", "🔒 Lock");
-  setTxt("navTabStudyLabel", "🎓 1. Materiały do nauki i Biblioteka", "🎓 1. Study Materials & Library");
-  setTxt("navTabMapLabel", "🗺️ 2. Mapa 7 Ścieżek (A–G)", "🗺️ 2. 7 Research Tracks Map (A–G)");
-  setTxt("navTabWsLabel", "🔬 3. Środowiska Badawcze", "🔬 3. Research Workspaces");
-  setTxt("navTabMatLabel", "📚 4. Repozytorium Badawcze", "📚 4. Research Repository");
-  setTxt("navTabGraphLabel", "🕸️ 5. Graf Powiązań (A–G)", "🕸️ 5. Connections Graph (A–G)");
-  setTxt("navTabSecurityLabel", "🛡️ 6. Bezpieczeństwo i Urządzenie", "🛡️ 6. Security & Device");
+  setTxt(
+    "navTabManhattanLabel",
+    "☢️ 1. System Manhattan i Graf Rozszczepień AI",
+    "☢️ 1. Manhattan System & AI Fission Graph"
+  );
+  setTxt("navTabStudyLabel", "🎓 2. Materiały do nauki i Biblioteka", "🎓 2. Study Materials & Library");
+  setTxt("navTabMapLabel", "🗺️ 3. Mapa Ścieżek (A–H)", "🗺️ 3. Research Tracks Map (A–H)");
+  setTxt("navTabWsLabel", "🔬 4. Środowiska Badawcze", "🔬 4. Research Workspaces");
+  setTxt("navTabMatLabel", "📚 5. Repozytorium Badawcze", "📚 5. Research Repository");
+  setTxt("navTabGraphLabel", "🕸️ 6. Graf Powiązań (A–H)", "🕸️ 6. Connections Graph (A–H)");
+  setTxt("navTabSecurityLabel", "🛡️ 7. Bezpieczeństwo i Urządzenie", "🛡️ 7. Security & Device");
 
   setTxt(
     "compassHeaderBadge",
@@ -3244,6 +4488,43 @@ function ensureSchema(d) {
     if (!existingLnkIds.has(l.id)) d.graphLinks.push(JSON.parse(JSON.stringify(l)));
   });
   d.supplementaryLibrary = JSON.parse(JSON.stringify(DEFAULT_SEED.supplementaryLibrary));
+  if (!d.manhattanSystem) {
+    d.manhattanSystem = JSON.parse(JSON.stringify(DEFAULT_SEED.manhattanSystem));
+  } else {
+    const seedMs = DEFAULT_SEED.manhattanSystem;
+    d.manhattanSystem.doctrine = JSON.parse(JSON.stringify(seedMs.doctrine));
+    d.manhattanSystem.sites = JSON.parse(JSON.stringify(seedMs.sites));
+    d.manhattanSystem.fiveYearCatalog = JSON.parse(JSON.stringify(seedMs.fiveYearCatalog));
+    if (!d.manhattanSystem.adminCore3Y) {
+      d.manhattanSystem.adminCore3Y = JSON.parse(JSON.stringify(seedMs.adminCore3Y));
+    } else {
+      const doneAdmin = d.manhattanSystem.adminCore3Y.completedYears || [];
+      d.manhattanSystem.adminCore3Y = JSON.parse(JSON.stringify(seedMs.adminCore3Y));
+      d.manhattanSystem.adminCore3Y.completedYears = doneAdmin;
+    }
+    if (!Array.isArray(d.manhattanSystem.selectedQueue) || !d.manhattanSystem.selectedQueue.length) {
+      d.manhattanSystem.selectedQueue = JSON.parse(JSON.stringify(seedMs.selectedQueue));
+    }
+    if (!d.manhattanSystem.completedTopicYears) {
+      d.manhattanSystem.completedTopicYears = {};
+    }
+    if (!Array.isArray(d.manhattanSystem.aiAgents) || !d.manhattanSystem.aiAgents.length) {
+      d.manhattanSystem.aiAgents = JSON.parse(JSON.stringify(seedMs.aiAgents));
+    } else {
+      const existingAgt = new Set(d.manhattanSystem.aiAgents.map((a) => a.id));
+      seedMs.aiAgents.forEach((a) => {
+        if (!existingAgt.has(a.id)) d.manhattanSystem.aiAgents.push(JSON.parse(JSON.stringify(a)));
+      });
+    }
+    if (!Array.isArray(d.manhattanSystem.fissionNodes) || !d.manhattanSystem.fissionNodes.length) {
+      d.manhattanSystem.fissionNodes = JSON.parse(JSON.stringify(seedMs.fissionNodes));
+    } else {
+      const existingFis = new Set(d.manhattanSystem.fissionNodes.map((n) => n.id));
+      seedMs.fissionNodes.forEach((n) => {
+        if (!existingFis.has(n.id)) d.manhattanSystem.fissionNodes.push(JSON.parse(JSON.stringify(n)));
+      });
+    }
+  }
   return d;
 }
 
@@ -3456,6 +4737,7 @@ function renderAll() {
     view.style.display = view.id === `view-${appState.activeTab}` ? "block" : "none";
   });
 
+  if (appState.activeTab === "manhattan") renderManhattanView();
   if (appState.activeTab === "study") renderStudyView();
   if (appState.activeTab === "map") renderMapView();
   if (appState.activeTab === "workspaces") renderWorkspacesView();
@@ -3475,10 +4757,12 @@ function renderHeaderRole() {
 }
 
 function renderNavCounts() {
+  const fisCountEl = document.getElementById("navFissionCount");
   const studyCountEl = document.getElementById("navStudyCount");
   const subCountEl = document.getElementById("navSubprojectsCount");
   const matCountEl = document.getElementById("navMaterialsCount");
 
+  if (fisCountEl) fisCountEl.textContent = ((appState.data.manhattanSystem || {}).fissionNodes || []).length;
   if (studyCountEl) studyCountEl.textContent = (appState.data.studyMaterials || []).length;
   if (subCountEl) subCountEl.textContent = (appState.data.subprojects || []).length;
   if (matCountEl) matCountEl.textContent = (appState.data.materials || []).length;
@@ -4582,6 +5866,1317 @@ function exportDatabaseJson() {
   a.download = "the_golem_15_private_backup.json";
   a.click();
   URL.revokeObjectURL(url);
+}
+
+// =============================================================================
+// STRONA PIERWSZA PROJEKTOWA: ROZPROSZONY SYSTEM MANHATTAN (3 LATA ADMINISTRACJI
+// + 5×N LAT Z RZĘDU) ORAZ BAZA I GRAF ROZSZCZEPIEŃ AGENTÓW AI
+// =============================================================================
+
+function computeManhattanMetrics(ms) {
+  const queueIds = ms.selectedQueue || [];
+  const totalStudyYears = 3 + queueIds.length * 5;
+  const totalSemesters = 6 + queueIds.length * 10;
+  const totalEcts = 180 + queueIds.length * 300;
+
+  const adminDone = ((ms.adminCore3Y || {}).completedYears || []).length;
+  let topicsDone = 0;
+  queueIds.forEach((qid) => {
+    const arr = (ms.completedTopicYears || {})[qid] || [];
+    topicsDone += arr.length;
+  });
+  const completedYearsTotal = adminDone + topicsDone;
+  const progressPct = totalStudyYears > 0 ? Math.round((completedYearsTotal / totalStudyYears) * 100) : 0;
+
+  const nodes = ms.fissionNodes || [];
+  const parentCounts = {};
+  nodes.forEach((n) => {
+    if (n.parentId) {
+      parentCounts[n.parentId] = (parentCounts[n.parentId] || 0) + 1;
+    }
+  });
+  const activeParents = Object.keys(parentCounts).length;
+  const totalChildren = Object.values(parentCounts).reduce((acc, v) => acc + v, 0);
+  const kEff = activeParents > 0 ? (totalChildren / activeParents).toFixed(2) : "1.00";
+
+  return {
+    totalStudyYears,
+    totalSemesters,
+    totalEcts,
+    completedYearsTotal,
+    progressPct,
+    kEff
+  };
+}
+
+function selectManhattanSiteFilter(siteId) {
+  appState.manhattanSiteFilter = appState.manhattanSiteFilter === siteId ? "ALL" : siteId;
+  renderManhattanView();
+}
+
+function setManhattanStartYear(val) {
+  const yr = parseInt(val, 10);
+  if (!isNaN(yr) && yr >= 1990 && yr <= 2100) {
+    appState.data.manhattanSystem.startCalendarYear = yr;
+    saveState();
+  }
+}
+
+function applyStudyQueuePreset(preset) {
+  const ms = appState.data.manhattanSystem;
+  const catalog = ms.fiveYearCatalog || [];
+  if (preset === "FOUNDATIONS") {
+    ms.selectedQueue = catalog.filter((c) => c.group === "FOUNDATION").map((c) => c.id);
+  } else if (preset === "TRACKS") {
+    ms.selectedQueue = catalog.filter((c) => c.group === "TRACK").map((c) => c.id);
+  } else if (preset === "ALL16") {
+    ms.selectedQueue = catalog.map((c) => c.id);
+  } else {
+    ms.selectedQueue = [
+      "STU-FND-1",
+      "STU-FND-2",
+      "STU-FND-3",
+      "STU-FND-4",
+      "STU-FND-5",
+      "STU-FND-6",
+      "STU-FND-7",
+      "STU-FND-8",
+      "STU-TRK-H"
+    ];
+  }
+  saveState(
+    appState.lang === "en"
+      ? "Sequential 5-year study queue updated!"
+      : "Zaktualizowano kolejkę ciągłych 5-letnich studiów!"
+  );
+}
+
+function toggleQueueTopic(studyId) {
+  const ms = appState.data.manhattanSystem;
+  const idx = ms.selectedQueue.indexOf(studyId);
+  if (idx >= 0) {
+    if (ms.selectedQueue.length <= 1) {
+      showToast(
+        appState.lang === "en"
+          ? "At least 1 five-year specialization must remain in the sequence."
+          : "W kolejce musi pozostać co najmniej 1 pięcioletnia tematyka."
+      );
+      return;
+    }
+    ms.selectedQueue.splice(idx, 1);
+  } else {
+    ms.selectedQueue.push(studyId);
+    appState.expandedStudyIds[studyId] = true;
+  }
+  saveState();
+}
+
+function moveQueueTopic(studyId, delta) {
+  const q = appState.data.manhattanSystem.selectedQueue;
+  const idx = q.indexOf(studyId);
+  if (idx < 0) return;
+  const nextIdx = idx + delta;
+  if (nextIdx < 0 || nextIdx >= q.length) return;
+  const tmp = q[idx];
+  q[idx] = q[nextIdx];
+  q[nextIdx] = tmp;
+  saveState();
+}
+
+function toggleStudyBlockExpand(blockId) {
+  appState.expandedStudyIds[blockId] = !appState.expandedStudyIds[blockId];
+  renderManhattanView();
+}
+
+function toggleAdminYearDone(yr) {
+  const admin = appState.data.manhattanSystem.adminCore3Y;
+  admin.completedYears = admin.completedYears || [];
+  const idx = admin.completedYears.indexOf(yr);
+  if (idx >= 0) admin.completedYears.splice(idx, 1);
+  else admin.completedYears.push(yr);
+  saveState();
+}
+
+function toggleTopicYearDone(studyId, yr) {
+  const map = appState.data.manhattanSystem.completedTopicYears;
+  map[studyId] = map[studyId] || [];
+  const idx = map[studyId].indexOf(yr);
+  if (idx >= 0) map[studyId].splice(idx, 1);
+  else map[studyId].push(yr);
+  saveState();
+}
+
+function selectFissionNode(nodeId) {
+  appState.selectedFissionNodeId = nodeId;
+  renderManhattanView();
+}
+
+function setFissionNodeStatus(nodeId, newStatus) {
+  const node = (appState.data.manhattanSystem.fissionNodes || []).find((n) => n.id === nodeId);
+  if (!node) return;
+  node.status = newStatus;
+  saveState(appState.lang === "en" ? "Fission node status updated." : "Zaktualizowano status węzła rozszczepienia.");
+}
+
+function deleteFissionNode(nodeId) {
+  if (nodeId === "FIS-00") {
+    showToast("Rdzeń główny CORE-235 nie może zostać usunięty.");
+    return;
+  }
+  const ms = appState.data.manhattanSystem;
+  const target = (ms.fissionNodes || []).find((n) => n.id === nodeId);
+  if (!target) return;
+  const fallbackParent = target.parentId || "FIS-00";
+  ms.fissionNodes.forEach((n) => {
+    if (n.parentId === nodeId) n.parentId = fallbackParent;
+    if (Array.isArray(n.neutronTargets)) {
+      n.neutronTargets = n.neutronTargets.filter((tid) => tid !== nodeId);
+    }
+  });
+  ms.fissionNodes = ms.fissionNodes.filter((n) => n.id !== nodeId);
+  appState.selectedFissionNodeId = fallbackParent;
+  saveState(appState.lang === "en" ? "Fission node removed." : "Węzeł rozszczepienia został usunięty.");
+}
+
+function generateAiFissionSuggestions(parentNode, ms) {
+  const nextGen = (parentNode.generation || 0) + 1;
+  const siteId = parentNode.siteId || "SITE-Y15";
+  const agentId = parentNode.agentId || "AGT-02";
+  const baseCode = (parentNode.code || "FIS").split("-")[0];
+  const suffix = String((ms.fissionNodes || []).length + 1).padStart(2, "0");
+
+  const domainTemplates = {
+    "SITE-W0": [
+      {
+        code: `${baseCode}-REG-${suffix}A`,
+        titlePl: `Audyt Prawno-Regulacyjny i Kompartmentalizacja: ${parentNode.code}`,
+        titleEn: `Legal-Regulatory Audit & Compartmentalization: ${parentNode.code}`,
+        descPl: `Weryfikacja zgodności pakietu „${parentNode.titlePl}” z prawem administracyjnym, bioetycznym, atomowym i AI Act oraz wyznaczenie barier dostępu.`,
+        descEn: `Compliance verification of '${parentNode.titleEn}' against administrative, bioethical, nuclear, and AI regulations.`,
+        deliverablePl: "Raport zgodności formalnej i rygoru epistemicznego (Poziom 1–4)."
+      },
+      {
+        code: `${baseCode}-LOG-${suffix}B`,
+        titlePl: `Budżetowanie Zadaniowe, Granty B+R i Ochrona Patentowa: ${parentNode.code}`,
+        titleEn: `Mission Budgeting, R&D Grants & Patent IP Shield: ${parentNode.code}`,
+        descPl: `Harmonogram finansowo-organizacyjny i strategia własności intelektualnej wyprowadzona z 3-letniego rdzenia Administracji.`,
+        descEn: `Financial-logistical schedule and IP protection strategy derived from the 3-year Administration core.`,
+        deliverablePl: "Matryca alokacji zasobów i zgłoszeń IP."
+      }
+    ],
+    "SITE-X10": [
+      {
+        code: `X10-PWR-${suffix}A`,
+        titlePl: `Bilans Mocy Reaktorowej i Termodynamiki Procesowej (${parentNode.code})`,
+        titleEn: `Reactor Power & Process Thermodynamics Balance (${parentNode.code})`,
+        descPl: `Obliczenia gęstości mocy, odbioru ciepła (SMR/HTGR/Fuzja) oraz niezawodności zasilania dla sprzężonych układów z węzła „${parentNode.titlePl}”.`,
+        descEn: `Power density, heat rejection (SMR/HTGR/Fusion), and reliability modeling for systems coupled to '${parentNode.titleEn}'.`,
+        deliverablePl: "Specyfikacja pętli cieplno-elektrycznej i osłon radiacyjnych."
+      },
+      {
+        code: `X10-ELEC-${suffix}B`,
+        titlePl: `Architektura Elektroniki Pomiarowej i Sterowania Bezpieczeństwem (${parentNode.code})`,
+        titleEn: `Instrumentation Electronics & Safety Control Architecture (${parentNode.code})`,
+        descPl: `Projekt niskoszumowej aparatury kontrolno-pomiarowej, detektorów promieniowania i układów FPGA odpornych na błędy.`,
+        descEn: `Low-noise instrumentation, radiation sensors, and fault-tolerant FPGA control loops.`,
+        deliverablePl: "Schemat blokowy toru pomiarowo-zabezpieczającego."
+      }
+    ],
+    "SITE-B7": [
+      {
+        code: `B7-MOL-${suffix}A`,
+        titlePl: `Protokół Biokompatybilności i Syntezy Biomateriałowej (${parentNode.code})`,
+        titleEn: `Biocompatibility & Biomaterial Synthesis Protocol (${parentNode.code})`,
+        descPl: `Analiza oddziaływań na styku tkanka żywa – hydrożel/elektroda oraz kontrola odpowiedzi immunologicznej dla „${parentNode.titlePl}”.`,
+        descEn: `Living tissue–electrode/hydrogel interface analysis and immune response control for '${parentNode.titleEn}'.`,
+        deliverablePl: "Karta walidacji biologiczno-materiałowej in vitro."
+      },
+      {
+        code: `B7-NEU-${suffix}B`,
+        titlePl: `Sprzężenie Zwrotne Neuro-Cybernetyczne i Bezpieczeństwo Kliniczne (${parentNode.code})`,
+        titleEn: `Closed-Loop Neuro-Cybernetic Feedback & Clinical Safety (${parentNode.code})`,
+        descPl: `Dekodowanie sygnałów fizjologicznych w czasie rzeczywistym i wyznaczenie granic regeneracji względem modyfikacji syntetycznej.`,
+        descEn: `Real-time physiological signal decoding and clinical safety thresholds.`,
+        deliverablePl: "Protokół testowy pętli zamkniętej bio-maszyna."
+      }
+    ],
+    "SITE-T9": [
+      {
+        code: `T9-ORB-${suffix}A`,
+        titlePl: `Wariant Pozaziemski (Projekt F): Zamknięty Obieg i Radiacja (${parentNode.code})`,
+        titleEn: `Extraterrestrial Variant (Project F): Closed Loop & Radiation (${parentNode.code})`,
+        descPl: `Adaptacja rozwiązań z węzła „${parentNode.titlePl}” do warunków mikrograwitacji, próżni i promieniowania kosmicznego.`,
+        descEn: `Adapting '${parentNode.titleEn}' to microgravity, vacuum, and deep-space radiation constraints.`,
+        deliverablePl: "Bilans masy, energii i niezawodności habitatu."
+      },
+      {
+        code: `T9-BIO-${suffix}B`,
+        titlePl: `Wariant Ziemski (Projekt G): Wdrożenie Ekologiczne i Dekarbonizacja (${parentNode.code})`,
+        titleEn: `Earth Biosphere Variant (Project G): Ecological Resilience (${parentNode.code})`,
+        descPl: `Transfer czystych technologii recyklingu i monitoringu środowiskowego do ochrony ekosystemów Ziemi.`,
+        descEn: `Transferring closed-loop and clean-tech engineering to Earth biosphere protection.`,
+        deliverablePl: "Raport wpływu środowiskowego i odporności ekosystemowej."
+      }
+    ]
+  };
+
+  const fallbackY15 = [
+    {
+      code: `Y15-MOD-${suffix}A`,
+      titlePl: `Formalny Model Matematyczno-Algorytmiczny (${parentNode.code})`,
+      titleEn: `Formal Mathematical & Algorithmic Model (${parentNode.code})`,
+      descPl: `Wyprowadzenie równań dynamiki, złożoności obliczeniowej i reprezentacji grafowej dla zagadnienia „${parentNode.titlePl}”.`,
+      descEn: `Derivation of dynamical equations, computational complexity, and graph representations for '${parentNode.titleEn}'.`,
+      deliverablePl: "Specyfikacja matematyczna i hipoteza falsyfikowalna."
+    },
+    {
+      code: `Y15-SIM-${suffix}B`,
+      titlePl: `Symulacja Numeryczna AI / SNN i Walidacja Empiryczna (${parentNode.code})`,
+      titleEn: `AI / SNN Numerical Simulation & Empirical Benchmark (${parentNode.code})`,
+      descPl: `Implementacja prototypu symulacyjnego w Pythonie/PyTorch/Brian2 oraz porównanie z danymi biologicznymi i fizycznymi.`,
+      descEn: `Simulation prototype in Python/PyTorch/Brian2 benchmarked against empirical biological/physical data.`,
+      deliverablePl: "Kod symulacji i metryki błędu rekonstrukcji."
+    }
+  ];
+
+  const pair = domainTemplates[siteId] || fallbackY15;
+  return pair.map((item) => ({
+    ...item,
+    generation: nextGen,
+    siteId,
+    agentId,
+    trackRef: parentNode.trackRef || "B"
+  }));
+}
+
+function openAiFissionModal(parentId) {
+  const ms = appState.data.manhattanSystem;
+  const parentNode = (ms.fissionNodes || []).find((n) => n.id === parentId) || ms.fissionNodes[0];
+  if (!parentNode) return;
+  const isEn = appState.lang === "en";
+  const proposals = generateAiFissionSuggestions(parentNode, ms);
+
+  const siteOptions = (ms.sites || [])
+    .map((s) => `<option value="${s.id}" ${s.id === parentNode.siteId ? "selected" : ""}>${escapeHtml(s.code)} — ${escapeHtml(isEn ? s.nameEn : s.namePl)}</option>`)
+    .join("");
+  const agentOptions = (ms.aiAgents || [])
+    .map((a) => `<option value="${a.id}" ${a.id === parentNode.agentId ? "selected" : ""}>${escapeHtml(a.codename)} — ${escapeHtml(isEn ? a.nameEn : a.namePl)}</option>`)
+    .join("");
+
+  const modalBody = document.getElementById("modalContentBox");
+  modalBody.innerHTML = `
+    <div class="modal-header">
+      <h3>☢️ ${isEn ? `AI Chain-Reaction Fission: ${parentNode.code}` : `Rozszczepienie Łańcuchowe Węzła przez Agenta AI: ${parentNode.code}`}</h3>
+      <button class="btn btn-sm" onclick="closeModal()">✕</button>
+    </div>
+    <p style="font-size:0.84rem; color:var(--text-secondary); margin-bottom:0.9rem;">
+      ${
+        isEn
+          ? `Parent node <strong>${escapeHtml(parentNode.titleEn)}</strong> (Generation G${parentNode.generation}) will fission into 2 specialized Generation G${parentNode.generation + 1} child work packages:`
+          : `Węzeł macierzysty <strong>${escapeHtml(parentNode.titlePl)}</strong> (Generacja G${parentNode.generation}) ulegnie rozszczepieniu na 2 wyspecjalizowane fragmenty potomne Generacji G${parentNode.generation + 1}:`
+      }
+    </p>
+    <form onsubmit="submitAiFissionSplit(event, '${parentNode.id}')">
+      <div class="ws-card" style="margin-bottom:0.85rem; border-left:3px solid #f59e0b;">
+        <strong style="color:#fcd34d; font-size:0.84rem;">⚡ Fragment Rozszczepienia #1 (G${parentNode.generation + 1})</strong>
+        <div style="display:grid; grid-template-columns:1fr 2fr; gap:0.6rem; margin-top:0.45rem;">
+          <input type="text" id="fis1Code" class="input-field" value="${escapeHtml(proposals[0].code)}" required />
+          <input type="text" id="fis1Title" class="input-field" value="${escapeHtml(isEn ? proposals[0].titleEn : proposals[0].titlePl)}" required />
+        </div>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.6rem; margin-top:0.45rem;">
+          <select id="fis1Site" class="select-field">${siteOptions}</select>
+          <select id="fis1Agent" class="select-field">${agentOptions}</select>
+        </div>
+        <textarea id="fis1Desc" class="textarea-field" rows="2" style="margin-top:0.45rem;" required>${escapeHtml(isEn ? proposals[0].descEn : proposals[0].descPl)}</textarea>
+        <input type="text" id="fis1Deliv" class="input-field" style="margin-top:0.4rem;" value="${escapeHtml(proposals[0].deliverablePl)}" required />
+      </div>
+
+      <div class="ws-card" style="margin-bottom:0.85rem; border-left:3px solid #38bdf8;">
+        <strong style="color:#7dd3fc; font-size:0.84rem;">⚡ Fragment Rozszczepienia #2 (G${parentNode.generation + 1})</strong>
+        <div style="display:grid; grid-template-columns:1fr 2fr; gap:0.6rem; margin-top:0.45rem;">
+          <input type="text" id="fis2Code" class="input-field" value="${escapeHtml(proposals[1].code)}" required />
+          <input type="text" id="fis2Title" class="input-field" value="${escapeHtml(isEn ? proposals[1].titleEn : proposals[1].titlePl)}" required />
+        </div>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.6rem; margin-top:0.45rem;">
+          <select id="fis2Site" class="select-field">${siteOptions}</select>
+          <select id="fis2Agent" class="select-field">${agentOptions}</select>
+        </div>
+        <textarea id="fis2Desc" class="textarea-field" rows="2" style="margin-top:0.45rem;" required>${escapeHtml(isEn ? proposals[1].descEn : proposals[1].descPl)}</textarea>
+        <input type="text" id="fis2Deliv" class="input-field" style="margin-top:0.4rem;" value="${escapeHtml(proposals[1].deliverablePl)}" required />
+      </div>
+
+      <div style="display:flex; justify-content:flex-end; gap:0.5rem;">
+        <button type="button" class="btn" onclick="closeModal()">${isEn ? "Cancel" : "Anuluj"}</button>
+        <button type="submit" class="btn btn-primary">☢️ ${isEn ? "Execute AI Chain Fission (1 → 2)" : "Wykonaj rozszczepienie łańcuchowe (1 → 2)"}</button>
+      </div>
+    </form>
+  `;
+  document.getElementById("modalBackdrop").classList.add("open");
+}
+
+function submitAiFissionSplit(e, parentId) {
+  e.preventDefault();
+  const ms = appState.data.manhattanSystem;
+  const parentNode = (ms.fissionNodes || []).find((n) => n.id === parentId);
+  if (!parentNode) return;
+  const nextGen = (parentNode.generation || 0) + 1;
+  const nowTs = Date.now();
+
+  const n1 = {
+    id: `FIS-C-${nowTs}-1`,
+    parentId: parentNode.id,
+    generation: nextGen,
+    code: document.getElementById("fis1Code").value.trim(),
+    siteId: document.getElementById("fis1Site").value,
+    agentId: document.getElementById("fis1Agent").value,
+    trackRef: parentNode.trackRef || "B",
+    status: "active",
+    titlePl: document.getElementById("fis1Title").value.trim(),
+    titleEn: document.getElementById("fis1Title").value.trim(),
+    descPl: document.getElementById("fis1Desc").value.trim(),
+    descEn: document.getElementById("fis1Desc").value.trim(),
+    neutronTargets: [],
+    deliverablePl: document.getElementById("fis1Deliv").value.trim(),
+    deliverableEn: document.getElementById("fis1Deliv").value.trim()
+  };
+
+  const n2 = {
+    id: `FIS-C-${nowTs}-2`,
+    parentId: parentNode.id,
+    generation: nextGen,
+    code: document.getElementById("fis2Code").value.trim(),
+    siteId: document.getElementById("fis2Site").value,
+    agentId: document.getElementById("fis2Agent").value,
+    trackRef: parentNode.trackRef || "B",
+    status: "active",
+    titlePl: document.getElementById("fis2Title").value.trim(),
+    titleEn: document.getElementById("fis2Title").value.trim(),
+    descPl: document.getElementById("fis2Desc").value.trim(),
+    descEn: document.getElementById("fis2Desc").value.trim(),
+    neutronTargets: [n1.id],
+    deliverablePl: document.getElementById("fis2Deliv").value.trim(),
+    deliverableEn: document.getElementById("fis2Deliv").value.trim()
+  };
+
+  ms.fissionNodes.push(n1, n2);
+  appState.selectedFissionNodeId = n1.id;
+  closeModal();
+  saveState(
+    appState.lang === "en"
+      ? `Chain fission complete! Added ${n1.code} & ${n2.code}.`
+      : `Rozszczepienie zakończone! Dodano węzły ${n1.code} oraz ${n2.code}.`
+  );
+}
+
+function openCustomFissionNodeModal() {
+  const ms = appState.data.manhattanSystem;
+  const isEn = appState.lang === "en";
+  const parentOptions = (ms.fissionNodes || [])
+    .map((n) => `<option value="${n.id}" ${n.id === appState.selectedFissionNodeId ? "selected" : ""}>[G${n.generation} • ${escapeHtml(n.code)}] ${escapeHtml(isEn ? n.titleEn : n.titlePl)}</option>`)
+    .join("");
+  const siteOptions = (ms.sites || [])
+    .map((s) => `<option value="${s.id}">${escapeHtml(s.code)} — ${escapeHtml(isEn ? s.nameEn : s.namePl)}</option>`)
+    .join("");
+  const agentOptions = (ms.aiAgents || [])
+    .map((a) => `<option value="${a.id}">${escapeHtml(a.codename)} — ${escapeHtml(isEn ? a.nameEn : a.namePl)}</option>`)
+    .join("");
+  const targetOptions = (ms.fissionNodes || [])
+    .map((n) => `<option value="${n.id}">[${escapeHtml(n.code)}] ${escapeHtml(isEn ? n.titleEn : n.titlePl)}</option>`)
+    .join("");
+
+  const modalBody = document.getElementById("modalContentBox");
+  modalBody.innerHTML = `
+    <div class="modal-header">
+      <h3>➕ ${isEn ? "Add Custom Fission Node to Database" : "Dodaj własny węzeł rozszczepienia do bazy projektu"}</h3>
+      <button class="btn btn-sm" onclick="closeModal()">✕</button>
+    </div>
+    <form onsubmit="submitCustomFissionNode(event)">
+      <div class="form-group">
+        <label>${isEn ? "Parent Fission Node" : "Węzeł macierzysty (z którego następuje rozszczepienie)"}</label>
+        <select id="cFisParent" class="select-field" required>${parentOptions}</select>
+      </div>
+      <div style="display:grid; grid-template-columns:1fr 2fr; gap:0.6rem;">
+        <div class="form-group">
+          <label>${isEn ? "Short Code" : "Kryptonim węzła"}</label>
+          <input type="text" id="cFisCode" class="input-field" placeholder="np. X10-SMR-09" required />
+        </div>
+        <div class="form-group">
+          <label>${isEn ? "Node Title" : "Tytuł zadania / fragmentu rozszczepienia"}</label>
+          <input type="text" id="cFisTitle" class="input-field" required />
+        </div>
+      </div>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.6rem;">
+        <div class="form-group">
+          <label>${isEn ? "Manhattan Site" : "Ośrodek rozproszony Manhattan"}</label>
+          <select id="cFisSite" class="select-field">${siteOptions}</select>
+        </div>
+        <div class="form-group">
+          <label>${isEn ? "Assigned AI Agent" : "Przypisany Agent AI"}</label>
+          <select id="cFisAgent" class="select-field">${agentOptions}</select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>${isEn ? "Secondary Neutron Target (Cross-Track Trigger)" : "Wtórny cel neutronu (powiązany węzeł międzyośrodkowy — opcjonalnie)"}</label>
+        <select id="cFisNeutron" class="select-field">
+          <option value="">${isEn ? "— None —" : "— Brak wtórnego neutronu —"}</option>
+          ${targetOptions}
+        </select>
+      </div>
+      <div class="form-group">
+        <label>${isEn ? "Operational Scope & Hypothesis" : "Opis operacyjny i zakres badawczy"}</label>
+        <textarea id="cFisDesc" class="textarea-field" rows="3" required></textarea>
+      </div>
+      <div class="form-group">
+        <label>${isEn ? "Expected Deliverable" : "Oczekiwany rezultat / artefakt"}</label>
+        <input type="text" id="cFisDeliv" class="input-field" required />
+      </div>
+      <div style="display:flex; justify-content:flex-end;">
+        <button type="submit" class="btn btn-primary">💾 ${isEn ? "Save Fission Node" : "Zapisz węzeł rozszczepienia"}</button>
+      </div>
+    </form>
+  `;
+  document.getElementById("modalBackdrop").classList.add("open");
+}
+
+function submitCustomFissionNode(e) {
+  e.preventDefault();
+  const ms = appState.data.manhattanSystem;
+  const parentId = document.getElementById("cFisParent").value;
+  const parentNode = (ms.fissionNodes || []).find((n) => n.id === parentId);
+  const nextGen = parentNode ? (parentNode.generation || 0) + 1 : 1;
+  const neutronVal = document.getElementById("cFisNeutron").value;
+  const title = document.getElementById("cFisTitle").value.trim();
+  const desc = document.getElementById("cFisDesc").value.trim();
+  const deliv = document.getElementById("cFisDeliv").value.trim();
+  const newId = "FIS-USR-" + Date.now();
+
+  ms.fissionNodes.push({
+    id: newId,
+    parentId,
+    generation: nextGen,
+    code: document.getElementById("cFisCode").value.trim(),
+    siteId: document.getElementById("cFisSite").value,
+    agentId: document.getElementById("cFisAgent").value,
+    trackRef: parentNode ? parentNode.trackRef : "H",
+    status: "active",
+    titlePl: title,
+    titleEn: title,
+    descPl: desc,
+    descEn: desc,
+    neutronTargets: neutronVal ? [neutronVal] : [],
+    deliverablePl: deliv,
+    deliverableEn: deliv
+  });
+  appState.selectedFissionNodeId = newId;
+  closeModal();
+  saveState(appState.lang === "en" ? "Custom fission node added!" : "Dodano własny węzeł rozszczepienia!");
+}
+
+function openNewAiAgentModal() {
+  const ms = appState.data.manhattanSystem;
+  const isEn = appState.lang === "en";
+  const siteOptions = (ms.sites || [])
+    .map((s) => `<option value="${s.id}">${escapeHtml(s.code)} — ${escapeHtml(isEn ? s.nameEn : s.namePl)}</option>`)
+    .join("");
+  const modalBody = document.getElementById("modalContentBox");
+  modalBody.innerHTML = `
+    <div class="modal-header">
+      <h3>🤖 ${isEn ? "Register New Specialized AI Agent" : "Zarejestruj nowego wyspecjalizowanego Agenta AI"}</h3>
+      <button class="btn btn-sm" onclick="closeModal()">✕</button>
+    </div>
+    <form onsubmit="submitNewAiAgent(event)">
+      <div style="display:grid; grid-template-columns:1fr 1.6fr; gap:0.6rem;">
+        <div class="form-group">
+          <label>${isEn ? "Agent Codename" : "Kryptonim Agenta AI"}</label>
+          <input type="text" id="agtCodeInput" class="input-field" placeholder="np. SKLODOWSKA-RAD-07" required />
+        </div>
+        <div class="form-group">
+          <label>${isEn ? "Agent Name / Title" : "Nazwa i funkcja Agenta AI"}</label>
+          <input type="text" id="agtNameInput" class="input-field" required />
+        </div>
+      </div>
+      <div class="form-group">
+        <label>${isEn ? "Assigned Manhattan Site" : "Macierzysty ośrodek Manhattan"}</label>
+        <select id="agtSiteInput" class="select-field">${siteOptions}</select>
+      </div>
+      <div class="form-group">
+        <label>${isEn ? "Specialization Scope" : "Zakres specjalizacji badawczej"}</label>
+        <input type="text" id="agtRoleInput" class="input-field" required />
+      </div>
+      <div class="form-group">
+        <label>${isEn ? "System Prompt / Operational Directive" : "Szablon rozkazu systemowego (System Prompt)"}</label>
+        <textarea id="agtPromptInput" class="textarea-field" rows="3" required></textarea>
+      </div>
+      <div style="display:flex; justify-content:flex-end;">
+        <button type="submit" class="btn btn-primary">🤖 ${isEn ? "Save AI Agent" : "Zapisz Agenta AI w bazie"}</button>
+      </div>
+    </form>
+  `;
+  document.getElementById("modalBackdrop").classList.add("open");
+}
+
+function submitNewAiAgent(e) {
+  e.preventDefault();
+  const ms = appState.data.manhattanSystem;
+  const siteId = document.getElementById("agtSiteInput").value;
+  const siteObj = (ms.sites || []).find((s) => s.id === siteId);
+  const name = document.getElementById("agtNameInput").value.trim();
+  const role = document.getElementById("agtRoleInput").value.trim();
+
+  ms.aiAgents.push({
+    id: "AGT-" + Date.now(),
+    codename: document.getElementById("agtCodeInput").value.trim().toUpperCase(),
+    namePl: name,
+    nameEn: name,
+    siteId,
+    color: siteObj ? siteObj.color : "#38bdf8",
+    rolePl: role,
+    roleEn: role,
+    promptTemplate: document.getElementById("agtPromptInput").value.trim()
+  });
+  closeModal();
+  saveState(appState.lang === "en" ? "New AI Agent registered!" : "Nowy Agent AI został dodany do floty!");
+}
+
+async function copyAgentDirectiveToClipboard(nodeId) {
+  const ms = appState.data.manhattanSystem;
+  const node = (ms.fissionNodes || []).find((n) => n.id === nodeId);
+  if (!node) return;
+  const agt = (ms.aiAgents || []).find((a) => a.id === node.agentId) || ms.aiAgents[0];
+  const site = (ms.sites || []).find((s) => s.id === node.siteId);
+  const directive = [
+    `=== ROZKAZ OPERACYJNY SZTABU MANHATTAN GOLEM 15 [${node.code}] ===`,
+    `Ośrodek: ${site ? site.code + " — " + site.namePl : node.siteId}`,
+    `Agent AI: ${agt ? agt.codename + " (" + agt.namePl + ")" : node.agentId}`,
+    `Generacja rozszczepienia: G${node.generation}`,
+    `Zadanie węzła: ${node.titlePl}`,
+    `Kontekst i cel: ${node.descPl}`,
+    `Wymagany artefakt końcowy: ${node.deliverablePl}`,
+    ``,
+    `Instrukcja systemowa Agenta:`,
+    `${agt ? agt.promptTemplate : ""}`,
+    `Uwzględnij rygor epistemiczny Projektu E (oddziel fakty potwierdzone od hipotez i spekulacji) oraz wymogi prawno-administracyjne Sztabu W-0.`
+  ].join("\n");
+
+  try {
+    await navigator.clipboard.writeText(directive);
+    showToast(
+      appState.lang === "en"
+        ? `Copied AI Agent directive [${node.code}] to clipboard!`
+        : `Skopiowano rozkaz operacyjny Agenta AI [${node.code}] do schowka!`
+    );
+  } catch {
+    showToast("Nie udało się skopiować automatycznie — zaznacz tekst ręcznie w inspektorze.");
+  }
+}
+
+function spawnWorkspaceFromFissionNode(nodeId) {
+  const ms = appState.data.manhattanSystem;
+  const node = (ms.fissionNodes || []).find((n) => n.id === nodeId);
+  if (!node) return;
+  const agt = (ms.aiAgents || []).find((a) => a.id === node.agentId);
+  const validTrackIds = new Set([
+    ...appState.data.tracks.map((t) => t.id),
+    ...(appState.data.foundationDisciplines || []).map((f) => f.id)
+  ]);
+  const mappedTrack = validTrackIds.has(node.trackRef) ? node.trackRef : "H";
+  const newSpId = "sub-fis-" + Date.now();
+
+  appState.data.subprojects.unshift({
+    id: newSpId,
+    trackId: mappedTrack,
+    secondaryTracks: ["E", "H"],
+    branchTopic: `Rozszczepienie Manhattan [${node.code}] (G${node.generation})`,
+    title: `[${node.code}] ${node.titlePl}`,
+    author: "Ireneusz",
+    status: "approved",
+    createdAt: new Date().toISOString(),
+    description: `${node.descPl}\n\nOczekiwany rezultat węzła: ${node.deliverablePl}`,
+    philosophicalNote: `Nadzór Agenta ${agt ? agt.codename : "AI"} w architekturze kompartmentalizacji Manhattan Golem 15.`,
+    workspace: {
+      hypotheses: [
+        {
+          id: "hyp-" + Date.now(),
+          statement: `Hipoteza operacyjna węzła ${node.code}: ${node.deliverablePl}`,
+          status: "Hipoteza otwarta",
+          author: "Ireneusz",
+          approvalStatus: "approved"
+        }
+      ],
+      notes: [
+        {
+          id: "note-" + Date.now(),
+          title: `Rozkaz startowy Agenta ${agt ? agt.codename : "AI"}`,
+          content: agt ? agt.promptTemplate : node.descPl,
+          author: "Ireneusz",
+          approvalStatus: "approved"
+        }
+      ],
+      bibliography: []
+    }
+  });
+
+  appState.selectedTrackFilter = "ALL";
+  appState.selectedSubprojectId = newSpId;
+  switchTab("workspaces");
+  saveState(
+    appState.lang === "en"
+      ? `Workspace created from fission node ${node.code}!`
+      : `Utworzono Środowisko Badawcze z węzła rozszczepienia ${node.code}!`
+  );
+}
+
+function buildFissionSvgMarkup(ms, isEn) {
+  const allNodes = ms.fissionNodes || [];
+  const siteFilter = appState.manhattanSiteFilter;
+  const visibleNodes =
+    siteFilter === "ALL"
+      ? allNodes
+      : allNodes.filter((n) => n.siteId === siteFilter || n.id === "FIS-00");
+
+  const sitesById = {};
+  (ms.sites || []).forEach((s) => {
+    sitesById[s.id] = s;
+  });
+  const agentsById = {};
+  (ms.aiAgents || []).forEach((a) => {
+    agentsById[a.id] = a;
+  });
+
+  const byGen = {};
+  let maxGen = 0;
+  visibleNodes.forEach((n) => {
+    const g = n.generation || 0;
+    if (g > maxGen) maxGen = g;
+    if (!byGen[g]) byGen[g] = [];
+    byGen[g].push(n);
+  });
+
+  const maxRowsInAnyGen = Math.max(
+    1,
+    ...Object.values(byGen).map((arr) => arr.length)
+  );
+  const svgWidth = Math.max(980, (maxGen + 1) * 265 + 90);
+  const svgHeight = Math.max(540, maxRowsInAnyGen * 74 + 90);
+
+  const coords = {};
+  for (let g = 0; g <= maxGen; g++) {
+    const col = byGen[g] || [];
+    const x = 115 + g * 260;
+    col.forEach((node, idx) => {
+      const y = ((idx + 1) * svgHeight) / (col.length + 1);
+      coords[node.id] = { x, y };
+    });
+  }
+
+  const selId = appState.selectedFissionNodeId;
+
+  // Nagłówki kolumn generacji rozszczepienia
+  let genHeadersSvg = "";
+  for (let g = 0; g <= maxGen; g++) {
+    const x = 115 + g * 260;
+    const lbl =
+      g === 0
+        ? isEn
+          ? "GEN 0 • FISSILE CORE"
+          : "GEN 0 • RDZEŃ ROZSZCZEPIALNY"
+        : g === 1
+        ? isEn
+          ? "GEN 1 • MANHATTAN SITES"
+          : "GEN 1 • DYREKCJE MANHATTAN"
+        : g === 2
+        ? isEn
+          ? "GEN 2 • 5Y RESEARCH STREAMS"
+          : "GEN 2 • STRUMIENIE 5-LETNIE"
+        : isEn
+        ? `GEN ${g} • AI MICRO-FISSION`
+        : `GEN ${g} • MIKRO-ROZSZCZEPIENIA AI`;
+    genHeadersSvg += `
+      <line x1="${x}" y1="36" x2="${x}" y2="${svgHeight - 20}" stroke="rgba(148,163,184,0.1)" stroke-dasharray="4 6" />
+      <text x="${x}" y="24" text-anchor="middle" fill="#94a3b8" font-size="10.5" font-weight="700" letter-spacing="0.06em">${lbl}</text>
+    `;
+  }
+
+  // Krawędzie rozszczepienia macierzystego (Parent -> Child)
+  let primaryEdgesSvg = "";
+  visibleNodes.forEach((n) => {
+    if (!n.parentId || !coords[n.parentId] || !coords[n.id]) return;
+    const p = coords[n.parentId];
+    const c = coords[n.id];
+    const site = sitesById[n.siteId] || { color: "#38bdf8" };
+    const isHighlighted = n.id === selId || n.parentId === selId;
+    const midX = (p.x + c.x) / 2;
+    const strokeW = isHighlighted ? 3.1 : 1.7;
+    const opacity = isHighlighted ? 0.96 : 0.48;
+    primaryEdgesSvg += `
+      <path d="M ${p.x + 68} ${p.y} C ${midX} ${p.y}, ${midX} ${c.y}, ${c.x - 72} ${c.y}"
+            fill="none" stroke="${site.color}" stroke-width="${strokeW}" opacity="${opacity}" />
+    `;
+  });
+
+  // Wtórne neutrony międzyośrodkowe (Cross-Track Neutrons)
+  let neutronArcsSvg = "";
+  visibleNodes.forEach((n) => {
+    const src = coords[n.id];
+    if (!src || !Array.isArray(n.neutronTargets)) return;
+    n.neutronTargets.forEach((tid) => {
+      const dst = coords[tid];
+      if (!dst || tid === n.id) return;
+      const isRelated = n.id === selId || tid === selId;
+      if (!isRelated && siteFilter === "ALL" && n.generation < 2) return;
+      const ctrlX = (src.x + dst.x) / 2 + 28;
+      const ctrlY = (src.y + dst.y) / 2 - 34;
+      neutronArcsSvg += `
+        <path d="M ${src.x} ${src.y} Q ${ctrlX} ${ctrlY} ${dst.x} ${dst.y}"
+              fill="none" stroke="${isRelated ? "#fcd34d" : "#64748b"}"
+              stroke-width="${isRelated ? 2.1 : 1.1}"
+              stroke-dasharray="5 4"
+              opacity="${isRelated ? 0.9 : 0.3}" />
+      `;
+    });
+  });
+
+  // Węzły rozszczepienia
+  const nodesSvg = visibleNodes
+    .map((n) => {
+      const pt = coords[n.id];
+      if (!pt) return "";
+      const site = sitesById[n.siteId] || { color: "#38bdf8", code: n.siteId };
+      const agt = agentsById[n.agentId] || { codename: "AI-AGENT" };
+      const isSelected = n.id === selId;
+      const borderCol =
+        n.status === "critical"
+          ? "#f43f5e"
+          : n.status === "synthesized"
+          ? "#10b981"
+          : site.color;
+      const titleRaw = isEn ? n.titleEn : n.titlePl;
+      const shortTitle = titleRaw.length > 26 ? titleRaw.slice(0, 25) + "…" : titleRaw;
+      const boxW = 148;
+      const boxH = 50;
+
+      return `
+        <g style="cursor:pointer;" onclick="selectFissionNode('${n.id}')">
+          ${
+            isSelected
+              ? `<rect x="${pt.x - boxW / 2 - 4}" y="${pt.y - boxH / 2 - 4}" width="${boxW + 8}" height="${boxH + 8}" rx="12" fill="none" stroke="#f8fafc" stroke-width="2" stroke-dasharray="4 3" />`
+              : ""
+          }
+          <rect x="${pt.x - boxW / 2}" y="${pt.y - boxH / 2}" width="${boxW}" height="${boxH}" rx="9"
+                fill="${isSelected ? "#1e293b" : "#0f172a"}"
+                stroke="${borderCol}"
+                stroke-width="${isSelected ? 2.8 : 1.8}" />
+          <text x="${pt.x - boxW / 2 + 8}" y="${pt.y - 7}" fill="${borderCol}" font-size="10" font-weight="800">☢ ${escapeHtml(n.code)}</text>
+          <text x="${pt.x + boxW / 2 - 8}" y="${pt.y - 7}" text-anchor="end" fill="#94a3b8" font-size="8.8" font-weight="600">${escapeHtml(agt.codename.split("-")[0])}</text>
+          <text x="${pt.x - boxW / 2 + 8}" y="${pt.y + 11}" fill="#f1f5f9" font-size="9.6" font-weight="600">${escapeHtml(shortTitle)}</text>
+        </g>
+      `;
+    })
+    .join("");
+
+  return `<svg viewBox="0 0 ${svgWidth} ${svgHeight}" width="100%" height="${svgHeight}" style="min-width:860px; display:block;">
+    ${genHeadersSvg}
+    ${neutronArcsSvg}
+    ${primaryEdgesSvg}
+    ${nodesSvg}
+  </svg>`;
+}
+
+function renderManhattanView() {
+  const root = document.getElementById("manhattanRootContainer");
+  if (!root || !appState.data || !appState.data.manhattanSystem) return;
+
+  const isEn = appState.lang === "en";
+  const ms = appState.data.manhattanSystem;
+  const metrics = computeManhattanMetrics(ms);
+  const startYr = ms.startCalendarYear || 2026;
+  const adminEndYr = startYr + 3;
+  const totalEndYr = startYr + metrics.totalStudyYears;
+
+  const sitesById = {};
+  (ms.sites || []).forEach((s) => {
+    sitesById[s.id] = s;
+  });
+  const catalogById = {};
+  (ms.fiveYearCatalog || []).forEach((c) => {
+    catalogById[c.id] = c;
+  });
+  const agentsById = {};
+  (ms.aiAgents || []).forEach((a) => {
+    agentsById[a.id] = a;
+  });
+
+  // Wybrany węzeł w inspektorze
+  const allFisNodes = ms.fissionNodes || [];
+  let activeNode = allFisNodes.find((n) => n.id === appState.selectedFissionNodeId) || allFisNodes[0];
+  const activeAgent = activeNode ? agentsById[activeNode.agentId] || ms.aiAgents[0] : null;
+  const activeSite = activeNode ? sitesById[activeNode.siteId] : null;
+
+  // Budowa wstęgi ciągłych studiów z rzędu (3 lata Administracji + po 5 lat każda wybrana tematyka)
+  let currentProjStart = 1;
+  const adminDoneCount = ((ms.adminCore3Y || {}).completedYears || []).length;
+  const ribbonStepsHtml = [];
+
+  ribbonStepsHtml.push(`
+    <div class="seq-ribbon-step" style="--step-color:#f59e0b;">
+      <div style="font-size:0.68rem; color:#fcd34d; font-weight:800;">${isEn ? "YEARS 1–3" : "LATA 1–3"} (${startYr}–${adminEndYr})</div>
+      <div style="font-weight:700; color:#f8fafc; margin:0.15rem 0;">🏛️ ${isEn ? "Administration (3Y Core)" : "Administracja (3 lata)"}</div>
+      <div style="font-size:0.7rem; color:var(--text-muted);">180 ECTS • ${adminDoneCount}/3 ${isEn ? "yrs done" : "lat ukończ."}</div>
+    </div>
+  `);
+  currentProjStart = 4;
+
+  const queueBlocksHtml = (ms.selectedQueue || [])
+    .map((studyId, qIdx) => {
+      const item = catalogById[studyId];
+      if (!item) return "";
+      const pStart = currentProjStart;
+      const pEnd = pStart + 4;
+      const calS = startYr + pStart - 1;
+      const calE = calS + 5;
+      currentProjStart = pEnd + 1;
+
+      const doneArr = (ms.completedTopicYears || {})[studyId] || [];
+      const site = sitesById[item.siteId] || { code: item.siteId, color: item.color };
+      const expanded = Boolean(appState.expandedStudyIds[studyId]);
+
+      ribbonStepsHtml.push(`
+        <div class="seq-ribbon-step" style="--step-color:${item.color}; cursor:pointer;" onclick="toggleStudyBlockExpand('${item.id}')">
+          <div style="font-size:0.68rem; color:${item.color}; font-weight:800;">${isEn ? `YEARS ${pStart}–${pEnd}` : `LATA ${pStart}–${pEnd}`} (${calS}–${calE})</div>
+          <div style="font-weight:700; color:#f8fafc; margin:0.15rem 0;">${item.icon} #${qIdx + 1}: ${escapeHtml((isEn ? item.titleEn : item.titlePl).split("(")[0].trim())}</div>
+          <div style="font-size:0.7rem; color:var(--text-muted);">5 ${isEn ? "yrs in a row" : "lat z rzędu"} • ${doneArr.length}/5</div>
+        </div>
+      `);
+
+      return `
+        <div class="ws-card" style="border-left:4px solid ${item.color}; margin-bottom:0.85rem;">
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.6rem;">
+            <div style="cursor:pointer;" onclick="toggleStudyBlockExpand('${item.id}')">
+              <div style="display:flex; align-items:center; gap:0.45rem; flex-wrap:wrap; margin-bottom:0.2rem;">
+                <span class="foundation-pill" style="font-size:0.7rem; font-weight:800; border-color:${item.color}; color:#f8fafc;">
+                  ${isEn ? `BLOCK #${qIdx + 1} • YEARS ${pStart}–${pEnd} (${calS}–${calE})` : `OGNIWO #${qIdx + 1} • LATA ${pStart}–${pEnd} (${calS}–${calE})`}
+                </span>
+                <span class="foundation-pill" style="font-size:0.69rem; color:${site.color}; border-color:${site.color};">
+                  ☢ ${escapeHtml(site.code)}
+                </span>
+                ${renderLangBadgeHtml(item.sourceLang || "PL+EN")}
+                <span style="font-size:0.74rem; color:#34d399; font-weight:700;">${doneArr.length}/5 ${isEn ? "years completed" : "lat zaliczonych"} (300 ECTS)</span>
+              </div>
+              <h4 style="font-size:1rem; color:#f8fafc;">${item.icon} ${escapeHtml(isEn ? item.titleEn : item.titlePl)}</h4>
+            </div>
+            <div style="display:flex; gap:0.35rem; align-items:center;">
+              <button class="btn btn-sm" title="${isEn ? "Move earlier" : "Przesuń wcześniej w kolejce"}" onclick="moveQueueTopic('${item.id}', -1)">↑</button>
+              <button class="btn btn-sm" title="${isEn ? "Move later" : "Przesuń później w kolejce"}" onclick="moveQueueTopic('${item.id}', 1)">↓</button>
+              <button class="btn btn-sm" onclick="toggleStudyBlockExpand('${item.id}')">${expanded ? (isEn ? "Collapse ▲" : "Zwiń ▲") : (isEn ? "5-Year Syllabus ▼" : "Sylabus 5 lat ▼")}</button>
+              <button class="btn btn-sm btn-danger" title="${isEn ? "Remove from queue" : "Usuń z kolejki ciągłej"}" onclick="toggleQueueTopic('${item.id}')">✕</button>
+            </div>
+          </div>
+
+          ${
+            expanded
+              ? `
+            <div style="margin-top:0.8rem; padding-top:0.75rem; border-top:1px solid rgba(148,163,184,0.16);">
+              ${(item.years || [])
+                .map((yrObj) => {
+                  const isDone = doneArr.includes(yrObj.year);
+                  const absProjectYr = pStart + yrObj.year - 1;
+                  const absCalYr = calS + yrObj.year - 1;
+                  return `
+                  <div class="seq-year-row ${isDone ? "done" : ""}">
+                    <input type="checkbox" ${isDone ? "checked" : ""} onchange="toggleTopicYearDone('${item.id}', ${yrObj.year})" style="margin-top:0.22rem; width:16px; height:16px; accent-color:#10b981; cursor:pointer;" />
+                    <div style="flex:1;">
+                      <div style="font-size:0.8rem; font-weight:700; color:${isDone ? "#34d399" : "#e2e8f0"};">
+                        ${isEn ? `Year ${yrObj.year} of 5 (Project Year ${absProjectYr} • ${absCalYr}/${absCalYr + 1})` : `Rok ${yrObj.year} z 5 (Rok projektowy ${absProjectYr} • ${absCalYr}/${absCalYr + 1})`}
+                      </div>
+                      <div style="font-size:0.82rem; color:var(--text-secondary); margin-top:0.12rem;">
+                        ${escapeHtml(isEn ? yrObj.en : yrObj.pl)}
+                      </div>
+                    </div>
+                  </div>
+                `;
+                })
+                .join("")}
+            </div>
+          `
+              : ""
+          }
+        </div>
+      `;
+    })
+    .join("");
+
+  // Filtrowana baza rozszczepień
+  const qSearch = (appState.fissionDbSearch || "").trim().toLowerCase();
+  const dbFilteredNodes = allFisNodes.filter((n) => {
+    if (appState.manhattanSiteFilter !== "ALL" && n.siteId !== appState.manhattanSiteFilter) return false;
+    if (!qSearch) return true;
+    const blob = `${n.code} ${n.titlePl} ${n.titleEn} ${n.descPl} ${n.deliverablePl} ${n.siteId} ${n.agentId}`.toLowerCase();
+    return blob.includes(qSearch);
+  });
+
+  const adminExpanded = Boolean(appState.expandedStudyIds["ADMIN-3Y"]);
+  const adminCore = ms.adminCore3Y;
+
+  root.innerHTML = `
+    <!-- 1. HERO SZTABU MANHATTAN GOLEM 15 -->
+    <div class="manhattan-hero">
+      <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:1rem;">
+        <div style="max-width:920px;">
+          <span class="manhattan-codename-badge">☢️ ${escapeHtml(ms.codename)} • ${isEn ? "FIRST PROJECT COMMAND PAGE" : "STRONA PIERWSZA PROJEKTOWA"}</span>
+          <h2 style="font-size:1.38rem; font-weight:800; color:#f8fafc; margin-bottom:0.45rem;">
+            ${escapeHtml(isEn ? ms.doctrine.titleEn : ms.doctrine.titlePl)}
+          </h2>
+          <p style="font-size:0.9rem; color:var(--text-secondary); line-height:1.58;">
+            ${escapeHtml(isEn ? ms.doctrine.summaryEn : ms.doctrine.summaryPl)}
+          </p>
+        </div>
+        <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+          <button class="btn btn-primary" onclick="openAiFissionModal('${activeNode ? activeNode.id : "FIS-00"}')">
+            ☢️ ${isEn ? "Fission Selected Node (AI)" : "Rozszczep węzeł przez Agenta AI"}
+          </button>
+          <button class="btn" onclick="openCustomFissionNodeModal()">
+            ➕ ${isEn ? "New Fission Node" : "Dodaj węzeł rozszczepienia"}
+          </button>
+        </div>
+      </div>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:0.65rem; margin-top:0.95rem;">
+        ${(isEn ? ms.doctrine.rulesEn : ms.doctrine.rulesPl)
+          .map(
+            (r) => `
+          <div style="background:rgba(15,23,42,0.72); border:1px solid rgba(245,158,11,0.22); border-radius:8px; padding:0.6rem 0.8rem; font-size:0.79rem; color:#e2e8f0;">
+            ${escapeHtml(r)}
+          </div>
+        `
+          )
+          .join("")}
+      </div>
+
+      <div class="manhattan-kpi-grid">
+        <div class="manhattan-kpi-card">
+          <div class="manhattan-kpi-label">${isEn ? "Continuous Study Pipeline" : "Ciągły Szlak Studiów z Rzędu"}</div>
+          <div class="manhattan-kpi-val" style="color:#fcd34d;">${metrics.totalStudyYears} ${isEn ? "yrs" : "lat"} <span style="font-size:0.82rem; font-weight:600; color:#94a3b8;">(3 + ${ms.selectedQueue.length}×5)</span></div>
+          <div style="font-size:0.74rem; color:var(--text-muted);">${startYr}–${totalEndYr} • ${metrics.totalSemesters} sem. • ${metrics.totalEcts} ECTS</div>
+        </div>
+        <div class="manhattan-kpi-card">
+          <div class="manhattan-kpi-label">${isEn ? "Academic Completion" : "Zaliczony Postęp Studiów"}</div>
+          <div class="manhattan-kpi-val" style="color:#34d399;">${metrics.completedYearsTotal} / ${metrics.totalStudyYears} ${isEn ? "yrs" : "lat"} (${metrics.progressPct}%)</div>
+          <div style="font-size:0.74rem; color:var(--text-muted);">${isEn ? "Admin 3Y + sequential 5Y blocks" : "Administracja (3 l.) + bloki 5-letnie"}</div>
+        </div>
+        <div class="manhattan-kpi-card">
+          <div class="manhattan-kpi-label">${isEn ? "AI Fission Factor (k_eff)" : "Współczynnik Rozszczepienia k_eff"}</div>
+          <div class="manhattan-kpi-val" style="color:#f43f5e;">k_eff = ${metrics.kEff}</div>
+          <div style="font-size:0.74rem; color:var(--text-muted);">${isEn ? "Controlled supercritical chain reaction" : "Kontrolowana reakcja łańcuchowa B+R"}</div>
+        </div>
+        <div class="manhattan-kpi-card">
+          <div class="manhattan-kpi-label">${isEn ? "Fission Graph Database" : "Baza Węzłów Rozszczepień"}</div>
+          <div class="manhattan-kpi-val" style="color:#38bdf8;">${allFisNodes.length} ${isEn ? "nodes" : "węzłów"}</div>
+          <div style="font-size:0.74rem; color:var(--text-muted);">${(ms.sites || []).length} ${isEn ? "Manhattan sites" : "ośrodków"} • ${(ms.aiAgents || []).length} ${isEn ? "AI Agents" : "Agentów AI"}</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. PIĘĆ ROZPROSZONYCH OŚRODKÓW PROJEKTU MANHATTAN -->
+    <div style="margin-bottom:0.55rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem;">
+      <h3 style="font-size:1.05rem;">🏛️ ${isEn ? "I. Five Compartmentalized Manhattan Sites (Click to Filter Fission Graph)" : "I. Pięć Rozproszonych Ośrodków Projektu Manhattan (Kliknij ośrodek, aby filtrować graf)"}</h3>
+      ${
+        appState.manhattanSiteFilter !== "ALL"
+          ? `<button class="btn btn-sm" onclick="selectManhattanSiteFilter('ALL')">🌐 ${isEn ? "Show All 5 Sites" : "Pokaż wszystkie 5 ośrodków"}</button>`
+          : ""
+      }
+    </div>
+    <div class="manhattan-sites-grid">
+      ${(ms.sites || [])
+        .map((s) => {
+          const isAct = appState.manhattanSiteFilter === s.id;
+          const cnt = allFisNodes.filter((n) => n.siteId === s.id).length;
+          return `
+          <div class="manhattan-site-card ${isAct ? "active" : ""}" style="--site-color:${s.color};" onclick="selectManhattanSiteFilter('${s.id}')">
+            <div style="display:flex; justify-content:space-between; align-items:center; gap:0.4rem; margin-bottom:0.3rem;">
+              <span style="font-size:0.74rem; font-weight:800; color:${s.color};">☢ ${escapeHtml(s.code)}</span>
+              <span class="foundation-pill" style="font-size:0.66rem;">${cnt} ${isEn ? "nodes" : "węzłów"}</span>
+            </div>
+            <div style="font-weight:700; font-size:0.93rem; color:#f8fafc; margin-bottom:0.2rem;">${escapeHtml(isEn ? s.nameEn : s.namePl)}</div>
+            <div style="font-size:0.72rem; color:#fcd34d; margin-bottom:0.35rem;">${escapeHtml(s.historicalAnalog)} • ${escapeHtml(s.clearance)}</div>
+            <p style="font-size:0.78rem; color:var(--text-secondary); line-height:1.45;">${escapeHtml(isEn ? s.scopeEn : s.scopePl)}</p>
+          </div>
+        `;
+        })
+        .join("")}
+    </div>
+
+    <!-- 3. GRAF ROZSZCZEPIEŃ PROJEKTU OPARTY NA AGENTACH AI -->
+    <div class="ws-card" style="padding:1.25rem; margin-bottom:1.5rem; border:1px solid rgba(56,189,248,0.3);">
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.75rem; margin-bottom:0.9rem;">
+        <div>
+          <h3 style="font-size:1.12rem; color:#f8fafc;">
+            ☢️ ${isEn ? "II. AI-Agent Project Fission Graph (Chain-Reaction Cascade G0 → G3+)" : "II. Graf Rozszczepień Projektu Oparty na Agentach AI (Kaskada Reakcji Łańcuchowej G0 → G3+)"}
+          </h3>
+          <p style="font-size:0.82rem; color:var(--text-muted);">
+            ${
+              isEn
+                ? "Unlike a static link tree, every node here represents an active fission split managed by a specialized AI Agent. Solid beams show parent→child fission; dashed arcs show cross-sector neutrons."
+                : "W odróżnieniu od zwykłego drzewa powiązań każdy węzeł stanowi rozszczepienie problemu badawczego prowadzone przez wyspecjalizowanego Agenta AI. Linie ciągłe to rozpad macierzysty (G0→G3+), a łuki przerywane to wtórne neutrony zasilające sąsiednie ścieżki."
+            }
+          </p>
+        </div>
+        <div style="display:flex; gap:0.45rem; flex-wrap:wrap;">
+          <button class="btn btn-sm btn-primary" onclick="openAiFissionModal('${activeNode ? activeNode.id : "FIS-00"}')">
+            ☢️ ${isEn ? "Split Selected Node via AI" : "Rozszczep zaznaczony węzeł (AI)"}
+          </button>
+          <button class="btn btn-sm" onclick="openCustomFissionNodeModal()">
+            ➕ ${isEn ? "Add Node" : "Własny węzeł"}
+          </button>
+          <button class="btn btn-sm" onclick="openNewAiAgentModal()">
+            🤖 ${isEn ? "Add AI Agent" : "Nowy Agent AI"}
+          </button>
+        </div>
+      </div>
+
+      <div class="fission-split-layout">
+        <div class="fission-svg-box">
+          ${buildFissionSvgMarkup(ms, isEn)}
+        </div>
+
+        <div class="fission-inspector-box">
+          ${
+            activeNode
+              ? `
+            <div style="display:flex; justify-content:space-between; align-items:center; gap:0.4rem; margin-bottom:0.4rem;">
+              <span class="track-code" style="margin:0; color:${activeSite ? activeSite.color : "#38bdf8"};">
+                ☢ ${escapeHtml(activeNode.code)} • GEN G${activeNode.generation}
+              </span>
+              <select class="select-field" style="width:auto; padding:0.2rem 0.5rem; font-size:0.75rem;" onchange="setFissionNodeStatus('${activeNode.id}', this.value)">
+                <option value="active" ${activeNode.status === "active" ? "selected" : ""}>🟢 ${isEn ? "Active Fission" : "Aktywna reakcja"}</option>
+                <option value="critical" ${activeNode.status === "critical" ? "selected" : ""}>🔴 ${isEn ? "Critical Priority" : "Stan krytyczny (Priorytet)"}</option>
+                <option value="synthesized" ${activeNode.status === "synthesized" ? "selected" : ""}>✅ ${isEn ? "Synthesized" : "Zsyntetyzowano"}</option>
+              </select>
+            </div>
+            <h4 style="font-size:1.02rem; color:#f8fafc; margin-bottom:0.35rem;">
+              ${escapeHtml(isEn ? activeNode.titleEn : activeNode.titlePl)}
+            </h4>
+            <p style="font-size:0.83rem; color:var(--text-secondary); margin-bottom:0.65rem;">
+              ${escapeHtml(isEn ? activeNode.descEn : activeNode.descPl)}
+            </p>
+            <div style="background:rgba(15,23,42,0.75); border:1px solid rgba(16,185,129,0.3); border-radius:8px; padding:0.55rem 0.7rem; font-size:0.79rem; margin-bottom:0.7rem;">
+              <strong style="color:#34d399;">🎯 ${isEn ? "Deliverable:" : "Artefakt wyjściowy:"}</strong>
+              <div style="color:#e2e8f0; margin-top:0.15rem;">${escapeHtml(isEn ? activeNode.deliverableEn : activeNode.deliverablePl)}</div>
+            </div>
+
+            ${
+              activeAgent
+                ? `
+              <div style="background:rgba(15,23,42,0.82); border:1px solid rgba(56,189,248,0.28); border-radius:8px; padding:0.65rem 0.75rem; margin-bottom:0.75rem;">
+                <div style="font-size:0.72rem; text-transform:uppercase; color:${activeAgent.color}; font-weight:800;">
+                  🤖 ${escapeHtml(activeAgent.codename)}
+                </div>
+                <div style="font-size:0.85rem; font-weight:700; color:#f8fafc; margin:0.1rem 0 0.25rem;">
+                  ${escapeHtml(isEn ? activeAgent.nameEn : activeAgent.namePl)}
+                </div>
+                <div style="font-size:0.76rem; color:var(--text-muted); font-style:italic;">
+                  "${escapeHtml(activeAgent.promptTemplate)}"
+                </div>
+              </div>
+            `
+                : ""
+            }
+
+            <div style="display:flex; flex-direction:column; gap:0.45rem;">
+              <button class="btn btn-primary btn-sm" style="width:100%;" onclick="openAiFissionModal('${activeNode.id}')">
+                ☢️ ${isEn ? `Fission into Generation G${activeNode.generation + 1} (AI)` : `Rozszczep dalej na Generację G${activeNode.generation + 1} (Agent AI)`}
+              </button>
+              <button class="btn btn-sm" style="width:100%;" onclick="copyAgentDirectiveToClipboard('${activeNode.id}')">
+                📋 ${isEn ? "Copy AI Agent Operational Order" : "Kopiuj rozkaz operacyjny dla Agenta AI"}
+              </button>
+              <button class="btn btn-success btn-sm" style="width:100%;" onclick="spawnWorkspaceFromFissionNode('${activeNode.id}')">
+                🚀 ${isEn ? "Launch Research Workspace from Node" : "Utwórz Środowisko Badawcze z tego rozszczepienia"}
+              </button>
+              ${
+                activeNode.id !== "FIS-00"
+                  ? `<button class="btn btn-danger btn-sm" style="width:100%;" onclick="deleteFissionNode('${activeNode.id}')">🗑️ ${isEn ? "Remove Node" : "Usuń ten węzeł z grafu"}</button>`
+                  : ""
+              }
+            </div>
+          `
+              : ""
+          }
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. NIEPRZERWANY SZLAK AKADEMICKI: 3 LATA ADMINISTRACJI + PO 5 LAT Z KAŻDEJ WYBRANEJ TEMATYKI CAŁY CZAS Z RZĘDU -->
+    <div class="ws-card" style="padding:1.25rem; margin-bottom:1.5rem; border:1px solid rgba(245,158,11,0.35);">
+      <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:0.85rem; margin-bottom:0.85rem;">
+        <div>
+          <h3 style="font-size:1.12rem; color:#f8fafc;">
+            🎓 ${isEn ? "III. Continuous Study Pipeline: 3 Years of Administration + 5 Consecutive Years per Selected Discipline" : "III. Ciągły System Studiów: 3 Lata Administracji + Po 5 Lat Studiów z Każdej Wybranej Tematyki Cały Czas z Rzędu"}
+          </h3>
+          <p style="font-size:0.82rem; color:var(--text-muted);">
+            ${
+              isEn
+                ? "Select and order your disciplines below. Years 1–3 are permanently anchored in Administration (Manhattan Command Core), followed back-to-back without breaks by 5-year full Master's cycles for each chosen topic."
+                : "Wybierz poniżej interesujące Cię tematyki i ustaw ich kolejność. Lata 1–3 to zawsze studia Administracji (rdzeń zarządczy Projektu Manhattan), a zaraz po nich biegną nieprzerwanie z rzędu pełne 5-letnie studia z każdej wybranej dziedziny."
+            }
+          </p>
+        </div>
+        <div style="display:flex; align-items:center; gap:0.5rem; flex-wrap:wrap;">
+          <label style="font-size:0.78rem; color:var(--text-secondary); font-weight:600;">${isEn ? "Start Year:" : "Rok startu:"}</label>
+          <input type="number" class="input-field" style="width:92px; padding:0.3rem 0.5rem;" value="${startYr}" min="1990" max="2100" onchange="setManhattanStartYear(this.value)" />
+          <button class="btn btn-sm" onclick="applyStudyQueuePreset('DEFAULT')">⭐ ${isEn ? "Core 1–8 + Atom H (48Y)" : "Fundamenty 1–8 + Atom H (48 lat)"}</button>
+          <button class="btn btn-sm" onclick="applyStudyQueuePreset('FOUNDATIONS')">🏛️ ${isEn ? "8 Foundations (43Y)" : "8 Dziedzin Podstawowych (43 lata)"}</button>
+          <button class="btn btn-sm" onclick="applyStudyQueuePreset('TRACKS')">🗺️ ${isEn ? "Tracks A–H (43Y)" : "Ścieżki A–H (43 lata)"}</button>
+          <button class="btn btn-sm" onclick="applyStudyQueuePreset('ALL16')">⚡ ${isEn ? "All 16 Topics (83Y)" : "Pełne 16 kierunków (83 lata)"}</button>
+        </div>
+      </div>
+
+      <!-- Selektor wybieranych 5-letnich tematyk -->
+      <div style="background:rgba(11,15,25,0.68); border:1px solid rgba(148,163,184,0.18); border-radius:10px; padding:0.8rem; margin-bottom:1rem;">
+        <div style="font-size:0.75rem; font-weight:700; color:#38bdf8; text-transform:uppercase; margin-bottom:0.45rem;">
+          ✓ ${isEn ? "Click to toggle 5-year specializations in your sequential back-to-back queue:" : "Kliknij, aby włączyć lub wyłączyć 5-letnie kierunki studiów w Twoim ciągu realizowanym z rzędu:"}
+        </div>
+        <div style="display:flex; flex-wrap:wrap; gap:0.4rem;">
+          ${(ms.fiveYearCatalog || [])
+            .map((cat) => {
+              const selIdx = (ms.selectedQueue || []).indexOf(cat.id);
+              const isSelected = selIdx >= 0;
+              return `
+                <button type="button" class="topic-selector-chip ${isSelected ? "selected" : ""}" onclick="toggleQueueTopic('${cat.id}')">
+                  <span>${isSelected ? `#${selIdx + 1} ✓` : "+"}</span>
+                  <span>${cat.icon} ${escapeHtml((isEn ? cat.titleEn : cat.titlePl).split("(")[0].trim())}</span>
+                </button>
+              `;
+            })
+            .join("")}
+        </div>
+      </div>
+
+      <!-- Wizualna wstęga ciągła 3 + 5×N lat -->
+      <div class="seq-ribbon">
+        ${ribbonStepsHtml.join("")}
+      </div>
+
+      <!-- BLOK 0: 3 LATA STUDIÓW ADMINISTRACJI (OBOWIĄZKOWY RDZEŃ MANHATTAN) -->
+      <div class="ws-card" style="border-left:4px solid #f59e0b; background:linear-gradient(135deg, rgba(245,158,11,0.09) 0%, rgba(15,23,42,0.92) 100%); margin-bottom:1rem;">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.6rem;">
+          <div style="cursor:pointer;" onclick="toggleStudyBlockExpand('ADMIN-3Y')">
+            <div style="display:flex; align-items:center; gap:0.45rem; flex-wrap:wrap; margin-bottom:0.2rem;">
+              <span class="foundation-pill" style="font-size:0.7rem; font-weight:800; border-color:#f59e0b; color:#fcd34d;">
+                ${isEn ? `FOUNDATIONAL COMMAND • YEARS 1–3 (${startYr}–${adminEndYr})` : `OGNIWO ZEROWE (SZTAB) • LATA 1–3 (${startYr}–${adminEndYr})`}
+              </span>
+              <span class="foundation-pill" style="font-size:0.69rem; color:#f59e0b; border-color:#f59e0b;">☢ DISTRICT W-0</span>
+              ${renderLangBadgeHtml("PL+EN")}
+              <span style="font-size:0.75rem; color:#34d399; font-weight:700;">${adminDoneCount}/3 ${isEn ? "years completed" : "lata zaliczone"} (180 ECTS)</span>
+            </div>
+            <h4 style="font-size:1.05rem; color:#f8fafc;">🏛️ ${escapeHtml(isEn ? adminCore.titleEn : adminCore.titlePl)}</h4>
+            <p style="font-size:0.8rem; color:var(--text-secondary);">${escapeHtml(isEn ? adminCore.subtitleEn : adminCore.subtitlePl)}</p>
+          </div>
+          <button class="btn btn-sm" onclick="toggleStudyBlockExpand('ADMIN-3Y')">
+            ${adminExpanded ? (isEn ? "Collapse ▲" : "Zwiń ▲") : (isEn ? "3-Year Syllabus ▼" : "Program 3 lat ▼")}
+          </button>
+        </div>
+
+        ${
+          adminExpanded
+            ? `
+          <div style="margin-top:0.85rem; padding-top:0.8rem; border-top:1px solid rgba(245,158,11,0.22);">
+            ${(adminCore.years || [])
+              .map((yrObj) => {
+                const isDone = (adminCore.completedYears || []).includes(yrObj.year);
+                const calYr = startYr + yrObj.year - 1;
+                return `
+                <div class="seq-year-row ${isDone ? "done" : ""}">
+                  <input type="checkbox" ${isDone ? "checked" : ""} onchange="toggleAdminYearDone(${yrObj.year})" style="margin-top:0.25rem; width:16px; height:16px; accent-color:#10b981; cursor:pointer;" />
+                  <div style="flex:1;">
+                    <div style="font-size:0.84rem; font-weight:700; color:${isDone ? "#34d399" : "#fcd34d"};">
+                      ${escapeHtml(isEn ? yrObj.titleEn : yrObj.titlePl)} • ${escapeHtml(yrObj.semesters)} (${calYr}/${calYr + 1})
+                    </div>
+                    <ul style="margin:0.3rem 0 0.35rem; padding-left:1.15rem; font-size:0.8rem; color:var(--text-secondary);">
+                      ${(isEn ? yrObj.coursesEn : yrObj.coursesPl).map((c) => `<li>${escapeHtml(c)}</li>`).join("")}
+                    </ul>
+                    <div style="font-size:0.77rem; color:#38bdf8;">
+                      <strong>🎯 ${isEn ? "Administrative Milestone:" : "Kamień milowy Sztabu W-0:"}</strong> ${escapeHtml(isEn ? yrObj.deliverableEn : yrObj.deliverablePl)}
+                    </div>
+                  </div>
+                </div>
+              `;
+              })
+              .join("")}
+          </div>
+        `
+            : ""
+        }
+      </div>
+
+      <!-- BLOKI 1..N: PO 5 LAT Z KAŻDEJ WYBRANEJ TEMATYKI CAŁY CZAS Z RZĘDU -->
+      ${queueBlocksHtml}
+    </div>
+
+    <!-- 5. BAZA ROZSZCZEPIEŃ PROJEKTU I REJESTR FLOTY AGENTÓW AI -->
+    <div class="ws-card" style="padding:1.25rem;">
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.75rem; margin-bottom:1rem;">
+        <div>
+          <h3 style="font-size:1.08rem; color:#f8fafc;">
+            🗄️ ${isEn ? "IV. Project Fission Database & Specialized AI Agent Fleet" : "IV. Baza Rozszczepień Projektu oraz Rejestr Floty Agentów AI"}
+          </h3>
+          <p style="font-size:0.8rem; color:var(--text-muted);">
+            ${isEn ? "Complete persistent registry of fission work packages and autonomous AI Agent personas." : "Pełny rejestr wszystkich rozszczepionych pakietów badawczych oraz person operacyjnych Agentów AI."}
+          </p>
+        </div>
+        <input
+          type="search"
+          class="input-field"
+          style="max-width:320px;"
+          placeholder="${isEn ? "Search fission nodes, codes, agents..." : "Szukaj w bazie rozszczepień (kod, tytuł, agent)..."}"
+          value="${escapeHtml(appState.fissionDbSearch)}"
+          oninput="appState.fissionDbSearch = this.value; renderManhattanView();"
+        />
+      </div>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(310px, 1fr)); gap:0.75rem; margin-bottom:1.5rem;">
+        ${dbFilteredNodes
+          .map((n) => {
+            const s = sitesById[n.siteId] || { color: "#38bdf8", code: n.siteId };
+            const a = agentsById[n.agentId] || { codename: n.agentId };
+            return `
+            <div class="ws-card" style="border-left:3px solid ${s.color}; cursor:pointer;" onclick="selectFissionNode('${n.id}')">
+              <div style="display:flex; justify-content:space-between; align-items:center; font-size:0.73rem; margin-bottom:0.25rem;">
+                <strong style="color:${s.color};">☢ ${escapeHtml(n.code)} • G${n.generation}</strong>
+                <span style="color:var(--text-muted);">🤖 ${escapeHtml(a.codename)}</span>
+              </div>
+              <div style="font-weight:700; font-size:0.88rem; color:#f8fafc; margin-bottom:0.2rem;">${escapeHtml(isEn ? n.titleEn : n.titlePl)}</div>
+              <div style="font-size:0.77rem; color:var(--text-secondary); margin-bottom:0.35rem;">${escapeHtml(isEn ? n.descEn : n.descPl)}</div>
+              <div style="font-size:0.73rem; color:#34d399;">🎯 ${escapeHtml(isEn ? n.deliverableEn : n.deliverablePl)}</div>
+            </div>
+          `;
+          })
+          .join("")}
+      </div>
+
+      <h4 style="font-size:0.96rem; color:#38bdf8; margin-bottom:0.7rem;">
+        🤖 ${isEn ? "Specialized Manhattan AI Agents (System Prompts)" : "Flota Wyspecjalizowanych Agentów AI (Gotowe Rozkazy Systemowe)"}
+      </h4>
+      <div class="agent-card-grid">
+        ${(ms.aiAgents || [])
+          .map((agt) => {
+            const s = sitesById[agt.siteId] || { code: agt.siteId };
+            return `
+            <div class="ws-card" style="border-top:3px solid ${agt.color};">
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.25rem;">
+                <span style="font-size:0.74rem; font-weight:800; color:${agt.color};">🤖 ${escapeHtml(agt.codename)}</span>
+                <span class="foundation-pill" style="font-size:0.66rem;">${escapeHtml(s.code)}</span>
+              </div>
+              <div style="font-weight:700; font-size:0.9rem; color:#f8fafc; margin-bottom:0.25rem;">${escapeHtml(isEn ? agt.nameEn : agt.namePl)}</div>
+              <p style="font-size:0.78rem; color:var(--text-secondary); margin-bottom:0.45rem;">${escapeHtml(isEn ? agt.roleEn : agt.rolePl)}</p>
+              <div style="background:rgba(11,15,25,0.75); padding:0.45rem 0.6rem; border-radius:6px; font-size:0.73rem; color:var(--text-muted); font-style:italic;">
+                "${escapeHtml(agt.promptTemplate)}"
+              </div>
+            </div>
+          `;
+          })
+          .join("")}
+      </div>
+    </div>
+  `;
 }
 
 window.addEventListener("DOMContentLoaded", initApp);
