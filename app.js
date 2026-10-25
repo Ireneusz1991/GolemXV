@@ -5,6 +5,12 @@ const DEFAULT_SEED = {
   "projectMeta": {
     "title": "The Golem 15: A Human's Road to Reality",
     "subtitle": "Mapa projektu badawczego — wspólne podstawy naukowe oraz siedem powiązanych ścieżek (A–G)",
+    "adminAuth": {
+      "algorithm": "pbkdf2_sha256",
+      "iterations": 260000,
+      "salt": "9f4d8a2c6e1b3f7a5c8d0e2f4a6b8c1d",
+      "hash": "673a07dbc15ac855752d7c521ffc31e200302b03a3b296310b742421cbfd4d62"
+    },
     "overarchingGoal": "Zrozumieć człowieka jako organizm biologiczny, umysł, twórcę technologii i część ziemskiej biosfery, a jednocześnie zbadać możliwości jego funkcjonowania poza naturalnym środowiskiem Ziemi.",
     "organizationalRule": "Każda ścieżka ma własne pytania badawcze, bibliografię i cele. Wspólne podstawy naukowe pozwalają łączyć wiedzę, ale nie oznaczają konieczności równoległego studiowania wszystkich dziedzin. Filozofia pozostaje przekrojową warstwą interpretacyjną. Pozostałe projekty rozwijają się w miarę dostępnego czasu i zainteresowania.",
     "foundations": [
@@ -2357,8 +2363,8 @@ const DEFAULT_SEED = {
   ]
 };
 
-const STORAGE_KEY = "the_golem_15_state_v5";
-const ADMIN_PASS_KEY = "golem_xv_admin_pass";
+const STORAGE_KEY = "the_golem_15_state_v6";
+const ADMIN_AUTH_KEY = "golem_xv_admin_auth_pbkdf2";
 
 const appState = {
   data: null,
@@ -2375,6 +2381,10 @@ const appState = {
 function ensureSchema(d) {
   if (!d.projectMeta) d.projectMeta = JSON.parse(JSON.stringify(DEFAULT_SEED.projectMeta));
   d.projectMeta.title = "The Golem 15: A Human's Road to Reality";
+  delete d.projectMeta.adminPassword;
+  if (!d.projectMeta.adminAuth || !d.projectMeta.adminAuth.hash) {
+    d.projectMeta.adminAuth = JSON.parse(JSON.stringify(DEFAULT_SEED.projectMeta.adminAuth));
+  }
   if (!d.foundationDisciplines || !d.foundationDisciplines.length) {
     d.foundationDisciplines = JSON.parse(JSON.stringify(DEFAULT_SEED.foundationDisciplines));
   }
@@ -2407,6 +2417,7 @@ function ensureSchema(d) {
 }
 
 async function initApp() {
+  localStorage.removeItem("golem_xv_admin_pass");
   if (sessionStorage.getItem("golem_xv_is_admin") === "true") {
     appState.isAdmin = true;
   }
@@ -2620,13 +2631,15 @@ function renderHeaderRole() {
   if (appState.isAdmin) {
     roleBadge.className = "role-badge admin";
     roleBadge.innerHTML = `<span>★</span> Tryb Administratora (Pełna kontrola)`;
-    authBtn.textContent = "Wyloguj do trybu Gościa";
+    authBtn.textContent = "🔓 Wyloguj";
     authBtn.className = "btn btn-sm";
+    authBtn.style.opacity = "1";
   } else {
     roleBadge.className = "role-badge guest";
     roleBadge.innerHTML = `<span>👁</span> Tryb Gościa / Obserwatora`;
-    authBtn.textContent = "Zaloguj jako Administrator";
-    authBtn.className = "btn btn-sm btn-primary";
+    authBtn.textContent = "🔒";
+    authBtn.className = "btn btn-sm";
+    authBtn.style.opacity = "0.6";
   }
 }
 
@@ -3319,22 +3332,21 @@ function renderModerationView() {
 
   if (!appState.isAdmin) {
     container.innerHTML = `
-      <div class="ws-card" style="max-width:560px; margin:2rem auto; padding:2rem;">
-        <h3 style="margin-bottom:0.5rem;">🔐 Logowanie do Panelu Administratora</h3>
-        <p style="color:var(--text-secondary); font-size:0.9rem; margin-bottom:1rem;">
-          Twoje domyślne hasło administratora to: <strong><code>golem15</code></strong> (jest już wpisane poniżej — wystarczy kliknąć przycisk logowania, a po zalogowaniu możesz ustawić własne hasło).
+      <div class="ws-card" style="max-width:540px; margin:2rem auto; padding:1.75rem;">
+        <h3 style="margin-bottom:0.5rem;">🔒 Sekcja moderacji zgłoszeń</h3>
+        <p style="color:var(--text-secondary); font-size:0.88rem; margin-bottom:1rem;">
+          Dostęp do zatwierdzania zgłoszeń i zarządzania projektem jest przeznaczony wyłącznie dla właściciela projektu.
         </p>
-        <form onsubmit="submitInlineAdminLogin(event)">
-          <div class="form-group">
-            <label>Login Administratora</label>
-            <input type="text" class="input-field" value="Administrator (Ireneusz)" />
-          </div>
-          <div class="form-group">
-            <label>Hasło Administratora</label>
-            <input type="password" id="inlineAdminPass" class="input-field" value="golem15" required />
-          </div>
-          <button type="submit" class="btn btn-primary" style="width:100%;">🔐 Zaloguj jako Administrator</button>
-        </form>
+        <details style="margin-top:0.75rem;">
+          <summary style="cursor:pointer; font-size:0.84rem; color:var(--text-muted); user-select:none;">🔑 Autoryzacja właściciela projektu</summary>
+          <form onsubmit="submitInlineAdminLogin(event)" style="margin-top:0.9rem;">
+            <div class="form-group">
+              <label>Klucz dostępu Administratora</label>
+              <input type="password" id="inlineAdminPass" class="input-field" value="" autocomplete="current-password" required />
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;">Odblokuj panel</button>
+          </form>
+        </details>
       </div>
     `;
     return;
@@ -3755,6 +3767,79 @@ function submitWorkspaceEntry(e, entryType, spId) {
   saveState("Dodano wpis do środowiska.");
 }
 
+function hexToBytes(hex) {
+  const bytes = new Uint8Array(hex.length / 2);
+  for (let i = 0; i < bytes.length; i++) {
+    bytes[i] = parseInt(hex.substr(i * 2, 2), 16);
+  }
+  return bytes;
+}
+
+function bytesToHex(bytes) {
+  return Array.from(bytes)
+    .map((b) => b.toString(16).padStart(2, "0"))
+    .join("");
+}
+
+function constantTimeEqual(a, b) {
+  if (typeof a !== "string" || typeof b !== "string" || a.length !== b.length) return false;
+  let diff = 0;
+  for (let i = 0; i < a.length; i++) {
+    diff |= a.charCodeAt(i) ^ b.charCodeAt(i);
+  }
+  return diff === 0;
+}
+
+async function derivePbkdf2Hex(password, saltHex, iterations = 260000) {
+  const enc = new TextEncoder();
+  const keyMaterial = await window.crypto.subtle.importKey(
+    "raw",
+    enc.encode(password),
+    { name: "PBKDF2" },
+    false,
+    ["deriveBits"]
+  );
+  const derivedBits = await window.crypto.subtle.deriveBits(
+    {
+      name: "PBKDF2",
+      salt: hexToBytes(saltHex),
+      iterations: Number(iterations),
+      hash: "SHA-256"
+    },
+    keyMaterial,
+    256
+  );
+  return bytesToHex(new Uint8Array(derivedBits));
+}
+
+function getActiveAdminAuth() {
+  const savedAuth = localStorage.getItem(ADMIN_AUTH_KEY);
+  if (savedAuth) {
+    try {
+      const parsed = JSON.parse(savedAuth);
+      if (parsed && parsed.salt && parsed.hash) return parsed;
+    } catch {
+      // ignore invalid JSON
+    }
+  }
+  if (appState.data && appState.data.projectMeta && appState.data.projectMeta.adminAuth) {
+    return appState.data.projectMeta.adminAuth;
+  }
+  return DEFAULT_SEED.projectMeta.adminAuth;
+}
+
+async function verifyAdminPasswordCrypto(candidatePassword) {
+  if (!candidatePassword) return false;
+  const auth = getActiveAdminAuth();
+  if (!auth || !auth.salt || !auth.hash) return false;
+  try {
+    const derived = await derivePbkdf2Hex(candidatePassword, auth.salt, auth.iterations || 260000);
+    return constantTimeEqual(derived, auth.hash);
+  } catch {
+    return false;
+  }
+}
+
 function toggleAdminMode() {
   if (appState.isAdmin) {
     appState.isAdmin = false;
@@ -3769,46 +3854,46 @@ function openAdminLoginModal() {
   const modalBody = document.getElementById("modalContentBox");
   modalBody.innerHTML = `
     <div class="modal-header">
-      <h3>🔐 Autoryzacja Administratora</h3>
+      <h3>🔒 Autoryzacja właściciela</h3>
       <button class="btn btn-sm" onclick="closeModal()">✕</button>
     </div>
     <form onsubmit="submitAdminLogin(event)">
       <div class="form-group">
-        <label>Hasło Administratora (domyślnie: golem15)</label>
-        <input type="password" id="adminPassInput" class="input-field" value="golem15" required />
+        <label>Klucz dostępu Administratora</label>
+        <input type="password" id="adminPassInput" class="input-field" value="" autocomplete="current-password" required />
       </div>
-      <button type="submit" class="btn btn-primary">Zaloguj</button>
+      <button type="submit" class="btn btn-primary">Odblokuj</button>
     </form>
   `;
   document.getElementById("modalBackdrop").classList.add("open");
 }
 
-function submitAdminLogin(e) {
+async function submitAdminLogin(e) {
   e.preventDefault();
   const inputPass = document.getElementById("adminPassInput").value;
-  const savedPass = localStorage.getItem(ADMIN_PASS_KEY) || "golem15";
-  if (inputPass === savedPass || inputPass === "golem15") {
+  const ok = await verifyAdminPasswordCrypto(inputPass);
+  if (ok) {
     appState.isAdmin = true;
     sessionStorage.setItem("golem_xv_is_admin", "true");
     closeModal();
-    showToast("Zalogowano jako Administrator!");
+    showToast("Autoryzacja właściciela zakończona pomyślnie.");
     renderAll();
   } else {
-    showToast("Nieprawidłowe hasło! Domyślne hasło to: golem15");
+    showToast("Odmowa dostępu — nieprawidłowe hasło.");
   }
 }
 
-function submitInlineAdminLogin(e) {
+async function submitInlineAdminLogin(e) {
   e.preventDefault();
   const inputPass = document.getElementById("inlineAdminPass").value;
-  const savedPass = localStorage.getItem(ADMIN_PASS_KEY) || "golem15";
-  if (inputPass === savedPass || inputPass === "golem15") {
+  const ok = await verifyAdminPasswordCrypto(inputPass);
+  if (ok) {
     appState.isAdmin = true;
     sessionStorage.setItem("golem_xv_is_admin", "true");
-    showToast("Zalogowano jako Administrator!");
+    showToast("Autoryzacja właściciela zakończona pomyślnie.");
     renderAll();
   } else {
-    showToast("Nieprawidłowe hasło! Domyślne hasło to: golem15");
+    showToast("Odmowa dostępu — nieprawidłowe hasło.");
   }
 }
 
@@ -3816,29 +3901,64 @@ function openChangeAdminPassModal() {
   const modalBody = document.getElementById("modalContentBox");
   modalBody.innerHTML = `
     <div class="modal-header">
-      <h3>🔑 Ustaw własne hasło Administratora</h3>
+      <h3>🔑 Zmień hasło Administratora (PBKDF2-SHA256)</h3>
       <button class="btn btn-sm" onclick="closeModal()">✕</button>
     </div>
     <form onsubmit="submitChangeAdminPass(event)">
       <div class="form-group">
-        <label>Nowe hasło Administratora</label>
-        <input type="password" id="newAdminPassInput" class="input-field" required />
+        <label>Aktualne hasło Administratora</label>
+        <input type="password" id="currentAdminPassInput" class="input-field" value="" required />
       </div>
-      <button type="submit" class="btn btn-primary">Zapisz nowe hasło</button>
+      <div class="form-group">
+        <label>Nowe hasło Administratora (min. 8 znaków)</label>
+        <input type="password" id="newAdminPassInput" class="input-field" value="" minlength="8" required />
+      </div>
+      <div class="form-group">
+        <label>Powtórz nowe hasło</label>
+        <input type="password" id="confirmAdminPassInput" class="input-field" value="" minlength="8" required />
+      </div>
+      <button type="submit" class="btn btn-primary">Zaszyfruj i zapisz nowe hasło</button>
     </form>
   `;
   document.getElementById("modalBackdrop").classList.add("open");
 }
 
-function submitChangeAdminPass(e) {
+async function submitChangeAdminPass(e) {
   e.preventDefault();
+  const currentPass = document.getElementById("currentAdminPassInput").value;
   const newPass = document.getElementById("newAdminPassInput").value.trim();
-  if (!newPass) return;
-  localStorage.setItem(ADMIN_PASS_KEY, newPass);
+  const confirmPass = document.getElementById("confirmAdminPassInput").value.trim();
+  if (!(await verifyAdminPasswordCrypto(currentPass))) {
+    showToast("Aktualne hasło jest nieprawidłowe.");
+    return;
+  }
+  if (newPass.length < 8) {
+    showToast("Nowe hasło musi mieć co najmniej 8 znaków.");
+    return;
+  }
+  if (newPass !== confirmPass) {
+    showToast("Nowe hasła nie są identyczne.");
+    return;
+  }
+  const saltBytes = new Uint8Array(16);
+  window.crypto.getRandomValues(saltBytes);
+  const saltHex = bytesToHex(saltBytes);
+  const iterations = 260000;
+  const hashHex = await derivePbkdf2Hex(newPass, saltHex, iterations);
+  const newAuth = {
+    algorithm: "pbkdf2_sha256",
+    iterations,
+    salt: saltHex,
+    hash: hashHex
+  };
+  localStorage.setItem(ADMIN_AUTH_KEY, JSON.stringify(newAuth));
+  if (appState.data && appState.data.projectMeta) {
+    appState.data.projectMeta.adminAuth = newAuth;
+    delete appState.data.projectMeta.adminPassword;
+  }
   closeModal();
-  showToast("Nowe hasło Administratora zostało zapisane!");
+  await saveState("Hasło zostało zaszyfrowane (PBKDF2-SHA256) i zaktualizowane!");
 }
-
 
 function exportDatabaseJson() {
   const blob = new Blob([JSON.stringify(appState.data, null, 2)], { type: "application/json" });

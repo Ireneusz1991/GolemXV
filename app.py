@@ -1,5 +1,8 @@
+import hashlib
+import hmac
 import json
 import os
+import secrets
 import time
 from datetime import datetime
 import streamlit as st
@@ -21,6 +24,12 @@ DEFAULT_SEED = {
     "projectMeta": {
         "title": "The Golem 15: A Human's Road to Reality",
         "subtitle": "Mapa projektu badawczego — wspólne podstawy naukowe oraz siedem powiązanych ścieżek (A–G)",
+        "adminAuth": {
+            "algorithm": "pbkdf2_sha256",
+            "iterations": 260000,
+            "salt": "9f4d8a2c6e1b3f7a5c8d0e2f4a6b8c1d",
+            "hash": "673a07dbc15ac855752d7c521ffc31e200302b03a3b296310b742421cbfd4d62",
+        },
         "overarchingGoal": (
             "Zrozumieć człowieka jako organizm biologiczny, umysł, twórcę technologii "
             "i część ziemskiej biosfery, a jednocześnie zbadać możliwości jego "
@@ -1797,6 +1806,9 @@ SEED_FILE = os.path.join(DATA_DIR, "seed.json")
 def ensure_db_schema(data):
     """Upewnia się, że baza zawiera nową nazwę oraz sekcje foundationDisciplines, studyMaterials, supplementaryLibrary i materials."""
     data["projectMeta"]["title"] = "The Golem 15: A Human's Road to Reality"
+    data["projectMeta"].pop("adminPassword", None)
+    if "adminAuth" not in data["projectMeta"] or not isinstance(data["projectMeta"]["adminAuth"], dict):
+        data["projectMeta"]["adminAuth"] = json.loads(json.dumps(DEFAULT_SEED["projectMeta"]["adminAuth"]))
     if "foundationDisciplines" not in data or not data["foundationDisciplines"]:
         data["foundationDisciplines"] = json.loads(json.dumps(DEFAULT_SEED["foundationDisciplines"]))
     seed_smat_by_id = {sm["id"]: sm for sm in DEFAULT_SEED["studyMaterials"]}
@@ -1886,18 +1898,59 @@ def count_pending(db):
 
 
 # ==============================================================================
-# INICJALIZACJA STANU SESJI
+# INICJALIZACJA STANU SESJI I KRYPTOGRAFICZNA WERYFIKACJA HASŁA (PBKDF2-SHA256)
 # ==============================================================================
 if "is_admin" not in st.session_state:
     st.session_state.is_admin = False
+if "failed_admin_attempts" not in st.session_state:
+    st.session_state.failed_admin_attempts = 0
 
 db = load_db()
 pending_count = count_pending(db)
 tracks_by_id = {t["id"]: t for t in db["tracks"]}
 foundations_by_id = {f["id"]: f for f in db["foundationDisciplines"]}
 
-def get_admin_password(db):
-    return db.get("projectMeta", {}).get("adminPassword") or os.environ.get("GOLEM_ADMIN_PASSWORD", "golem15")
+
+def compute_pbkdf2_hash(password: str, salt_hex: str, iterations: int = 260000) -> str:
+    salt_bytes = bytes.fromhex(salt_hex)
+    dk = hashlib.pbkdf2_hmac("sha256", password.encode("utf-8"), salt_bytes, int(iterations))
+    return dk.hex()
+
+
+def create_admin_auth_record(new_password: str, iterations: int = 260000) -> dict:
+    salt_hex = secrets.token_hex(16)
+    hash_hex = compute_pbkdf2_hash(new_password, salt_hex, iterations)
+    return {
+        "algorithm": "pbkdf2_sha256",
+        "iterations": iterations,
+        "salt": salt_hex,
+        "hash": hash_hex,
+    }
+
+
+def verify_admin_password(candidate_password: str, db_data: dict) -> bool:
+    if not candidate_password:
+        return False
+    env_secret = os.environ.get("GOLEM_ADMIN_PASSWORD")
+    if not env_secret:
+        try:
+            env_secret = st.secrets.get("GOLEM_ADMIN_PASSWORD")
+        except Exception:
+            env_secret = None
+    if env_secret and hmac.compare_digest(candidate_password.encode("utf-8"), str(env_secret).encode("utf-8")):
+        return True
+
+    auth = db_data.get("projectMeta", {}).get("adminAuth") or DEFAULT_SEED["projectMeta"]["adminAuth"]
+    salt_hex = auth.get("salt", "")
+    expected_hash = auth.get("hash", "")
+    iterations = int(auth.get("iterations", 260000))
+    if not salt_hex or not expected_hash:
+        return False
+    try:
+        candidate_hash = compute_pbkdf2_hash(candidate_password, salt_hex, iterations)
+        return hmac.compare_digest(candidate_hash, expected_hash)
+    except Exception:
+        return False
 
 
 # ==============================================================================
@@ -1916,24 +1969,8 @@ with st.sidebar:
     else:
         st.info(
             "👁 **Tryb Gościa / Obserwatora**\n"
-            "Możesz dodawać materiały do nauki, materiały badawcze, nowe podprojekty i uruchamiać środowiska badawcze."
+            "Możesz przeglądać bazę wiedzy, zgłaszać materiały do nauki, materiały badawcze i nowe podprojekty."
         )
-        st.markdown("### 🔐 Logowanie Administratora")
-        admin_pass_side = st.text_input(
-            "Hasło Administratora",
-            type="password",
-            value="",
-            placeholder="Wpisz hasło (domyślne: golem15)",
-            key="sidebar_admin_pass",
-        )
-        st.caption("Domyślne hasło startowe: **`golem15`** *(możesz je zmienić po zalogowaniu w zakładce 7)*")
-        if st.button("🔐 Zaloguj jako Administrator", type="primary", use_container_width=True, key="btn_side_login"):
-            expected = get_admin_password(db)
-            if admin_pass_side == expected or admin_pass_side == "golem15":
-                st.session_state.is_admin = True
-                st.rerun()
-            else:
-                st.error("Nieprawidłowe hasło administratora (domyślne hasło to: golem15).")
 
     st.divider()
     st.markdown("### 📊 Statystyki projektu")
@@ -1954,31 +1991,46 @@ with st.sidebar:
         use_container_width=True,
     )
 
+    if not st.session_state.is_admin:
+        st.markdown("<div style='margin-top: 1.5rem;'></div>", unsafe_allow_html=True)
+        with st.expander("🔒 Autoryzacja właściciela", expanded=False):
+            admin_pass_side = st.text_input(
+                "Klucz dostępu",
+                type="password",
+                value="",
+                placeholder="Wprowadź hasło właściciela",
+                key="sidebar_admin_pass",
+            )
+            if st.button("Odblokuj", use_container_width=True, key="btn_side_login"):
+                if st.session_state.failed_admin_attempts >= 5:
+                    time.sleep(2.0)
+                if verify_admin_password(admin_pass_side, db):
+                    st.session_state.is_admin = True
+                    st.session_state.failed_admin_attempts = 0
+                    st.rerun()
+                else:
+                    st.session_state.failed_admin_attempts += 1
+                    time.sleep(0.6)
+                    st.error("Brak autoryzacji — nieprawidłowy klucz dostępu.")
+
 # ==============================================================================
-# NAGŁÓWEK GŁÓWNY Z SZYBKIM LOGOWANIEM ADMINISTRATORA NA GÓRZE EKRANU
+# NAGŁÓWEK GŁÓWNY
 # ==============================================================================
-col_title, col_top_auth = st.columns([3, 1])
-with col_title:
-    st.title("🧬 The Golem 15: A Human's Road to Reality")
-    st.markdown(f"**Cel nadrzędny:** {db['projectMeta']['overarchingGoal']}")
-    st.caption(db["projectMeta"]["organizationalRule"])
-with col_top_auth:
-    if st.session_state.is_admin:
+if st.session_state.is_admin:
+    col_title, col_top_auth = st.columns([3, 1])
+    with col_title:
+        st.title("🧬 The Golem 15: A Human's Road to Reality")
+        st.markdown(f"**Cel nadrzędny:** {db['projectMeta']['overarchingGoal']}")
+        st.caption(db["projectMeta"]["organizationalRule"])
+    with col_top_auth:
         st.success("★ Tryb Administratora Aktywny")
         if st.button("Wyloguj Administratora", key="top_logout_btn", use_container_width=True):
             st.session_state.is_admin = False
             st.rerun()
-    else:
-        with st.popover("🔐 Zaloguj jako Administrator", use_container_width=True):
-            st.markdown("**Logowanie właściciela projektu**")
-            st.caption("Domyślne hasło startowe: `golem15`")
-            top_pass = st.text_input("Hasło Administratora", type="password", value="golem15", key="top_admin_pass")
-            if st.button("Odblokuj panel Administratora", type="primary", use_container_width=True, key="top_login_btn"):
-                if top_pass == get_admin_password(db) or top_pass == "golem15":
-                    st.session_state.is_admin = True
-                    st.rerun()
-                else:
-                    st.error("Błędne hasło (domyślne: golem15)")
+else:
+    st.title("🧬 The Golem 15: A Human's Road to Reality")
+    st.markdown(f"**Cel nadrzędny:** {db['projectMeta']['overarchingGoal']}")
+    st.caption(db["projectMeta"]["organizationalRule"])
 
 
 # ==============================================================================
@@ -2696,40 +2748,48 @@ with tab_graph:
 # ZAKŁADKA 7: PANEL AUTORYZACJI ADMINISTRATORA (MODERACJA)
 # ------------------------------------------------------------------------------
 with tab_admin:
-    st.subheader("🛡️ Centrum Autoryzacji Administratora")
+    st.subheader("🛡️ Centrum Moderacji i Administracji")
     if not st.session_state.is_admin:
-        with st.container(border=True):
-            st.markdown("### 🔐 Zaloguj się do Panelu Administratora")
-            st.info(
-                "Twoje domyślne hasło administratora to: **`golem15`**\n\n"
-                "*(Hasło jest już wpisane poniżej — wystarczy kliknąć przycisk **Zaloguj jako Administrator**, "
-                "a następnie możesz ustawić własne hasło)*."
-            )
-            with st.form("main_admin_login_form"):
-                admin_login_user = st.text_input("Login Administratora", value="Administrator (Ireneusz)")
-                admin_login_pass = st.text_input("Hasło Administratora", type="password", value="golem15")
-                if st.form_submit_button("🔐 Zaloguj jako Administrator", type="primary", use_container_width=True):
-                    expected = get_admin_password(db)
-                    if admin_login_pass == expected or admin_login_pass == "golem15":
+        st.info("🔒 Sekcja moderacji zgłoszeń jest przeznaczona wyłącznie dla właściciela projektu.")
+        with st.expander("🔑 Autoryzacja właściciela projektu", expanded=False):
+            with st.form("main_admin_login_form", clear_on_submit=True):
+                admin_login_pass = st.text_input("Klucz dostępu Administratora", type="password", value="")
+                if st.form_submit_button("Odblokuj panel", type="primary"):
+                    if st.session_state.failed_admin_attempts >= 5:
+                        time.sleep(2.0)
+                    if verify_admin_password(admin_login_pass, db):
                         st.session_state.is_admin = True
-                        st.success("Zalogowano pomyślnie jako Administrator!")
+                        st.session_state.failed_admin_attempts = 0
+                        st.success("Autoryzacja zakończona pomyślnie.")
                         st.rerun()
                     else:
-                        st.error("Nieprawidłowe hasło! Domyślne hasło to: golem15")
+                        st.session_state.failed_admin_attempts += 1
+                        time.sleep(0.6)
+                        st.error("Odmowa dostępu — nieprawidłowe hasło.")
     else:
-        with st.expander("🔑 Zmień / Ustaw własne hasło Administratora", expanded=False):
-            with st.form("change_admin_pass_form"):
-                new_pass = st.text_input("Nowe hasło Administratora", type="password")
-                new_pass_confirm = st.text_input("Powtórz nowe hasło", type="password")
-                if st.form_submit_button("Zapisz nowe hasło"):
-                    if not new_pass.strip():
-                        st.error("Hasło nie może być puste.")
+        with st.expander("🔑 Zmień / zaktualizuj hasło Administratora (PBKDF2-HMAC-SHA256)", expanded=False):
+            st.caption(
+                "Hasło nigdy nie jest zapisywane w postaci jawnej — w bazie danych przechowywany jest wyłącznie "
+                "kryptograficzny skrót PBKDF2-HMAC-SHA256 (260 000 iteracji) z losową solą 128-bitową."
+            )
+            with st.form("change_admin_pass_form", clear_on_submit=True):
+                current_pass = st.text_input("Aktualne hasło Administratora", type="password", value="")
+                new_pass = st.text_input("Nowe hasło Administratora (min. 8 znaków)", type="password", value="")
+                new_pass_confirm = st.text_input("Powtórz nowe hasło", type="password", value="")
+                if st.form_submit_button("Zaktualizuj hasło kryptograficzne", type="primary"):
+                    if not verify_admin_password(current_pass, db):
+                        st.error("Aktualne hasło jest nieprawidłowe.")
+                    elif len(new_pass.strip()) < 8:
+                        st.error("Nowe hasło musi zawierać co najmniej 8 znaków.")
                     elif new_pass != new_pass_confirm:
-                        st.error("Hasła nie są identyczne.")
+                        st.error("Nowe hasła nie są identyczne.")
                     else:
-                        db["projectMeta"]["adminPassword"] = new_pass.strip()
+                        new_auth = create_admin_auth_record(new_pass.strip(), iterations=260000)
+                        db["projectMeta"]["adminAuth"] = new_auth
+                        db["projectMeta"].pop("adminPassword", None)
                         save_db(db)
-                        st.success("Twoje nowe hasło Administratora zostało zapisane!")
+                        st.success("Hasło zostało zaszyfrowane (PBKDF2-HMAC-SHA256) i zapisane w bazie!")
+                        st.code(json.dumps(new_auth, indent=2), language="json")
 
         pending_study = [sm for sm in db.get("studyMaterials", []) if sm.get("status") == "pending"]
         pending_sps = [s for s in db["subprojects"] if s.get("status") == "pending"]
