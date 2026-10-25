@@ -1,25 +1,39 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
-  <meta name="theme-color" content="#0b0f19" />
+  <meta name="theme-color" id="metaThemeColor" content="#f4f6f9" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="apple-mobile-web-app-title" content="Golem 15" />
   <title>The Golem 15: A Human's Road to Reality</title>
   <link rel="manifest" href="manifest.json" />
   <link rel="stylesheet" href="styles.css" />
+  <script>
+    (function() {
+      try {
+        var savedTheme = localStorage.getItem("golem_15_ui_theme") || "light";
+        document.documentElement.setAttribute("data-theme", savedTheme);
+      } catch (e) {}
+    })();
+  </script>
 </head>
 <body>
   <!-- EKRAN BLOKADY PRYWATNEGO PROJEKTU (PRIVATE OWNER GATEKEEPER) -->
   <div id="ownerLockScreen" class="lock-screen-wrapper">
     <div class="lock-card">
-      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.1rem;">
-        <span class="lock-badge" id="lockBadgeText">🔒 PRYWATNY PROJEKT BADAWCZY — DOSTĘP WYŁĄCZNIE DLA WŁAŚCICIELA</span>
-        <div class="lang-switch-group">
-          <button type="button" class="lang-btn active" data-lang="pl" onclick="setLanguage('pl')">🇵🇱 PL</button>
-          <button type="button" class="lang-btn" data-lang="en" onclick="setLanguage('en')">🇬🇧 EN</button>
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem; margin-bottom:1.1rem;">
+        <span class="lock-badge" id="lockBadgeText">🔒 SERWIS NAUKOWO-BADAWCZY — DOSTĘP AUTORYZOWANY</span>
+        <div style="display:flex; align-items:center; gap:0.4rem;">
+          <div class="theme-switch-group" title="Przełącz tło: Jasne / Ciemne (Light / Dark)">
+            <button type="button" class="theme-btn active" data-theme-btn="light" onclick="setTheme('light')">☀️ <span class="theme-lbl-light">Jasny</span></button>
+            <button type="button" class="theme-btn" data-theme-btn="dark" onclick="setTheme('dark')">🌙 <span class="theme-lbl-dark">Ciemny</span></button>
+          </div>
+          <div class="lang-switch-group">
+            <button type="button" class="lang-btn active" data-lang="pl" onclick="setLanguage('pl')">🇵🇱 PL</button>
+            <button type="button" class="lang-btn" data-lang="en" onclick="setLanguage('en')">🇬🇧 EN</button>
+          </div>
         </div>
       </div>
 
@@ -27,7 +41,7 @@
         <div class="brand-logo">G15</div>
         <div class="brand-text">
           <h1>The Golem 15: A Human's Road to Reality</h1>
-          <p id="lockSubText">Projekt zamknięty dla osób postronnych. Podgląd i edycja wymagają uwierzytelnienia właściciela (PBKDF2-SHA256) lub autoryzowanego urządzenia.</p>
+          <p id="lockSubText">Portal naukowo-badawczy. Podgląd i edycja wymagają uwierzytelnienia właściciela (PBKDF2-SHA256) lub autoryzowanego urządzenia.</p>
         </div>
       </div>
 
@@ -44,14 +58,14 @@
           />
         </div>
         <div class="form-group" style="display:flex; align-items:center; gap:0.55rem; margin-top:0.65rem;">
-          <input type="checkbox" id="trustDeviceCheckbox" checked style="width:16px; height:16px; accent-color:#38bdf8; cursor:pointer;" />
+          <input type="checkbox" id="trustDeviceCheckbox" checked style="width:16px; height:16px; accent-color:var(--accent-blue); cursor:pointer;" />
           <label id="trustDeviceLabel" for="trustDeviceCheckbox" style="margin:0; font-size:0.82rem; font-weight:500; color:var(--text-secondary); cursor:pointer;">
             💻 Autoryzuj wyłącznie to urządzenie (pomiń hasło przy kolejnych wizytach w tej przeglądarce)
           </label>
         </div>
-        <div id="gatekeeperErrorBox" style="display:none; color:#f87171; font-size:0.83rem; margin-bottom:0.75rem; font-weight:600;"></div>
+        <div id="gatekeeperErrorBox" style="display:none; color:var(--danger); font-size:0.83rem; margin-bottom:0.75rem; font-weight:600;"></div>
         <button type="submit" id="gatekeeperSubmitBtn" class="btn btn-primary" style="width:100%; padding:0.7rem; font-size:0.92rem;">
-          🔓 Odblokuj prywatny portal
+          🔓 Odblokuj portal naukowy
         </button>
       </form>
     </div>
@@ -60,17 +74,47 @@
   <!-- GŁÓWNY PORTAL (WIDOCZNY WYŁĄCZNIE PO UWIERZYTELNIENIU WŁAŚCICIELA LUB Z JEGO URZĄDZENIA) -->
   <div id="appMainRoot" style="display:none; flex-direction:column; min-height:100vh;">
     <header class="top-header">
+      <!-- Pasek działów redakcyjnych w stylu serwisu Nauka w Polsce (PAP) -->
+      <div class="editorial-top-ribbon">
+        <div class="editorial-top-ribbon-inner">
+          <div style="display:flex; align-items:center; gap:0.5rem; font-weight:700; color:var(--text-secondary);">
+            <span id="editorialEditionLabel">📰 Serwis Nauka & Technologia • Wydanie Badawcze G15</span>
+          </div>
+          <div class="editorial-category-pills" id="editorialCategoryBar">
+            <button type="button" class="editorial-cat-link" onclick="switchTab('manhattan')" id="edCatAdmin">🏛️ Prawo i Administracja (3Y)</button>
+            <span class="editorial-cat-sep">•</span>
+            <button type="button" class="editorial-cat-link" onclick="openTrackWorkspaceFilter('A')" id="edCatHealth">🩺 Zdrowie i Bionika (A)</button>
+            <span class="editorial-cat-sep">•</span>
+            <button type="button" class="editorial-cat-link" onclick="openTrackWorkspaceFilter('B')" id="edCatTech">💻 Technologia i AI (B/C)</button>
+            <span class="editorial-cat-sep">•</span>
+            <button type="button" class="editorial-cat-link" onclick="openTrackWorkspaceFilter('D')" id="edCatLife">🧬 Życie i Biotechnologia (D)</button>
+            <span class="editorial-cat-sep">•</span>
+            <button type="button" class="editorial-cat-link" onclick="openTrackWorkspaceFilter('H')" id="edCatEnergy">⚛️ Materia i Energia (H)</button>
+            <span class="editorial-cat-sep">•</span>
+            <button type="button" class="editorial-cat-link" onclick="openTrackWorkspaceFilter('F')" id="edCatSpace">🛰️ Kosmos (F)</button>
+            <span class="editorial-cat-sep">•</span>
+            <button type="button" class="editorial-cat-link" onclick="openTrackWorkspaceFilter('G')" id="edCatEarth">🌍 Ziemia i Klimat (G)</button>
+            <span class="editorial-cat-sep">•</span>
+            <button type="button" class="editorial-cat-link" onclick="openTrackWorkspaceFilter('E')" id="edCatHumanities">📜 Człowiek i Filozofia (E)</button>
+          </div>
+        </div>
+      </div>
+
       <div class="header-inner">
         <div class="brand">
           <div class="brand-logo">G15</div>
           <div class="brand-text">
             <!-- Tytuł główny nigdy nie jest tłumaczony zgodnie z wytycznymi właściciela -->
             <h1>The Golem 15: A Human's Road to Reality</h1>
-            <p id="headerSubtitleText">Prywatny Portal Badawczy Właściciela • 8 Dziedzin Podstawowych (1–8) • 7 Ścieżek (A–G)</p>
+            <p id="headerSubtitleText">Portal Naukowo-Badawczy • 8 Dziedzin Podstawowych (1–8) • 8 Ścieżek (A–H) • System Manhattan</p>
           </div>
         </div>
 
         <div class="header-actions">
+          <div class="theme-switch-group" title="Przełącz tło: Jasne / Ciemne (Light / Dark)">
+            <button type="button" class="theme-btn active" data-theme-btn="light" onclick="setTheme('light')">☀️ <span class="theme-lbl-light">Jasny</span></button>
+            <button type="button" class="theme-btn" data-theme-btn="dark" onclick="setTheme('dark')">🌙 <span class="theme-lbl-dark">Ciemny</span></button>
+          </div>
           <div class="lang-switch-group" title="Przełącz język interfejsu (PL / EN)">
             <button type="button" class="lang-btn active" data-lang="pl" onclick="setLanguage('pl')">🇵🇱 PL</button>
             <button type="button" class="lang-btn" data-lang="en" onclick="setLanguage('en')">🇬🇧 EN</button>
@@ -120,14 +164,14 @@
     <!-- Główny obszar roboczy -->
     <main class="main-container">
       <!-- KOMPAS ORIENTACYJNY UI -->
-      <section id="wayfindingCompassBar" class="ws-card" style="margin-bottom:1.25rem; border:1px solid rgba(56,189,248,0.3); background:linear-gradient(135deg, rgba(15,23,42,0.96) 0%, rgba(22,31,51,0.92) 100%);">
+      <section id="wayfindingCompassBar" class="ws-card compass-bar-editorial">
         <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.75rem; margin-bottom:0.75rem;">
           <div>
-            <span id="compassHeaderBadge" style="font-size:0.74rem; text-transform:uppercase; letter-spacing:0.08em; color:#38bdf8; font-weight:700;">
-              🧭 Architektura Orientacyjna Projektu (OSF • ResearchHub • Most Wiedzy • Heptabase)
+            <span id="compassHeaderBadge" style="font-size:0.74rem; text-transform:uppercase; letter-spacing:0.06em; color:var(--accent-blue); font-weight:700;">
+              🧭 Katalog Działów i Architektura Projektu (Nauka w Polsce • Most Wiedzy • OSF)
             </span>
             <div id="compassSubText" style="font-size:0.83rem; color:var(--text-secondary);">
-              Kliknij wybraną warstwę fundamentów (1–8) lub ścieżkę (A–G), albo użyj wyszukiwarki poniżej. Wszystkie źródła posiadają oznaczenie języka [PL] / [EN].
+              Kliknij wybraną warstwę fundamentów (1–8) lub ścieżkę (A–H), albo użyj wyszukiwarki poniżej. Wszystkie źródła posiadają oznaczenie języka [PL] / [EN].
             </div>
           </div>
           <div style="display:flex; gap:0.5rem; align-items:center; flex-wrap:wrap;">
@@ -141,14 +185,14 @@
               id="globalWayfindingInput"
               class="input-field"
               style="min-width:260px; padding:0.4rem 0.75rem; font-size:0.82rem;"
-              placeholder="🔍 Szukaj w projekcie..."
+              placeholder="🔍 Szukaj w serwisie naukowym..."
               oninput="renderGlobalWayfindingResults(this.value)"
             />
           </div>
         </div>
         <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:0.75rem;">
-          <div style="padding:0.65rem 0.8rem; border-radius:8px; background:rgba(11,15,25,0.65); border:1px solid rgba(148,163,184,0.16);">
-            <div id="axis1Title" style="font-size:0.72rem; text-transform:uppercase; color:#38bdf8; font-weight:700; margin-bottom:0.35rem;">🏛️ Oś I: 8 Dziedzin Podstawowych (po kolei)</div>
+          <div class="compass-axis-card">
+            <div id="axis1Title" style="font-size:0.72rem; text-transform:uppercase; color:var(--accent-blue); font-weight:700; margin-bottom:0.35rem;">🏛️ Oś I: 8 Dziedzin Podstawowych (po kolei)</div>
             <div class="foundations-list">
               <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="switchTab('study')">1. Matematyka</span>
               <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="switchTab('study')">2. Informatyka</span>
@@ -160,8 +204,8 @@
               <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="switchTab('study')">8. AI</span>
             </div>
           </div>
-          <div style="padding:0.65rem 0.8rem; border-radius:8px; background:rgba(11,15,25,0.65); border:1px solid rgba(148,163,184,0.16);">
-            <div id="axis2Title" style="font-size:0.72rem; text-transform:uppercase; color:#a855f7; font-weight:700; margin-bottom:0.35rem;">🗺️ Oś II: 7 Ścieżek Badawczych (A–G)</div>
+          <div class="compass-axis-card">
+            <div id="axis2Title" style="font-size:0.72rem; text-transform:uppercase; color:var(--accent-purple); font-weight:700; margin-bottom:0.35rem;">🗺️ Oś II: 8 Działów Badawczych (A–H)</div>
             <div class="foundations-list">
               <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="openTrackWorkspaceFilter('A')">A: Bio-Cyfrowy</span>
               <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="openTrackWorkspaceFilter('B')">B: Cyfrowy Umysł</span>
@@ -170,18 +214,18 @@
               <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="openTrackWorkspaceFilter('E')">E: Filozofia</span>
               <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="openTrackWorkspaceFilter('F')">F: Kosmos</span>
               <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="openTrackWorkspaceFilter('G')">G: Ziemia</span>
-              <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem; border-color:rgba(244,63,94,0.6); color:#fda4af;" onclick="openTrackWorkspaceFilter('H')">⚡ Super-Projekt H: Atom & Fuzja</span>
+              <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem; border-color:var(--danger); color:var(--danger);" onclick="openTrackWorkspaceFilter('H')">⚡ H: Atom & Fuzja</span>
             </div>
           </div>
-          <div style="padding:0.65rem 0.8rem; border-radius:8px; background:rgba(11,15,25,0.65); border:1px solid rgba(148,163,184,0.16);">
-            <div id="axis3Title" style="font-size:0.72rem; text-transform:uppercase; color:#10b981; font-weight:700; margin-bottom:0.35rem;">🔒 Oś III: Oznaczenia Języka i Rygor Epistemiczny</div>
+          <div class="compass-axis-card">
+            <div id="axis3Title" style="font-size:0.72rem; text-transform:uppercase; color:var(--success); font-weight:700; margin-bottom:0.35rem;">🔒 Oś III: Oznaczenia Języka i Rygor Epistemiczny</div>
             <div id="axis3Body" style="font-size:0.76rem; color:var(--text-secondary); line-height:1.45;">
               🟢 Wiedza potwierdzona • 🔵 Aktywne badania • 🟡 Hipoteza • 🟣 Spekulacja<br/>
               Języki materiałów: <span class="lang-tag lang-pl">🇵🇱 [PL]</span> <span class="lang-tag lang-en">🇬🇧 [EN]</span> <span class="lang-tag lang-plen">🇵🇱/🇬🇧 [PL+EN]</span>
             </div>
           </div>
         </div>
-        <div id="globalWayfindingResults" style="display:none; margin-top:0.75rem; padding-top:0.75rem; border-top:1px solid rgba(148,163,184,0.2);"></div>
+        <div id="globalWayfindingResults" style="display:none; margin-top:0.75rem; padding-top:0.75rem; border-top:1px solid var(--border-subtle);"></div>
       </section>
 
       <!-- STRONA PIERWSZA PROJEKTOWA: ROZPROSZONY SYSTEM MANHATTAN (3 LATA ADMINISTRACJI + 5×N LAT Z RZĘDU) + GRAF ROZSZCZEPIEŃ AI -->

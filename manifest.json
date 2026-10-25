@@ -4,8 +4,8 @@
   "description": "Prywatny Portal Naukowo-Badawczy Właściciela (8 dziedzin podstawowych, ścieżki A–G oraz Super-Projekt H)",
   "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#0b0f19",
-  "theme_color": "#0b0f19",
+  "background_color": "#f4f6f9",
+  "theme_color": "#0f3d68",
   "orientation": "any",
   "lang": "pl"
 }

@@ -4596,6 +4596,8 @@ expected_dev_token = get_expected_device_token(db)
 
 if "lang" not in st.session_state:
     st.session_state.lang = "pl"
+if "theme" not in st.session_state:
+    st.session_state.theme = "light"
 if "failed_admin_attempts" not in st.session_state:
     st.session_state.failed_admin_attempts = 0
 if "manual_locked" not in st.session_state:
@@ -4613,128 +4615,236 @@ is_local_device_valid = is_local_owner_device_authorized(db)
 if not st.session_state.manual_locked and (is_url_token_valid or is_local_device_valid):
     st.session_state.owner_authenticated = True
 
-st.markdown(
+is_dark_theme = st.session_state.theme == "dark"
+theme_css_vars = (
     """
+    --bg-primary: #0d1117;
+    --bg-secondary: #151b23;
+    --bg-card: #1b222c;
+    --bg-subtle: #131820;
+    --header-stripe: #1e3a5f;
+    --text-primary: #e6edf3;
+    --text-secondary: #b1bac4;
+    --text-muted: #8b949e;
+    --border-color: #303946;
+    --accent-blue: #38bdf8;
+    --success: #10b981;
+    --warning: #f59e0b;
+    --danger: #ef4444;
+    --svg-bg: #0f151e;
+    --svg-grid: rgba(148, 163, 184, 0.16);
+    --svg-node-bg: #1b2330;
+    --svg-node-selected: #243247;
+    --svg-text: #f1f5f9;
+    --svg-text-muted: #94a3b8;
+    --svg-ring: #f8fafc;
+    """
+    if is_dark_theme
+    else """
+    --bg-primary: #f4f6f9;
+    --bg-secondary: #eef2f6;
+    --bg-card: #ffffff;
+    --bg-subtle: #f1f5f9;
+    --header-stripe: #0f3d68;
+    --text-primary: #0f172a;
+    --text-secondary: #334155;
+    --text-muted: #526071;
+    --border-color: #cbd5e1;
+    --accent-blue: #0f4c81;
+    --success: #047857;
+    --warning: #b45309;
+    --danger: #b91c1c;
+    --svg-bg: #f8fafc;
+    --svg-grid: rgba(100, 116, 139, 0.22);
+    --svg-node-bg: #ffffff;
+    --svg-node-selected: #eff6ff;
+    --svg-text: #0f172a;
+    --svg-text-muted: #475569;
+    --svg-ring: #0f172a;
+    """
+)
+
+st.markdown(
+    f"""
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
-    html, body, [class*="css"] {
+    :root {{
+        {theme_css_vars}
+    }}
+    .stApp {{
+        background-color: var(--bg-primary) !important;
+        color: var(--text-primary) !important;
+    }}
+    html, body, [class*="css"] {{
         font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    }
-    header[data-testid="stHeader"] {
+        color: var(--text-primary);
+    }}
+    header[data-testid="stHeader"] {{
         background: transparent !important;
-    }
-    .block-container {
-        padding-top: 1.4rem !important;
+    }}
+    .block-container {{
+        padding-top: 1.1rem !important;
         padding-bottom: 3rem !important;
         max-width: 1420px !important;
-    }
-    .golem-web-navbar {
-        background: linear-gradient(135deg, rgba(11, 15, 25, 0.98) 0%, rgba(22, 31, 51, 0.96) 100%);
-        border: 1px solid rgba(56, 189, 248, 0.28);
-        border-radius: 16px;
-        padding: 1.25rem 1.5rem;
-        margin-bottom: 1.2rem;
-        box-shadow: 0 16px 36px -8px rgba(0, 0, 0, 0.55);
-    }
-    .golem-brand-row {
+    }}
+    .editorial-ribbon {{
+        background: var(--bg-secondary);
+        border: 1px solid var(--border-color);
+        border-top: 3px solid var(--header-stripe);
+        border-radius: 6px;
+        padding: 0.45rem 0.9rem;
+        margin-bottom: 0.85rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        font-size: 0.76rem;
+        color: var(--text-secondary);
+    }}
+    .golem-web-navbar {{
+        background: var(--bg-card);
+        border: 1px solid var(--border-color);
+        border-left: 4px solid var(--header-stripe);
+        border-radius: 8px;
+        padding: 1.15rem 1.35rem;
+        margin-bottom: 1.1rem;
+        box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
+    }}
+    .golem-brand-row {{
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
         gap: 1rem;
-    }
-    .golem-logo-badge {
+    }}
+    .golem-logo-badge {{
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        width: 46px;
-        height: 46px;
-        border-radius: 12px;
-        background: linear-gradient(135deg, #38bdf8 0%, #6366f1 55%, #a855f7 100%);
+        width: 44px;
+        height: 44px;
+        border-radius: 6px;
+        background: var(--header-stripe);
+        border: 1px solid var(--border-color);
         color: #ffffff;
         font-weight: 800;
-        font-size: 1.15rem;
-        box-shadow: 0 6px 18px rgba(99, 102, 241, 0.45);
-    }
-    .golem-main-title {
-        font-size: 1.55rem;
-        font-weight: 800;
-        color: #f8fafc;
-        letter-spacing: -0.02em;
+        font-size: 1.05rem;
+        font-family: Georgia, 'Times New Roman', serif;
+    }}
+    .golem-main-title {{
+        font-family: Georgia, 'Times New Roman', serif;
+        font-size: 1.45rem;
+        font-weight: 700;
+        color: var(--text-primary);
+        letter-spacing: -0.01em;
         margin: 0;
         line-height: 1.2;
-    }
-    .golem-sub-caption {
-        font-size: 0.86rem;
-        color: #94a3b8;
-        margin-top: 0.2rem;
-    }
-    .golem-lang-tag {
+    }}
+    .golem-sub-caption {{
+        font-size: 0.82rem;
+        color: var(--text-muted);
+        margin-top: 0.18rem;
+    }}
+    .golem-lang-tag {{
         display: inline-flex;
         align-items: center;
-        gap: 0.3rem;
-        padding: 0.2rem 0.62rem;
-        border-radius: 999px;
-        font-size: 0.74rem;
+        gap: 0.25rem;
+        padding: 0.14rem 0.52rem;
+        border-radius: 4px;
+        font-size: 0.72rem;
         font-weight: 700;
-        background: rgba(16, 185, 129, 0.14);
-        border: 1px solid rgba(16, 185, 129, 0.4);
-        color: #34d399;
-    }
-    .golem-lang-tag.en {
-        background: rgba(56, 189, 248, 0.14);
-        border-color: rgba(56, 189, 248, 0.4);
-        color: #38bdf8;
-    }
-    .golem-lang-tag.bi {
-        background: rgba(168, 85, 247, 0.14);
-        border-color: rgba(168, 85, 247, 0.4);
-        color: #c084fc;
-    }
-    .golem-vault-card {
+        background: rgba(4, 120, 87, 0.12);
+        border: 1px solid rgba(4, 120, 87, 0.35);
+        color: var(--success);
+    }}
+    .golem-lang-tag.en {{
+        background: rgba(15, 76, 129, 0.12);
+        border-color: rgba(15, 76, 129, 0.35);
+        color: var(--accent-blue);
+    }}
+    .golem-lang-tag.bi {{
+        background: rgba(109, 40, 217, 0.12);
+        border-color: rgba(109, 40, 217, 0.35);
+        color: #7c3aed;
+    }}
+    .golem-vault-card {{
         max-width: 540px;
-        margin: 4rem auto 1.5rem auto;
-        background: linear-gradient(145deg, rgba(15, 23, 42, 0.98) 0%, rgba(22, 31, 51, 0.95) 100%);
-        border: 1px solid rgba(56, 189, 248, 0.35);
-        border-radius: 18px;
-        padding: 2.2rem 2rem;
-        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+        margin: 2.5rem auto 1.25rem auto;
+        background: var(--bg-card);
+        border: 1px solid var(--border-color);
+        border-top: 4px solid var(--header-stripe);
+        border-radius: 8px;
+        padding: 1.85rem;
+        box-shadow: 0 4px 16px -2px rgba(15, 23, 42, 0.12);
         text-align: center;
-    }
-    .golem-axis-strip {
+    }}
+    .golem-axis-strip {{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-        gap: 0.85rem;
-        margin-top: 1rem;
-        padding-top: 0.9rem;
-        border-top: 1px solid rgba(148, 163, 184, 0.16);
-    }
-    .golem-axis-box {
-        background: rgba(15, 23, 42, 0.72);
-        border: 1px solid rgba(148, 163, 184, 0.18);
-        border-radius: 11px;
-        padding: 0.7rem 0.9rem;
-    }
-    .golem-axis-heading {
+        gap: 0.8rem;
+        margin-top: 0.85rem;
+        padding-top: 0.85rem;
+        border-top: 1px solid var(--border-color);
+    }}
+    .golem-axis-box {{
+        background: var(--bg-subtle);
+        border: 1px solid var(--border-color);
+        border-radius: 6px;
+        padding: 0.65rem 0.85rem;
+    }}
+    .golem-axis-heading {{
         font-size: 0.72rem;
         text-transform: uppercase;
-        letter-spacing: 0.07em;
-        color: #38bdf8;
+        letter-spacing: 0.06em;
+        color: var(--accent-blue);
         font-weight: 700;
         margin-bottom: 0.35rem;
-    }
-    .golem-chip {
+    }}
+    .golem-chip {{
         display: inline-block;
         padding: 0.16rem 0.52rem;
         margin: 0.12rem;
-        border-radius: 999px;
+        border-radius: 4px;
         font-size: 0.73rem;
         font-weight: 600;
-        background: rgba(56, 189, 248, 0.1);
-        border: 1px solid rgba(56, 189, 248, 0.26);
-        color: #e2e8f0;
-    }
+        background: var(--bg-card);
+        border: 1px solid var(--border-color);
+        color: var(--text-primary);
+    }}
+    .g15-svg-box {{
+        background: var(--svg-bg);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 0.7rem;
+        overflow-x: auto;
+        margin-bottom: 0.9rem;
+    }}
+    .fis-gridline {{
+        stroke: var(--svg-grid);
+    }}
+    .fis-gen-label {{
+        fill: var(--svg-text-muted);
+    }}
+    .fis-neutron {{
+        stroke: var(--warning);
+    }}
+    .fis-node-bg {{
+        fill: var(--svg-node-bg);
+    }}
+    .fis-node-bg.is-selected {{
+        fill: var(--svg-node-selected);
+    }}
+    .fis-node-meta {{
+        fill: var(--svg-text-muted);
+    }}
+    .fis-node-title {{
+        fill: var(--svg-text);
+    }}
+    .fis-select-ring {{
+        stroke: var(--svg-ring);
+    }}
     </style>
     """,
     unsafe_allow_html=True,
@@ -4746,10 +4856,22 @@ L = I18N[st.session_state.lang]
 # BRAMKA DOSTĘPU: PROJEKT ZAMKNIĘTY WYŁĄCZNIE DLA WŁAŚCICIELA I JEGO URZĄDZENIA
 # ==============================================================================
 if not st.session_state.owner_authenticated:
-    _, col_gate, _ = st.columns([1, 1.6, 1])
+    _, col_gate, _ = st.columns([1, 1.7, 1])
     with col_gate:
-        lang_c1, lang_c2 = st.columns([3, 1])
-        with lang_c2:
+        gate_c1, gate_c2, gate_c3 = st.columns([1.4, 1.3, 1.1])
+        with gate_c2:
+            sel_theme_gate = st.segmented_control(
+                "Theme",
+                options=["light", "dark"],
+                default=st.session_state.theme,
+                format_func=lambda x: ("☀️ Light" if st.session_state.lang == "en" else "☀️ Jasny") if x == "light" else ("🌙 Dark" if st.session_state.lang == "en" else "🌙 Ciemny"),
+                label_visibility="collapsed",
+                key="gate_theme_switch",
+            )
+            if sel_theme_gate and sel_theme_gate != st.session_state.theme:
+                st.session_state.theme = sel_theme_gate
+                st.rerun()
+        with gate_c3:
             sel_lang = st.segmented_control(
                 "Language",
                 options=["pl", "en"],
@@ -4767,10 +4889,10 @@ if not st.session_state.owner_authenticated:
             <div class="golem-vault-card">
                 <div class="golem-logo-badge" style="margin:0 auto 0.9rem auto;">G15</div>
                 <h1 class="golem-main-title">The Golem 15: A Human's Road to Reality</h1>
-                <div style="color:#38bdf8; font-weight:700; font-size:0.92rem; margin-top:0.55rem;">
+                <div style="color:var(--accent-blue); font-weight:700; font-size:0.9rem; margin-top:0.55rem;">
                     {L['lockTitle']}
                 </div>
-                <p style="color:#94a3b8; font-size:0.86rem; margin-top:0.45rem; line-height:1.5;">
+                <p style="color:var(--text-muted); font-size:0.85rem; margin-top:0.45rem; line-height:1.5;">
                     {L['lockDesc']}
                 </p>
             </div>
@@ -4805,31 +4927,54 @@ if not st.session_state.owner_authenticated:
 
 
 # ==============================================================================
-# GÓRNY PASEK PORTALU WWW: TYTUŁ + PRZEŁĄCZNIK PL/EN + STATUS URZĄDZENIA + BLOKADA
+# GÓRNY PASEK PORTALU WWW (STYL NAUKAWPOLSCE.PL + PRZEŁĄCZNIK JASNY/CIEMNY + PL/EN)
 # ==============================================================================
 tracks_by_id = {t["id"]: t for t in db["tracks"]}
 foundations_by_id = {f["id"]: f for f in db["foundationDisciplines"]}
+is_en = st.session_state.lang == "en"
 
-top_c1, top_c2, top_c3 = st.columns([3.4, 1.0, 0.9])
+st.markdown(
+    f"""
+    <div class="editorial-ribbon">
+        <strong>📰 {'Science & Technology Portal • G15 Research Edition' if is_en else 'Serwis Nauka & Technologia • Wydanie Badawcze G15'}</strong>
+        <span>🏛️ {'Law & Admin (3Y)' if is_en else 'Prawo i Administracja (3Y)'} • 🩺 {'Health (A)' if is_en else 'Zdrowie (A)'} • 💻 {'Tech & AI (B/C)' if is_en else 'Technologia i AI (B/C)'} • 🧬 {'Life (D)' if is_en else 'Życie (D)'} • ⚛️ {'Matter & Energy (H)' if is_en else 'Materia i Energia (H)'} • 🛰️ {'Space (F)' if is_en else 'Kosmos (F)'} • 🌍 {'Earth (G)' if is_en else 'Ziemia (G)'} • 📜 {'Philosophy (E)' if is_en else 'Filozofia (E)'}</span>
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
+
+top_c1, top_c_theme, top_c2, top_c3 = st.columns([2.9, 1.0, 0.9, 0.8])
 with top_c1:
     st.markdown(
         f"""
-        <div style="display:flex; align-items:center; gap:0.9rem;">
+        <div style="display:flex; align-items:center; gap:0.85rem;">
             <div class="golem-logo-badge">G15</div>
             <div>
                 <h1 class="golem-main-title">The Golem 15: A Human's Road to Reality</h1>
-                <div class="golem-sub-caption">{L['subtitle']} • <span style="color:#34d399; font-weight:600;">{L['deviceTrustedBadge']}</span></div>
+                <div class="golem-sub-caption">{L['subtitle']} • <span style="color:var(--success); font-weight:600;">{L['deviceTrustedBadge']}</span></div>
             </div>
         </div>
         """,
         unsafe_allow_html=True,
     )
+with top_c_theme:
+    new_theme = st.segmented_control(
+        "Motyw / Theme",
+        options=["light", "dark"],
+        default=st.session_state.theme,
+        format_func=lambda x: ("☀️ Light" if is_en else "☀️ Jasny") if x == "light" else ("🌙 Dark" if is_en else "🌙 Ciemny"),
+        label_visibility="collapsed",
+        key="top_theme_switcher",
+    )
+    if new_theme and new_theme != st.session_state.theme:
+        st.session_state.theme = new_theme
+        st.rerun()
 with top_c2:
     new_lang = st.segmented_control(
         "Język / Language",
         options=["pl", "en"],
         default=st.session_state.lang,
-        format_func=lambda x: "🇵🇱 Polski" if x == "pl" else "🇬🇧 English",
+        format_func=lambda x: "🇵🇱 PL" if x == "pl" else "🇬🇧 EN",
         label_visibility="collapsed",
         key="top_lang_switcher",
     )
@@ -4859,10 +5004,10 @@ trk_chips_html = "".join(
 st.markdown(
     f"""
     <div class="golem-web-navbar">
-        <div style="font-size:0.92rem; color:#f1f5f9; font-weight:600; margin-bottom:0.25rem;">
+        <div style="font-size:0.9rem; color:var(--text-primary); font-weight:600; margin-bottom:0.2rem;">
             🎯 {L['overarchingGoal']}
         </div>
-        <div style="font-size:0.8rem; color:#94a3b8;">
+        <div style="font-size:0.8rem; color:var(--text-muted);">
             {L['organizationalRule']}
         </div>
         <div class="golem-axis-strip">
@@ -4871,7 +5016,7 @@ st.markdown(
                 <div>{fnd_chips_html}</div>
             </div>
             <div class="golem-axis-box">
-                <div class="golem-axis-heading">{'🗺️ Axis II: 7 Research Tracks (Projects A–G)' if is_en else '🗺️ Oś II: 7 Ścieżek Badawczych (Projekty A–G)'}</div>
+                <div class="golem-axis-heading">{'🗺️ Axis II: 8 Research Sections (Projects A–H)' if is_en else '🗺️ Oś II: 8 Działów Badawczych (Projekty A–H)'}</div>
                 <div>{trk_chips_html}</div>
             </div>
         </div>
@@ -4977,7 +5122,7 @@ def build_streamlit_fission_svg(ms_data: dict, sel_node_id: str, site_flt: str, 
             y = ((idx + 1) * svg_h) / (len(col) + 1)
             coords[n["id"]] = (x, y)
 
-    parts = [f'<div style="overflow-x:auto; background:#0b0f19; border:1px solid #26334d; border-radius:12px; padding:0.75rem;"><svg viewBox="0 0 {svg_w} {svg_h}" width="100%" height="{svg_h}" style="min-width:860px; display:block;">']
+    parts = [f'<div class="g15-svg-box"><svg viewBox="0 0 {svg_w} {svg_h}" width="100%" height="{svg_h}" style="min-width:860px; display:block;">']
     for g in range(max_g + 1):
         x = 115 + g * 260
         lbl = (
@@ -4986,8 +5131,8 @@ def build_streamlit_fission_svg(ms_data: dict, sel_node_id: str, site_flt: str, 
             ("GEN 2 • 5Y RESEARCH STREAMS" if en_mode else "GEN 2 • STRUMIENIE 5-LETNIE") if g == 2 else
             (f"GEN {g} • AI MICRO-FISSION" if en_mode else f"GEN {g} • MIKRO-ROZSZCZEPIENIA AI")
         )
-        parts.append(f'<line x1="{x}" y1="36" x2="{x}" y2="{svg_h - 18}" stroke="rgba(148,163,184,0.12)" stroke-dasharray="4 6" />')
-        parts.append(f'<text x="{x}" y="23" text-anchor="middle" fill="#94a3b8" font-size="10.5" font-weight="700">{lbl}</text>')
+        parts.append(f'<line class="fis-gridline" x1="{x}" y1="36" x2="{x}" y2="{svg_h - 18}" stroke-dasharray="3 6" />')
+        parts.append(f'<text class="fis-gen-label" x="{x}" y="23" text-anchor="middle" font-size="10" font-weight="700">{lbl}</text>')
 
     for n in vis_nodes:
         src = coords.get(n["id"])
@@ -5003,9 +5148,8 @@ def build_streamlit_fission_svg(ms_data: dict, sel_node_id: str, site_flt: str, 
             cx = (src[0] + dst[0]) / 2 + 26
             cy = (src[1] + dst[1]) / 2 - 32
             parts.append(
-                f'<path d="M {src[0]} {src[1]} Q {cx} {cy} {dst[0]} {dst[1]}" fill="none" '
-                f'stroke="{"#fcd34d" if rel else "#64748b"}" stroke-width="{"2.1" if rel else "1.1"}" '
-                f'stroke-dasharray="5 4" opacity="{"0.9" if rel else "0.32"}" />'
+                f'<path class="{"fis-neutron is-related" if rel else "fis-neutron"}" d="M {src[0]} {src[1]} Q {cx} {cy} {dst[0]} {dst[1]}" fill="none" '
+                f'stroke-width="{"1.8" if rel else "1"}" stroke-dasharray="4 4" />'
             )
 
     for n in vis_nodes:
@@ -5014,20 +5158,20 @@ def build_streamlit_fission_svg(ms_data: dict, sel_node_id: str, site_flt: str, 
             continue
         px, py = coords[pid]
         cx, cy = coords[n["id"]]
-        s_col = sites_map.get(n.get("siteId"), {}).get("color", "#38bdf8")
+        s_col = sites_map.get(n.get("siteId"), {}).get("color", "var(--link)")
         hi = n["id"] == sel_node_id or pid == sel_node_id
         mx = (px + cx) / 2
         parts.append(
             f'<path d="M {px + 68} {py} C {mx} {py}, {mx} {cy}, {cx - 72} {cy}" fill="none" '
-            f'stroke="{s_col}" stroke-width="{"3.0" if hi else "1.7"}" opacity="{"0.95" if hi else "0.5"}" />'
+            f'style="stroke:{s_col}" stroke-width="{"2.4" if hi else "1.3"}" opacity="{"0.9" if hi else "0.4"}" />'
         )
 
     for n in vis_nodes:
         if n["id"] not in coords:
             continue
         px, py = coords[n["id"]]
-        s_col = sites_map.get(n.get("siteId"), {}).get("color", "#38bdf8")
-        b_col = "#f43f5e" if n.get("status") == "critical" else ("#10b981" if n.get("status") == "synthesized" else s_col)
+        s_col = sites_map.get(n.get("siteId"), {}).get("color", "var(--link)")
+        b_col = "var(--danger)" if n.get("status") == "critical" else ("var(--success)" if n.get("status") == "synthesized" else s_col)
         agt_short = agents_map.get(n.get("agentId"), {}).get("codename", "AI").split("-")[0]
         raw_t = (n.get("titleEn") if en_mode else n.get("titlePl")) or n.get("code", "")
         short_t = (raw_t[:24] + "…") if len(raw_t) > 25 else raw_t
@@ -5036,13 +5180,13 @@ def build_streamlit_fission_svg(ms_data: dict, sel_node_id: str, site_flt: str, 
         is_sel = n["id"] == sel_node_id
         bw, bh = 148, 50
         if is_sel:
-            parts.append(f'<rect x="{px - bw/2 - 4}" y="{py - bh/2 - 4}" width="{bw + 8}" height="{bh + 8}" rx="12" fill="none" stroke="#f8fafc" stroke-width="2" stroke-dasharray="4 3" />')
+            parts.append(f'<rect class="fis-select-ring" x="{px - bw/2 - 4}" y="{py - bh/2 - 4}" width="{bw + 8}" height="{bh + 8}" rx="8" fill="none" stroke-width="1.5" stroke-dasharray="4 3" />')
         parts.append(
-            f'<rect x="{px - bw/2}" y="{py - bh/2}" width="{bw}" height="{bh}" rx="9" '
-            f'fill="{"#1e293b" if is_sel else "#0f172a"}" stroke="{b_col}" stroke-width="{"2.8" if is_sel else "1.8"}" />'
-            f'<text x="{px - bw/2 + 8}" y="{py - 7}" fill="{b_col}" font-size="10" font-weight="800">☢ {code_esc}</text>'
-            f'<text x="{px + bw/2 - 8}" y="{py - 7}" text-anchor="end" fill="#94a3b8" font-size="8.8" font-weight="600">{agt_short}</text>'
-            f'<text x="{px - bw/2 + 8}" y="{py + 11}" fill="#f1f5f9" font-size="9.5" font-weight="600">{short_t}</text>'
+            f'<rect class="{"fis-node-bg is-selected" if is_sel else "fis-node-bg"}" x="{px - bw/2}" y="{py - bh/2}" width="{bw}" height="{bh}" rx="5" '
+            f'style="stroke:{b_col}" stroke-width="{"2" if is_sel else "1.2"}" />'
+            f'<text x="{px - bw/2 + 8}" y="{py - 7}" style="fill:{b_col}" font-size="10" font-weight="700">{code_esc}</text>'
+            f'<text class="fis-node-meta" x="{px + bw/2 - 8}" y="{py - 7}" text-anchor="end" font-size="8.8" font-weight="600">{agt_short}</text>'
+            f'<text class="fis-node-title" x="{px - bw/2 + 8}" y="{py + 11}" font-size="9.5" font-weight="500">{short_t}</text>'
         )
 
     parts.append("</svg></div>")
@@ -5074,14 +5218,14 @@ with tab_manhattan:
         doc = ms_state.get("doctrine", {})
         st.markdown(
             f"""
-            <div style="background:linear-gradient(135deg, rgba(15,23,42,0.98), rgba(22,31,51,0.95)); border:1px solid rgba(245,158,11,0.45); border-radius:16px; padding:1.35rem 1.5rem; margin-bottom:1rem;">
-                <div style="font-size:0.74rem; font-weight:800; color:#fcd34d; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:0.35rem;">
+            <div style="background:var(--bg-card); border:1px solid var(--border-color); border-top:4px solid var(--header-stripe); border-radius:8px; padding:1.25rem 1.4rem; margin-bottom:1rem; box-shadow:0 1px 3px rgba(15,23,42,0.06);">
+                <div style="font-size:0.72rem; font-weight:800; color:var(--accent-blue); text-transform:uppercase; letter-spacing:0.06em; margin-bottom:0.3rem;">
                     ☢️ {ms_state.get('codename', 'MED-G15')} • {'FIRST PROJECT COMMAND PAGE' if is_en else 'STRONA PIERWSZA PROJEKTOWA'}
                 </div>
-                <h2 style="margin:0 0 0.4rem 0; font-size:1.35rem; color:#f8fafc;">
+                <h2 style="font-family:Georgia,'Times New Roman',serif; margin:0 0 0.4rem 0; font-size:1.32rem; color:var(--text-primary);">
                     {doc.get('titleEn') if is_en else doc.get('titlePl')}
                 </h2>
-                <p style="margin:0; font-size:0.88rem; color:#cbd5e1; line-height:1.55;">
+                <p style="margin:0; font-size:0.88rem; color:var(--text-secondary); line-height:1.55;">
                     {doc.get('summaryEn') if is_en else doc.get('summaryPl')}
                 </p>
             </div>
@@ -5118,11 +5262,11 @@ with tab_manhattan:
             for idx_s, s_obj in enumerate(ms_state.get("sites", [])):
                 with s_cols[idx_s]:
                     st.markdown(
-                        f"<div style='border-top:3px solid {s_obj['color']}; background:#111827; padding:0.7rem; border-radius:8px; min-height:175px;'>"
+                        f"<div style='border:1px solid var(--border-color); border-top:3px solid {s_obj['color']}; background:var(--bg-card); padding:0.75rem; border-radius:6px; min-height:175px;'>"
                         f"<div style='color:{s_obj['color']}; font-size:0.74rem; font-weight:800;'>☢ {s_obj['code']}</div>"
-                        f"<div style='font-weight:700; font-size:0.86rem; color:#f8fafc; margin:0.2rem 0;'>{s_obj['nameEn'] if is_en else s_obj['namePl']}</div>"
-                        f"<div style='font-size:0.7rem; color:#fcd34d; margin-bottom:0.25rem;'>{s_obj['clearance']}</div>"
-                        f"<div style='font-size:0.75rem; color:#94a3b8;'>{s_obj['scopeEn'] if is_en else s_obj['scopePl']}</div>"
+                        f"<div style='font-weight:700; font-size:0.86rem; color:var(--text-primary); margin:0.2rem 0;'>{s_obj['nameEn'] if is_en else s_obj['namePl']}</div>"
+                        f"<div style='font-size:0.7rem; color:var(--warning); font-weight:600; margin-bottom:0.25rem;'>{s_obj['clearance']}</div>"
+                        f"<div style='font-size:0.75rem; color:var(--text-secondary);'>{s_obj['scopeEn'] if is_en else s_obj['scopePl']}</div>"
                         f"</div>",
                         unsafe_allow_html=True,
                     )

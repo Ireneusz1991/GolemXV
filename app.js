@@ -4058,12 +4058,14 @@ const STORAGE_KEY = "the_golem_15_state_v8_private";
 const ADMIN_AUTH_KEY = "golem_xv_admin_auth_pbkdf2";
 const TRUSTED_DEVICE_KEY = "golem_15_trusted_device_token";
 const LANG_STORAGE_KEY = "golem_15_ui_lang";
+const THEME_STORAGE_KEY = "golem_15_ui_theme";
 
 const appState = {
   data: null,
   isAdmin: false,
   deviceTrusted: false,
   lang: localStorage.getItem(LANG_STORAGE_KEY) === "en" ? "en" : "pl",
+  theme: localStorage.getItem(THEME_STORAGE_KEY) === "dark" ? "dark" : "light",
   sourceLangFilter: "ALL",
   serverOnline: false,
   activeTab: "manhattan",
@@ -4266,6 +4268,19 @@ function onGlobalSourceLangFilterChange(val) {
   renderAll();
 }
 
+function setTheme(theme) {
+  appState.theme = theme === "dark" ? "dark" : "light";
+  localStorage.setItem(THEME_STORAGE_KEY, appState.theme);
+  document.documentElement.setAttribute("data-theme", appState.theme);
+  const metaColor = document.getElementById("metaThemeColor");
+  if (metaColor) {
+    metaColor.setAttribute("content", appState.theme === "dark" ? "#0d1117" : "#f4f6f9");
+  }
+  document.querySelectorAll(".theme-btn").forEach((btn) => {
+    btn.classList.toggle("active", btn.dataset.themeBtn === appState.theme);
+  });
+}
+
 function setLanguage(lang) {
   appState.lang = lang === "en" ? "en" : "pl";
   localStorage.setItem(LANG_STORAGE_KEY, appState.lang);
@@ -4282,15 +4297,34 @@ function applyStaticTranslations() {
     const el = document.getElementById(id);
     if (el) el.textContent = isEn ? en : pl;
   };
+  document.querySelectorAll(".theme-lbl-light").forEach((el) => {
+    el.textContent = isEn ? "Light" : "Jasny";
+  });
+  document.querySelectorAll(".theme-lbl-dark").forEach((el) => {
+    el.textContent = isEn ? "Dark" : "Ciemny";
+  });
+  setTxt(
+    "editorialEditionLabel",
+    "📰 Serwis Nauka & Technologia • Wydanie Badawcze G15",
+    "📰 Science & Technology Portal • G15 Research Edition"
+  );
+  setTxt("edCatAdmin", "🏛️ Prawo i Administracja (3Y)", "🏛️ Law & Administration (3Y)");
+  setTxt("edCatHealth", "🩺 Zdrowie i Bionika (A)", "🩺 Health & Bionics (A)");
+  setTxt("edCatTech", "💻 Technologia i AI (B/C)", "💻 Technology & AI (B/C)");
+  setTxt("edCatLife", "🧬 Życie i Biotechnologia (D)", "🧬 Life & Biotech (D)");
+  setTxt("edCatEnergy", "⚛️ Materia i Energia (H)", "⚛️ Matter & Nuclear Energy (H)");
+  setTxt("edCatSpace", "🛰️ Kosmos (F)", "🛰️ Space (F)");
+  setTxt("edCatEarth", "🌍 Ziemia i Klimat (G)", "🌍 Earth & Climate (G)");
+  setTxt("edCatHumanities", "📜 Człowiek i Filozofia (E)", "📜 Humanities & Philosophy (E)");
   setTxt(
     "lockBadgeText",
-    "🔒 PRYWATNY PROJEKT BADAWCZY — DOSTĘP WYŁĄCZNIE DLA WŁAŚCICIELA",
-    "🔒 PRIVATE RESEARCH PROJECT — OWNER ACCESS ONLY"
+    "🔒 SERWIS NAUKOWO-BADAWCZY — DOSTĘP AUTORYZOWANY",
+    "🔒 SCIENTIFIC RESEARCH PORTAL — AUTHORIZED ACCESS"
   );
   setTxt(
     "lockSubText",
-    "Projekt zamknięty dla osób postronnych. Podgląd i edycja wymagają uwierzytelnienia właściciela (PBKDF2-SHA256) lub autoryzowanego urządzenia.",
-    "Project closed to outsiders. Viewing and editing require Owner Authentication (PBKDF2-SHA256) or an Authorized Owner Device."
+    "Portal naukowo-badawczy zamknięty dla osób postronnych. Podgląd i edycja wymagają uwierzytelnienia właściciela (PBKDF2-SHA256) lub autoryzowanego urządzenia.",
+    "Scientific research portal closed to outsiders. Viewing and editing require Owner Authentication (PBKDF2-SHA256) or an Authorized Owner Device."
   );
   setTxt(
     "lockPassLabel",
@@ -4302,11 +4336,11 @@ function applyStaticTranslations() {
     "💻 Autoryzuj wyłącznie to urządzenie (pomiń hasło przy kolejnych wizytach w tej przeglądarce)",
     "💻 Authorize this device exclusively (skip password on future visits in this browser)"
   );
-  setTxt("gatekeeperSubmitBtn", "🔓 Odblokuj prywatny portal", "🔓 Unlock Private Portal");
+  setTxt("gatekeeperSubmitBtn", "🔓 Odblokuj portal naukowy", "🔓 Unlock Research Portal");
   setTxt(
     "headerSubtitleText",
-    "Prywatny Portal Właściciela • Rozproszony System Manhattan (3 lata Administracji + 5×N lat z rzędu) • Graf Rozszczepień AI",
-    "Private Owner Portal • Manhattan Distributed System (3Y Admin + 5×N Back-to-Back Years) • AI Fission Graph"
+    "Portal Naukowo-Badawczy • Rozproszony System Manhattan (3 lata Administracji + 5×N lat z rzędu) • Graf Rozszczepień AI",
+    "Scientific Research Portal • Manhattan Distributed System (3Y Admin + 5×N Back-to-Back Years) • AI Fission Graph"
   );
   setTxt("authToggleBtn", "🔒 Zablokuj", "🔒 Lock");
   setTxt(
@@ -4323,21 +4357,21 @@ function applyStaticTranslations() {
 
   setTxt(
     "compassHeaderBadge",
-    "🧭 Architektura Orientacyjna Projektu (OSF • ResearchHub • Most Wiedzy • Heptabase)",
-    "🧭 Project Wayfinding Architecture (OSF • ResearchHub • Most Wiedzy • Heptabase)"
+    "🧭 Katalog Działów i Architektura Projektu (Nauka w Polsce • Most Wiedzy • OSF)",
+    "🧭 Editorial Sections & Project Architecture (Nauka w Polsce • Most Wiedzy • OSF)"
   );
   setTxt(
     "compassSubText",
-    "Kliknij wybraną warstwę fundamentów (1–8) lub ścieżkę (A–G), albo użyj wyszukiwarki poniżej. Wszystkie źródła posiadają oznaczenie języka [PL] / [EN].",
-    "Click any foundation layer (1–8) or research track (A–G), or use the search bar below. Every source includes a language badge [PL] / [EN]."
+    "Kliknij wybraną warstwę fundamentów (1–8) lub dział badawczy (A–H), albo użyj wyszukiwarki poniżej. Wszystkie źródła posiadają oznaczenie języka [PL] / [EN].",
+    "Click any foundation layer (1–8) or research section (A–H), or use the search bar below. Every source includes a language badge [PL] / [EN]."
   );
   setTxt("axis1Title", "🏛️ Oś I: 8 Dziedzin Podstawowych (po kolei)", "🏛️ Axis I: 8 Core Foundations (Sequential)");
-  setTxt("axis2Title", "🗺️ Oś II: 7 Ścieżek Badawczych (A–G)", "🗺️ Axis II: 7 Research Tracks (A–G)");
+  setTxt("axis2Title", "🗺️ Oś II: 8 Działów Badawczych (A–H)", "🗺️ Axis II: 8 Research Sections (A–H)");
   setTxt("axis3Title", "🔒 Oś III: Oznaczenia Języka i Rygor Epistemiczny", "🔒 Axis III: Source Language & Epistemic Status");
   setTxt(
     "studyHeaderTitle",
-    "🎓 Materiały do nauki — 8 dziedzin ze Wspólnych podstaw po kolei oraz odnogi Projektów A–G",
-    "🎓 Study Materials — 8 Core Foundations in Sequence & Tracks A–G Branches"
+    "🎓 Materiały do nauki — 8 dziedzin ze Wspólnych podstaw po kolei oraz odnogi Projektów A–H",
+    "🎓 Study Materials — 8 Core Foundations in Sequence & Tracks A–H Branches"
   );
   setTxt(
     "studyHeaderDesc",
@@ -4348,13 +4382,13 @@ function applyStaticTranslations() {
   setTxt("btnAddStudyWsTop", "🚀 Uruchom środowisko dla dziedziny", "🚀 Launch Foundation Workspace");
   setTxt(
     "studyTracksHeaderTitle",
-    "🧭 Materiały do nauki i Biblioteka według Ścieżek A–G",
-    "🧭 Study Materials & Library by Research Tracks A–G"
+    "🧭 Materiały do nauki i Biblioteka według Działów A–H",
+    "🧭 Study Materials & Library by Research Sections A–H"
   );
   setTxt(
     "mapHeaderTitle",
-    "Siedem powiązanych ścieżek badawczych (Projekty A–G)",
-    "Seven Interconnected Research Tracks (Projects A–G)"
+    "Osiem powiązanych działów badawczych (Projekty A–H)",
+    "Eight Interconnected Research Sections (Projects A–H)"
   );
 }
 
@@ -4547,6 +4581,7 @@ async function initApp() {
     appState.isAdmin = true;
   }
 
+  setTheme(appState.theme);
   document.querySelectorAll(".lang-btn").forEach((btn) => {
     btn.classList.toggle("active", btn.dataset.lang === appState.lang);
   });
@@ -4640,11 +4675,11 @@ function formatTextWithLinks(str) {
   let escaped = escapeHtml(str);
   escaped = escaped.replace(
     /\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g,
-    '<a href="$2" target="_blank" rel="noopener noreferrer" style="color:#38bdf8; text-decoration:underline; font-weight:600;">🔗 $1</a>'
+    '<a href="$2" target="_blank" rel="noopener noreferrer" style="color:var(--accent-blue); text-decoration:underline; font-weight:600;">🔗 $1</a>'
   );
   escaped = escaped.replace(
     /(^|[^"'>])(https?:\/\/[^\s<)]+)/g,
-    '$1<a href="$2" target="_blank" rel="noopener noreferrer" style="color:#38bdf8; text-decoration:underline;">$2</a>'
+    '$1<a href="$2" target="_blank" rel="noopener noreferrer" style="color:var(--accent-blue); text-decoration:underline;">$2</a>'
   );
   return escaped;
 }
@@ -4654,14 +4689,14 @@ function renderLinksBlock(item) {
   const isEn = appState.lang === "en";
   if (links.length > 0) {
     return `
-      <div style="margin-top:0.5rem; padding-top:0.4rem; border-top:1px dashed rgba(148,163,184,0.2);">
-        <div style="font-size:0.75rem; font-weight:700; color:#38bdf8; margin-bottom:0.25rem;">🔗 ${isEn ? "Source Links & Language:" : "Odnośniki źródłowe i język materiału:"}</div>
+      <div style="margin-top:0.5rem; padding-top:0.4rem; border-top:1px dashed var(--border-color);">
+        <div style="font-size:0.75rem; font-weight:700; color:var(--accent-blue); margin-bottom:0.25rem;">🔗 ${isEn ? "Source Links & Language:" : "Odnośniki źródłowe i język materiału:"}</div>
         <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.25rem;">
           ${links
             .map((l) => {
               const lCode = detectSourceLang(`${l.label || ""} ${l.url || ""}`);
               const tag = lCode === "PL" ? `<span class="lang-tag lang-pl" style="font-size:0.65rem; padding:0.05rem 0.4rem;">[PL 🇵🇱]</span>` : `<span class="lang-tag lang-en" style="font-size:0.65rem; padding:0.05rem 0.4rem;">[EN 🇬🇧]</span>`;
-              return `<li style="font-size:0.8rem; display:flex; align-items:center; gap:0.35rem; flex-wrap:wrap;">${tag} <a href="${escapeHtml(l.url)}" target="_blank" rel="noopener noreferrer" style="color:#38bdf8; text-decoration:underline;">${escapeHtml(l.label)}</a></li>`;
+              return `<li style="font-size:0.8rem; display:flex; align-items:center; gap:0.35rem; flex-wrap:wrap;">${tag} <a href="${escapeHtml(l.url)}" target="_blank" rel="noopener noreferrer" style="color:var(--accent-blue); text-decoration:underline;">${escapeHtml(l.label)}</a></li>`;
             })
             .join("")}
         </ul>
@@ -4673,7 +4708,7 @@ function renderLinksBlock(item) {
     return `
       <div style="margin-top:0.45rem; display:flex; align-items:center; gap:0.4rem;">
         ${renderLangBadgeHtml(lCode)}
-        <a href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer" style="color:#38bdf8; font-size:0.82rem; font-weight:600; text-decoration:underline;">🔗 ${isEn ? "Open source material" : "Otwórz materiał źródłowy"}</a>
+        <a href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer" style="color:var(--accent-blue); font-size:0.82rem; font-weight:600; text-decoration:underline;">🔗 ${isEn ? "Open source material" : "Otwórz materiał źródłowy"}</a>
       </div>
     `;
   }
@@ -4921,8 +4956,8 @@ function renderStudyView() {
             ${(readingOrder.stages || [])
               .map(
                 (st) => `
-              <div style="background:rgba(15,23,42,0.65); padding:0.55rem 0.7rem; border-radius:8px; border:1px solid rgba(148,163,184,0.18);">
-                <strong style="font-size:0.82rem; color:#38bdf8;">${escapeHtml(st.stage)}</strong>
+              <div style="background:var(--bg-subtle); padding:0.55rem 0.7rem; border-radius:var(--radius-sm); border:1px solid var(--border-subtle);">
+                <strong style="font-size:0.82rem; color:var(--accent-blue);">${escapeHtml(st.stage)}</strong>
                 <ul style="margin:0.35rem 0 0; padding-left:1.1rem; font-size:0.8rem; color:var(--text-secondary);">
                   ${(st.items || []).map((it) => `<li>${formatTextWithLinks(it)}</li>`).join("")}
                 </ul>
@@ -4982,8 +5017,8 @@ function renderStudyView() {
               ${
                 suppProj
                   ? `
-                <div class="track-section-block" style="border: 1px solid rgba(56, 189, 248, 0.35); background: rgba(15, 23, 42, 0.78); padding: 0.75rem; border-radius: 8px;">
-                  <h4 style="color:#38bdf8;">📚 ${escapeHtml(suppProj.title)}</h4>
+                <div class="track-section-block" style="border: 1px solid var(--border-color); background: var(--bg-subtle); padding: 0.75rem; border-radius: var(--radius-sm);">
+                  <h4 style="color:var(--accent-blue);">📚 ${escapeHtml(suppProj.title)}</h4>
                   ${
                     suppProj.sequence
                       ? `<div style="margin:0.4rem 0 0.65rem; padding:0.45rem 0.65rem; border-radius:8px; background:rgba(16,185,129,0.12); border-left:3px solid #10b981; font-size:0.82rem;">
@@ -5332,7 +5367,7 @@ function renderGraphView() {
       const s = coords[lnk.source];
       const t = coords[lnk.target];
       if (!s || !t) return "";
-      return `<line x1="${s.x}" y1="${s.y}" x2="${t.x}" y2="${t.y}" stroke="#475569" stroke-width="2" opacity="0.75" />`;
+      return `<line class="g-edge" x1="${s.x}" y1="${s.y}" x2="${t.x}" y2="${t.y}" stroke-width="1.5" />`;
     })
     .join("");
 
@@ -5343,9 +5378,9 @@ function renderGraphView() {
       const r = tr.id === "E" ? 44 : 36;
       return `
       <g style="cursor:pointer;" onclick="selectGraphNode('${tr.id}')">
-        <circle cx="${c.x}" cy="${c.y}" r="${r}" fill="#111827" stroke="${tr.color}" stroke-width="3" />
-        <text x="${c.x}" y="${c.y + 4}" text-anchor="middle" fill="#f8fafc" font-size="13" font-weight="700">${escapeHtml(tObj.code)}</text>
-        <text x="${c.x}" y="${c.y + r + 18}" text-anchor="middle" fill="#e2e8f0" font-size="11.5" font-weight="600">${escapeHtml(tObj.name)}</text>
+        <circle class="g-node" cx="${c.x}" cy="${c.y}" r="${r}" style="stroke:${tr.color}" stroke-width="2" />
+        <text class="g-label-strong" x="${c.x}" y="${c.y + 4}" text-anchor="middle" font-size="12.5" font-weight="700">${escapeHtml(tObj.code)}</text>
+        <text class="g-label" x="${c.x}" y="${c.y + r + 18}" text-anchor="middle" font-size="11.5" font-weight="500">${escapeHtml(tObj.name)}</text>
       </g>
     `;
     })
@@ -6177,8 +6212,8 @@ function openAiFissionModal(parentId) {
       }
     </p>
     <form onsubmit="submitAiFissionSplit(event, '${parentNode.id}')">
-      <div class="ws-card" style="margin-bottom:0.85rem; border-left:3px solid #f59e0b;">
-        <strong style="color:#fcd34d; font-size:0.84rem;">⚡ Fragment Rozszczepienia #1 (G${parentNode.generation + 1})</strong>
+      <div class="ws-card" style="margin-bottom:0.85rem; border-left:3px solid var(--warning);">
+        <strong style="color:var(--warning); font-size:0.84rem;">⚡ Fragment Rozszczepienia #1 (G${parentNode.generation + 1})</strong>
         <div style="display:grid; grid-template-columns:1fr 2fr; gap:0.6rem; margin-top:0.45rem;">
           <input type="text" id="fis1Code" class="input-field" value="${escapeHtml(proposals[0].code)}" required />
           <input type="text" id="fis1Title" class="input-field" value="${escapeHtml(isEn ? proposals[0].titleEn : proposals[0].titlePl)}" required />
@@ -6191,8 +6226,8 @@ function openAiFissionModal(parentId) {
         <input type="text" id="fis1Deliv" class="input-field" style="margin-top:0.4rem;" value="${escapeHtml(proposals[0].deliverablePl)}" required />
       </div>
 
-      <div class="ws-card" style="margin-bottom:0.85rem; border-left:3px solid #38bdf8;">
-        <strong style="color:#7dd3fc; font-size:0.84rem;">⚡ Fragment Rozszczepienia #2 (G${parentNode.generation + 1})</strong>
+      <div class="ws-card" style="margin-bottom:0.85rem; border-left:3px solid var(--accent-blue);">
+        <strong style="color:var(--accent-blue); font-size:0.84rem;">⚡ Fragment Rozszczepienia #2 (G${parentNode.generation + 1})</strong>
         <div style="display:grid; grid-template-columns:1fr 2fr; gap:0.6rem; margin-top:0.45rem;">
           <input type="text" id="fis2Code" class="input-field" value="${escapeHtml(proposals[1].code)}" required />
           <input type="text" id="fis2Title" class="input-field" value="${escapeHtml(isEn ? proposals[1].titleEn : proposals[1].titlePl)}" required />
@@ -6592,8 +6627,8 @@ function buildFissionSvgMarkup(ms, isEn) {
         ? `GEN ${g} • AI MICRO-FISSION`
         : `GEN ${g} • MIKRO-ROZSZCZEPIENIA AI`;
     genHeadersSvg += `
-      <line x1="${x}" y1="36" x2="${x}" y2="${svgHeight - 20}" stroke="rgba(148,163,184,0.1)" stroke-dasharray="4 6" />
-      <text x="${x}" y="24" text-anchor="middle" fill="#94a3b8" font-size="10.5" font-weight="700" letter-spacing="0.06em">${lbl}</text>
+      <line class="fis-gridline" x1="${x}" y1="36" x2="${x}" y2="${svgHeight - 20}" stroke-dasharray="3 6" />
+      <text class="fis-gen-label" x="${x}" y="24" text-anchor="middle" font-size="10" font-weight="700" letter-spacing="0.08em">${lbl}</text>
     `;
   }
 
@@ -6603,14 +6638,14 @@ function buildFissionSvgMarkup(ms, isEn) {
     if (!n.parentId || !coords[n.parentId] || !coords[n.id]) return;
     const p = coords[n.parentId];
     const c = coords[n.id];
-    const site = sitesById[n.siteId] || { color: "#38bdf8" };
+    const site = sitesById[n.siteId] || { color: "var(--link)" };
     const isHighlighted = n.id === selId || n.parentId === selId;
     const midX = (p.x + c.x) / 2;
-    const strokeW = isHighlighted ? 3.1 : 1.7;
-    const opacity = isHighlighted ? 0.96 : 0.48;
+    const strokeW = isHighlighted ? 2.4 : 1.3;
+    const opacity = isHighlighted ? 0.9 : 0.4;
     primaryEdgesSvg += `
       <path d="M ${p.x + 68} ${p.y} C ${midX} ${p.y}, ${midX} ${c.y}, ${c.x - 72} ${c.y}"
-            fill="none" stroke="${site.color}" stroke-width="${strokeW}" opacity="${opacity}" />
+            fill="none" style="stroke:${site.color}" stroke-width="${strokeW}" opacity="${opacity}" />
     `;
   });
 
@@ -6627,11 +6662,10 @@ function buildFissionSvgMarkup(ms, isEn) {
       const ctrlX = (src.x + dst.x) / 2 + 28;
       const ctrlY = (src.y + dst.y) / 2 - 34;
       neutronArcsSvg += `
-        <path d="M ${src.x} ${src.y} Q ${ctrlX} ${ctrlY} ${dst.x} ${dst.y}"
-              fill="none" stroke="${isRelated ? "#fcd34d" : "#64748b"}"
-              stroke-width="${isRelated ? 2.1 : 1.1}"
-              stroke-dasharray="5 4"
-              opacity="${isRelated ? 0.9 : 0.3}" />
+        <path class="${isRelated ? "fis-neutron is-related" : "fis-neutron"}" d="M ${src.x} ${src.y} Q ${ctrlX} ${ctrlY} ${dst.x} ${dst.y}"
+              fill="none"
+              stroke-width="${isRelated ? 1.8 : 1}"
+              stroke-dasharray="4 4" />
       `;
     });
   });
@@ -6641,14 +6675,14 @@ function buildFissionSvgMarkup(ms, isEn) {
     .map((n) => {
       const pt = coords[n.id];
       if (!pt) return "";
-      const site = sitesById[n.siteId] || { color: "#38bdf8", code: n.siteId };
+      const site = sitesById[n.siteId] || { color: "var(--link)", code: n.siteId };
       const agt = agentsById[n.agentId] || { codename: "AI-AGENT" };
       const isSelected = n.id === selId;
       const borderCol =
         n.status === "critical"
-          ? "#f43f5e"
+          ? "var(--danger)"
           : n.status === "synthesized"
-          ? "#10b981"
+          ? "var(--success)"
           : site.color;
       const titleRaw = isEn ? n.titleEn : n.titlePl;
       const shortTitle = titleRaw.length > 26 ? titleRaw.slice(0, 25) + "…" : titleRaw;
@@ -6659,16 +6693,15 @@ function buildFissionSvgMarkup(ms, isEn) {
         <g style="cursor:pointer;" onclick="selectFissionNode('${n.id}')">
           ${
             isSelected
-              ? `<rect x="${pt.x - boxW / 2 - 4}" y="${pt.y - boxH / 2 - 4}" width="${boxW + 8}" height="${boxH + 8}" rx="12" fill="none" stroke="#f8fafc" stroke-width="2" stroke-dasharray="4 3" />`
+              ? `<rect class="fis-select-ring" x="${pt.x - boxW / 2 - 4}" y="${pt.y - boxH / 2 - 4}" width="${boxW + 8}" height="${boxH + 8}" rx="8" fill="none" stroke-width="1.5" stroke-dasharray="4 3" />`
               : ""
           }
-          <rect x="${pt.x - boxW / 2}" y="${pt.y - boxH / 2}" width="${boxW}" height="${boxH}" rx="9"
-                fill="${isSelected ? "#1e293b" : "#0f172a"}"
-                stroke="${borderCol}"
-                stroke-width="${isSelected ? 2.8 : 1.8}" />
-          <text x="${pt.x - boxW / 2 + 8}" y="${pt.y - 7}" fill="${borderCol}" font-size="10" font-weight="800">☢ ${escapeHtml(n.code)}</text>
-          <text x="${pt.x + boxW / 2 - 8}" y="${pt.y - 7}" text-anchor="end" fill="#94a3b8" font-size="8.8" font-weight="600">${escapeHtml(agt.codename.split("-")[0])}</text>
-          <text x="${pt.x - boxW / 2 + 8}" y="${pt.y + 11}" fill="#f1f5f9" font-size="9.6" font-weight="600">${escapeHtml(shortTitle)}</text>
+          <rect class="${isSelected ? "fis-node-bg is-selected" : "fis-node-bg"}" x="${pt.x - boxW / 2}" y="${pt.y - boxH / 2}" width="${boxW}" height="${boxH}" rx="5"
+                style="stroke:${borderCol}"
+                stroke-width="${isSelected ? 2 : 1.2}" />
+          <text x="${pt.x - boxW / 2 + 8}" y="${pt.y - 7}" style="fill:${borderCol}" font-size="10" font-weight="700">${escapeHtml(n.code)}</text>
+          <text class="fis-node-meta" x="${pt.x + boxW / 2 - 8}" y="${pt.y - 7}" text-anchor="end" font-size="8.8" font-weight="600">${escapeHtml(agt.codename.split("-")[0])}</text>
+          <text class="fis-node-title" x="${pt.x - boxW / 2 + 8}" y="${pt.y + 11}" font-size="9.6" font-weight="500">${escapeHtml(shortTitle)}</text>
         </g>
       `;
     })
@@ -6718,9 +6751,9 @@ function renderManhattanView() {
   const ribbonStepsHtml = [];
 
   ribbonStepsHtml.push(`
-    <div class="seq-ribbon-step" style="--step-color:#f59e0b;">
-      <div style="font-size:0.68rem; color:#fcd34d; font-weight:800;">${isEn ? "YEARS 1–3" : "LATA 1–3"} (${startYr}–${adminEndYr})</div>
-      <div style="font-weight:700; color:#f8fafc; margin:0.15rem 0;">🏛️ ${isEn ? "Administration (3Y Core)" : "Administracja (3 lata)"}</div>
+    <div class="seq-ribbon-step" style="--step-color:var(--warning);">
+      <div style="font-size:0.68rem; color:var(--warning); font-weight:800;">${isEn ? "YEARS 1–3" : "LATA 1–3"} (${startYr}–${adminEndYr})</div>
+      <div style="font-weight:700; color:var(--text-primary); margin:0.15rem 0;">🏛️ ${isEn ? "Administration (3Y Core)" : "Administracja (3 lata)"}</div>
       <div style="font-size:0.7rem; color:var(--text-muted);">180 ECTS • ${adminDoneCount}/3 ${isEn ? "yrs done" : "lat ukończ."}</div>
     </div>
   `);
@@ -6743,7 +6776,7 @@ function renderManhattanView() {
       ribbonStepsHtml.push(`
         <div class="seq-ribbon-step" style="--step-color:${item.color}; cursor:pointer;" onclick="toggleStudyBlockExpand('${item.id}')">
           <div style="font-size:0.68rem; color:${item.color}; font-weight:800;">${isEn ? `YEARS ${pStart}–${pEnd}` : `LATA ${pStart}–${pEnd}`} (${calS}–${calE})</div>
-          <div style="font-weight:700; color:#f8fafc; margin:0.15rem 0;">${item.icon} #${qIdx + 1}: ${escapeHtml((isEn ? item.titleEn : item.titlePl).split("(")[0].trim())}</div>
+          <div style="font-weight:700; color:var(--text-primary); margin:0.15rem 0;">${item.icon} #${qIdx + 1}: ${escapeHtml((isEn ? item.titleEn : item.titlePl).split("(")[0].trim())}</div>
           <div style="font-size:0.7rem; color:var(--text-muted);">5 ${isEn ? "yrs in a row" : "lat z rzędu"} • ${doneArr.length}/5</div>
         </div>
       `);
@@ -6753,16 +6786,16 @@ function renderManhattanView() {
           <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.6rem;">
             <div style="cursor:pointer;" onclick="toggleStudyBlockExpand('${item.id}')">
               <div style="display:flex; align-items:center; gap:0.45rem; flex-wrap:wrap; margin-bottom:0.2rem;">
-                <span class="foundation-pill" style="font-size:0.7rem; font-weight:800; border-color:${item.color}; color:#f8fafc;">
+                <span class="foundation-pill" style="font-size:0.7rem; font-weight:800; border-color:${item.color}; color:var(--text-primary);">
                   ${isEn ? `BLOCK #${qIdx + 1} • YEARS ${pStart}–${pEnd} (${calS}–${calE})` : `OGNIWO #${qIdx + 1} • LATA ${pStart}–${pEnd} (${calS}–${calE})`}
                 </span>
                 <span class="foundation-pill" style="font-size:0.69rem; color:${site.color}; border-color:${site.color};">
                   ☢ ${escapeHtml(site.code)}
                 </span>
                 ${renderLangBadgeHtml(item.sourceLang || "PL+EN")}
-                <span style="font-size:0.74rem; color:#34d399; font-weight:700;">${doneArr.length}/5 ${isEn ? "years completed" : "lat zaliczonych"} (300 ECTS)</span>
+                <span style="font-size:0.74rem; color:var(--success); font-weight:700;">${doneArr.length}/5 ${isEn ? "years completed" : "lat zaliczonych"} (300 ECTS)</span>
               </div>
-              <h4 style="font-size:1rem; color:#f8fafc;">${item.icon} ${escapeHtml(isEn ? item.titleEn : item.titlePl)}</h4>
+              <h4 style="font-size:1rem; color:var(--text-primary);">${item.icon} ${escapeHtml(isEn ? item.titleEn : item.titlePl)}</h4>
             </div>
             <div style="display:flex; gap:0.35rem; align-items:center;">
               <button class="btn btn-sm" title="${isEn ? "Move earlier" : "Przesuń wcześniej w kolejce"}" onclick="moveQueueTopic('${item.id}', -1)">↑</button>
@@ -6775,7 +6808,7 @@ function renderManhattanView() {
           ${
             expanded
               ? `
-            <div style="margin-top:0.8rem; padding-top:0.75rem; border-top:1px solid rgba(148,163,184,0.16);">
+            <div style="margin-top:0.8rem; padding-top:0.75rem; border-top:1px solid var(--border-subtle);">
               ${(item.years || [])
                 .map((yrObj) => {
                   const isDone = doneArr.includes(yrObj.year);
@@ -6783,9 +6816,9 @@ function renderManhattanView() {
                   const absCalYr = calS + yrObj.year - 1;
                   return `
                   <div class="seq-year-row ${isDone ? "done" : ""}">
-                    <input type="checkbox" ${isDone ? "checked" : ""} onchange="toggleTopicYearDone('${item.id}', ${yrObj.year})" style="margin-top:0.22rem; width:16px; height:16px; accent-color:#10b981; cursor:pointer;" />
+                    <input type="checkbox" ${isDone ? "checked" : ""} onchange="toggleTopicYearDone('${item.id}', ${yrObj.year})" style="margin-top:0.22rem; width:16px; height:16px; accent-color:var(--success); cursor:pointer;" />
                     <div style="flex:1;">
-                      <div style="font-size:0.8rem; font-weight:700; color:${isDone ? "#34d399" : "#e2e8f0"};">
+                      <div style="font-size:0.8rem; font-weight:700; color:${isDone ? "var(--success)" : "var(--text-primary)"};">
                         ${isEn ? `Year ${yrObj.year} of 5 (Project Year ${absProjectYr} • ${absCalYr}/${absCalYr + 1})` : `Rok ${yrObj.year} z 5 (Rok projektowy ${absProjectYr} • ${absCalYr}/${absCalYr + 1})`}
                       </div>
                       <div style="font-size:0.82rem; color:var(--text-secondary); margin-top:0.12rem;">
@@ -6823,7 +6856,7 @@ function renderManhattanView() {
       <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:1rem;">
         <div style="max-width:920px;">
           <span class="manhattan-codename-badge">☢️ ${escapeHtml(ms.codename)} • ${isEn ? "FIRST PROJECT COMMAND PAGE" : "STRONA PIERWSZA PROJEKTOWA"}</span>
-          <h2 style="font-size:1.38rem; font-weight:800; color:#f8fafc; margin-bottom:0.45rem;">
+          <h2 style="font-family:Georgia,'Times New Roman',serif; font-size:1.35rem; font-weight:800; color:var(--text-primary); margin-bottom:0.45rem;">
             ${escapeHtml(isEn ? ms.doctrine.titleEn : ms.doctrine.titlePl)}
           </h2>
           <p style="font-size:0.9rem; color:var(--text-secondary); line-height:1.58;">
@@ -6844,7 +6877,7 @@ function renderManhattanView() {
         ${(isEn ? ms.doctrine.rulesEn : ms.doctrine.rulesPl)
           .map(
             (r) => `
-          <div style="background:rgba(15,23,42,0.72); border:1px solid rgba(245,158,11,0.22); border-radius:8px; padding:0.6rem 0.8rem; font-size:0.79rem; color:#e2e8f0;">
+          <div style="background:var(--bg-subtle); border:1px solid var(--border-color); border-left:3px solid var(--header-stripe); border-radius:var(--radius-sm); padding:0.6rem 0.8rem; font-size:0.79rem; color:var(--text-primary);">
             ${escapeHtml(r)}
           </div>
         `
@@ -6855,22 +6888,22 @@ function renderManhattanView() {
       <div class="manhattan-kpi-grid">
         <div class="manhattan-kpi-card">
           <div class="manhattan-kpi-label">${isEn ? "Continuous Study Pipeline" : "Ciągły Szlak Studiów z Rzędu"}</div>
-          <div class="manhattan-kpi-val" style="color:#fcd34d;">${metrics.totalStudyYears} ${isEn ? "yrs" : "lat"} <span style="font-size:0.82rem; font-weight:600; color:#94a3b8;">(3 + ${ms.selectedQueue.length}×5)</span></div>
+          <div class="manhattan-kpi-val" style="color:var(--warning);">${metrics.totalStudyYears} ${isEn ? "yrs" : "lat"} <span style="font-size:0.82rem; font-weight:600; color:var(--text-muted);">(3 + ${ms.selectedQueue.length}×5)</span></div>
           <div style="font-size:0.74rem; color:var(--text-muted);">${startYr}–${totalEndYr} • ${metrics.totalSemesters} sem. • ${metrics.totalEcts} ECTS</div>
         </div>
         <div class="manhattan-kpi-card">
           <div class="manhattan-kpi-label">${isEn ? "Academic Completion" : "Zaliczony Postęp Studiów"}</div>
-          <div class="manhattan-kpi-val" style="color:#34d399;">${metrics.completedYearsTotal} / ${metrics.totalStudyYears} ${isEn ? "yrs" : "lat"} (${metrics.progressPct}%)</div>
+          <div class="manhattan-kpi-val" style="color:var(--success);">${metrics.completedYearsTotal} / ${metrics.totalStudyYears} ${isEn ? "yrs" : "lat"} (${metrics.progressPct}%)</div>
           <div style="font-size:0.74rem; color:var(--text-muted);">${isEn ? "Admin 3Y + sequential 5Y blocks" : "Administracja (3 l.) + bloki 5-letnie"}</div>
         </div>
         <div class="manhattan-kpi-card">
           <div class="manhattan-kpi-label">${isEn ? "AI Fission Factor (k_eff)" : "Współczynnik Rozszczepienia k_eff"}</div>
-          <div class="manhattan-kpi-val" style="color:#f43f5e;">k_eff = ${metrics.kEff}</div>
+          <div class="manhattan-kpi-val" style="color:var(--danger);">k_eff = ${metrics.kEff}</div>
           <div style="font-size:0.74rem; color:var(--text-muted);">${isEn ? "Controlled supercritical chain reaction" : "Kontrolowana reakcja łańcuchowa B+R"}</div>
         </div>
         <div class="manhattan-kpi-card">
           <div class="manhattan-kpi-label">${isEn ? "Fission Graph Database" : "Baza Węzłów Rozszczepień"}</div>
-          <div class="manhattan-kpi-val" style="color:#38bdf8;">${allFisNodes.length} ${isEn ? "nodes" : "węzłów"}</div>
+          <div class="manhattan-kpi-val" style="color:var(--accent-blue);">${allFisNodes.length} ${isEn ? "nodes" : "węzłów"}</div>
           <div style="font-size:0.74rem; color:var(--text-muted);">${(ms.sites || []).length} ${isEn ? "Manhattan sites" : "ośrodków"} • ${(ms.aiAgents || []).length} ${isEn ? "AI Agents" : "Agentów AI"}</div>
         </div>
       </div>
@@ -6896,8 +6929,8 @@ function renderManhattanView() {
               <span style="font-size:0.74rem; font-weight:800; color:${s.color};">☢ ${escapeHtml(s.code)}</span>
               <span class="foundation-pill" style="font-size:0.66rem;">${cnt} ${isEn ? "nodes" : "węzłów"}</span>
             </div>
-            <div style="font-weight:700; font-size:0.93rem; color:#f8fafc; margin-bottom:0.2rem;">${escapeHtml(isEn ? s.nameEn : s.namePl)}</div>
-            <div style="font-size:0.72rem; color:#fcd34d; margin-bottom:0.35rem;">${escapeHtml(s.historicalAnalog)} • ${escapeHtml(s.clearance)}</div>
+            <div style="font-weight:700; font-size:0.93rem; color:var(--text-primary); margin-bottom:0.2rem;">${escapeHtml(isEn ? s.nameEn : s.namePl)}</div>
+            <div style="font-size:0.72rem; color:var(--warning); font-weight:600; margin-bottom:0.35rem;">${escapeHtml(s.historicalAnalog)} • ${escapeHtml(s.clearance)}</div>
             <p style="font-size:0.78rem; color:var(--text-secondary); line-height:1.45;">${escapeHtml(isEn ? s.scopeEn : s.scopePl)}</p>
           </div>
         `;
@@ -6906,10 +6939,10 @@ function renderManhattanView() {
     </div>
 
     <!-- 3. GRAF ROZSZCZEPIEŃ PROJEKTU OPARTY NA AGENTACH AI -->
-    <div class="ws-card" style="padding:1.25rem; margin-bottom:1.5rem; border:1px solid rgba(56,189,248,0.3);">
+    <div class="ws-card" style="padding:1.25rem; margin-bottom:1.5rem;">
       <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.75rem; margin-bottom:0.9rem;">
         <div>
-          <h3 style="font-size:1.12rem; color:#f8fafc;">
+          <h3 style="font-size:1.12rem; color:var(--text-primary);">
             ☢️ ${isEn ? "II. AI-Agent Project Fission Graph (Chain-Reaction Cascade G0 → G3+)" : "II. Graf Rozszczepień Projektu Oparty na Agentach AI (Kaskada Reakcji Łańcuchowej G0 → G3+)"}
           </h3>
           <p style="font-size:0.82rem; color:var(--text-muted);">
@@ -6943,7 +6976,7 @@ function renderManhattanView() {
             activeNode
               ? `
             <div style="display:flex; justify-content:space-between; align-items:center; gap:0.4rem; margin-bottom:0.4rem;">
-              <span class="track-code" style="margin:0; color:${activeSite ? activeSite.color : "#38bdf8"};">
+              <span class="track-code" style="margin:0; color:${activeSite ? activeSite.color : "var(--accent-blue)"};">
                 ☢ ${escapeHtml(activeNode.code)} • GEN G${activeNode.generation}
               </span>
               <select class="select-field" style="width:auto; padding:0.2rem 0.5rem; font-size:0.75rem;" onchange="setFissionNodeStatus('${activeNode.id}', this.value)">
@@ -6952,25 +6985,25 @@ function renderManhattanView() {
                 <option value="synthesized" ${activeNode.status === "synthesized" ? "selected" : ""}>✅ ${isEn ? "Synthesized" : "Zsyntetyzowano"}</option>
               </select>
             </div>
-            <h4 style="font-size:1.02rem; color:#f8fafc; margin-bottom:0.35rem;">
+            <h4 style="font-size:1.02rem; color:var(--text-primary); margin-bottom:0.35rem;">
               ${escapeHtml(isEn ? activeNode.titleEn : activeNode.titlePl)}
             </h4>
             <p style="font-size:0.83rem; color:var(--text-secondary); margin-bottom:0.65rem;">
               ${escapeHtml(isEn ? activeNode.descEn : activeNode.descPl)}
             </p>
-            <div style="background:rgba(15,23,42,0.75); border:1px solid rgba(16,185,129,0.3); border-radius:8px; padding:0.55rem 0.7rem; font-size:0.79rem; margin-bottom:0.7rem;">
-              <strong style="color:#34d399;">🎯 ${isEn ? "Deliverable:" : "Artefakt wyjściowy:"}</strong>
-              <div style="color:#e2e8f0; margin-top:0.15rem;">${escapeHtml(isEn ? activeNode.deliverableEn : activeNode.deliverablePl)}</div>
+            <div style="background:var(--bg-subtle); border:1px solid var(--border-color); border-left:3px solid var(--success); border-radius:var(--radius-sm); padding:0.55rem 0.7rem; font-size:0.79rem; margin-bottom:0.7rem;">
+              <strong style="color:var(--success);">🎯 ${isEn ? "Deliverable:" : "Artefakt wyjściowy:"}</strong>
+              <div style="color:var(--text-primary); margin-top:0.15rem;">${escapeHtml(isEn ? activeNode.deliverableEn : activeNode.deliverablePl)}</div>
             </div>
 
             ${
               activeAgent
                 ? `
-              <div style="background:rgba(15,23,42,0.82); border:1px solid rgba(56,189,248,0.28); border-radius:8px; padding:0.65rem 0.75rem; margin-bottom:0.75rem;">
+              <div style="background:var(--bg-subtle); border:1px solid var(--border-color); border-radius:var(--radius-sm); padding:0.65rem 0.75rem; margin-bottom:0.75rem;">
                 <div style="font-size:0.72rem; text-transform:uppercase; color:${activeAgent.color}; font-weight:800;">
                   🤖 ${escapeHtml(activeAgent.codename)}
                 </div>
-                <div style="font-size:0.85rem; font-weight:700; color:#f8fafc; margin:0.1rem 0 0.25rem;">
+                <div style="font-size:0.85rem; font-weight:700; color:var(--text-primary); margin:0.1rem 0 0.25rem;">
                   ${escapeHtml(isEn ? activeAgent.nameEn : activeAgent.namePl)}
                 </div>
                 <div style="font-size:0.76rem; color:var(--text-muted); font-style:italic;">
@@ -7005,10 +7038,10 @@ function renderManhattanView() {
     </div>
 
     <!-- 4. NIEPRZERWANY SZLAK AKADEMICKI: 3 LATA ADMINISTRACJI + PO 5 LAT Z KAŻDEJ WYBRANEJ TEMATYKI CAŁY CZAS Z RZĘDU -->
-    <div class="ws-card" style="padding:1.25rem; margin-bottom:1.5rem; border:1px solid rgba(245,158,11,0.35);">
+    <div class="ws-card" style="padding:1.25rem; margin-bottom:1.5rem;">
       <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:0.85rem; margin-bottom:0.85rem;">
         <div>
-          <h3 style="font-size:1.12rem; color:#f8fafc;">
+          <h3 style="font-size:1.12rem; color:var(--text-primary);">
             🎓 ${isEn ? "III. Continuous Study Pipeline: 3 Years of Administration + 5 Consecutive Years per Selected Discipline" : "III. Ciągły System Studiów: 3 Lata Administracji + Po 5 Lat Studiów z Każdej Wybranej Tematyki Cały Czas z Rzędu"}
           </h3>
           <p style="font-size:0.82rem; color:var(--text-muted);">
@@ -7030,8 +7063,8 @@ function renderManhattanView() {
       </div>
 
       <!-- Selektor wybieranych 5-letnich tematyk -->
-      <div style="background:rgba(11,15,25,0.68); border:1px solid rgba(148,163,184,0.18); border-radius:10px; padding:0.8rem; margin-bottom:1rem;">
-        <div style="font-size:0.75rem; font-weight:700; color:#38bdf8; text-transform:uppercase; margin-bottom:0.45rem;">
+      <div style="background:var(--bg-subtle); border:1px solid var(--border-color); border-radius:var(--radius-sm); padding:0.8rem; margin-bottom:1rem;">
+        <div style="font-size:0.75rem; font-weight:700; color:var(--accent-blue); text-transform:uppercase; margin-bottom:0.45rem;">
           ✓ ${isEn ? "Click to toggle 5-year specializations in your sequential back-to-back queue:" : "Kliknij, aby włączyć lub wyłączyć 5-letnie kierunki studiów w Twoim ciągu realizowanym z rzędu:"}
         </div>
         <div style="display:flex; flex-wrap:wrap; gap:0.4rem;">
@@ -7056,18 +7089,18 @@ function renderManhattanView() {
       </div>
 
       <!-- BLOK 0: 3 LATA STUDIÓW ADMINISTRACJI (OBOWIĄZKOWY RDZEŃ MANHATTAN) -->
-      <div class="ws-card" style="border-left:4px solid #f59e0b; background:linear-gradient(135deg, rgba(245,158,11,0.09) 0%, rgba(15,23,42,0.92) 100%); margin-bottom:1rem;">
+      <div class="ws-card" style="border-left:4px solid var(--warning); background:var(--bg-subtle); margin-bottom:1rem;">
         <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.6rem;">
           <div style="cursor:pointer;" onclick="toggleStudyBlockExpand('ADMIN-3Y')">
             <div style="display:flex; align-items:center; gap:0.45rem; flex-wrap:wrap; margin-bottom:0.2rem;">
-              <span class="foundation-pill" style="font-size:0.7rem; font-weight:800; border-color:#f59e0b; color:#fcd34d;">
+              <span class="foundation-pill" style="font-size:0.7rem; font-weight:800; border-color:var(--warning); color:var(--warning);">
                 ${isEn ? `FOUNDATIONAL COMMAND • YEARS 1–3 (${startYr}–${adminEndYr})` : `OGNIWO ZEROWE (SZTAB) • LATA 1–3 (${startYr}–${adminEndYr})`}
               </span>
-              <span class="foundation-pill" style="font-size:0.69rem; color:#f59e0b; border-color:#f59e0b;">☢ DISTRICT W-0</span>
+              <span class="foundation-pill" style="font-size:0.69rem; color:var(--warning); border-color:var(--warning);">☢ DISTRICT W-0</span>
               ${renderLangBadgeHtml("PL+EN")}
-              <span style="font-size:0.75rem; color:#34d399; font-weight:700;">${adminDoneCount}/3 ${isEn ? "years completed" : "lata zaliczone"} (180 ECTS)</span>
+              <span style="font-size:0.75rem; color:var(--success); font-weight:700;">${adminDoneCount}/3 ${isEn ? "years completed" : "lata zaliczone"} (180 ECTS)</span>
             </div>
-            <h4 style="font-size:1.05rem; color:#f8fafc;">🏛️ ${escapeHtml(isEn ? adminCore.titleEn : adminCore.titlePl)}</h4>
+            <h4 style="font-size:1.05rem; color:var(--text-primary);">🏛️ ${escapeHtml(isEn ? adminCore.titleEn : adminCore.titlePl)}</h4>
             <p style="font-size:0.8rem; color:var(--text-secondary);">${escapeHtml(isEn ? adminCore.subtitleEn : adminCore.subtitlePl)}</p>
           </div>
           <button class="btn btn-sm" onclick="toggleStudyBlockExpand('ADMIN-3Y')">
@@ -7078,22 +7111,22 @@ function renderManhattanView() {
         ${
           adminExpanded
             ? `
-          <div style="margin-top:0.85rem; padding-top:0.8rem; border-top:1px solid rgba(245,158,11,0.22);">
+          <div style="margin-top:0.85rem; padding-top:0.8rem; border-top:1px solid var(--border-color);">
             ${(adminCore.years || [])
               .map((yrObj) => {
                 const isDone = (adminCore.completedYears || []).includes(yrObj.year);
                 const calYr = startYr + yrObj.year - 1;
                 return `
-                <div class="seq-year-row ${isDone ? "done" : ""}">
-                  <input type="checkbox" ${isDone ? "checked" : ""} onchange="toggleAdminYearDone(${yrObj.year})" style="margin-top:0.25rem; width:16px; height:16px; accent-color:#10b981; cursor:pointer;" />
+                <div class="seq-year-row ${isDone ? "done" : ""}" style="background:var(--bg-card);">
+                  <input type="checkbox" ${isDone ? "checked" : ""} onchange="toggleAdminYearDone(${yrObj.year})" style="margin-top:0.25rem; width:16px; height:16px; accent-color:var(--success); cursor:pointer;" />
                   <div style="flex:1;">
-                    <div style="font-size:0.84rem; font-weight:700; color:${isDone ? "#34d399" : "#fcd34d"};">
+                    <div style="font-size:0.84rem; font-weight:700; color:${isDone ? "var(--success)" : "var(--text-primary)"};">
                       ${escapeHtml(isEn ? yrObj.titleEn : yrObj.titlePl)} • ${escapeHtml(yrObj.semesters)} (${calYr}/${calYr + 1})
                     </div>
                     <ul style="margin:0.3rem 0 0.35rem; padding-left:1.15rem; font-size:0.8rem; color:var(--text-secondary);">
                       ${(isEn ? yrObj.coursesEn : yrObj.coursesPl).map((c) => `<li>${escapeHtml(c)}</li>`).join("")}
                     </ul>
-                    <div style="font-size:0.77rem; color:#38bdf8;">
+                    <div style="font-size:0.77rem; color:var(--accent-blue);">
                       <strong>🎯 ${isEn ? "Administrative Milestone:" : "Kamień milowy Sztabu W-0:"}</strong> ${escapeHtml(isEn ? yrObj.deliverableEn : yrObj.deliverablePl)}
                     </div>
                   </div>
@@ -7115,7 +7148,7 @@ function renderManhattanView() {
     <div class="ws-card" style="padding:1.25rem;">
       <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.75rem; margin-bottom:1rem;">
         <div>
-          <h3 style="font-size:1.08rem; color:#f8fafc;">
+          <h3 style="font-size:1.08rem; color:var(--text-primary);">
             🗄️ ${isEn ? "IV. Project Fission Database & Specialized AI Agent Fleet" : "IV. Baza Rozszczepień Projektu oraz Rejestr Floty Agentów AI"}
           </h3>
           <p style="font-size:0.8rem; color:var(--text-muted);">
@@ -7135,7 +7168,7 @@ function renderManhattanView() {
       <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(310px, 1fr)); gap:0.75rem; margin-bottom:1.5rem;">
         ${dbFilteredNodes
           .map((n) => {
-            const s = sitesById[n.siteId] || { color: "#38bdf8", code: n.siteId };
+            const s = sitesById[n.siteId] || { color: "var(--accent-blue)", code: n.siteId };
             const a = agentsById[n.agentId] || { codename: n.agentId };
             return `
             <div class="ws-card" style="border-left:3px solid ${s.color}; cursor:pointer;" onclick="selectFissionNode('${n.id}')">
@@ -7143,16 +7176,16 @@ function renderManhattanView() {
                 <strong style="color:${s.color};">☢ ${escapeHtml(n.code)} • G${n.generation}</strong>
                 <span style="color:var(--text-muted);">🤖 ${escapeHtml(a.codename)}</span>
               </div>
-              <div style="font-weight:700; font-size:0.88rem; color:#f8fafc; margin-bottom:0.2rem;">${escapeHtml(isEn ? n.titleEn : n.titlePl)}</div>
+              <div style="font-weight:700; font-size:0.88rem; color:var(--text-primary); margin-bottom:0.2rem;">${escapeHtml(isEn ? n.titleEn : n.titlePl)}</div>
               <div style="font-size:0.77rem; color:var(--text-secondary); margin-bottom:0.35rem;">${escapeHtml(isEn ? n.descEn : n.descPl)}</div>
-              <div style="font-size:0.73rem; color:#34d399;">🎯 ${escapeHtml(isEn ? n.deliverableEn : n.deliverablePl)}</div>
+              <div style="font-size:0.73rem; color:var(--success); font-weight:600;">🎯 ${escapeHtml(isEn ? n.deliverableEn : n.deliverablePl)}</div>
             </div>
           `;
           })
           .join("")}
       </div>
 
-      <h4 style="font-size:0.96rem; color:#38bdf8; margin-bottom:0.7rem;">
+      <h4 style="font-size:0.96rem; color:var(--accent-blue); margin-bottom:0.7rem;">
         🤖 ${isEn ? "Specialized Manhattan AI Agents (System Prompts)" : "Flota Wyspecjalizowanych Agentów AI (Gotowe Rozkazy Systemowe)"}
       </h4>
       <div class="agent-card-grid">
@@ -7165,9 +7198,9 @@ function renderManhattanView() {
                 <span style="font-size:0.74rem; font-weight:800; color:${agt.color};">🤖 ${escapeHtml(agt.codename)}</span>
                 <span class="foundation-pill" style="font-size:0.66rem;">${escapeHtml(s.code)}</span>
               </div>
-              <div style="font-weight:700; font-size:0.9rem; color:#f8fafc; margin-bottom:0.25rem;">${escapeHtml(isEn ? agt.nameEn : agt.namePl)}</div>
+              <div style="font-weight:700; font-size:0.9rem; color:var(--text-primary); margin-bottom:0.25rem;">${escapeHtml(isEn ? agt.nameEn : agt.namePl)}</div>
               <p style="font-size:0.78rem; color:var(--text-secondary); margin-bottom:0.45rem;">${escapeHtml(isEn ? agt.roleEn : agt.rolePl)}</p>
-              <div style="background:rgba(11,15,25,0.75); padding:0.45rem 0.6rem; border-radius:6px; font-size:0.73rem; color:var(--text-muted); font-style:italic;">
+              <div style="background:var(--bg-subtle); border:1px solid var(--border-subtle); padding:0.45rem 0.6rem; border-radius:var(--radius-sm); font-size:0.73rem; color:var(--text-muted); font-style:italic;">
                 "${escapeHtml(agt.promptTemplate)}"
               </div>
             </div>
