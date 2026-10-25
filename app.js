@@ -219,27 +219,35 @@ const DEFAULT_SEED = {
       "categoryType": "FOUNDATION",
       "targetId": "FND-1",
       "topic": "Algebra liniowa, przestrzenie wektorowe, rachunek macierzowy i teoria operatorów.",
-      "title": "I. Matematyka: Gilbert Strang („Introduction to Linear Algebra”), Penrose („Road to Reality”) i podręczniki matematyki",
-      "level": "Podstawowy / Akademicki",
-      "format": "Biblioteka Projektu (PL / EN)",
-      "content": "Podręczniki matematyki i algebry liniowej na poziomie szkoły średniej i studiów (PL) oraz Gilbert Strang — „Introduction to Linear Algebra” (EN). Etap czytania: NAJPIERW (podstawy matematyki).",
-      "url": "https://math.mit.edu/~gs/linearalgebra/",
+      "title": "I. Matematyka (PL → EN): Podręczniki matematyki i algebry liniowej (OpenAGH, ZPE, Skoczylas, Penrose) oraz Gilbert Strang",
+      "level": "Podstawowy / Akademicki (Etap 1: Najpierw)",
+      "format": "Biblioteka Projektu (PL w pierwszej kolejności)",
+      "content": "1. W pierwszej kolejności (Po polsku): Podręczniki matematyki i algebry liniowej na poziomie szkoły średniej i studiów — darmowe e-podręczniki OpenAGH (Matematyka, Algebra liniowa, Analiza matematyczna), Zintegrowana Platforma Edukacyjna (ZPE), Marian Gewert i Zbigniew Skoczylas („Algebra liniowa 1–2”, „Analiza matematyczna 1–2”), Tadeusz Krasiński („Algebra liniowa”) oraz Roger Penrose („Droga do rzeczywistości”, wyd. polskie).\n2. Uzupełniająco (Po angielsku): Gilbert Strang — „Introduction to Linear Algebra” (MIT 18.06) oraz OpenStax Mathematics.",
+      "url": "https://open.agh.edu.pl/",
       "links": [
         {
-          "label": "🇬🇧 Gilbert Strang — Introduction to Linear Algebra (MIT 18.06 + materiały)",
+          "label": "🇵🇱 OpenAGH — Darmowe polskie e-podręczniki akademickie (Matematyka, Algebra liniowa, Analiza)",
+          "url": "https://open.agh.edu.pl/"
+        },
+        {
+          "label": "🇵🇱 Zintegrowana Platforma Edukacyjna (ZPE) — Matematyka i logika po polsku",
+          "url": "https://zpe.gov.pl/"
+        },
+        {
+          "label": "🇵🇱 OpenStax Polska — Darmowe podręczniki akademickie po polsku",
+          "url": "https://openstax.pl/pl/zasoby"
+        },
+        {
+          "label": "🇵🇱 Wydawnictwo Naukowe PWN — Podręczniki algebry liniowej i analizy matematycznej",
+          "url": "https://ksiegarnia.pwn.pl/"
+        },
+        {
+          "label": "🇬🇧 Gilbert Strang — Introduction to Linear Algebra (MIT 18.06 + wykłady)",
           "url": "https://math.mit.edu/~gs/linearalgebra/"
         },
         {
-          "label": "🇬🇧 MIT OCW 18.06 — Wykłady wideo prof. Gilberta Stranga z algebry liniowej",
-          "url": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/"
-        },
-        {
-          "label": "🇬🇧 OpenStax — Darmowe podręczniki matematyki i analizy (Calculus / Algebra)",
+          "label": "🇬🇧 OpenStax Mathematics (Calculus / Linear Algebra)",
           "url": "https://openstax.org/subjects/math"
-        },
-        {
-          "label": "🇵🇱 ZPE — Matematyka i algebra liniowa (po polsku)",
-          "url": "https://zpe.gov.pl/"
         }
       ],
       "author": "Administrator",
@@ -251,19 +259,31 @@ const DEFAULT_SEED = {
       "categoryType": "FOUNDATION",
       "targetId": "FND-2",
       "topic": "Architektura systemów komputerowych, systemy wbudowane, praca w czasie rzeczywistym (RTOS) i obliczenia rozproszone.",
-      "title": "I. Informatyka: Charles Petzold — „Kod. Ukryty język komputerów. Wydanie II” / „Code”",
+      "title": "I. Informatyka (PL → EN): Charles Petzold — „Kod. Ukryty język komputerów. Wydanie II”, Cormen („Wprowadzenie do algorytmów”), Ważniak MIMUW",
       "level": "Podstawowy (Etap 1: Najpierw)",
-      "format": "Biblioteka Projektu (PL / EN)",
-      "content": "Fundamentalna pozycja wyjaśniająca od podstaw, jak z bramek logicznych, przekaźników i tranzystorów powstaje komputer, pamięć i oprogramowanie. Pierwsza pozycja w kolejności czytania („Najpierw”).",
-      "url": "https://codehiddenlanguage.com/",
+      "format": "Biblioteka Projektu (PL w pierwszej kolejności)",
+      "content": "1. W pierwszej kolejności (Po polsku): Charles Petzold — „Kod. Ukryty język komputerów. Wydanie II” (Helion) — fundamentalna książka wyjaśniająca od podstaw, jak z przekaźników, bramek logicznych i tranzystorów powstaje komputer; Thomas H. Cormen i współautorzy — „Wprowadzenie do algorytmów” (PWN); Andrew S. Tanenbaum — „Strukturalna organizacja komputerów” (Helion); darmowe kursy akademickie Ważniak MIMUW (Uniwersytet Warszawski) oraz ZPE Informatyka.\n2. Uzupełniająco (Po angielsku): Charles Petzold — „Code” oraz MIT OCW 6.006.",
+      "url": "https://wazniak.mimuw.edu.pl/",
       "links": [
         {
-          "label": "🇬🇧 Charles Petzold — Code (Oficjalna strona książki z interaktywnymi układami)",
-          "url": "https://codehiddenlanguage.com/"
+          "label": "🇵🇱 Charles Petzold — „Kod. Ukryty język komputerów. Wydanie II” (Wydawnictwo Helion)",
+          "url": "https://helion.pl/"
         },
         {
-          "label": "🇵🇱 Charles Petzold — Kod. Ukryty język komputerów. Wydanie II (Helion)",
-          "url": "https://helion.pl/"
+          "label": "🇵🇱 Ważniak MIMUW (Uniwersytet Warszawski) — Darmowe polskie wykłady z informatyki i architektury komputerów",
+          "url": "https://wazniak.mimuw.edu.pl/"
+        },
+        {
+          "label": "🇵🇱 Zintegrowana Platforma Edukacyjna (ZPE) — Informatyka i algorytmika po polsku",
+          "url": "https://zpe.gov.pl/"
+        },
+        {
+          "label": "🇵🇱 T. H. Cormen et al. — „Wprowadzenie do algorytmów” (Księgarnia PWN)",
+          "url": "https://ksiegarnia.pwn.pl/"
+        },
+        {
+          "label": "🇬🇧 Charles Petzold — „Code” (Strona autora z interaktywnymi symulacjami bramek)",
+          "url": "https://codehiddenlanguage.com/"
         },
         {
           "label": "🇬🇧 MIT OCW 6.006 — Introduction to Algorithms",
@@ -279,27 +299,35 @@ const DEFAULT_SEED = {
       "categoryType": "FOUNDATION",
       "targetId": "FND-3",
       "topic": "Obliczenia naukowe w Pythonie (NumPy, SciPy, PyTorch, JAX) oraz symulacje numeryczne.",
-      "title": "I. Programowanie: Eric Matthes — „Python. Instrukcje dla programisty” / „Python Crash Course”",
+      "title": "I. Programowanie (PL → EN): Eric Matthes — „Python. Instrukcje dla programisty”, oficjalna polska dokumentacja Pythona i obliczenia naukowe",
       "level": "Podstawowy (Etap 1: Najpierw)",
-      "format": "Biblioteka Projektu (PL / EN)",
-      "content": "Praktyczny podręcznik programowania w języku Python z ćwiczeniami i projektami. Obowiązkowa pozycja pierwszego etapu czytania („Najpierw”) przed przejściem do symulacji naukowych.",
-      "url": "https://ehmatthes.github.io/pcc_3e/",
+      "format": "Biblioteka Projektu (PL w pierwszej kolejności)",
+      "content": "1. W pierwszej kolejności (Po polsku): Eric Matthes — „Python. Instrukcje dla programisty. Wydanie III” (Helion) — praktyczny podręcznik programowania od podstaw z ćwiczeniami; oficjalny polski przewodnik po języku Python (docs.python.org/pl); Wes McKinney — „Python w analizie danych (NumPy, pandas)” (Helion); kursy programowania Ważniak MIMUW i ZPE.\n2. Uzupełniająco (Po angielsku): Eric Matthes — „Python Crash Course”, Scientific Python Lectures oraz symulator sieci neuronowych Brian2.",
+      "url": "https://docs.python.org/pl/3/tutorial/",
       "links": [
         {
-          "label": "🇬🇧 Eric Matthes — Python Crash Course (Oficjalne materiały, kod i ćwiczenia)",
-          "url": "https://ehmatthes.github.io/pcc_3e/"
+          "label": "🇵🇱 Oficjalny samouczek języka Python po polsku (docs.python.org/pl)",
+          "url": "https://docs.python.org/pl/3/tutorial/"
         },
         {
-          "label": "🇵🇱 Eric Matthes — Python. Instrukcje dla programisty (Wydawnictwo Helion)",
+          "label": "🇵🇱 Eric Matthes — „Python. Instrukcje dla programisty” (Wydawnictwo Helion)",
           "url": "https://helion.pl/"
+        },
+        {
+          "label": "🇵🇱 Ważniak MIMUW — Wstęp do programowania (kurs akademicki po polsku)",
+          "url": "https://wazniak.mimuw.edu.pl/"
+        },
+        {
+          "label": "🇵🇱 ZPE — Programowanie i algorytmy w języku Python (po polsku)",
+          "url": "https://zpe.gov.pl/"
+        },
+        {
+          "label": "🇬🇧 Eric Matthes — „Python Crash Course” (Repozytorium ćwiczeń i kodu)",
+          "url": "https://ehmatthes.github.io/pcc_3e/"
         },
         {
           "label": "🇬🇧 Scientific Python Lectures (NumPy, SciPy, Matplotlib)",
           "url": "https://lectures.scientific-python.org/"
-        },
-        {
-          "label": "🇬🇧 Brian2 — Symulator sieci neuronowych w Pythonie",
-          "url": "https://briansimulator.org/"
         }
       ],
       "author": "Administrator",
@@ -311,27 +339,39 @@ const DEFAULT_SEED = {
       "categoryType": "FOUNDATION",
       "targetId": "FND-4",
       "topic": "Mechanika klasyczna, elektrodynamika i termodynamika układów otwartych (dalekich od równowagi).",
-      "title": "II. Fizyka i Komputery Kwantowe: Podręczniki fizyki ogólnej (PL), David J. Griffiths oraz Nielsen & Chuang (EN)",
+      "title": "II. Fizyka i Komputery Kwantowe (PL → EN): OpenStax „Fizyka dla szkół wyższych Tom 1–3” (PL), Halliday & Resnick, Griffiths („Wstęp do mechaniki kwantowej”) oraz Nielsen & Chuang",
       "level": "Podstawowy → Zaawansowany",
-      "format": "Biblioteka Projektu (PL / EN)",
-      "content": "Polskojęzyczne: Akademickie podręczniki fizyki ogólnej i mechaniki kwantowej w polskich wydaniach. Anglojęzyczne (etap zaawansowany): David J. Griffiths — „Introduction to Quantum Mechanics” oraz Michael A. Nielsen, Isaac L. Chuang — „Quantum Computation and Quantum Information”.",
+      "format": "Biblioteka Projektu (PL w pierwszej kolejności)",
+      "content": "1. W pierwszej kolejności (Po polsku): Darmowy, trzytomowy podręcznik akademicki OpenStax Polska — „Fizyka dla szkół wyższych. Tom 1–3”; David Halliday, Robert Resnick, Jearl Walker — „Podstawy fizyki. Tom 1–5” (PWN); Richard P. Feynman — „Feynmana wykłady z fizyki” (PWN); David J. Griffiths — „Wstęp do mechaniki kwantowej” (polskie wydanie PWN) oraz e-podręczniki fizyki OpenAGH.\n2. Uzupełniająco (Po angielsku — etap zaawansowany): David J. Griffiths — „Introduction to Quantum Mechanics” oraz Michael A. Nielsen, Isaac L. Chuang — „Quantum Computation and Quantum Information”.",
       "url": "https://openstax.org/details/books/fizyka-dla-szk%C3%B3%C5%82-wy%C5%BCszych-tom-1",
       "links": [
         {
-          "label": "🇵🇱 OpenStax — Fizyka dla szkół wyższych (Tom 1–3, darmowy podręcznik po polsku)",
+          "label": "🇵🇱 OpenStax Polska — „Fizyka dla szkół wyższych. Tom 1” (darmowy podręcznik PL online/PDF)",
           "url": "https://openstax.org/details/books/fizyka-dla-szk%C3%B3%C5%82-wy%C5%BCszych-tom-1"
         },
         {
-          "label": "🇬🇧 David J. Griffiths — Introduction to Quantum Mechanics (Cambridge University Press)",
+          "label": "🇵🇱 OpenStax Polska — „Fizyka dla szkół wyższych. Tom 2” (Elektrodynamika, termodynamika — PL)",
+          "url": "https://openstax.org/details/books/fizyka-dla-szk%C3%B3%C5%82-wy%C5%BCszych-tom-2"
+        },
+        {
+          "label": "🇵🇱 OpenStax Polska — „Fizyka dla szkół wyższych. Tom 3” (Optyka i fizyka kwantowa — PL)",
+          "url": "https://openstax.org/details/books/fizyka-dla-szk%C3%B3%C5%82-wy%C5%BCszych-tom-3"
+        },
+        {
+          "label": "🇵🇱 OpenAGH — Darmowe polskie e-podręczniki z fizyki ogólnej",
+          "url": "https://open.agh.edu.pl/"
+        },
+        {
+          "label": "🇵🇱 Wydawnictwo Naukowe PWN — Halliday/Resnick „Podstawy fizyki” oraz Griffiths „Wstęp do mechaniki kwantowej”",
+          "url": "https://ksiegarnia.pwn.pl/"
+        },
+        {
+          "label": "🇬🇧 David J. Griffiths — „Introduction to Quantum Mechanics” (Cambridge University Press)",
           "url": "https://www.cambridge.org/highereducation/books/introduction-to-quantum-mechanics/990799CA07A83FC5312402AF6860311E"
         },
         {
-          "label": "🇬🇧 Michael A. Nielsen, Isaac L. Chuang — Quantum Computation and Quantum Information",
+          "label": "🇬🇧 Michael A. Nielsen, Isaac L. Chuang — „Quantum Computation and Quantum Information”",
           "url": "https://www.cambridge.org/highereducation/books/quantum-computation-and-quantum-information/01E10196D0A682A6AEFFEA52D53BE9AE"
-        },
-        {
-          "label": "🇬🇧 The Feynman Lectures on Physics (Caltech — darmowy dostęp)",
-          "url": "https://www.feynmanlectures.caltech.edu/"
         }
       ],
       "author": "Administrator",
@@ -343,22 +383,30 @@ const DEFAULT_SEED = {
       "categoryType": "FOUNDATION",
       "targetId": "FND-5",
       "topic": "Elektronika analogowa: wzmacniacze operacyjne, filtry aktywne, oscylatory i układy nieliniowe.",
-      "title": "II. Elektronika: Podręczniki podstaw elektroniki i układów cyfrowych (PL), Horowitz & Hill oraz ZPE",
+      "title": "II. Elektronika (PL → EN): Horowitz & Hill („Sztuka elektroniki”), polskie kursy Forbot, ZPE, OpenAGH oraz układy cyfrowe",
       "level": "Podstawowy / Zaawansowany",
-      "format": "Biblioteka Projektu (PL / EN)",
-      "content": "Podręczniki podstaw elektroniki i układów cyfrowych, wzmacniacze, oscylatory, filtry, przetworniki A/C i C/A oraz architektura bramek logicznych.",
+      "format": "Biblioteka Projektu (PL w pierwszej kolejności)",
+      "content": "1. W pierwszej kolejności (Po polsku): Paul Horowitz, Winfield Hill — „Sztuka elektroniki. Część 1 i 2” (polskie wydanie WKŁ); Bogdan Głocki — „Układy cyfrowe” (WSiP); darmowe polskojęzyczne kursy podstaw elektroniki i techniki cyfrowej Forbot; materiały Zintegrowanej Platformy Edukacyjnej (ZPE) oraz e-podręczniki elektroniki OpenAGH.\n2. Uzupełniająco (Po angielsku): All About Circuits Textbook oraz MIT OCW Circuits and Electronics.",
       "url": "https://zpe.gov.pl/",
       "links": [
         {
-          "label": "🇵🇱 Zintegrowana Platforma Edukacyjna (ZPE) — Elektronika i układy cyfrowe",
+          "label": "🇵🇱 Zintegrowana Platforma Edukacyjna (ZPE) — Elektronika analogowa i układy cyfrowe po polsku",
           "url": "https://zpe.gov.pl/"
         },
         {
-          "label": "🇵🇱 OpenAGH — E-podręczniki z elektroniki",
+          "label": "🇵🇱 Forbot — Darmowe kursy podstaw elektroniki i techniki cyfrowej po polsku",
+          "url": "https://forbot.pl/blog/kurs-elektroniki-poziom-1-spis-tresci-id5159"
+        },
+        {
+          "label": "🇵🇱 OpenAGH — Polskie e-podręczniki akademickie z elektroniki i elektrotechniki",
           "url": "https://open.agh.edu.pl/"
         },
         {
-          "label": "🇬🇧 All About Circuits — Darmowy podręcznik elektroniki analogowej i cyfrowej",
+          "label": "🇵🇱 Paul Horowitz, Winfield Hill — „Sztuka elektroniki” (Wydawnictwa Komunikacji i Łączności — WKŁ)",
+          "url": "https://wkl.com.pl/"
+        },
+        {
+          "label": "🇬🇧 All About Circuits — Textbook of Analog & Digital Electronics",
           "url": "https://www.allaboutcircuits.com/textbook/"
         },
         {
@@ -375,12 +423,28 @@ const DEFAULT_SEED = {
       "categoryType": "FOUNDATION",
       "targetId": "FND-6",
       "topic": "Biochemia: struktura i funkcja białek, enzymów, lipidów oraz kwasów nukleinowych (DNA/RNA).",
-      "title": "III. Chemia i Biochemia: OpenStax Chemistry 2e (EN) oraz akademickie podręczniki chemii ogólnej, organicznej i biochemii (PL/EN)",
+      "title": "III. Chemia i Biochemia (PL → EN): Stryer („Biochemia” PWN), Bielański, Jones & Atkins, McMurry oraz OpenStax Chemistry 2e",
       "level": "Podstawowy / Akademicki (Etap 2: Następnie)",
-      "format": "Biblioteka Projektu (PL / EN)",
-      "content": "Polskojęzyczne: Akademickie podręczniki chemii ogólnej, organicznej i biochemii. Anglojęzyczne: OpenStax Chemistry 2e — podręcznik chemii ogólnej oraz akademickie podręczniki biochemii i biologii molekularnej.",
-      "url": "https://openstax.org/details/books/chemistry-2e",
+      "format": "Biblioteka Projektu (PL w pierwszej kolejności)",
+      "content": "1. W pierwszej kolejności (Po polsku): Akademickie podręczniki chemii ogólnej, organicznej i biochemii w polskich wydaniach — Jeremy M. Berg, John L. Tymoczko, Lubert Stryer — „Biochemia” (PWN); Robert K. Murray et al. — „Biochemia Harpera” (PZWL); Loretta Jones, Peter Atkins — „Chemia ogólna. Cząsteczki, materia, reakcje” (PWN); Adam Bielański — „Podstawy chemii nieorganicznej” (PWN); John McMurry — „Chemia organiczna” (PWN) oraz darmowe materiały ZPE i OpenAGH.\n2. Uzupełniająco (Po angielsku): OpenStax „Chemistry 2e” oraz „Organic Chemistry” (darmowe podręczniki online).",
+      "url": "https://ksiegarnia.pwn.pl/",
       "links": [
+        {
+          "label": "🇵🇱 Wydawnictwo Naukowe PWN — Stryer „Biochemia”, Jones & Atkins „Chemia ogólna”, McMurry „Chemia organiczna”",
+          "url": "https://ksiegarnia.pwn.pl/"
+        },
+        {
+          "label": "🇵🇱 OpenAGH — Darmowe polskie e-podręczniki akademickie z chemii ogólnej i fizycznej",
+          "url": "https://open.agh.edu.pl/"
+        },
+        {
+          "label": "🇵🇱 Zintegrowana Platforma Edukacyjna (ZPE) — Chemia ogólna, organiczna i biochemia po polsku",
+          "url": "https://zpe.gov.pl/"
+        },
+        {
+          "label": "🇵🇱 PZWL Wydawnictwo Lekarskie — „Biochemia Harpera”",
+          "url": "https://pzwl.pl/"
+        },
         {
           "label": "🇬🇧 OpenStax Chemistry 2e — Darmowy podręcznik chemii ogólnej online/PDF",
           "url": "https://openstax.org/details/books/chemistry-2e"
@@ -388,14 +452,6 @@ const DEFAULT_SEED = {
         {
           "label": "🇬🇧 OpenStax Organic Chemistry — Darmowy podręcznik chemii organicznej",
           "url": "https://openstax.org/details/books/organic-chemistry"
-        },
-        {
-          "label": "🇬🇧 NCBI Bookshelf — Biochemistry (Stryer / darmowe podręczniki biochemii)",
-          "url": "https://www.ncbi.nlm.nih.gov/books/"
-        },
-        {
-          "label": "🇵🇱 Księgarnia Naukowa PWN — Chemia ogólna, organiczna i biochemia",
-          "url": "https://ksiegarnia.pwn.pl/"
         }
       ],
       "author": "Administrator",
@@ -407,23 +463,31 @@ const DEFAULT_SEED = {
       "categoryType": "FOUNDATION",
       "targetId": "FND-7",
       "topic": "Biologia komórki i biologia molekularna: replikacja, transkrypcja, translacja, sygnalizacja komórkowa.",
-      "title": "III. Biologia i Genetyka: Terence A. Brown („Genomy”), „Biologia Campbella” (PL) oraz OpenStax Biology 2e (EN)",
+      "title": "III. Biologia i Genetyka (PL → EN): Terence A. Brown („Genomy” PWN), „Biologia Campbella” (Rebis), Alberts („Podstawy biologii komórki”) oraz OpenStax Biology 2e",
       "level": "Podstawowy / Akademicki (Etap 2: Następnie)",
-      "format": "Biblioteka Projektu (PL / EN)",
-      "content": "Polskojęzyczne: 1. Terence A. Brown — „Genomy”, 2. „Biologia Campbella” — polskie wydanie. Anglojęzyczne: OpenStax Biology 2e — podręcznik biologii oraz akademickie podręczniki biologii molekularnej.",
-      "url": "https://openstax.org/details/books/biology-2e",
+      "format": "Biblioteka Projektu (PL w pierwszej kolejności)",
+      "content": "1. W pierwszej kolejności (Po polsku): Terence A. Brown — „Genomy” (Wydawnictwo Naukowe PWN); Neil A. Campbell i współautorzy — „Biologia Campbella” (polskie wydanie, Dom Wydawniczy REBIS); Bruce Alberts i współautorzy — „Podstawy biologii komórki. Część 1–2” (PWN); Piotr Węgleński (red.) — „Genetyka molekularna” (PWN) oraz polskojęzyczne materiały ZPE.\n2. Uzupełniająco (Po angielsku): OpenStax „Biology 2e” oraz darmowe zasoby NCBI Bookshelf.",
+      "url": "https://ksiegarnia.pwn.pl/",
       "links": [
+        {
+          "label": "🇵🇱 Terence A. Brown — „Genomy” oraz B. Alberts — „Podstawy biologii komórki” (Wydawnictwo Naukowe PWN)",
+          "url": "https://ksiegarnia.pwn.pl/"
+        },
+        {
+          "label": "🇵🇱 „Biologia Campbella” — polskie wydanie (Dom Wydawniczy REBIS)",
+          "url": "https://www.rebis.com.pl/"
+        },
+        {
+          "label": "🇵🇱 Zintegrowana Platforma Edukacyjna (ZPE) — Biologia komórki i genetyka po polsku",
+          "url": "https://zpe.gov.pl/"
+        },
         {
           "label": "🇬🇧 OpenStax Biology 2e — Darmowy podręcznik biologii online/PDF",
           "url": "https://openstax.org/details/books/biology-2e"
         },
         {
-          "label": "🇬🇧 Terence A. Brown — Genomes (Darmowy dostęp w bazie NCBI Bookshelf)",
+          "label": "🇬🇧 Terence A. Brown — „Genomes” (Darmowy dostęp w bazie NCBI Bookshelf)",
           "url": "https://www.ncbi.nlm.nih.gov/books/NBK21128/"
-        },
-        {
-          "label": "🇵🇱 Terence A. Brown — Genomy & Biologia Campbella (Wydawnictwo Naukowe PWN / Rebis)",
-          "url": "https://ksiegarnia.pwn.pl/"
         },
         {
           "label": "🇬🇧 NCBI Bookshelf — Molecular Biology of the Cell (Alberts)",
@@ -439,12 +503,24 @@ const DEFAULT_SEED = {
       "categoryType": "FOUNDATION",
       "targetId": "FND-8",
       "topic": "Głębokie sieci neuronowe (CNN, RNN, Transformery, Graph Neural Networks) oraz impulsowe sieci neuronowe (SNN).",
-      "title": "IV & V. Sztuczna Inteligencja i Neuronauka Obliczeniowa: Aurélien Géron („Hands-On ML”) oraz Dayan & Abbott („Theoretical Neuroscience”)",
+      "title": "IV & V. Sztuczna Inteligencja (PL → EN): Aurélien Géron („Uczenie maszynowe z użyciem Scikit-Learn i TensorFlow” PL), Goodfellow („Deep Learning” PWN) oraz Dayan & Abbott",
       "level": "Średniozaawansowany / Zaawansowany",
-      "format": "Biblioteka Projektu (PL / EN)",
-      "content": "Praktyczne uczenie maszynowe i głębokie sieci neuronowe (Géron — Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow) oraz matematyczne modelowanie sieci neuronalnych (Dayan & Abbott — Theoretical Neuroscience).",
-      "url": "https://github.com/ageron/handson-ml3",
+      "format": "Biblioteka Projektu (PL w pierwszej kolejności)",
+      "content": "1. W pierwszej kolejności (Po polsku): Aurélien Géron — „Uczenie maszynowe z użyciem Scikit-Learn, Keras i TensorFlow. Wydanie III” (Helion); Ian Goodfellow, Yoshua Bengio, Aaron Courville — „Deep Learning. Systemy uczące się” (polskie wydanie PWN); Stuart Russell, Peter Norvig — „Sztuczna inteligencja. Nowe spojrzenie” (Helion) oraz Ryszard Tadeusiewicz — „Sieci neuronowe”.\n2. Uzupełniająco (Po angielsku): Géron — „Hands-On Machine Learning” (notebooki GitHub) oraz Peter Dayan, L. F. Abbott — „Theoretical Neuroscience”.",
+      "url": "https://helion.pl/",
       "links": [
+        {
+          "label": "🇵🇱 Aurélien Géron — „Uczenie maszynowe z użyciem Scikit-Learn i TensorFlow” (Wydawnictwo Helion)",
+          "url": "https://helion.pl/"
+        },
+        {
+          "label": "🇵🇱 Ian Goodfellow, Yoshua Bengio, Aaron Courville — „Deep Learning. Systemy uczące się” (PWN)",
+          "url": "https://ksiegarnia.pwn.pl/"
+        },
+        {
+          "label": "🇵🇱 OpenStax Polska — Wprowadzenie do nauki o danych i Pythonie (po polsku)",
+          "url": "https://openstax.pl/pl/zasoby"
+        },
         {
           "label": "🇬🇧 Aurélien Géron — Hands-On Machine Learning (Oficjalne notebooki GitHub)",
           "url": "https://github.com/ageron/handson-ml3"
@@ -456,10 +532,6 @@ const DEFAULT_SEED = {
         {
           "label": "🇬🇧 Neuromatch Academy — Computational Neuroscience & Deep Learning",
           "url": "https://compneuro.neuromatch.io/"
-        },
-        {
-          "label": "🇵🇱 Aurélien Géron — Uczenie maszynowe z użyciem Scikit-Learn i TensorFlow (Helion)",
-          "url": "https://helion.pl/"
         }
       ],
       "author": "Administrator",
@@ -471,23 +543,31 @@ const DEFAULT_SEED = {
       "categoryType": "TRACK",
       "targetId": "A",
       "topic": "Medycyna regeneracyjna, protezy i sztuczne narządy.",
-      "title": "IV. Projekt A (Człowiek biocyfrowo-robotyczny): Kalat („Biologiczne podstawy psychologii”), OpenStax Anatomy & Physiology 2e, Géron („Hands-On ML”), biofizyka, robotyka i BCI",
+      "title": "IV. Projekt A (PL → EN): Kalat („Biologiczne podstawy psychologii”), anatomia i fizjologia (Bochenek, Traczyk, Konturek), biofizyka, robotyka i BCI oraz OpenStax Anatomy 2e",
       "level": "Podstawowy → Zaawansowany",
-      "format": "Biblioteka Projektu (PL / EN)",
-      "content": "Polskojęzyczne: 1. James W. Kalat — Biologiczne podstawy psychologii, 2. Akademickie podręczniki anatomii i fizjologii człowieka, 3. Podręczniki biofizyki, biomechaniki i biomateriałów, 4. Podręczniki robotyki, elektroniki i układów sterowania. Anglojęzyczne: 5. OpenStax Anatomy and Physiology 2e, 6. Géron — Hands-On Machine Learning, 7. Podręczniki inżynierii tkankowej, neuroprotetyki i BCI.",
-      "url": "https://openstax.org/details/books/anatomy-and-physiology-2e",
+      "format": "Biblioteka Projektu (PL w pierwszej kolejności)",
+      "content": "1. W pierwszej kolejności (Po polsku):\n• James W. Kalat — „Biologiczne podstawy psychologii” (PWN).\n• Akademickie podręczniki anatomii i fizjologii człowieka: Władysław Traczyk, Andrzej Trzebski — „Fizjologia człowieka” (PZWL); Stanisław Konturek — „Fizjologia człowieka”; Adam Bochenek, Michał Reicher — „Anatomia człowieka” (PZWL).\n• Akademickie podręczniki biofizyki, biomechaniki i biomateriałów: Feliks Jaroszyk (red.) — „Biofizyka” (PZWL); Jan Marciniak — „Biomateriały” (Politechnika Śląska); seria „Biocybernetyka i Inżynieria Biomedyczna 2000” (PAN, red. M. Nałęcz, R. Tadeusiewicz).\n• Podręczniki robotyki, elektroniki i układów sterowania (K. Tchoń i współautorzy — „Manipulatory i roboty mobilne”; A. Géron — wyd. Helion).\n2. Uzupełniająco (Po angielsku): OpenStax „Anatomy and Physiology 2e”, Géron „Hands-On ML” oraz literatura z neuroprotetyki i BCI.",
+      "url": "https://ksiegarnia.pwn.pl/",
       "links": [
         {
-          "label": "🇬🇧 OpenStax Anatomy and Physiology 2e (Darmowy podręcznik anatomii i fizjologii)",
-          "url": "https://openstax.org/details/books/anatomy-and-physiology-2e"
-        },
-        {
-          "label": "🇵🇱 James W. Kalat — Biologiczne podstawy psychologii (Wydawnictwo Naukowe PWN)",
+          "label": "🇵🇱 James W. Kalat — „Biologiczne podstawy psychologii” (Wydawnictwo Naukowe PWN)",
           "url": "https://ksiegarnia.pwn.pl/"
         },
         {
-          "label": "🇬🇧 Aurélien Géron — Hands-On Machine Learning (Scikit-Learn, Keras, TensorFlow)",
-          "url": "https://github.com/ageron/handson-ml3"
+          "label": "🇵🇱 PZWL Wydawnictwo Lekarskie — Anatomia (Bochenek), Fizjologia (Traczyk) i Biofizyka (Jaroszyk)",
+          "url": "https://pzwl.pl/"
+        },
+        {
+          "label": "🇵🇱 OpenAGH — Polskie materiały z inżynierii biomedycznej, biocybernetyki i automatyki",
+          "url": "https://open.agh.edu.pl/"
+        },
+        {
+          "label": "🇵🇱 Aurélien Géron — „Uczenie maszynowe z użyciem Scikit-Learn i TensorFlow” (Helion)",
+          "url": "https://helion.pl/"
+        },
+        {
+          "label": "🇬🇧 OpenStax Anatomy and Physiology 2e (Darmowy podręcznik anatomii i fizjologii)",
+          "url": "https://openstax.org/details/books/anatomy-and-physiology-2e"
         },
         {
           "label": "🇬🇧 MIT OCW — Introduction to Robotics & Control Systems",
@@ -503,43 +583,47 @@ const DEFAULT_SEED = {
       "categoryType": "TRACK",
       "targetId": "B",
       "topic": "Neurobiologia i neuronauka obliczeniowa.",
-      "title": "V. Projekt B (Cyfrowy umysł): Kalat, Kandel, Squire, Dayan & Abbott, Izhikevich, Seung („Connectome”), Miller, Churchland & Sejnowski, Sandberg & Bostrom („Whole Brain Emulation”)",
+      "title": "V. Projekt B (PL → EN): Kalat, Longstaff („Neurobiologia”), Nęcka („Psychologia poznawcza”), Seung („Konektom”), Miłkowski & Poczobut oraz Kandel, Dayan & Abbott, Izhikevich i Sandberg & Bostrom",
       "level": "Podstawowy → Zaawansowany",
-      "format": "Biblioteka Projektu (PL / EN)",
-      "content": "Pełna bibliografia Projektu B: od „Biologicznych podstaw psychologii” (Kalat), przez „Theoretical Neuroscience” (Dayan, Abbott), „Dynamical Systems in Neuroscience” (Izhikevich), „Connectome” (Seung), „Whole Brain Emulation: A Roadmap” (Sandberg, Bostrom), po „Principles of Neural Science” (Kandel), „Fundamental Neuroscience” (Squire) i „The Computational Brain” (Churchland, Sejnowski).",
-      "url": "https://www.izhikevich.org/publications/dsn.pdf",
+      "format": "Biblioteka Projektu (PL w pierwszej kolejności)",
+      "content": "1. W pierwszej kolejności (Po polsku):\n• James W. Kalat — „Biologiczne podstawy psychologii” (PWN).\n• Podręczniki neurobiologii i fizjologii układu nerwowego: Alan Longstaff — „Neurobiologia. Krótkie wykłady” (PWN); T. Górska, A. Grabowska, J. Zagrodzka (red.) — „Mózg a zachowanie” (PWN).\n• Podręczniki psychologii poznawczej: Edward Nęcka, Jarosław Orzechowski, Błażej Szymura — „Psychologia poznawcza” (PWN).\n• Wprowadzenia do filozofii umysłu, kognitywistyki i konektomiki: Marcin Miłkowski, Robert Poczobut (red.) — „Przewodnik po filozofii umysłu” (WAM); Sebastian Seung — „Konektom. Jak połączenia w mózgu kształtują naszą tożsamość” (wyd. polskie); wykłady prof. Włodzisława Ducha (UMK).\n2. Następnie i na zaawansowanym etapie (Po angielsku): Kandel („Principles of Neural Science”), Squire („Fundamental Neuroscience”), Dayan & Abbott („Theoretical Neuroscience”), Izhikevich („Dynamical Systems in Neuroscience”), Miller, Churchland & Sejnowski oraz Sandberg & Bostrom („Whole Brain Emulation: A Roadmap”).",
+      "url": "https://ksiegarnia.pwn.pl/",
       "links": [
         {
-          "label": "🇬🇧 Eugene M. Izhikevich — Dynamical Systems in Neuroscience (Darmowy PDF książki)",
+          "label": "🇵🇱 Wydawnictwo Naukowe PWN — Kalat „Biologiczne podstawy psychologii”, Longstaff „Neurobiologia”, Nęcka „Psychologia poznawcza”",
+          "url": "https://ksiegarnia.pwn.pl/"
+        },
+        {
+          "label": "🇵🇱 Prof. Włodzisław Duch (UMK) — Polskie wykłady z kognitywistyki, neuroinformatyki i modelowania mózgu",
+          "url": "https://www.fizyka.umk.pl/~duch/"
+        },
+        {
+          "label": "🇵🇱 Copernicus Center Press / Centrum Kopernika — Filozofia umysłu, kognitywistyka i problem świadomości (po polsku)",
+          "url": "https://ccpress.pl/"
+        },
+        {
+          "label": "🇬🇧 Eugene M. Izhikevich — „Dynamical Systems in Neuroscience” (Darmowy PDF książki)",
           "url": "https://www.izhikevich.org/publications/dsn.pdf"
         },
         {
-          "label": "🇬🇧 Anders Sandberg, Nick Bostrom — Whole Brain Emulation: A Roadmap (Pełny raport PDF)",
+          "label": "🇬🇧 Anders Sandberg, Nick Bostrom — „Whole Brain Emulation: A Roadmap” (Pełny raport PDF)",
           "url": "https://www.fhi.ox.ac.uk/brain-emulation-roadmap-report.pdf"
         },
         {
-          "label": "🇬🇧 Peter Dayan, L. F. Abbott — Theoretical Neuroscience (MIT Press)",
+          "label": "🇬🇧 Peter Dayan, L. F. Abbott — „Theoretical Neuroscience” (MIT Press)",
           "url": "https://mitpress.mit.edu/9780262541855/theoretical-neuroscience/"
         },
         {
-          "label": "🇬🇧 Paul Miller — An Introductory Course in Computational Neuroscience (MIT Press)",
+          "label": "🇬🇧 Paul Miller — „An Introductory Course in Computational Neuroscience” (MIT Press)",
           "url": "https://mitpress.mit.edu/9780262038256/an-introductory-course-in-computational-neuroscience/"
         },
         {
-          "label": "🇬🇧 Patricia S. Churchland, Terrence J. Sejnowski — The Computational Brain (MIT Press)",
+          "label": "🇬🇧 Patricia S. Churchland, Terrence J. Sejnowski — „The Computational Brain” (MIT Press)",
           "url": "https://mitpress.mit.edu/9780262531207/the-computational-brain/"
         },
         {
-          "label": "🇬🇧 Eric R. Kandel et al. — Principles of Neural Science & Larry Squire — Fundamental Neuroscience",
+          "label": "🇬🇧 Eric R. Kandel et al. — „Principles of Neural Science” & Larry Squire — „Fundamental Neuroscience”",
           "url": "https://www.sciencedirect.com/book/9780123858702/fundamental-neuroscience"
-        },
-        {
-          "label": "🇬🇧 Sebastian Seung — Connectome (Seung Lab / MIT)",
-          "url": "https://seunglab.org/"
-        },
-        {
-          "label": "🇵🇱 James W. Kalat — Biologiczne podstawy psychologii (PWN)",
-          "url": "https://ksiegarnia.pwn.pl/"
         }
       ],
       "author": "Administrator",
@@ -551,27 +635,31 @@ const DEFAULT_SEED = {
       "categoryType": "TRACK",
       "targetId": "C",
       "topic": "Elektronika analogowa i układy dynamiczne.",
-      "title": "Projekt C (Po polsku i angielsku): Elektronika analogowa, przetworniki ADC/DAC, Analog & Neuromorphic Computing",
+      "title": "Projekt C (PL → EN): Elektronika analogowa (Horowitz & Hill, OpenAGH, ZPE, Forbot), przetworniki ADC/DAC, sieci neuronowe (Osowski, Tadeusiewicz) i Neuromorphic Computing",
       "level": "Podstawowy / Akademicki",
-      "format": "Biblioteka uzupełniająca GOLEM 15",
-      "content": "Kolejność nauki: Elektronika analogowa → układy dynamiczne → modelowanie matematyczne → fizyczne modele neuronów → obliczenia neuromorficzne. Obejmuje wzmacniacze, oscylatory, filtry, sprzężenie zwrotne, przetworniki A/C i C/A oraz układy neuromorficzne.",
+      "format": "Biblioteka uzupełniająca GOLEM 15 (PL w pierwszej kolejności)",
+      "content": "Kolejność nauki: Elektronika analogowa → układy dynamiczne → modelowanie matematyczne → fizyczne modele neuronów → obliczenia neuromorficzne.\n1. W pierwszej kolejności (Po polsku): Podręczniki akademickie z elektroniki analogowej (Paul Horowitz, Winfield Hill — „Sztuka elektroniki”; e-podręczniki OpenAGH): wzmacniacze, oscylatory, filtry, sprzężenie zwrotne i układy dynamiczne; materiały o przetwornikach A/C i C/A (ZPE, Forbot); Stanisław Osowski — „Sieci neuronowe do przetwarzania informacji” (Oficyna PW) oraz Ryszard Tadeusiewicz — „Sieci neuronowe”.\n2. Uzupełniająco (Po angielsku): Analog computing, neuromorphic computing, analog neural networks i fizyczne modele neuronów.",
       "url": "https://zpe.gov.pl/",
       "links": [
         {
-          "label": "Zintegrowana Platforma Edukacyjna (ZPE) — Elektronika",
+          "label": "🇵🇱 Zintegrowana Platforma Edukacyjna (ZPE) — Elektronika i przetworniki A/C oraz C/A",
           "url": "https://zpe.gov.pl/"
         },
         {
-          "label": "Frontiers in Neuroscience — Neuromorphic Engineering",
+          "label": "🇵🇱 OpenAGH — Darmowe polskie e-podręczniki z elektroniki i układów dynamicznych",
+          "url": "https://open.agh.edu.pl/"
+        },
+        {
+          "label": "🇵🇱 Forbot — Praktyczne kursy elektroniki analogowej i pomiarów po polsku",
+          "url": "https://forbot.pl/"
+        },
+        {
+          "label": "🇬🇧 Frontiers in Neuroscience — Neuromorphic Engineering",
           "url": "https://www.frontiersin.org/journals/neuroscience/sections/neuromorphic-engineering"
         },
         {
-          "label": "arXiv — Neural and Evolutionary Computing (Neuromorphic & Analog NN)",
+          "label": "🇬🇧 arXiv — Neural and Evolutionary Computing (Neuromorphic & Analog NN)",
           "url": "https://arxiv.org/list/cs.NE/recent"
-        },
-        {
-          "label": "MIT OCW — Nonlinear Dynamics and Chaos",
-          "url": "https://ocw.mit.edu/courses/18-385j-nonlinear-dynamics-and-chaos-fall-2014/"
         }
       ],
       "author": "Administrator",
@@ -583,27 +671,39 @@ const DEFAULT_SEED = {
       "categoryType": "TRACK",
       "targetId": "D",
       "topic": "Biologia syntetyczna i edycja genomu.",
-      "title": "Projekt D (Po polsku i angielsku): Biologia komórki, embriologia, komórki macierzyste, inżynieria tkankowa i National Academies",
-      "level": "Zaawansowany / Badawczy",
-      "format": "Biblioteka uzupełniająca GOLEM 15",
-      "content": "Kolejność nauki: Biologia komórki → genetyka → embriologia → komórki macierzyste → inżynieria tkankowa → biologia syntetyczna i bioetyka. Obejmuje podręczniki akademickie oraz raporty National Academies o odpowiedzialnym rozwoju biologii syntetycznej.",
-      "url": "https://www.nationalacademies.org/",
+      "title": "Projekt D (PL → EN): Biologia komórki (Alberts), genetyka (Brown, Węgleński), embriologia (Bartel), inżynieria tkankowa, bioetyka (PAN) i Stanisław Lem („Summa technologiae”)",
+      "level": "Podstawowy → Badawczy",
+      "format": "Biblioteka uzupełniająca GOLEM 15 (PL w pierwszej kolejności)",
+      "content": "Kolejność nauki: Biologia komórki → genetyka → embriologia → komórki macierzyste → inżynieria tkankowa → biologia syntetyczna i bioetyka.\n1. W pierwszej kolejności (Po polsku): Bruce Alberts — „Podstawy biologii komórki” (PWN); Terence A. Brown — „Genomy” (PWN); Hieronim Bartel — „Embriologia. Podręcznik dla studentów” (PZWL); literatura o komórkach macierzystych, inżynierii tkankowej i medycynie regeneracyjnej (PZWL / PWN); stanowiska Komitetu Bioetyki PAN; Stanisław Lem — „Summa technologiae” (klasyczna analiza inżynierii biologicznej a science fiction).\n2. Uzupełniająco (Po angielsku): National Academies (odpowiedzialny rozwój biologii syntetycznej), NCBI Bookshelf, ISSCR i Nature.",
+      "url": "https://bioetyka.pan.pl/",
       "links": [
         {
-          "label": "National Academies — Odpowiedzialny rozwój biologii syntetycznej",
+          "label": "🇵🇱 Komitet Bioetyki Polskiej Akademii Nauk (PAN) — Opracowania i stanowiska bioetyczne po polsku",
+          "url": "https://bioetyka.pan.pl/"
+        },
+        {
+          "label": "🇵🇱 PZWL Wydawnictwo Lekarskie — Hieronim Bartel „Embriologia”, medycyna regeneracyjna i komórki macierzyste",
+          "url": "https://pzwl.pl/"
+        },
+        {
+          "label": "🇵🇱 Wydawnictwo Naukowe PWN — Biologia komórki (Alberts), Genomy (Brown), Genetyka molekularna (Węgleński)",
+          "url": "https://ksiegarnia.pwn.pl/"
+        },
+        {
+          "label": "🇵🇱 Zintegrowana Platforma Edukacyjna (ZPE) — Biotechnologia, genetyka i inżynieria genetyczna po polsku",
+          "url": "https://zpe.gov.pl/"
+        },
+        {
+          "label": "🇬🇧 National Academies — Odpowiedzialny rozwój biologii syntetycznej",
           "url": "https://www.nationalacademies.org/"
         },
         {
-          "label": "NCBI Bookshelf — Developmental Biology & Cell Biology",
+          "label": "🇬🇧 NCBI Bookshelf — Developmental Biology & Cell Biology",
           "url": "https://www.ncbi.nlm.nih.gov/books/"
         },
         {
-          "label": "ISSCR — International Society for Stem Cell Research",
+          "label": "🇬🇧 ISSCR — International Society for Stem Cell Research",
           "url": "https://www.isscr.org/"
-        },
-        {
-          "label": "Nature — Synthetic Biology & Tissue Engineering",
-          "url": "https://www.nature.com/subjects/synthetic-biology"
         }
       ],
       "author": "Administrator",
@@ -615,26 +715,34 @@ const DEFAULT_SEED = {
       "categoryType": "TRACK",
       "targetId": "E",
       "topic": "Filozofia nauki: dowód, hipoteza, teoria i granice modeli.",
-      "title": "Projekt E (Filozofia): Alan Chalmers, Thomas S. Kuhn, Michał Heller oraz filozofia starożytna, umysłu i bioetyka",
+      "title": "Projekt E (Filozofia — PL w pierwszej kolejności): Alan Chalmers, Thomas S. Kuhn, Michał Heller, Władysław Tatarkiewicz, filozofia starożytna (Wolne Lektury) i bioetyka",
       "level": "Podstawowy / Akademicki",
-      "format": "Biblioteka uzupełniająca GOLEM 15",
-      "content": "Po polsku: Alan Chalmers („Czym jest to, co zwiemy nauką?”), Thomas S. Kuhn („Struktura rewolucji naukowych”), Michał Heller („Filozofia nauki. Wprowadzenie”). Zastosowanie: ocena dowodów, rozróżnianie teorii i spekulacji, analiza tożsamości osobowej oraz etycznych konsekwencji tworzenia i modyfikowania organizmów.",
-      "url": "https://plato.stanford.edu/",
+      "format": "Biblioteka uzupełniająca GOLEM 15 (PL w pierwszej kolejności)",
+      "content": "1. W pierwszej kolejności (Po polsku):\n• Alan Chalmers — „Czym jest to, co zwiemy nauką?”\n• Thomas S. Kuhn — „Struktura rewolucji naukowych”\n• Michał Heller — „Filozofia nauki. Wprowadzenie” oraz „Filozofia przyrody” (Copernicus Center Press)\n• Filozofia starożytna po polsku: Platon („Państwo”, „Timajos”), Arystoteles („Metafizyka”, „O duszy”), stoicy (Marek Aureliusz — „Rozmyślania”, Seneka, Epiktet) w serwisie Wolne Lektury oraz Władysław Tatarkiewicz — „Historia filozofii. Tom 1–3” (PWN)\n• Filozofia umysłu, techniki i bioetyka: M. Miłkowski, R. Poczobut (red.) — „Przewodnik po filozofii umysłu”; Kazimierz Szewczyk — „Bioetyka. Tom 1–2” (PWN).\n2. Uzupełniająco (Po angielsku): Stanford Encyclopedia of Philosophy (SEP) oraz Internet Encyclopedia of Philosophy (IEP).",
+      "url": "https://ccpress.pl/",
       "links": [
         {
-          "label": "Copernicus Center Press — Książki prof. Michała Hellera i filozofia nauki",
+          "label": "🇵🇱 Copernicus Center Press — Książki ks. prof. Michała Hellera i filozofia nauki po polsku",
           "url": "https://ccpress.pl/"
         },
         {
-          "label": "Stanford Encyclopedia of Philosophy (Filozofia nauki, umysłu i bioetyka)",
-          "url": "https://plato.stanford.edu/"
+          "label": "🇵🇱 Centrum Kopernika Badań Interdyscyplinarnych (UJ) — Darmowe polskie wykłady z filozofii nauki, umysłu i etyki",
+          "url": "https://www.copernicuscenter.edu.pl/"
         },
         {
-          "label": "Wolne Lektury — Filozofia starożytna po polsku (Platon, Arystoteles, stoicy)",
+          "label": "🇵🇱 Wolne Lektury — Filozofia starożytna po polsku (Platon, Arystoteles, Marek Aureliusz, Seneka)",
           "url": "https://wolnelektury.pl/katalog/gatunek/filozofia/"
         },
         {
-          "label": "Internet Encyclopedia of Philosophy (IEP)",
+          "label": "🇵🇱 Wydawnictwo Naukowe PWN — Kuhn „Struktura rewolucji naukowych”, Tatarkiewicz „Historia filozofii”, Szewczyk „Bioetyka”",
+          "url": "https://ksiegarnia.pwn.pl/"
+        },
+        {
+          "label": "🇬🇧 Stanford Encyclopedia of Philosophy (Filozofia nauki, umysłu i bioetyka)",
+          "url": "https://plato.stanford.edu/"
+        },
+        {
+          "label": "🇬🇧 Internet Encyclopedia of Philosophy (IEP)",
           "url": "https://iep.utm.edu/"
         }
       ],
@@ -647,27 +755,35 @@ const DEFAULT_SEED = {
       "categoryType": "TRACK",
       "targetId": "F",
       "topic": "Wpływ mikrograwitacji na mięśnie, kości i układ krążenia.",
-      "title": "Projekt F (Człowiek w kosmosie): Darmowe źródła NASA i ESA oraz fizjologia kosmiczna i systemy podtrzymywania życia",
+      "title": "Projekt F (Człowiek w kosmosie — PL → EN): Polska Agencja Kosmiczna (POLSA), ESERO Polska (Centrum Nauki Kopernik), medycyna kosmiczna i astronautyka oraz darmowe źródła NASA i ESA",
       "level": "Podstawowy / Zaawansowany",
-      "format": "Biblioteka uzupełniająca GOLEM 15",
-      "content": "Kolejność nauki: Podstawy fizyki → mechanika orbitalna → technika kosmiczna → fizjologia kosmiczna → systemy podtrzymywania życia i habitaty. Darmowe źródła NASA i ESA dotyczące zdrowia człowieka w kosmosie, promieniowania, napędów, ECLSS i psychologii izolacji.",
-      "url": "https://www.nasa.gov/reference/fundamentals-of-human-health/",
+      "format": "Biblioteka uzupełniająca GOLEM 15 (PL w pierwszej kolejności)",
+      "content": "Kolejność nauki: Podstawy fizyki → mechanika orbitalna → technika kosmiczna → fizjologia kosmiczna → systemy podtrzymywania życia i habitaty.\n1. W pierwszej kolejności (Po polsku): Materiały edukacyjne i badawcze Polskiej Agencji Kosmicznej (POLSA); polskojęzyczne scenariusze i opracowania ESERO Polska (Biuro Edukacji Kosmicznej ESA przy Centrum Nauki Kopernik) dot. życia w mikrograwitacji, ochrony radiacyjnej, mechaniki orbitalnej i budowy habitatów; polskie podręczniki fizyki (OpenStax Fizyka PL), mechaniki nieba oraz medycyny lotniczej i kosmicznej (K. Kwarecki, PZWL).\n2. Darmowe źródła międzynarodowe (NASA i ESA): NASA Fundamentals of Human Health, ESA Teach with Space, ESA Human and Robotic Exploration.",
+      "url": "https://esero.kopernik.org.pl/",
       "links": [
         {
-          "label": "NASA — Zdrowie człowieka w kosmosie (Fundamentals of Human Health)",
+          "label": "🇵🇱 ESERO Polska (Centrum Nauki Kopernik / ESA) — Polskie materiały edukacyjne o załogowych misjach kosmicznych i habitatach",
+          "url": "https://esero.kopernik.org.pl/"
+        },
+        {
+          "label": "🇵🇱 Polska Agencja Kosmiczna (POLSA) — Edukacja, nauka, medycyna i technologie kosmiczne po polsku",
+          "url": "https://polsa.gov.pl/"
+        },
+        {
+          "label": "🇵🇱 OpenStax Polska — „Fizyka dla szkół wyższych” (Mechanika, grawitacja, ruch orbitalny po polsku)",
+          "url": "https://openstax.org/details/books/fizyka-dla-szk%C3%B3%C5%82-wy%C5%BCszych-tom-1"
+        },
+        {
+          "label": "🚀 NASA — Zdrowie człowieka w kosmosie (Fundamentals of Human Health)",
           "url": "https://www.nasa.gov/reference/fundamentals-of-human-health/"
         },
         {
-          "label": "ESA — Edukacja kosmiczna (Teach with Space)",
+          "label": "🛰️ ESA — Edukacja kosmiczna (Teach with Space)",
           "url": "https://education.esa.int/teach-with-space/"
         },
         {
-          "label": "ESA — Eksploracja załogowa i robotyczna (Human and Robotic Exploration)",
+          "label": "👩‍🚀 ESA — Eksploracja załogowa i robotyczna (Human and Robotic Exploration)",
           "url": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration"
-        },
-        {
-          "label": "NASA Technical Reports Server (NTRS — publikacje inżynieryjne i medyczne)",
-          "url": "https://ntrs.nasa.gov/"
         }
       ],
       "author": "Administrator",
@@ -679,27 +795,35 @@ const DEFAULT_SEED = {
       "categoryType": "TRACK",
       "targetId": "G",
       "topic": "Ochrona przyrody, odbudowa ekosystemów i renaturyzacja.",
-      "title": "Projekt G (Człowiek na Ziemi): Jan Krystek („Ochrona środowiska dla inżynierów”), Politechnika Śląska i ESA Education",
+      "title": "Projekt G (Człowiek na Ziemi — PL → EN): Jan Krystek („Ochrona środowiska dla inżynierów”), January Weiner („Życie i ewolucja biosfery”), Politechnika Śląska, GIOŚ i ESA Education",
       "level": "Podstawowy / Inżynierski",
-      "format": "Biblioteka uzupełniająca GOLEM 15",
-      "content": "Kolejność nauki: Podstawy ekologii → funkcjonowanie ekosystemów → presje środowiskowe → technologie ochronne → ekonomia i polityka środowiskowa. Obejmuje ochronę wód, powietrza i gleby, OZE, gospodarkę obiegu zamkniętego, LCA oraz satelitarny monitoring środowiska i AI.",
+      "format": "Biblioteka uzupełniająca GOLEM 15 (PL w pierwszej kolejności)",
+      "content": "Kolejność nauki: Podstawy ekologii → funkcjonowanie ekosystemów → presje środowiskowe → technologie ochronne → ekonomia i polityka środowiskowa.\n1. W pierwszej kolejności (Po polsku):\n• Jan Krystek — „Ochrona środowiska dla inżynierów” (Wydawnictwo Naukowe PWN).\n• January Weiner — „Życie i ewolucja biosfery. Podręcznik ekologii ogólnej” (PWN) — fundamentalny polski podręcznik funkcjonowania ekosystemów.\n• Czesława Rosik-Dulewska — „Podstawy gospodarki odpadami” (PWN).\n• Bezpłatne materiały Politechniki Śląskiej i OpenAGH dot. ochrony wód, powietrza i gleby oraz raporty GIOŚ (Państwowy Monitoring Środowiska).\n2. Uzupełniająco: Europejska Agencja Środowiska (EEA — serwis w jęz. polskim) oraz ESA Education.",
       "url": "https://www.polsl.pl/",
       "links": [
         {
-          "label": "ESA Education — Edukacja o Ziemi, klimacie i obserwacji środowiska",
-          "url": "https://education.esa.int/teach-with-space/"
-        },
-        {
-          "label": "Politechnika Śląska — Materiały dot. podstaw ochrony środowiska",
+          "label": "🇵🇱 Politechnika Śląska — Bezpłatne materiały dotyczące podstaw ochrony środowiska",
           "url": "https://www.polsl.pl/"
         },
         {
-          "label": "Jan Krystek — Ochrona środowiska dla inżynierów (PWN)",
+          "label": "🇵🇱 Wydawnictwo Naukowe PWN — Jan Krystek „Ochrona środowiska dla inżynierów” oraz January Weiner „Życie i ewolucja biosfery”",
           "url": "https://ksiegarnia.pwn.pl/"
         },
         {
-          "label": "Europejska Agencja Środowiska (EEA — raporty, klimat, GOZ, LCA)",
+          "label": "🇵🇱 Główny Inspektorat Ochrony Środowiska (GIOŚ) — Państwowy Monitoring Środowiska (wody, powietrze, gleby)",
+          "url": "https://www.gios.gov.pl/"
+        },
+        {
+          "label": "🇵🇱 OpenAGH & ZPE — Darmowe polskie materiały o ekologii, odnawialnych źródłach energii i ochronie środowiska",
+          "url": "https://open.agh.edu.pl/"
+        },
+        {
+          "label": "🇵🇱 Europejska Agencja Środowiska (EEA po polsku — klimat, bioróżnorodność, GOZ, LCA)",
           "url": "https://www.eea.europa.eu/pl"
+        },
+        {
+          "label": "🌍 ESA Education — Edukacja o Ziemi, klimacie i obserwacji środowiska",
+          "url": "https://education.esa.int/teach-with-space/"
         }
       ],
       "author": "Administrator",
@@ -708,66 +832,90 @@ const DEFAULT_SEED = {
     }
   ],
   "supplementaryLibrary": {
-    "title": "BIBLIOTEKA PROJEKTU GOLEM 15 — Literatura podstawowa (I–VI) oraz uzupełniająca (Projekty C–G)",
-    "description": "Kompletna bibliografia polsko- i anglojęzyczna: Wspólne podstawy (I. Matematyka i Informatyka, II. Fizyka i Komputery Kwantowe, III. Chemia, Biologia i Genetyka), IV. Projekt A, V. Projekt B, VI. Kolejność czytania oraz Biblioteka uzupełniająca do Projektów C, D, E, F i G wraz z bezpośrednimi odnośnikami.",
+    "title": "BIBLIOTEKA PROJEKTU GOLEM 15 — Literatura polskojęzyczna (w pierwszej kolejności) i anglojęzyczna (I–VI oraz Projekty C–G)",
+    "description": "Kompletna bibliografia projektu z priorytetem dla literatury i źródeł polskojęzycznych: Wspólne podstawy (I. Matematyka i Informatyka, II. Fizyka i Komputery Kwantowe, III. Chemia, Biologia i Genetyka), IV. Projekt A, V. Projekt B, VI. Kolejność czytania oraz Biblioteka uzupełniająca do Projektów C, D, E, F i G.",
     "readingOrder": {
-      "title": "VI. KOLEJNOŚĆ CZYTANIA — Plan lektur krok po kroku",
-      "principle": "Zasada: najpierw jedna książka podstawowa z aktualnej dziedziny, potem ćwiczenia i dopiero kolejna pozycja. Pełne odwzorowanie ludzkiego mózgu i przeniesienie umysłu pozostają niezrealizowanymi celami badawczymi.",
+      "title": "VI. KOLEJNOŚĆ CZYTANIA — Plan lektur krok po kroku (w pierwszej kolejności wydania i źródła polskojęzyczne)",
+      "principle": "Zasada: zaczynamy od polskojęzycznych podręczników podstawowych i bezpłatnych źródeł po polsku (OpenStax Polska, OpenAGH, ZPE, Ważniak MIMUW) — najpierw jedna książka podstawowa z aktualnej dziedziny, potem ćwiczenia i dopiero kolejna pozycja. Literatura anglojęzyczna stanowi rozwinięcie specjalistyczne i badawcze. Pełne odwzorowanie ludzkiego mózgu i przeniesienie umysłu pozostają niezrealizowanymi celami badawczymi.",
       "stages": [
         {
-          "stage": "1. Najpierw (Fundamenty obliczeń, programowania, matematyki i fizyki)",
+          "stage": "1. Najpierw (Fundamenty po polsku: obliczenia, Python, matematyka i fizyka)",
           "items": [
-            "Charles Petzold — *Kod. Ukryty język komputerów. Wydanie II* / *Code* — [Strona książki Code](https://codehiddenlanguage.com/) | [Helion](https://helion.pl/)",
-            "Eric Matthes — *Python. Instrukcje dla programisty* / *Python Crash Course* — [Materiały i ćwiczenia](https://ehmatthes.github.io/pcc_3e/) | [Helion](https://helion.pl/)",
-            "Podstawy matematyki (i algebry liniowej) — [OpenStax Math](https://openstax.org/subjects/math) | [Gilbert Strang MIT 18.06](https://math.mit.edu/~gs/linearalgebra/)",
-            "Podręcznik fizyki ogólnej — [OpenStax Fizyka dla szkół wyższych Tom 1–3 (PL)](https://openstax.org/details/books/fizyka-dla-szk%C3%B3%C5%82-wy%C5%BCszych-tom-1)"
+            "🇵🇱 Charles Petzold — *Kod. Ukryty język komputerów. Wydanie II* — [Wydawnictwo Helion](https://helion.pl/) (oryg. *Code*: [codehiddenlanguage.com](https://codehiddenlanguage.com/))",
+            "🇵🇱 Eric Matthes — *Python. Instrukcje dla programisty* — [Wydawnictwo Helion](https://helion.pl/) + [Polski samouczek Python](https://docs.python.org/pl/3/tutorial/)",
+            "🇵🇱 Podstawy matematyki i algebry liniowej — [OpenAGH Matematyka (PL)](https://open.agh.edu.pl/) | [ZPE Matematyka (PL)](https://zpe.gov.pl/) | [OpenStax Polska](https://openstax.pl/pl/zasoby)",
+            "🇵🇱 Podręcznik fizyki ogólnej po polsku — [OpenStax Fizyka dla szkół wyższych Tom 1–3 (darmowy PL)](https://openstax.org/details/books/fizyka-dla-szk%C3%B3%C5%82-wy%C5%BCszych-tom-1) | Halliday & Resnick *Podstawy fizyki* ([PWN](https://ksiegarnia.pwn.pl/))"
           ]
         },
         {
-          "stage": "2. Następnie (Genomy, chemia, biologia i biologiczne podstawy psychologii)",
+          "stage": "2. Następnie (Genomy, chemia, biologia i psychologia biologiczna po polsku)",
           "items": [
-            "Terence A. Brown — *Genomy* — [NCBI Genomes](https://www.ncbi.nlm.nih.gov/books/NBK21128/) | [PWN](https://ksiegarnia.pwn.pl/)",
-            "Podstawy chemii, biologii i biochemii — [OpenStax Chemistry 2e](https://openstax.org/details/books/chemistry-2e) | [OpenStax Biology 2e](https://openstax.org/details/books/biology-2e) | [Biologia Campbella](https://ksiegarnia.pwn.pl/)",
-            "James W. Kalat — *Biologiczne podstawy psychologii* — [Wydawnictwo Naukowe PWN](https://ksiegarnia.pwn.pl/)"
+            "🇵🇱 Terence A. Brown — *Genomy* (polskie wydanie) — [Wydawnictwo Naukowe PWN](https://ksiegarnia.pwn.pl/)",
+            "🇵🇱 Podstawy chemii, biologii i biochemii po polsku — *Biologia Campbella* ([Rebis](https://www.rebis.com.pl/)), Stryer *Biochemia* ([PWN](https://ksiegarnia.pwn.pl/)), Alberts *Podstawy biologii komórki* ([PWN](https://ksiegarnia.pwn.pl/)), [ZPE](https://zpe.gov.pl/)",
+            "🇵🇱 James W. Kalat — *Biologiczne podstawy psychologii* (polskie wydanie) — [Wydawnictwo Naukowe PWN](https://ksiegarnia.pwn.pl/)"
           ]
         },
         {
-          "stage": "3. Później (Neuronauka obliczeniowa, układy dynamiczne, konektomika i WBE)",
+          "stage": "3. Później (Neurobiologia, konektomika, neuronauka obliczeniowa i WBE)",
           "items": [
-            "Peter Dayan, L. F. Abbott — *Theoretical Neuroscience: Computational and Mathematical Modeling of Neural Systems* — [MIT Press](https://mitpress.mit.edu/9780262541855/theoretical-neuroscience/)",
-            "Eugene M. Izhikevich — *Dynamical Systems in Neuroscience* — [Pełny PDF autora](https://www.izhikevich.org/publications/dsn.pdf)",
-            "Sebastian Seung — *Connectome: How the Brain's Wiring Makes Us Who We Are* — [Seung Lab MIT](https://seunglab.org/)",
-            "Anders Sandberg, Nick Bostrom — *Whole Brain Emulation: A Roadmap* — [Pełny raport PDF (FHI Oxford)](https://www.fhi.ox.ac.uk/brain-emulation-roadmap-report.pdf)"
+            "🇵🇱 Alan Longstaff — *Neurobiologia. Krótkie wykłady* ([PWN](https://ksiegarnia.pwn.pl/)), E. Nęcka — *Psychologia poznawcza* ([PWN](https://ksiegarnia.pwn.pl/)) oraz 🇵🇱 Sebastian Seung — *Konektom. Jak połączenia w mózgu kształtują naszą tożsamość* (wyd. polskie)",
+            "🇬🇧 Peter Dayan, L. F. Abbott — *Theoretical Neuroscience: Computational and Mathematical Modeling of Neural Systems* — [MIT Press](https://mitpress.mit.edu/9780262541855/theoretical-neuroscience/)",
+            "🇬🇧 Eugene M. Izhikevich — *Dynamical Systems in Neuroscience* — [Pełny PDF autora](https://www.izhikevich.org/publications/dsn.pdf)",
+            "🇬🇧 Anders Sandberg, Nick Bostrom — *Whole Brain Emulation: A Roadmap* — [Pełny raport PDF (FHI Oxford)](https://www.fhi.ox.ac.uk/brain-emulation-roadmap-report.pdf)"
           ]
         },
         {
-          "stage": "4. Na zaawansowanym etapie (Neurobiologia kliniczna/akademicka i obliczenia kwantowe)",
+          "stage": "4. Na zaawansowanym etapie (Mechanika kwantowa, neurobiologia akademicka i obliczenia kwantowe)",
           "items": [
-            "Eric R. Kandel i współautorzy — *Principles of Neural Science* — [McGraw Hill](https://www.mheducation.com/)",
-            "Larry Squire i współautorzy — *Fundamental Neuroscience* — [ScienceDirect](https://www.sciencedirect.com/book/9780123858702/fundamental-neuroscience)",
-            "Patricia S. Churchland, Terrence J. Sejnowski — *The Computational Brain* — [MIT Press](https://mitpress.mit.edu/9780262531207/the-computational-brain/)",
-            "David J. Griffiths — *Introduction to Quantum Mechanics* — [Cambridge University Press](https://www.cambridge.org/highereducation/books/introduction-to-quantum-mechanics/990799CA07A83FC5312402AF6860311E)",
-            "Michael A. Nielsen, Isaac L. Chuang — *Quantum Computation and Quantum Information* — [Cambridge University Press](https://www.cambridge.org/highereducation/books/quantum-computation-and-quantum-information/01E10196D0A682A6AEFFEA52D53BE9AE)"
+            "🇵🇱/🇬🇧 David J. Griffiths — *Wstęp do mechaniki kwantowej* ([polskie wydanie PWN](https://ksiegarnia.pwn.pl/)) / *Introduction to Quantum Mechanics* ([CUP](https://www.cambridge.org/highereducation/books/introduction-to-quantum-mechanics/990799CA07A83FC5312402AF6860311E))",
+            "🇬🇧 Eric R. Kandel i współautorzy — *Principles of Neural Science* — [McGraw Hill](https://www.mheducation.com/)",
+            "🇬🇧 Larry Squire i współautorzy — *Fundamental Neuroscience* — [ScienceDirect](https://www.sciencedirect.com/book/9780123858702/fundamental-neuroscience)",
+            "🇬🇧 Patricia S. Churchland, Terrence J. Sejnowski — *The Computational Brain* — [MIT Press](https://mitpress.mit.edu/9780262531207/the-computational-brain/)",
+            "🇬🇧 Michael A. Nielsen, Isaac L. Chuang — *Quantum Computation and Quantum Information* — [Cambridge University Press](https://www.cambridge.org/highereducation/books/quantum-computation-and-quantum-information/01E10196D0A682A6AEFFEA52D53BE9AE)"
           ]
         }
       ]
     },
     "rules": [
+      "W pierwszej kolejności korzystać z literatury oraz darmowych źródeł polskojęzycznych (OpenStax Polska, e-podręczniki OpenAGH, Zintegrowana Platforma Edukacyjna ZPE, Ważniak MIMUW, polskie wydania PWN, Helion, PZWL i Copernicus Center Press).",
       "Zasada czytania: najpierw jedna książka podstawowa z aktualnej dziedziny, potem ćwiczenia i dopiero kolejna pozycja.",
-      "Najpierw korzystać z materiałów bezpłatnych (np. OpenStax, ZPE, NCBI Bookshelf, NASA, ESA).",
-      "Książki specjalistyczne kupować dopiero po poznaniu podstaw danego obszaru.",
+      "Książki specjalistyczne i anglojęzyczne wprowadzać po opanowaniu podstaw danego obszaru po polsku.",
       "Przed zakupem sprawdzać dokładny tytuł, autora, wydanie i dostępność polskiego przekładu.",
-      "W szybko rozwijających się dziedzinach korzystać również z aktualnych przeglądów naukowych i dokumentacji instytucji badawczych.",
+      "W szybko rozwijających się dziedzinach korzystać również z aktualnych przeglądów naukowych i dokumentacji instytucji badawczych (PAN, POLSA, GIOŚ, NASA, ESA).",
       "Rozróżniać wiedzę potwierdzoną, aktywne badania, hipotezy i spekulacje (pełne odwzorowanie ludzkiego mózgu i przeniesienie umysłu pozostają niezrealizowanymi celami badawczymi).",
       "Traktować bibliografię jako zasób długoterminowy, a nie listę lektur do przeczytania w całości od razu."
     ],
     "projects": [
       {
         "trackId": "FND-1",
-        "title": "I. MATEMATYKA I INFORMATYKA (Wspólne podstawy)",
+        "title": "I. MATEMATYKA I INFORMATYKA (Wspólne podstawy — PL w pierwszej kolejności)",
         "sequenceLabel": "Etap czytania",
-        "sequence": "Najpierw: Petzold (Kod) → Matthes (Python. Instrukcje dla programisty) → Podstawy matematyki i algebry liniowej (Strang).",
+        "sequence": "Najpierw (po polsku): Petzold (Kod. Ukryty język komputerów) → Matthes (Python. Instrukcje dla programisty) → Polskie podręczniki matematyki i algebry liniowej (OpenAGH, ZPE, Skoczylas) → Uzupełniająco (EN): Gilbert Strang (Introduction to Linear Algebra).",
         "links": [
+          {
+            "label": "🇵🇱 Wydawnictwo Helion — Polskie wydania: Charles Petzold „Kod” oraz Eric Matthes „Python. Instrukcje dla programisty”",
+            "url": "https://helion.pl/"
+          },
+          {
+            "label": "🇵🇱 OpenAGH — Darmowe polskie e-podręczniki: Matematyka i Algebra Liniowa",
+            "url": "https://open.agh.edu.pl/"
+          },
+          {
+            "label": "🇵🇱 Ważniak MIMUW (UW) — Darmowe polskie kursy akademickie z matematyki i informatyki",
+            "url": "https://wazniak.mimuw.edu.pl/"
+          },
+          {
+            "label": "🇵🇱 Zintegrowana Platforma Edukacyjna (ZPE) — Matematyka, logika i informatyka po polsku",
+            "url": "https://zpe.gov.pl/"
+          },
+          {
+            "label": "🇵🇱 Oficjalna dokumentacja i samouczek Pythona po polsku",
+            "url": "https://docs.python.org/pl/3/tutorial/"
+          },
+          {
+            "label": "🇬🇧 Gilbert Strang — Introduction to Linear Algebra (MIT 18.06)",
+            "url": "https://math.mit.edu/~gs/linearalgebra/"
+          },
           {
             "label": "🇬🇧 Charles Petzold — Code (Strona książki i symulacje)",
             "url": "https://codehiddenlanguage.com/"
@@ -775,48 +923,49 @@ const DEFAULT_SEED = {
           {
             "label": "🇬🇧 Eric Matthes — Python Crash Course (Zasoby i ćwiczenia)",
             "url": "https://ehmatthes.github.io/pcc_3e/"
-          },
-          {
-            "label": "🇬🇧 Gilbert Strang — Introduction to Linear Algebra (MIT)",
-            "url": "https://math.mit.edu/~gs/linearalgebra/"
-          },
-          {
-            "label": "🇵🇱 Wydawnictwo Helion (Polskie wydania Petzolda i Matthesa)",
-            "url": "https://helion.pl/"
-          },
-          {
-            "label": "🇬🇧 OpenStax Mathematics (Darmowe podręczniki matematyki)",
-            "url": "https://openstax.org/subjects/math"
           }
         ],
         "groups": [
           {
-            "heading": "Polskojęzyczne",
+            "heading": "1. Polskojęzyczne (w pierwszej kolejności)",
             "items": [
               "1. Charles Petzold — *Kod. Ukryty język komputerów. Wydanie II.* — [Wydawnictwo Helion](https://helion.pl/)",
-              "2. Eric Matthes — *Python. Instrukcje dla programisty.* — [Wydawnictwo Helion](https://helion.pl/)",
-              "3. Podręczniki matematyki i algebry liniowej na poziomie szkoły średniej i studiów — [ZPE Matematyka](https://zpe.gov.pl/) | [OpenAGH](https://open.agh.edu.pl/)"
+              "2. Eric Matthes — *Python. Instrukcje dla programisty. Wydanie III.* — [Wydawnictwo Helion](https://helion.pl/) + [Samouczek Python PL](https://docs.python.org/pl/3/tutorial/)",
+              "3. Podręczniki matematyki i algebry liniowej na poziomie szkoły średniej i studiów: M. Gewert, Z. Skoczylas (*Algebra liniowa*, *Analiza matematyczna*), T. Krasiński (*Algebra liniowa* PWN) oraz darmowe zasoby: [OpenAGH Matematyka](https://open.agh.edu.pl/) | [ZPE Matematyka](https://zpe.gov.pl/) | [Ważniak MIMUW](https://wazniak.mimuw.edu.pl/)",
+              "4. Thomas H. Cormen i współautorzy — *Wprowadzenie do algorytmów* (polskie wydanie, [PWN](https://ksiegarnia.pwn.pl/)) oraz Roger Penrose — *Droga do rzeczywistości* (wyd. polskie)."
             ]
           },
           {
-            "heading": "Anglojęzyczne",
+            "heading": "2. Anglojęzyczne (uzupełniające)",
             "items": [
-              "4. Gilbert Strang — *Introduction to Linear Algebra.* — [MIT Linear Algebra](https://math.mit.edu/~gs/linearalgebra/)",
-              "5. Charles Petzold — *Code.* — [codehiddenlanguage.com](https://codehiddenlanguage.com/)",
-              "6. Eric Matthes — *Python Crash Course.* — [ehmatthes.github.io/pcc_3e](https://ehmatthes.github.io/pcc_3e/)"
+              "5. Gilbert Strang — *Introduction to Linear Algebra.* — [MIT Linear Algebra](https://math.mit.edu/~gs/linearalgebra/)",
+              "6. Charles Petzold — *Code.* — [codehiddenlanguage.com](https://codehiddenlanguage.com/)",
+              "7. Eric Matthes — *Python Crash Course.* — [ehmatthes.github.io/pcc_3e](https://ehmatthes.github.io/pcc_3e/)"
             ]
           }
         ]
       },
       {
         "trackId": "FND-4",
-        "title": "II. FIZYKA I KOMPUTERY KWANTOWE (Wspólne podstawy)",
+        "title": "II. FIZYKA I KOMPUTERY KWANTOWE (Wspólne podstawy — PL w pierwszej kolejności)",
         "sequenceLabel": "Etap czytania",
-        "sequence": "Najpierw: Podręcznik fizyki ogólnej i podstaw elektroniki → Na zaawansowanym etapie: Griffiths (Introduction to Quantum Mechanics) oraz Nielsen i Chuang (Quantum Computation and Quantum Information).",
+        "sequence": "Najpierw (po polsku): OpenStax „Fizyka dla szkół wyższych Tom 1–3”, Halliday & Resnick „Podstawy fizyki” oraz polskie podręczniki elektroniki (Horowitz & Hill „Sztuka elektroniki”, ZPE, Forbot) → Na zaawansowanym etapie: Griffiths („Wstęp do mechaniki kwantowej” PL / EN) oraz Nielsen i Chuang.",
         "links": [
           {
-            "label": "🇵🇱 OpenStax — Fizyka dla szkół wyższych (Tom 1–3 po polsku, darmowy)",
+            "label": "🇵🇱 OpenStax Polska — „Fizyka dla szkół wyższych. Tom 1–3” (pełny darmowy podręcznik po polsku)",
             "url": "https://openstax.org/details/books/fizyka-dla-szk%C3%B3%C5%82-wy%C5%BCszych-tom-1"
+          },
+          {
+            "label": "🇵🇱 Wydawnictwo Naukowe PWN — Halliday & Resnick „Podstawy fizyki”, Feynman „Wykłady z fizyki”, Griffiths „Wstęp do mechaniki kwantowej”",
+            "url": "https://ksiegarnia.pwn.pl/"
+          },
+          {
+            "label": "🇵🇱 OpenAGH & ZPE — Darmowe polskie podręczniki fizyki, elektroniki i układów cyfrowych",
+            "url": "https://open.agh.edu.pl/"
+          },
+          {
+            "label": "🇵🇱 Forbot — Kursy podstaw elektroniki i techniki cyfrowej po polsku",
+            "url": "https://forbot.pl/blog/kurs-elektroniki-poziom-1-spis-tresci-id5159"
           },
           {
             "label": "🇬🇧 David J. Griffiths — Introduction to Quantum Mechanics (CUP)",
@@ -825,22 +974,18 @@ const DEFAULT_SEED = {
           {
             "label": "🇬🇧 Michael A. Nielsen, Isaac L. Chuang — Quantum Computation and Quantum Information",
             "url": "https://www.cambridge.org/highereducation/books/quantum-computation-and-quantum-information/01E10196D0A682A6AEFFEA52D53BE9AE"
-          },
-          {
-            "label": "🇵🇱 ZPE / OpenAGH — Podstawy elektroniki i układów cyfrowych",
-            "url": "https://zpe.gov.pl/"
           }
         ],
         "groups": [
           {
-            "heading": "Polskojęzyczne",
+            "heading": "1. Polskojęzyczne (w pierwszej kolejności)",
             "items": [
-              "1. Akademickie podręczniki fizyki ogólnej i mechaniki kwantowej w polskich wydaniach — [OpenStax Fizyka PL](https://openstax.org/details/books/fizyka-dla-szk%C3%B3%C5%82-wy%C5%BCszych-tom-1) | [PWN](https://ksiegarnia.pwn.pl/)",
-              "2. Podręczniki podstaw elektroniki i układów cyfrowych — [ZPE Elektronika](https://zpe.gov.pl/) | [OpenAGH](https://open.agh.edu.pl/)"
+              "1. Akademickie podręczniki fizyki ogólnej i mechaniki kwantowej w polskich wydaniach: *OpenStax Fizyka dla szkół wyższych Tom 1–3* ([darmowy dostęp PL](https://openstax.org/details/books/fizyka-dla-szk%C3%B3%C5%82-wy%C5%BCszych-tom-1)), D. Halliday, R. Resnick, J. Walker — *Podstawy fizyki* ([PWN](https://ksiegarnia.pwn.pl/)), R. P. Feynman — *Feynmana wykłady z fizyki* (PWN), D. J. Griffiths — *Wstęp do mechaniki kwantowej* (polskie wydanie PWN).",
+              "2. Podręczniki podstaw elektroniki i układów cyfrowych po polsku: P. Horowitz, W. Hill — *Sztuka elektroniki. Cz. 1–2* (WKŁ), B. Głocki — *Układy cyfrowe* (WSiP), [ZPE Elektronika](https://zpe.gov.pl/), [OpenAGH](https://open.agh.edu.pl/) oraz [Kursy Forbot](https://forbot.pl/)."
             ]
           },
           {
-            "heading": "Anglojęzyczne",
+            "heading": "2. Anglojęzyczne (etap zaawansowany)",
             "items": [
               "3. David J. Griffiths — *Introduction to Quantum Mechanics.* — [Cambridge University Press](https://www.cambridge.org/highereducation/books/introduction-to-quantum-mechanics/990799CA07A83FC5312402AF6860311E)",
               "4. Michael A. Nielsen, Isaac L. Chuang — *Quantum Computation and Quantum Information.* — [Cambridge University Press](https://www.cambridge.org/highereducation/books/quantum-computation-and-quantum-information/01E10196D0A682A6AEFFEA52D53BE9AE)"
@@ -850,10 +995,22 @@ const DEFAULT_SEED = {
       },
       {
         "trackId": "FND-7",
-        "title": "III. CHEMIA, BIOLOGIA I GENETYKA (Wspólne podstawy)",
+        "title": "III. CHEMIA, BIOLOGIA I GENETYKA (Wspólne podstawy — PL w pierwszej kolejności)",
         "sequenceLabel": "Etap czytania",
-        "sequence": "Następnie (po podstawach matematyki, fizyki i informatyki): Brown (Genomy) → Podstawy chemii, biologii i biochemii (OpenStax Chemistry 2e, OpenStax Biology 2e, Biologia Campbella).",
+        "sequence": "Następnie (w pierwszej kolejności po polsku): Terence A. Brown („Genomy” PWN) → „Biologia Campbella” (wyd. polskie Rebis) i B. Alberts („Podstawy biologii komórki” PWN) → Polskie podręczniki chemii i biochemii (Stryer „Biochemia”, Jones & Atkins, McMurry) → Uzupełniająco (EN): OpenStax Chemistry 2e i Biology 2e.",
         "links": [
+          {
+            "label": "🇵🇱 Wydawnictwo Naukowe PWN — T.A. Brown „Genomy”, Stryer „Biochemia”, Alberts „Podstawy biologii komórki”, Jones & Atkins „Chemia ogólna”",
+            "url": "https://ksiegarnia.pwn.pl/"
+          },
+          {
+            "label": "🇵🇱 Dom Wydawniczy REBIS — „Biologia Campbella” (polskie wydanie)",
+            "url": "https://www.rebis.com.pl/"
+          },
+          {
+            "label": "🇵🇱 OpenAGH & ZPE — Darmowe polskie podręczniki chemii ogólnej, biochemii, biologii i genetyki",
+            "url": "https://open.agh.edu.pl/"
+          },
           {
             "label": "🇬🇧 OpenStax Chemistry 2e — Darmowy podręcznik chemii ogólnej",
             "url": "https://openstax.org/details/books/chemistry-2e"
@@ -865,23 +1022,19 @@ const DEFAULT_SEED = {
           {
             "label": "🇬🇧 Terence A. Brown — Genomes (NCBI Bookshelf)",
             "url": "https://www.ncbi.nlm.nih.gov/books/NBK21128/"
-          },
-          {
-            "label": "🇵🇱 Terence A. Brown „Genomy” & „Biologia Campbella” (PWN / Rebis)",
-            "url": "https://ksiegarnia.pwn.pl/"
           }
         ],
         "groups": [
           {
-            "heading": "Polskojęzyczne",
+            "heading": "1. Polskojęzyczne (w pierwszej kolejności)",
             "items": [
-              "1. Terence A. Brown — *Genomy.* — [Wydawnictwo Naukowe PWN](https://ksiegarnia.pwn.pl/)",
-              "2. *Biologia Campbella* — polskie wydanie — [Księgarnia PWN / Rebis](https://ksiegarnia.pwn.pl/)",
-              "3. Akademickie podręczniki chemii ogólnej, organicznej i biochemii — [PWN Naukowe](https://ksiegarnia.pwn.pl/) | [ZPE Chemia](https://zpe.gov.pl/)"
+              "1. Terence A. Brown — *Genomy.* (polskie wydanie) — [Wydawnictwo Naukowe PWN](https://ksiegarnia.pwn.pl/)",
+              "2. *Biologia Campbella* — polskie wydanie ([Dom Wydawniczy REBIS](https://www.rebis.com.pl/)) oraz Bruce Alberts i współautorzy — *Podstawy biologii komórki* ([PWN](https://ksiegarnia.pwn.pl/)).",
+              "3. Akademickie podręczniki chemii ogólnej, organicznej i biochemii po polsku: L. Stryer i współautorzy — *Biochemia* (PWN), L. Jones, P. Atkins — *Chemia ogólna* (PWN), A. Bielański — *Podstawy chemii nieorganicznej* (PWN), J. McMurry — *Chemia organiczna* (PWN), [OpenAGH Chemia](https://open.agh.edu.pl/) i [ZPE](https://zpe.gov.pl/)."
             ]
           },
           {
-            "heading": "Anglojęzyczne",
+            "heading": "2. Anglojęzyczne (uzupełniające)",
             "items": [
               "4. *OpenStax Chemistry 2e* — podręcznik chemii ogólnej: [https://openstax.org/details/books/chemistry-2e](https://openstax.org/details/books/chemistry-2e)",
               "5. *OpenStax Biology 2e* — podręcznik biologii: [https://openstax.org/details/books/biology-2e](https://openstax.org/details/books/biology-2e)",
@@ -892,39 +1045,47 @@ const DEFAULT_SEED = {
       },
       {
         "trackId": "A",
-        "title": "IV. PROJEKT A — CZŁOWIEK BIOCYFROWO-ROBOTYCZNY",
+        "title": "IV. PROJEKT A — CZŁOWIEK BIOCYFROWO-ROBOTYCZNY (PL w pierwszej kolejności)",
         "sequenceLabel": "Kolejność nauki",
-        "sequence": "Anatomia, fizjologia i biologiczne podstawy psychologii (Kalat, OpenStax Anatomy & Physiology 2e) → Biofizyka, biomechanika i biomateriały → Robotyka, elektronika, sterowanie i uczenie maszynowe (Géron) → Inżynieria tkankowa, neuroprotetyka i interfejsy mózg–komputer (BCI).",
+        "sequence": "W pierwszej kolejności po polsku: Biologiczne podstawy psychologii (Kalat, PWN) oraz anatomia i fizjologia człowieka (Bochenek, Traczyk, Konturek) → Biofizyka, biomechanika i biomateriały (Jaroszyk, Marciniak, Tadeusiewicz) → Robotyka, elektronika, sterowanie i uczenie maszynowe (Géron wyd. polskie Helion) → Neuroprotetyka i interfejsy mózg–komputer (BCI).",
         "links": [
+          {
+            "label": "🇵🇱 Wydawnictwo Naukowe PWN — James W. Kalat „Biologiczne podstawy psychologii” oraz podręczniki biofizyki i robotyki",
+            "url": "https://ksiegarnia.pwn.pl/"
+          },
+          {
+            "label": "🇵🇱 PZWL Wydawnictwo Lekarskie — Anatomia człowieka (Bochenek), Fizjologia (Traczyk) i Biofizyka (Jaroszyk)",
+            "url": "https://pzwl.pl/"
+          },
+          {
+            "label": "🇵🇱 Wydawnictwo Helion — Aurélien Géron „Uczenie maszynowe z użyciem Scikit-Learn i TensorFlow” (wyd. polskie)",
+            "url": "https://helion.pl/"
+          },
+          {
+            "label": "🇵🇱 OpenAGH — Polskie materiały z inżynierii biomedycznej, biocybernetyki i automatyki",
+            "url": "https://open.agh.edu.pl/"
+          },
           {
             "label": "🇬🇧 OpenStax Anatomy and Physiology 2e (Darmowy podręcznik online/PDF)",
             "url": "https://openstax.org/details/books/anatomy-and-physiology-2e"
           },
           {
-            "label": "🇬🇧 Aurélien Géron — Hands-On Machine Learning (Scikit-Learn, Keras, TensorFlow)",
+            "label": "🇬🇧 Aurélien Géron — Hands-On Machine Learning (Repozytorium GitHub)",
             "url": "https://github.com/ageron/handson-ml3"
-          },
-          {
-            "label": "🇵🇱 James W. Kalat — Biologiczne podstawy psychologii (PWN)",
-            "url": "https://ksiegarnia.pwn.pl/"
-          },
-          {
-            "label": "🇬🇧 MIT OCW — Introduction to Robotics & Biomechanics",
-            "url": "https://ocw.mit.edu/courses/2-12-introduction-to-robotics-fall-2005/"
           }
         ],
         "groups": [
           {
-            "heading": "Polskojęzyczne",
+            "heading": "1. Polskojęzyczne (w pierwszej kolejności)",
             "items": [
               "1. James W. Kalat — *Biologiczne podstawy psychologii.* — [Wydawnictwo Naukowe PWN](https://ksiegarnia.pwn.pl/)",
-              "2. Akademickie podręczniki anatomii i fizjologii człowieka — [PWN / PZWL](https://ksiegarnia.pwn.pl/)",
-              "3. Akademickie podręczniki biofizyki, biomechaniki i biomateriałów — [OpenAGH](https://open.agh.edu.pl/) | [PWN](https://ksiegarnia.pwn.pl/)",
-              "4. Podręczniki robotyki, elektroniki i układów sterowania — [ZPE](https://zpe.gov.pl/) | [PWN](https://ksiegarnia.pwn.pl/)"
+              "2. Akademickie podręczniki anatomii i fizjologii człowieka: A. Bochenek, M. Reicher — *Anatomia człowieka* ([PZWL](https://pzwl.pl/)); W. Traczyk, A. Trzebski — *Fizjologia człowieka z elementami fizjologii stosowanej i klinicznej* (PZWL); S. Konturek — *Fizjologia człowieka*.",
+              "3. Akademickie podręczniki biofizyki, biomechaniki i biomateriałów: F. Jaroszyk (red.) — *Biofizyka* (PZWL); J. Marciniak — *Biomateriały* (Politechnika Śląska); seria *Biocybernetyka i Inżynieria Biomedyczna 2000* (PAN, red. M. Nałęcz, R. Tadeusiewicz) — [OpenAGH](https://open.agh.edu.pl/).",
+              "4. Podręczniki robotyki, elektroniki, układów sterowania i AI po polsku: K. Tchoń i współautorzy — *Manipulatory i roboty mobilne*; A. Géron — *Uczenie maszynowe z użyciem Scikit-Learn i TensorFlow* ([Helion](https://helion.pl/))."
             ]
           },
           {
-            "heading": "Anglojęzyczne",
+            "heading": "2. Anglojęzyczne (uzupełniające i specjalistyczne)",
             "items": [
               "5. *OpenStax Anatomy and Physiology 2e.* — [https://openstax.org/details/books/anatomy-and-physiology-2e](https://openstax.org/details/books/anatomy-and-physiology-2e)",
               "6. Géron — *Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow.* — [GitHub ageron/handson-ml3](https://github.com/ageron/handson-ml3)",
@@ -935,10 +1096,22 @@ const DEFAULT_SEED = {
       },
       {
         "trackId": "B",
-        "title": "V. PROJEKT B — CYFROWY UMYSŁ",
+        "title": "V. PROJEKT B — CYFROWY UMYSŁ (PL w pierwszej kolejności)",
         "sequenceLabel": "Kolejność czytania (Etapy 2 → 3 → 4)",
-        "sequence": "Następnie: Kalat (Biologiczne podstawy psychologii) → Później: Dayan & Abbott (Theoretical Neuroscience), Izhikevich (Dynamical Systems in Neuroscience), Seung (Connectome), Sandberg & Bostrom (Whole Brain Emulation: A Roadmap) → Na zaawansowanym etapie: Kandel (Principles of Neural Science), Squire (Fundamental Neuroscience), Churchland & Sejnowski (The Computational Brain).",
+        "sequence": "W pierwszej kolejności po polsku: Kalat („Biologiczne podstawy psychologii”), Longstaff („Neurobiologia”), Nęcka („Psychologia poznawcza”), Miłkowski i Poczobut („Przewodnik po filozofii umysłu”) oraz Seung („Konektom” — wyd. polskie) → Później (EN): Dayan & Abbott („Theoretical Neuroscience”), Izhikevich („Dynamical Systems in Neuroscience”), Sandberg & Bostrom („Whole Brain Emulation: A Roadmap”) → Na zaawansowanym etapie: Kandel („Principles of Neural Science”), Squire („Fundamental Neuroscience”), Churchland & Sejnowski („The Computational Brain”).",
         "links": [
+          {
+            "label": "🇵🇱 Wydawnictwo Naukowe PWN — J.W. Kalat „Biologiczne podstawy psychologii”, A. Longstaff „Neurobiologia”, E. Nęcka „Psychologia poznawcza”",
+            "url": "https://ksiegarnia.pwn.pl/"
+          },
+          {
+            "label": "🇵🇱 Prof. Włodzisław Duch (UMK) — Polskojęzyczne materiały z kognitywistyki, neuroinformatyki i modelowania mózgu",
+            "url": "https://www.fizyka.umk.pl/~duch/"
+          },
+          {
+            "label": "🇵🇱 Copernicus Center Press / Centrum Kopernika — Filozofia umysłu, kognitywistyka i problem świadomości po polsku",
+            "url": "https://ccpress.pl/"
+          },
           {
             "label": "🇬🇧 Eugene M. Izhikevich — Dynamical Systems in Neuroscience (Darmowy PDF autora)",
             "url": "https://www.izhikevich.org/publications/dsn.pdf"
@@ -960,26 +1133,22 @@ const DEFAULT_SEED = {
             "url": "https://mitpress.mit.edu/9780262531207/the-computational-brain/"
           },
           {
-            "label": "🇬🇧 Sebastian Seung — Connectome (Seung Lab MIT)",
-            "url": "https://seunglab.org/"
-          },
-          {
             "label": "🇬🇧 Larry Squire et al. — Fundamental Neuroscience (ScienceDirect)",
             "url": "https://www.sciencedirect.com/book/9780123858702/fundamental-neuroscience"
           }
         ],
         "groups": [
           {
-            "heading": "Polskojęzyczne",
+            "heading": "1. Polskojęzyczne (w pierwszej kolejności)",
             "items": [
               "1. James W. Kalat — *Biologiczne podstawy psychologii.* — [Wydawnictwo Naukowe PWN](https://ksiegarnia.pwn.pl/)",
-              "2. Podręczniki neurobiologii i fizjologii układu nerwowego — [PWN Naukowe](https://ksiegarnia.pwn.pl/)",
-              "3. Podręczniki psychologii poznawczej — [PWN Naukowe](https://ksiegarnia.pwn.pl/)",
-              "4. Wprowadzenia do filozofii umysłu i problemu świadomości — [Centrum Kopernika / CCPress](https://ccpress.pl/)"
+              "2. Podręczniki neurobiologii i fizjologii układu nerwowego po polsku: Alan Longstaff — *Neurobiologia. Krótkie wykłady* ([PWN](https://ksiegarnia.pwn.pl/)); T. Górska, A. Grabowska, J. Zagrodzka (red.) — *Mózg a zachowanie* (PWN).",
+              "3. Podręczniki psychologii poznawczej i konektomiki po polsku: Edward Nęcka, Jarosław Orzechowski, Błażej Szymura — *Psychologia poznawcza* ([PWN](https://ksiegarnia.pwn.pl/)); Sebastian Seung — *Konektom. Jak połączenia w mózgu kształtują naszą tożsamość* (polskie wydanie).",
+              "4. Wprowadzenia do filozofii umysłu, kognitywistyki i problemu świadomości po polsku: Marcin Miłkowski, Robert Poczobut (red.) — *Przewodnik po filozofii umysłu*; wykłady z neuroinformatyki prof. Włodzisława Ducha ([UMK](https://www.fizyka.umk.pl/~duch/)) oraz [Centrum Kopernika / CCPress](https://ccpress.pl/)."
             ]
           },
           {
-            "heading": "Anglojęzyczne",
+            "heading": "2. Anglojęzyczne (etapy 3 i 4 — zaawansowane modelowanie i neuronauka)",
             "items": [
               "5. Eric R. Kandel i współautorzy — *Principles of Neural Science.* — [McGraw Hill](https://www.mheducation.com/)",
               "6. Larry Squire i współautorzy — *Fundamental Neuroscience.* — [ScienceDirect](https://www.sciencedirect.com/book/9780123858702/fundamental-neuroscience)",
@@ -995,17 +1164,21 @@ const DEFAULT_SEED = {
       },
       {
         "trackId": "C",
-        "title": "Projekt C — Maszyny analogowe i obliczenia fizyczne (Biblioteka uzupełniająca)",
+        "title": "Projekt C — Maszyny analogowe i obliczenia fizyczne (PL w pierwszej kolejności)",
         "sequenceLabel": "Kolejność nauki",
-        "sequence": "Elektronika analogowa → układy dynamiczne → modelowanie matematyczne → fizyczne modele neuronów → obliczenia neuromorficzne.",
+        "sequence": "Elektronika analogowa (po polsku: Horowitz & Hill, OpenAGH, ZPE, Forbot) → układy dynamiczne → modelowanie matematyczne (Osowski, Tadeusiewicz) → fizyczne modele neuronów → obliczenia neuromorficzne.",
         "links": [
           {
-            "label": "🇵🇱 Zintegrowana Platforma Edukacyjna (ZPE) — Elektronika",
+            "label": "🇵🇱 Zintegrowana Platforma Edukacyjna (ZPE) — Elektronika i przetworniki A/C oraz C/A",
             "url": "https://zpe.gov.pl/"
           },
           {
-            "label": "🇵🇱 OpenAGH — E-podręczniki z elektroniki i fizyki",
+            "label": "🇵🇱 OpenAGH — E-podręczniki z elektroniki, układów dynamicznych i fizyki po polsku",
             "url": "https://open.agh.edu.pl/"
+          },
+          {
+            "label": "🇵🇱 Forbot — Kursy elektroniki analogowej, wzmacniaczy operacyjnych i ADC/DAC po polsku",
+            "url": "https://forbot.pl/"
           },
           {
             "label": "🇬🇧 Frontiers in Neuroscience — Neuromorphic Engineering",
@@ -1022,15 +1195,16 @@ const DEFAULT_SEED = {
         ],
         "groups": [
           {
-            "heading": "Po polsku",
+            "heading": "1. Po polsku (w pierwszej kolejności)",
             "items": [
-              "Podręczniki akademickie z elektroniki analogowej: wzmacniacze, oscylatory, filtry, sprzężenie zwrotne i układy dynamiczne — [E-podręczniki OpenAGH](https://open.agh.edu.pl/)",
-              "Materiały dydaktyczne o przetwornikach analogowo-cyfrowych (ADC) i cyfrowo-analogowych (DAC) — [Materiały ZPE](https://zpe.gov.pl/)",
+              "Podręczniki akademickie z elektroniki analogowej: Paul Horowitz, Winfield Hill — *Sztuka elektroniki* (wyd. polskie WKŁ); wzmacniacze, oscylatory, filtry, sprzężenie zwrotne i układy dynamiczne — [E-podręczniki OpenAGH](https://open.agh.edu.pl/)",
+              "Materiały dydaktyczne o przetwornikach analogowo-cyfrowych (ADC) i cyfrowo-analogowych (DAC) — [Materiały ZPE](https://zpe.gov.pl/) | [Kursy Forbot](https://forbot.pl/)",
+              "Polska literatura o sieciach neuronowych i biocybernetyce: Stanisław Osowski — *Sieci neuronowe do przetwarzania informacji* (Oficyna Wydawnicza PW); Ryszard Tadeusiewicz — *Sieci neuronowe*.",
               "Zintegrowana Platforma Edukacyjna — punkt wyjścia do szukania materiałów o elektronice: [https://zpe.gov.pl/](https://zpe.gov.pl/)"
             ]
           },
           {
-            "heading": "Po angielsku",
+            "heading": "2. Po angielsku (uzupełniające i badawcze)",
             "items": [
               "Materiały techniczne dotyczące analog computing — [MIT OpenCourseWare Electronics](https://ocw.mit.edu/search/?q=analog+computing)",
               "Materiały badawcze dotyczące neuromorphic computing i analog neural networks — [Frontiers in Neuromorphic Engineering](https://www.frontiersin.org/journals/neuroscience/sections/neuromorphic-engineering)",
@@ -1041,10 +1215,26 @@ const DEFAULT_SEED = {
       },
       {
         "trackId": "D",
-        "title": "Projekt D — „Frankenstein”: biotechnologia i tworzenie organizmów (Biblioteka uzupełniająca)",
+        "title": "Projekt D — „Frankenstein”: biotechnologia i tworzenie organizmów (PL w pierwszej kolejności)",
         "sequenceLabel": "Kolejność nauki",
-        "sequence": "Biologia komórki → genetyka → embriologia → komórki macierzyste → inżynieria tkankowa → biologia syntetyczna i bioetyka.",
+        "sequence": "W pierwszej kolejności po polsku: Biologia komórki (Alberts, PWN) → genetyka (Brown „Genomy”, Węgleński) → embriologia (Bartel „Embriologia”, PZWL) → komórki macierzyste i inżynieria tkankowa → biologia syntetyczna, bioetyka (Komitet Bioetyki PAN) i nauka a SF (Stanisław Lem „Summa technologiae”).",
         "links": [
+          {
+            "label": "🇵🇱 Komitet Bioetyki Polskiej Akademii Nauk (PAN) — Stanowiska i opracowania bioetyczne po polsku",
+            "url": "https://bioetyka.pan.pl/"
+          },
+          {
+            "label": "🇵🇱 PZWL Wydawnictwo Lekarskie — Hieronim Bartel „Embriologia”, histologia i medycyna regeneracyjna",
+            "url": "https://pzwl.pl/"
+          },
+          {
+            "label": "🇵🇱 Wydawnictwo Naukowe PWN — Alberts „Podstawy biologii komórki”, Brown „Genomy”, Węgleński „Genetyka molekularna”",
+            "url": "https://ksiegarnia.pwn.pl/"
+          },
+          {
+            "label": "🇵🇱 ZPE — Biologia komórki, genetyka i biotechnologia po polsku",
+            "url": "https://zpe.gov.pl/"
+          },
           {
             "label": "🇬🇧 National Academies — Responsible Development of Synthetic Biology",
             "url": "https://www.nationalacademies.org/"
@@ -1056,27 +1246,19 @@ const DEFAULT_SEED = {
           {
             "label": "🇬🇧 ISSCR — International Society for Stem Cell Research",
             "url": "https://www.isscr.org/"
-          },
-          {
-            "label": "🇬🇧 Nature Portfolio — Synthetic Biology & Tissue Engineering",
-            "url": "https://www.nature.com/subjects/synthetic-biology"
-          },
-          {
-            "label": "🇵🇱 ZPE — Biologia komórki, genetyka i biotechnologia",
-            "url": "https://zpe.gov.pl/"
           }
         ],
         "groups": [
           {
-            "heading": "Po polsku",
+            "heading": "1. Po polsku (w pierwszej kolejności)",
             "items": [
-              "Podręczniki akademickie z biologii komórki, genetyki i biologii rozwoju — [ZPE Biologia](https://zpe.gov.pl/) | [Katalog NUKAT](https://katalogi.bn.org.pl/)",
-              "Podręczniki z embriologii i komórek macierzystych — [PWN Naukowe — Biologia i Medycyna](https://ksiegarnia.pwn.pl/)",
-              "Literatura o inżynierii tkankowej, medycynie regeneracyjnej i bioetyce — [Komitet Bioetyki PAN](https://bioetyka.pan.pl/)"
+              "Podręczniki akademickie z biologii komórki, genetyki i biologii rozwoju: B. Alberts — *Podstawy biologii komórki* ([PWN](https://ksiegarnia.pwn.pl/)), T. A. Brown — *Genomy* (PWN), P. Węgleński — *Genetyka molekularna* (PWN) oraz [ZPE Biologia](https://zpe.gov.pl/).",
+              "Podręczniki z embriologii i komórek macierzystych po polsku: Hieronim Bartel — *Embriologia. Podręcznik dla studentów* ([PZWL](https://pzwl.pl/)).",
+              "Literatura o inżynierii tkankowej, medycynie regeneracyjnej, bioetyce i granicach SF: publikacje [Komitetu Bioetyki PAN](https://bioetyka.pan.pl/), K. Szewczyk — *Bioetyka* (PWN) oraz Stanisław Lem — *Summa technologiae*."
             ]
           },
           {
-            "heading": "Po angielsku",
+            "heading": "2. Po angielsku (uzupełniające i badawcze)",
             "items": [
               "National Academies — materiały o odpowiedzialnym rozwoju biologii syntetycznej: [https://www.nationalacademies.org/](https://www.nationalacademies.org/)",
               "Publikacje akademickie o stem cells, developmental biology, tissue engineering i synthetic biology — [NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/) | [ISSCR](https://www.isscr.org/) | [Nature Synthetic Biology](https://www.nature.com/subjects/synthetic-biology)"
@@ -1086,21 +1268,25 @@ const DEFAULT_SEED = {
       },
       {
         "trackId": "E",
-        "title": "Projekt E — Filozofia (Biblioteka uzupełniająca)",
+        "title": "Projekt E — Filozofia (PL w pierwszej kolejności)",
         "sequenceLabel": "Zastosowanie",
         "sequence": "Ocena dowodów, rozróżnianie teorii i spekulacji, analiza tożsamości osobowej oraz etycznych konsekwencji tworzenia i modyfikowania organizmów.",
         "links": [
           {
-            "label": "🇵🇱 Copernicus Center Press (Michał Heller — Filozofia nauki)",
+            "label": "🇵🇱 Copernicus Center Press (ks. prof. Michał Heller — „Filozofia nauki. Wprowadzenie”)",
             "url": "https://ccpress.pl/"
           },
           {
-            "label": "🇵🇱 Centrum Kopernika Badań Interdyscyplinarnych (Wykłady i kursy)",
+            "label": "🇵🇱 Centrum Kopernika Badań Interdyscyplinarnych (UJ) — Wykłady i kursy po polsku",
             "url": "https://www.copernicuscenter.edu.pl/"
           },
           {
-            "label": "🇵🇱 Wolne Lektury — Filozofia starożytna (Platon, Arystoteles, stoicy)",
+            "label": "🇵🇱 Wolne Lektury — Filozofia starożytna po polsku (Platon, Arystoteles, Marek Aureliusz, Seneka)",
             "url": "https://wolnelektury.pl/katalog/gatunek/filozofia/"
+          },
+          {
+            "label": "🇵🇱 Wydawnictwo Naukowe PWN — T.S. Kuhn „Struktura rewolucji naukowych”, W. Tatarkiewicz „Historia filozofii”, K. Szewczyk „Bioetyka”",
+            "url": "https://ksiegarnia.pwn.pl/"
           },
           {
             "label": "🇬🇧 Stanford Encyclopedia of Philosophy (SEP)",
@@ -1113,29 +1299,42 @@ const DEFAULT_SEED = {
         ],
         "groups": [
           {
-            "heading": "Po polsku",
+            "heading": "1. Po polsku (w pierwszej kolejności)",
             "items": [
               "Alan Chalmers — *Czym jest to, co zwiemy nauką?* — [Katalog Biblioteki Narodowej](https://katalogi.bn.org.pl/)",
               "Thomas S. Kuhn — *Struktura rewolucji naukowych.* — [Wydawnictwo PWN / Aletheia](https://ksiegarnia.pwn.pl/)",
-              "Michał Heller — *Filozofia nauki. Wprowadzenie.* — [Copernicus Center Press](https://ccpress.pl/)"
+              "Michał Heller — *Filozofia nauki. Wprowadzenie* oraz *Filozofia przyrody* — [Copernicus Center Press](https://ccpress.pl/)",
+              "Władysław Tatarkiewicz — *Historia filozofii. Tom 1–3* (PWN) oraz klasyka filozofii starożytnej w polskich przekładach ([Wolne Lektury](https://wolnelektury.pl/katalog/gatunek/filozofia/))."
             ]
           },
           {
-            "heading": "Obszary do dalszego uzupełnienia",
+            "heading": "2. Obszary do dalszego uzupełnienia (PL i EN)",
             "items": [
-              "Filozofia starożytna: Platon, Arystoteles i stoicy — [Wolne Lektury: Filozofia](https://wolnelektury.pl/katalog/gatunek/filozofia/) | [SEP Ancient Philosophy](https://plato.stanford.edu/)",
-              "Filozofia umysłu i problem świadomości — [SEP Philosophy of Mind](https://plato.stanford.edu/entries/mind-identity/) | [Centrum Kopernika](https://www.copernicuscenter.edu.pl/)",
-              "Filozofia techniki, bioetyka i etyka środowiskowa — [SEP Philosophy of Technology](https://plato.stanford.edu/entries/technology/) | [SEP Bioethics](https://plato.stanford.edu/entries/feminist-bioethics/)"
+              "Filozofia starożytna: Platon (*Państwo*, *Timajos*), Arystoteles (*Metafizyka*, *O duszy*) i stoicy (*Rozmyślania* Marka Aureliusza, Seneka, Epiktet) — [Wolne Lektury: Filozofia (PL)](https://wolnelektury.pl/katalog/gatunek/filozofia/) | [SEP Ancient Philosophy](https://plato.stanford.edu/)",
+              "Filozofia umysłu i problem świadomości — M. Miłkowski, R. Poczobut (red.) *Przewodnik po filozofii umysłu* (PL) | [Centrum Kopernika (PL)](https://www.copernicuscenter.edu.pl/) | [SEP Philosophy of Mind](https://plato.stanford.edu/entries/mind-identity/)",
+              "Filozofia techniki, bioetyka i etyka środowiskowa — K. Szewczyk *Bioetyka Tom 1–2* (PWN), S. Lem *Summa technologiae*, [Komitet Bioetyki PAN](https://bioetyka.pan.pl/) | [SEP Philosophy of Technology](https://plato.stanford.edu/entries/technology/)"
             ]
           }
         ]
       },
       {
         "trackId": "F",
-        "title": "Projekt F — Człowiek w kosmosie (Biblioteka uzupełniająca)",
+        "title": "Projekt F — Człowiek w kosmosie (PL w pierwszej kolejności + darmowe źródła NASA i ESA)",
         "sequenceLabel": "Kolejność nauki",
-        "sequence": "Podstawy fizyki → mechanika orbitalna → technika kosmiczna → fizjologia kosmiczna → systemy podtrzymywania życia i habitaty.",
+        "sequence": "Podstawy fizyki (OpenStax Fizyka PL) → mechanika orbitalna → technika kosmiczna (POLSA, ESERO Polska) → fizjologia kosmiczna (medycyna lotnicza i kosmiczna, NASA/ESA) → systemy podtrzymywania życia i habitaty.",
         "links": [
+          {
+            "label": "🇵🇱 ESERO Polska (Centrum Nauki Kopernik / ESA) — Polskie materiały edukacyjne o eksploracji kosmosu, mikrograwitacji i habitatach",
+            "url": "https://esero.kopernik.org.pl/"
+          },
+          {
+            "label": "🇵🇱 Polska Agencja Kosmiczna (POLSA) — Edukacja kosmiczna, inżynieria i medycyna kosmiczna po polsku",
+            "url": "https://polsa.gov.pl/"
+          },
+          {
+            "label": "🇵🇱 OpenStax Polska — „Fizyka dla szkół wyższych. Tom 1” (Mechanika, grawitacja, ruch orbitalny po polsku)",
+            "url": "https://openstax.org/details/books/fizyka-dla-szk%C3%B3%C5%82-wy%C5%BCszych-tom-1"
+          },
           {
             "label": "🚀 NASA — Zdrowie człowieka w kosmosie (Fundamentals of Human Health)",
             "url": "https://www.nasa.gov/reference/fundamentals-of-human-health/"
@@ -1149,17 +1348,21 @@ const DEFAULT_SEED = {
             "url": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration"
           },
           {
-            "label": "📑 NASA Technical Reports Server (NTRS — napędy, ECLSS, habitaty)",
-            "url": "https://ntrs.nasa.gov/"
-          },
-          {
             "label": "🌱 MELiSSA Foundation — Systemy podtrzymywania życia (BLSS)",
             "url": "https://www.melissafoundation.org/"
           }
         ],
         "groups": [
           {
-            "heading": "Darmowe źródła",
+            "heading": "1. Po polsku (w pierwszej kolejności)",
+            "items": [
+              "ESERO Polska (Biuro Edukacji Kosmicznej ESA przy Centrum Nauki Kopernik) — polskojęzyczne materiały dydaktyczne o bazach księżycowych/marsjańskich, fizjologii w mikrograwitacji i mechanice orbitalnej: [https://esero.kopernik.org.pl/](https://esero.kopernik.org.pl/)",
+              "Polska Agencja Kosmiczna (POLSA) — opracowania o technologiach kosmicznych, sektorze kosmicznym i medycynie kosmicznej po polsku: [https://polsa.gov.pl/](https://polsa.gov.pl/)",
+              "Podręczniki polskojęzyczne: *OpenStax Fizyka dla szkół wyższych Tom 1* (mechanika i grawitacja po polsku), Krzysztof Kwarecki (red.) — *Medycyna lotnicza i kosmiczna* (PZWL), literatura Polskiego Towarzystwa Astronautycznego (*Astronautyka*)."
+            ]
+          },
+          {
+            "heading": "2. Darmowe źródła międzynarodowe (NASA i ESA)",
             "items": [
               "NASA — zdrowie człowieka w kosmosie: [https://www.nasa.gov/reference/fundamentals-of-human-health/](https://www.nasa.gov/reference/fundamentals-of-human-health/)",
               "ESA — edukacja kosmiczna: [https://education.esa.int/teach-with-space/](https://education.esa.int/teach-with-space/)",
@@ -1167,7 +1370,7 @@ const DEFAULT_SEED = {
             ]
           },
           {
-            "heading": "Tematy do dalszego studiowania",
+            "heading": "3. Tematy do dalszego studiowania",
             "items": [
               "Fizjologia człowieka w mikrograwitacji — [NASA Human Research Program](https://www.nasa.gov/hrp/)",
               "Promieniowanie kosmiczne i ochrona biologiczna — [NASA Space Radiation](https://www.nasa.gov/hrp/elements/radiation/)",
@@ -1182,59 +1385,65 @@ const DEFAULT_SEED = {
       },
       {
         "trackId": "G",
-        "title": "Projekt G — Człowiek na Ziemi i ochrona ekosystemu (Biblioteka uzupełniająca)",
+        "title": "Projekt G — Człowiek na Ziemi i ochrona ekosystemu (PL w pierwszej kolejności)",
         "sequenceLabel": "Kolejność nauki",
-        "sequence": "Podstawy ekologii → funkcjonowanie ekosystemów → presje środowiskowe → technologie ochronne → ekonomia i polityka środowiskowa.",
+        "sequence": "W pierwszej kolejności po polsku: Podstawy ekologii i funkcjonowanie ekosystemów (January Weiner „Życie i ewolucja biosfery”, PWN) → presje środowiskowe i monitoring (GIOŚ, Politechnika Śląska) → technologie ochronne i inżynieria środowiska (Jan Krystek „Ochrona środowiska dla inżynierów”, Rosik-Dulewska) → ekonomia i polityka środowiskowa (EEA PL).",
         "links": [
           {
-            "label": "🌍 ESA Education — Edukacja o Ziemi, klimacie i obserwacji środowiska",
-            "url": "https://education.esa.int/teach-with-space/"
-          },
-          {
-            "label": "🇵🇱 Politechnika Śląska — Materiały dotyczące podstaw ochrony środowiska",
+            "label": "🇵🇱 Politechnika Śląska — Materiały dotyczące podstaw ochrony środowiska po polsku",
             "url": "https://www.polsl.pl/"
           },
           {
-            "label": "🇵🇱 Jan Krystek — Ochrona środowiska dla inżynierów (PWN)",
+            "label": "🇵🇱 Wydawnictwo Naukowe PWN — Jan Krystek „Ochrona środowiska dla inżynierów” oraz January Weiner „Życie i ewolucja biosfery”",
             "url": "https://ksiegarnia.pwn.pl/"
           },
           {
-            "label": "🇵🇱 Główny Inspektorat Ochrony Środowiska (GIOŚ — Monitoring wód, powietrza i gleb)",
+            "label": "🇵🇱 Główny Inspektorat Ochrony Środowiska (GIOŚ — Państwowy Monitoring Środowiska w Polsce)",
             "url": "https://www.gios.gov.pl/"
           },
           {
-            "label": "🇪🇺 Europejska Agencja Środowiska (EEA — Ekonomia ekologiczna, GOZ, LCA)",
+            "label": "🇵🇱 OpenAGH & ZPE — Darmowe polskie materiały o ekologii, odnawialnych źródłach energii i ochronie środowiska",
+            "url": "https://open.agh.edu.pl/"
+          },
+          {
+            "label": "🇵🇱 Europejska Agencja Środowiska (EEA w języku polskim — Ekonomia ekologiczna, GOZ, LCA)",
             "url": "https://www.eea.europa.eu/pl"
+          },
+          {
+            "label": "🌍 ESA Education — Edukacja o Ziemi, klimacie i obserwacji środowiska",
+            "url": "https://education.esa.int/teach-with-space/"
           }
         ],
         "groups": [
           {
-            "heading": "Po polsku",
+            "heading": "1. Po polsku (w pierwszej kolejności)",
             "items": [
               "Jan Krystek — *Ochrona środowiska dla inżynierów.* — [Księgarnia Naukowa PWN](https://ksiegarnia.pwn.pl/)",
-              "Podręczniki akademickie z ekologii, ochrony środowiska i gospodarki odpadami — [OpenAGH](https://open.agh.edu.pl/) | [ZPE Ekologia](https://zpe.gov.pl/)",
-              "Materiały polskich uczelni dotyczące ochrony wód, powietrza i gleby — [Politechnika Śląska](https://www.polsl.pl/) | [GIOŚ Monitoring Środowiska](https://www.gios.gov.pl/)"
+              "January Weiner — *Życie i ewolucja biosfery. Podręcznik ekologii ogólnej* ([PWN](https://ksiegarnia.pwn.pl/)) oraz Czesława Rosik-Dulewska — *Podstawy gospodarki odpadami* (PWN).",
+              "Podręczniki akademickie z ekologii, ochrony środowiska i OZE — [OpenAGH (PL)](https://open.agh.edu.pl/) | [ZPE Ekologia (PL)](https://zpe.gov.pl/)",
+              "Materiały polskich uczelni i instytucji dotyczące ochrony wód, powietrza i gleby — [Politechnika Śląska](https://www.polsl.pl/) | [GIOŚ Monitoring Środowiska](https://www.gios.gov.pl/)"
             ]
           },
           {
-            "heading": "Źródła bezpłatne",
+            "heading": "2. Źródła bezpłatne",
             "items": [
-              "ESA Education — edukacja o Ziemi, klimacie i obserwacji środowiska: [https://education.esa.int/teach-with-space/](https://education.esa.int/teach-with-space/)",
-              "Politechnika Śląska — materiały dotyczące podstaw ochrony środowiska: [https://www.polsl.pl/](https://www.polsl.pl/)"
+              "Politechnika Śląska — materiały dotyczące podstaw ochrony środowiska: [https://www.polsl.pl/](https://www.polsl.pl/)",
+              "Europejska Agencja Środowiska (serwis po polsku): [https://www.eea.europa.eu/pl](https://www.eea.europa.eu/pl)",
+              "ESA Education — edukacja o Ziemi, klimacie i obserwacji środowiska: [https://education.esa.int/teach-with-space/](https://education.esa.int/teach-with-space/)"
             ]
           },
           {
-            "heading": "Tematy do dalszego studiowania",
+            "heading": "3. Tematy do dalszego studiowania",
             "items": [
-              "Ekologia populacji i ekosystemów — [OpenStax Biology: Ecology](https://openstax.org/details/books/biology-2e)",
-              "Różnorodność biologiczna i ochrona siedlisk — [IPBES Global Assessment](https://www.ipbes.net/)",
+              "Ekologia populacji i ekosystemów — J. Weiner *Życie i ewolucja biosfery* (PWN) | [OpenStax Biology: Ecology](https://openstax.org/details/books/biology-2e)",
+              "Różnorodność biologiczna i ochrona siedlisk — [GIOŚ](https://www.gios.gov.pl/) | [IPBES Global Assessment](https://www.ipbes.net/)",
               "Obiegi biogeochemiczne i funkcjonowanie gleby — [FAO Soils Portal](https://www.fao.org/soils-portal/en/)",
-              "Zmiany klimatu oraz zanieczyszczenia — [Raporty IPCC](https://www.ipcc.ch/)",
-              "Ochrona przyrody, renaturyzacja i odbudowa ekosystemów — [EEA Nature & Biodiversity](https://www.eea.europa.eu/pl)",
-              "Odnawialne źródła energii i efektywność energetyczna — [IRENA / IEA Renewables](https://www.iea.org/)",
-              "Gospodarka obiegu zamkniętego — [EEA Circular Economy](https://www.eea.europa.eu/pl)",
+              "Zmiany klimatu oraz zanieczyszczenia — [Nauka o Klimacie (PL)](https://naukaoklimacie.pl/) | [Raporty IPCC](https://www.ipcc.ch/)",
+              "Ochrona przyrody, renaturyzacja i odbudowa ekosystemów — [EEA Nature & Biodiversity (PL)](https://www.eea.europa.eu/pl)",
+              "Odnawialne źródła energii i efektywność energetyczna — [OpenAGH Energetyka (PL)](https://open.agh.edu.pl/) | [IEA Renewables](https://www.iea.org/)",
+              "Gospodarka obiegu zamkniętego — [EEA Circular Economy (PL)](https://www.eea.europa.eu/pl)",
               "Ocena cyklu życia produktów (LCA) i ekonomia ekologiczna — [European Platform on LCA](https://eplca.jrc.ec.europa.eu/)",
-              "Monitoring środowiska z użyciem czujników, satelitów i AI — [ESA Copernicus & Earth Online](https://earth.esa.int/)"
+              "Monitoring środowiska z użyciem czujników, satelitów i AI — [POLSA Obserwacja Ziemi (PL)](https://polsa.gov.pl/) | [ESA Copernicus](https://earth.esa.int/)"
             ]
           }
         ]
@@ -1489,8 +1698,15 @@ const DEFAULT_SEED = {
         ],
         "bibliography": [
           {
+            "id": "bib-1-pl",
+            "citation": "🇵🇱 Kalat, J. W. — Biologiczne podstawy psychologii (Wydawnictwo Naukowe PWN) oraz Tadeusiewicz, R., Nałęcz, M. (red.) — Biocybernetyka i Inżynieria Biomedyczna (PAN / PWN).",
+            "url": "https://ksiegarnia.pwn.pl/",
+            "addedBy": "Administrator",
+            "approvalStatus": "approved"
+          },
+          {
             "id": "bib-1",
-            "citation": "Lebedev, M. A., & Nicolelis, M. A. (2017). Brain-Machine Interfaces: From Basic Science to Neuroprostheses and Neurorehabilitation. Physiological Reviews.",
+            "citation": "🇬🇧 Lebedev, M. A., & Nicolelis, M. A. (2017). Brain-Machine Interfaces: From Basic Science to Neuroprostheses and Neurorehabilitation. Physiological Reviews.",
             "url": "https://doi.org/10.1152/physrev.00027.2016",
             "addedBy": "Administrator",
             "approvalStatus": "approved"
@@ -1534,8 +1750,15 @@ const DEFAULT_SEED = {
         ],
         "bibliography": [
           {
+            "id": "bib-2-pl",
+            "citation": "🇵🇱 Horowitz, P., Hill, W. — Sztuka elektroniki (WKŁ) oraz Osowski, S. — Sieci neuronowe do przetwarzania informacji (Oficyna Wydawnicza Politechniki Warszawskiej).",
+            "url": "https://open.agh.edu.pl/",
+            "addedBy": "Administrator",
+            "approvalStatus": "approved"
+          },
+          {
             "id": "bib-2",
-            "citation": "Indiveri, G., et al. (2011). Neuromorphic silicon neuron circuits. Frontiers in Neuroscience.",
+            "citation": "🇬🇧 Indiveri, G., et al. (2011). Neuromorphic silicon neuron circuits. Frontiers in Neuroscience.",
             "url": "https://doi.org/10.3389/fnins.2011.00073",
             "addedBy": "Administrator",
             "approvalStatus": "approved"
@@ -1579,9 +1802,16 @@ const DEFAULT_SEED = {
         ],
         "bibliography": [
           {
+            "id": "bib-3-pl",
+            "citation": "🇵🇱 Weiner, J. — Życie i ewolucja biosfery. Podręcznik ekologii ogólnej (Wydawnictwo Naukowe PWN) oraz Krystek, J. — Ochrona środowiska dla inżynierów (PWN).",
+            "url": "https://ksiegarnia.pwn.pl/",
+            "addedBy": "Administrator",
+            "approvalStatus": "approved"
+          },
+          {
             "id": "bib-3",
-            "citation": "Lasseur, C., et al. (2010). MELiSSA: The European project of closed life support system. Gravitational and Space Biology.",
-            "url": "",
+            "citation": "🇬🇧 Lasseur, C., et al. (2010). MELiSSA: The European project of closed life support system. Gravitational and Space Biology.",
+            "url": "https://www.melissafoundation.org/",
             "addedBy": "Administrator",
             "approvalStatus": "approved"
           }
@@ -1591,244 +1821,62 @@ const DEFAULT_SEED = {
   ],
   "materials": [
     {
-      "id": "mat-1",
+      "id": "mat-13",
       "trackId": "E",
       "branchTopic": "Filozofia nauki: dowód, hipoteza, teoria i granice modeli.",
       "subprojectId": null,
-      "title": "Granice modeli formalnych a interpretacja stanów umysłowych i biologicznych",
-      "type": "Artykuł / Notatka przekrojowa",
+      "title": "BIBLIOTEKA PROJEKTU — VI. Kolejność czytania i zasady pracy z literaturą (w pierwszej kolejności źródła polskojęzyczne)",
+      "type": "Przewodnik metodologiczny GOLEM 15",
       "author": "Administrator",
-      "content": "Rozróżnienie między symulacją składniową (syntaktyczną) a realizacją właściwości przyczynowych układu fizycznego — punkt styku Projektu B, C oraz E.",
-      "url": "https://plato.stanford.edu/entries/models-science/",
+      "content": "1. Najpierw (po polsku): Charles Petzold — „Kod. Ukryty język komputerów. Wydanie II” (Helion); Eric Matthes — „Python. Instrukcje dla programisty” (Helion); Podstawy matematyki i algebry liniowej (OpenAGH, ZPE, Skoczylas); Podręcznik fizyki ogólnej po polsku (OpenStax „Fizyka dla szkół wyższych Tom 1–3”, Halliday & Resnick „Podstawy fizyki”).\n2. Następnie (po polsku): Terence A. Brown — „Genomy” (PWN); Podstawy chemii, biologii i biochemii („Biologia Campbella” Rebis, Stryer „Biochemia” PWN, Alberts „Podstawy biologii komórki” PWN); James W. Kalat — „Biologiczne podstawy psychologii” (PWN).\n3. Później (PL i EN): A. Longstaff „Neurobiologia” (PWN), E. Nęcka „Psychologia poznawcza” (PWN), S. Seung „Konektom” (wyd. polskie); Dayan & Abbott „Theoretical Neuroscience”; Izhikevich „Dynamical Systems in Neuroscience”; Sandberg & Bostrom „Whole Brain Emulation: A Roadmap”.\n4. Na zaawansowanym etapie: D. J. Griffiths — „Wstęp do mechaniki kwantowej” (wyd. polskie PWN / CUP); Kandel — „Principles of Neural Science”; Squire — „Fundamental Neuroscience”; Churchland & Sejnowski — „The Computational Brain”; Nielsen i Chuang — „Quantum Computation and Quantum Information”.\n\nZasada: Zaczynamy od polskojęzycznych podręczników i otwartych zasobów po polsku — najpierw jedna książka podstawowa z aktualnej dziedziny, potem ćwiczenia i dopiero kolejna pozycja. Pełne odwzorowanie ludzkiego mózgu i przeniesienie umysłu pozostają niezrealizowanymi celami badawczymi.",
+      "url": "https://open.agh.edu.pl/",
       "links": [
         {
-          "label": "Stanford Encyclopedia of Philosophy — Models in Science",
-          "url": "https://plato.stanford.edu/entries/models-science/"
+          "label": "1️⃣ 🇵🇱 Etap I (Po polsku): Petzold „Kod”, Matthes „Python” (Helion), OpenAGH Matematyka oraz OpenStax Fizyka Tom 1–3 (PL)",
+          "url": "https://openstax.org/details/books/fizyka-dla-szk%C3%B3%C5%82-wy%C5%BCszych-tom-1"
         },
         {
-          "label": "SEP — The Chinese Room Argument & Syntax vs Semantics",
-          "url": "https://plato.stanford.edu/entries/chinese-room/"
-        }
-      ],
-      "status": "approved",
-      "createdAt": "2026-10-25T11:50:00Z"
-    },
-    {
-      "id": "mat-2",
-      "trackId": "B",
-      "branchTopic": "Neurobiologia i neuronauka obliczeniowa.",
-      "subprojectId": "sub-1",
-      "title": "Zestawienie rozdzielczości czasowo-przestrzennej metod neuroobrazowania (EEG, fNIRS, fMRI, ECoG)",
-      "type": "Zestaw danych / Opracowanie",
-      "author": "Dr Janina Kowalska (Gość)",
-      "content": "Porównanie pasma przenoszenia, stosunku sygnału do szumu (SNR) oraz biokompatybilności długoterminowej dla zastosowań w Projektach A i B.",
-      "url": "https://doi.org/10.1152/physrev.00027.2016",
-      "links": [
-        {
-          "label": "Physiological Reviews — Brain-Machine Interfaces (Lebedev & Nicolelis)",
-          "url": "https://doi.org/10.1152/physrev.00027.2016"
-        }
-      ],
-      "status": "pending",
-      "createdAt": "2026-10-25T13:10:00Z"
-    },
-    {
-      "id": "mat-3",
-      "trackId": "C",
-      "branchTopic": "Elektronika analogowa i układy dynamiczne.",
-      "subprojectId": "sub-2",
-      "title": "GOLEM 15 — Projekt C: Maszyny analogowe i obliczenia fizyczne (Bibliografia i odnośniki PL/EN)",
-      "type": "Biblioteka uzupełniająca GOLEM 15",
-      "author": "Administrator",
-      "content": "Kolejność nauki: Elektronika analogowa → układy dynamiczne → modelowanie matematyczne → fizyczne modele neuronów → obliczenia neuromorficzne.\n\n• Po polsku: Podręczniki akademickie z elektroniki analogowej (wzmacniacze, oscylatory, filtry, sprzężenie zwrotne, układy dynamiczne), materiały dydaktyczne o przetwornikach A/C i C/A oraz Zintegrowana Platforma Edukacyjna.\n• Po angielsku: Materiały techniczne dot. analog computing, badania dot. neuromorphic computing i analog neural networks, publikacje o fizycznych modelach neuronów oraz analogowych i hybrydowych procesorach.",
-      "url": "https://zpe.gov.pl/",
-      "links": [
-        {
-          "label": "🇵🇱 Zintegrowana Platforma Edukacyjna (ZPE) — Elektronika: https://zpe.gov.pl/",
-          "url": "https://zpe.gov.pl/"
-        },
-        {
-          "label": "🇵🇱 OpenAGH — E-podręczniki: Elektronika i układy dynamiczne",
-          "url": "https://open.agh.edu.pl/"
-        },
-        {
-          "label": "🇬🇧 Frontiers in Neuroscience — Neuromorphic Engineering",
-          "url": "https://www.frontiersin.org/journals/neuroscience/sections/neuromorphic-engineering"
-        },
-        {
-          "label": "🇬🇧 arXiv — Neuromorphic Computing & Analog Neural Networks",
-          "url": "https://arxiv.org/list/cs.NE/recent"
-        },
-        {
-          "label": "🇬🇧 MIT OCW — Circuits and Electronics (Analog Computing)",
-          "url": "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/"
-        }
-      ],
-      "status": "approved",
-      "createdAt": "2026-10-25T14:00:00Z"
-    },
-    {
-      "id": "mat-4",
-      "trackId": "D",
-      "branchTopic": "Biologia syntetyczna i edycja genomu.",
-      "subprojectId": null,
-      "title": "GOLEM 15 — Projekt D: „Frankenstein” — biotechnologia i tworzenie organizmów (Bibliografia i odnośniki PL/EN)",
-      "type": "Biblioteka uzupełniająca GOLEM 15",
-      "author": "Administrator",
-      "content": "Kolejność nauki: Biologia komórki → genetyka → embriologia → komórki macierzyste → inżynieria tkankowa → biologia syntetyczna i bioetyka.\n\n• Po polsku: Podręczniki akademickie z biologii komórki, genetyki i biologii rozwoju; podręczniki z embriologii i komórek macierzystych; literatura o inżynierii tkankowej, medycynie regeneracyjnej i bioetyce.\n• Po angielsku: National Academies — materiały o odpowiedzialnym rozwoju biologii syntetycznej; publikacje akademickie o stem cells, developmental biology, tissue engineering i synthetic biology.",
-      "url": "https://www.nationalacademies.org/",
-      "links": [
-        {
-          "label": "🇬🇧 National Academies — Biologia syntetyczna: https://www.nationalacademies.org/",
-          "url": "https://www.nationalacademies.org/"
-        },
-        {
-          "label": "🇬🇧 NCBI Bookshelf — Molecular Biology of the Cell & Developmental Biology",
-          "url": "https://www.ncbi.nlm.nih.gov/books/"
-        },
-        {
-          "label": "🇬🇧 ISSCR — International Society for Stem Cell Research (Komórki macierzyste)",
-          "url": "https://www.isscr.org/"
-        },
-        {
-          "label": "🇬🇧 Nature Portfolio — Synthetic Biology & Tissue Engineering",
-          "url": "https://www.nature.com/subjects/synthetic-biology"
-        },
-        {
-          "label": "🇵🇱 Komitet Bioetyki PAN & ZPE Biologia",
-          "url": "https://bioetyka.pan.pl/"
-        }
-      ],
-      "status": "approved",
-      "createdAt": "2026-10-25T14:05:00Z"
-    },
-    {
-      "id": "mat-5",
-      "trackId": "E",
-      "branchTopic": "Filozofia nauki: dowód, hipoteza, teoria i granice modeli.",
-      "subprojectId": null,
-      "title": "GOLEM 15 — Projekt E: Filozofia nauki, umysłu, techniki i bioetyka (Chalmers, Kuhn, Heller + odnośniki)",
-      "type": "Biblioteka uzupełniająca GOLEM 15",
-      "author": "Administrator",
-      "content": "Zastosowanie: Ocena dowodów, rozróżnianie teorii i spekulacji, analiza tożsamości osobowej oraz etycznych konsekwencji tworzenia i modyfikowania organizmów.\n\n• Po polsku:\n  1. Alan Chalmers — „Czym jest to, co zwiemy nauką?”\n  2. Thomas S. Kuhn — „Struktura rewolucji naukowych”\n  3. Michał Heller — „Filozofia nauki. Wprowadzenie”\n• Obszary do dalszego uzupełnienia: Filozofia starożytna (Platon, Arystoteles i stoicy), Filozofia umysłu i problem świadomości, Filozofia techniki, bioetyka i etyka środowiskowa.",
-      "url": "https://ccpress.pl/",
-      "links": [
-        {
-          "label": "🇵🇱 Copernicus Center Press — Michał Heller „Filozofia nauki. Wprowadzenie”",
-          "url": "https://ccpress.pl/"
-        },
-        {
-          "label": "🇵🇱 Centrum Kopernika Badań Interdyscyplinarnych — Wykłady z filozofii nauki i umysłu",
-          "url": "https://www.copernicuscenter.edu.pl/"
-        },
-        {
-          "label": "🇵🇱 Wolne Lektury — Filozofia starożytna (Platon, Arystoteles, stoicy)",
-          "url": "https://wolnelektury.pl/katalog/gatunek/filozofia/"
-        },
-        {
-          "label": "🇬🇧 Stanford Encyclopedia of Philosophy (SEP — Nauka, Umysł, Technika, Bioetyka)",
-          "url": "https://plato.stanford.edu/"
-        },
-        {
-          "label": "🇬🇧 Internet Encyclopedia of Philosophy (IEP)",
-          "url": "https://iep.utm.edu/"
-        }
-      ],
-      "status": "approved",
-      "createdAt": "2026-10-25T14:10:00Z"
-    },
-    {
-      "id": "mat-6",
-      "trackId": "F",
-      "branchTopic": "Wpływ mikrograwitacji na mięśnie, kości i układ krążenia.",
-      "subprojectId": "sub-3",
-      "title": "GOLEM 15 — Projekt F: Człowiek w kosmosie (Darmowe źródła NASA i ESA + tematy badawcze)",
-      "type": "Biblioteka uzupełniająca GOLEM 15",
-      "author": "Administrator",
-      "content": "Kolejność nauki: Podstawy fizyki → mechanika orbitalna → technika kosmiczna → fizjologia kosmiczna → systemy podtrzymywania życia i habitaty.\n\n• Darmowe źródła: NASA (zdrowie człowieka w kosmosie), ESA (edukacja kosmiczna — Teach with Space), ESA (eksploracja załogowa i robotyczna).\n• Tematy do dalszego studiowania: Fizjologia człowieka w mikrograwitacji; Promieniowanie kosmiczne i ochrona biologiczna; Mechanika orbitalna i napędy; Systemy podtrzymywania życia; Projektowanie habitatów i statków kosmicznych; Uprawa żywności, odzysk wody i wykorzystanie zasobów lokalnych; Psychologia izolacji i medycyna długotrwałych misji.",
-      "url": "https://www.nasa.gov/reference/fundamentals-of-human-health/",
-      "links": [
-        {
-          "label": "🚀 NASA — Zdrowie człowieka w kosmosie: https://www.nasa.gov/reference/fundamentals-of-human-health/",
-          "url": "https://www.nasa.gov/reference/fundamentals-of-human-health/"
-        },
-        {
-          "label": "🛰️ ESA — Edukacja kosmiczna: https://education.esa.int/teach-with-space/",
-          "url": "https://education.esa.int/teach-with-space/"
-        },
-        {
-          "label": "👩‍🚀 ESA — Eksploracja załogowa: https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration",
-          "url": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration"
-        },
-        {
-          "label": "📑 NASA Technical Reports Server (NTRS — napędy, ECLSS, habitaty)",
-          "url": "https://ntrs.nasa.gov/"
-        },
-        {
-          "label": "🌱 MELiSSA Foundation — Zamknięte systemy podtrzymywania życia",
-          "url": "https://www.melissafoundation.org/"
-        }
-      ],
-      "status": "approved",
-      "createdAt": "2026-10-25T14:15:00Z"
-    },
-    {
-      "id": "mat-7",
-      "trackId": "G",
-      "branchTopic": "Ochrona przyrody, odbudowa ekosystemów i renaturyzacja.",
-      "subprojectId": "sub-3",
-      "title": "GOLEM 15 — Projekt G: Człowiek na Ziemi i ochrona ekosystemu (Krystek, Politechnika Śląska, ESA Education)",
-      "type": "Biblioteka uzupełniająca GOLEM 15",
-      "author": "Administrator",
-      "content": "Kolejność nauki: Podstawy ekologii → funkcjonowanie ekosystemów → presje środowiskowe → technologie ochronne → ekonomia i polityka środowiskowa.\n\n• Po polsku: Jan Krystek — „Ochrona środowiska dla inżynierów”; podręczniki akademickie z ekologii, ochrony środowiska i gospodarki odpadami; materiały polskich uczelni dotyczące ochrony wód, powietrza i gleby.\n• Źródła bezpłatne: ESA Education (Ziemia, klimat, obserwacja środowiska), Politechnika Śląska (podstawy ochrony środowiska).\n• Tematy do dalszego studiowania: Ekologia populacji i ekosystemów; Różnorodność biologiczna i ochrona siedlisk; Obiegi biogeochemiczne i funkcjonowanie gleby; Zmiany klimatu oraz zanieczyszczenia; Ochrona przyrody, renaturyzacja i odbudowa ekosystemów; Odnawialne źródła energii i efektywność energetyczna; Gospodarka obiegu zamkniętego; Ocena cyklu życia produktów (LCA) i ekonomia ekologiczna; Monitoring środowiska z użyciem czujników, satelitów i AI.",
-      "url": "https://www.polsl.pl/",
-      "links": [
-        {
-          "label": "🌍 ESA Education — Ziemia, klimat i obserwacja środowiska: https://education.esa.int/teach-with-space/",
-          "url": "https://education.esa.int/teach-with-space/"
-        },
-        {
-          "label": "🇵🇱 Politechnika Śląska — Podstawy ochrony środowiska: https://www.polsl.pl/",
-          "url": "https://www.polsl.pl/"
-        },
-        {
-          "label": "🇵🇱 Jan Krystek — „Ochrona środowiska dla inżynierów” (Księgarnia PWN)",
+          "label": "2️⃣ 🇵🇱 Etap II (Po polsku): T.A. Brown „Genomy”, „Biologia Campbella”, Stryer „Biochemia” oraz J.W. Kalat „Biologiczne podstawy psychologii” (PWN)",
           "url": "https://ksiegarnia.pwn.pl/"
         },
         {
-          "label": "🇵🇱 GIOŚ — Państwowy Monitoring Środowiska (wody, powietrze, gleby)",
-          "url": "https://www.gios.gov.pl/"
+          "label": "3️⃣ 🇵🇱/🇬🇧 Etap III: Longstaff „Neurobiologia”, Seung „Konektom” (PL) + Dayan & Abbott, Izhikevich, Sandberg & Bostrom (WBE Roadmap PDF)",
+          "url": "https://www.fhi.ox.ac.uk/brain-emulation-roadmap-report.pdf"
         },
         {
-          "label": "🇪🇺 Europejska Agencja Środowiska (EEA) & Copernicus Earth Observation",
-          "url": "https://www.eea.europa.eu/pl"
+          "label": "4️⃣ 🇵🇱/🇬🇧 Etap IV: Griffiths „Wstęp do mechaniki kwantowej” (PWN) + Kandel, Squire, Churchland & Sejnowski, Nielsen & Chuang",
+          "url": "https://mitpress.mit.edu/9780262533393/the-computational-brain/"
         }
       ],
       "status": "approved",
-      "createdAt": "2026-10-25T14:20:00Z"
+      "createdAt": "2026-10-25T15:25:00Z"
     },
     {
       "id": "mat-8",
       "trackId": "B",
       "branchTopic": "Modelowanie neuronów i sieci neuronalnych.",
       "subprojectId": "sub-1",
-      "title": "BIBLIOTEKA PROJEKTU — I. Matematyka i Informatyka (Petzold, Matthes, Strang + podręczniki PL/EN)",
-      "type": "Biblioteka Projektu GOLEM 15",
+      "title": "BIBLIOTEKA PROJEKTU — I. Matematyka i Informatyka (w pierwszej kolejności po polsku: Petzold, Matthes, OpenAGH, ZPE, Ważniak MIMUW + Strang)",
+      "type": "Biblioteka Projektu GOLEM 15 (PL → EN)",
       "author": "Administrator",
-      "content": "Polskojęzyczne:\n1. Charles Petzold — „Kod. Ukryty język komputerów. Wydanie II.”\n2. Eric Matthes — „Python. Instrukcje dla programisty.”\n3. Podręczniki matematyki i algebry liniowej na poziomie szkoły średniej i studiów.\n\nAnglojęzyczne:\n4. Gilbert Strang — „Introduction to Linear Algebra.”\n5. Charles Petzold — „Code: The Hidden Language of Computer Hardware and Software.”\n6. Eric Matthes — „Python Crash Course.”",
-      "url": "https://math.mit.edu/~gs/linearalgebra/",
+      "content": "1. W pierwszej kolejności — Polskojęzyczne:\n• Charles Petzold — „Kod. Ukryty język komputerów. Wydanie II.” (Wydawnictwo Helion)\n• Eric Matthes — „Python. Instrukcje dla programisty. Wydanie III.” (Wydawnictwo Helion) + oficjalny polski samouczek Pythona\n• Podręczniki matematyki i algebry liniowej po polsku: e-podręczniki OpenAGH, ZPE, Ważniak MIMUW, M. Gewert i Z. Skoczylas („Algebra liniowa”, „Analiza matematyczna”), T. H. Cormen i współautorzy („Wprowadzenie do algorytmów”, PWN), R. Penrose („Droga do rzeczywistości”, wyd. polskie).\n\n2. Uzupełniająco — Anglojęzyczne:\n• Gilbert Strang — „Introduction to Linear Algebra.”\n• Charles Petzold — „Code: The Hidden Language of Computer Hardware and Software.”\n• Eric Matthes — „Python Crash Course.”",
+      "url": "https://open.agh.edu.pl/",
       "links": [
         {
-          "label": "🇵🇱 Charles Petzold — „Kod. Ukryty język komputerów. Wydanie II” (Helion)",
+          "label": "🇵🇱 Charles Petzold — „Kod. Ukryty język komputerów. Wydanie II” oraz Eric Matthes — „Python. Instrukcje dla programisty” (Helion)",
           "url": "https://helion.pl/"
         },
         {
-          "label": "🇵🇱 Eric Matthes — „Python. Instrukcje dla programisty” (Helion)",
-          "url": "https://helion.pl/"
-        },
-        {
-          "label": "🇵🇱 OpenAGH — E-podręczniki: Matematyka i Algebra Liniowa po polsku",
+          "label": "🇵🇱 OpenAGH — Darmowe e-podręczniki akademickie: Matematyka i Algebra Liniowa po polsku",
           "url": "https://open.agh.edu.pl/"
+        },
+        {
+          "label": "🇵🇱 Ważniak MIMUW (UW) — Darmowe kursy akademickie z matematyki i informatyki po polsku",
+          "url": "https://wazniak.mimuw.edu.pl/"
+        },
+        {
+          "label": "🇵🇱 Oficjalny samouczek języka Python po polsku (docs.python.org/pl)",
+          "url": "https://docs.python.org/pl/3/tutorial/"
         },
         {
           "label": "🇬🇧 Gilbert Strang — „Introduction to Linear Algebra” & MIT 18.06",
@@ -1837,10 +1885,6 @@ const DEFAULT_SEED = {
         {
           "label": "🇬🇧 Charles Petzold — „Code” (Oficjalna strona autora)",
           "url": "https://codehiddenlanguage.com/"
-        },
-        {
-          "label": "🇬🇧 Eric Matthes — „Python Crash Course” (No Starch Press & GitHub)",
-          "url": "https://nostarch.com/python-crash-course-3rd-edition"
         }
       ],
       "status": "approved",
@@ -1851,19 +1895,23 @@ const DEFAULT_SEED = {
       "trackId": "C",
       "branchTopic": "Komputery analogowe i mechaniczne.",
       "subprojectId": "sub-2",
-      "title": "BIBLIOTEKA PROJEKTU — II. Fizyka i Komputery Kwantowe (Griffiths, Nielsen & Chuang + elektronika)",
-      "type": "Biblioteka Projektu GOLEM 15",
+      "title": "BIBLIOTEKA PROJEKTU — II. Fizyka i Komputery Kwantowe (w pierwszej kolejności po polsku: OpenStax Fizyka PL, Halliday & Resnick, Griffiths PWN, Horowitz & Hill + Nielsen & Chuang)",
+      "type": "Biblioteka Projektu GOLEM 15 (PL → EN)",
       "author": "Administrator",
-      "content": "Polskojęzyczne:\n1. Akademickie podręczniki fizyki ogólnej i mechaniki kwantowej w polskich wydaniach.\n2. Podręczniki podstaw elektroniki i układów cyfrowych.\n\nAnglojęzyczne:\n3. David J. Griffiths — „Introduction to Quantum Mechanics.”\n4. Michael A. Nielsen, Isaac L. Chuang — „Quantum Computation and Quantum Information.”",
-      "url": "https://www.cambridge.org/highereducation/books/introduction-to-quantum-mechanics/990799CA07A83FC5312402AF6860311E",
+      "content": "1. W pierwszej kolejności — Polskojęzyczne:\n• Akademickie podręczniki fizyki ogólnej i mechaniki kwantowej w polskich wydaniach: OpenStax Polska — „Fizyka dla szkół wyższych. Tom 1–3” (darmowy podręcznik PL); D. Halliday, R. Resnick, J. Walker — „Podstawy fizyki. Tom 1–5” (PWN); R. P. Feynman — „Feynmana wykłady z fizyki” (PWN); David J. Griffiths — „Wstęp do mechaniki kwantowej” (polskie wydanie PWN).\n• Podręczniki podstaw elektroniki i układów cyfrowych po polsku: P. Horowitz, W. Hill — „Sztuka elektroniki. Cz. 1–2” (WKŁ); B. Głocki — „Układy cyfrowe” (WSiP); ZPE i kursy Forbot.\n\n2. Uzupełniająco — Anglojęzyczne:\n• David J. Griffiths — „Introduction to Quantum Mechanics.”\n• Michael A. Nielsen, Isaac L. Chuang — „Quantum Computation and Quantum Information.”",
+      "url": "https://openstax.org/details/books/fizyka-dla-szk%C3%B3%C5%82-wy%C5%BCszych-tom-1",
       "links": [
         {
-          "label": "🇵🇱 OpenStax Polska — Fizyka dla szkół wyższych (Tomy 1–3, darmowy podręcznik PL)",
-          "url": "https://openstax.org/subjects/science"
+          "label": "🇵🇱 OpenStax Polska — „Fizyka dla szkół wyższych. Tomy 1–3” (darmowy podręcznik akademicki po polsku)",
+          "url": "https://openstax.org/details/books/fizyka-dla-szk%C3%B3%C5%82-wy%C5%BCszych-tom-1"
         },
         {
-          "label": "🇵🇱 Wydawnictwo Naukowe PWN — Fizyka ogólna, mechanika kwantowa i układy cyfrowe",
+          "label": "🇵🇱 Wydawnictwo Naukowe PWN — Halliday & Resnick „Podstawy fizyki” oraz D.J. Griffiths „Wstęp do mechaniki kwantowej”",
           "url": "https://ksiegarnia.pwn.pl/"
+        },
+        {
+          "label": "🇵🇱 ZPE / OpenAGH / Forbot — Podstawy elektroniki analogowej i układów cyfrowych po polsku",
+          "url": "https://zpe.gov.pl/"
         },
         {
           "label": "🇬🇧 David J. Griffiths — „Introduction to Quantum Mechanics” (Cambridge University Press)",
@@ -1882,19 +1930,23 @@ const DEFAULT_SEED = {
       "trackId": "D",
       "branchTopic": "Genetyka, DNA i regulacja genów.",
       "subprojectId": null,
-      "title": "BIBLIOTEKA PROJEKTU — III. Chemia, Biologia i Genetyka (Brown „Genomy”, Biologia Campbella, OpenStax 2e)",
-      "type": "Biblioteka Projektu GOLEM 15",
+      "title": "BIBLIOTEKA PROJEKTU — III. Chemia, Biologia i Genetyka (w pierwszej kolejności po polsku: Brown „Genomy”, „Biologia Campbella”, Alberts, Stryer + OpenStax 2e)",
+      "type": "Biblioteka Projektu GOLEM 15 (PL → EN)",
       "author": "Administrator",
-      "content": "Polskojęzyczne:\n1. Terence A. Brown — „Genomy.”\n2. „Biologia Campbella” — polskie wydanie.\n3. Akademickie podręczniki chemii ogólnej, organicznej i biochemii.\n\nAnglojęzyczne:\n4. OpenStax „Chemistry 2e” — podręcznik chemii ogólnej.\n5. OpenStax „Biology 2e” — podręcznik biologii.\n6. Akademickie podręczniki biochemii i biologii molekularnej.",
-      "url": "https://openstax.org/details/books/biology-2e",
+      "content": "1. W pierwszej kolejności — Polskojęzyczne:\n• Terence A. Brown — „Genomy” (polskie wydanie, Wydawnictwo Naukowe PWN).\n• „Biologia Campbella” — polskie wydanie (Dom Wydawniczy REBIS) oraz Bruce Alberts i współautorzy — „Podstawy biologii komórki” (PWN).\n• Akademickie podręczniki chemii ogólnej, organicznej i biochemii po polsku: L. Stryer — „Biochemia” (PWN), L. Jones & P. Atkins — „Chemia ogólna” (PWN), A. Bielański — „Podstawy chemii nieorganicznej” (PWN), J. McMurry — „Chemia organiczna” (PWN) oraz darmowe zasoby OpenAGH i ZPE.\n\n2. Uzupełniająco — Anglojęzyczne:\n• OpenStax „Chemistry 2e” — podręcznik chemii ogólnej.\n• OpenStax „Biology 2e” — podręcznik biologii.\n• Akademickie podręczniki biochemii i biologii molekularnej (NCBI Bookshelf).",
+      "url": "https://ksiegarnia.pwn.pl/",
       "links": [
         {
-          "label": "🇵🇱 Terence A. Brown — „Genomy” (Wydawnictwo Naukowe PWN)",
+          "label": "🇵🇱 Terence A. Brown — „Genomy”, L. Stryer — „Biochemia”, B. Alberts — „Podstawy biologii komórki” (Wydawnictwo Naukowe PWN)",
           "url": "https://ksiegarnia.pwn.pl/"
         },
         {
           "label": "🇵🇱 „Biologia Campbella” — polskie wydanie (Dom Wydawniczy REBIS)",
           "url": "https://www.rebis.com.pl/"
+        },
+        {
+          "label": "🇵🇱 OpenAGH & ZPE — Darmowe polskie podręczniki chemii, biochemii, biologii i genetyki",
+          "url": "https://open.agh.edu.pl/"
         },
         {
           "label": "🇬🇧 OpenStax „Chemistry 2e” — darmowy podręcznik chemii ogólnej online",
@@ -1903,10 +1955,6 @@ const DEFAULT_SEED = {
         {
           "label": "🇬🇧 OpenStax „Biology 2e” — darmowy podręcznik biologii online",
           "url": "https://openstax.org/details/books/biology-2e"
-        },
-        {
-          "label": "🇬🇧 NCBI Bookshelf — Genomes (T.A. Brown) & Molecular Biology of the Cell",
-          "url": "https://www.ncbi.nlm.nih.gov/books/"
         }
       ],
       "status": "approved",
@@ -1917,23 +1965,31 @@ const DEFAULT_SEED = {
       "trackId": "A",
       "branchTopic": "Interfejsy mózg–komputer.",
       "subprojectId": "sub-1",
-      "title": "BIBLIOTEKA PROJEKTU — IV. Projekt A: Człowiek biocyfrowo-robotyczny (Kalat, OpenStax Anatomy 2e, Géron)",
-      "type": "Biblioteka Projektu GOLEM 15",
+      "title": "BIBLIOTEKA PROJEKTU — IV. Projekt A: Człowiek biocyfrowo-robotyczny (w pierwszej kolejności po polsku: Kalat, Bochenek, Traczyk, Jaroszyk, Marciniak, Tadeusiewicz, Géron PL + OpenStax Anatomy 2e)",
+      "type": "Biblioteka Projektu GOLEM 15 (PL → EN)",
       "author": "Administrator",
-      "content": "Polskojęzyczne:\n1. James W. Kalat — „Biologiczne podstawy psychologii.”\n2. Akademickie podręczniki anatomii i fizjologii człowieka.\n3. Akademickie podręczniki biofizyki, biomechaniki i biomateriałów.\n4. Podręczniki robotyki, elektroniki i układów sterowania.\n\nAnglojęzyczne:\n5. OpenStax „Anatomy and Physiology 2e.”\n6. Aurélien Géron — „Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow.”\n7. Akademickie podręczniki inżynierii tkankowej, neuroprotetyki i interfejsów mózg–komputer.",
-      "url": "https://openstax.org/details/books/anatomy-and-physiology-2e",
+      "content": "1. W pierwszej kolejności — Polskojęzyczne:\n• James W. Kalat — „Biologiczne podstawy psychologii” (PWN).\n• Akademickie podręczniki anatomii i fizjologii człowieka: A. Bochenek, M. Reicher — „Anatomia człowieka” (PZWL); W. Traczyk, A. Trzebski — „Fizjologia człowieka” (PZWL); S. Konturek — „Fizjologia człowieka”.\n• Akademickie podręczniki biofizyki, biomechaniki i biomateriałów: F. Jaroszyk (red.) — „Biofizyka” (PZWL); J. Marciniak — „Biomateriały”; seria „Biocybernetyka i Inżynieria Biomedyczna 2000” (PAN, red. M. Nałęcz, R. Tadeusiewicz).\n• Podręczniki robotyki, elektroniki, sterowania i uczenia maszynowego po polsku: K. Tchoń i współautorzy — „Manipulatory i roboty mobilne”; Aurélien Géron — „Uczenie maszynowe z użyciem Scikit-Learn, Keras i TensorFlow” (wyd. polskie Helion).\n\n2. Uzupełniająco — Anglojęzyczne:\n• OpenStax „Anatomy and Physiology 2e.”\n• Aurélien Géron — „Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow.”\n• Akademickie podręczniki inżynierii tkankowej, neuroprotetyki i interfejsów mózg–komputer.",
+      "url": "https://ksiegarnia.pwn.pl/",
       "links": [
         {
           "label": "🇵🇱 James W. Kalat — „Biologiczne podstawy psychologii” (Wydawnictwo Naukowe PWN)",
           "url": "https://ksiegarnia.pwn.pl/"
         },
         {
-          "label": "🇬🇧 OpenStax „Anatomy and Physiology 2e” — darmowy podręcznik online",
-          "url": "https://openstax.org/details/books/anatomy-and-physiology-2e"
+          "label": "🇵🇱 PZWL Wydawnictwo Lekarskie — Anatomia człowieka (Bochenek), Fizjologia (Traczyk) i Biofizyka (Jaroszyk)",
+          "url": "https://pzwl.pl/"
         },
         {
-          "label": "🇬🇧 Aurélien Géron — „Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow”",
-          "url": "https://www.oreilly.com/library/view/hands-on-machine-learning/9781098125967/"
+          "label": "🇵🇱 Aurélien Géron — „Uczenie maszynowe z użyciem Scikit-Learn, Keras i TensorFlow” (Wydawnictwo Helion)",
+          "url": "https://helion.pl/"
+        },
+        {
+          "label": "🇵🇱 OpenAGH — Inżynieria biomedyczna, biocybernetyka i automatyka po polsku",
+          "url": "https://open.agh.edu.pl/"
+        },
+        {
+          "label": "🇬🇧 OpenStax „Anatomy and Physiology 2e” — darmowy podręcznik online",
+          "url": "https://openstax.org/details/books/anatomy-and-physiology-2e"
         },
         {
           "label": "🇬🇧 IEEE EMBS — Engineering in Medicine and Biology (Neuroprotetyka i BCI)",
@@ -1948,23 +2004,23 @@ const DEFAULT_SEED = {
       "trackId": "B",
       "branchTopic": "Świadomość oraz hipotetyczna emulacja całego mózgu.",
       "subprojectId": "sub-1",
-      "title": "BIBLIOTEKA PROJEKTU — V. Projekt B: Cyfrowy umysł (Kalat, Kandel, Squire, Dayan & Abbott, Izhikevich, Seung, Miller, Churchland & Sejnowski, Sandberg & Bostrom)",
-      "type": "Biblioteka Projektu GOLEM 15",
+      "title": "BIBLIOTEKA PROJEKTU — V. Projekt B: Cyfrowy umysł (w pierwszej kolejności po polsku: Kalat, Longstaff, Nęcka, Seung „Konektom”, Miłkowski & Poczobut + Kandel, Squire, Dayan & Abbott, Izhikevich, Sandberg & Bostrom)",
+      "type": "Biblioteka Projektu GOLEM 15 (PL → EN)",
       "author": "Administrator",
-      "content": "Polskojęzyczne:\n1. James W. Kalat — „Biologiczne podstawy psychologii.”\n2. Podręczniki neurobiologii i fizjologii układu nerwowego.\n3. Podręczniki psychologii poznawczej.\n4. Wprowadzenia do filozofii umysłu i problemu świadomości.\n\nAnglojęzyczne:\n5. Eric R. Kandel i współautorzy — „Principles of Neural Science.”\n6. Larry Squire i współautorzy — „Fundamental Neuroscience.”\n7. Peter Dayan, L. F. Abbott — „Theoretical Neuroscience: Computational and Mathematical Modeling of Neural Systems.”\n8. Eugene M. Izhikevich — „Dynamical Systems in Neuroscience.”\n9. Sebastian Seung — „Connectome: How the Brain's Wiring Makes Us Who We Are.”\n10. Paul Miller — „An Introductory Course in Computational Neuroscience.”\n11. Patricia S. Churchland, Terrence J. Sejnowski — „The Computational Brain.”\n12. Anders Sandberg, Nick Bostrom — „Whole Brain Emulation: A Roadmap.”",
-      "url": "https://mitpress.mit.edu/9780262541855/theoretical-neuroscience/",
+      "content": "1. W pierwszej kolejności — Polskojęzyczne:\n• James W. Kalat — „Biologiczne podstawy psychologii” (Wydawnictwo Naukowe PWN).\n• Podręczniki neurobiologii i fizjologii układu nerwowego po polsku: Alan Longstaff — „Neurobiologia. Krótkie wykłady” (PWN); T. Górska, A. Grabowska, J. Zagrodzka — „Mózg a zachowanie” (PWN).\n• Podręczniki psychologii poznawczej i konektomiki po polsku: Edward Nęcka, Jarosław Orzechowski, Błażej Szymura — „Psychologia poznawcza” (PWN); Sebastian Seung — „Konektom. Jak połączenia w mózgu kształtują naszą tożsamość” (wyd. polskie).\n• Wprowadzenia do filozofii umysłu i problemu świadomości po polsku: M. Miłkowski, R. Poczobut (red.) — „Przewodnik po filozofii umysłu”; wykłady z kognitywistyki i neuroinformatyki prof. Włodzisława Ducha (UMK) oraz publikacje Centrum Kopernika.\n\n2. Uzupełniająco i na zaawansowanym etapie — Anglojęzyczne:\n• Eric R. Kandel i współautorzy — „Principles of Neural Science.”\n• Larry Squire i współautorzy — „Fundamental Neuroscience.”\n• Peter Dayan, L. F. Abbott — „Theoretical Neuroscience: Computational and Mathematical Modeling of Neural Systems.”\n• Eugene M. Izhikevich — „Dynamical Systems in Neuroscience.”\n• Paul Miller — „An Introductory Course in Computational Neuroscience.”\n• Patricia S. Churchland, Terrence J. Sejnowski — „The Computational Brain.”\n• Anders Sandberg, Nick Bostrom — „Whole Brain Emulation: A Roadmap.”",
+      "url": "https://ksiegarnia.pwn.pl/",
       "links": [
         {
-          "label": "🇵🇱 James W. Kalat — „Biologiczne podstawy psychologii” (PWN)",
+          "label": "🇵🇱 Wydawnictwo Naukowe PWN — J.W. Kalat „Biologiczne podstawy psychologii”, A. Longstaff „Neurobiologia”, E. Nęcka „Psychologia poznawcza”",
           "url": "https://ksiegarnia.pwn.pl/"
         },
         {
-          "label": "🇬🇧 Eric R. Kandel et al. — „Principles of Neural Science” (McGraw Hill)",
-          "url": "https://www.mheducation.com/"
+          "label": "🇵🇱 Prof. Włodzisław Duch (UMK) — Polskie wykłady z kognitywistyki, neuroinformatyki i modelowania mózgu",
+          "url": "https://www.fizyka.umk.pl/~duch/"
         },
         {
-          "label": "🇬🇧 Larry Squire et al. — „Fundamental Neuroscience” (Academic Press)",
-          "url": "https://www.sciencedirect.com/book/9780123858702/fundamental-neuroscience"
+          "label": "🇵🇱 Copernicus Center Press / Centrum Kopernika — Filozofia umysłu i kognitywistyka po polsku",
+          "url": "https://ccpress.pl/"
         },
         {
           "label": "🇬🇧 Peter Dayan, L. F. Abbott — „Theoretical Neuroscience” (MIT Press)",
@@ -1972,54 +2028,252 @@ const DEFAULT_SEED = {
         },
         {
           "label": "🇬🇧 Eugene M. Izhikevich — „Dynamical Systems in Neuroscience” (MIT Press / PDF autora)",
-          "url": "https://www.izhikevich.org/publications/dsn.htm"
-        },
-        {
-          "label": "🇬🇧 Paul Miller — „An Introductory Course in Computational Neuroscience” (MIT Press)",
-          "url": "https://mitpress.mit.edu/9780262038256/an-introductory-course-in-computational-neuroscience/"
-        },
-        {
-          "label": "🇬🇧 Patricia S. Churchland, Terrence J. Sejnowski — „The Computational Brain” (MIT Press)",
-          "url": "https://mitpress.mit.edu/9780262533393/the-computational-brain/"
+          "url": "https://www.izhikevich.org/publications/dsn.pdf"
         },
         {
           "label": "🇬🇧 Anders Sandberg, Nick Bostrom — „Whole Brain Emulation: A Roadmap” (Technical Report PDF)",
           "url": "https://www.fhi.ox.ac.uk/brain-emulation-roadmap-report.pdf"
+        },
+        {
+          "label": "🇬🇧 Eric R. Kandel et al. — „Principles of Neural Science” & Larry Squire et al. — „Fundamental Neuroscience”",
+          "url": "https://www.sciencedirect.com/book/9780123858702/fundamental-neuroscience"
         }
       ],
       "status": "approved",
       "createdAt": "2026-10-25T15:20:00Z"
     },
     {
-      "id": "mat-13",
-      "trackId": "E",
-      "branchTopic": "Filozofia nauki: dowód, hipoteza, teoria i granice modeli.",
-      "subprojectId": null,
-      "title": "BIBLIOTEKA PROJEKTU — VI. Kolejność czytania i zasady pracy z literaturą",
-      "type": "Przewodnik metodologiczny GOLEM 15",
+      "id": "mat-3",
+      "trackId": "C",
+      "branchTopic": "Elektronika analogowa i układy dynamiczne.",
+      "subprojectId": "sub-2",
+      "title": "GOLEM 15 — Projekt C: Maszyny analogowe i obliczenia fizyczne (w pierwszej kolejności po polsku: Horowitz & Hill, OpenAGH, ZPE, Forbot, Osowski + Neuromorphic Computing)",
+      "type": "Biblioteka uzupełniająca GOLEM 15 (PL → EN)",
       "author": "Administrator",
-      "content": "1. Najpierw: Petzold — Kod; Matthes — Python. Instrukcje dla programisty; Podstawy matematyki; Podręcznik fizyki ogólnej.\n2. Następnie: Brown — Genomy; Podstawy chemii, biologii i biochemii; Kalat — Biologiczne podstawy psychologii.\n3. Później: Theoretical Neuroscience; Dynamical Systems in Neuroscience; Connectome; Whole Brain Emulation: A Roadmap.\n4. Na zaawansowanym etapie: Principles of Neural Science; Fundamental Neuroscience; The Computational Brain; Griffiths — Introduction to Quantum Mechanics; Nielsen i Chuang — Quantum Computation and Quantum Information.\n\nZasada: Najpierw jedna książka podstawowa z aktualnej dziedziny, potem ćwiczenia i dopiero kolejna pozycja. Pełne odwzorowanie ludzkiego mózgu i przeniesienie umysłu pozostają niezrealizowanymi celami badawczymi.",
-      "url": "https://www.fhi.ox.ac.uk/brain-emulation-roadmap-report.pdf",
+      "content": "Kolejność nauki: Elektronika analogowa → układy dynamiczne → modelowanie matematyczne → fizyczne modele neuronów → obliczenia neuromorficzne.\n\n1. W pierwszej kolejności — Po polsku: Podręczniki akademickie z elektroniki analogowej (P. Horowitz, W. Hill — „Sztuka elektroniki”; e-podręczniki OpenAGH: wzmacniacze, oscylatory, filtry, sprzężenie zwrotne, układy dynamiczne), materiały dydaktyczne o przetwornikach A/C i C/A (ZPE, kursy Forbot), polska literatura o sieciach neuronowych (S. Osowski, R. Tadeusiewicz).\n2. Uzupełniająco — Po angielsku: Materiały techniczne dot. analog computing, badania dot. neuromorphic computing i analog neural networks, publikacje o fizycznych modelach neuronów oraz analogowych i hybrydowych procesorach.",
+      "url": "https://zpe.gov.pl/",
       "links": [
         {
-          "label": "1️⃣ Etap I: Petzold — Code / Kod. Ukryty język komputerów",
-          "url": "https://codehiddenlanguage.com/"
+          "label": "🇵🇱 Zintegrowana Platforma Edukacyjna (ZPE) — Elektronika i przetworniki A/C oraz C/A: https://zpe.gov.pl/",
+          "url": "https://zpe.gov.pl/"
         },
         {
-          "label": "2️⃣ Etap II: OpenStax — Chemistry 2e & Biology 2e + Brown (Genomy)",
-          "url": "https://openstax.org/subjects/science"
+          "label": "🇵🇱 OpenAGH — Polskie e-podręczniki akademickie: Elektronika i układy dynamiczne",
+          "url": "https://open.agh.edu.pl/"
         },
         {
-          "label": "3️⃣ Etap III: Dayan & Abbott (Theoretical Neuroscience) + Sandberg & Bostrom (WBE Roadmap)",
-          "url": "https://www.fhi.ox.ac.uk/brain-emulation-roadmap-report.pdf"
+          "label": "🇵🇱 Forbot — Kursy elektroniki analogowej i cyfrowej po polsku",
+          "url": "https://forbot.pl/"
         },
         {
-          "label": "4️⃣ Etap IV: Kandel (Principles of Neural Science) + Nielsen & Chuang (Quantum Computation)",
-          "url": "https://mitpress.mit.edu/9780262533393/the-computational-brain/"
+          "label": "🇬🇧 Frontiers in Neuroscience — Neuromorphic Engineering",
+          "url": "https://www.frontiersin.org/journals/neuroscience/sections/neuromorphic-engineering"
+        },
+        {
+          "label": "🇬🇧 arXiv — Neuromorphic Computing & Analog Neural Networks",
+          "url": "https://arxiv.org/list/cs.NE/recent"
         }
       ],
       "status": "approved",
-      "createdAt": "2026-10-25T15:25:00Z"
+      "createdAt": "2026-10-25T14:00:00Z"
+    },
+    {
+      "id": "mat-4",
+      "trackId": "D",
+      "branchTopic": "Biologia syntetyczna i edycja genomu.",
+      "subprojectId": null,
+      "title": "GOLEM 15 — Projekt D: „Frankenstein” — biotechnologia i tworzenie organizmów (w pierwszej kolejności po polsku: Alberts, Brown, Bartel „Embriologia”, Komitet Bioetyki PAN, Lem „Summa technologiae”)",
+      "type": "Biblioteka uzupełniająca GOLEM 15 (PL → EN)",
+      "author": "Administrator",
+      "content": "Kolejność nauki: Biologia komórki → genetyka → embriologia → komórki macierzyste → inżynieria tkankowa → biologia syntetyczna i bioetyka.\n\n1. W pierwszej kolejności — Po polsku: Podręczniki akademickie z biologii komórki, genetyki i biologii rozwoju (B. Alberts „Podstawy biologii komórki” PWN, T.A. Brown „Genomy” PWN, P. Węgleński „Genetyka molekularna” PWN); podręczniki z embriologii i komórek macierzystych (H. Bartel „Embriologia” PZWL); literatura o inżynierii tkankowej, medycynie regeneracyjnej i bioetyce (Komitet Bioetyki PAN, K. Szewczyk „Bioetyka” PWN) oraz Stanisław Lem — „Summa technologiae”.\n2. Uzupełniająco — Po angielsku: National Academies — materiały o odpowiedzialnym rozwoju biologii syntetycznej; publikacje akademickie o stem cells, developmental biology, tissue engineering i synthetic biology.",
+      "url": "https://bioetyka.pan.pl/",
+      "links": [
+        {
+          "label": "🇵🇱 Komitet Bioetyki PAN — Stanowiska i opracowania bioetyczne po polsku",
+          "url": "https://bioetyka.pan.pl/"
+        },
+        {
+          "label": "🇵🇱 PZWL Wydawnictwo Lekarskie — H. Bartel „Embriologia”, komórki macierzyste i medycyna regeneracyjna",
+          "url": "https://pzwl.pl/"
+        },
+        {
+          "label": "🇵🇱 Wydawnictwo Naukowe PWN — Alberts „Podstawy biologii komórki”, Brown „Genomy”, Węgleński „Genetyka molekularna”",
+          "url": "https://ksiegarnia.pwn.pl/"
+        },
+        {
+          "label": "🇵🇱 Zintegrowana Platforma Edukacyjna (ZPE) — Biologia i biotechnologia po polsku",
+          "url": "https://zpe.gov.pl/"
+        },
+        {
+          "label": "🇬🇧 National Academies — Biologia syntetyczna: https://www.nationalacademies.org/",
+          "url": "https://www.nationalacademies.org/"
+        },
+        {
+          "label": "🇬🇧 NCBI Bookshelf — Molecular Biology of the Cell & Developmental Biology",
+          "url": "https://www.ncbi.nlm.nih.gov/books/"
+        }
+      ],
+      "status": "approved",
+      "createdAt": "2026-10-25T14:05:00Z"
+    },
+    {
+      "id": "mat-5",
+      "trackId": "E",
+      "branchTopic": "Filozofia nauki: dowód, hipoteza, teoria i granice modeli.",
+      "subprojectId": null,
+      "title": "GOLEM 15 — Projekt E: Filozofia nauki, umysłu, techniki i bioetyka (w pierwszej kolejności po polsku: Chalmers, Kuhn, Heller, Tatarkiewicz, Wolne Lektury)",
+      "type": "Biblioteka uzupełniająca GOLEM 15 (PL → EN)",
+      "author": "Administrator",
+      "content": "Zastosowanie: Ocena dowodów, rozróżnianie teorii i spekulacji, analiza tożsamości osobowej oraz etycznych konsekwencji tworzenia i modyfikowania organizmów.\n\n1. W pierwszej kolejności — Po polsku:\n  • Alan Chalmers — „Czym jest to, co zwiemy nauką?”\n  • Thomas S. Kuhn — „Struktura rewolucji naukowych”\n  • Michał Heller — „Filozofia nauki. Wprowadzenie” oraz „Filozofia przyrody” (Copernicus Center Press)\n  • Władysław Tatarkiewicz — „Historia filozofii. Tom 1–3” (PWN) oraz klasyka filozofii starożytnej po polsku (Platon, Arystoteles, Marek Aureliusz, Seneka) w serwisie Wolne Lektury\n  • Marcin Miłkowski, Robert Poczobut (red.) — „Przewodnik po filozofii umysłu” oraz Kazimierz Szewczyk — „Bioetyka. Tom 1–2” (PWN).\n2. Uzupełniająco — Po angielsku: Stanford Encyclopedia of Philosophy (SEP) oraz Internet Encyclopedia of Philosophy (IEP).",
+      "url": "https://ccpress.pl/",
+      "links": [
+        {
+          "label": "🇵🇱 Copernicus Center Press — Michał Heller „Filozofia nauki. Wprowadzenie”",
+          "url": "https://ccpress.pl/"
+        },
+        {
+          "label": "🇵🇱 Centrum Kopernika Badań Interdyscyplinarnych (UJ) — Wykłady z filozofii nauki i umysłu po polsku",
+          "url": "https://www.copernicuscenter.edu.pl/"
+        },
+        {
+          "label": "🇵🇱 Wolne Lektury — Filozofia starożytna po polsku (Platon, Arystoteles, stoicy)",
+          "url": "https://wolnelektury.pl/katalog/gatunek/filozofia/"
+        },
+        {
+          "label": "🇵🇱 Wydawnictwo Naukowe PWN — Kuhn, Tatarkiewicz, Szewczyk („Bioetyka”)",
+          "url": "https://ksiegarnia.pwn.pl/"
+        },
+        {
+          "label": "🇬🇧 Stanford Encyclopedia of Philosophy (SEP — Nauka, Umysł, Technika, Bioetyka)",
+          "url": "https://plato.stanford.edu/"
+        }
+      ],
+      "status": "approved",
+      "createdAt": "2026-10-25T14:10:00Z"
+    },
+    {
+      "id": "mat-6",
+      "trackId": "F",
+      "branchTopic": "Wpływ mikrograwitacji na mięśnie, kości i układ krążenia.",
+      "subprojectId": "sub-3",
+      "title": "GOLEM 15 — Projekt F: Człowiek w kosmosie (w pierwszej kolejności po polsku: POLSA, ESERO Polska, OpenStax Fizyka PL, medycyna kosmiczna + darmowe źródła NASA i ESA)",
+      "type": "Biblioteka uzupełniająca GOLEM 15 (PL → EN)",
+      "author": "Administrator",
+      "content": "Kolejność nauki: Podstawy fizyki → mechanika orbitalna → technika kosmiczna → fizjologia kosmiczna → systemy podtrzymywania życia i habitaty.\n\n1. W pierwszej kolejności — Po polsku: Materiały edukacyjne i badawcze Polskiej Agencji Kosmicznej (POLSA) oraz ESERO Polska (Centrum Nauki Kopernik / ESA) dot. załogowych misji kosmicznych, życia w mikrograwitacji, ochrony przed promieniowaniem i projektowania habitatów; OpenStax Polska — „Fizyka dla szkół wyższych” (mechanika i grawitacja po polsku); K. Kwarecki (red.) — „Medycyna lotnicza i kosmiczna” (PZWL).\n2. Darmowe źródła międzynarodowe: NASA (zdrowie człowieka w kosmosie), ESA (edukacja kosmiczna — Teach with Space), ESA (eksploracja załogowa i robotyczna).",
+      "url": "https://esero.kopernik.org.pl/",
+      "links": [
+        {
+          "label": "🇵🇱 ESERO Polska (Centrum Nauki Kopernik / ESA) — Polskie materiały edukacyjne o eksploracji kosmosu i habitatach",
+          "url": "https://esero.kopernik.org.pl/"
+        },
+        {
+          "label": "🇵🇱 Polska Agencja Kosmiczna (POLSA) — Edukacja, nauka i medycyna kosmiczna po polsku",
+          "url": "https://polsa.gov.pl/"
+        },
+        {
+          "label": "🇵🇱 OpenStax Polska — „Fizyka dla szkół wyższych. Tom 1” (Mechanika i grawitacja po polsku)",
+          "url": "https://openstax.org/details/books/fizyka-dla-szk%C3%B3%C5%82-wy%C5%BCszych-tom-1"
+        },
+        {
+          "label": "🚀 NASA — Zdrowie człowieka w kosmosie: https://www.nasa.gov/reference/fundamentals-of-human-health/",
+          "url": "https://www.nasa.gov/reference/fundamentals-of-human-health/"
+        },
+        {
+          "label": "🛰️ ESA — Edukacja kosmiczna: https://education.esa.int/teach-with-space/",
+          "url": "https://education.esa.int/teach-with-space/"
+        },
+        {
+          "label": "👩‍🚀 ESA — Eksploracja załogowa: https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration",
+          "url": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration"
+        }
+      ],
+      "status": "approved",
+      "createdAt": "2026-10-25T14:15:00Z"
+    },
+    {
+      "id": "mat-7",
+      "trackId": "G",
+      "branchTopic": "Ochrona przyrody, odbudowa ekosystemów i renaturyzacja.",
+      "subprojectId": "sub-3",
+      "title": "GOLEM 15 — Projekt G: Człowiek na Ziemi i ochrona ekosystemu (w pierwszej kolejności po polsku: Krystek, Weiner „Życie i ewolucja biosfery”, Politechnika Śląska, GIOŚ, EEA PL + ESA Education)",
+      "type": "Biblioteka uzupełniająca GOLEM 15 (PL → EN)",
+      "author": "Administrator",
+      "content": "Kolejność nauki: Podstawy ekologii → funkcjonowanie ekosystemów → presje środowiskowe → technologie ochronne → ekonomia i polityka środowiskowa.\n\n1. W pierwszej kolejności — Po polsku: Jan Krystek — „Ochrona środowiska dla inżynierów” (PWN); January Weiner — „Życie i ewolucja biosfery. Podręcznik ekologii ogólnej” (PWN); Czesława Rosik-Dulewska — „Podstawy gospodarki odpadami” (PWN); bezpłatne materiały Politechniki Śląskiej i OpenAGH dot. ochrony wód, powietrza i gleby; raporty GIOŚ (Państwowy Monitoring Środowiska) oraz serwis Europejskiej Agencji Środowiska po polsku (EEA PL).\n2. Uzupełniająco: ESA Education (Ziemia, klimat, obserwacja środowiska) oraz raporty IPCC i IPBES.",
+      "url": "https://www.polsl.pl/",
+      "links": [
+        {
+          "label": "🇵🇱 Politechnika Śląska — Podstawy ochrony środowiska po polsku: https://www.polsl.pl/",
+          "url": "https://www.polsl.pl/"
+        },
+        {
+          "label": "🇵🇱 Wydawnictwo Naukowe PWN — Jan Krystek „Ochrona środowiska dla inżynierów” oraz January Weiner „Życie i ewolucja biosfery”",
+          "url": "https://ksiegarnia.pwn.pl/"
+        },
+        {
+          "label": "🇵🇱 GIOŚ — Państwowy Monitoring Środowiska w Polsce (wody, powietrze, gleby)",
+          "url": "https://www.gios.gov.pl/"
+        },
+        {
+          "label": "🇵🇱 Europejska Agencja Środowiska (EEA w języku polskim)",
+          "url": "https://www.eea.europa.eu/pl"
+        },
+        {
+          "label": "🌍 ESA Education — Ziemia, klimat i obserwacja środowiska: https://education.esa.int/teach-with-space/",
+          "url": "https://education.esa.int/teach-with-space/"
+        }
+      ],
+      "status": "approved",
+      "createdAt": "2026-10-25T14:20:00Z"
+    },
+    {
+      "id": "mat-1",
+      "trackId": "E",
+      "branchTopic": "Filozofia nauki: dowód, hipoteza, teoria i granice modeli.",
+      "subprojectId": null,
+      "title": "Granice modeli formalnych a interpretacja stanów umysłowych i biologicznych (Heller, Miłkowski & Poczobut, SEP)",
+      "type": "Artykuł / Notatka przekrojowa",
+      "author": "Administrator",
+      "content": "Rozróżnienie między symulacją składniową (syntaktyczną) a realizacją właściwości przyczynowych układu fizycznego — punkt styku Projektu B, C oraz E. W pierwszej kolejności opracowania polskojęzyczne (Centrum Kopernika, M. Heller, M. Miłkowski & R. Poczobut).",
+      "url": "https://ccpress.pl/",
+      "links": [
+        {
+          "label": "🇵🇱 Centrum Kopernika / CCPress — Filozofia nauki i granice modeli matematycznych",
+          "url": "https://ccpress.pl/"
+        },
+        {
+          "label": "🇬🇧 Stanford Encyclopedia of Philosophy — Models in Science",
+          "url": "https://plato.stanford.edu/entries/models-science/"
+        },
+        {
+          "label": "🇬🇧 SEP — The Chinese Room Argument & Syntax vs Semantics",
+          "url": "https://plato.stanford.edu/entries/chinese-room/"
+        }
+      ],
+      "status": "approved",
+      "createdAt": "2026-10-25T11:50:00Z"
+    },
+    {
+      "id": "mat-2",
+      "trackId": "B",
+      "branchTopic": "Neurobiologia i neuronauka obliczeniowa.",
+      "subprojectId": "sub-1",
+      "title": "Zestawienie rozdzielczości czasowo-przestrzennej metod neuroobrazowania (EEG, fNIRS, fMRI, ECoG)",
+      "type": "Zestaw danych / Opracowanie",
+      "author": "Dr Janina Kowalska (Gość)",
+      "content": "Porównanie pasma przenoszenia, stosunku sygnału do szumu (SNR) oraz biokompatybilności długoterminowej dla zastosowań w Projektach A i B.",
+      "url": "https://ksiegarnia.pwn.pl/",
+      "links": [
+        {
+          "label": "🇵🇱 Wydawnictwo Naukowe PWN — Neurobiologia i metody neuroobrazowania (Kalat, Longstaff)",
+          "url": "https://ksiegarnia.pwn.pl/"
+        },
+        {
+          "label": "🇬🇧 Physiological Reviews — Brain-Machine Interfaces (Lebedev & Nicolelis)",
+          "url": "https://doi.org/10.1152/physrev.00027.2016"
+        }
+      ],
+      "status": "pending",
+      "createdAt": "2026-10-25T13:10:00Z"
     }
   ],
   "graphLinks": [
@@ -2103,7 +2357,7 @@ const DEFAULT_SEED = {
   ]
 };
 
-const STORAGE_KEY = "the_golem_15_state_v4";
+const STORAGE_KEY = "the_golem_15_state_v5";
 const ADMIN_PASS_KEY = "golem_xv_admin_pass";
 
 const appState = {
