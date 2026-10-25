@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Golem XV — Ludzie: Droga do Rzeczywistości | Platforma Badawcza</title>
+  <title>The Golem 15: A Human's Road to Reality | Platforma Naukowo-Badawcza</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -13,8 +13,8 @@
       <div class="brand">
         <div class="brand-logo">G15</div>
         <div class="brand-text">
-          <h1>Golem XV — Ludzie: Droga do Rzeczywistości</h1>
-          <p>Mapa projektu badawczego — siedem powiązanych ścieżek (A–G) oraz środowiska badawcze</p>
+          <h1>The Golem 15: A Human's Road to Reality</h1>
+          <p>Wspólne podstawy naukowe (8 dziedzin po kolei), siedem ścieżek (A–G) oraz środowiska badawcze</p>
         </div>
       </div>
 
@@ -31,24 +31,28 @@
       </div>
     </div>
 
-    <!-- Nawigacja główna -->
+    <!-- Nawigacja główna — Pierwsza opcja: Materiały do nauki -->
     <nav class="main-nav">
-      <button class="nav-tab active" data-tab="map" onclick="switchTab('map')">
-        🗺️ Mapa 7 Ścieżek (A–G)
+      <button class="nav-tab active" data-tab="study" onclick="switchTab('study')">
+        🎓 1. Materiały do nauki (Podstawy i Dziedziny)
+        <span id="navStudyCount" class="badge-count">0</span>
+      </button>
+      <button class="nav-tab" data-tab="map" onclick="switchTab('map')">
+        🗺️ 2. Mapa 7 Ścieżek (A–G)
       </button>
       <button class="nav-tab" data-tab="workspaces" onclick="switchTab('workspaces')">
-        🔬 Środowiska Badawcze i Podprojekty
+        🔬 3. Środowiska Badawcze i Podprojekty
         <span id="navSubprojectsCount" class="badge-count">0</span>
       </button>
       <button class="nav-tab" data-tab="materials" onclick="switchTab('materials')">
-        📚 Repozytorium Materiałów
+        📚 4. Repozytorium Badawcze
         <span id="navMaterialsCount" class="badge-count">0</span>
       </button>
       <button class="nav-tab" data-tab="graph" onclick="switchTab('graph')">
-        🕸️ Graf Powiązań (A–G)
+        🕸️ 5. Graf Powiązań (A–G)
       </button>
       <button class="nav-tab" data-tab="moderation" onclick="switchTab('moderation')">
-        🛡️ Autoryzacja Administratora
+        🛡️ 6. Autoryzacja Administratora
         <span id="navModerationCount" class="badge-count">0</span>
       </button>
     </nav>
@@ -56,8 +60,40 @@
 
   <!-- Główny obszar roboczy -->
   <main class="main-container">
+    <!-- WIDOK 0 (PIERWSZA OPCJA): MATERIAŁY DO NAUKI (8 DZIEDZIN PODSTAWOWYCH PO KOLEI + ODNOGI ŚCIEŻEK A-G) -->
+    <section id="view-study" class="tab-view">
+      <div class="filter-bar">
+        <div>
+          <h3 style="font-size:1.05rem;">🎓 Materiały do nauki — 8 dziedzin ze Wspólnych podstaw po kolei oraz odnogi Projektów A–G</h3>
+          <p style="font-size:0.82rem; color:var(--text-muted);">
+            Przeglądaj kolejne dziedziny fundamentalne (Matematyka i logika → Informatyka → Programowanie → Fizyka → Elektronika → Chemia → Biologia → Sztuczna inteligencja), dodawaj materiały do nauki i uruchamiaj środowiska dla każdego działu.
+          </p>
+        </div>
+        <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+          <button class="btn btn-primary" onclick="openNewStudyMaterialModal('FOUNDATION', 'FND-1', '')">
+            + Dodaj materiał do nauki
+          </button>
+          <button class="btn" onclick="openNewSubprojectModal('FND-1', '')">
+            🚀 Uruchom środowisko dla dziedziny
+          </button>
+        </div>
+      </div>
+
+      <div id="foundationsGrid" class="tracks-grid" style="margin-bottom:2rem;"></div>
+
+      <div class="filter-bar" style="margin-top:1.5rem;">
+        <div>
+          <h3 style="font-size:1.02rem;">🧭 Materiały do nauki według konkretnych odnóg Ścieżek A–G</h3>
+          <p style="font-size:0.82rem; color:var(--text-muted);">
+            Każda odnoga z Projektów A–G posiada własną listę materiałów dydaktycznych oraz możliwość uruchomienia środowiska.
+          </p>
+        </div>
+      </div>
+      <div id="tracksStudyTree" class="tracks-grid"></div>
+    </section>
+
     <!-- WIDOK 1: MAPA 7 ŚCIEŻEK (A-G) -->
-    <section id="view-map" class="tab-view">
+    <section id="view-map" class="tab-view" style="display:none;">
       <div id="overviewBanner" class="overview-banner"></div>
       <div class="filter-bar">
         <div>
@@ -82,16 +118,28 @@
     <section id="view-workspaces" class="tab-view" style="display:none;">
       <div class="filter-bar">
         <div style="display:flex; align-items:center; gap:0.75rem; flex-wrap:wrap;">
-          <label for="wsTrackFilter" style="font-size:0.86rem; font-weight:600; color:var(--text-secondary);">Filtruj wg ścieżki:</label>
-          <select id="wsTrackFilter" class="select-field" style="width:auto; min-width:260px;" onchange="onWorkspaceTrackFilterChange(this.value)">
-            <option value="ALL">Wszystkie ścieżki (Projekty A–G)</option>
-            <option value="A">Projekt A — Człowiek biocyfrowo-robotyczny</option>
-            <option value="B">Projekt B — Cyfrowy umysł</option>
-            <option value="C">Projekt C — Maszyny analogowe i obliczanie przez fizykę</option>
-            <option value="D">Projekt D — „Frankenstein”: tworzenie człowieka i SF</option>
-            <option value="E">Projekt E — Filozofia jako warstwa przekrojowa</option>
-            <option value="F">Projekt F — Człowiek w kosmosie</option>
-            <option value="G">Projekt G — Człowiek na Ziemi: adaptacja i ochrona</option>
+          <label for="wsTrackFilter" style="font-size:0.86rem; font-weight:600; color:var(--text-secondary);">Filtruj wg ścieżki / dziedziny:</label>
+          <select id="wsTrackFilter" class="select-field" style="width:auto; min-width:280px;" onchange="onWorkspaceTrackFilterChange(this.value)">
+            <option value="ALL">Wszystkie ścieżki (A–G) i dziedziny podstawowe</option>
+            <optgroup label="Wspólne podstawy naukowe (1–8)">
+              <option value="FND-1">1. Matematyka i logika</option>
+              <option value="FND-2">2. Informatyka</option>
+              <option value="FND-3">3. Programowanie</option>
+              <option value="FND-4">4. Fizyka</option>
+              <option value="FND-5">5. Elektronika</option>
+              <option value="FND-6">6. Chemia</option>
+              <option value="FND-7">7. Biologia</option>
+              <option value="FND-8">8. Sztuczna inteligencja</option>
+            </optgroup>
+            <optgroup label="Siedem ścieżek badawczych (A–G)">
+              <option value="A">Projekt A — Człowiek biocyfrowo-robotyczny</option>
+              <option value="B">Projekt B — Cyfrowy umysł</option>
+              <option value="C">Projekt C — Maszyny analogowe i obliczanie przez fizykę</option>
+              <option value="D">Projekt D — „Frankenstein”: tworzenie człowieka i SF</option>
+              <option value="E">Projekt E — Filozofia jako warstwa przekrojowa</option>
+              <option value="F">Projekt F — Człowiek w kosmosie</option>
+              <option value="G">Projekt G — Człowiek na Ziemi: adaptacja i ochrona</option>
+            </optgroup>
           </select>
         </div>
         <button class="btn btn-primary" onclick="openNewSubprojectModal(appState.selectedTrackFilter === 'ALL' ? 'A' : appState.selectedTrackFilter, '')">

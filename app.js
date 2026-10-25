@@ -2,12 +2,12 @@
 // Główny moduł aplikacji (obsługa API serwera + automatyczny fallback localStorage)
 
 const DEFAULT_SEED = {
-  projectMeta: {
-    title: "The Golem 15: A Human's Road to Reality",
-    subtitle: "Mapa projektu badawczego — wspólne podstawy naukowe oraz siedem powiązanych ścieżek (A–G)",
-    overarchingGoal: "Zrozumieć człowieka jako organizm biologiczny, umysł, twórcę technologii i część ziemskiej biosfery, a jednocześnie zbadać możliwości jego funkcjonowania poza naturalnym środowiskiem Ziemi.",
-    organizationalRule: "Każda ścieżka ma własne pytania badawcze, bibliografię i cele. Wspólne podstawy naukowe pozwalają łączyć wiedzę, ale nie oznaczają konieczności równoległego studiowania wszystkich dziedzin. Filozofia pozostaje przekrojową warstwą interpretacyjną. Pozostałe projekty rozwijają się w miarę dostępnego czasu i zainteresowania.",
-    foundations: [
+  "projectMeta": {
+    "title": "The Golem 15: A Human's Road to Reality",
+    "subtitle": "Mapa projektu badawczego — wspólne podstawy naukowe oraz siedem powiązanych ścieżek (A–G)",
+    "overarchingGoal": "Zrozumieć człowieka jako organizm biologiczny, umysł, twórcę technologii i część ziemskiej biosfery, a jednocześnie zbadać możliwości jego funkcjonowania poza naturalnym środowiskiem Ziemi.",
+    "organizationalRule": "Każda ścieżka ma własne pytania badawcze, bibliografię i cele. Wspólne podstawy naukowe pozwalają łączyć wiedzę, ale nie oznaczają konieczności równoległego studiowania wszystkich dziedzin. Filozofia pozostaje przekrojową warstwą interpretacyjną. Pozostałe projekty rozwijają się w miarę dostępnego czasu i zainteresowania.",
+    "foundations": [
       "Matematyka i logika",
       "Informatyka",
       "Programowanie",
@@ -17,21 +17,21 @@ const DEFAULT_SEED = {
       "Biologia",
       "Sztuczna inteligencja"
     ],
-    fgRelation: {
-      summary: "Oba projekty badają człowieka w relacji ze środowiskiem, ale z różnych perspektyw:",
-      fPerspective: "Projekt F — kosmos: jak stworzyć sztuczne środowisko podtrzymujące życie tam, gdzie naturalne warunki są dla człowieka nieprzyjazne. Koncentruje się na inżynierii środowiska i adaptacji do warunków pozaziemskich.",
-      gPerspective: "Projekt G — Ziemia: jak żyć w istniejącym, złożonym ekosystemie i chronić jego zdolność do podtrzymywania życia. Koncentruje się na ekologii, zdrowiu człowieka, zrównoważonej technologii i ochronie biosfery."
+    "fgRelation": {
+      "summary": "Oba projekty badają człowieka w relacji ze środowiskiem, ale z różnych perspektyw:",
+      "fPerspective": "Projekt F — kosmos: jak stworzyć sztuczne środowisko podtrzymujące życie tam, gdzie naturalne warunki są dla człowieka nieprzyjazne. Koncentruje się na inżynierii środowiska i adaptacji do warunków pozaziemskich.",
+      "gPerspective": "Projekt G — Ziemia: jak żyć w istniejącym, złożonym ekosystemie i chronić jego zdolność do podtrzymywania życia. Koncentruje się na ekologii, zdrowiu człowieka, zrównoważonej technologii i ochronie biosfery."
     }
   },
-  foundationDisciplines: [
+  "foundationDisciplines": [
     {
-      id: "FND-1",
-      order: 1,
-      name: "Matematyka i logika",
-      icon: "📐",
-      color: "#38bdf8",
-      description: "Formalny język opisu rzeczywistości, wnioskowania dedukcyjnego, układów dynamicznych, prawdopodobieństwa i informacji.",
-      topics: [
+      "id": "FND-1",
+      "order": 1,
+      "name": "Matematyka i logika",
+      "icon": "📐",
+      "color": "#38bdf8",
+      "description": "Formalny język opisu rzeczywistości, wnioskowania dedukcyjnego, układów dynamicznych, prawdopodobieństwa i informacji.",
+      "topics": [
         "Logika formalna, rachunek zdań i kwantyfikatorów, teoria mnogości i dowodzenia.",
         "Analiza matematyczna, rachunek różniczkowy i całkowy, równania różniczkowe zwyczajne i cząstkowe.",
         "Algebra liniowa, przestrzenie wektorowe, tensory i metody spektralne.",
@@ -39,16 +39,23 @@ const DEFAULT_SEED = {
         "Teoria informacji, entropia Shannona, teoria układów dynamicznych i chaosu.",
         "Matematyka dyskretna, teoria grafów i topologia sieci (podstawa konektomiki i sieci złożonych)."
       ],
-      connectedTracks: ["A", "B", "C", "E", "F", "G"]
+      "connectedTracks": [
+        "A",
+        "B",
+        "C",
+        "E",
+        "F",
+        "G"
+      ]
     },
     {
-      id: "FND-2",
-      order: 2,
-      name: "Informatyka",
-      icon: "💻",
-      color: "#60a5fa",
-      description: "Teoria obliczeń, architektura systemów komputerowych, struktury danych, przetwarzanie informacji i cyberbezpieczeństwo.",
-      topics: [
+      "id": "FND-2",
+      "order": 2,
+      "name": "Informatyka",
+      "icon": "💻",
+      "color": "#60a5fa",
+      "description": "Teoria obliczeń, architektura systemów komputerowych, struktury danych, przetwarzanie informacji i cyberbezpieczeństwo.",
+      "topics": [
         "Teoria obliczeń, maszyny Turinga, obliczalność i złożoność obliczeniowa.",
         "Algorytmy i struktury danych (grafowe, drzewiaste, probabilistyczne, indeksowanie).",
         "Architektura komputerów (CPU, GPU, pamięci, systemy wbudowane i czasu rzeczywistego).",
@@ -56,16 +63,22 @@ const DEFAULT_SEED = {
         "Bazy danych, reprezentacja wiedzy, ontologie i przetwarzanie wielkich zbiorów danych.",
         "Niezawodność systemów (fault-tolerance) w zastosowaniach medycznych i kosmicznych."
       ],
-      connectedTracks: ["A", "B", "C", "F", "G"]
+      "connectedTracks": [
+        "A",
+        "B",
+        "C",
+        "F",
+        "G"
+      ]
     },
     {
-      id: "FND-3",
-      order: 3,
-      name: "Programowanie",
-      icon: "⌨️",
-      color: "#818cf8",
-      description: "Praktyczna konstrukcja oprogramowania, symulacji numerycznych, modeli badawczych, sterowników sprzętowych i narzędzi analitycznych.",
-      topics: [
+      "id": "FND-3",
+      "order": 3,
+      "name": "Programowanie",
+      "icon": "⌨️",
+      "color": "#818cf8",
+      "description": "Praktyczna konstrukcja oprogramowania, symulacji numerycznych, modeli badawczych, sterowników sprzętowych i narzędzi analitycznych.",
+      "topics": [
         "Paradygmaty programowania: imperatywne, obiektowe, funkcyjne i reaktywne.",
         "Python w obliczeniach naukowych i analizie danych (NumPy, SciPy, PyTorch, BioPython).",
         "Języki niskopoziomowe i systemowe (C, C++, Rust) do sterowania robotami, mikrokontrolerami i BCI.",
@@ -73,16 +86,23 @@ const DEFAULT_SEED = {
         "Inżynieria oprogramowania, kontrola wersji, testy automatyczne i reprodukowalność badań.",
         "Wizualizacja danych naukowych, interfejsy webowe i wirtualne środowiska badawcze."
       ],
-      connectedTracks: ["A", "B", "C", "D", "F", "G"]
+      "connectedTracks": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "F",
+        "G"
+      ]
     },
     {
-      id: "FND-4",
-      order: 4,
-      name: "Fizyka",
-      icon: "⚛️",
-      color: "#f59e0b",
-      description: "Fundamentalne prawa przyrody rządzące materią, energią, polami, termodynamiką układów żywych, obliczaniem fizycznym i astronautyką.",
-      topics: [
+      "id": "FND-4",
+      "order": 4,
+      "name": "Fizyka",
+      "icon": "⚛️",
+      "color": "#f59e0b",
+      "description": "Fundamentalne prawa przyrody rządzące materią, energią, polami, termodynamiką układów żywych, obliczaniem fizycznym i astronautyką.",
+      "topics": [
         "Mechanika klasyczna, analityczna (Lagrange’a i Hamiltona), biomechanika oraz mechanika orbitalna.",
         "Termodynamika klasyczna i nierównowagowa, fizyka statystyczna i entropia w układach żywych.",
         "Elektrodynamika, fale elektromagnetyczne, optyka i oddziaływanie pól z tkanką biologiczną.",
@@ -90,16 +110,23 @@ const DEFAULT_SEED = {
         "Mechanika kwantowa, fizyka jądrowa oraz promieniowanie jonizujące (ochrona radiacyjna w kosmosie).",
         "Biofizyka błon komórkowych, transportu jonowego i potencjałów czynnościowych."
       ],
-      connectedTracks: ["A", "B", "C", "E", "F", "G"]
+      "connectedTracks": [
+        "A",
+        "B",
+        "C",
+        "E",
+        "F",
+        "G"
+      ]
     },
     {
-      id: "FND-5",
-      order: 5,
-      name: "Elektronika",
-      icon: "🔌",
-      color: "#eab308",
-      description: "Projektowanie układów analogowych, cyfrowych, sensorów pomiarowych, bioelektroniki oraz fizycznych architektur obliczeniowych.",
-      topics: [
+      "id": "FND-5",
+      "order": 5,
+      "name": "Elektronika",
+      "icon": "🔌",
+      "color": "#eab308",
+      "description": "Projektowanie układów analogowych, cyfrowych, sensorów pomiarowych, bioelektroniki oraz fizycznych architektur obliczeniowych.",
+      "topics": [
         "Teoria obwodów elektrycznych, elementy bierne i czynne, stany nieustalone.",
         "Elektronika analogowa: wzmacniacze operacyjne, filtry aktywne, oscylatory i układy nieliniowe.",
         "Elektronika cyfrowa, układy logiczne, FPGA, mikrokontrolery i systemy SoC.",
@@ -107,16 +134,22 @@ const DEFAULT_SEED = {
         "Czujniki (sensory) środowiskowe i biomedyczne, aktuatory oraz systemy zasilania i magazynowania energii.",
         "Układy neuromorficzne, memrystory i realizacja sztucznych synaps w krzemie."
       ],
-      connectedTracks: ["A", "B", "C", "F", "G"]
+      "connectedTracks": [
+        "A",
+        "B",
+        "C",
+        "F",
+        "G"
+      ]
     },
     {
-      id: "FND-6",
-      order: 6,
-      name: "Chemia",
-      icon: "🧪",
-      color: "#10b981",
-      description: "Budowa cząsteczek, reakcje chemiczne, biochemia metabolizmu, inżynieria biomateriałów oraz zamknięte obiegi pierwiastków.",
-      topics: [
+      "id": "FND-6",
+      "order": 6,
+      "name": "Chemia",
+      "icon": "🧪",
+      "color": "#10b981",
+      "description": "Budowa cząsteczek, reakcje chemiczne, biochemia metabolizmu, inżynieria biomateriałów oraz zamknięte obiegi pierwiastków.",
+      "topics": [
         "Chemia ogólna i nieorganiczna: wiązania chemiczne, stechiometria, równowagi kwasowo-zasadowe i redoks.",
         "Chemia organiczna: grupy funkcyjne, stereochemia, synteza i reaktywność związków węgla.",
         "Biochemia: struktura i funkcja białek, enzymów, lipidów, węglowodanów oraz kwasów nukleinowych (DNA/RNA).",
@@ -124,16 +157,21 @@ const DEFAULT_SEED = {
         "Chemia materiałów: polimery biokompatybilne, hydrożele tkankowe i materiały biodegradowalne.",
         "Chemia środowiska i analityczna: obiegi C, N, P, oczyszczanie wody, powietrza i neutralizacja toksyn."
       ],
-      connectedTracks: ["A", "D", "F", "G"]
+      "connectedTracks": [
+        "A",
+        "D",
+        "F",
+        "G"
+      ]
     },
     {
-      id: "FND-7",
-      order: 7,
-      name: "Biologia",
-      icon: "🧬",
-      color: "#22c55e",
-      description: "Nauka o organizacji życia od poziomu molekularnego i komórkowego po fizjologię człowieka, neurobiologię, regenerację i ekologię biosfery.",
-      topics: [
+      "id": "FND-7",
+      "order": 7,
+      "name": "Biologia",
+      "icon": "🧬",
+      "color": "#22c55e",
+      "description": "Nauka o organizacji życia od poziomu molekularnego i komórkowego po fizjologię człowieka, neurobiologię, regenerację i ekologię biosfery.",
+      "topics": [
         "Biologia komórki i biologia molekularna: replikacja, transkrypcja, translacja, sygnalizacja komórkowa.",
         "Genetyka, epigenetyka, genomika i regulacja ekspresji genów.",
         "Anatomia i fizjologia człowieka: układ nerwowy, krążenia, mięśniowo-szkieletowy, odpornościowy i hormonalny.",
@@ -141,16 +179,22 @@ const DEFAULT_SEED = {
         "Biologia rozwoju (embriologia), komórki macierzyste, różnicowanie tkanek i procesy regeneracji.",
         "Mikrobiologia, mikrobiom człowieka oraz ekologia populacji, ekosystemów i biosfery."
       ],
-      connectedTracks: ["A", "B", "D", "F", "G"]
+      "connectedTracks": [
+        "A",
+        "B",
+        "D",
+        "F",
+        "G"
+      ]
     },
     {
-      id: "FND-8",
-      order: 8,
-      name: "Sztuczna inteligencja",
-      icon: "🤖",
-      color: "#a855f7",
-      description: "Algorytmy uczenia maszynowego, głębokie sieci neuronowe, dekodowanie sygnałów biologicznych, autonomia robotyczna i modelowanie poznania.",
-      topics: [
+      "id": "FND-8",
+      "order": 8,
+      "name": "Sztuczna inteligencja",
+      "icon": "🤖",
+      "color": "#a855f7",
+      "description": "Algorytmy uczenia maszynowego, głębokie sieci neuronowe, dekodowanie sygnałów biologicznych, autonomia robotyczna i modelowanie poznania.",
+      "topics": [
         "Podstawy uczenia maszynowego (nadzorowane, nienadzorowane, samonadzorowane) i optymalizacja gradientowa.",
         "Głębokie sieci neuronowe (CNN, RNN, Transformery, Graph Neural Networks) oraz impulsowe sieci neuronowe (SNN).",
         "Uczenie ze wzmocnieniem (Reinforcement Learning) i sterowanie autonomicznymi robotami.",
@@ -158,94 +202,1058 @@ const DEFAULT_SEED = {
         "Modele poznawcze, reprezentacje semantyczne a biologiczne działanie mózgu (porównanie AI i Projektu B).",
         "Interpretowalność modeli (XAI), niezawodność, bezpieczeństwo i filozoficzno-etyczne aspekty AI."
       ],
-      connectedTracks: ["A", "B", "C", "D", "E", "F", "G"]
+      "connectedTracks": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G"
+      ]
     }
   ],
-  studyMaterials: [
+  "studyMaterials": [
     {
-      id: "smat-1",
-      categoryType: "FOUNDATION",
-      targetId: "FND-1",
-      topic: "Analiza matematyczna, rachunek różniczkowy i całkowy, równania różniczkowe zwyczajne i cząstkowe.",
-      title: "Road to Reality (R. Penrose) — Matematyczne podstawy opisu praw fizyki i układów dynamicznych",
-      level: "Podstawowy / Średniozaawansowany",
-      format: "Podręcznik / Kompendium",
-      content: "Przewodnik po strukturach geometrycznych, liczbach zespolonych, analizie na rozmaitościach i równaniach różniczkowych stanowiących fundament fizyki i modelowania.",
-      url: "",
-      author: "Administrator",
-      status: "approved",
-      createdAt: "2026-10-25T12:00:00Z"
-    },
-    {
-      id: "smat-2",
-      categoryType: "FOUNDATION",
-      targetId: "FND-4",
-      topic: "Biofizyka błon komórkowych, transportu jonowego i potencjałów czynnościowych.",
-      title: "Równanie Nernsta, Goldmana-Hodgkina-Katza i model błony komórkowej jako obwodu RC",
-      level: "Średniozaawansowany",
-      format: "Skrypt wykładowy / Notatka do nauki",
-      content: "Wyprowadzenie potencjału spoczynkowego i czynnościowego z praw termodynamiki statystycznej oraz elektrodynamiki. Punkt wyjścia dla Projektu A, B i C.",
-      url: "",
-      author: "Administrator",
-      status: "approved",
-      createdAt: "2026-10-25T12:05:00Z"
-    },
-    {
-      id: "smat-3",
-      categoryType: "FOUNDATION",
-      targetId: "FND-7",
-      topic: "Biologia komórki i biologia molekularna: replikacja, transkrypcja, translacja, sygnalizacja komórkowa.",
-      title: "Alberts et al. — Molecular Biology of the Cell (Podstawy biologii molekularnej i komórkowej)",
-      level: "Podstawowy / Akademicki",
-      format: "Podręcznik bazowy",
-      content: "Kluczowe kompendium do zrozumienia mechanizmów genetycznych, regulacji genów, komórek macierzystych i inżynierii tkankowej (Projekty A, D, F, G).",
-      url: "",
-      author: "Administrator",
-      status: "approved",
-      createdAt: "2026-10-25T12:10:00Z"
-    },
-    {
-      id: "smat-4",
-      categoryType: "FOUNDATION",
-      targetId: "FND-5",
-      topic: "Elektronika analogowa: wzmacniacze operacyjne, filtry aktywne, oscylatory i układy nieliniowe.",
-      title: "Horowitz & Hill — Sztuka Elektroniki (The Art of Electronics)",
-      level: "Podstawowy / Zaawansowany",
-      format: "Podręcznik inżynierski",
-      content: "Praktyczne podstawy projektowania obwodów analogowych, niskoszumowych wzmacniaczy biopotencjałów (Projekt A) oraz układów dynamicznych (Projekt C).",
-      url: "",
-      author: "Administrator",
-      status: "approved",
-      createdAt: "2026-10-25T12:12:00Z"
-    },
-    {
-      id: "smat-5",
-      categoryType: "FOUNDATION",
-      targetId: "FND-8",
-      topic: "Głębokie sieci neuronowe (CNN, RNN, Transformery, Graph Neural Networks) oraz impulsowe sieci neuronowe (SNN).",
-      title: "Dayan & Abbott — Theoretical Neuroscience: Computational and Mathematical Modeling of Neural Systems",
-      level: "Zaawansowany",
-      format: "Podręcznik / Kurs",
-      content: "Most łączący sztuczną inteligencję, matematykę i neurobiologię: kodowanie neuronalne, plastyczność synaptyczna Hebba i uczenie w sieciach biologicznych.",
-      url: "",
-      author: "Administrator",
-      status: "approved",
-      createdAt: "2026-10-25T12:15:00Z"
-    }
-  ],
-  tracks: [
-    {
-      id: "A",
-      code: "Projekt A",
-      name: "Człowiek biocyfrowo-robotyczny",
-      color: "#38bdf8",
-      goal: "Wspomaganie, naprawa i rozszerzanie możliwości ludzkiego organizmu.",
-      guidingQuestion: "Jak technologia może wspierać i rozszerzać możliwości człowieka?",
-      note: "",
-      sections: [
+      "id": "smat-1",
+      "categoryType": "FOUNDATION",
+      "targetId": "FND-1",
+      "topic": "Algebra liniowa, przestrzenie wektorowe, rachunek macierzowy i teoria operatorów.",
+      "title": "I. Matematyka: Gilbert Strang („Introduction to Linear Algebra”), Penrose („Road to Reality”) i podręczniki matematyki",
+      "level": "Podstawowy / Akademicki",
+      "format": "Biblioteka Projektu (PL / EN)",
+      "content": "Podręczniki matematyki i algebry liniowej na poziomie szkoły średniej i studiów (PL) oraz Gilbert Strang — „Introduction to Linear Algebra” (EN). Etap czytania: NAJPIERW (podstawy matematyki).",
+      "url": "https://math.mit.edu/~gs/linearalgebra/",
+      "links": [
         {
-          title: "Zakres badawczy",
-          items: [
+          "label": "🇬🇧 Gilbert Strang — Introduction to Linear Algebra (MIT 18.06 + materiały)",
+          "url": "https://math.mit.edu/~gs/linearalgebra/"
+        },
+        {
+          "label": "🇬🇧 MIT OCW 18.06 — Wykłady wideo prof. Gilberta Stranga z algebry liniowej",
+          "url": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/"
+        },
+        {
+          "label": "🇬🇧 OpenStax — Darmowe podręczniki matematyki i analizy (Calculus / Algebra)",
+          "url": "https://openstax.org/subjects/math"
+        },
+        {
+          "label": "🇵🇱 ZPE — Matematyka i algebra liniowa (po polsku)",
+          "url": "https://zpe.gov.pl/"
+        }
+      ],
+      "author": "Administrator",
+      "status": "approved",
+      "createdAt": "2026-10-25T12:00:00Z"
+    },
+    {
+      "id": "smat-1b",
+      "categoryType": "FOUNDATION",
+      "targetId": "FND-2",
+      "topic": "Architektura systemów komputerowych, systemy wbudowane, praca w czasie rzeczywistym (RTOS) i obliczenia rozproszone.",
+      "title": "I. Informatyka: Charles Petzold — „Kod. Ukryty język komputerów. Wydanie II” / „Code”",
+      "level": "Podstawowy (Etap 1: Najpierw)",
+      "format": "Biblioteka Projektu (PL / EN)",
+      "content": "Fundamentalna pozycja wyjaśniająca od podstaw, jak z bramek logicznych, przekaźników i tranzystorów powstaje komputer, pamięć i oprogramowanie. Pierwsza pozycja w kolejności czytania („Najpierw”).",
+      "url": "https://codehiddenlanguage.com/",
+      "links": [
+        {
+          "label": "🇬🇧 Charles Petzold — Code (Oficjalna strona książki z interaktywnymi układami)",
+          "url": "https://codehiddenlanguage.com/"
+        },
+        {
+          "label": "🇵🇱 Charles Petzold — Kod. Ukryty język komputerów. Wydanie II (Helion)",
+          "url": "https://helion.pl/"
+        },
+        {
+          "label": "🇬🇧 MIT OCW 6.006 — Introduction to Algorithms",
+          "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/"
+        }
+      ],
+      "author": "Administrator",
+      "status": "approved",
+      "createdAt": "2026-10-25T12:02:00Z"
+    },
+    {
+      "id": "smat-1c",
+      "categoryType": "FOUNDATION",
+      "targetId": "FND-3",
+      "topic": "Obliczenia naukowe w Pythonie (NumPy, SciPy, PyTorch, JAX) oraz symulacje numeryczne.",
+      "title": "I. Programowanie: Eric Matthes — „Python. Instrukcje dla programisty” / „Python Crash Course”",
+      "level": "Podstawowy (Etap 1: Najpierw)",
+      "format": "Biblioteka Projektu (PL / EN)",
+      "content": "Praktyczny podręcznik programowania w języku Python z ćwiczeniami i projektami. Obowiązkowa pozycja pierwszego etapu czytania („Najpierw”) przed przejściem do symulacji naukowych.",
+      "url": "https://ehmatthes.github.io/pcc_3e/",
+      "links": [
+        {
+          "label": "🇬🇧 Eric Matthes — Python Crash Course (Oficjalne materiały, kod i ćwiczenia)",
+          "url": "https://ehmatthes.github.io/pcc_3e/"
+        },
+        {
+          "label": "🇵🇱 Eric Matthes — Python. Instrukcje dla programisty (Wydawnictwo Helion)",
+          "url": "https://helion.pl/"
+        },
+        {
+          "label": "🇬🇧 Scientific Python Lectures (NumPy, SciPy, Matplotlib)",
+          "url": "https://lectures.scientific-python.org/"
+        },
+        {
+          "label": "🇬🇧 Brian2 — Symulator sieci neuronowych w Pythonie",
+          "url": "https://briansimulator.org/"
+        }
+      ],
+      "author": "Administrator",
+      "status": "approved",
+      "createdAt": "2026-10-25T12:03:00Z"
+    },
+    {
+      "id": "smat-2",
+      "categoryType": "FOUNDATION",
+      "targetId": "FND-4",
+      "topic": "Mechanika klasyczna, elektrodynamika i termodynamika układów otwartych (dalekich od równowagi).",
+      "title": "II. Fizyka i Komputery Kwantowe: Podręczniki fizyki ogólnej (PL), David J. Griffiths oraz Nielsen & Chuang (EN)",
+      "level": "Podstawowy → Zaawansowany",
+      "format": "Biblioteka Projektu (PL / EN)",
+      "content": "Polskojęzyczne: Akademickie podręczniki fizyki ogólnej i mechaniki kwantowej w polskich wydaniach. Anglojęzyczne (etap zaawansowany): David J. Griffiths — „Introduction to Quantum Mechanics” oraz Michael A. Nielsen, Isaac L. Chuang — „Quantum Computation and Quantum Information”.",
+      "url": "https://openstax.org/details/books/fizyka-dla-szk%C3%B3%C5%82-wy%C5%BCszych-tom-1",
+      "links": [
+        {
+          "label": "🇵🇱 OpenStax — Fizyka dla szkół wyższych (Tom 1–3, darmowy podręcznik po polsku)",
+          "url": "https://openstax.org/details/books/fizyka-dla-szk%C3%B3%C5%82-wy%C5%BCszych-tom-1"
+        },
+        {
+          "label": "🇬🇧 David J. Griffiths — Introduction to Quantum Mechanics (Cambridge University Press)",
+          "url": "https://www.cambridge.org/highereducation/books/introduction-to-quantum-mechanics/990799CA07A83FC5312402AF6860311E"
+        },
+        {
+          "label": "🇬🇧 Michael A. Nielsen, Isaac L. Chuang — Quantum Computation and Quantum Information",
+          "url": "https://www.cambridge.org/highereducation/books/quantum-computation-and-quantum-information/01E10196D0A682A6AEFFEA52D53BE9AE"
+        },
+        {
+          "label": "🇬🇧 The Feynman Lectures on Physics (Caltech — darmowy dostęp)",
+          "url": "https://www.feynmanlectures.caltech.edu/"
+        }
+      ],
+      "author": "Administrator",
+      "status": "approved",
+      "createdAt": "2026-10-25T12:05:00Z"
+    },
+    {
+      "id": "smat-4",
+      "categoryType": "FOUNDATION",
+      "targetId": "FND-5",
+      "topic": "Elektronika analogowa: wzmacniacze operacyjne, filtry aktywne, oscylatory i układy nieliniowe.",
+      "title": "II. Elektronika: Podręczniki podstaw elektroniki i układów cyfrowych (PL), Horowitz & Hill oraz ZPE",
+      "level": "Podstawowy / Zaawansowany",
+      "format": "Biblioteka Projektu (PL / EN)",
+      "content": "Podręczniki podstaw elektroniki i układów cyfrowych, wzmacniacze, oscylatory, filtry, przetworniki A/C i C/A oraz architektura bramek logicznych.",
+      "url": "https://zpe.gov.pl/",
+      "links": [
+        {
+          "label": "🇵🇱 Zintegrowana Platforma Edukacyjna (ZPE) — Elektronika i układy cyfrowe",
+          "url": "https://zpe.gov.pl/"
+        },
+        {
+          "label": "🇵🇱 OpenAGH — E-podręczniki z elektroniki",
+          "url": "https://open.agh.edu.pl/"
+        },
+        {
+          "label": "🇬🇧 All About Circuits — Darmowy podręcznik elektroniki analogowej i cyfrowej",
+          "url": "https://www.allaboutcircuits.com/textbook/"
+        },
+        {
+          "label": "🇬🇧 MIT OCW — Circuits and Electronics",
+          "url": "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/"
+        }
+      ],
+      "author": "Administrator",
+      "status": "approved",
+      "createdAt": "2026-10-25T12:12:00Z"
+    },
+    {
+      "id": "smat-4b",
+      "categoryType": "FOUNDATION",
+      "targetId": "FND-6",
+      "topic": "Biochemia: struktura i funkcja białek, enzymów, lipidów oraz kwasów nukleinowych (DNA/RNA).",
+      "title": "III. Chemia i Biochemia: OpenStax Chemistry 2e (EN) oraz akademickie podręczniki chemii ogólnej, organicznej i biochemii (PL/EN)",
+      "level": "Podstawowy / Akademicki (Etap 2: Następnie)",
+      "format": "Biblioteka Projektu (PL / EN)",
+      "content": "Polskojęzyczne: Akademickie podręczniki chemii ogólnej, organicznej i biochemii. Anglojęzyczne: OpenStax Chemistry 2e — podręcznik chemii ogólnej oraz akademickie podręczniki biochemii i biologii molekularnej.",
+      "url": "https://openstax.org/details/books/chemistry-2e",
+      "links": [
+        {
+          "label": "🇬🇧 OpenStax Chemistry 2e — Darmowy podręcznik chemii ogólnej online/PDF",
+          "url": "https://openstax.org/details/books/chemistry-2e"
+        },
+        {
+          "label": "🇬🇧 OpenStax Organic Chemistry — Darmowy podręcznik chemii organicznej",
+          "url": "https://openstax.org/details/books/organic-chemistry"
+        },
+        {
+          "label": "🇬🇧 NCBI Bookshelf — Biochemistry (Stryer / darmowe podręczniki biochemii)",
+          "url": "https://www.ncbi.nlm.nih.gov/books/"
+        },
+        {
+          "label": "🇵🇱 Księgarnia Naukowa PWN — Chemia ogólna, organiczna i biochemia",
+          "url": "https://ksiegarnia.pwn.pl/"
+        }
+      ],
+      "author": "Administrator",
+      "status": "approved",
+      "createdAt": "2026-10-25T12:13:00Z"
+    },
+    {
+      "id": "smat-3",
+      "categoryType": "FOUNDATION",
+      "targetId": "FND-7",
+      "topic": "Biologia komórki i biologia molekularna: replikacja, transkrypcja, translacja, sygnalizacja komórkowa.",
+      "title": "III. Biologia i Genetyka: Terence A. Brown („Genomy”), „Biologia Campbella” (PL) oraz OpenStax Biology 2e (EN)",
+      "level": "Podstawowy / Akademicki (Etap 2: Następnie)",
+      "format": "Biblioteka Projektu (PL / EN)",
+      "content": "Polskojęzyczne: 1. Terence A. Brown — „Genomy”, 2. „Biologia Campbella” — polskie wydanie. Anglojęzyczne: OpenStax Biology 2e — podręcznik biologii oraz akademickie podręczniki biologii molekularnej.",
+      "url": "https://openstax.org/details/books/biology-2e",
+      "links": [
+        {
+          "label": "🇬🇧 OpenStax Biology 2e — Darmowy podręcznik biologii online/PDF",
+          "url": "https://openstax.org/details/books/biology-2e"
+        },
+        {
+          "label": "🇬🇧 Terence A. Brown — Genomes (Darmowy dostęp w bazie NCBI Bookshelf)",
+          "url": "https://www.ncbi.nlm.nih.gov/books/NBK21128/"
+        },
+        {
+          "label": "🇵🇱 Terence A. Brown — Genomy & Biologia Campbella (Wydawnictwo Naukowe PWN / Rebis)",
+          "url": "https://ksiegarnia.pwn.pl/"
+        },
+        {
+          "label": "🇬🇧 NCBI Bookshelf — Molecular Biology of the Cell (Alberts)",
+          "url": "https://www.ncbi.nlm.nih.gov/books/"
+        }
+      ],
+      "author": "Administrator",
+      "status": "approved",
+      "createdAt": "2026-10-25T12:10:00Z"
+    },
+    {
+      "id": "smat-5",
+      "categoryType": "FOUNDATION",
+      "targetId": "FND-8",
+      "topic": "Głębokie sieci neuronowe (CNN, RNN, Transformery, Graph Neural Networks) oraz impulsowe sieci neuronowe (SNN).",
+      "title": "IV & V. Sztuczna Inteligencja i Neuronauka Obliczeniowa: Aurélien Géron („Hands-On ML”) oraz Dayan & Abbott („Theoretical Neuroscience”)",
+      "level": "Średniozaawansowany / Zaawansowany",
+      "format": "Biblioteka Projektu (PL / EN)",
+      "content": "Praktyczne uczenie maszynowe i głębokie sieci neuronowe (Géron — Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow) oraz matematyczne modelowanie sieci neuronalnych (Dayan & Abbott — Theoretical Neuroscience).",
+      "url": "https://github.com/ageron/handson-ml3",
+      "links": [
+        {
+          "label": "🇬🇧 Aurélien Géron — Hands-On Machine Learning (Oficjalne notebooki GitHub)",
+          "url": "https://github.com/ageron/handson-ml3"
+        },
+        {
+          "label": "🇬🇧 Peter Dayan, L. F. Abbott — Theoretical Neuroscience (MIT Press)",
+          "url": "https://mitpress.mit.edu/9780262541855/theoretical-neuroscience/"
+        },
+        {
+          "label": "🇬🇧 Neuromatch Academy — Computational Neuroscience & Deep Learning",
+          "url": "https://compneuro.neuromatch.io/"
+        },
+        {
+          "label": "🇵🇱 Aurélien Géron — Uczenie maszynowe z użyciem Scikit-Learn i TensorFlow (Helion)",
+          "url": "https://helion.pl/"
+        }
+      ],
+      "author": "Administrator",
+      "status": "approved",
+      "createdAt": "2026-10-25T12:15:00Z"
+    },
+    {
+      "id": "smat-a1",
+      "categoryType": "TRACK",
+      "targetId": "A",
+      "topic": "Medycyna regeneracyjna, protezy i sztuczne narządy.",
+      "title": "IV. Projekt A (Człowiek biocyfrowo-robotyczny): Kalat („Biologiczne podstawy psychologii”), OpenStax Anatomy & Physiology 2e, Géron („Hands-On ML”), biofizyka, robotyka i BCI",
+      "level": "Podstawowy → Zaawansowany",
+      "format": "Biblioteka Projektu (PL / EN)",
+      "content": "Polskojęzyczne: 1. James W. Kalat — Biologiczne podstawy psychologii, 2. Akademickie podręczniki anatomii i fizjologii człowieka, 3. Podręczniki biofizyki, biomechaniki i biomateriałów, 4. Podręczniki robotyki, elektroniki i układów sterowania. Anglojęzyczne: 5. OpenStax Anatomy and Physiology 2e, 6. Géron — Hands-On Machine Learning, 7. Podręczniki inżynierii tkankowej, neuroprotetyki i BCI.",
+      "url": "https://openstax.org/details/books/anatomy-and-physiology-2e",
+      "links": [
+        {
+          "label": "🇬🇧 OpenStax Anatomy and Physiology 2e (Darmowy podręcznik anatomii i fizjologii)",
+          "url": "https://openstax.org/details/books/anatomy-and-physiology-2e"
+        },
+        {
+          "label": "🇵🇱 James W. Kalat — Biologiczne podstawy psychologii (Wydawnictwo Naukowe PWN)",
+          "url": "https://ksiegarnia.pwn.pl/"
+        },
+        {
+          "label": "🇬🇧 Aurélien Géron — Hands-On Machine Learning (Scikit-Learn, Keras, TensorFlow)",
+          "url": "https://github.com/ageron/handson-ml3"
+        },
+        {
+          "label": "🇬🇧 MIT OCW — Introduction to Robotics & Control Systems",
+          "url": "https://ocw.mit.edu/courses/2-12-introduction-to-robotics-fall-2005/"
+        }
+      ],
+      "author": "Administrator",
+      "status": "approved",
+      "createdAt": "2026-10-25T12:18:00Z"
+    },
+    {
+      "id": "smat-b1",
+      "categoryType": "TRACK",
+      "targetId": "B",
+      "topic": "Neurobiologia i neuronauka obliczeniowa.",
+      "title": "V. Projekt B (Cyfrowy umysł): Kalat, Kandel, Squire, Dayan & Abbott, Izhikevich, Seung („Connectome”), Miller, Churchland & Sejnowski, Sandberg & Bostrom („Whole Brain Emulation”)",
+      "level": "Podstawowy → Zaawansowany",
+      "format": "Biblioteka Projektu (PL / EN)",
+      "content": "Pełna bibliografia Projektu B: od „Biologicznych podstaw psychologii” (Kalat), przez „Theoretical Neuroscience” (Dayan, Abbott), „Dynamical Systems in Neuroscience” (Izhikevich), „Connectome” (Seung), „Whole Brain Emulation: A Roadmap” (Sandberg, Bostrom), po „Principles of Neural Science” (Kandel), „Fundamental Neuroscience” (Squire) i „The Computational Brain” (Churchland, Sejnowski).",
+      "url": "https://www.izhikevich.org/publications/dsn.pdf",
+      "links": [
+        {
+          "label": "🇬🇧 Eugene M. Izhikevich — Dynamical Systems in Neuroscience (Darmowy PDF książki)",
+          "url": "https://www.izhikevich.org/publications/dsn.pdf"
+        },
+        {
+          "label": "🇬🇧 Anders Sandberg, Nick Bostrom — Whole Brain Emulation: A Roadmap (Pełny raport PDF)",
+          "url": "https://www.fhi.ox.ac.uk/brain-emulation-roadmap-report.pdf"
+        },
+        {
+          "label": "🇬🇧 Peter Dayan, L. F. Abbott — Theoretical Neuroscience (MIT Press)",
+          "url": "https://mitpress.mit.edu/9780262541855/theoretical-neuroscience/"
+        },
+        {
+          "label": "🇬🇧 Paul Miller — An Introductory Course in Computational Neuroscience (MIT Press)",
+          "url": "https://mitpress.mit.edu/9780262038256/an-introductory-course-in-computational-neuroscience/"
+        },
+        {
+          "label": "🇬🇧 Patricia S. Churchland, Terrence J. Sejnowski — The Computational Brain (MIT Press)",
+          "url": "https://mitpress.mit.edu/9780262531207/the-computational-brain/"
+        },
+        {
+          "label": "🇬🇧 Eric R. Kandel et al. — Principles of Neural Science & Larry Squire — Fundamental Neuroscience",
+          "url": "https://www.sciencedirect.com/book/9780123858702/fundamental-neuroscience"
+        },
+        {
+          "label": "🇬🇧 Sebastian Seung — Connectome (Seung Lab / MIT)",
+          "url": "https://seunglab.org/"
+        },
+        {
+          "label": "🇵🇱 James W. Kalat — Biologiczne podstawy psychologii (PWN)",
+          "url": "https://ksiegarnia.pwn.pl/"
+        }
+      ],
+      "author": "Administrator",
+      "status": "approved",
+      "createdAt": "2026-10-25T12:19:00Z"
+    },
+    {
+      "id": "smat-6",
+      "categoryType": "TRACK",
+      "targetId": "C",
+      "topic": "Elektronika analogowa i układy dynamiczne.",
+      "title": "Projekt C (Po polsku i angielsku): Elektronika analogowa, przetworniki ADC/DAC, Analog & Neuromorphic Computing",
+      "level": "Podstawowy / Akademicki",
+      "format": "Biblioteka uzupełniająca GOLEM 15",
+      "content": "Kolejność nauki: Elektronika analogowa → układy dynamiczne → modelowanie matematyczne → fizyczne modele neuronów → obliczenia neuromorficzne. Obejmuje wzmacniacze, oscylatory, filtry, sprzężenie zwrotne, przetworniki A/C i C/A oraz układy neuromorficzne.",
+      "url": "https://zpe.gov.pl/",
+      "links": [
+        {
+          "label": "Zintegrowana Platforma Edukacyjna (ZPE) — Elektronika",
+          "url": "https://zpe.gov.pl/"
+        },
+        {
+          "label": "Frontiers in Neuroscience — Neuromorphic Engineering",
+          "url": "https://www.frontiersin.org/journals/neuroscience/sections/neuromorphic-engineering"
+        },
+        {
+          "label": "arXiv — Neural and Evolutionary Computing (Neuromorphic & Analog NN)",
+          "url": "https://arxiv.org/list/cs.NE/recent"
+        },
+        {
+          "label": "MIT OCW — Nonlinear Dynamics and Chaos",
+          "url": "https://ocw.mit.edu/courses/18-385j-nonlinear-dynamics-and-chaos-fall-2014/"
+        }
+      ],
+      "author": "Administrator",
+      "status": "approved",
+      "createdAt": "2026-10-25T12:20:00Z"
+    },
+    {
+      "id": "smat-7",
+      "categoryType": "TRACK",
+      "targetId": "D",
+      "topic": "Biologia syntetyczna i edycja genomu.",
+      "title": "Projekt D (Po polsku i angielsku): Biologia komórki, embriologia, komórki macierzyste, inżynieria tkankowa i National Academies",
+      "level": "Zaawansowany / Badawczy",
+      "format": "Biblioteka uzupełniająca GOLEM 15",
+      "content": "Kolejność nauki: Biologia komórki → genetyka → embriologia → komórki macierzyste → inżynieria tkankowa → biologia syntetyczna i bioetyka. Obejmuje podręczniki akademickie oraz raporty National Academies o odpowiedzialnym rozwoju biologii syntetycznej.",
+      "url": "https://www.nationalacademies.org/",
+      "links": [
+        {
+          "label": "National Academies — Odpowiedzialny rozwój biologii syntetycznej",
+          "url": "https://www.nationalacademies.org/"
+        },
+        {
+          "label": "NCBI Bookshelf — Developmental Biology & Cell Biology",
+          "url": "https://www.ncbi.nlm.nih.gov/books/"
+        },
+        {
+          "label": "ISSCR — International Society for Stem Cell Research",
+          "url": "https://www.isscr.org/"
+        },
+        {
+          "label": "Nature — Synthetic Biology & Tissue Engineering",
+          "url": "https://www.nature.com/subjects/synthetic-biology"
+        }
+      ],
+      "author": "Administrator",
+      "status": "approved",
+      "createdAt": "2026-10-25T12:22:00Z"
+    },
+    {
+      "id": "smat-8",
+      "categoryType": "TRACK",
+      "targetId": "E",
+      "topic": "Filozofia nauki: dowód, hipoteza, teoria i granice modeli.",
+      "title": "Projekt E (Filozofia): Alan Chalmers, Thomas S. Kuhn, Michał Heller oraz filozofia starożytna, umysłu i bioetyka",
+      "level": "Podstawowy / Akademicki",
+      "format": "Biblioteka uzupełniająca GOLEM 15",
+      "content": "Po polsku: Alan Chalmers („Czym jest to, co zwiemy nauką?”), Thomas S. Kuhn („Struktura rewolucji naukowych”), Michał Heller („Filozofia nauki. Wprowadzenie”). Zastosowanie: ocena dowodów, rozróżnianie teorii i spekulacji, analiza tożsamości osobowej oraz etycznych konsekwencji tworzenia i modyfikowania organizmów.",
+      "url": "https://plato.stanford.edu/",
+      "links": [
+        {
+          "label": "Copernicus Center Press — Książki prof. Michała Hellera i filozofia nauki",
+          "url": "https://ccpress.pl/"
+        },
+        {
+          "label": "Stanford Encyclopedia of Philosophy (Filozofia nauki, umysłu i bioetyka)",
+          "url": "https://plato.stanford.edu/"
+        },
+        {
+          "label": "Wolne Lektury — Filozofia starożytna po polsku (Platon, Arystoteles, stoicy)",
+          "url": "https://wolnelektury.pl/katalog/gatunek/filozofia/"
+        },
+        {
+          "label": "Internet Encyclopedia of Philosophy (IEP)",
+          "url": "https://iep.utm.edu/"
+        }
+      ],
+      "author": "Administrator",
+      "status": "approved",
+      "createdAt": "2026-10-25T12:25:00Z"
+    },
+    {
+      "id": "smat-9",
+      "categoryType": "TRACK",
+      "targetId": "F",
+      "topic": "Wpływ mikrograwitacji na mięśnie, kości i układ krążenia.",
+      "title": "Projekt F (Człowiek w kosmosie): Darmowe źródła NASA i ESA oraz fizjologia kosmiczna i systemy podtrzymywania życia",
+      "level": "Podstawowy / Zaawansowany",
+      "format": "Biblioteka uzupełniająca GOLEM 15",
+      "content": "Kolejność nauki: Podstawy fizyki → mechanika orbitalna → technika kosmiczna → fizjologia kosmiczna → systemy podtrzymywania życia i habitaty. Darmowe źródła NASA i ESA dotyczące zdrowia człowieka w kosmosie, promieniowania, napędów, ECLSS i psychologii izolacji.",
+      "url": "https://www.nasa.gov/reference/fundamentals-of-human-health/",
+      "links": [
+        {
+          "label": "NASA — Zdrowie człowieka w kosmosie (Fundamentals of Human Health)",
+          "url": "https://www.nasa.gov/reference/fundamentals-of-human-health/"
+        },
+        {
+          "label": "ESA — Edukacja kosmiczna (Teach with Space)",
+          "url": "https://education.esa.int/teach-with-space/"
+        },
+        {
+          "label": "ESA — Eksploracja załogowa i robotyczna (Human and Robotic Exploration)",
+          "url": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration"
+        },
+        {
+          "label": "NASA Technical Reports Server (NTRS — publikacje inżynieryjne i medyczne)",
+          "url": "https://ntrs.nasa.gov/"
+        }
+      ],
+      "author": "Administrator",
+      "status": "approved",
+      "createdAt": "2026-10-25T12:28:00Z"
+    },
+    {
+      "id": "smat-10",
+      "categoryType": "TRACK",
+      "targetId": "G",
+      "topic": "Ochrona przyrody, odbudowa ekosystemów i renaturyzacja.",
+      "title": "Projekt G (Człowiek na Ziemi): Jan Krystek („Ochrona środowiska dla inżynierów”), Politechnika Śląska i ESA Education",
+      "level": "Podstawowy / Inżynierski",
+      "format": "Biblioteka uzupełniająca GOLEM 15",
+      "content": "Kolejność nauki: Podstawy ekologii → funkcjonowanie ekosystemów → presje środowiskowe → technologie ochronne → ekonomia i polityka środowiskowa. Obejmuje ochronę wód, powietrza i gleby, OZE, gospodarkę obiegu zamkniętego, LCA oraz satelitarny monitoring środowiska i AI.",
+      "url": "https://www.polsl.pl/",
+      "links": [
+        {
+          "label": "ESA Education — Edukacja o Ziemi, klimacie i obserwacji środowiska",
+          "url": "https://education.esa.int/teach-with-space/"
+        },
+        {
+          "label": "Politechnika Śląska — Materiały dot. podstaw ochrony środowiska",
+          "url": "https://www.polsl.pl/"
+        },
+        {
+          "label": "Jan Krystek — Ochrona środowiska dla inżynierów (PWN)",
+          "url": "https://ksiegarnia.pwn.pl/"
+        },
+        {
+          "label": "Europejska Agencja Środowiska (EEA — raporty, klimat, GOZ, LCA)",
+          "url": "https://www.eea.europa.eu/pl"
+        }
+      ],
+      "author": "Administrator",
+      "status": "approved",
+      "createdAt": "2026-10-25T12:30:00Z"
+    }
+  ],
+  "supplementaryLibrary": {
+    "title": "BIBLIOTEKA PROJEKTU GOLEM 15 — Literatura podstawowa (I–VI) oraz uzupełniająca (Projekty C–G)",
+    "description": "Kompletna bibliografia polsko- i anglojęzyczna: Wspólne podstawy (I. Matematyka i Informatyka, II. Fizyka i Komputery Kwantowe, III. Chemia, Biologia i Genetyka), IV. Projekt A, V. Projekt B, VI. Kolejność czytania oraz Biblioteka uzupełniająca do Projektów C, D, E, F i G wraz z bezpośrednimi odnośnikami.",
+    "readingOrder": {
+      "title": "VI. KOLEJNOŚĆ CZYTANIA — Plan lektur krok po kroku",
+      "principle": "Zasada: najpierw jedna książka podstawowa z aktualnej dziedziny, potem ćwiczenia i dopiero kolejna pozycja. Pełne odwzorowanie ludzkiego mózgu i przeniesienie umysłu pozostają niezrealizowanymi celami badawczymi.",
+      "stages": [
+        {
+          "stage": "1. Najpierw (Fundamenty obliczeń, programowania, matematyki i fizyki)",
+          "items": [
+            "Charles Petzold — *Kod. Ukryty język komputerów. Wydanie II* / *Code* — [Strona książki Code](https://codehiddenlanguage.com/) | [Helion](https://helion.pl/)",
+            "Eric Matthes — *Python. Instrukcje dla programisty* / *Python Crash Course* — [Materiały i ćwiczenia](https://ehmatthes.github.io/pcc_3e/) | [Helion](https://helion.pl/)",
+            "Podstawy matematyki (i algebry liniowej) — [OpenStax Math](https://openstax.org/subjects/math) | [Gilbert Strang MIT 18.06](https://math.mit.edu/~gs/linearalgebra/)",
+            "Podręcznik fizyki ogólnej — [OpenStax Fizyka dla szkół wyższych Tom 1–3 (PL)](https://openstax.org/details/books/fizyka-dla-szk%C3%B3%C5%82-wy%C5%BCszych-tom-1)"
+          ]
+        },
+        {
+          "stage": "2. Następnie (Genomy, chemia, biologia i biologiczne podstawy psychologii)",
+          "items": [
+            "Terence A. Brown — *Genomy* — [NCBI Genomes](https://www.ncbi.nlm.nih.gov/books/NBK21128/) | [PWN](https://ksiegarnia.pwn.pl/)",
+            "Podstawy chemii, biologii i biochemii — [OpenStax Chemistry 2e](https://openstax.org/details/books/chemistry-2e) | [OpenStax Biology 2e](https://openstax.org/details/books/biology-2e) | [Biologia Campbella](https://ksiegarnia.pwn.pl/)",
+            "James W. Kalat — *Biologiczne podstawy psychologii* — [Wydawnictwo Naukowe PWN](https://ksiegarnia.pwn.pl/)"
+          ]
+        },
+        {
+          "stage": "3. Później (Neuronauka obliczeniowa, układy dynamiczne, konektomika i WBE)",
+          "items": [
+            "Peter Dayan, L. F. Abbott — *Theoretical Neuroscience: Computational and Mathematical Modeling of Neural Systems* — [MIT Press](https://mitpress.mit.edu/9780262541855/theoretical-neuroscience/)",
+            "Eugene M. Izhikevich — *Dynamical Systems in Neuroscience* — [Pełny PDF autora](https://www.izhikevich.org/publications/dsn.pdf)",
+            "Sebastian Seung — *Connectome: How the Brain's Wiring Makes Us Who We Are* — [Seung Lab MIT](https://seunglab.org/)",
+            "Anders Sandberg, Nick Bostrom — *Whole Brain Emulation: A Roadmap* — [Pełny raport PDF (FHI Oxford)](https://www.fhi.ox.ac.uk/brain-emulation-roadmap-report.pdf)"
+          ]
+        },
+        {
+          "stage": "4. Na zaawansowanym etapie (Neurobiologia kliniczna/akademicka i obliczenia kwantowe)",
+          "items": [
+            "Eric R. Kandel i współautorzy — *Principles of Neural Science* — [McGraw Hill](https://www.mheducation.com/)",
+            "Larry Squire i współautorzy — *Fundamental Neuroscience* — [ScienceDirect](https://www.sciencedirect.com/book/9780123858702/fundamental-neuroscience)",
+            "Patricia S. Churchland, Terrence J. Sejnowski — *The Computational Brain* — [MIT Press](https://mitpress.mit.edu/9780262531207/the-computational-brain/)",
+            "David J. Griffiths — *Introduction to Quantum Mechanics* — [Cambridge University Press](https://www.cambridge.org/highereducation/books/introduction-to-quantum-mechanics/990799CA07A83FC5312402AF6860311E)",
+            "Michael A. Nielsen, Isaac L. Chuang — *Quantum Computation and Quantum Information* — [Cambridge University Press](https://www.cambridge.org/highereducation/books/quantum-computation-and-quantum-information/01E10196D0A682A6AEFFEA52D53BE9AE)"
+          ]
+        }
+      ]
+    },
+    "rules": [
+      "Zasada czytania: najpierw jedna książka podstawowa z aktualnej dziedziny, potem ćwiczenia i dopiero kolejna pozycja.",
+      "Najpierw korzystać z materiałów bezpłatnych (np. OpenStax, ZPE, NCBI Bookshelf, NASA, ESA).",
+      "Książki specjalistyczne kupować dopiero po poznaniu podstaw danego obszaru.",
+      "Przed zakupem sprawdzać dokładny tytuł, autora, wydanie i dostępność polskiego przekładu.",
+      "W szybko rozwijających się dziedzinach korzystać również z aktualnych przeglądów naukowych i dokumentacji instytucji badawczych.",
+      "Rozróżniać wiedzę potwierdzoną, aktywne badania, hipotezy i spekulacje (pełne odwzorowanie ludzkiego mózgu i przeniesienie umysłu pozostają niezrealizowanymi celami badawczymi).",
+      "Traktować bibliografię jako zasób długoterminowy, a nie listę lektur do przeczytania w całości od razu."
+    ],
+    "projects": [
+      {
+        "trackId": "FND-1",
+        "title": "I. MATEMATYKA I INFORMATYKA (Wspólne podstawy)",
+        "sequenceLabel": "Etap czytania",
+        "sequence": "Najpierw: Petzold (Kod) → Matthes (Python. Instrukcje dla programisty) → Podstawy matematyki i algebry liniowej (Strang).",
+        "links": [
+          {
+            "label": "🇬🇧 Charles Petzold — Code (Strona książki i symulacje)",
+            "url": "https://codehiddenlanguage.com/"
+          },
+          {
+            "label": "🇬🇧 Eric Matthes — Python Crash Course (Zasoby i ćwiczenia)",
+            "url": "https://ehmatthes.github.io/pcc_3e/"
+          },
+          {
+            "label": "🇬🇧 Gilbert Strang — Introduction to Linear Algebra (MIT)",
+            "url": "https://math.mit.edu/~gs/linearalgebra/"
+          },
+          {
+            "label": "🇵🇱 Wydawnictwo Helion (Polskie wydania Petzolda i Matthesa)",
+            "url": "https://helion.pl/"
+          },
+          {
+            "label": "🇬🇧 OpenStax Mathematics (Darmowe podręczniki matematyki)",
+            "url": "https://openstax.org/subjects/math"
+          }
+        ],
+        "groups": [
+          {
+            "heading": "Polskojęzyczne",
+            "items": [
+              "1. Charles Petzold — *Kod. Ukryty język komputerów. Wydanie II.* — [Wydawnictwo Helion](https://helion.pl/)",
+              "2. Eric Matthes — *Python. Instrukcje dla programisty.* — [Wydawnictwo Helion](https://helion.pl/)",
+              "3. Podręczniki matematyki i algebry liniowej na poziomie szkoły średniej i studiów — [ZPE Matematyka](https://zpe.gov.pl/) | [OpenAGH](https://open.agh.edu.pl/)"
+            ]
+          },
+          {
+            "heading": "Anglojęzyczne",
+            "items": [
+              "4. Gilbert Strang — *Introduction to Linear Algebra.* — [MIT Linear Algebra](https://math.mit.edu/~gs/linearalgebra/)",
+              "5. Charles Petzold — *Code.* — [codehiddenlanguage.com](https://codehiddenlanguage.com/)",
+              "6. Eric Matthes — *Python Crash Course.* — [ehmatthes.github.io/pcc_3e](https://ehmatthes.github.io/pcc_3e/)"
+            ]
+          }
+        ]
+      },
+      {
+        "trackId": "FND-4",
+        "title": "II. FIZYKA I KOMPUTERY KWANTOWE (Wspólne podstawy)",
+        "sequenceLabel": "Etap czytania",
+        "sequence": "Najpierw: Podręcznik fizyki ogólnej i podstaw elektroniki → Na zaawansowanym etapie: Griffiths (Introduction to Quantum Mechanics) oraz Nielsen i Chuang (Quantum Computation and Quantum Information).",
+        "links": [
+          {
+            "label": "🇵🇱 OpenStax — Fizyka dla szkół wyższych (Tom 1–3 po polsku, darmowy)",
+            "url": "https://openstax.org/details/books/fizyka-dla-szk%C3%B3%C5%82-wy%C5%BCszych-tom-1"
+          },
+          {
+            "label": "🇬🇧 David J. Griffiths — Introduction to Quantum Mechanics (CUP)",
+            "url": "https://www.cambridge.org/highereducation/books/introduction-to-quantum-mechanics/990799CA07A83FC5312402AF6860311E"
+          },
+          {
+            "label": "🇬🇧 Michael A. Nielsen, Isaac L. Chuang — Quantum Computation and Quantum Information",
+            "url": "https://www.cambridge.org/highereducation/books/quantum-computation-and-quantum-information/01E10196D0A682A6AEFFEA52D53BE9AE"
+          },
+          {
+            "label": "🇵🇱 ZPE / OpenAGH — Podstawy elektroniki i układów cyfrowych",
+            "url": "https://zpe.gov.pl/"
+          }
+        ],
+        "groups": [
+          {
+            "heading": "Polskojęzyczne",
+            "items": [
+              "1. Akademickie podręczniki fizyki ogólnej i mechaniki kwantowej w polskich wydaniach — [OpenStax Fizyka PL](https://openstax.org/details/books/fizyka-dla-szk%C3%B3%C5%82-wy%C5%BCszych-tom-1) | [PWN](https://ksiegarnia.pwn.pl/)",
+              "2. Podręczniki podstaw elektroniki i układów cyfrowych — [ZPE Elektronika](https://zpe.gov.pl/) | [OpenAGH](https://open.agh.edu.pl/)"
+            ]
+          },
+          {
+            "heading": "Anglojęzyczne",
+            "items": [
+              "3. David J. Griffiths — *Introduction to Quantum Mechanics.* — [Cambridge University Press](https://www.cambridge.org/highereducation/books/introduction-to-quantum-mechanics/990799CA07A83FC5312402AF6860311E)",
+              "4. Michael A. Nielsen, Isaac L. Chuang — *Quantum Computation and Quantum Information.* — [Cambridge University Press](https://www.cambridge.org/highereducation/books/quantum-computation-and-quantum-information/01E10196D0A682A6AEFFEA52D53BE9AE)"
+            ]
+          }
+        ]
+      },
+      {
+        "trackId": "FND-7",
+        "title": "III. CHEMIA, BIOLOGIA I GENETYKA (Wspólne podstawy)",
+        "sequenceLabel": "Etap czytania",
+        "sequence": "Następnie (po podstawach matematyki, fizyki i informatyki): Brown (Genomy) → Podstawy chemii, biologii i biochemii (OpenStax Chemistry 2e, OpenStax Biology 2e, Biologia Campbella).",
+        "links": [
+          {
+            "label": "🇬🇧 OpenStax Chemistry 2e — Darmowy podręcznik chemii ogólnej",
+            "url": "https://openstax.org/details/books/chemistry-2e"
+          },
+          {
+            "label": "🇬🇧 OpenStax Biology 2e — Darmowy podręcznik biologii",
+            "url": "https://openstax.org/details/books/biology-2e"
+          },
+          {
+            "label": "🇬🇧 Terence A. Brown — Genomes (NCBI Bookshelf)",
+            "url": "https://www.ncbi.nlm.nih.gov/books/NBK21128/"
+          },
+          {
+            "label": "🇵🇱 Terence A. Brown „Genomy” & „Biologia Campbella” (PWN / Rebis)",
+            "url": "https://ksiegarnia.pwn.pl/"
+          }
+        ],
+        "groups": [
+          {
+            "heading": "Polskojęzyczne",
+            "items": [
+              "1. Terence A. Brown — *Genomy.* — [Wydawnictwo Naukowe PWN](https://ksiegarnia.pwn.pl/)",
+              "2. *Biologia Campbella* — polskie wydanie — [Księgarnia PWN / Rebis](https://ksiegarnia.pwn.pl/)",
+              "3. Akademickie podręczniki chemii ogólnej, organicznej i biochemii — [PWN Naukowe](https://ksiegarnia.pwn.pl/) | [ZPE Chemia](https://zpe.gov.pl/)"
+            ]
+          },
+          {
+            "heading": "Anglojęzyczne",
+            "items": [
+              "4. *OpenStax Chemistry 2e* — podręcznik chemii ogólnej: [https://openstax.org/details/books/chemistry-2e](https://openstax.org/details/books/chemistry-2e)",
+              "5. *OpenStax Biology 2e* — podręcznik biologii: [https://openstax.org/details/books/biology-2e](https://openstax.org/details/books/biology-2e)",
+              "6. Akademickie podręczniki biochemii i biologii molekularnej — [NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/)"
+            ]
+          }
+        ]
+      },
+      {
+        "trackId": "A",
+        "title": "IV. PROJEKT A — CZŁOWIEK BIOCYFROWO-ROBOTYCZNY",
+        "sequenceLabel": "Kolejność nauki",
+        "sequence": "Anatomia, fizjologia i biologiczne podstawy psychologii (Kalat, OpenStax Anatomy & Physiology 2e) → Biofizyka, biomechanika i biomateriały → Robotyka, elektronika, sterowanie i uczenie maszynowe (Géron) → Inżynieria tkankowa, neuroprotetyka i interfejsy mózg–komputer (BCI).",
+        "links": [
+          {
+            "label": "🇬🇧 OpenStax Anatomy and Physiology 2e (Darmowy podręcznik online/PDF)",
+            "url": "https://openstax.org/details/books/anatomy-and-physiology-2e"
+          },
+          {
+            "label": "🇬🇧 Aurélien Géron — Hands-On Machine Learning (Scikit-Learn, Keras, TensorFlow)",
+            "url": "https://github.com/ageron/handson-ml3"
+          },
+          {
+            "label": "🇵🇱 James W. Kalat — Biologiczne podstawy psychologii (PWN)",
+            "url": "https://ksiegarnia.pwn.pl/"
+          },
+          {
+            "label": "🇬🇧 MIT OCW — Introduction to Robotics & Biomechanics",
+            "url": "https://ocw.mit.edu/courses/2-12-introduction-to-robotics-fall-2005/"
+          }
+        ],
+        "groups": [
+          {
+            "heading": "Polskojęzyczne",
+            "items": [
+              "1. James W. Kalat — *Biologiczne podstawy psychologii.* — [Wydawnictwo Naukowe PWN](https://ksiegarnia.pwn.pl/)",
+              "2. Akademickie podręczniki anatomii i fizjologii człowieka — [PWN / PZWL](https://ksiegarnia.pwn.pl/)",
+              "3. Akademickie podręczniki biofizyki, biomechaniki i biomateriałów — [OpenAGH](https://open.agh.edu.pl/) | [PWN](https://ksiegarnia.pwn.pl/)",
+              "4. Podręczniki robotyki, elektroniki i układów sterowania — [ZPE](https://zpe.gov.pl/) | [PWN](https://ksiegarnia.pwn.pl/)"
+            ]
+          },
+          {
+            "heading": "Anglojęzyczne",
+            "items": [
+              "5. *OpenStax Anatomy and Physiology 2e.* — [https://openstax.org/details/books/anatomy-and-physiology-2e](https://openstax.org/details/books/anatomy-and-physiology-2e)",
+              "6. Géron — *Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow.* — [GitHub ageron/handson-ml3](https://github.com/ageron/handson-ml3)",
+              "7. Akademickie podręczniki inżynierii tkankowej, neuroprotetyki i interfejsów mózg–komputer — [NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/) | [Physiological Reviews BCI](https://doi.org/10.1152/physrev.00027.2016)"
+            ]
+          }
+        ]
+      },
+      {
+        "trackId": "B",
+        "title": "V. PROJEKT B — CYFROWY UMYSŁ",
+        "sequenceLabel": "Kolejność czytania (Etapy 2 → 3 → 4)",
+        "sequence": "Następnie: Kalat (Biologiczne podstawy psychologii) → Później: Dayan & Abbott (Theoretical Neuroscience), Izhikevich (Dynamical Systems in Neuroscience), Seung (Connectome), Sandberg & Bostrom (Whole Brain Emulation: A Roadmap) → Na zaawansowanym etapie: Kandel (Principles of Neural Science), Squire (Fundamental Neuroscience), Churchland & Sejnowski (The Computational Brain).",
+        "links": [
+          {
+            "label": "🇬🇧 Eugene M. Izhikevich — Dynamical Systems in Neuroscience (Darmowy PDF autora)",
+            "url": "https://www.izhikevich.org/publications/dsn.pdf"
+          },
+          {
+            "label": "🇬🇧 Anders Sandberg, Nick Bostrom — Whole Brain Emulation: A Roadmap (PDF)",
+            "url": "https://www.fhi.ox.ac.uk/brain-emulation-roadmap-report.pdf"
+          },
+          {
+            "label": "🇬🇧 Peter Dayan, L. F. Abbott — Theoretical Neuroscience (MIT Press)",
+            "url": "https://mitpress.mit.edu/9780262541855/theoretical-neuroscience/"
+          },
+          {
+            "label": "🇬🇧 Paul Miller — An Introductory Course in Computational Neuroscience",
+            "url": "https://mitpress.mit.edu/9780262038256/an-introductory-course-in-computational-neuroscience/"
+          },
+          {
+            "label": "🇬🇧 Patricia S. Churchland, Terrence J. Sejnowski — The Computational Brain",
+            "url": "https://mitpress.mit.edu/9780262531207/the-computational-brain/"
+          },
+          {
+            "label": "🇬🇧 Sebastian Seung — Connectome (Seung Lab MIT)",
+            "url": "https://seunglab.org/"
+          },
+          {
+            "label": "🇬🇧 Larry Squire et al. — Fundamental Neuroscience (ScienceDirect)",
+            "url": "https://www.sciencedirect.com/book/9780123858702/fundamental-neuroscience"
+          }
+        ],
+        "groups": [
+          {
+            "heading": "Polskojęzyczne",
+            "items": [
+              "1. James W. Kalat — *Biologiczne podstawy psychologii.* — [Wydawnictwo Naukowe PWN](https://ksiegarnia.pwn.pl/)",
+              "2. Podręczniki neurobiologii i fizjologii układu nerwowego — [PWN Naukowe](https://ksiegarnia.pwn.pl/)",
+              "3. Podręczniki psychologii poznawczej — [PWN Naukowe](https://ksiegarnia.pwn.pl/)",
+              "4. Wprowadzenia do filozofii umysłu i problemu świadomości — [Centrum Kopernika / CCPress](https://ccpress.pl/)"
+            ]
+          },
+          {
+            "heading": "Anglojęzyczne",
+            "items": [
+              "5. Eric R. Kandel i współautorzy — *Principles of Neural Science.* — [McGraw Hill](https://www.mheducation.com/)",
+              "6. Larry Squire i współautorzy — *Fundamental Neuroscience.* — [ScienceDirect](https://www.sciencedirect.com/book/9780123858702/fundamental-neuroscience)",
+              "7. Peter Dayan, L. F. Abbott — *Theoretical Neuroscience: Computational and Mathematical Modeling of Neural Systems.* — [MIT Press](https://mitpress.mit.edu/9780262541855/theoretical-neuroscience/)",
+              "8. Eugene M. Izhikevich — *Dynamical Systems in Neuroscience.* — [Pełny PDF autora](https://www.izhikevich.org/publications/dsn.pdf)",
+              "9. Sebastian Seung — *Connectome: How the Brain's Wiring Makes Us Who We Are.* — [Seung Lab MIT](https://seunglab.org/)",
+              "10. Paul Miller — *An Introductory Course in Computational Neuroscience.* — [MIT Press](https://mitpress.mit.edu/9780262038256/an-introductory-course-in-computational-neuroscience/)",
+              "11. Patricia S. Churchland, Terrence J. Sejnowski — *The Computational Brain.* — [MIT Press](https://mitpress.mit.edu/9780262531207/the-computational-brain/)",
+              "12. Anders Sandberg, Nick Bostrom — *Whole Brain Emulation: A Roadmap.* — [Pełny raport PDF](https://www.fhi.ox.ac.uk/brain-emulation-roadmap-report.pdf)"
+            ]
+          }
+        ]
+      },
+      {
+        "trackId": "C",
+        "title": "Projekt C — Maszyny analogowe i obliczenia fizyczne (Biblioteka uzupełniająca)",
+        "sequenceLabel": "Kolejność nauki",
+        "sequence": "Elektronika analogowa → układy dynamiczne → modelowanie matematyczne → fizyczne modele neuronów → obliczenia neuromorficzne.",
+        "links": [
+          {
+            "label": "🇵🇱 Zintegrowana Platforma Edukacyjna (ZPE) — Elektronika",
+            "url": "https://zpe.gov.pl/"
+          },
+          {
+            "label": "🇵🇱 OpenAGH — E-podręczniki z elektroniki i fizyki",
+            "url": "https://open.agh.edu.pl/"
+          },
+          {
+            "label": "🇬🇧 Frontiers in Neuroscience — Neuromorphic Engineering",
+            "url": "https://www.frontiersin.org/journals/neuroscience/sections/neuromorphic-engineering"
+          },
+          {
+            "label": "🇬🇧 arXiv — Neuromorphic Computing & Analog Neural Networks",
+            "url": "https://arxiv.org/list/cs.NE/recent"
+          },
+          {
+            "label": "🇬🇧 MIT OCW — Circuits & Electronics",
+            "url": "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/"
+          }
+        ],
+        "groups": [
+          {
+            "heading": "Po polsku",
+            "items": [
+              "Podręczniki akademickie z elektroniki analogowej: wzmacniacze, oscylatory, filtry, sprzężenie zwrotne i układy dynamiczne — [E-podręczniki OpenAGH](https://open.agh.edu.pl/)",
+              "Materiały dydaktyczne o przetwornikach analogowo-cyfrowych (ADC) i cyfrowo-analogowych (DAC) — [Materiały ZPE](https://zpe.gov.pl/)",
+              "Zintegrowana Platforma Edukacyjna — punkt wyjścia do szukania materiałów o elektronice: [https://zpe.gov.pl/](https://zpe.gov.pl/)"
+            ]
+          },
+          {
+            "heading": "Po angielsku",
+            "items": [
+              "Materiały techniczne dotyczące analog computing — [MIT OpenCourseWare Electronics](https://ocw.mit.edu/search/?q=analog+computing)",
+              "Materiały badawcze dotyczące neuromorphic computing i analog neural networks — [Frontiers in Neuromorphic Engineering](https://www.frontiersin.org/journals/neuroscience/sections/neuromorphic-engineering)",
+              "Publikacje o fizycznych modelach neuronów oraz analogowych i hybrydowych procesorach — [arXiv cs.NE](https://arxiv.org/list/cs.NE/recent) | [Neuronal Dynamics (EPFL)](https://neuronaldynamics.epfl.ch/)"
+            ]
+          }
+        ]
+      },
+      {
+        "trackId": "D",
+        "title": "Projekt D — „Frankenstein”: biotechnologia i tworzenie organizmów (Biblioteka uzupełniająca)",
+        "sequenceLabel": "Kolejność nauki",
+        "sequence": "Biologia komórki → genetyka → embriologia → komórki macierzyste → inżynieria tkankowa → biologia syntetyczna i bioetyka.",
+        "links": [
+          {
+            "label": "🇬🇧 National Academies — Responsible Development of Synthetic Biology",
+            "url": "https://www.nationalacademies.org/"
+          },
+          {
+            "label": "🇬🇧 NCBI Bookshelf — Darmowe podręczniki biologii komórki, genetyki i embriologii",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          },
+          {
+            "label": "🇬🇧 ISSCR — International Society for Stem Cell Research",
+            "url": "https://www.isscr.org/"
+          },
+          {
+            "label": "🇬🇧 Nature Portfolio — Synthetic Biology & Tissue Engineering",
+            "url": "https://www.nature.com/subjects/synthetic-biology"
+          },
+          {
+            "label": "🇵🇱 ZPE — Biologia komórki, genetyka i biotechnologia",
+            "url": "https://zpe.gov.pl/"
+          }
+        ],
+        "groups": [
+          {
+            "heading": "Po polsku",
+            "items": [
+              "Podręczniki akademickie z biologii komórki, genetyki i biologii rozwoju — [ZPE Biologia](https://zpe.gov.pl/) | [Katalog NUKAT](https://katalogi.bn.org.pl/)",
+              "Podręczniki z embriologii i komórek macierzystych — [PWN Naukowe — Biologia i Medycyna](https://ksiegarnia.pwn.pl/)",
+              "Literatura o inżynierii tkankowej, medycynie regeneracyjnej i bioetyce — [Komitet Bioetyki PAN](https://bioetyka.pan.pl/)"
+            ]
+          },
+          {
+            "heading": "Po angielsku",
+            "items": [
+              "National Academies — materiały o odpowiedzialnym rozwoju biologii syntetycznej: [https://www.nationalacademies.org/](https://www.nationalacademies.org/)",
+              "Publikacje akademickie o stem cells, developmental biology, tissue engineering i synthetic biology — [NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/) | [ISSCR](https://www.isscr.org/) | [Nature Synthetic Biology](https://www.nature.com/subjects/synthetic-biology)"
+            ]
+          }
+        ]
+      },
+      {
+        "trackId": "E",
+        "title": "Projekt E — Filozofia (Biblioteka uzupełniająca)",
+        "sequenceLabel": "Zastosowanie",
+        "sequence": "Ocena dowodów, rozróżnianie teorii i spekulacji, analiza tożsamości osobowej oraz etycznych konsekwencji tworzenia i modyfikowania organizmów.",
+        "links": [
+          {
+            "label": "🇵🇱 Copernicus Center Press (Michał Heller — Filozofia nauki)",
+            "url": "https://ccpress.pl/"
+          },
+          {
+            "label": "🇵🇱 Centrum Kopernika Badań Interdyscyplinarnych (Wykłady i kursy)",
+            "url": "https://www.copernicuscenter.edu.pl/"
+          },
+          {
+            "label": "🇵🇱 Wolne Lektury — Filozofia starożytna (Platon, Arystoteles, stoicy)",
+            "url": "https://wolnelektury.pl/katalog/gatunek/filozofia/"
+          },
+          {
+            "label": "🇬🇧 Stanford Encyclopedia of Philosophy (SEP)",
+            "url": "https://plato.stanford.edu/"
+          },
+          {
+            "label": "🇬🇧 Internet Encyclopedia of Philosophy (IEP)",
+            "url": "https://iep.utm.edu/"
+          }
+        ],
+        "groups": [
+          {
+            "heading": "Po polsku",
+            "items": [
+              "Alan Chalmers — *Czym jest to, co zwiemy nauką?* — [Katalog Biblioteki Narodowej](https://katalogi.bn.org.pl/)",
+              "Thomas S. Kuhn — *Struktura rewolucji naukowych.* — [Wydawnictwo PWN / Aletheia](https://ksiegarnia.pwn.pl/)",
+              "Michał Heller — *Filozofia nauki. Wprowadzenie.* — [Copernicus Center Press](https://ccpress.pl/)"
+            ]
+          },
+          {
+            "heading": "Obszary do dalszego uzupełnienia",
+            "items": [
+              "Filozofia starożytna: Platon, Arystoteles i stoicy — [Wolne Lektury: Filozofia](https://wolnelektury.pl/katalog/gatunek/filozofia/) | [SEP Ancient Philosophy](https://plato.stanford.edu/)",
+              "Filozofia umysłu i problem świadomości — [SEP Philosophy of Mind](https://plato.stanford.edu/entries/mind-identity/) | [Centrum Kopernika](https://www.copernicuscenter.edu.pl/)",
+              "Filozofia techniki, bioetyka i etyka środowiskowa — [SEP Philosophy of Technology](https://plato.stanford.edu/entries/technology/) | [SEP Bioethics](https://plato.stanford.edu/entries/feminist-bioethics/)"
+            ]
+          }
+        ]
+      },
+      {
+        "trackId": "F",
+        "title": "Projekt F — Człowiek w kosmosie (Biblioteka uzupełniająca)",
+        "sequenceLabel": "Kolejność nauki",
+        "sequence": "Podstawy fizyki → mechanika orbitalna → technika kosmiczna → fizjologia kosmiczna → systemy podtrzymywania życia i habitaty.",
+        "links": [
+          {
+            "label": "🚀 NASA — Zdrowie człowieka w kosmosie (Fundamentals of Human Health)",
+            "url": "https://www.nasa.gov/reference/fundamentals-of-human-health/"
+          },
+          {
+            "label": "🛰️ ESA — Edukacja kosmiczna (Teach with Space)",
+            "url": "https://education.esa.int/teach-with-space/"
+          },
+          {
+            "label": "👩‍🚀 ESA — Eksploracja załogowa (Human and Robotic Exploration)",
+            "url": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration"
+          },
+          {
+            "label": "📑 NASA Technical Reports Server (NTRS — napędy, ECLSS, habitaty)",
+            "url": "https://ntrs.nasa.gov/"
+          },
+          {
+            "label": "🌱 MELiSSA Foundation — Systemy podtrzymywania życia (BLSS)",
+            "url": "https://www.melissafoundation.org/"
+          }
+        ],
+        "groups": [
+          {
+            "heading": "Darmowe źródła",
+            "items": [
+              "NASA — zdrowie człowieka w kosmosie: [https://www.nasa.gov/reference/fundamentals-of-human-health/](https://www.nasa.gov/reference/fundamentals-of-human-health/)",
+              "ESA — edukacja kosmiczna: [https://education.esa.int/teach-with-space/](https://education.esa.int/teach-with-space/)",
+              "ESA — eksploracja załogowa: [https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration](https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration)"
+            ]
+          },
+          {
+            "heading": "Tematy do dalszego studiowania",
+            "items": [
+              "Fizjologia człowieka w mikrograwitacji — [NASA Human Research Program](https://www.nasa.gov/hrp/)",
+              "Promieniowanie kosmiczne i ochrona biologiczna — [NASA Space Radiation](https://www.nasa.gov/hrp/elements/radiation/)",
+              "Mechanika orbitalna i napędy — [MIT OCW Space Systems Engineering](https://ocw.mit.edu/search/?q=orbital+mechanics)",
+              "Systemy podtrzymywania życia — [Projekt ESA MELiSSA](https://www.melissafoundation.org/)",
+              "Projektowanie habitatów i statków kosmicznych — [NASA NTRS](https://ntrs.nasa.gov/)",
+              "Uprawa żywności, odzysk wody i wykorzystanie zasobów lokalnych (ISRU) — [NASA ISRU](https://www.nasa.gov/mission_pages/station/research/news/b4h-3rd/ev-isru)",
+              "Psychologia izolacji i medycyna długotrwałych misji — [ESA Human Exploration](https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration)"
+            ]
+          }
+        ]
+      },
+      {
+        "trackId": "G",
+        "title": "Projekt G — Człowiek na Ziemi i ochrona ekosystemu (Biblioteka uzupełniająca)",
+        "sequenceLabel": "Kolejność nauki",
+        "sequence": "Podstawy ekologii → funkcjonowanie ekosystemów → presje środowiskowe → technologie ochronne → ekonomia i polityka środowiskowa.",
+        "links": [
+          {
+            "label": "🌍 ESA Education — Edukacja o Ziemi, klimacie i obserwacji środowiska",
+            "url": "https://education.esa.int/teach-with-space/"
+          },
+          {
+            "label": "🇵🇱 Politechnika Śląska — Materiały dotyczące podstaw ochrony środowiska",
+            "url": "https://www.polsl.pl/"
+          },
+          {
+            "label": "🇵🇱 Jan Krystek — Ochrona środowiska dla inżynierów (PWN)",
+            "url": "https://ksiegarnia.pwn.pl/"
+          },
+          {
+            "label": "🇵🇱 Główny Inspektorat Ochrony Środowiska (GIOŚ — Monitoring wód, powietrza i gleb)",
+            "url": "https://www.gios.gov.pl/"
+          },
+          {
+            "label": "🇪🇺 Europejska Agencja Środowiska (EEA — Ekonomia ekologiczna, GOZ, LCA)",
+            "url": "https://www.eea.europa.eu/pl"
+          }
+        ],
+        "groups": [
+          {
+            "heading": "Po polsku",
+            "items": [
+              "Jan Krystek — *Ochrona środowiska dla inżynierów.* — [Księgarnia Naukowa PWN](https://ksiegarnia.pwn.pl/)",
+              "Podręczniki akademickie z ekologii, ochrony środowiska i gospodarki odpadami — [OpenAGH](https://open.agh.edu.pl/) | [ZPE Ekologia](https://zpe.gov.pl/)",
+              "Materiały polskich uczelni dotyczące ochrony wód, powietrza i gleby — [Politechnika Śląska](https://www.polsl.pl/) | [GIOŚ Monitoring Środowiska](https://www.gios.gov.pl/)"
+            ]
+          },
+          {
+            "heading": "Źródła bezpłatne",
+            "items": [
+              "ESA Education — edukacja o Ziemi, klimacie i obserwacji środowiska: [https://education.esa.int/teach-with-space/](https://education.esa.int/teach-with-space/)",
+              "Politechnika Śląska — materiały dotyczące podstaw ochrony środowiska: [https://www.polsl.pl/](https://www.polsl.pl/)"
+            ]
+          },
+          {
+            "heading": "Tematy do dalszego studiowania",
+            "items": [
+              "Ekologia populacji i ekosystemów — [OpenStax Biology: Ecology](https://openstax.org/details/books/biology-2e)",
+              "Różnorodność biologiczna i ochrona siedlisk — [IPBES Global Assessment](https://www.ipbes.net/)",
+              "Obiegi biogeochemiczne i funkcjonowanie gleby — [FAO Soils Portal](https://www.fao.org/soils-portal/en/)",
+              "Zmiany klimatu oraz zanieczyszczenia — [Raporty IPCC](https://www.ipcc.ch/)",
+              "Ochrona przyrody, renaturyzacja i odbudowa ekosystemów — [EEA Nature & Biodiversity](https://www.eea.europa.eu/pl)",
+              "Odnawialne źródła energii i efektywność energetyczna — [IRENA / IEA Renewables](https://www.iea.org/)",
+              "Gospodarka obiegu zamkniętego — [EEA Circular Economy](https://www.eea.europa.eu/pl)",
+              "Ocena cyklu życia produktów (LCA) i ekonomia ekologiczna — [European Platform on LCA](https://eplca.jrc.ec.europa.eu/)",
+              "Monitoring środowiska z użyciem czujników, satelitów i AI — [ESA Copernicus & Earth Online](https://earth.esa.int/)"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "tracks": [
+    {
+      "id": "A",
+      "code": "Projekt A",
+      "name": "Człowiek biocyfrowo-robotyczny",
+      "color": "#38bdf8",
+      "goal": "Wspomaganie, naprawa i rozszerzanie możliwości ludzkiego organizmu.",
+      "guidingQuestion": "Jak technologia może wspierać i rozszerzać możliwości człowieka?",
+      "note": "",
+      "sections": [
+        {
+          "title": "Zakres badawczy",
+          "items": [
             "Medycyna regeneracyjna, protezy i sztuczne narządy.",
             "Robotyka, bioelektronika i inżynieria biomedyczna.",
             "Interfejsy mózg–komputer.",
@@ -255,17 +1263,17 @@ const DEFAULT_SEED = {
       ]
     },
     {
-      id: "B",
-      code: "Projekt B",
-      name: "Cyfrowy umysł",
-      color: "#a855f7",
-      goal: "Poznanie zasad działania mózgu i zbadanie możliwości jego komputerowego modelowania.",
-      guidingQuestion: "Czy można odtworzyć działanie umysłu w komputerze i co oznaczałoby takie odtworzenie?",
-      note: "Pełne przeniesienie umysłu do komputera pozostaje hipotetycznym celem badawczym.",
-      sections: [
+      "id": "B",
+      "code": "Projekt B",
+      "name": "Cyfrowy umysł",
+      "color": "#a855f7",
+      "goal": "Poznanie zasad działania mózgu i zbadanie możliwości jego komputerowego modelowania.",
+      "guidingQuestion": "Czy można odtworzyć działanie umysłu w komputerze i co oznaczałoby takie odtworzenie?",
+      "note": "Pełne przeniesienie umysłu do komputera pozostaje hipotetycznym celem badawczym.",
+      "sections": [
         {
-          title: "Zakres badawczy",
-          items: [
+          "title": "Zakres badawczy",
+          "items": [
             "Neurobiologia i neuronauka obliczeniowa.",
             "Modelowanie neuronów i sieci neuronalnych.",
             "Konektomika i poznanie.",
@@ -275,17 +1283,17 @@ const DEFAULT_SEED = {
       ]
     },
     {
-      id: "C",
-      code: "Projekt C",
-      name: "Maszyny analogowe i obliczanie przez fizykę",
-      color: "#f59e0b",
-      goal: "Poznanie alternatywnych sposobów realizowania obliczeń.",
-      guidingQuestion: "Jak wykorzystać właściwości fizyczne układów do efektywnego obliczania i modelowania procesów podobnych do pracy mózgu?",
-      note: "",
-      sections: [
+      "id": "C",
+      "code": "Projekt C",
+      "name": "Maszyny analogowe i obliczanie przez fizykę",
+      "color": "#f59e0b",
+      "goal": "Poznanie alternatywnych sposobów realizowania obliczeń.",
+      "guidingQuestion": "Jak wykorzystać właściwości fizyczne układów do efektywnego obliczania i modelowania procesów podobnych do pracy mózgu?",
+      "note": "",
+      "sections": [
         {
-          title: "Zakres badawczy",
-          items: [
+          "title": "Zakres badawczy",
+          "items": [
             "Komputery analogowe i mechaniczne.",
             "Elektronika analogowa i układy dynamiczne.",
             "Komputery neuromorficzne.",
@@ -296,17 +1304,17 @@ const DEFAULT_SEED = {
       ]
     },
     {
-      id: "D",
-      code: "Projekt D",
-      name: "„Frankenstein”: tworzenie człowieka i science fiction",
-      color: "#10b981",
-      goal: "Poznanie naukowych możliwości tworzenia, odtwarzania i modyfikowania organizmów.",
-      guidingQuestion: "Co można rzeczywiście stworzyć lub zmodyfikować w żywym organizmie, a co pozostaje fikcją?",
-      note: "",
-      sections: [
+      "id": "D",
+      "code": "Projekt D",
+      "name": "„Frankenstein”: tworzenie człowieka i science fiction",
+      "color": "#10b981",
+      "goal": "Poznanie naukowych możliwości tworzenia, odtwarzania i modyfikowania organizmów.",
+      "guidingQuestion": "Co można rzeczywiście stworzyć lub zmodyfikować w żywym organizmie, a co pozostaje fikcją?",
+      "note": "",
+      "sections": [
         {
-          title: "Zakres badawczy",
-          items: [
+          "title": "Zakres badawczy",
+          "items": [
             "Genetyka, DNA i regulacja genów.",
             "Embriologia i rozwój organizmu.",
             "Klonowanie i komórki macierzyste.",
@@ -318,17 +1326,17 @@ const DEFAULT_SEED = {
       ]
     },
     {
-      id: "E",
-      code: "Projekt E",
-      name: "Filozofia jako warstwa przekrojowa",
-      color: "#eab308",
-      goal: "Interpretowanie osiągnięć nauki i badanie granic poznania.",
-      guidingQuestion: "Co wiemy, jak to uzasadniamy i jakie konsekwencje wynikają z naszej wiedzy?",
-      note: "Filozofia pozostaje osobnym obszarem nauki, rozwijanym niezależnie. W tym projekcie jest nakładką interpretacyjną na pozostałe ścieżki, a nie dodatkowym obowiązkowym przedmiotem.",
-      sections: [
+      "id": "E",
+      "code": "Projekt E",
+      "name": "Filozofia jako warstwa przekrojowa",
+      "color": "#eab308",
+      "goal": "Interpretowanie osiągnięć nauki i badanie granic poznania.",
+      "guidingQuestion": "Co wiemy, jak to uzasadniamy i jakie konsekwencje wynikają z naszej wiedzy?",
+      "note": "Filozofia pozostaje osobnym obszarem nauki, rozwijanym niezależnie. W tym projekcie jest nakładką interpretacyjną na pozostałe ścieżki, a nie dodatkowym obowiązkowym przedmiotem.",
+      "sections": [
         {
-          title: "Zakres badawczy",
-          items: [
+          "title": "Zakres badawczy",
+          "items": [
             "Filozofia starożytna: Platon, Arystoteles i stoicy.",
             "Filozofia nauki: dowód, hipoteza, teoria i granice modeli.",
             "Filozofia umysłu: świadomość, tożsamość i natura myślenia.",
@@ -339,17 +1347,17 @@ const DEFAULT_SEED = {
       ]
     },
     {
-      id: "F",
-      code: "Projekt F",
-      name: "Człowiek w kosmosie",
-      color: "#6366f1",
-      goal: "Poznanie sposobów przystosowania technologii, organizmu człowieka i środowiska życia do podróży kosmicznych oraz długotrwałej obecności poza Ziemią.",
-      guidingQuestion: "Jak stworzyć warunki, w których człowiek może bezpiecznie podróżować i żyć poza Ziemią, nie zakładając, że jego organizm łatwo przystosuje się do każdego środowiska?",
-      note: "",
-      sections: [
+      "id": "F",
+      "code": "Projekt F",
+      "name": "Człowiek w kosmosie",
+      "color": "#6366f1",
+      "goal": "Poznanie sposobów przystosowania technologii, organizmu człowieka i środowiska życia do podróży kosmicznych oraz długotrwałej obecności poza Ziemią.",
+      "guidingQuestion": "Jak stworzyć warunki, w których człowiek może bezpiecznie podróżować i żyć poza Ziemią, nie zakładając, że jego organizm łatwo przystosuje się do każdego środowiska?",
+      "note": "",
+      "sections": [
         {
-          title: "A. Technologia podróży kosmicznych",
-          items: [
+          "title": "A. Technologia podróży kosmicznych",
+          "items": [
             "Mechanika orbitalna i podstawy astronautyki.",
             "Napędy rakietowe i przyszłe koncepcje napędu.",
             "Konstrukcja statków kosmicznych i habitatów.",
@@ -361,8 +1369,8 @@ const DEFAULT_SEED = {
           ]
         },
         {
-          title: "B. Przystosowanie organizmu człowieka",
-          items: [
+          "title": "B. Przystosowanie organizmu człowieka",
+          "items": [
             "Wpływ mikrograwitacji na mięśnie, kości i układ krążenia.",
             "Promieniowanie kosmiczne i jego skutki biologiczne.",
             "Równowaga, wzrok, sen i rytm dobowy.",
@@ -373,8 +1381,8 @@ const DEFAULT_SEED = {
           ]
         },
         {
-          title: "C. Długotrwałe życie poza Ziemią",
-          items: [
+          "title": "C. Długotrwałe życie poza Ziemią",
+          "items": [
             "Zamknięte i częściowo zamknięte systemy podtrzymywania życia.",
             "Uprawa roślin i produkcja żywności w habitatach.",
             "Psychologia izolacji i funkcjonowanie małych załóg.",
@@ -386,17 +1394,17 @@ const DEFAULT_SEED = {
       ]
     },
     {
-      id: "G",
-      code: "Projekt G",
-      name: "Człowiek na Ziemi: adaptacja i ochrona ekosystemu",
-      color: "#22c55e",
-      goal: "Zrozumienie zależności między ludzkim organizmem, cywilizacją techniczną i ziemskim środowiskiem oraz opracowanie sposobów życia, które nie niszczą podstaw własnego istnienia.",
-      guidingQuestion: "Jak człowiek może przystosować swoje życie i technologię do warunków Ziemi, chroniąc jednocześnie ekosystemy, od których zależy?",
-      note: "",
-      sections: [
+      "id": "G",
+      "code": "Projekt G",
+      "name": "Człowiek na Ziemi: adaptacja i ochrona ekosystemu",
+      "color": "#22c55e",
+      "goal": "Zrozumienie zależności między ludzkim organizmem, cywilizacją techniczną i ziemskim środowiskiem oraz opracowanie sposobów życia, które nie niszczą podstaw własnego istnienia.",
+      "guidingQuestion": "Jak człowiek może przystosować swoje życie i technologię do warunków Ziemi, chroniąc jednocześnie ekosystemy, od których zależy?",
+      "note": "",
+      "sections": [
         {
-          title: "A. Człowiek jako organizm ziemski",
-          items: [
+          "title": "A. Człowiek jako organizm ziemski",
+          "items": [
             "Fizjologia człowieka i adaptacja do temperatury, wysokości oraz wysiłku.",
             "Wpływ środowiska na zdrowie, odporność i rozwój.",
             "Relacje człowieka z mikroorganizmami i mikrobiomem.",
@@ -406,8 +1414,8 @@ const DEFAULT_SEED = {
           ]
         },
         {
-          title: "B. Ekologia i funkcjonowanie ekosystemów",
-          items: [
+          "title": "B. Ekologia i funkcjonowanie ekosystemów",
+          "items": [
             "Ekologia organizmów, populacji i całych ekosystemów.",
             "Różnorodność biologiczna i stabilność środowiska.",
             "Obiegi węgla, azotu, fosforu i wody.",
@@ -418,8 +1426,8 @@ const DEFAULT_SEED = {
           ]
         },
         {
-          title: "C. Technologia przyjazna środowisku",
-          items: [
+          "title": "C. Technologia przyjazna środowisku",
+          "items": [
             "Odnawialne źródła energii i magazynowanie energii.",
             "Efektywność energetyczna budynków, transportu i przemysłu.",
             "Gospodarka obiegu zamkniętego i ograniczanie odpadów.",
@@ -431,8 +1439,8 @@ const DEFAULT_SEED = {
           ]
         },
         {
-          title: "D. Cywilizacja a granice środowiskowe",
-          items: [
+          "title": "D. Cywilizacja a granice środowiskowe",
+          "items": [
             "Zużycie zasobów i możliwości ich odtwarzania.",
             "Rozwój miast i infrastruktury.",
             "Bezpieczeństwo żywnościowe i wodne.",
@@ -444,178 +1452,658 @@ const DEFAULT_SEED = {
       ]
     }
   ],
-  subprojects: [
+  "subprojects": [
     {
-      id: "sub-1",
-      trackId: "A",
-      secondaryTracks: ["B", "E"],
-      branchTopic: "Interfejsy mózg–komputer.",
-      title: "Dekodowanie intencji ruchowej i sprzężenie czuciowe w neuroprotezach",
-      author: "Administrator",
-      status: "approved",
-      createdAt: "2026-10-25T12:00:00Z",
-      description: "Badanie dwukierunkowych interfejsów korowo-obwodowych pozwalających nie tylko sterować efektorami, ale też odbierać sygnały proprioceptywne i dotykowe.",
-      philosophicalNote: "Pytanie o granice schematu ciała i podmiotowości: kiedy sztuczny efektor staje się integralną częścią doświadczenia użytkownika?",
-      workspace: {
-        hypotheses: [
+      "id": "sub-1",
+      "trackId": "A",
+      "secondaryTracks": [
+        "B",
+        "E"
+      ],
+      "branchTopic": "Interfejsy mózg–komputer.",
+      "title": "Dekodowanie intencji ruchowej i sprzężenie czuciowe w neuroprotezach",
+      "author": "Administrator",
+      "status": "approved",
+      "createdAt": "2026-10-25T12:00:00Z",
+      "description": "Badanie dwukierunkowych interfejsów korowo-obwodowych pozwalających nie tylko sterować efektorami, ale też odbierać sygnały proprioceptywne i dotykowe.",
+      "philosophicalNote": "Pytanie o granice schematu ciała i podmiotowości: kiedy sztuczny efektor staje się integralną częścią doświadczenia użytkownika?",
+      "workspace": {
+        "hypotheses": [
           {
-            id: "hyp-1",
-            statement: "Zamknięcie pętli sprzężenia zwrotnego o opóźnieniu < 25 ms znacząco przyspiesza neuroplastyczną integrację protezy ze schematem ciała.",
-            status: "W weryfikacji",
-            author: "Administrator",
-            approvalStatus: "approved"
+            "id": "hyp-1",
+            "statement": "Zamknięcie pętli sprzężenia zwrotnego o opóźnieniu < 25 ms znacząco przyspiesza neuroplastyczną integrację protezy ze schematem ciała.",
+            "status": "W weryfikacji",
+            "author": "Administrator",
+            "approvalStatus": "approved"
           }
         ],
-        notes: [
+        "notes": [
           {
-            id: "note-1",
-            title: "Granica inwazyjności a stabilność sygnału",
-            content: "Matryce mikroelektrod zapewniają wysoką rozdzielczość przestrzenną, ale ulegają gliozie. Alternatywą są podejścia wewnątrznaczyniowe (Stentrode) oraz optogenetyczne.",
-            author: "Administrator",
-            createdAt: "2026-10-25T12:10:00Z",
-            approvalStatus: "approved"
+            "id": "note-1",
+            "title": "Granica inwazyjności a stabilność sygnału",
+            "content": "Matryce mikroelektrod zapewniają wysoką rozdzielczość przestrzenną, ale ulegają gliozie. Alternatywą są podejścia wewnątrznaczyniowe (Stentrode) oraz optogenetyczne.",
+            "author": "Administrator",
+            "createdAt": "2026-10-25T12:10:00Z",
+            "approvalStatus": "approved"
           }
         ],
-        bibliography: [
+        "bibliography": [
           {
-            id: "bib-1",
-            citation: "Lebedev, M. A., & Nicolelis, M. A. (2017). Brain-Machine Interfaces: From Basic Science to Neuroprostheses and Neurorehabilitation. Physiological Reviews.",
-            url: "https://doi.org/10.1152/physrev.00027.2016",
-            addedBy: "Administrator",
-            approvalStatus: "approved"
+            "id": "bib-1",
+            "citation": "Lebedev, M. A., & Nicolelis, M. A. (2017). Brain-Machine Interfaces: From Basic Science to Neuroprostheses and Neurorehabilitation. Physiological Reviews.",
+            "url": "https://doi.org/10.1152/physrev.00027.2016",
+            "addedBy": "Administrator",
+            "approvalStatus": "approved"
           }
         ]
       }
     },
     {
-      id: "sub-2",
-      trackId: "C",
-      secondaryTracks: ["B", "A"],
-      branchTopic: "Komputery neuromorficzne.",
-      title: "Oscylatory relaksacyjne i memrystorowe synapsy w obliczeniach ciągłych",
-      author: "Administrator",
-      status: "approved",
-      createdAt: "2026-10-25T12:15:00Z",
-      description: "Środowisko badawcze poświęcone fizycznej realizacji impulsowych sieci neuronowych (SNN) w domenie analogowej bez dyskretyzacji zegarowej.",
-      philosophicalNote: "Czy obliczanie ciągłe realizowane bezpośrednio przez prawa fizyki układu analogowego przekracza ograniczenia klasycznych modeli symbolicznych?",
-      workspace: {
-        hypotheses: [
+      "id": "sub-2",
+      "trackId": "C",
+      "secondaryTracks": [
+        "B",
+        "A"
+      ],
+      "branchTopic": "Komputery neuromorficzne.",
+      "title": "Oscylatory relaksacyjne i memrystorowe synapsy w obliczeniach ciągłych",
+      "author": "Administrator",
+      "status": "approved",
+      "createdAt": "2026-10-25T12:15:00Z",
+      "description": "Środowisko badawcze poświęcone fizycznej realizacji impulsowych sieci neuronowych (SNN) w domenie analogowej bez dyskretyzacji zegarowej.",
+      "philosophicalNote": "Czy obliczanie ciągłe realizowane bezpośrednio przez prawa fizyki układu analogowego przekracza ograniczenia klasycznych modeli symbolicznych?",
+      "workspace": {
+        "hypotheses": [
           {
-            id: "hyp-2",
-            statement: "Szum termiczny w układach submikronowych może pełnić funkcję rezonansu stochastycznego, obniżając próg energetyczny detekcji słabych sygnałów.",
-            status: "Hipoteza otwarta",
-            author: "Administrator",
-            approvalStatus: "approved"
+            "id": "hyp-2",
+            "statement": "Szum termiczny w układach submikronowych może pełnić funkcję rezonansu stochastycznego, obniżając próg energetyczny detekcji słabych sygnałów.",
+            "status": "Hipoteza otwarta",
+            "author": "Administrator",
+            "approvalStatus": "approved"
           }
         ],
-        notes: [
+        "notes": [
           {
-            id: "note-2",
-            title: "Porównanie modelu Hodgkina-Huxleya i obwodu FitzHugh-Nagumo",
-            content: "Układ analogowy FHN pozwala odwzorować pobudliwość błony przy użyciu pojedynczego nieliniowego elementu i indukcyjności (lub żyratora CMOS).",
-            author: "Administrator",
-            createdAt: "2026-10-25T12:20:00Z",
-            approvalStatus: "approved"
+            "id": "note-2",
+            "title": "Porównanie modelu Hodgkina-Huxleya i obwodu FitzHugh-Nagumo",
+            "content": "Układ analogowy FHN pozwala odwzorować pobudliwość błony przy użyciu pojedynczego nieliniowego elementu i indukcyjności (lub żyratora CMOS).",
+            "author": "Administrator",
+            "createdAt": "2026-10-25T12:20:00Z",
+            "approvalStatus": "approved"
           }
         ],
-        bibliography: [
+        "bibliography": [
           {
-            id: "bib-2",
-            citation: "Indiveri, G., et al. (2011). Neuromorphic silicon neuron circuits. Frontiers in Neuroscience.",
-            url: "https://doi.org/10.3389/fnins.2011.00073",
-            addedBy: "Administrator",
-            approvalStatus: "approved"
+            "id": "bib-2",
+            "citation": "Indiveri, G., et al. (2011). Neuromorphic silicon neuron circuits. Frontiers in Neuroscience.",
+            "url": "https://doi.org/10.3389/fnins.2011.00073",
+            "addedBy": "Administrator",
+            "approvalStatus": "approved"
           }
         ]
       }
     },
     {
-      id: "sub-3",
-      trackId: "F",
-      secondaryTracks: ["G", "D"],
-      branchTopic: "Zamknięte i częściowo zamknięte systemy podtrzymywania życia.",
-      title: "Bioregeneracyjne systemy podtrzymywania życia (BLSS) — obieg pierwiastków w habitacie i na Ziemi",
-      author: "Administrator",
-      status: "approved",
-      createdAt: "2026-10-25T12:30:00Z",
-      description: "Porównanie małych, sztucznie domykanych pętli metabolicznych (fotobioreaktory mikroglonowe + uprawy hydroponiczne) z buforową pojemnością ziemskich ekosystemów.",
-      philosophicalNote: "Próba odtworzenia biosfery w skali mikro uwidacznia niewidoczne na co dzień usługi ekosystemowe Ziemi (Projekt G) oraz kruchość sztucznych habitatów (Projekt F).",
-      workspace: {
-        hypotheses: [
+      "id": "sub-3",
+      "trackId": "F",
+      "secondaryTracks": [
+        "G",
+        "D"
+      ],
+      "branchTopic": "Zamknięte i częściowo zamknięte systemy podtrzymywania życia.",
+      "title": "Bioregeneracyjne systemy podtrzymywania życia (BLSS) — obieg pierwiastków w habitacie i na Ziemi",
+      "author": "Administrator",
+      "status": "approved",
+      "createdAt": "2026-10-25T12:30:00Z",
+      "description": "Porównanie małych, sztucznie domykanych pętli metabolicznych (fotobioreaktory mikroglonowe + uprawy hydroponiczne) z buforową pojemnością ziemskich ekosystemów.",
+      "philosophicalNote": "Próba odtworzenia biosfery w skali mikro uwidacznia niewidoczne na co dzień usługi ekosystemowe Ziemi (Projekt G) oraz kruchość sztucznych habitatów (Projekt F).",
+      "workspace": {
+        "hypotheses": [
           {
-            id: "hyp-3",
-            statement: "Stabilność mikrobiomu ryzosfery w zamkniętym habitacie wymaga kontrolowanej redundancji gatunkowej wzorowanej na naturalnych glebach z Projektu G.",
-            status: "W weryfikacji",
-            author: "Administrator",
-            approvalStatus: "approved"
+            "id": "hyp-3",
+            "statement": "Stabilność mikrobiomu ryzosfery w zamkniętym habitacie wymaga kontrolowanej redundancji gatunkowej wzorowanej na naturalnych glebach z Projektu G.",
+            "status": "W weryfikacji",
+            "author": "Administrator",
+            "approvalStatus": "approved"
           }
         ],
-        notes: [
+        "notes": [
           {
-            id: "note-3",
-            title: "Wnioski z eksperymentów MELiSSA i BIOS-3",
-            content: "Największym wyzwaniem pozostaje pełna mineralizacja odpadów lignocelulozowych oraz utrzymanie równowagi stechiometrycznej O2/CO2 przy zmiennym metabolizmie załogi.",
-            author: "Administrator",
-            createdAt: "2026-10-25T12:35:00Z",
-            approvalStatus: "approved"
+            "id": "note-3",
+            "title": "Wnioski z eksperymentów MELiSSA i BIOS-3",
+            "content": "Największym wyzwaniem pozostaje pełna mineralizacja odpadów lignocelulozowych oraz utrzymanie równowagi stechiometrycznej O2/CO2 przy zmiennym metabolizmie załogi.",
+            "author": "Administrator",
+            "createdAt": "2026-10-25T12:35:00Z",
+            "approvalStatus": "approved"
           }
         ],
-        bibliography: [
+        "bibliography": [
           {
-            id: "bib-3",
-            citation: "Lasseur, C., et al. (2010). MELiSSA: The European project of closed life support system. Gravitational and Space Biology.",
-            url: "",
-            addedBy: "Administrator",
-            approvalStatus: "approved"
+            "id": "bib-3",
+            "citation": "Lasseur, C., et al. (2010). MELiSSA: The European project of closed life support system. Gravitational and Space Biology.",
+            "url": "",
+            "addedBy": "Administrator",
+            "approvalStatus": "approved"
           }
         ]
       }
     }
   ],
-  materials: [
+  "materials": [
     {
-      id: "mat-1",
-      trackId: "E",
-      branchTopic: "Filozofia nauki: dowód, hipoteza, teoria i granice modeli.",
-      subprojectId: null,
-      title: "Granice modeli formalnych a interpretacja stanów umysłowych i biologicznych",
-      type: "Artykuł / Notatka przekrojowa",
-      author: "Administrator",
-      content: "Rozróżnienie między symulacją składniową (syntaktyczną) a realizacją właściwości przyczynowych układu fizycznego — punkt styku Projektu B, C oraz E.",
-      url: "",
-      status: "approved",
-      createdAt: "2026-10-25T11:50:00Z"
+      "id": "mat-1",
+      "trackId": "E",
+      "branchTopic": "Filozofia nauki: dowód, hipoteza, teoria i granice modeli.",
+      "subprojectId": null,
+      "title": "Granice modeli formalnych a interpretacja stanów umysłowych i biologicznych",
+      "type": "Artykuł / Notatka przekrojowa",
+      "author": "Administrator",
+      "content": "Rozróżnienie między symulacją składniową (syntaktyczną) a realizacją właściwości przyczynowych układu fizycznego — punkt styku Projektu B, C oraz E.",
+      "url": "https://plato.stanford.edu/entries/models-science/",
+      "links": [
+        {
+          "label": "Stanford Encyclopedia of Philosophy — Models in Science",
+          "url": "https://plato.stanford.edu/entries/models-science/"
+        },
+        {
+          "label": "SEP — The Chinese Room Argument & Syntax vs Semantics",
+          "url": "https://plato.stanford.edu/entries/chinese-room/"
+        }
+      ],
+      "status": "approved",
+      "createdAt": "2026-10-25T11:50:00Z"
     },
     {
-      id: "mat-2",
-      trackId: "B",
-      branchTopic: "Neurobiologia i neuronauka obliczeniowa.",
-      subprojectId: "sub-1",
-      title: "Zestawienie rozdzielczości czasowo-przestrzennej metod neuroobrazowania (EEG, fNIRS, fMRI, ECoG)",
-      type: "Zestaw danych / Opracowanie",
-      author: "Dr Janina Kowalska (Gość)",
-      content: "Porównanie pasma przenoszenia, stosunku sygnału do szumu (SNR) oraz biokompatybilności długoterminowej dla zastosowań w Projektach A i B.",
-      url: "https://example.org/neuro-resolution-matrix",
-      status: "pending",
-      createdAt: "2026-10-25T13:10:00Z"
+      "id": "mat-2",
+      "trackId": "B",
+      "branchTopic": "Neurobiologia i neuronauka obliczeniowa.",
+      "subprojectId": "sub-1",
+      "title": "Zestawienie rozdzielczości czasowo-przestrzennej metod neuroobrazowania (EEG, fNIRS, fMRI, ECoG)",
+      "type": "Zestaw danych / Opracowanie",
+      "author": "Dr Janina Kowalska (Gość)",
+      "content": "Porównanie pasma przenoszenia, stosunku sygnału do szumu (SNR) oraz biokompatybilności długoterminowej dla zastosowań w Projektach A i B.",
+      "url": "https://doi.org/10.1152/physrev.00027.2016",
+      "links": [
+        {
+          "label": "Physiological Reviews — Brain-Machine Interfaces (Lebedev & Nicolelis)",
+          "url": "https://doi.org/10.1152/physrev.00027.2016"
+        }
+      ],
+      "status": "pending",
+      "createdAt": "2026-10-25T13:10:00Z"
+    },
+    {
+      "id": "mat-3",
+      "trackId": "C",
+      "branchTopic": "Elektronika analogowa i układy dynamiczne.",
+      "subprojectId": "sub-2",
+      "title": "GOLEM 15 — Projekt C: Maszyny analogowe i obliczenia fizyczne (Bibliografia i odnośniki PL/EN)",
+      "type": "Biblioteka uzupełniająca GOLEM 15",
+      "author": "Administrator",
+      "content": "Kolejność nauki: Elektronika analogowa → układy dynamiczne → modelowanie matematyczne → fizyczne modele neuronów → obliczenia neuromorficzne.\n\n• Po polsku: Podręczniki akademickie z elektroniki analogowej (wzmacniacze, oscylatory, filtry, sprzężenie zwrotne, układy dynamiczne), materiały dydaktyczne o przetwornikach A/C i C/A oraz Zintegrowana Platforma Edukacyjna.\n• Po angielsku: Materiały techniczne dot. analog computing, badania dot. neuromorphic computing i analog neural networks, publikacje o fizycznych modelach neuronów oraz analogowych i hybrydowych procesorach.",
+      "url": "https://zpe.gov.pl/",
+      "links": [
+        {
+          "label": "🇵🇱 Zintegrowana Platforma Edukacyjna (ZPE) — Elektronika: https://zpe.gov.pl/",
+          "url": "https://zpe.gov.pl/"
+        },
+        {
+          "label": "🇵🇱 OpenAGH — E-podręczniki: Elektronika i układy dynamiczne",
+          "url": "https://open.agh.edu.pl/"
+        },
+        {
+          "label": "🇬🇧 Frontiers in Neuroscience — Neuromorphic Engineering",
+          "url": "https://www.frontiersin.org/journals/neuroscience/sections/neuromorphic-engineering"
+        },
+        {
+          "label": "🇬🇧 arXiv — Neuromorphic Computing & Analog Neural Networks",
+          "url": "https://arxiv.org/list/cs.NE/recent"
+        },
+        {
+          "label": "🇬🇧 MIT OCW — Circuits and Electronics (Analog Computing)",
+          "url": "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/"
+        }
+      ],
+      "status": "approved",
+      "createdAt": "2026-10-25T14:00:00Z"
+    },
+    {
+      "id": "mat-4",
+      "trackId": "D",
+      "branchTopic": "Biologia syntetyczna i edycja genomu.",
+      "subprojectId": null,
+      "title": "GOLEM 15 — Projekt D: „Frankenstein” — biotechnologia i tworzenie organizmów (Bibliografia i odnośniki PL/EN)",
+      "type": "Biblioteka uzupełniająca GOLEM 15",
+      "author": "Administrator",
+      "content": "Kolejność nauki: Biologia komórki → genetyka → embriologia → komórki macierzyste → inżynieria tkankowa → biologia syntetyczna i bioetyka.\n\n• Po polsku: Podręczniki akademickie z biologii komórki, genetyki i biologii rozwoju; podręczniki z embriologii i komórek macierzystych; literatura o inżynierii tkankowej, medycynie regeneracyjnej i bioetyce.\n• Po angielsku: National Academies — materiały o odpowiedzialnym rozwoju biologii syntetycznej; publikacje akademickie o stem cells, developmental biology, tissue engineering i synthetic biology.",
+      "url": "https://www.nationalacademies.org/",
+      "links": [
+        {
+          "label": "🇬🇧 National Academies — Biologia syntetyczna: https://www.nationalacademies.org/",
+          "url": "https://www.nationalacademies.org/"
+        },
+        {
+          "label": "🇬🇧 NCBI Bookshelf — Molecular Biology of the Cell & Developmental Biology",
+          "url": "https://www.ncbi.nlm.nih.gov/books/"
+        },
+        {
+          "label": "🇬🇧 ISSCR — International Society for Stem Cell Research (Komórki macierzyste)",
+          "url": "https://www.isscr.org/"
+        },
+        {
+          "label": "🇬🇧 Nature Portfolio — Synthetic Biology & Tissue Engineering",
+          "url": "https://www.nature.com/subjects/synthetic-biology"
+        },
+        {
+          "label": "🇵🇱 Komitet Bioetyki PAN & ZPE Biologia",
+          "url": "https://bioetyka.pan.pl/"
+        }
+      ],
+      "status": "approved",
+      "createdAt": "2026-10-25T14:05:00Z"
+    },
+    {
+      "id": "mat-5",
+      "trackId": "E",
+      "branchTopic": "Filozofia nauki: dowód, hipoteza, teoria i granice modeli.",
+      "subprojectId": null,
+      "title": "GOLEM 15 — Projekt E: Filozofia nauki, umysłu, techniki i bioetyka (Chalmers, Kuhn, Heller + odnośniki)",
+      "type": "Biblioteka uzupełniająca GOLEM 15",
+      "author": "Administrator",
+      "content": "Zastosowanie: Ocena dowodów, rozróżnianie teorii i spekulacji, analiza tożsamości osobowej oraz etycznych konsekwencji tworzenia i modyfikowania organizmów.\n\n• Po polsku:\n  1. Alan Chalmers — „Czym jest to, co zwiemy nauką?”\n  2. Thomas S. Kuhn — „Struktura rewolucji naukowych”\n  3. Michał Heller — „Filozofia nauki. Wprowadzenie”\n• Obszary do dalszego uzupełnienia: Filozofia starożytna (Platon, Arystoteles i stoicy), Filozofia umysłu i problem świadomości, Filozofia techniki, bioetyka i etyka środowiskowa.",
+      "url": "https://ccpress.pl/",
+      "links": [
+        {
+          "label": "🇵🇱 Copernicus Center Press — Michał Heller „Filozofia nauki. Wprowadzenie”",
+          "url": "https://ccpress.pl/"
+        },
+        {
+          "label": "🇵🇱 Centrum Kopernika Badań Interdyscyplinarnych — Wykłady z filozofii nauki i umysłu",
+          "url": "https://www.copernicuscenter.edu.pl/"
+        },
+        {
+          "label": "🇵🇱 Wolne Lektury — Filozofia starożytna (Platon, Arystoteles, stoicy)",
+          "url": "https://wolnelektury.pl/katalog/gatunek/filozofia/"
+        },
+        {
+          "label": "🇬🇧 Stanford Encyclopedia of Philosophy (SEP — Nauka, Umysł, Technika, Bioetyka)",
+          "url": "https://plato.stanford.edu/"
+        },
+        {
+          "label": "🇬🇧 Internet Encyclopedia of Philosophy (IEP)",
+          "url": "https://iep.utm.edu/"
+        }
+      ],
+      "status": "approved",
+      "createdAt": "2026-10-25T14:10:00Z"
+    },
+    {
+      "id": "mat-6",
+      "trackId": "F",
+      "branchTopic": "Wpływ mikrograwitacji na mięśnie, kości i układ krążenia.",
+      "subprojectId": "sub-3",
+      "title": "GOLEM 15 — Projekt F: Człowiek w kosmosie (Darmowe źródła NASA i ESA + tematy badawcze)",
+      "type": "Biblioteka uzupełniająca GOLEM 15",
+      "author": "Administrator",
+      "content": "Kolejność nauki: Podstawy fizyki → mechanika orbitalna → technika kosmiczna → fizjologia kosmiczna → systemy podtrzymywania życia i habitaty.\n\n• Darmowe źródła: NASA (zdrowie człowieka w kosmosie), ESA (edukacja kosmiczna — Teach with Space), ESA (eksploracja załogowa i robotyczna).\n• Tematy do dalszego studiowania: Fizjologia człowieka w mikrograwitacji; Promieniowanie kosmiczne i ochrona biologiczna; Mechanika orbitalna i napędy; Systemy podtrzymywania życia; Projektowanie habitatów i statków kosmicznych; Uprawa żywności, odzysk wody i wykorzystanie zasobów lokalnych; Psychologia izolacji i medycyna długotrwałych misji.",
+      "url": "https://www.nasa.gov/reference/fundamentals-of-human-health/",
+      "links": [
+        {
+          "label": "🚀 NASA — Zdrowie człowieka w kosmosie: https://www.nasa.gov/reference/fundamentals-of-human-health/",
+          "url": "https://www.nasa.gov/reference/fundamentals-of-human-health/"
+        },
+        {
+          "label": "🛰️ ESA — Edukacja kosmiczna: https://education.esa.int/teach-with-space/",
+          "url": "https://education.esa.int/teach-with-space/"
+        },
+        {
+          "label": "👩‍🚀 ESA — Eksploracja załogowa: https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration",
+          "url": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration"
+        },
+        {
+          "label": "📑 NASA Technical Reports Server (NTRS — napędy, ECLSS, habitaty)",
+          "url": "https://ntrs.nasa.gov/"
+        },
+        {
+          "label": "🌱 MELiSSA Foundation — Zamknięte systemy podtrzymywania życia",
+          "url": "https://www.melissafoundation.org/"
+        }
+      ],
+      "status": "approved",
+      "createdAt": "2026-10-25T14:15:00Z"
+    },
+    {
+      "id": "mat-7",
+      "trackId": "G",
+      "branchTopic": "Ochrona przyrody, odbudowa ekosystemów i renaturyzacja.",
+      "subprojectId": "sub-3",
+      "title": "GOLEM 15 — Projekt G: Człowiek na Ziemi i ochrona ekosystemu (Krystek, Politechnika Śląska, ESA Education)",
+      "type": "Biblioteka uzupełniająca GOLEM 15",
+      "author": "Administrator",
+      "content": "Kolejność nauki: Podstawy ekologii → funkcjonowanie ekosystemów → presje środowiskowe → technologie ochronne → ekonomia i polityka środowiskowa.\n\n• Po polsku: Jan Krystek — „Ochrona środowiska dla inżynierów”; podręczniki akademickie z ekologii, ochrony środowiska i gospodarki odpadami; materiały polskich uczelni dotyczące ochrony wód, powietrza i gleby.\n• Źródła bezpłatne: ESA Education (Ziemia, klimat, obserwacja środowiska), Politechnika Śląska (podstawy ochrony środowiska).\n• Tematy do dalszego studiowania: Ekologia populacji i ekosystemów; Różnorodność biologiczna i ochrona siedlisk; Obiegi biogeochemiczne i funkcjonowanie gleby; Zmiany klimatu oraz zanieczyszczenia; Ochrona przyrody, renaturyzacja i odbudowa ekosystemów; Odnawialne źródła energii i efektywność energetyczna; Gospodarka obiegu zamkniętego; Ocena cyklu życia produktów (LCA) i ekonomia ekologiczna; Monitoring środowiska z użyciem czujników, satelitów i AI.",
+      "url": "https://www.polsl.pl/",
+      "links": [
+        {
+          "label": "🌍 ESA Education — Ziemia, klimat i obserwacja środowiska: https://education.esa.int/teach-with-space/",
+          "url": "https://education.esa.int/teach-with-space/"
+        },
+        {
+          "label": "🇵🇱 Politechnika Śląska — Podstawy ochrony środowiska: https://www.polsl.pl/",
+          "url": "https://www.polsl.pl/"
+        },
+        {
+          "label": "🇵🇱 Jan Krystek — „Ochrona środowiska dla inżynierów” (Księgarnia PWN)",
+          "url": "https://ksiegarnia.pwn.pl/"
+        },
+        {
+          "label": "🇵🇱 GIOŚ — Państwowy Monitoring Środowiska (wody, powietrze, gleby)",
+          "url": "https://www.gios.gov.pl/"
+        },
+        {
+          "label": "🇪🇺 Europejska Agencja Środowiska (EEA) & Copernicus Earth Observation",
+          "url": "https://www.eea.europa.eu/pl"
+        }
+      ],
+      "status": "approved",
+      "createdAt": "2026-10-25T14:20:00Z"
+    },
+    {
+      "id": "mat-8",
+      "trackId": "B",
+      "branchTopic": "Modelowanie neuronów i sieci neuronalnych.",
+      "subprojectId": "sub-1",
+      "title": "BIBLIOTEKA PROJEKTU — I. Matematyka i Informatyka (Petzold, Matthes, Strang + podręczniki PL/EN)",
+      "type": "Biblioteka Projektu GOLEM 15",
+      "author": "Administrator",
+      "content": "Polskojęzyczne:\n1. Charles Petzold — „Kod. Ukryty język komputerów. Wydanie II.”\n2. Eric Matthes — „Python. Instrukcje dla programisty.”\n3. Podręczniki matematyki i algebry liniowej na poziomie szkoły średniej i studiów.\n\nAnglojęzyczne:\n4. Gilbert Strang — „Introduction to Linear Algebra.”\n5. Charles Petzold — „Code: The Hidden Language of Computer Hardware and Software.”\n6. Eric Matthes — „Python Crash Course.”",
+      "url": "https://math.mit.edu/~gs/linearalgebra/",
+      "links": [
+        {
+          "label": "🇵🇱 Charles Petzold — „Kod. Ukryty język komputerów. Wydanie II” (Helion)",
+          "url": "https://helion.pl/"
+        },
+        {
+          "label": "🇵🇱 Eric Matthes — „Python. Instrukcje dla programisty” (Helion)",
+          "url": "https://helion.pl/"
+        },
+        {
+          "label": "🇵🇱 OpenAGH — E-podręczniki: Matematyka i Algebra Liniowa po polsku",
+          "url": "https://open.agh.edu.pl/"
+        },
+        {
+          "label": "🇬🇧 Gilbert Strang — „Introduction to Linear Algebra” & MIT 18.06",
+          "url": "https://math.mit.edu/~gs/linearalgebra/"
+        },
+        {
+          "label": "🇬🇧 Charles Petzold — „Code” (Oficjalna strona autora)",
+          "url": "https://codehiddenlanguage.com/"
+        },
+        {
+          "label": "🇬🇧 Eric Matthes — „Python Crash Course” (No Starch Press & GitHub)",
+          "url": "https://nostarch.com/python-crash-course-3rd-edition"
+        }
+      ],
+      "status": "approved",
+      "createdAt": "2026-10-25T15:00:00Z"
+    },
+    {
+      "id": "mat-9",
+      "trackId": "C",
+      "branchTopic": "Komputery analogowe i mechaniczne.",
+      "subprojectId": "sub-2",
+      "title": "BIBLIOTEKA PROJEKTU — II. Fizyka i Komputery Kwantowe (Griffiths, Nielsen & Chuang + elektronika)",
+      "type": "Biblioteka Projektu GOLEM 15",
+      "author": "Administrator",
+      "content": "Polskojęzyczne:\n1. Akademickie podręczniki fizyki ogólnej i mechaniki kwantowej w polskich wydaniach.\n2. Podręczniki podstaw elektroniki i układów cyfrowych.\n\nAnglojęzyczne:\n3. David J. Griffiths — „Introduction to Quantum Mechanics.”\n4. Michael A. Nielsen, Isaac L. Chuang — „Quantum Computation and Quantum Information.”",
+      "url": "https://www.cambridge.org/highereducation/books/introduction-to-quantum-mechanics/990799CA07A83FC5312402AF6860311E",
+      "links": [
+        {
+          "label": "🇵🇱 OpenStax Polska — Fizyka dla szkół wyższych (Tomy 1–3, darmowy podręcznik PL)",
+          "url": "https://openstax.org/subjects/science"
+        },
+        {
+          "label": "🇵🇱 Wydawnictwo Naukowe PWN — Fizyka ogólna, mechanika kwantowa i układy cyfrowe",
+          "url": "https://ksiegarnia.pwn.pl/"
+        },
+        {
+          "label": "🇬🇧 David J. Griffiths — „Introduction to Quantum Mechanics” (Cambridge University Press)",
+          "url": "https://www.cambridge.org/highereducation/books/introduction-to-quantum-mechanics/990799CA07A83FC5312402AF6860311E"
+        },
+        {
+          "label": "🇬🇧 Michael A. Nielsen, Isaac L. Chuang — „Quantum Computation and Quantum Information”",
+          "url": "https://www.cambridge.org/highereducation/books/quantum-computation-and-quantum-information/01E10196D0A682A6AEFFEA52D53BE9AE"
+        }
+      ],
+      "status": "approved",
+      "createdAt": "2026-10-25T15:05:00Z"
+    },
+    {
+      "id": "mat-10",
+      "trackId": "D",
+      "branchTopic": "Genetyka, DNA i regulacja genów.",
+      "subprojectId": null,
+      "title": "BIBLIOTEKA PROJEKTU — III. Chemia, Biologia i Genetyka (Brown „Genomy”, Biologia Campbella, OpenStax 2e)",
+      "type": "Biblioteka Projektu GOLEM 15",
+      "author": "Administrator",
+      "content": "Polskojęzyczne:\n1. Terence A. Brown — „Genomy.”\n2. „Biologia Campbella” — polskie wydanie.\n3. Akademickie podręczniki chemii ogólnej, organicznej i biochemii.\n\nAnglojęzyczne:\n4. OpenStax „Chemistry 2e” — podręcznik chemii ogólnej.\n5. OpenStax „Biology 2e” — podręcznik biologii.\n6. Akademickie podręczniki biochemii i biologii molekularnej.",
+      "url": "https://openstax.org/details/books/biology-2e",
+      "links": [
+        {
+          "label": "🇵🇱 Terence A. Brown — „Genomy” (Wydawnictwo Naukowe PWN)",
+          "url": "https://ksiegarnia.pwn.pl/"
+        },
+        {
+          "label": "🇵🇱 „Biologia Campbella” — polskie wydanie (Dom Wydawniczy REBIS)",
+          "url": "https://www.rebis.com.pl/"
+        },
+        {
+          "label": "🇬🇧 OpenStax „Chemistry 2e” — darmowy podręcznik chemii ogólnej online",
+          "url": "https://openstax.org/details/books/chemistry-2e"
+        },
+        {
+          "label": "🇬🇧 OpenStax „Biology 2e” — darmowy podręcznik biologii online",
+          "url": "https://openstax.org/details/books/biology-2e"
+        },
+        {
+          "label": "🇬🇧 NCBI Bookshelf — Genomes (T.A. Brown) & Molecular Biology of the Cell",
+          "url": "https://www.ncbi.nlm.nih.gov/books/"
+        }
+      ],
+      "status": "approved",
+      "createdAt": "2026-10-25T15:10:00Z"
+    },
+    {
+      "id": "mat-11",
+      "trackId": "A",
+      "branchTopic": "Interfejsy mózg–komputer.",
+      "subprojectId": "sub-1",
+      "title": "BIBLIOTEKA PROJEKTU — IV. Projekt A: Człowiek biocyfrowo-robotyczny (Kalat, OpenStax Anatomy 2e, Géron)",
+      "type": "Biblioteka Projektu GOLEM 15",
+      "author": "Administrator",
+      "content": "Polskojęzyczne:\n1. James W. Kalat — „Biologiczne podstawy psychologii.”\n2. Akademickie podręczniki anatomii i fizjologii człowieka.\n3. Akademickie podręczniki biofizyki, biomechaniki i biomateriałów.\n4. Podręczniki robotyki, elektroniki i układów sterowania.\n\nAnglojęzyczne:\n5. OpenStax „Anatomy and Physiology 2e.”\n6. Aurélien Géron — „Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow.”\n7. Akademickie podręczniki inżynierii tkankowej, neuroprotetyki i interfejsów mózg–komputer.",
+      "url": "https://openstax.org/details/books/anatomy-and-physiology-2e",
+      "links": [
+        {
+          "label": "🇵🇱 James W. Kalat — „Biologiczne podstawy psychologii” (Wydawnictwo Naukowe PWN)",
+          "url": "https://ksiegarnia.pwn.pl/"
+        },
+        {
+          "label": "🇬🇧 OpenStax „Anatomy and Physiology 2e” — darmowy podręcznik online",
+          "url": "https://openstax.org/details/books/anatomy-and-physiology-2e"
+        },
+        {
+          "label": "🇬🇧 Aurélien Géron — „Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow”",
+          "url": "https://www.oreilly.com/library/view/hands-on-machine-learning/9781098125967/"
+        },
+        {
+          "label": "🇬🇧 IEEE EMBS — Engineering in Medicine and Biology (Neuroprotetyka i BCI)",
+          "url": "https://www.embs.org/"
+        }
+      ],
+      "status": "approved",
+      "createdAt": "2026-10-25T15:15:00Z"
+    },
+    {
+      "id": "mat-12",
+      "trackId": "B",
+      "branchTopic": "Świadomość oraz hipotetyczna emulacja całego mózgu.",
+      "subprojectId": "sub-1",
+      "title": "BIBLIOTEKA PROJEKTU — V. Projekt B: Cyfrowy umysł (Kalat, Kandel, Squire, Dayan & Abbott, Izhikevich, Seung, Miller, Churchland & Sejnowski, Sandberg & Bostrom)",
+      "type": "Biblioteka Projektu GOLEM 15",
+      "author": "Administrator",
+      "content": "Polskojęzyczne:\n1. James W. Kalat — „Biologiczne podstawy psychologii.”\n2. Podręczniki neurobiologii i fizjologii układu nerwowego.\n3. Podręczniki psychologii poznawczej.\n4. Wprowadzenia do filozofii umysłu i problemu świadomości.\n\nAnglojęzyczne:\n5. Eric R. Kandel i współautorzy — „Principles of Neural Science.”\n6. Larry Squire i współautorzy — „Fundamental Neuroscience.”\n7. Peter Dayan, L. F. Abbott — „Theoretical Neuroscience: Computational and Mathematical Modeling of Neural Systems.”\n8. Eugene M. Izhikevich — „Dynamical Systems in Neuroscience.”\n9. Sebastian Seung — „Connectome: How the Brain's Wiring Makes Us Who We Are.”\n10. Paul Miller — „An Introductory Course in Computational Neuroscience.”\n11. Patricia S. Churchland, Terrence J. Sejnowski — „The Computational Brain.”\n12. Anders Sandberg, Nick Bostrom — „Whole Brain Emulation: A Roadmap.”",
+      "url": "https://mitpress.mit.edu/9780262541855/theoretical-neuroscience/",
+      "links": [
+        {
+          "label": "🇵🇱 James W. Kalat — „Biologiczne podstawy psychologii” (PWN)",
+          "url": "https://ksiegarnia.pwn.pl/"
+        },
+        {
+          "label": "🇬🇧 Eric R. Kandel et al. — „Principles of Neural Science” (McGraw Hill)",
+          "url": "https://www.mheducation.com/"
+        },
+        {
+          "label": "🇬🇧 Larry Squire et al. — „Fundamental Neuroscience” (Academic Press)",
+          "url": "https://www.sciencedirect.com/book/9780123858702/fundamental-neuroscience"
+        },
+        {
+          "label": "🇬🇧 Peter Dayan, L. F. Abbott — „Theoretical Neuroscience” (MIT Press)",
+          "url": "https://mitpress.mit.edu/9780262541855/theoretical-neuroscience/"
+        },
+        {
+          "label": "🇬🇧 Eugene M. Izhikevich — „Dynamical Systems in Neuroscience” (MIT Press / PDF autora)",
+          "url": "https://www.izhikevich.org/publications/dsn.htm"
+        },
+        {
+          "label": "🇬🇧 Paul Miller — „An Introductory Course in Computational Neuroscience” (MIT Press)",
+          "url": "https://mitpress.mit.edu/9780262038256/an-introductory-course-in-computational-neuroscience/"
+        },
+        {
+          "label": "🇬🇧 Patricia S. Churchland, Terrence J. Sejnowski — „The Computational Brain” (MIT Press)",
+          "url": "https://mitpress.mit.edu/9780262533393/the-computational-brain/"
+        },
+        {
+          "label": "🇬🇧 Anders Sandberg, Nick Bostrom — „Whole Brain Emulation: A Roadmap” (Technical Report PDF)",
+          "url": "https://www.fhi.ox.ac.uk/brain-emulation-roadmap-report.pdf"
+        }
+      ],
+      "status": "approved",
+      "createdAt": "2026-10-25T15:20:00Z"
+    },
+    {
+      "id": "mat-13",
+      "trackId": "E",
+      "branchTopic": "Filozofia nauki: dowód, hipoteza, teoria i granice modeli.",
+      "subprojectId": null,
+      "title": "BIBLIOTEKA PROJEKTU — VI. Kolejność czytania i zasady pracy z literaturą",
+      "type": "Przewodnik metodologiczny GOLEM 15",
+      "author": "Administrator",
+      "content": "1. Najpierw: Petzold — Kod; Matthes — Python. Instrukcje dla programisty; Podstawy matematyki; Podręcznik fizyki ogólnej.\n2. Następnie: Brown — Genomy; Podstawy chemii, biologii i biochemii; Kalat — Biologiczne podstawy psychologii.\n3. Później: Theoretical Neuroscience; Dynamical Systems in Neuroscience; Connectome; Whole Brain Emulation: A Roadmap.\n4. Na zaawansowanym etapie: Principles of Neural Science; Fundamental Neuroscience; The Computational Brain; Griffiths — Introduction to Quantum Mechanics; Nielsen i Chuang — Quantum Computation and Quantum Information.\n\nZasada: Najpierw jedna książka podstawowa z aktualnej dziedziny, potem ćwiczenia i dopiero kolejna pozycja. Pełne odwzorowanie ludzkiego mózgu i przeniesienie umysłu pozostają niezrealizowanymi celami badawczymi.",
+      "url": "https://www.fhi.ox.ac.uk/brain-emulation-roadmap-report.pdf",
+      "links": [
+        {
+          "label": "1️⃣ Etap I: Petzold — Code / Kod. Ukryty język komputerów",
+          "url": "https://codehiddenlanguage.com/"
+        },
+        {
+          "label": "2️⃣ Etap II: OpenStax — Chemistry 2e & Biology 2e + Brown (Genomy)",
+          "url": "https://openstax.org/subjects/science"
+        },
+        {
+          "label": "3️⃣ Etap III: Dayan & Abbott (Theoretical Neuroscience) + Sandberg & Bostrom (WBE Roadmap)",
+          "url": "https://www.fhi.ox.ac.uk/brain-emulation-roadmap-report.pdf"
+        },
+        {
+          "label": "4️⃣ Etap IV: Kandel (Principles of Neural Science) + Nielsen & Chuang (Quantum Computation)",
+          "url": "https://mitpress.mit.edu/9780262533393/the-computational-brain/"
+        }
+      ],
+      "status": "approved",
+      "createdAt": "2026-10-25T15:25:00Z"
     }
   ],
-  graphLinks: [
-    { id: "lnk-1", source: "A", target: "B", label: "Interfejsy mózg–komputer i dekodowanie sygnałów nerwowych", status: "approved" },
-    { id: "lnk-2", source: "B", target: "C", label: "Fizyczne i neuromorficzne modele sieci neuronalnych", status: "approved" },
-    { id: "lnk-3", source: "A", target: "D", label: "Inżynieria tkankowa, sztuczne narządy i medycyna regeneracyjna", status: "approved" },
-    { id: "lnk-4", source: "F", target: "G", label: "Zamknięte obiegi materii (BLSS) vs. ziemska biosfera i ekologia", status: "approved" },
-    { id: "lnk-5", source: "A", target: "F", label: "Medycyna kosmiczna, ochrona organizmu i robotyka autonomiczna", status: "approved" },
-    { id: "lnk-6", source: "D", target: "F", label: "Biologia regeneracji i odporność radiacyjna w długich misjach", status: "approved" },
-    { id: "lnk-7", source: "E", target: "A", label: "Filozofia techniki i etyka ulepszania człowieka", status: "approved" },
-    { id: "lnk-8", source: "E", target: "B", label: "Filozofia umysłu, świadomość i granice modeli obliczeniowych", status: "approved" },
-    { id: "lnk-9", source: "E", target: "D", label: "Bioetyka edycji genomu i granice tworzenia organizmów", status: "approved" },
-    { id: "lnk-10", source: "E", target: "F", label: "Etyka ekspansji kosmicznej i ochrona planetarna", status: "approved" },
-    { id: "lnk-11", source: "E", target: "G", label: "Odpowiedzialność międzypokoleniowa i filozofia przyrody", status: "approved" }
+  "graphLinks": [
+    {
+      "id": "lnk-1",
+      "source": "A",
+      "target": "B",
+      "label": "Interfejsy mózg–komputer i dekodowanie sygnałów nerwowych",
+      "status": "approved"
+    },
+    {
+      "id": "lnk-2",
+      "source": "B",
+      "target": "C",
+      "label": "Fizyczne i neuromorficzne modele sieci neuronalnych",
+      "status": "approved"
+    },
+    {
+      "id": "lnk-3",
+      "source": "A",
+      "target": "D",
+      "label": "Inżynieria tkankowa, sztuczne narządy i medycyna regeneracyjna",
+      "status": "approved"
+    },
+    {
+      "id": "lnk-4",
+      "source": "F",
+      "target": "G",
+      "label": "Zamknięte obiegi materii (BLSS) vs. ziemska biosfera i ekologia",
+      "status": "approved"
+    },
+    {
+      "id": "lnk-5",
+      "source": "A",
+      "target": "F",
+      "label": "Medycyna kosmiczna, ochrona organizmu i robotyka autonomiczna",
+      "status": "approved"
+    },
+    {
+      "id": "lnk-6",
+      "source": "D",
+      "target": "F",
+      "label": "Biologia regeneracji i odporność radiacyjna w długich misjach",
+      "status": "approved"
+    },
+    {
+      "id": "lnk-7",
+      "source": "E",
+      "target": "A",
+      "label": "Filozofia techniki i etyka ulepszania człowieka",
+      "status": "approved"
+    },
+    {
+      "id": "lnk-8",
+      "source": "E",
+      "target": "B",
+      "label": "Filozofia umysłu, świadomość i granice modeli obliczeniowych",
+      "status": "approved"
+    },
+    {
+      "id": "lnk-9",
+      "source": "E",
+      "target": "D",
+      "label": "Bioetyka edycji genomu i granice tworzenia organizmów",
+      "status": "approved"
+    },
+    {
+      "id": "lnk-10",
+      "source": "E",
+      "target": "F",
+      "label": "Etyka ekspansji kosmicznej i ochrona planetarna",
+      "status": "approved"
+    },
+    {
+      "id": "lnk-11",
+      "source": "E",
+      "target": "G",
+      "label": "Odpowiedzialność międzypokoleniowa i filozofia przyrody",
+      "status": "approved"
+    }
   ]
 };
 
-const STORAGE_KEY = "the_golem_15_state_v2";
+const STORAGE_KEY = "the_golem_15_state_v4";
 const ADMIN_PASS_KEY = "golem_xv_admin_pass";
 
 const appState = {
@@ -636,9 +2124,31 @@ function ensureSchema(d) {
   if (!d.foundationDisciplines || !d.foundationDisciplines.length) {
     d.foundationDisciplines = JSON.parse(JSON.stringify(DEFAULT_SEED.foundationDisciplines));
   }
+  const seedSmatMap = new Map((DEFAULT_SEED.studyMaterials || []).map((m) => [m.id, m]));
   if (!d.studyMaterials) {
     d.studyMaterials = JSON.parse(JSON.stringify(DEFAULT_SEED.studyMaterials));
+  } else {
+    d.studyMaterials = d.studyMaterials.map((m) =>
+      seedSmatMap.has(m.id) ? JSON.parse(JSON.stringify(seedSmatMap.get(m.id))) : m
+    );
+    const existingIds = new Set(d.studyMaterials.map((m) => m.id));
+    (DEFAULT_SEED.studyMaterials || []).forEach((m) => {
+      if (!existingIds.has(m.id)) d.studyMaterials.push(JSON.parse(JSON.stringify(m)));
+    });
   }
+  const seedMatMap = new Map((DEFAULT_SEED.materials || []).map((m) => [m.id, m]));
+  if (!d.materials) {
+    d.materials = JSON.parse(JSON.stringify(DEFAULT_SEED.materials));
+  } else {
+    d.materials = d.materials.map((m) =>
+      seedMatMap.has(m.id) ? JSON.parse(JSON.stringify(seedMatMap.get(m.id))) : m
+    );
+    const existingMatIds = new Set(d.materials.map((m) => m.id));
+    (DEFAULT_SEED.materials || []).forEach((m) => {
+      if (!existingMatIds.has(m.id)) d.materials.push(JSON.parse(JSON.stringify(m)));
+    });
+  }
+  d.supplementaryLibrary = JSON.parse(JSON.stringify(DEFAULT_SEED.supplementaryLibrary));
   return d;
 }
 
@@ -725,6 +2235,47 @@ function escapeHtml(str) {
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;");
+}
+
+function formatTextWithLinks(str) {
+  if (!str) return "";
+  let escaped = escapeHtml(str);
+  escaped = escaped.replace(
+    /\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g,
+    '<a href="$2" target="_blank" rel="noopener noreferrer" style="color:#38bdf8; text-decoration:underline; font-weight:600;">🔗 $1</a>'
+  );
+  escaped = escaped.replace(
+    /(^|[^"'>])(https?:\/\/[^\s<)]+)/g,
+    '$1<a href="$2" target="_blank" rel="noopener noreferrer" style="color:#38bdf8; text-decoration:underline;">$2</a>'
+  );
+  return escaped;
+}
+
+function renderLinksBlock(item) {
+  const links = item.links || [];
+  if (links.length > 0) {
+    return `
+      <div style="margin-top:0.45rem; padding-top:0.35rem; border-top:1px dashed rgba(148,163,184,0.2);">
+        <div style="font-size:0.75rem; font-weight:700; color:#38bdf8; margin-bottom:0.2rem;">🔗 Odnośniki i linki źródłowe:</div>
+        <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.2rem;">
+          ${links
+            .map(
+              (l) =>
+                `<li style="font-size:0.8rem;"><a href="${escapeHtml(l.url)}" target="_blank" rel="noopener noreferrer" style="color:#38bdf8; text-decoration:underline;">🔗 ${escapeHtml(l.label)}</a></li>`
+            )
+            .join("")}
+        </ul>
+      </div>
+    `;
+  }
+  if (item.url) {
+    return `
+      <div style="margin-top:0.4rem;">
+        <a href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer" style="color:#38bdf8; font-size:0.82rem; font-weight:600; text-decoration:underline;">🔗 Otwórz materiał / źródło zewnętrzne</a>
+      </div>
+    `;
+  }
+  return "";
 }
 
 function getTrackOrFoundationById(id) {
@@ -851,7 +2402,7 @@ function renderNavCounts() {
   }
 }
 
-// --- WIDOK 0 (PIERWSZA OPCJA): MATERIAŁY DO NAUKI (8 DZIEDZIN PODSTAWOWYCH PO KOLEI + ODNOGI A-G) ---
+// --- WIDOK 0 (PIERWSZA OPCJA): MATERIAŁY DO NAUKI (8 DZIEDZIN PODSTAWOWYCH PO KOLEI + ODNOGI A-G + BIBLIOTEKA UZUPEŁNIAJĄCA) ---
 function renderStudyView() {
   const fndGrid = document.getElementById("foundationsGrid");
   const tracksTree = document.getElementById("tracksStudyTree");
@@ -928,7 +2479,8 @@ function renderStudyView() {
                       </div>
                       <strong style="font-size:0.9rem;">📖 ${escapeHtml(m.title)}</strong>
                       <div style="font-size:0.75rem; color:var(--text-muted); margin-bottom:0.25rem;">Dział: ${escapeHtml(m.topic)}</div>
-                      <p style="font-size:0.82rem; color:var(--text-secondary);">${escapeHtml(m.content)}</p>
+                      <p style="font-size:0.82rem; color:var(--text-secondary);">${formatTextWithLinks(m.content)}</p>
+                      ${renderLinksBlock(m)}
                       <div style="display:flex; justify-content:space-between; align-items:center; margin-top:0.35rem; font-size:0.74rem; color:var(--text-muted);">
                         <span>Dodał(a): ${escapeHtml(m.author)}</span>
                         ${
@@ -968,15 +2520,72 @@ function renderStudyView() {
     .join("");
 
   if (tracksTree) {
-    tracksTree.innerHTML = appState.data.tracks
-      .map((tr) => {
-        const mats = (appState.data.studyMaterials || []).filter(
-          (sm) =>
-            sm.categoryType === "TRACK" &&
-            sm.targetId === tr.id &&
-            (sm.status === "approved" || appState.isAdmin || sm.isSessionCreated)
-        );
-        return `
+    const suppLib = appState.data.supplementaryLibrary || {};
+    const suppProjects = suppLib.projects || [];
+    const suppRules = suppLib.rules || suppLib.usageRules || [];
+
+    const readingOrder = suppLib.readingOrder || null;
+    const readingOrderHtml = readingOrder
+      ? `
+        <div class="ws-card" style="margin-top:0.75rem; border-left:3px solid #10b981;">
+          <h4 style="margin-bottom:0.45rem; color:#10b981;">🧭 ${escapeHtml(readingOrder.title || "VI. KOLEJNOŚĆ CZYTANIA")}</h4>
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(210px, 1fr)); gap:0.75rem; margin-bottom:0.55rem;">
+            ${(readingOrder.stages || [])
+              .map(
+                (st) => `
+              <div style="background:rgba(15,23,42,0.65); padding:0.55rem 0.7rem; border-radius:8px; border:1px solid rgba(148,163,184,0.18);">
+                <strong style="font-size:0.82rem; color:#38bdf8;">${escapeHtml(st.stage)}</strong>
+                <ul style="margin:0.35rem 0 0; padding-left:1.1rem; font-size:0.8rem; color:var(--text-secondary);">
+                  ${(st.items || []).map((it) => `<li>${formatTextWithLinks(it)}</li>`).join("")}
+                </ul>
+              </div>
+            `
+              )
+              .join("")}
+          </div>
+          ${
+            readingOrder.principle
+              ? `<div style="font-size:0.82rem; color:#e2e8f0; background:rgba(56,189,248,0.1); padding:0.45rem 0.65rem; border-radius:6px;">
+                  <strong>Zasada:</strong> ${escapeHtml(readingOrder.principle)}
+                </div>`
+              : ""
+          }
+        </div>
+      `
+      : "";
+
+    const suppBannerHtml =
+      suppProjects.length > 0
+        ? `
+      <div class="overview-banner" style="grid-column: 1 / -1; margin-bottom: 1rem; border-color: rgba(16, 185, 129, 0.45);">
+        <div class="overarching-goal">
+          <h2>📚 ${escapeHtml(suppLib.title || "BIBLIOTEKA PROJEKTU GOLEM 15")}</h2>
+          <p>${escapeHtml(suppLib.description || "")}</p>
+        </div>
+        <div class="ws-card" style="margin-top:0.75rem;">
+          <h4 style="margin-bottom:0.45rem; color:#38bdf8;">📌 Zasady korzystania z biblioteki (1–6)</h4>
+          <ol style="padding-left:1.3rem; margin:0; font-size:0.86rem; color:var(--text-secondary); line-height:1.6;">
+            ${suppRules.map((r) => `<li>${escapeHtml(r)}</li>`).join("")}
+          </ol>
+        </div>
+        ${readingOrderHtml}
+      </div>
+    `
+        : "";
+
+    tracksTree.innerHTML =
+      suppBannerHtml +
+      appState.data.tracks
+        .map((tr) => {
+          const mats = (appState.data.studyMaterials || []).filter(
+            (sm) =>
+              sm.categoryType === "TRACK" &&
+              sm.targetId === tr.id &&
+              (sm.status === "approved" || appState.isAdmin || sm.isSessionCreated)
+          );
+          const suppProj = suppProjects.find((sp) => sp.trackId === tr.id);
+
+          return `
         <div class="track-card" style="--track-color: ${tr.color}">
           <div>
             <div class="track-header">
@@ -989,6 +2598,43 @@ function renderStudyView() {
               </button>
             </div>
             <div class="track-sections">
+              ${
+                suppProj
+                  ? `
+                <div class="track-section-block" style="border: 1px solid rgba(56, 189, 248, 0.35); background: rgba(15, 23, 42, 0.78);">
+                  <h4 style="color:#38bdf8;">📚 Biblioteka uzupełniająca — ${escapeHtml(suppProj.title)}</h4>
+                  ${
+                    suppProj.sequence
+                      ? `<div style="margin:0.4rem 0 0.65rem; padding:0.45rem 0.65rem; border-radius:8px; background:rgba(16,185,129,0.12); border-left:3px solid #10b981; font-size:0.82rem;">
+                          <strong>🧭 ${escapeHtml(suppProj.sequenceLabel || "Kolejność nauki")}:</strong> ${escapeHtml(suppProj.sequence)}
+                        </div>`
+                      : ""
+                  }
+                  ${(suppProj.groups || suppProj.sections || [])
+                    .map(
+                      (ssec) => `
+                    <div style="margin-top:0.45rem;">
+                      <strong style="font-size:0.78rem; text-transform:uppercase; color:var(--text-secondary);">${escapeHtml(ssec.heading)}:</strong>
+                      <ul class="branch-list" style="margin-top:0.25rem;">
+                        ${(ssec.items || [])
+                          .map(
+                            (it) => `
+                          <li class="branch-item" style="font-size:0.82rem;">
+                            <span>• ${formatTextWithLinks(it)}</span>
+                          </li>
+                        `
+                          )
+                          .join("")}
+                      </ul>
+                    </div>
+                  `
+                    )
+                    .join("")}
+                  ${renderLinksBlock(suppProj)}
+                </div>
+              `
+                  : ""
+              }
               ${tr.sections
                 .map(
                   (sec) => `
@@ -1022,7 +2668,8 @@ function renderStudyView() {
                         <div class="ws-card" style="margin-bottom:0.4rem;">
                           <strong>📖 ${escapeHtml(m.title)}</strong> (${escapeHtml(m.level)})
                           <div style="font-size:0.75rem; color:var(--text-muted);">Odnoga: ${escapeHtml(m.topic)}</div>
-                          <p style="font-size:0.82rem; color:var(--text-secondary);">${escapeHtml(m.content)}</p>
+                          <p style="font-size:0.82rem; color:var(--text-secondary);">${formatTextWithLinks(m.content)}</p>
+                          ${renderLinksBlock(m)}
                         </div>
                       `
                         )
@@ -1034,8 +2681,8 @@ function renderStudyView() {
           </div>
         </div>
       `;
-      })
-      .join("");
+        })
+        .join("");
   }
 }
 
@@ -1340,7 +2987,7 @@ function renderMaterialsView() {
       return `
       <div class="ws-card" style="padding:1.15rem; border-left:4px solid ${track.color};">
         <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.45rem;">
-          <span class="track-code" style="color:${track.color}; margin:0;">${escapeHtml(track.code)}: ${escapeHtml(track.name)}</span>
+          <span class="track-code" style="color:${track.color}; margin:0;">${escapeHtml(track.code)}: ${escapeHtml(track.name)} • ${escapeHtml(m.type || "Materiał")}</span>
           ${
             m.status === "pending"
               ? `<span class="status-tag status-pending">Oczekuje na zgodę Administratora</span>`
@@ -1348,8 +2995,9 @@ function renderMaterialsView() {
           }
         </div>
         <h3 style="font-size:1.08rem; margin-bottom:0.35rem;">${escapeHtml(m.title)}</h3>
-        <p style="color:var(--text-secondary); margin-bottom:0.65rem;">${escapeHtml(m.content)}</p>
-        <div style="font-size:0.8rem; color:var(--text-muted);">Autor zgłoszenia: <strong>${escapeHtml(m.author)}</strong></div>
+        <p style="color:var(--text-secondary); margin-bottom:0.65rem; white-space:pre-line;">${formatTextWithLinks(m.content)}</p>
+        ${renderLinksBlock(m)}
+        <div style="font-size:0.8rem; color:var(--text-muted); margin-top:0.5rem;">Autor zgłoszenia: <strong>${escapeHtml(m.author)}</strong></div>
       </div>
     `;
     })
