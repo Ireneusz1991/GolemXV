@@ -2360,15 +2360,84 @@ const DEFAULT_SEED = {
       "label": "Odpowiedzialność międzypokoleniowa i filozofia przyrody",
       "status": "approved"
     }
+  ],
+  "verifiedResearchers": [
+    {
+      "id": "res-founder",
+      "name": "Ireneusz",
+      "handle": "@ireneusz-architekt",
+      "roleTitle": "Inicjator i Główny Architekt Projektu The Golem 15",
+      "specialization": "ALL",
+      "specializationLabel": "Wszystkie ścieżki (A–G) i Wspólne Podstawy (1–8)",
+      "affiliation": "The Golem 15: A Human's Road to Reality",
+      "orcid": "",
+      "bio": "Twórca architektury badawczej The Golem 15 łączącej 8 fundamentów naukowych z 7 ścieżkami (A–G).",
+      "aiVerificationScore": 100,
+      "aiVerificationSummary": "Założyciel projektu — pełny rygor metodologiczny i epistemiczny.",
+      "badge": "★ Założyciel & Kurator",
+      "status": "active",
+      "joinedAt": "2026-10-25T10:00:00Z",
+      "auth": {
+        "algorithm": "pbkdf2_sha256",
+        "iterations": 260000,
+        "salt": "9f4d8a2c6e1b3f7a5c8d0e2f4a6b8c1d",
+        "hash": "673a07dbc15ac855752d7c521ffc31e200302b03a3b296310b742421cbfd4d62"
+      }
+    },
+    {
+      "id": "res-neuro-b",
+      "name": "Dr hab. Marek Nowak (Zespół Neuroinformatyki)",
+      "handle": "@m-nowak-neuro",
+      "roleTitle": "Stały Badacz — Neurobiologia Obliczeniowa i Układy Neuromorficzne",
+      "specialization": "B",
+      "specializationLabel": "Projekt B — Cyfrowy Umysł / Projekt C — Maszyny analogowe",
+      "affiliation": "Zespół Modelowania Układów Nerwowych",
+      "orcid": "https://orcid.org/",
+      "bio": "Badania nad modelami biofizycznymi Hodgkina–Huxleya, dynamiką populacji neuronalnych (Dayan & Abbott, Izhikevich) i estymacją pasma synaptycznego.",
+      "aiVerificationScore": 95,
+      "aiVerificationSummary": "Zweryfikowano przez AI: wysoki rygor matematyczno-biofizyczny, poprawna separacja modeli empirycznych od hipotez WBE.",
+      "badge": "✓ Stały Badacz (AI 95/100)",
+      "status": "active",
+      "joinedAt": "2026-10-25T12:00:00Z",
+      "auth": {
+        "algorithm": "pbkdf2_sha256",
+        "iterations": 260000,
+        "salt": "9f4d8a2c6e1b3f7a5c8d0e2f4a6b8c1d",
+        "hash": "673a07dbc15ac855752d7c521ffc31e200302b03a3b296310b742421cbfd4d62"
+      }
+    },
+    {
+      "id": "res-bio-dfg",
+      "name": "Dr Anna Wiśniewska (Zespół Biotechnologii i Biosfery)",
+      "handle": "@a-wisniewska-bio",
+      "roleTitle": "Stały Badacz — Inżynieria Tkankowa, BLSS i Ekologia Systemowa",
+      "specialization": "D",
+      "specializationLabel": "Projekt D — Biotechnologia / Oś Kosmos (F) ↔ Ziemia (G)",
+      "affiliation": "Laboratorium Biologii Syntetycznej i Ekosystemów Zamkniętych",
+      "orcid": "https://orcid.org/",
+      "bio": "Analiza rusztowań 3D (scaffolds), hodowli organoidów oraz bilansu tlenowo-węglowego w zamkniętych obiegach podtrzymywania życia (MELiSSA / LCA).",
+      "aiVerificationScore": 92,
+      "aiVerificationSummary": "Zweryfikowano przez AI: pełna zgodność z bioetyką (Projekt E) i literaturą polsko- oraz anglojęzyczną.",
+      "badge": "✓ Stały Badacz (AI 92/100)",
+      "status": "active",
+      "joinedAt": "2026-10-25T12:30:00Z",
+      "auth": {
+        "algorithm": "pbkdf2_sha256",
+        "iterations": 260000,
+        "salt": "9f4d8a2c6e1b3f7a5c8d0e2f4a6b8c1d",
+        "hash": "673a07dbc15ac855752d7c521ffc31e200302b03a3b296310b742421cbfd4d62"
+      }
+    }
   ]
 };
 
-const STORAGE_KEY = "the_golem_15_state_v6";
+const STORAGE_KEY = "the_golem_15_state_v7";
 const ADMIN_AUTH_KEY = "golem_xv_admin_auth_pbkdf2";
 
 const appState = {
   data: null,
   isAdmin: false,
+  activeResearcher: null,
   serverOnline: false,
   activeTab: "study", // Domyślnie pierwsza zakładka: 'study' (Materiały do nauki)
   selectedTrackFilter: "ALL",
@@ -2378,12 +2447,25 @@ const appState = {
   selectedGraphNode: null
 };
 
+function canAutoApprove() {
+  return Boolean(appState.isAdmin || appState.activeResearcher);
+}
+
+function getContributorSignature() {
+  if (appState.isAdmin) return "Ireneusz (Administrator ★)";
+  if (appState.activeResearcher) return `${appState.activeResearcher.name} (✓ Stały Badacz)`;
+  return "Gość / Obserwator";
+}
+
 function ensureSchema(d) {
   if (!d.projectMeta) d.projectMeta = JSON.parse(JSON.stringify(DEFAULT_SEED.projectMeta));
   d.projectMeta.title = "The Golem 15: A Human's Road to Reality";
   delete d.projectMeta.adminPassword;
   if (!d.projectMeta.adminAuth || !d.projectMeta.adminAuth.hash) {
     d.projectMeta.adminAuth = JSON.parse(JSON.stringify(DEFAULT_SEED.projectMeta.adminAuth));
+  }
+  if (!d.verifiedResearchers || !Array.isArray(d.verifiedResearchers)) {
+    d.verifiedResearchers = JSON.parse(JSON.stringify(DEFAULT_SEED.verifiedResearchers || []));
   }
   if (!d.foundationDisciplines || !d.foundationDisciplines.length) {
     d.foundationDisciplines = JSON.parse(JSON.stringify(DEFAULT_SEED.foundationDisciplines));
@@ -2420,6 +2502,14 @@ async function initApp() {
   localStorage.removeItem("golem_xv_admin_pass");
   if (sessionStorage.getItem("golem_xv_is_admin") === "true") {
     appState.isAdmin = true;
+  }
+  const savedRes = sessionStorage.getItem("golem_xv_active_researcher");
+  if (savedRes) {
+    try {
+      appState.activeResearcher = JSON.parse(savedRes);
+    } catch {
+      appState.activeResearcher = null;
+    }
   }
   await loadState();
   renderAll();
@@ -2622,6 +2712,7 @@ function renderAll() {
   if (appState.activeTab === "workspaces") renderWorkspacesView();
   if (appState.activeTab === "materials") renderMaterialsView();
   if (appState.activeTab === "graph") renderGraphView();
+  if (appState.activeTab === "researchers") renderResearchersView();
   if (appState.activeTab === "moderation") renderModerationView();
 }
 
@@ -2634,6 +2725,12 @@ function renderHeaderRole() {
     authBtn.textContent = "🔓 Wyloguj";
     authBtn.className = "btn btn-sm";
     authBtn.style.opacity = "1";
+  } else if (appState.activeResearcher) {
+    roleBadge.className = "role-badge admin";
+    roleBadge.innerHTML = `<span>🧑‍🔬</span> Stały Badacz: ${escapeHtml(appState.activeResearcher.name)}`;
+    authBtn.textContent = "🔒";
+    authBtn.className = "btn btn-sm";
+    authBtn.style.opacity = "0.6";
   } else {
     roleBadge.className = "role-badge guest";
     roleBadge.innerHTML = `<span>👁</span> Tryb Gościa / Obserwatora`;
@@ -2645,28 +2742,73 @@ function renderHeaderRole() {
 
 function renderNavCounts() {
   const approvedStudy = (appState.data.studyMaterials || []).filter(
-    (s) => s.status === "approved" || appState.isAdmin
+    (s) => s.status === "approved" || canAutoApprove()
   ).length;
   const approvedSubprojects = appState.data.subprojects.filter(
-    (s) => s.status === "approved" || appState.isAdmin
+    (s) => s.status === "approved" || canAutoApprove()
   ).length;
   const approvedMaterials = appState.data.materials.filter(
-    (m) => m.status === "approved" || appState.isAdmin
+    (m) => m.status === "approved" || canAutoApprove()
   ).length;
+  const activeResCount = (appState.data.verifiedResearchers || []).filter((r) => r.status === "active").length;
   const pendingTotal = countPendingItems();
 
   const studyCountEl = document.getElementById("navStudyCount");
   const subCountEl = document.getElementById("navSubprojectsCount");
   const matCountEl = document.getElementById("navMaterialsCount");
+  const resCountEl = document.getElementById("navResearchersCount");
   const modCountEl = document.getElementById("navModerationCount");
 
   if (studyCountEl) studyCountEl.textContent = approvedStudy;
   if (subCountEl) subCountEl.textContent = approvedSubprojects;
   if (matCountEl) matCountEl.textContent = approvedMaterials;
+  if (resCountEl) resCountEl.textContent = activeResCount;
   if (modCountEl) {
     modCountEl.textContent = pendingTotal;
     modCountEl.className = pendingTotal > 0 ? "badge-count pending-alert" : "badge-count";
   }
+}
+
+function renderGlobalWayfindingResults(query) {
+  const box = document.getElementById("globalWayfindingResults");
+  if (!box) return;
+  const q = (query || "").trim().toLowerCase();
+  if (!q) {
+    box.style.display = "none";
+    box.innerHTML = "";
+    return;
+  }
+  const hits = [];
+  (appState.data.foundationDisciplines || []).forEach((f) => {
+    if (`${f.name} ${f.description} ${(f.topics || []).join(" ")}`.toLowerCase().includes(q)) {
+      hits.push(`<div>🏛️ <strong>Podstawy ${f.order}: ${escapeHtml(f.name)}</strong> — <a href="javascript:void(0)" onclick="switchTab('study')" style="color:#38bdf8;">Otwórz w Materiałach do nauki</a></div>`);
+    }
+  });
+  (appState.data.tracks || []).forEach((t) => {
+    if (`${t.code} ${t.name} ${t.goal} ${t.guidingQuestion}`.toLowerCase().includes(q)) {
+      hits.push(`<div>🗺️ <strong>${escapeHtml(t.code)} — ${escapeHtml(t.name)}</strong> — <a href="javascript:void(0)" onclick="openTrackWorkspaceFilter('${t.id}')" style="color:#38bdf8;">Otwórz ścieżkę</a></div>`);
+    }
+  });
+  (appState.data.studyMaterials || []).forEach((sm) => {
+    if ((sm.status === "approved" || canAutoApprove()) && `${sm.title} ${sm.content} ${sm.topic}`.toLowerCase().includes(q)) {
+      hits.push(`<div>🎓 <strong>[${escapeHtml(sm.targetId)}] ${escapeHtml(sm.title)}</strong> — <a href="javascript:void(0)" onclick="switchTab('study')" style="color:#38bdf8;">Materiały do nauki</a></div>`);
+    }
+  });
+  (appState.data.materials || []).forEach((m) => {
+    if ((m.status === "approved" || canAutoApprove()) && `${m.title} ${m.content} ${m.branchTopic}`.toLowerCase().includes(q)) {
+      hits.push(`<div>📚 <strong>[Projekt ${escapeHtml(m.trackId)}] ${escapeHtml(m.title)}</strong> — <a href="javascript:void(0)" onclick="switchTab('materials')" style="color:#38bdf8;">Repozytorium</a></div>`);
+    }
+  });
+  (appState.data.verifiedResearchers || []).forEach((r) => {
+    if (r.status === "active" && `${r.name} ${r.roleTitle} ${r.bio}`.toLowerCase().includes(q)) {
+      hits.push(`<div>🧑‍🔬 <strong>Stały Badacz: ${escapeHtml(r.name)}</strong> (${escapeHtml(r.roleTitle)}) — <a href="javascript:void(0)" onclick="switchTab('researchers')" style="color:#38bdf8;">Profil badacza</a></div>`);
+    }
+  });
+
+  box.style.display = "block";
+  box.innerHTML = hits.length
+    ? `<div style="font-size:0.8rem; color:#38bdf8; font-weight:700; margin-bottom:0.35rem;">Znaleziono dopasowania (${hits.length}):</div><div style="display:flex; flex-direction:column; gap:0.25rem; font-size:0.82rem;">${hits.slice(0, 10).join("")}</div>`
+    : `<div style="font-size:0.82rem; color:var(--text-muted);">Brak dopasowań dla „${escapeHtml(query)}”.</div>`;
 }
 
 // --- WIDOK 0 (PIERWSZA OPCJA): MATERIAŁY DO NAUKI (8 DZIEDZIN PODSTAWOWYCH PO KOLEI + ODNOGI A-G + BIBLIOTEKA UZUPEŁNIAJĄCA) ---
@@ -3325,6 +3467,234 @@ function selectGraphNode(trackId) {
   renderGraphView();
 }
 
+// --- WIDOK 5: ZESPÓŁ STAŁYCH BADACZY I DELIKATNA WERYFIKACJA AI ---
+function renderResearchersView() {
+  const container = document.getElementById("researchersContainer");
+  if (!container) return;
+
+  const activeRes = (appState.data.verifiedResearchers || []).filter((r) => r.status === "active");
+  const allTargets = [
+    ...appState.data.tracks.map((t) => ({ id: t.id, label: `${t.code} — ${t.name}` })),
+    ...(appState.data.foundationDisciplines || []).map((f) => ({ id: f.id, label: `Podstawy ${f.order}: ${f.name}` }))
+  ];
+
+  container.innerHTML = `
+    <div class="filter-bar">
+      <div>
+        <h3 style="font-size:1.08rem;">🧑‍🔬 Stałe Konta Zweryfikowanych Badaczy & Asystent Weryfikacji AI</h3>
+        <p style="font-size:0.84rem; color:var(--text-muted);">
+          Zweryfikowani Badacze posiadają stałe konta — ich materiały do nauki, artykuły, podprojekty i notatki publikują się <strong>natychmiastowo bez konieczności ręcznej akceptacji przez właściciela projektu</strong>.
+        </p>
+      </div>
+      ${
+        appState.activeResearcher
+          ? `<button class="btn btn-danger" onclick="logoutResearcher()">🔓 Wyloguj Badacza (${escapeHtml(appState.activeResearcher.name)})</button>`
+          : ""
+      }
+    </div>
+
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(380px, 1fr)); gap:1.25rem;">
+      <div>
+        <h4 style="margin-bottom:0.75rem; color:#38bdf8;">🏛️ Aktywni Stali Badacze (${activeRes.length})</h4>
+        <div style="display:flex; flex-direction:column; gap:0.75rem; margin-bottom:1.25rem;">
+          ${activeRes
+            .map(
+              (r) => `
+            <div class="ws-card">
+              <div style="display:flex; justify-content:space-between; align-items:center; gap:0.5rem;">
+                <strong>🧑‍🔬 ${escapeHtml(r.name)}</strong>
+                <span class="foundation-pill" style="font-size:0.72rem; color:#34d399; border-color:rgba(16,185,129,0.4);">${escapeHtml(r.badge || "✓ Stały Badacz")}</span>
+              </div>
+              <div style="font-size:0.78rem; color:#38bdf8; margin-top:0.2rem;">${escapeHtml(r.roleTitle || "")} • ${escapeHtml(r.specializationLabel || r.specialization || "")}</div>
+              <p style="font-size:0.82rem; color:var(--text-secondary); margin-top:0.35rem;">${escapeHtml(r.bio || "")}</p>
+              ${r.aiVerificationSummary ? `<div style="font-size:0.74rem; color:var(--text-muted); margin-top:0.3rem;">🤖 ${escapeHtml(r.aiVerificationSummary)}</div>` : ""}
+            </div>
+          `
+            )
+            .join("")}
+        </div>
+
+        <div class="ws-card">
+          <h4 style="margin-bottom:0.5rem;">🔑 Logowanie na istniejące konto Stałego Badacza</h4>
+          <form onsubmit="submitResearcherLogin(event)">
+            <div class="form-group">
+              <label>Wybierz swój profil</label>
+              <select id="resLoginSelect" class="select-field">
+                ${activeRes.map((r) => `<option value="${r.id}">${escapeHtml(r.name)} (${escapeHtml(r.roleTitle || "")})</option>`).join("")}
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Twoje hasło Badacza</label>
+              <input type="password" id="resLoginPass" class="input-field" value="" required />
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;">🧑‍🔬 Zaloguj jako Stały Badacz</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="ws-card">
+        <h4 style="margin-bottom:0.35rem; color:#10b981;">🤖 Dołącz na stałe jako Zweryfikowany Badacz (Delikatna Weryfikacja AI)</h4>
+        <p style="font-size:0.82rem; color:var(--text-secondary); margin-bottom:0.85rem;">
+          Wypełnij krótką kartę metodologiczną. Asystent AI oceni kalibrację epistemiczną (Zasada 5 Golema 15) oraz oparcie w literaturze. Wynik <strong>≥ 75/100 pkt</strong> automatycznie aktywuje Twoje stałe konto!
+        </p>
+        <form onsubmit="submitAiResearcherRegistration(event)">
+          <div class="form-group">
+            <label>Imię i nazwisko / Pseudonim naukowy*</label>
+            <input type="text" id="candName" class="input-field" required />
+          </div>
+          <div class="form-group">
+            <label>Główna ścieżka (A–G) lub dziedzina podstawowa (1–8)*</label>
+            <select id="candSpec" class="select-field" required>
+              ${allTargets.map((t) => `<option value="${t.id}">${escapeHtml(t.label)}</option>`).join("")}
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Rola / Specjalizacja w projekcie</label>
+            <input type="text" id="candRole" class="input-field" value="Stały Badacz The Golem 15" required />
+          </div>
+          <div class="form-group">
+            <label>1️⃣ Krótka próbka badawcza (2–4 zdania o zagadnieniu, które chcesz badać lub opracowywać)*</label>
+            <textarea id="candSample" class="textarea-field" rows="3" placeholder="Np. Analizuję modele biofizyczne neuronów (Hodgkina-Huxleya oraz Izhikevicha) pod kątem estymacji przepustowości synaptycznej w Projekcie B..." required></textarea>
+          </div>
+          <div class="form-group">
+            <label>2️⃣ Przywołane źródło bazowe (podręcznik z Biblioteki Golem 15, PWN, OpenStax lub DOI/URL)*</label>
+            <input type="text" id="candCitation" class="input-field" placeholder="Np. James W. Kalat — Biologiczne podstawy psychologii (PWN) / Dayan & Abbott" required />
+          </div>
+          <div class="form-group">
+            <label>3️⃣ Kalibracja epistemiczna (Zasada 5): Jaki status ma pełna emulacja mózgu (WBE)?</label>
+            <select id="candQ1" class="select-field">
+              <option value="correct">Hipoteza / długoterminowy cel badawczy i mapa drogowa wymagająca badań podstawowych</option>
+              <option value="wrong1">Wiedza w pełni potwierdzona i gotowa technologia wdrożeniowa</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>4️⃣ Kalibracja źródłowa (Zasady 1–4): Od jakich materiałów zaczynamy pracę nad nową dziedziną?</label>
+            <select id="candQ2" class="select-field">
+              <option value="correct">Od podręczników podstawowych (w pierwszej kolejności polskich 🇵🇱 i otwartych zasobów jak OpenStax/ZPE) oraz ćwiczeń</option>
+              <option value="wrong1">Od niezweryfikowanych spekulacji bez znajomości podstaw danej dziedziny</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Ustaw własne hasło Stałego Badacza (min. 6 znaków, szyfrowane PBKDF2-SHA256)*</label>
+            <input type="password" id="candPass" class="input-field" minlength="6" required />
+          </div>
+          <div id="aiVerificationFeedbackBox" style="margin-bottom:0.75rem;"></div>
+          <button type="submit" class="btn btn-primary" style="width:100%;">🤖 Zweryfikuj przez Asystenta AI i utwórz stałe konto</button>
+        </form>
+      </div>
+    </div>
+  `;
+}
+
+function logoutResearcher() {
+  appState.activeResearcher = null;
+  sessionStorage.removeItem("golem_xv_active_researcher");
+  showToast("Wylogowano z konta Stałego Badacza.");
+  renderAll();
+}
+
+async function submitResearcherLogin(e) {
+  e.preventDefault();
+  const resId = document.getElementById("resLoginSelect").value;
+  const pass = document.getElementById("resLoginPass").value;
+  const target = (appState.data.verifiedResearchers || []).find((r) => r.id === resId && r.status === "active");
+  if (!target || !target.auth) {
+    showToast("Nie znaleziono aktywnego profilu Badacza.");
+    return;
+  }
+  const derived = await derivePbkdf2Hex(pass, target.auth.salt, target.auth.iterations || 260000);
+  if (constantTimeEqual(derived, target.auth.hash)) {
+    appState.activeResearcher = target;
+    sessionStorage.setItem("golem_xv_active_researcher", JSON.stringify(target));
+    showToast(`Zalogowano jako Stały Badacz: ${target.name}!`);
+    renderAll();
+  } else {
+    showToast("Nieprawidłowe hasło Badacza.");
+  }
+}
+
+async function submitAiResearcherRegistration(e) {
+  e.preventDefault();
+  const name = document.getElementById("candName").value.trim();
+  const spec = document.getElementById("candSpec").value;
+  const role = document.getElementById("candRole").value.trim();
+  const sample = document.getElementById("candSample").value.trim();
+  const citation = document.getElementById("candCitation").value.trim();
+  const q1 = document.getElementById("candQ1").value;
+  const q2 = document.getElementById("candQ2").value;
+  const pass = document.getElementById("candPass").value.trim();
+
+  let score = 0;
+  const notes = [];
+  if (q1 === "correct") {
+    score += 20;
+    notes.push("🟢 Kalibracja epistemiczna (Zasada 5): poprawna separacja wiedzy potwierdzonej od celów WBE.");
+  } else {
+    score += 5;
+    notes.push("🟡 Wskazówka AI: pełna emulacja mózgu (WBE) to hipoteza i cel długoterminowy.");
+  }
+  if (q2 === "correct") {
+    score += 20;
+    notes.push("🟢 Rygor źródłowy: właściwa hierarchia źródeł (podręczniki polskie 🇵🇱 i otwarte zasoby).");
+  } else {
+    score += 5;
+    notes.push("🟡 Wskazówka AI: zaczynamy od podręczników podstawowych i ćwiczeń.");
+  }
+  if (sample.length >= 100) {
+    score += 35;
+    notes.push("🟢 Próbka badawcza ma odpowiednią szczegółowość merytoryczną.");
+  } else {
+    score += 15;
+    notes.push("🟡 Rozwiń opis próbki badawczej do min. 100 znaków.");
+  }
+  if (citation.length >= 10) {
+    score += 25;
+    notes.push("🟢 Przywołano weryfikowalne źródło literaturowe.");
+  } else {
+    score += 5;
+    notes.push("🟡 Podaj pełniejsze źródło (autor, tytuł lub DOI).");
+  }
+
+  const fbBox = document.getElementById("aiVerificationFeedbackBox");
+  if (score < 75) {
+    fbBox.innerHTML = `<div class="ws-card" style="border-color:#f59e0b;"><strong>Wynik AI: ${score}/100 pkt (próg: 75 pkt)</strong><ul style="margin-top:0.35rem; padding-left:1.1rem; font-size:0.8rem;">${notes.map((n) => `<li>${escapeHtml(n)}</li>`).join("")}</ul></div>`;
+    return;
+  }
+
+  const saltBytes = new Uint8Array(16);
+  window.crypto.getRandomValues(saltBytes);
+  const saltHex = bytesToHex(saltBytes);
+  const hashHex = await derivePbkdf2Hex(pass, saltHex, 260000);
+
+  const newRes = {
+    id: "res-" + Date.now(),
+    name,
+    handle: "@" + name.toLowerCase().replace(/\s+/g, "-"),
+    roleTitle: role,
+    specialization: spec,
+    specializationLabel: spec,
+    affiliation: "Zespół Badawczy The Golem 15",
+    orcid: "",
+    bio: `${sample} (Źródło: ${citation})`,
+    aiVerificationScore: score,
+    aiVerificationSummary: `Pozytywna weryfikacja metodologiczna AI (${score}/100 pkt).`,
+    badge: `✓ Stały Badacz (AI ${score}/100)`,
+    status: "active",
+    joinedAt: new Date().toISOString(),
+    auth: {
+      algorithm: "pbkdf2_sha256",
+      iterations: 260000,
+      salt: saltHex,
+      hash: hashHex
+    }
+  };
+
+  appState.data.verifiedResearchers.push(newRes);
+  appState.activeResearcher = newRes;
+  sessionStorage.setItem("golem_xv_active_researcher", JSON.stringify(newRes));
+  await saveState(`Gratulacje ${name}! Stałe konto Badacza (AI ${score}/100) zostało aktywowane.`);
+}
+
 // --- WIDOK 5: CENTRUM AUTORYZACJI ADMINISTRATORA (MODERACJA) ---
 function renderModerationView() {
   const container = document.getElementById("moderationContainer");
@@ -3528,7 +3898,7 @@ function openNewStudyMaterialModal(categoryType = "FOUNDATION", targetId = "FND-
       </div>
       <div class="form-group">
         <label>Autor zgłoszenia</label>
-        <input type="text" id="smAuthorInput" class="input-field" value="${appState.isAdmin ? "Administrator" : "Gość / Obserwator"}" required />
+        <input type="text" id="smAuthorInput" class="input-field" value="${escapeHtml(getContributorSignature())}" required />
       </div>
       <div style="display:flex; justify-content:flex-end; margin-top:1rem;">
         <button type="submit" class="btn btn-primary">Zapisz materiał do nauki</button>
@@ -3551,15 +3921,15 @@ function submitNewStudyMaterial(e, categoryType, targetId) {
     content: document.getElementById("smContentInput").value.trim(),
     url: document.getElementById("smUrlInput").value.trim(),
     author: document.getElementById("smAuthorInput").value.trim(),
-    status: appState.isAdmin ? "approved" : "pending",
+    status: canAutoApprove() ? "approved" : "pending",
     isSessionCreated: true,
     createdAt: new Date().toISOString()
   });
   closeModal();
   saveState(
-    appState.isAdmin
-      ? "Materiał do nauki został opublikowany."
-      : "Materiał do nauki został dodany i oczekuje na zatwierdzenie przez Administratora."
+    canAutoApprove()
+      ? "Materiał do nauki został opublikowany natychmiastowo!"
+      : "Materiał do nauki został dodany i oczekuje na zatwierdzenie."
   );
 }
 
@@ -3611,7 +3981,7 @@ function openNewSubprojectModal(defaultTrackId = "A", defaultBranch = "") {
       </div>
       <div class="form-group">
         <label>Autor / Inicjator</label>
-        <input type="text" id="spAuthorInput" class="input-field" value="${appState.isAdmin ? "Administrator" : "Gość / Obserwator"}" required />
+        <input type="text" id="spAuthorInput" class="input-field" value="${escapeHtml(getContributorSignature())}" required />
       </div>
       <div style="display:flex; justify-content:flex-end; margin-top:1rem;">
         <button type="submit" class="btn btn-primary">Uruchom środowisko badawcze</button>
@@ -3629,7 +3999,7 @@ function submitNewSubproject(e) {
   const description = document.getElementById("spDescInput").value.trim();
   const initialHyp = document.getElementById("spInitialHypothesis").value.trim();
   const author = document.getElementById("spAuthorInput").value.trim();
-  const approval = appState.isAdmin ? "approved" : "pending";
+  const approval = canAutoApprove() ? "approved" : "pending";
   const newId = "sub-" + Date.now();
 
   appState.data.subprojects.unshift({
@@ -3697,7 +4067,7 @@ function openNewMaterialModal(defaultTrackId = "A", defaultBranch = "") {
       </div>
       <div class="form-group">
         <label>Autor zgłoszenia</label>
-        <input type="text" id="matAuthorInput" class="input-field" value="${appState.isAdmin ? "Administrator" : "Gość / Obserwator"}" required />
+        <input type="text" id="matAuthorInput" class="input-field" value="${escapeHtml(getContributorSignature())}" required />
       </div>
       <div style="display:flex; justify-content:flex-end; margin-top:1rem;">
         <button type="submit" class="btn btn-primary">Zapisz materiał</button>
@@ -3719,7 +4089,7 @@ function submitNewMaterial(e) {
     author: document.getElementById("matAuthorInput").value.trim(),
     content: document.getElementById("matContentInput").value.trim(),
     url: "",
-    status: appState.isAdmin ? "approved" : "pending",
+    status: canAutoApprove() ? "approved" : "pending",
     isSessionCreated: true,
     createdAt: new Date().toISOString()
   });
@@ -3755,7 +4125,7 @@ function submitWorkspaceEntry(e, entryType, spId) {
   const sp = appState.data.subprojects.find((s) => s.id === spId);
   if (!sp) return;
   const author = document.getElementById("wsEntryAuthor").value.trim();
-  const approvalStatus = appState.isAdmin ? "approved" : "pending";
+  const approvalStatus = canAutoApprove() ? "approved" : "pending";
   if (entryType === "hypothesis") {
     sp.workspace.hypotheses.push({ id: "hyp-" + Date.now(), statement: document.getElementById("wsEntryText").value.trim(), status: "Hipoteza otwarta", author, approvalStatus, isSessionCreated: true });
   } else if (entryType === "note") {

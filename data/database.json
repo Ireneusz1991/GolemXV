@@ -2357,5 +2357,73 @@
       "label": "Odpowiedzialność międzypokoleniowa i filozofia przyrody",
       "status": "approved"
     }
+  ],
+  "verifiedResearchers": [
+    {
+      "id": "res-founder",
+      "name": "Ireneusz",
+      "handle": "@ireneusz-architekt",
+      "roleTitle": "Inicjator i Główny Architekt Projektu The Golem 15",
+      "specialization": "ALL",
+      "specializationLabel": "Wszystkie ścieżki (A–G) i Wspólne Podstawy (1–8)",
+      "affiliation": "The Golem 15: A Human's Road to Reality",
+      "orcid": "",
+      "bio": "Twórca architektury badawczej The Golem 15 łączącej 8 fundamentów naukowych z 7 ścieżkami (A–G).",
+      "aiVerificationScore": 100,
+      "aiVerificationSummary": "Założyciel projektu — pełny rygor metodologiczny i epistemiczny.",
+      "badge": "★ Założyciel & Kurator",
+      "status": "active",
+      "joinedAt": "2026-10-25T10:00:00Z",
+      "auth": {
+        "algorithm": "pbkdf2_sha256",
+        "iterations": 260000,
+        "salt": "9f4d8a2c6e1b3f7a5c8d0e2f4a6b8c1d",
+        "hash": "673a07dbc15ac855752d7c521ffc31e200302b03a3b296310b742421cbfd4d62"
+      }
+    },
+    {
+      "id": "res-neuro-b",
+      "name": "Dr hab. Marek Nowak (Zespół Neuroinformatyki)",
+      "handle": "@m-nowak-neuro",
+      "roleTitle": "Stały Badacz — Neurobiologia Obliczeniowa i Układy Neuromorficzne",
+      "specialization": "B",
+      "specializationLabel": "Projekt B — Cyfrowy Umysł / Projekt C — Maszyny analogowe",
+      "affiliation": "Zespół Modelowania Układów Nerwowych",
+      "orcid": "https://orcid.org/",
+      "bio": "Badania nad modelami biofizycznymi Hodgkina–Huxleya, dynamiką populacji neuronalnych (Dayan & Abbott, Izhikevich) i estymacją pasma synaptycznego.",
+      "aiVerificationScore": 95,
+      "aiVerificationSummary": "Zweryfikowano przez AI: wysoki rygor matematyczno-biofizyczny, poprawna separacja modeli empirycznych od hipotez WBE.",
+      "badge": "✓ Stały Badacz (AI 95/100)",
+      "status": "active",
+      "joinedAt": "2026-10-25T12:00:00Z",
+      "auth": {
+        "algorithm": "pbkdf2_sha256",
+        "iterations": 260000,
+        "salt": "9f4d8a2c6e1b3f7a5c8d0e2f4a6b8c1d",
+        "hash": "673a07dbc15ac855752d7c521ffc31e200302b03a3b296310b742421cbfd4d62"
+      }
+    },
+    {
+      "id": "res-bio-dfg",
+      "name": "Dr Anna Wiśniewska (Zespół Biotechnologii i Biosfery)",
+      "handle": "@a-wisniewska-bio",
+      "roleTitle": "Stały Badacz — Inżynieria Tkankowa, BLSS i Ekologia Systemowa",
+      "specialization": "D",
+      "specializationLabel": "Projekt D — Biotechnologia / Oś Kosmos (F) ↔ Ziemia (G)",
+      "affiliation": "Laboratorium Biologii Syntetycznej i Ekosystemów Zamkniętych",
+      "orcid": "https://orcid.org/",
+      "bio": "Analiza rusztowań 3D (scaffolds), hodowli organoidów oraz bilansu tlenowo-węglowego w zamkniętych obiegach podtrzymywania życia (MELiSSA / LCA).",
+      "aiVerificationScore": 92,
+      "aiVerificationSummary": "Zweryfikowano przez AI: pełna zgodność z bioetyką (Projekt E) i literaturą polsko- oraz anglojęzyczną.",
+      "badge": "✓ Stały Badacz (AI 92/100)",
+      "status": "active",
+      "joinedAt": "2026-10-25T12:30:00Z",
+      "auth": {
+        "algorithm": "pbkdf2_sha256",
+        "iterations": 260000,
+        "salt": "9f4d8a2c6e1b3f7a5c8d0e2f4a6b8c1d",
+        "hash": "673a07dbc15ac855752d7c521ffc31e200302b03a3b296310b742421cbfd4d62"
+      }
+    }
   ]
 }

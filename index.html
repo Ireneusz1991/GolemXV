@@ -25,6 +25,9 @@
         <div id="roleBadge" class="role-badge guest">
           Tryb Gościa / Obserwatora
         </div>
+        <button id="researcherQuickBtn" class="btn btn-sm" onclick="switchTab('researchers')">
+          🧑‍🔬 Stali Badacze & AI
+        </button>
         <button id="authToggleBtn" class="btn btn-sm" style="opacity:0.6;" title="Autoryzacja właściciela" onclick="toggleAdminMode()">
           🔒
         </button>
@@ -51,8 +54,12 @@
       <button class="nav-tab" data-tab="graph" onclick="switchTab('graph')">
         🕸️ 5. Graf Powiązań (A–G)
       </button>
+      <button class="nav-tab" data-tab="researchers" onclick="switchTab('researchers')">
+        🧑‍🔬 6. Badacze i Weryfikacja AI
+        <span id="navResearchersCount" class="badge-count">3</span>
+      </button>
       <button class="nav-tab" data-tab="moderation" onclick="switchTab('moderation')">
-        🛡️ 6. Autoryzacja Administratora
+        🛡️ 7. Autoryzacja Administratora
         <span id="navModerationCount" class="badge-count">0</span>
       </button>
     </nav>
@@ -60,6 +67,64 @@
 
   <!-- Główny obszar roboczy -->
   <main class="main-container">
+    <!-- KOMPAS ORIENTACYJNY UI (Wayfinding Architecture wzorowana na Most Wiedzy / OSF / ResearchHub / Heptabase) -->
+    <section id="wayfindingCompassBar" class="ws-card" style="margin-bottom:1.25rem; border:1px solid rgba(56,189,248,0.3); background:linear-gradient(135deg, rgba(15,23,42,0.96) 0%, rgba(22,31,51,0.92) 100%);">
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.75rem; margin-bottom:0.75rem;">
+        <div>
+          <span style="font-size:0.74rem; text-transform:uppercase; letter-spacing:0.08em; color:#38bdf8; font-weight:700;">
+            🧭 Architektura Orientacyjna Projektu (OSF • ResearchHub • Most Wiedzy • Heptabase)
+          </span>
+          <div style="font-size:0.83rem; color:var(--text-secondary);">
+            Kliknij wybraną warstwę fundamentów (1–8) lub ścieżkę (A–G), albo użyj wyszukiwarki fasetowej poniżej.
+          </div>
+        </div>
+        <div style="display:flex; gap:0.5rem; align-items:center; flex-wrap:wrap;">
+          <input
+            type="search"
+            id="globalWayfindingInput"
+            class="input-field"
+            style="min-width:270px; padding:0.4rem 0.75rem; font-size:0.82rem;"
+            placeholder="🔍 Szukaj w całym projekcie (autor, pojęcie, ścieżka)..."
+            oninput="renderGlobalWayfindingResults(this.value)"
+          />
+        </div>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:0.75rem;">
+        <div style="padding:0.65rem 0.8rem; border-radius:8px; background:rgba(11,15,25,0.65); border:1px solid rgba(148,163,184,0.16);">
+          <div style="font-size:0.72rem; text-transform:uppercase; color:#38bdf8; font-weight:700; margin-bottom:0.35rem;">🏛️ Oś I: 8 Dziedzin Podstawowych (po kolei)</div>
+          <div class="foundations-list">
+            <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="switchTab('study')">1. Matematyka</span>
+            <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="switchTab('study')">2. Informatyka</span>
+            <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="switchTab('study')">3. Programowanie</span>
+            <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="switchTab('study')">4. Fizyka</span>
+            <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="switchTab('study')">5. Elektronika</span>
+            <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="switchTab('study')">6. Chemia</span>
+            <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="switchTab('study')">7. Biologia</span>
+            <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="switchTab('study')">8. AI</span>
+          </div>
+        </div>
+        <div style="padding:0.65rem 0.8rem; border-radius:8px; background:rgba(11,15,25,0.65); border:1px solid rgba(148,163,184,0.16);">
+          <div style="font-size:0.72rem; text-transform:uppercase; color:#a855f7; font-weight:700; margin-bottom:0.35rem;">🗺️ Oś II: 7 Ścieżek Badawczych (A–G)</div>
+          <div class="foundations-list">
+            <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="openTrackWorkspaceFilter('A')">A: Bio-Cyfrowy</span>
+            <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="openTrackWorkspaceFilter('B')">B: Cyfrowy Umysł</span>
+            <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="openTrackWorkspaceFilter('C')">C: Analog/Neuromorf</span>
+            <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="openTrackWorkspaceFilter('D')">D: Biotechnologia</span>
+            <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="openTrackWorkspaceFilter('E')">E: Filozofia</span>
+            <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="openTrackWorkspaceFilter('F')">F: Kosmos</span>
+            <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="openTrackWorkspaceFilter('G')">G: Ziemia</span>
+          </div>
+        </div>
+        <div style="padding:0.65rem 0.8rem; border-radius:8px; background:rgba(11,15,25,0.65); border:1px solid rgba(148,163,184,0.16);">
+          <div style="font-size:0.72rem; text-transform:uppercase; color:#10b981; font-weight:700; margin-bottom:0.35rem;">🧑‍🔬 Oś III: Status Epistemiczny & Stali Badacze</div>
+          <div style="font-size:0.76rem; color:var(--text-secondary); line-height:1.45;">
+            🟢 Wiedza potwierdzona • 🔵 Aktywne badania • 🟡 Hipoteza • 🟣 Spekulacja<br/>
+            <a href="javascript:void(0)" onclick="switchTab('researchers')" style="color:#38bdf8; text-decoration:underline; font-weight:600;">Dołącz jako Stały Badacz (Weryfikacja AI) → publikuj bez kolejki</a>
+          </div>
+        </div>
+      </div>
+      <div id="globalWayfindingResults" style="display:none; margin-top:0.75rem; padding-top:0.75rem; border-top:1px solid rgba(148,163,184,0.2);"></div>
+    </section>
     <!-- WIDOK 0 (PIERWSZA OPCJA): MATERIAŁY DO NAUKI (8 DZIEDZIN PODSTAWOWYCH PO KOLEI + ODNOGI ŚCIEŻEK A-G) -->
     <section id="view-study" class="tab-view">
       <div class="filter-bar">
@@ -205,7 +270,12 @@
       </div>
     </section>
 
-    <!-- WIDOK 5: CENTRUM AUTORYZACJI ADMINISTRATORA -->
+    <!-- WIDOK 5: ZESPÓŁ STAŁYCH BADACZY I WERYFIKACJA AI -->
+    <section id="view-researchers" class="tab-view" style="display:none;">
+      <div id="researchersContainer"></div>
+    </section>
+
+    <!-- WIDOK 6: CENTRUM AUTORYZACJI ADMINISTRATORA -->
     <section id="view-moderation" class="tab-view" style="display:none;">
       <div id="moderationContainer"></div>
     </section>
