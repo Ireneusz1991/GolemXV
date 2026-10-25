@@ -1,7 +1,7 @@
 {
   "projectMeta": {
     "title": "The Golem 15: A Human's Road to Reality",
-    "subtitle": "Mapa projektu badawczego — wspólne podstawy naukowe oraz siedem powiązanych ścieżek (A–G)",
+    "subtitle": "Mapa projektu badawczego — wspólne podstawy naukowe (1–8), siedem ścieżek (A–G) oraz Super-Projekt H (Energetyka jądrowa i termojądrowa)",
     "adminAuth": {
       "algorithm": "pbkdf2_sha256",
       "iterations": 260000,
@@ -48,7 +48,8 @@
         "C",
         "E",
         "F",
-        "G"
+        "G",
+        "H"
       ]
     },
     {
@@ -71,7 +72,8 @@
         "B",
         "C",
         "F",
-        "G"
+        "G",
+        "H"
       ]
     },
     {
@@ -95,7 +97,8 @@
         "C",
         "D",
         "F",
-        "G"
+        "G",
+        "H"
       ]
     },
     {
@@ -119,7 +122,8 @@
         "C",
         "E",
         "F",
-        "G"
+        "G",
+        "H"
       ]
     },
     {
@@ -142,7 +146,8 @@
         "B",
         "C",
         "F",
-        "G"
+        "G",
+        "H"
       ]
     },
     {
@@ -164,7 +169,8 @@
         "A",
         "D",
         "F",
-        "G"
+        "G",
+        "H"
       ]
     },
     {
@@ -187,7 +193,8 @@
         "B",
         "D",
         "F",
-        "G"
+        "G",
+        "H"
       ]
     },
     {
@@ -212,7 +219,8 @@
         "D",
         "E",
         "F",
-        "G"
+        "G",
+        "H"
       ]
     }
   ],
@@ -832,6 +840,88 @@
       "author": "Administrator",
       "status": "approved",
       "createdAt": "2026-10-25T12:30:00Z"
+    },
+    {
+      "id": "smat-h1",
+      "categoryType": "TRACK",
+      "targetId": "H",
+      "topic": "Reaktory wysokotemperaturowe chłodzone gazem (HTGR, w tym polski projekt HTGR-POLA w NCBJ Świerk) do kogeneracji i produkcji wodoru.",
+      "title": "Super-Projekt H (PL → EN): Fizyka jądrowa, reaktor MARIA, projekt HTGR-POLA (NCBJ Świerk), SMR, fuzja termojądrowa (IFPiLM) oraz profile badaczy w bazie Ludzie Nauki",
+      "level": "Podstawowy → Zaawansowany",
+      "format": "Biblioteka Super-Projektu H (PL w pierwszej kolejności)",
+      "sourceLang": "PL+EN",
+      "content": "1. W pierwszej kolejności (Po polsku):\n• Podręczniki akademickie: E. Skrzypczak, Z. Szefliński — „Wstęp do fizyki jądra atomowego i cząstek elementarnych” (PWN); OpenStax Polska „Fizyka dla szkół wyższych. Tom 3” (Fizyka jądrowa); materiały OpenAGH (Energetyka jądrowa).\n• Narodowe Centrum Badań Jądrowych (NCBJ Świerk) i raporty w serwisie Nauka w Polsce: polski reaktor badawczy MARIA (30 MW — produkcja radioizotopów medycznych Mo-99/Lu-177, neutronowe domieszkowanie krzemu dla elektroniki i badania materiałowe dla fuzji IFMIF-DONES) oraz projekt polskiego reaktora wysokotemperaturowego HTGR-POLA.\n• Baza „Ludzie Nauki” (ludzie.nauka.gov.pl/ln/) — dorobek polskich fizyków jądrowych, reaktorowych i plazmowych (NCBJ, IFPiLM, AGH, PW).\n2. Uzupełniająco (Po angielsku): IAEA SMR & HTGR Technology Roadmaps, ITER Fusion oraz NASA Space Nuclear Power.",
+      "url": "https://naukawpolsce.pl/aktualnosci/news%2C104569%2Cncbj-opracowalo-koncepcje-polskiego-reaktora-wysokotemperaturowego.html",
+      "links": [
+        {
+          "label": "🇵🇱 Nauka w Polsce — NCBJ opracowało koncepcję polskiego reaktora wysokotemperaturowego (HTGR-POLA)",
+          "url": "https://naukawpolsce.pl/aktualnosci/news%2C104569%2Cncbj-opracowalo-koncepcje-polskiego-reaktora-wysokotemperaturowego.html"
+        },
+        {
+          "label": "🇵🇱 Nauka w Polsce — Reaktor badawczy MARIA w NCBJ Świerk: izotopy medyczne, krzem i badania dla fuzji",
+          "url": "https://naukawpolsce.pl/aktualnosci/news%2C105854%2Cdyrektor-ncbj-maria-chyba-jedyny-reaktor-badawczy-na-swiecie-bez-stabilnego"
+        },
+        {
+          "label": "🇵🇱 Ludzie Nauki (ludzie.nauka.gov.pl/ln/) — Profile polskich ekspertów i grantów w obszarze energetyki jądrowej i fizyki plazmy",
+          "url": "https://ludzie.nauka.gov.pl/ln/"
+        },
+        {
+          "label": "🇵🇱 Narodowe Centrum Badań Jądrowych (NCBJ Świerk) — Edukacja i badania jądrowe",
+          "url": "https://www.ncbj.gov.pl/"
+        },
+        {
+          "label": "🇵🇱 Instytut Fizyki Plazmy i Laserowej Mikrosyntezy (IFPiLM) — Fuzja jądrowa",
+          "url": "https://www.ifpilm.pl/"
+        },
+        {
+          "label": "🇬🇧 IAEA — Small Modular Reactors (SMR) & Advanced Reactors",
+          "url": "https://www.iaea.org/"
+        }
+      ],
+      "author": "Ireneusz",
+      "status": "approved",
+      "createdAt": "2026-10-25T22:50:00Z"
+    },
+    {
+      "id": "smat-ai-nwp",
+      "categoryType": "FOUNDATION",
+      "targetId": "FND-8",
+      "topic": "Modele poznawcze, reprezentacje semantyczne a biologiczne działanie mózgu (porównanie AI i Projektu B).",
+      "title": "Przegląd „Nauka w Polsce” i „Ludzie Nauki”: Inteligencja biologiczna a sztuczna — systemy wzorowane na mózgu, cyfrowy sen sieci neuronowych i biokomputery",
+      "level": "Średniozaawansowany / Badawczy",
+      "format": "Zestawienie artykułów badawczych (Nauka w Polsce + Ludzie Nauki)",
+      "sourceLang": "PL",
+      "content": "Zbiór wyselekcjonowanych artykułów z serwisu Nauka w Polsce (naukawpolsce.pl) oraz profili badawczych z bazy Ludzie Nauki (ludzie.nauka.gov.pl/ln/) łączących Sztuczną Inteligencję (Dziedzina 8) z Projektem B (Cyfrowy umysł) i Projektem C (Układy neuromorficzne):\n• Prof. Włodzisław Duch o transformacji nauki przez AI i kierunkach neuroinformatyki.\n• Systemy neuromorficzne i chipy wzorowane na mózgu (memrystory) obniżające gigantyczne zużycie energii przez współczesne modele AI.\n• Algorytmy naśladujące ludzki sen w sztucznych sieciach neuronowych — zapobieganie katastrofalnemu zapominaniu podczas uczenia ciągłego.\n• Biokomputery hybrydowe (Brainoware) łączące żywe organoidy mózgowe z elektroniką.",
+      "url": "https://naukawpolsce.pl/aktualnosci/news%2C76897%2Ckognitywista-przyszloscia-sztucznej-inteligencji-sa-systemy-wzorowane-na",
+      "links": [
+        {
+          "label": "🇵🇱 Nauka w Polsce — Kognitywista: przyszłością sztucznej inteligencji są systemy wzorowane na mózgu",
+          "url": "https://naukawpolsce.pl/aktualnosci/news%2C76897%2Ckognitywista-przyszloscia-sztucznej-inteligencji-sa-systemy-wzorowane-na"
+        },
+        {
+          "label": "🇵🇱 Nauka w Polsce — Prof. Włodzisław Duch: sztuczna inteligencja zmienia wszystko",
+          "url": "https://naukawpolsce.pl/aktualnosci/news%2C95000%2Cprof-wlodzislaw-duch-sztuczna-inteligencja-zmienia-wszystko.html"
+        },
+        {
+          "label": "🇵🇱 Nauka w Polsce — Sztuczna inteligencja może lepiej „zapamiętać” treści, jeśli naśladuje ludzki sen",
+          "url": "https://naukawpolsce.pl/aktualnosci/news%2C100463%2Csztuczna-inteligencja-moze-lepiej-zapamietac-tresci-jesli-nasladuje-ludzki"
+        },
+        {
+          "label": "🇵🇱 Nauka w Polsce — Inspirowany mózgiem chip ma ułatwić pracę SI (układy neuromorficzne)",
+          "url": "https://naukawpolsce.pl/aktualnosci/news%2C112694%2Cinspirowany-mozgiem-chip-ma-ulatwic-prace-si.html"
+        },
+        {
+          "label": "🇵🇱 Nauka w Polsce — Komputer z żywym mózgiem (hybrydowe biokomputery organoidowe)",
+          "url": "https://naukawpolsce.pl/aktualnosci/news%2C100102%2Ckomputer-z-zywym-mozgiem.html"
+        },
+        {
+          "label": "🇵🇱 Ludzie Nauki (OPI PIB) — Baza polskich badaczy AI, kognitywistyki i sieci neuronowych",
+          "url": "https://ludzie.nauka.gov.pl/ln/"
+        }
+      ],
+      "author": "Ireneusz",
+      "status": "approved",
+      "createdAt": "2026-10-25T22:51:00Z"
     }
   ],
   "supplementaryLibrary": {
@@ -1450,6 +1540,65 @@
             ]
           }
         ]
+      },
+      {
+        "trackId": "H",
+        "title": "VIII. SUPER-PROJEKT H — ENERGETYKA JĄDROWA, TERMOJĄDROWA I ZASTOSOWANIA W PODWARIANTACH A–G (PL w pierwszej kolejności)",
+        "sequenceLabel": "Kolejność nauki",
+        "sequence": "Podstawy fizyki jądrowej i ochrony radiologicznej (po polsku: Skrzypczak & Szefliński PWN, OpenStax Fizyka Tom 3 PL, OpenAGH) → Inżynieria reaktorowa, reaktor MARIA, SMR i HTGR-POLA (NCBJ Świerk, Nauka w Polsce, Ludzie Nauki) → Fizyka plazmy i fuzja termojądrowa (IFPiLM, ITER, W7-X) → Zastosowania w podwariantach: zasilanie klastrów AI/WBE (B/C), napędy i reaktory kosmiczne (F), medycyna nuklearna (A/D) i dekarbonizacja Ziemi (G).",
+        "links": [
+          {
+            "label": "🇵🇱 Narodowe Centrum Badań Jądrowych (NCBJ w Świerku) — Reaktor MARIA, projekt HTGR-POLA, fizyka jądrowa i plazmowa",
+            "url": "https://www.ncbj.gov.pl/"
+          },
+          {
+            "label": "🇵🇱 Nauka w Polsce (PAP) — NCBJ opracowało koncepcję polskiego reaktora wysokotemperaturowego HTGR-POLA",
+            "url": "https://naukawpolsce.pl/aktualnosci/news%2C104569%2Cncbj-opracowalo-koncepcje-polskiego-reaktora-wysokotemperaturowego.html"
+          },
+          {
+            "label": "🇵🇱 Nauka w Polsce (PAP) — Reaktor badawczy MARIA w NCBJ: izotopy medyczne, badania materiałowe i zastosowania",
+            "url": "https://naukawpolsce.pl/aktualnosci/news%2C105854%2Cdyrektor-ncbj-maria-chyba-jedyny-reaktor-badawczy-na-swiecie-bez-stabilnego"
+          },
+          {
+            "label": "🇵🇱 Ludzie Nauki (OPI PIB / MNiSW) — Baza polskich naukowców, publikacji i projektów (energetyka jądrowa, fizyka plazmy, AI)",
+            "url": "https://ludzie.nauka.gov.pl/ln/"
+          },
+          {
+            "label": "🇵🇱 Instytut Fizyki Plazmy i Laserowej Mikrosyntezy (IFPiLM) — Fuzja termojądrowa, tokamaki ITER/DEMO i stellarator W7-X",
+            "url": "https://www.ifpilm.pl/"
+          },
+          {
+            "label": "🇵🇱 Portal Gov.pl — Polskie Elektrownie Jądrowe i wiedza o atomie (PAA / Ministerstwo Przemysłu)",
+            "url": "https://www.gov.pl/web/polski-atom"
+          },
+          {
+            "label": "🇬🇧 IAEA (International Atomic Energy Agency) — Small Modular Reactors (SMR), HTGR & Nuclear Fusion",
+            "url": "https://www.iaea.org/"
+          },
+          {
+            "label": "🇬🇧 ITER Organization — Fusion Energy Research",
+            "url": "https://www.iter.org/"
+          }
+        ],
+        "groups": [
+          {
+            "heading": "1. Po polsku (w pierwszej kolejności — podręczniki, instytuty i serwisy naukowe)",
+            "items": [
+              "Ewa Skrzypczak, Zygmunt Szefliński — *Wstęp do fizyki jądra atomowego i cząstek elementarnych* ([Wydawnictwo Naukowe PWN](https://ksiegarnia.pwn.pl/)) oraz *OpenStax Fizyka dla szkół wyższych. Tom 3* (rozdziały o fizyce jądrowej i energii jądrowej po polsku).",
+              "Narodowe Centrum Badań Jądrowych ([NCBJ Świerk](https://www.ncbj.gov.pl/)) — materiały edukacyjne i badawcze dot. reaktora MARIA, reaktorów wysokotemperaturowych HTGR-POLA, bezpieczeństwa jądrowego i radiofarmaceutyków.",
+              "Instytut Fizyki Plazmy i Laserowej Mikrosyntezy ([IFPiLM](https://www.ifpilm.pl/)) — polskie badania nad kontrolowaną syntezą termojądrową, tokamakami i plazmą laserową.",
+              "Serwis [Nauka w Polsce (naukawpolsce.pl)](https://naukawpolsce.pl/tag/reaktor) oraz baza ekspertów i grantów [Ludzie Nauki (ludzie.nauka.gov.pl/ln/)](https://ludzie.nauka.gov.pl/ln/)."
+            ]
+          },
+          {
+            "heading": "2. Po angielsku (uzupełniające i międzynarodowe)",
+            "items": [
+              "John R. Lamarsh, Anthony J. Baratta — *Introduction to Nuclear Engineering* oraz Samuel Glasstone — *Nuclear Reactor Engineering*.",
+              "IAEA Nuclear Energy Series & PRIS Database — [https://www.iaea.org/](https://www.iaea.org/)",
+              "NASA Kilopower & Space Nuclear Propulsion (NTP/NEP) — [https://www.nasa.gov/](https://www.nasa.gov/)"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -1662,6 +1811,43 @@
           ]
         }
       ]
+    },
+    {
+      "id": "H",
+      "code": "Super-Projekt H",
+      "name": "Energetyka jądrowa, termojądrowa i architektura mocy (w kontekście podwariantów A–G)",
+      "color": "#f43f5e",
+      "goal": "Zbadanie fizycznych, inżynieryjnych i systemowych podstaw gęstych źródeł energii (rozszczepienie jądrowe, SMR, HTGR, systemy radioizotopowe oraz synteza termojądrowa) jako fundamentu mocy dla gigantycznych klastrów obliczeniowych AI i emulacji mózgu (B i C), napędów i habitatów kosmicznych (F), medycyny nuklearnej i bioniki (A i D) oraz dekarbonizacji biosfery Ziemi (G).",
+      "guidingQuestion": "Jak zapewnić bezpieczną, bezemisyjną i ultragęstą energię jądrową oraz termojądrową zdolną zasilić cywilizację techniczną, centra obliczeniowe AI/WBE, medycynę nuklearną oraz załogową eksplorację kosmosu?",
+      "note": "Super-Projekt H pełni rolę nadrzędnego filaru energetyczno-technologicznego spinającego podwarianty wszystkich pozostałych ścieżek (A–G) oraz 8 dziedzin podstawowych.",
+      "sections": [
+        {
+          "title": "A. Fizyka jądrowa, reaktory III+/IV generacji, SMR i HTGR",
+          "items": [
+            "Fizyka jądra atomowego, reakcje rozszczepienia, transport neutronów i kinetyka reaktorowa.",
+            "Wielkoskalowe reaktory wodne (PWR / EPR / AP1000) oraz małe reaktory modułowe (SMR i mikroreaktory).",
+            "Reaktory wysokotemperaturowe chłodzone gazem (HTGR, w tym polski projekt HTGR-POLA w NCBJ Świerk) do kogeneracji i produkcji wodoru.",
+            "Reaktory prędkie IV generacji, zamknięty cykl paliwowy, recykling aktynowców i bezpieczne składowanie odpadów."
+          ]
+        },
+        {
+          "title": "B. Synteza termojądrowa (Fuzja) i fizyka gorącej plazmy",
+          "items": [
+            "Fizyka plazmy wysokotemperaturowej, kryterium Lawsona i utrzymanie magnetyczne (tokamaki ITER, DEMO oraz stellarator Wendelstein 7-X).",
+            "Synteza inercyjna i laserowa mikrosynteza plazmy (badania IFPiLM i NCBJ).",
+            "Inżynieria materiałowa pierwszej ściany reaktorów fuzyjnych i badania odporności radiacyjnej w reaktorze MARIA (IFMIF-DONES)."
+          ]
+        },
+        {
+          "title": "C. Podwarianty integracyjne ze Ścieżkami A–G oraz Inteligencją (AI)",
+          "items": [
+            "Podwariant B, C i AI: Zasilanie energochłonnych centrów obliczeniowych AI, superkomputerów i hipotetycznej emulacji mózgu (WBE) za pomocą reaktorów SMR/HTGR.",
+            "Podwariant F (Kosmos): Kosmiczna energetyka jądrowa — generatory radioizotopowe (RTG: Pu-238, Am-241), mikroreaktory księżycowe/marsjańskie (Kilopower) i napędy jądrowe (NTP / NEP).",
+            "Podwariant A i D (Medycyna nuklearna i bionika): Produkcja izotopów medycznych (reaktor MARIA: Mo-99/Tc-99m, Lu-177), neuroobrazowanie PET/SPECT mózgu, radioterapia celowana i mikrobaterie betawoltaiczne.",
+            "Podwariant G i E (Ziemia i Filozofia energii): Głęboka dekarbonizacja przemysłu, ciepłownictwa i odsalania wody, kultura bezpieczeństwa jądrowego i odpowiedzialność międzypokoleniowa."
+          ]
+        }
+      ]
     }
   ],
   "subprojects": [
@@ -1820,9 +2006,230 @@
           }
         ]
       }
+    },
+    {
+      "id": "sub-4",
+      "trackId": "H",
+      "secondaryTracks": [
+        "B",
+        "C",
+        "F",
+        "G",
+        "A",
+        "D"
+      ],
+      "branchTopic": "Podwariant B, C i AI: Zasilanie energochłonnych centrów obliczeniowych AI, superkomputerów i hipotetycznej emulacji mózgu (WBE) za pomocą reaktorów SMR/HTGR.",
+      "title": "Architektura mocy jądrowej i termojądrowej (SMR / HTGR-POLA / RTG) dla klastrów AI, emulacji mózgu i habitatów kosmicznych",
+      "author": "Ireneusz",
+      "status": "approved",
+      "createdAt": "2026-10-25T22:52:00Z",
+      "description": "Środowisko badawcze integrujące Super-Projekt H ze wszystkimi podwariantami projektu Golem 15: (1) bilans energetyczny wielkoskalowych centrów AI oraz hipotetycznej emulacji mózgu (Projekt B) w porównaniu z biologicznym mózgiem (~20 W) i układami neuromorficznymi (Projekt C); (2) wykorzystanie polskich koncepcji reaktorów wysokotemperaturowych HTGR-POLA oraz reaktora MARIA (NCBJ Świerk) do kogeneracji, produkcji wodoru i radiofarmaceutyków (Projekt A i D); (3) kosmiczne mikroreaktory rozszczepieniowe i generatory radioizotopowe RTG dla baz księżycowych i marsjańskich (Projekt F) oraz bezemisyjna stabilizacja biosfery Ziemi (Projekt G).",
+      "philosophicalNote": "Skala cywilizacyjna i poznawcza (w tym rozwój AI oraz eksploracja kosmosu) jest bezpośrednio ograniczona gęstością dostępnych strumieni energii i umiejętnością bezpiecznego zarządzania procesami jądrowymi w skali wielopokoleniowej (Projekt E).",
+      "workspace": {
+        "hypotheses": [
+          {
+            "id": "hyp-4",
+            "statement": "Dedykowane bloki SMR/HTGR zintegrowane bezpośrednio z centrami obliczeniowymi AI i układami neuromorficznymi (Projekt B/C) oraz odzyskiem ciepła odpadowego są warunkiem koniecznym do skalowania sztucznej inteligencji bez destabilizacji sieci elektroenergetycznych i klimatu (Projekt G).",
+            "status": "W weryfikacji",
+            "author": "Ireneusz",
+            "approvalStatus": "approved"
+          },
+          {
+            "id": "hyp-5",
+            "statement": "W długotrwałych misjach załogowych na Księżyc i Marsa (Projekt F) kompaktowe reaktory rozszczepieniowe klasy Kilopower (10–100 kWe) oraz napędy jądrowe (NTP/NEP) skracające czas ekspozycji na promieniowanie kosmiczne są niezbędne do utrzymania zamkniętych systemów podtrzymywania życia (BLSS).",
+            "status": "Hipoteza otwarta",
+            "author": "Ireneusz",
+            "approvalStatus": "approved"
+          }
+        ],
+        "notes": [
+          {
+            "id": "note-4",
+            "title": "Synergia NCBJ Świerk (reaktor MARIA i HTGR-POLA) z podwariantami Golem 15",
+            "content": "1. Podwariant elektroniki i AI (Projekt C / FND-5): W reaktorze MARIA realizowane jest neutronowe domieszkowanie krzemu (NTD) dla elektroniki mocy i półprzewodników.\n2. Podwariant biomedyczny (Projekt A / B / D): Produkcja molibdenu-99 / technetu-99m oraz lutetu-177 pozwala na precyzyjną diagnostykę SPECT/PET (w tym neuroobrazowanie mózgu) oraz terapię celowaną.\n3. Podwariant reaktorów IV generacji i fuzji: Projekt HTGR-POLA (chłodzony helem) dostarcza parę o temp. >500°C, a eksperymenty w rdzeniu MARIA badają materiały dla reaktorów termojądrowych DEMO / IFMIF-DONES.",
+            "author": "Ireneusz",
+            "createdAt": "2026-10-25T22:53:00Z",
+            "approvalStatus": "approved"
+          }
+        ],
+        "bibliography": [
+          {
+            "id": "bib-4-pl",
+            "citation": "🇵🇱 Nauka w Polsce (PAP): NCBJ opracowało koncepcję polskiego reaktora wysokotemperaturowego HTGR-POLA oraz badania w reaktorze MARIA.",
+            "sourceLang": "PL",
+            "url": "https://naukawpolsce.pl/aktualnosci/news%2C104569%2Cncbj-opracowalo-koncepcje-polskiego-reaktora-wysokotemperaturowego.html",
+            "addedBy": "Ireneusz",
+            "approvalStatus": "approved"
+          },
+          {
+            "id": "bib-5-pl",
+            "citation": "🇵🇱 Portal Ludzie Nauki (OPI PIB / MNiSW): Profile badawcze, publikacje i granty w dyscyplinach inżynierii jądrowej, fizyki plazmy i neuroinformatyki.",
+            "sourceLang": "PL",
+            "url": "https://ludzie.nauka.gov.pl/ln/",
+            "addedBy": "Ireneusz",
+            "approvalStatus": "approved"
+          }
+        ]
+      }
     }
   ],
   "materials": [
+    {
+      "id": "mat-nwp-h1",
+      "trackId": "H",
+      "branchTopic": "Reaktory wysokotemperaturowe chłodzone gazem (HTGR, w tym polski projekt HTGR-POLA w NCBJ Świerk) do kogeneracji i produkcji wodoru.",
+      "subprojectId": "sub-4",
+      "title": "SUPER-PROJEKT H (Nauka w Polsce & Ludzie Nauki): Koncepcja polskiego reaktora wysokotemperaturowego HTGR-POLA, reaktor MARIA (NCBJ) oraz fuzja termojądrowa w kontekście podwariantów A–G",
+      "type": "Raport badawczy — Nauka w Polsce & Ludzie Nauki [PL]",
+      "sourceLang": "PL",
+      "author": "Ireneusz",
+      "content": "Zestawienie badań z Narodowego Centrum Badań Jądrowych (NCBJ w Świerku) opublikowanych w serwisie Nauka w Polsce (PAP) oraz powiązanych profili w bazie Ludzie Nauki:\n1. Projekt HTGR-POLA (POLski Atomowy): Opracowana w NCBJ koncepcja badawczo-demonstracyjnego reaktora wysokotemperaturowego chłodzonego helem (analizy bezpieczeństwa opublikowane m.in. w „Nuclear Technology”). Reaktory HTGR i SMR mogą zasilać zarówno przemysł chemiczny i produkcję wodoru (Projekt G), jak i wielkoskalowe centra danych AI (Projekt B/C).\n2. Reaktor badawczy MARIA (30 MW): Jedyny w Polsce reaktor jądrowy generujący intensywne strumienie neutronów — kluczowy dla: (a) medycyny nuklearnej i neuroobrazowania (izotopy Mo-99, Lu-177 — styk z Projektem A, B i D), (b) neutronowego domieszkowania krzemu dla elektroniki i układów mocy (styk z Projektem C), (c) testowania materiałów osłonowych dla przyszłych reaktorów syntezy termojądrowej (DEMO / IFMIF-DONES).\n3. Kosmiczne i obronne podwarianty energetyki jądrowej (Projekt F): Zastosowanie kompaktowych reaktorów rozszczepieniowych i generatorów radioizotopowych (RTG) w misjach księżycowych i marsjańskich.",
+      "url": "https://naukawpolsce.pl/aktualnosci/news%2C104569%2Cncbj-opracowalo-koncepcje-polskiego-reaktora-wysokotemperaturowego.html",
+      "links": [
+        {
+          "label": "🇵🇱 Nauka w Polsce — NCBJ opracowało koncepcję polskiego reaktora wysokotemperaturowego (HTGR-POLA)",
+          "url": "https://naukawpolsce.pl/aktualnosci/news%2C104569%2Cncbj-opracowalo-koncepcje-polskiego-reaktora-wysokotemperaturowego.html"
+        },
+        {
+          "label": "🇵🇱 Nauka w Polsce — Reaktor badawczy MARIA w NCBJ Świerk: izotopy medyczne, badania materiałowe i fuzja",
+          "url": "https://naukawpolsce.pl/aktualnosci/news%2C105854%2Cdyrektor-ncbj-maria-chyba-jedyny-reaktor-badawczy-na-swiecie-bez-stabilnego"
+        },
+        {
+          "label": "🇵🇱 Nauka w Polsce — Katalog artykułów: Reaktory jądrowe i energetyka jądrowa",
+          "url": "https://naukawpolsce.pl/tag/reaktor"
+        },
+        {
+          "label": "🇵🇱 Ludzie Nauki (ludzie.nauka.gov.pl/ln/) — Wyszukiwarka polskich ekspertów i projektów z fizyki jądrowej, energetyki i AI",
+          "url": "https://ludzie.nauka.gov.pl/ln/"
+        }
+      ],
+      "status": "approved",
+      "createdAt": "2026-10-25T22:54:00Z"
+    },
+    {
+      "id": "mat-nwp-b1",
+      "trackId": "B",
+      "branchTopic": "Modelowanie neuronów i sieci neuronalnych.",
+      "subprojectId": "sub-1",
+      "title": "INTELIGENCJA I MÓZG (Nauka w Polsce & Ludzie Nauki): Systemy AI wzorowane na mózgu, cyfrowy sen sieci neuronowych, określenie wieku mózgu i dekodowanie myśli z fMRI",
+      "type": "Przegląd artykułów — Nauka w Polsce [PL]",
+      "sourceLang": "PL",
+      "author": "Ireneusz",
+      "content": "Wybrane artykuły z serwisu Nauka w Polsce (naukawpolsce.pl) oraz dorobku polskich kognitywistów i neuroinformatyków (baza Ludzie Nauki) dla Projektu B (Cyfrowy umysł) i Dziedziny 8 (AI):\n1. Systemy wzorowane na mózgu (prof. Włodzisław Duch): Dlaczego klasyczne modele głębokiego uczenia wymagają ogromnej mocy obliczeniowej i jak neuroinformatyka dąży do połączenia architektury korowej z wnioskowaniem symbolicznym.\n2. Cyfrowy sen w sztucznej inteligencji: Wprowadzenie stanów analogicznych do ludzkiego snu (faza konsolidacji synaptycznej) zapobiega tzw. katastrofalnemu zapominaniu (catastrophic forgetting) w sztucznych sieciach neuronowych uczących się w sposób ciągły.\n3. Dekodowanie aktywności mózgu i diagnostyka AI: Wykorzystanie modeli językowych i głębokich sieci neuronowych do nieinwazyjnej rekonstrukcji treści myśli ze skanów fMRI oraz precyzyjnego wyznaczania biologicznego wieku mózgu.",
+      "url": "https://naukawpolsce.pl/aktualnosci/news%2C76897%2Ckognitywista-przyszloscia-sztucznej-inteligencji-sa-systemy-wzorowane-na",
+      "links": [
+        {
+          "label": "🇵🇱 Nauka w Polsce — Kognitywista: przyszłością sztucznej inteligencji są systemy wzorowane na mózgu",
+          "url": "https://naukawpolsce.pl/aktualnosci/news%2C76897%2Ckognitywista-przyszloscia-sztucznej-inteligencji-sa-systemy-wzorowane-na"
+        },
+        {
+          "label": "🇵🇱 Nauka w Polsce — Prof. Włodzisław Duch: sztuczna inteligencja zmienia wszystko",
+          "url": "https://naukawpolsce.pl/aktualnosci/news%2C95000%2Cprof-wlodzislaw-duch-sztuczna-inteligencja-zmienia-wszystko.html"
+        },
+        {
+          "label": "🇵🇱 Nauka w Polsce — Sztuczna inteligencja może lepiej „zapamiętać” treści, jeśli naśladuje ludzki sen",
+          "url": "https://naukawpolsce.pl/aktualnosci/news%2C100463%2Csztuczna-inteligencja-moze-lepiej-zapamietac-tresci-jesli-nasladuje-ludzki"
+        },
+        {
+          "label": "🇵🇱 Nauka w Polsce — Sztuczna inteligencja pozwala określić prawdziwy wiek mózgu",
+          "url": "https://naukawpolsce.pl/aktualnosci/news%2C94962%2Csztuczna-inteligencja-pozwala-okreslic-prawdziwy-wiek-mozgu.html"
+        },
+        {
+          "label": "🇵🇱 Nauka w Polsce — Komputer nauczył się czytać ludzkie myśli ze skanów fMRI",
+          "url": "https://naukawpolsce.pl/aktualnosci/news%2C96452%2Cusakomputer-nauczyl-sie-czytac-ludzkie-mysli-choc-jeszcze-popelnia-bledy"
+        },
+        {
+          "label": "🇵🇱 Ludzie Nauki (ludzie.nauka.gov.pl/ln/) — Profile polskich badaczy neuroinformatyki i sztucznej inteligencji",
+          "url": "https://ludzie.nauka.gov.pl/ln/"
+        }
+      ],
+      "status": "approved",
+      "createdAt": "2026-10-25T22:55:00Z"
+    },
+    {
+      "id": "mat-nwp-c1",
+      "trackId": "C",
+      "branchTopic": "Komputery neuromorficzne.",
+      "subprojectId": "sub-2",
+      "title": "OBLICZANIE PRZEZ FIZYKĘ I BIOLOGIĘ (Nauka w Polsce): Chipy neuromorficzne inspirowane mózgiem oraz hybrydowy biokomputer z żywym organoidem mózgowym (Brainoware)",
+      "type": "Przegląd artykułów — Nauka w Polsce [PL]",
+      "sourceLang": "PL",
+      "author": "Ireneusz",
+      "content": "Przełomowe badania z pogranicza Projektu C (Maszyny analogowe i neuromorficzne), Projektu B (Cyfrowy umysł) i Projektu D (Organoidy) opisywane w serwisie Nauka w Polsce:\n1. Inspirowany mózgiem chip neuromorficzny: Przetwarzanie informacji bezpośrednio w pamięci (in-memory computing) z wykorzystaniem memrystorów i sztucznych synaps pozwala wielokrotnie zredukować pobór mocy przez algorytmy AI (łącznik z Super-Projektem H).\n2. Komputer z żywym mózgiem (Brainoware): Połączenie trójwymiarowego organoidu ludzkiego mózgu wyhodowanego z komórek macierzystych z matrycą wieloelektrodową i układem uczenia maszynowego (reservoir computing) do rozpoznawania mowy i przewidywania nieliniowych układów dynamicznych.",
+      "url": "https://naukawpolsce.pl/aktualnosci/news%2C112694%2Cinspirowany-mozgiem-chip-ma-ulatwic-prace-si.html",
+      "links": [
+        {
+          "label": "🇵🇱 Nauka w Polsce — Inspirowany mózgiem chip ma ułatwić pracę SI (procesory neuromorficzne)",
+          "url": "https://naukawpolsce.pl/aktualnosci/news%2C112694%2Cinspirowany-mozgiem-chip-ma-ulatwic-prace-si.html"
+        },
+        {
+          "label": "🇵🇱 Nauka w Polsce — Komputer z żywym mózgiem (biokomputer hybrydowy Brainoware)",
+          "url": "https://naukawpolsce.pl/aktualnosci/news%2C100102%2Ckomputer-z-zywym-mozgiem.html"
+        }
+      ],
+      "status": "approved",
+      "createdAt": "2026-10-25T22:56:00Z"
+    },
+    {
+      "id": "mat-nwp-af1",
+      "trackId": "A",
+      "branchTopic": "Interfejsy mózg–komputer.",
+      "subprojectId": "sub-1",
+      "title": "NEUROTECHNOLOGIA W KOSMOSIE (Nauka w Polsce): Misja IGNIS — polski interfejs mózg–komputer (PhotonGrav / fNIRS) przetestowany na ISS oraz odporność astronautów",
+      "type": "Przegląd artykułów — Nauka w Polsce [PL]",
+      "sourceLang": "PL",
+      "author": "Ireneusz",
+      "content": "Bezpośredni punkt styku Projektu A (Człowiek biocyfrowo-robotyczny — BCI), Projektu B (Dekodowanie sygnałów korowych AI) oraz Projektu F (Człowiek w kosmosie):\n1. Eksperyment PhotonGrav podczas polskiej misji kosmicznej IGNIS na Międzynarodowej Stacji Kosmicznej (ISS): Pierwsze w historii pomyślne testy polskiego nieinwazyjnego interfejsu mózg–komputer opartego na funkcjonalnej spektroskopii bliskiej podczerwieni (fNIRS, dr Dariusz Zapała / Cortivision, z udziałem polskiego astronauty dr. Sławosza Uznańskiego-Wiśniewskiego). Skuteczność algorytmów AI dekodujących aktywność kory mózgowej w mikrograwitacji przekroczyła 80%.\n2. Genetyka i immunologia kosmiczna: Badania wykazujące, jak mikrograwitacja zmienia ekspresję genów w leukocytach i osłabia układ odpornościowy astronautów oraz jak projektować biotechnologiczne środki zaradcze.",
+      "url": "https://naukawpolsce.pl/aktualnosci/news%2C111594%2Cmisja-ignis-polski-interfejs-mozg-komputer-potwierdzil-ze-dziala-w-kosmosie",
+      "links": [
+        {
+          "label": "🇵🇱 Nauka w Polsce — Misja IGNIS: Polski interfejs mózg-komputer potwierdził, że działa w kosmosie",
+          "url": "https://naukawpolsce.pl/aktualnosci/news%2C111594%2Cmisja-ignis-polski-interfejs-mozg-komputer-potwierdzil-ze-dziala-w-kosmosie"
+        },
+        {
+          "label": "🇵🇱 Nauka w Polsce — Przebywanie w kosmosie zaburza układ odpornościowy (zmiany ekspresji genów)",
+          "url": "https://naukawpolsce.pl/aktualnosci/news%2C98124%2Cprzebywanie-w-kosmosie-zaburza-uklad-odpornosciowy.html"
+        },
+        {
+          "label": "🇵🇱 Ludzie Nauki (ludzie.nauka.gov.pl/ln/) — Profile polskich badaczy neuroinżynierii, fNIRS/EEG i medycyny kosmicznej",
+          "url": "https://ludzie.nauka.gov.pl/ln/"
+        }
+      ],
+      "status": "approved",
+      "createdAt": "2026-10-25T22:57:00Z"
+    },
+    {
+      "id": "mat-nwp-dg1",
+      "trackId": "D",
+      "branchTopic": "Inżynieria tkankowa i sztuczne narządy.",
+      "subprojectId": null,
+      "title": "BIOTECHNOLOGIA, ORGANOIDY I EKOSYSTEM (Nauka w Polsce): Przeszczep wyhodowanej w laboratorium tkanki przysadki, organizmy chimeryczne oraz reakcja biosfery na zmiany klimatu",
+      "type": "Przegląd artykułów — Nauka w Polsce [PL]",
+      "sourceLang": "PL",
+      "author": "Ireneusz",
+      "content": "Artykuły badawcze z serwisu Nauka w Polsce dla Projektu D („Frankenstein” — inżynieria tkankowa i biologia syntetyczna) oraz Projektu G (Człowiek na Ziemi):\n1. Medycyna regeneracyjna i organoidy (Projekt D): Wyhodowanie w laboratorium z ludzkich pluripotencjalnych komórek macierzystych funkcjonalnego organoidu przysadki mózgowej, który po przeszczepieniu naczelnych podjął wydzielanie hormonów.\n2. Badania nad chimerami z komórek macierzystych i ich ścisłe ramy bioetyczne (styk Projektu D i Projektu E).\n3. Reakcja ekosystemów i mikroklimatu Ziemi (Projekt G i Super-Projekt H): Badania nad wpływem zmian klimatycznych na mikroklimat siedlisk biologicznych oraz stanowiska naukowców PAN dot. konieczności transformacji energetycznej (w tym wykorzystania energetyki jądrowej i OZE).",
+      "url": "https://naukawpolsce.pl/aktualnosci/news%2C115244%2Cmalpie-wszczepiono-wyhodowana-w-laboratorium-tkanke-przysadki.html",
+      "links": [
+        {
+          "label": "🇵🇱 Nauka w Polsce — Małpie wszczepiono wyhodowaną w laboratorium tkankę przysadki (organoid z komórek macierzystych)",
+          "url": "https://naukawpolsce.pl/aktualnosci/news%2C115244%2Cmalpie-wszczepiono-wyhodowana-w-laboratorium-tkanke-przysadki.html"
+        },
+        {
+          "label": "🇵🇱 Nauka w Polsce — Biotechnolodzy stworzyli chimeryczną małpę z komórek macierzystych",
+          "url": "https://naukawpolsce.pl/aktualnosci/news%2C99291%2Cbiotechnolodzy-stworzyli-chimeryczna-malpe.html"
+        },
+        {
+          "label": "🇵🇱 Nauka w Polsce — Zbadano dokładniej, jak Ziemia i mikroklimat reagują na zmiany klimatu",
+          "url": "https://naukawpolsce.pl/aktualnosci/news%2C115569%2Czbadano-dokladniej-jak-ziemia-reaguje-na-zmiany-klimatu.html"
+        },
+        {
+          "label": "🇵🇱 Nauka w Polsce — Naukowcy apelują o systemowe działania chroniące przed skutkami zmiany klimatu",
+          "url": "https://naukawpolsce.pl/aktualnosci/news%2C113734%2Cnaukowcy-apeluja-do-politykow-o-dzialania-chroniace-obywateli-przed"
+        }
+      ],
+      "status": "approved",
+      "createdAt": "2026-10-25T22:58:00Z"
+    },
     {
       "id": "mat-13",
       "trackId": "E",
@@ -2355,6 +2762,55 @@
       "source": "E",
       "target": "G",
       "label": "Odpowiedzialność międzypokoleniowa i filozofia przyrody",
+      "status": "approved"
+    },
+    {
+      "id": "lnk-12",
+      "source": "H",
+      "target": "B",
+      "label": "Zasilanie centrów obliczeniowych AI i emulacji mózgu (WBE) przez reaktory SMR/HTGR",
+      "status": "approved"
+    },
+    {
+      "id": "lnk-13",
+      "source": "H",
+      "target": "C",
+      "label": "Neutronowe domieszkowanie krzemu (reaktor MARIA) i efektywność energetyczna układów neuromorficznych",
+      "status": "approved"
+    },
+    {
+      "id": "lnk-14",
+      "source": "H",
+      "target": "F",
+      "label": "Kosmiczne mikroreaktory jądrowe (Kilopower), generatory RTG i napędy jądrowe (NTP/NEP) dla misji załogowych",
+      "status": "approved"
+    },
+    {
+      "id": "lnk-15",
+      "source": "H",
+      "target": "G",
+      "label": "Zeroemisyjna energetyka jądrowa i termojądrowa, kogeneracja HTGR i produkcja wodoru dla ochrony klimatu Ziemi",
+      "status": "approved"
+    },
+    {
+      "id": "lnk-16",
+      "source": "H",
+      "target": "A",
+      "label": "Medycyna nuklearna, radioizotopy diagnostyczne (SPECT/PET) i mikrobaterie betawoltaiczne do implantów",
+      "status": "approved"
+    },
+    {
+      "id": "lnk-17",
+      "source": "H",
+      "target": "D",
+      "label": "Radiobiologia molekularna, naprawa uszkodzeń DNA po napromieniowaniu i radiofarmaceutyki celowane",
+      "status": "approved"
+    },
+    {
+      "id": "lnk-18",
+      "source": "E",
+      "target": "H",
+      "label": "Filozofia i etyka energii jądrowej: bezpieczeństwo systemowe i odpowiedzialność międzypokoleniowa",
       "status": "approved"
     }
   ]
