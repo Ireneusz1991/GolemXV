@@ -3,283 +3,333 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Golem 15: A Human's Road to Reality | Platforma Naukowo-Badawcza</title>
+  <title>The Golem 15: A Human's Road to Reality</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Nagłówek platformy -->
-  <header class="top-header">
-    <div class="header-inner">
-      <div class="brand">
+  <!-- EKRAN BLOKADY PRYWATNEGO PROJEKTU (PRIVATE OWNER GATEKEEPER) -->
+  <div id="ownerLockScreen" class="lock-screen-wrapper">
+    <div class="lock-card">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.1rem;">
+        <span class="lock-badge" id="lockBadgeText">🔒 PRYWATNY PROJEKT BADAWCZY — DOSTĘP WYŁĄCZNIE DLA WŁAŚCICIELA</span>
+        <div class="lang-switch-group">
+          <button type="button" class="lang-btn active" data-lang="pl" onclick="setLanguage('pl')">🇵🇱 PL</button>
+          <button type="button" class="lang-btn" data-lang="en" onclick="setLanguage('en')">🇬🇧 EN</button>
+        </div>
+      </div>
+
+      <div class="brand" style="margin-bottom:1rem;">
         <div class="brand-logo">G15</div>
         <div class="brand-text">
           <h1>The Golem 15: A Human's Road to Reality</h1>
-          <p>Wspólne podstawy naukowe (8 dziedzin po kolei), siedem ścieżek (A–G) oraz środowiska badawcze</p>
+          <p id="lockSubText">Projekt zamknięty dla osób postronnych. Podgląd i edycja wymagają uwierzytelnienia właściciela (PBKDF2-SHA256) lub autoryzowanego urządzenia.</p>
         </div>
       </div>
 
-      <div class="header-actions">
-        <div id="serverStatusBadge" class="server-indicator">
-          <span class="status-dot"></span> Inicjalizacja...
+      <form onsubmit="submitOwnerGatekeeper(event)" style="margin-top:1.25rem;">
+        <div class="form-group">
+          <label id="lockPassLabel" for="gatekeeperPassInput">Klucz dostępu właściciela (PBKDF2-HMAC-SHA256)</label>
+          <input
+            type="password"
+            id="gatekeeperPassInput"
+            class="input-field"
+            placeholder="Wprowadź hasło właściciela..."
+            autocomplete="current-password"
+            required
+          />
         </div>
-        <div id="roleBadge" class="role-badge guest">
-          Tryb Gościa / Obserwatora
+        <div class="form-group" style="display:flex; align-items:center; gap:0.55rem; margin-top:0.65rem;">
+          <input type="checkbox" id="trustDeviceCheckbox" checked style="width:16px; height:16px; accent-color:#38bdf8; cursor:pointer;" />
+          <label id="trustDeviceLabel" for="trustDeviceCheckbox" style="margin:0; font-size:0.82rem; font-weight:500; color:var(--text-secondary); cursor:pointer;">
+            💻 Autoryzuj wyłącznie to urządzenie (pomiń hasło przy kolejnych wizytach w tej przeglądarce)
+          </label>
         </div>
-        <button id="researcherQuickBtn" class="btn btn-sm" onclick="switchTab('researchers')">
-          🧑‍🔬 Stali Badacze & AI
+        <div id="gatekeeperErrorBox" style="display:none; color:#f87171; font-size:0.83rem; margin-bottom:0.75rem; font-weight:600;"></div>
+        <button type="submit" id="gatekeeperSubmitBtn" class="btn btn-primary" style="width:100%; padding:0.7rem; font-size:0.92rem;">
+          🔓 Odblokuj prywatny portal
         </button>
-        <button id="authToggleBtn" class="btn btn-sm" style="opacity:0.6;" title="Autoryzacja właściciela" onclick="toggleAdminMode()">
-          🔒
-        </button>
-      </div>
+      </form>
     </div>
+  </div>
 
-    <!-- Nawigacja główna — Pierwsza opcja: Materiały do nauki -->
-    <nav class="main-nav">
-      <button class="nav-tab active" data-tab="study" onclick="switchTab('study')">
-        🎓 1. Materiały do nauki (Podstawy i Dziedziny)
-        <span id="navStudyCount" class="badge-count">0</span>
-      </button>
-      <button class="nav-tab" data-tab="map" onclick="switchTab('map')">
-        🗺️ 2. Mapa 7 Ścieżek (A–G)
-      </button>
-      <button class="nav-tab" data-tab="workspaces" onclick="switchTab('workspaces')">
-        🔬 3. Środowiska Badawcze i Podprojekty
-        <span id="navSubprojectsCount" class="badge-count">0</span>
-      </button>
-      <button class="nav-tab" data-tab="materials" onclick="switchTab('materials')">
-        📚 4. Repozytorium Badawcze
-        <span id="navMaterialsCount" class="badge-count">0</span>
-      </button>
-      <button class="nav-tab" data-tab="graph" onclick="switchTab('graph')">
-        🕸️ 5. Graf Powiązań (A–G)
-      </button>
-      <button class="nav-tab" data-tab="researchers" onclick="switchTab('researchers')">
-        🧑‍🔬 6. Badacze i Weryfikacja AI
-        <span id="navResearchersCount" class="badge-count">3</span>
-      </button>
-      <button class="nav-tab" data-tab="moderation" onclick="switchTab('moderation')">
-        🛡️ 7. Autoryzacja Administratora
-        <span id="navModerationCount" class="badge-count">0</span>
-      </button>
-    </nav>
-  </header>
+  <!-- GŁÓWNY PORTAL (WIDOCZNY WYŁĄCZNIE PO UWIERZYTELNIENIU WŁAŚCICIELA LUB Z JEGO URZĄDZENIA) -->
+  <div id="appMainRoot" style="display:none; flex-direction:column; min-height:100vh;">
+    <header class="top-header">
+      <div class="header-inner">
+        <div class="brand">
+          <div class="brand-logo">G15</div>
+          <div class="brand-text">
+            <!-- Tytuł główny nigdy nie jest tłumaczony zgodnie z wytycznymi właściciela -->
+            <h1>The Golem 15: A Human's Road to Reality</h1>
+            <p id="headerSubtitleText">Prywatny Portal Badawczy Właściciela • 8 Dziedzin Podstawowych (1–8) • 7 Ścieżek (A–G)</p>
+          </div>
+        </div>
 
-  <!-- Główny obszar roboczy -->
-  <main class="main-container">
-    <!-- KOMPAS ORIENTACYJNY UI (Wayfinding Architecture wzorowana na Most Wiedzy / OSF / ResearchHub / Heptabase) -->
-    <section id="wayfindingCompassBar" class="ws-card" style="margin-bottom:1.25rem; border:1px solid rgba(56,189,248,0.3); background:linear-gradient(135deg, rgba(15,23,42,0.96) 0%, rgba(22,31,51,0.92) 100%);">
-      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.75rem; margin-bottom:0.75rem;">
-        <div>
-          <span style="font-size:0.74rem; text-transform:uppercase; letter-spacing:0.08em; color:#38bdf8; font-weight:700;">
-            🧭 Architektura Orientacyjna Projektu (OSF • ResearchHub • Most Wiedzy • Heptabase)
-          </span>
-          <div style="font-size:0.83rem; color:var(--text-secondary);">
-            Kliknij wybraną warstwę fundamentów (1–8) lub ścieżkę (A–G), albo użyj wyszukiwarki fasetowej poniżej.
+        <div class="header-actions">
+          <div class="lang-switch-group" title="Przełącz język interfejsu (PL / EN)">
+            <button type="button" class="lang-btn active" data-lang="pl" onclick="setLanguage('pl')">🇵🇱 PL</button>
+            <button type="button" class="lang-btn" data-lang="en" onclick="setLanguage('en')">🇬🇧 EN</button>
           </div>
-        </div>
-        <div style="display:flex; gap:0.5rem; align-items:center; flex-wrap:wrap;">
-          <input
-            type="search"
-            id="globalWayfindingInput"
-            class="input-field"
-            style="min-width:270px; padding:0.4rem 0.75rem; font-size:0.82rem;"
-            placeholder="🔍 Szukaj w całym projekcie (autor, pojęcie, ścieżka)..."
-            oninput="renderGlobalWayfindingResults(this.value)"
-          />
-        </div>
-      </div>
-      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:0.75rem;">
-        <div style="padding:0.65rem 0.8rem; border-radius:8px; background:rgba(11,15,25,0.65); border:1px solid rgba(148,163,184,0.16);">
-          <div style="font-size:0.72rem; text-transform:uppercase; color:#38bdf8; font-weight:700; margin-bottom:0.35rem;">🏛️ Oś I: 8 Dziedzin Podstawowych (po kolei)</div>
-          <div class="foundations-list">
-            <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="switchTab('study')">1. Matematyka</span>
-            <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="switchTab('study')">2. Informatyka</span>
-            <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="switchTab('study')">3. Programowanie</span>
-            <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="switchTab('study')">4. Fizyka</span>
-            <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="switchTab('study')">5. Elektronika</span>
-            <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="switchTab('study')">6. Chemia</span>
-            <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="switchTab('study')">7. Biologia</span>
-            <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="switchTab('study')">8. AI</span>
+          <div id="serverStatusBadge" class="server-indicator">
+            <span class="status-dot"></span> Inicjalizacja...
           </div>
-        </div>
-        <div style="padding:0.65rem 0.8rem; border-radius:8px; background:rgba(11,15,25,0.65); border:1px solid rgba(148,163,184,0.16);">
-          <div style="font-size:0.72rem; text-transform:uppercase; color:#a855f7; font-weight:700; margin-bottom:0.35rem;">🗺️ Oś II: 7 Ścieżek Badawczych (A–G)</div>
-          <div class="foundations-list">
-            <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="openTrackWorkspaceFilter('A')">A: Bio-Cyfrowy</span>
-            <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="openTrackWorkspaceFilter('B')">B: Cyfrowy Umysł</span>
-            <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="openTrackWorkspaceFilter('C')">C: Analog/Neuromorf</span>
-            <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="openTrackWorkspaceFilter('D')">D: Biotechnologia</span>
-            <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="openTrackWorkspaceFilter('E')">E: Filozofia</span>
-            <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="openTrackWorkspaceFilter('F')">F: Kosmos</span>
-            <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="openTrackWorkspaceFilter('G')">G: Ziemia</span>
+          <div id="roleBadge" class="role-badge admin">
+            🛡️ Właściciel (Ireneusz)
           </div>
-        </div>
-        <div style="padding:0.65rem 0.8rem; border-radius:8px; background:rgba(11,15,25,0.65); border:1px solid rgba(148,163,184,0.16);">
-          <div style="font-size:0.72rem; text-transform:uppercase; color:#10b981; font-weight:700; margin-bottom:0.35rem;">🧑‍🔬 Oś III: Status Epistemiczny & Stali Badacze</div>
-          <div style="font-size:0.76rem; color:var(--text-secondary); line-height:1.45;">
-            🟢 Wiedza potwierdzona • 🔵 Aktywne badania • 🟡 Hipoteza • 🟣 Spekulacja<br/>
-            <a href="javascript:void(0)" onclick="switchTab('researchers')" style="color:#38bdf8; text-decoration:underline; font-weight:600;">Dołącz jako Stały Badacz (Weryfikacja AI) → publikuj bez kolejki</a>
-          </div>
-        </div>
-      </div>
-      <div id="globalWayfindingResults" style="display:none; margin-top:0.75rem; padding-top:0.75rem; border-top:1px solid rgba(148,163,184,0.2);"></div>
-    </section>
-    <!-- WIDOK 0 (PIERWSZA OPCJA): MATERIAŁY DO NAUKI (8 DZIEDZIN PODSTAWOWYCH PO KOLEI + ODNOGI ŚCIEŻEK A-G) -->
-    <section id="view-study" class="tab-view">
-      <div class="filter-bar">
-        <div>
-          <h3 style="font-size:1.05rem;">🎓 Materiały do nauki — 8 dziedzin ze Wspólnych podstaw po kolei oraz odnogi Projektów A–G</h3>
-          <p style="font-size:0.82rem; color:var(--text-muted);">
-            Przeglądaj kolejne dziedziny fundamentalne (Matematyka i logika → Informatyka → Programowanie → Fizyka → Elektronika → Chemia → Biologia → Sztuczna inteligencja), dodawaj materiały do nauki i uruchamiaj środowiska dla każdego działu.
-          </p>
-        </div>
-        <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
-          <button class="btn btn-primary" onclick="openNewStudyMaterialModal('FOUNDATION', 'FND-1', '')">
-            + Dodaj materiał do nauki
-          </button>
-          <button class="btn" onclick="openNewSubprojectModal('FND-1', '')">
-            🚀 Uruchom środowisko dla dziedziny
+          <button id="authToggleBtn" class="btn btn-sm btn-danger" onclick="lockOwnerPortal()">
+            🔒 Zablokuj
           </button>
         </div>
       </div>
 
-      <div id="foundationsGrid" class="tracks-grid" style="margin-bottom:2rem;"></div>
-
-      <div class="filter-bar" style="margin-top:1.5rem;">
-        <div>
-          <h3 style="font-size:1.02rem;">🧭 Materiały do nauki według konkretnych odnóg Ścieżek A–G</h3>
-          <p style="font-size:0.82rem; color:var(--text-muted);">
-            Każda odnoga z Projektów A–G posiada własną listę materiałów dydaktycznych oraz możliwość uruchomienia środowiska.
-          </p>
-        </div>
-      </div>
-      <div id="tracksStudyTree" class="tracks-grid"></div>
-    </section>
-
-    <!-- WIDOK 1: MAPA 7 ŚCIEŻEK (A-G) -->
-    <section id="view-map" class="tab-view" style="display:none;">
-      <div id="overviewBanner" class="overview-banner"></div>
-      <div class="filter-bar">
-        <div>
-          <h3 style="font-size:1.02rem;">Siedem powiązanych ścieżek badawczych (Projekty A–G)</h3>
-          <p style="font-size:0.82rem; color:var(--text-muted);">
-            Każdy gość może zgłaszać materiały oraz uruchamiać nowe podprojekty i środowiska badawcze dla dowolnej odnogi projektu.
-          </p>
-        </div>
-        <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
-          <button class="btn btn-primary" onclick="openNewSubprojectModal('A', '')">
-            🚀 Uruchom nowe środowisko badawcze
-          </button>
-          <button class="btn" onclick="openNewMaterialModal('A', '')">
-            + Dodaj materiał badawczy
-          </button>
-        </div>
-      </div>
-      <div id="tracksGrid" class="tracks-grid"></div>
-    </section>
-
-    <!-- WIDOK 2: ŚRODOWISKA BADAWCZE I PODPROJEKTY -->
-    <section id="view-workspaces" class="tab-view" style="display:none;">
-      <div class="filter-bar">
-        <div style="display:flex; align-items:center; gap:0.75rem; flex-wrap:wrap;">
-          <label for="wsTrackFilter" style="font-size:0.86rem; font-weight:600; color:var(--text-secondary);">Filtruj wg ścieżki / dziedziny:</label>
-          <select id="wsTrackFilter" class="select-field" style="width:auto; min-width:280px;" onchange="onWorkspaceTrackFilterChange(this.value)">
-            <option value="ALL">Wszystkie ścieżki (A–G) i dziedziny podstawowe</option>
-            <optgroup label="Wspólne podstawy naukowe (1–8)">
-              <option value="FND-1">1. Matematyka i logika</option>
-              <option value="FND-2">2. Informatyka</option>
-              <option value="FND-3">3. Programowanie</option>
-              <option value="FND-4">4. Fizyka</option>
-              <option value="FND-5">5. Elektronika</option>
-              <option value="FND-6">6. Chemia</option>
-              <option value="FND-7">7. Biologia</option>
-              <option value="FND-8">8. Sztuczna inteligencja</option>
-            </optgroup>
-            <optgroup label="Siedem ścieżek badawczych (A–G)">
-              <option value="A">Projekt A — Człowiek biocyfrowo-robotyczny</option>
-              <option value="B">Projekt B — Cyfrowy umysł</option>
-              <option value="C">Projekt C — Maszyny analogowe i obliczanie przez fizykę</option>
-              <option value="D">Projekt D — „Frankenstein”: tworzenie człowieka i SF</option>
-              <option value="E">Projekt E — Filozofia jako warstwa przekrojowa</option>
-              <option value="F">Projekt F — Człowiek w kosmosie</option>
-              <option value="G">Projekt G — Człowiek na Ziemi: adaptacja i ochrona</option>
-            </optgroup>
-          </select>
-        </div>
-        <button class="btn btn-primary" onclick="openNewSubprojectModal(appState.selectedTrackFilter === 'ALL' ? 'A' : appState.selectedTrackFilter, '')">
-          + Nowy podprojekt i środowisko badawcze
+      <!-- Nawigacja główna -->
+      <nav class="main-nav">
+        <button class="nav-tab active" data-tab="study" onclick="switchTab('study')">
+          <span id="navTabStudyLabel">🎓 1. Materiały do nauki i Biblioteka</span>
+          <span id="navStudyCount" class="badge-count">0</span>
         </button>
-      </div>
-
-      <div class="workspace-layout">
-        <aside class="sidebar-list">
-          <h4 style="font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--text-muted);">
-            Dostępne podprojekty i środowiska
-          </h4>
-          <div id="subprojectsList" style="display:flex; flex-direction:column; gap:0.65rem;"></div>
-        </aside>
-
-        <div id="activeWorkspacePanel" class="workspace-panel"></div>
-      </div>
-    </section>
-
-    <!-- WIDOK 3: REPOZYTORIUM MATERIAŁÓW -->
-    <section id="view-materials" class="tab-view" style="display:none;">
-      <div class="filter-bar">
-        <div style="display:flex; gap:0.75rem; flex-wrap:wrap; flex:1; max-width:720px;">
-          <select class="select-field" style="max-width:280px;" onchange="appState.materialFilterTrack = this.value; renderMaterialsView();">
-            <option value="ALL">Wszystkie ścieżki (A–G)</option>
-            <option value="A">Projekt A — Człowiek biocyfrowo-robotyczny</option>
-            <option value="B">Projekt B — Cyfrowy umysł</option>
-            <option value="C">Projekt C — Maszyny analogowe i fizyka</option>
-            <option value="D">Projekt D — „Frankenstein” i bioinżynieria</option>
-            <option value="E">Projekt E — Filozofia (warstwa przekrojowa)</option>
-            <option value="F">Projekt F — Człowiek w kosmosie</option>
-            <option value="G">Projekt G — Człowiek na Ziemi</option>
-          </select>
-          <input
-            type="search"
-            class="input-field"
-            style="max-width:340px;"
-            placeholder="Szukaj w tytułach, treści, odnogach..."
-            oninput="appState.materialSearch = this.value; renderMaterialsView();"
-          />
-        </div>
-        <button class="btn btn-primary" onclick="openNewMaterialModal('A', '')">
-          + Zgłoś / Dodaj materiał badawczy
+        <button class="nav-tab" data-tab="map" onclick="switchTab('map')">
+          <span id="navTabMapLabel">🗺️ 2. Mapa 7 Ścieżek (A–G)</span>
         </button>
-      </div>
+        <button class="nav-tab" data-tab="workspaces" onclick="switchTab('workspaces')">
+          <span id="navTabWsLabel">🔬 3. Środowiska Badawcze</span>
+          <span id="navSubprojectsCount" class="badge-count">0</span>
+        </button>
+        <button class="nav-tab" data-tab="materials" onclick="switchTab('materials')">
+          <span id="navTabMatLabel">📚 4. Repozytorium Badawcze</span>
+          <span id="navMaterialsCount" class="badge-count">0</span>
+        </button>
+        <button class="nav-tab" data-tab="graph" onclick="switchTab('graph')">
+          <span id="navTabGraphLabel">🕸️ 5. Graf Powiązań (A–G)</span>
+        </button>
+        <button class="nav-tab" data-tab="moderation" onclick="switchTab('moderation')">
+          <span id="navTabSecurityLabel">🛡️ 6. Bezpieczeństwo i Urządzenie</span>
+        </button>
+      </nav>
+    </header>
 
-      <div id="materialsListContainer" style="display:flex; flex-direction:column; gap:0.9rem;"></div>
-    </section>
-
-    <!-- WIDOK 4: INTERAKTYWNY GRAF POWIĄZAŃ (A-G) -->
-    <section id="view-graph" class="tab-view" style="display:none;">
-      <div class="graph-container">
-        <div style="margin-bottom:1rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem;">
+    <!-- Główny obszar roboczy -->
+    <main class="main-container">
+      <!-- KOMPAS ORIENTACYJNY UI -->
+      <section id="wayfindingCompassBar" class="ws-card" style="margin-bottom:1.25rem; border:1px solid rgba(56,189,248,0.3); background:linear-gradient(135deg, rgba(15,23,42,0.96) 0%, rgba(22,31,51,0.92) 100%);">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.75rem; margin-bottom:0.75rem;">
           <div>
-            <h3>Topologia Projektu: Ścieżki A–G, oś F↔G oraz przekrojowa rola Filozofii (E)</h3>
-            <p style="font-size:0.83rem; color:var(--text-muted);">
-              Kliknij wybrany węzeł ścieżki na grafie, aby przefiltrować jej relacje badawcze.
+            <span id="compassHeaderBadge" style="font-size:0.74rem; text-transform:uppercase; letter-spacing:0.08em; color:#38bdf8; font-weight:700;">
+              🧭 Architektura Orientacyjna Projektu (OSF • ResearchHub • Most Wiedzy • Heptabase)
+            </span>
+            <div id="compassSubText" style="font-size:0.83rem; color:var(--text-secondary);">
+              Kliknij wybraną warstwę fundamentów (1–8) lub ścieżkę (A–G), albo użyj wyszukiwarki poniżej. Wszystkie źródła posiadają oznaczenie języka [PL] / [EN].
+            </div>
+          </div>
+          <div style="display:flex; gap:0.5rem; align-items:center; flex-wrap:wrap;">
+            <select id="globalLangFilterSelect" class="select-field" style="width:auto; min-width:190px; padding:0.4rem 0.65rem; font-size:0.82rem;" onchange="onGlobalSourceLangFilterChange(this.value)">
+              <option value="ALL">🌐 Wszystkie języki źródeł</option>
+              <option value="PL">🇵🇱 Tylko źródła [PL]</option>
+              <option value="EN">🇬🇧 Tylko źródła [EN]</option>
+            </select>
+            <input
+              type="search"
+              id="globalWayfindingInput"
+              class="input-field"
+              style="min-width:260px; padding:0.4rem 0.75rem; font-size:0.82rem;"
+              placeholder="🔍 Szukaj w projekcie..."
+              oninput="renderGlobalWayfindingResults(this.value)"
+            />
+          </div>
+        </div>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:0.75rem;">
+          <div style="padding:0.65rem 0.8rem; border-radius:8px; background:rgba(11,15,25,0.65); border:1px solid rgba(148,163,184,0.16);">
+            <div id="axis1Title" style="font-size:0.72rem; text-transform:uppercase; color:#38bdf8; font-weight:700; margin-bottom:0.35rem;">🏛️ Oś I: 8 Dziedzin Podstawowych (po kolei)</div>
+            <div class="foundations-list">
+              <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="switchTab('study')">1. Matematyka</span>
+              <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="switchTab('study')">2. Informatyka</span>
+              <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="switchTab('study')">3. Programowanie</span>
+              <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="switchTab('study')">4. Fizyka</span>
+              <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="switchTab('study')">5. Elektronika</span>
+              <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="switchTab('study')">6. Chemia</span>
+              <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="switchTab('study')">7. Biologia</span>
+              <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="switchTab('study')">8. AI</span>
+            </div>
+          </div>
+          <div style="padding:0.65rem 0.8rem; border-radius:8px; background:rgba(11,15,25,0.65); border:1px solid rgba(148,163,184,0.16);">
+            <div id="axis2Title" style="font-size:0.72rem; text-transform:uppercase; color:#a855f7; font-weight:700; margin-bottom:0.35rem;">🗺️ Oś II: 7 Ścieżek Badawczych (A–G)</div>
+            <div class="foundations-list">
+              <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="openTrackWorkspaceFilter('A')">A: Bio-Cyfrowy</span>
+              <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="openTrackWorkspaceFilter('B')">B: Cyfrowy Umysł</span>
+              <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="openTrackWorkspaceFilter('C')">C: Analog/Neuromorf</span>
+              <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="openTrackWorkspaceFilter('D')">D: Biotechnologia</span>
+              <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="openTrackWorkspaceFilter('E')">E: Filozofia</span>
+              <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="openTrackWorkspaceFilter('F')">F: Kosmos</span>
+              <span class="foundation-pill" style="cursor:pointer; font-size:0.73rem;" onclick="openTrackWorkspaceFilter('G')">G: Ziemia</span>
+            </div>
+          </div>
+          <div style="padding:0.65rem 0.8rem; border-radius:8px; background:rgba(11,15,25,0.65); border:1px solid rgba(148,163,184,0.16);">
+            <div id="axis3Title" style="font-size:0.72rem; text-transform:uppercase; color:#10b981; font-weight:700; margin-bottom:0.35rem;">🔒 Oś III: Oznaczenia Języka i Rygor Epistemiczny</div>
+            <div id="axis3Body" style="font-size:0.76rem; color:var(--text-secondary); line-height:1.45;">
+              🟢 Wiedza potwierdzona • 🔵 Aktywne badania • 🟡 Hipoteza • 🟣 Spekulacja<br/>
+              Języki materiałów: <span class="lang-tag lang-pl">🇵🇱 [PL]</span> <span class="lang-tag lang-en">🇬🇧 [EN]</span> <span class="lang-tag lang-plen">🇵🇱/🇬🇧 [PL+EN]</span>
+            </div>
+          </div>
+        </div>
+        <div id="globalWayfindingResults" style="display:none; margin-top:0.75rem; padding-top:0.75rem; border-top:1px solid rgba(148,163,184,0.2);"></div>
+      </section>
+
+      <!-- WIDOK 0: MATERIAŁY DO NAUKI -->
+      <section id="view-study" class="tab-view">
+        <div class="filter-bar">
+          <div>
+            <h3 id="studyHeaderTitle" style="font-size:1.05rem;">🎓 Materiały do nauki — 8 dziedzin ze Wspólnych podstaw po kolei oraz odnogi Projektów A–G</h3>
+            <p id="studyHeaderDesc" style="font-size:0.82rem; color:var(--text-muted);">
+              Przeglądaj kolejne dziedziny fundamentalne (1–8), dodawaj własne materiały do nauki i uruchamiaj środowiska. Każdy materiał posiada oznaczenie języka źródła ([PL], [EN], [PL+EN]).
+            </p>
+          </div>
+          <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+            <button id="btnAddStudyMatTop" class="btn btn-primary" onclick="openNewStudyMaterialModal('FOUNDATION', 'FND-1', '')">
+              + Dodaj materiał do nauki
+            </button>
+            <button id="btnAddStudyWsTop" class="btn" onclick="openNewSubprojectModal('FND-1', '')">
+              🚀 Uruchom środowisko dla dziedziny
+            </button>
+          </div>
+        </div>
+
+        <div id="foundationsGrid" class="tracks-grid" style="margin-bottom:2rem;"></div>
+
+        <div class="filter-bar" style="margin-top:1.5rem;">
+          <div>
+            <h3 id="studyTracksHeaderTitle" style="font-size:1.02rem;">🧭 Materiały do nauki i Biblioteka według Ścieżek A–G</h3>
+            <p id="studyTracksHeaderDesc" style="font-size:0.82rem; color:var(--text-muted);">
+              Każda odnoga z Projektów A–G posiada własną listę materiałów dydaktycznych z oznaczeniem języka źródła oraz możliwość uruchomienia środowiska.
             </p>
           </div>
         </div>
-        <div id="graphSvgWrapper" class="graph-svg-wrapper"></div>
-        <div id="graphLinksList" style="margin-top:1.25rem;"></div>
-      </div>
-    </section>
+        <div id="tracksStudyTree" class="tracks-grid"></div>
+      </section>
 
-    <!-- WIDOK 5: ZESPÓŁ STAŁYCH BADACZY I WERYFIKACJA AI -->
-    <section id="view-researchers" class="tab-view" style="display:none;">
-      <div id="researchersContainer"></div>
-    </section>
+      <!-- WIDOK 1: MAPA 7 ŚCIEŻEK (A-G) -->
+      <section id="view-map" class="tab-view" style="display:none;">
+        <div id="overviewBanner" class="overview-banner"></div>
+        <div class="filter-bar">
+          <div>
+            <h3 id="mapHeaderTitle" style="font-size:1.02rem;">Siedem powiązanych ścieżek badawczych (Projekty A–G)</h3>
+            <p id="mapHeaderDesc" style="font-size:0.82rem; color:var(--text-muted);">
+              Dodawaj nowe materiały badawcze oraz uruchamiaj podprojekty dla dowolnej odnogi projektu.
+            </p>
+          </div>
+          <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+            <button class="btn btn-primary" onclick="openNewSubprojectModal('A', '')">
+              🚀 Nowe środowisko badawcze
+            </button>
+            <button class="btn" onclick="openNewMaterialModal('A', '')">
+              + Dodaj materiał badawczy
+            </button>
+          </div>
+        </div>
+        <div id="tracksGrid" class="tracks-grid"></div>
+      </section>
 
-    <!-- WIDOK 6: CENTRUM AUTORYZACJI ADMINISTRATORA -->
-    <section id="view-moderation" class="tab-view" style="display:none;">
-      <div id="moderationContainer"></div>
-    </section>
-  </main>
+      <!-- WIDOK 2: ŚRODOWISKA BADAWCZE I PODPROJEKTY -->
+      <section id="view-workspaces" class="tab-view" style="display:none;">
+        <div class="filter-bar">
+          <div style="display:flex; align-items:center; gap:0.75rem; flex-wrap:wrap;">
+            <label for="wsTrackFilter" style="font-size:0.86rem; font-weight:600; color:var(--text-secondary);">Filtruj wg ścieżki / dziedziny:</label>
+            <select id="wsTrackFilter" class="select-field" style="width:auto; min-width:280px;" onchange="onWorkspaceTrackFilterChange(this.value)">
+              <option value="ALL">Wszystkie ścieżki (A–G) i dziedziny podstawowe (1–8)</option>
+              <optgroup label="Wspólne podstawy naukowe (1–8)">
+                <option value="FND-1">1. Matematyka i logika</option>
+                <option value="FND-2">2. Informatyka</option>
+                <option value="FND-3">3. Programowanie</option>
+                <option value="FND-4">4. Fizyka</option>
+                <option value="FND-5">5. Elektronika</option>
+                <option value="FND-6">6. Chemia</option>
+                <option value="FND-7">7. Biologia</option>
+                <option value="FND-8">8. Sztuczna inteligencja</option>
+              </optgroup>
+              <optgroup label="Siedem ścieżek badawczych (A–G)">
+                <option value="A">Projekt A — Człowiek biocyfrowo-robotyczny</option>
+                <option value="B">Projekt B — Cyfrowy umysł</option>
+                <option value="C">Projekt C — Maszyny analogowe i obliczanie przez fizykę</option>
+                <option value="D">Projekt D — „Frankenstein”: tworzenie człowieka i SF</option>
+                <option value="E">Projekt E — Filozofia jako warstwa przekrojowa</option>
+                <option value="F">Projekt F — Człowiek w kosmosie</option>
+                <option value="G">Projekt G — Człowiek na Ziemi: adaptacja i ochrona</option>
+              </optgroup>
+            </select>
+          </div>
+          <button class="btn btn-primary" onclick="openNewSubprojectModal(appState.selectedTrackFilter === 'ALL' ? 'A' : appState.selectedTrackFilter, '')">
+            + Nowy podprojekt i środowisko badawcze
+          </button>
+        </div>
+
+        <div class="workspace-layout">
+          <aside class="sidebar-list">
+            <h4 style="font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--text-muted);">
+              Dostępne podprojekty i środowiska
+            </h4>
+            <div id="subprojectsList" style="display:flex; flex-direction:column; gap:0.65rem;"></div>
+          </aside>
+
+          <div id="activeWorkspacePanel" class="workspace-panel"></div>
+        </div>
+      </section>
+
+      <!-- WIDOK 3: REPOZYTORIUM MATERIAŁÓW -->
+      <section id="view-materials" class="tab-view" style="display:none;">
+        <div class="filter-bar">
+          <div style="display:flex; gap:0.75rem; flex-wrap:wrap; flex:1; max-width:860px;">
+            <select class="select-field" style="max-width:260px;" onchange="appState.materialFilterTrack = this.value; renderMaterialsView();">
+              <option value="ALL">Wszystkie ścieżki (A–G)</option>
+              <option value="A">Projekt A — Człowiek biocyfrowo-robotyczny</option>
+              <option value="B">Projekt B — Cyfrowy umysł</option>
+              <option value="C">Projekt C — Maszyny analogowe i fizyka</option>
+              <option value="D">Projekt D — „Frankenstein” i bioinżynieria</option>
+              <option value="E">Projekt E — Filozofia (warstwa przekrojowa)</option>
+              <option value="F">Projekt F — Człowiek w kosmosie</option>
+              <option value="G">Projekt G — Człowiek na Ziemi</option>
+            </select>
+            <select class="select-field" style="max-width:210px;" onchange="appState.sourceLangFilter = this.value; renderMaterialsView();">
+              <option value="ALL">🌐 Wszystkie języki</option>
+              <option value="PL">🇵🇱 Język polski [PL]</option>
+              <option value="EN">🇬🇧 Język angielski [EN]</option>
+            </select>
+            <input
+              type="search"
+              class="input-field"
+              style="max-width:300px;"
+              placeholder="Szukaj w tytułach, treści, odnogach..."
+              oninput="appState.materialSearch = this.value; renderMaterialsView();"
+            />
+          </div>
+          <button class="btn btn-primary" onclick="openNewMaterialModal('A', '')">
+            + Dodaj materiał badawczy
+          </button>
+        </div>
+
+        <div id="materialsListContainer" style="display:flex; flex-direction:column; gap:0.9rem;"></div>
+      </section>
+
+      <!-- WIDOK 4: INTERAKTYWNY GRAF POWIĄZAŃ (A-G) -->
+      <section id="view-graph" class="tab-view" style="display:none;">
+        <div class="graph-container">
+          <div style="margin-bottom:1rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem;">
+            <div>
+              <h3>Topologia Projektu: Ścieżki A–G, oś F↔G oraz przekrojowa rola Filozofii (E)</h3>
+              <p style="font-size:0.83rem; color:var(--text-muted);">
+                Kliknij wybrany węzeł ścieżki na grafie, aby przefiltrować jej relacje badawcze.
+              </p>
+            </div>
+          </div>
+          <div id="graphSvgWrapper" class="graph-svg-wrapper"></div>
+          <div id="graphLinksList" style="margin-top:1.25rem;"></div>
+        </div>
+      </section>
+
+      <!-- WIDOK 5: BEZPIECZEŃSTWO I AUTORYZACJA URZĄDZENIA WŁAŚCICIELA -->
+      <section id="view-moderation" class="tab-view" style="display:none;">
+        <div id="moderationContainer"></div>
+      </section>
+    </main>
+  </div>
 
   <!-- Modal -->
   <div id="modalBackdrop" class="modal-backdrop" onclick="if(event.target===this) closeModal()">

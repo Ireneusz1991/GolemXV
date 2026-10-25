@@ -2265,7 +2265,7 @@ const DEFAULT_SEED = {
       "subprojectId": "sub-1",
       "title": "Zestawienie rozdzielczości czasowo-przestrzennej metod neuroobrazowania (EEG, fNIRS, fMRI, ECoG)",
       "type": "Zestaw danych / Opracowanie",
-      "author": "Dr Janina Kowalska (Gość)",
+      "author": "Ireneusz",
       "content": "Porównanie pasma przenoszenia, stosunku sygnału do szumu (SNR) oraz biokompatybilności długoterminowej dla zastosowań w Projektach A i B.",
       "url": "https://ksiegarnia.pwn.pl/",
       "links": [
@@ -2278,7 +2278,7 @@ const DEFAULT_SEED = {
           "url": "https://doi.org/10.1152/physrev.00027.2016"
         }
       ],
-      "status": "pending",
+      "status": "approved",
       "createdAt": "2026-10-25T13:10:00Z"
     }
   ],
@@ -2360,86 +2360,22 @@ const DEFAULT_SEED = {
       "label": "Odpowiedzialność międzypokoleniowa i filozofia przyrody",
       "status": "approved"
     }
-  ],
-  "verifiedResearchers": [
-    {
-      "id": "res-founder",
-      "name": "Ireneusz",
-      "handle": "@ireneusz-architekt",
-      "roleTitle": "Inicjator i Główny Architekt Projektu The Golem 15",
-      "specialization": "ALL",
-      "specializationLabel": "Wszystkie ścieżki (A–G) i Wspólne Podstawy (1–8)",
-      "affiliation": "The Golem 15: A Human's Road to Reality",
-      "orcid": "",
-      "bio": "Twórca architektury badawczej The Golem 15 łączącej 8 fundamentów naukowych z 7 ścieżkami (A–G).",
-      "aiVerificationScore": 100,
-      "aiVerificationSummary": "Założyciel projektu — pełny rygor metodologiczny i epistemiczny.",
-      "badge": "★ Założyciel & Kurator",
-      "status": "active",
-      "joinedAt": "2026-10-25T10:00:00Z",
-      "auth": {
-        "algorithm": "pbkdf2_sha256",
-        "iterations": 260000,
-        "salt": "9f4d8a2c6e1b3f7a5c8d0e2f4a6b8c1d",
-        "hash": "673a07dbc15ac855752d7c521ffc31e200302b03a3b296310b742421cbfd4d62"
-      }
-    },
-    {
-      "id": "res-neuro-b",
-      "name": "Dr hab. Marek Nowak (Zespół Neuroinformatyki)",
-      "handle": "@m-nowak-neuro",
-      "roleTitle": "Stały Badacz — Neurobiologia Obliczeniowa i Układy Neuromorficzne",
-      "specialization": "B",
-      "specializationLabel": "Projekt B — Cyfrowy Umysł / Projekt C — Maszyny analogowe",
-      "affiliation": "Zespół Modelowania Układów Nerwowych",
-      "orcid": "https://orcid.org/",
-      "bio": "Badania nad modelami biofizycznymi Hodgkina–Huxleya, dynamiką populacji neuronalnych (Dayan & Abbott, Izhikevich) i estymacją pasma synaptycznego.",
-      "aiVerificationScore": 95,
-      "aiVerificationSummary": "Zweryfikowano przez AI: wysoki rygor matematyczno-biofizyczny, poprawna separacja modeli empirycznych od hipotez WBE.",
-      "badge": "✓ Stały Badacz (AI 95/100)",
-      "status": "active",
-      "joinedAt": "2026-10-25T12:00:00Z",
-      "auth": {
-        "algorithm": "pbkdf2_sha256",
-        "iterations": 260000,
-        "salt": "9f4d8a2c6e1b3f7a5c8d0e2f4a6b8c1d",
-        "hash": "673a07dbc15ac855752d7c521ffc31e200302b03a3b296310b742421cbfd4d62"
-      }
-    },
-    {
-      "id": "res-bio-dfg",
-      "name": "Dr Anna Wiśniewska (Zespół Biotechnologii i Biosfery)",
-      "handle": "@a-wisniewska-bio",
-      "roleTitle": "Stały Badacz — Inżynieria Tkankowa, BLSS i Ekologia Systemowa",
-      "specialization": "D",
-      "specializationLabel": "Projekt D — Biotechnologia / Oś Kosmos (F) ↔ Ziemia (G)",
-      "affiliation": "Laboratorium Biologii Syntetycznej i Ekosystemów Zamkniętych",
-      "orcid": "https://orcid.org/",
-      "bio": "Analiza rusztowań 3D (scaffolds), hodowli organoidów oraz bilansu tlenowo-węglowego w zamkniętych obiegach podtrzymywania życia (MELiSSA / LCA).",
-      "aiVerificationScore": 92,
-      "aiVerificationSummary": "Zweryfikowano przez AI: pełna zgodność z bioetyką (Projekt E) i literaturą polsko- oraz anglojęzyczną.",
-      "badge": "✓ Stały Badacz (AI 92/100)",
-      "status": "active",
-      "joinedAt": "2026-10-25T12:30:00Z",
-      "auth": {
-        "algorithm": "pbkdf2_sha256",
-        "iterations": 260000,
-        "salt": "9f4d8a2c6e1b3f7a5c8d0e2f4a6b8c1d",
-        "hash": "673a07dbc15ac855752d7c521ffc31e200302b03a3b296310b742421cbfd4d62"
-      }
-    }
   ]
 };
 
-const STORAGE_KEY = "the_golem_15_state_v7";
+const STORAGE_KEY = "the_golem_15_state_v8_private";
 const ADMIN_AUTH_KEY = "golem_xv_admin_auth_pbkdf2";
+const TRUSTED_DEVICE_KEY = "golem_15_trusted_device_token";
+const LANG_STORAGE_KEY = "golem_15_ui_lang";
 
 const appState = {
   data: null,
   isAdmin: false,
-  activeResearcher: null,
+  deviceTrusted: false,
+  lang: localStorage.getItem(LANG_STORAGE_KEY) === "en" ? "en" : "pl",
+  sourceLangFilter: "ALL",
   serverOnline: false,
-  activeTab: "study", // Domyślnie pierwsza zakładka: 'study' (Materiały do nauki)
+  activeTab: "study",
   selectedTrackFilter: "ALL",
   selectedSubprojectId: "sub-1",
   materialFilterTrack: "ALL",
@@ -2447,25 +2383,367 @@ const appState = {
   selectedGraphNode: null
 };
 
-function canAutoApprove() {
-  return Boolean(appState.isAdmin || appState.activeResearcher);
+const FOUNDATION_EN = {
+  "FND-1": {
+    name: "Mathematics & Logic",
+    description: "Formal apparatus essential for physical modeling, computational neuroscience, data analysis, and AI algorithms.",
+    topics: [
+      "Propositional calculus, predicate logic, and set theory",
+      "Linear algebra (vectors, matrices, eigenvalues, tensor spaces)",
+      "Mathematical analysis and differential & integral calculus",
+      "Ordinary and partial differential equations (dynamical systems)",
+      "Probability theory and mathematical statistics",
+      "Information theory (Shannon entropy, mutual information) and graph theory"
+    ]
+  },
+  "FND-2": {
+    name: "Computer Science",
+    description: "Foundations of information processing, computer architecture, operating systems, networks, and computational complexity.",
+    topics: [
+      "Models of computation, Turing machine, and computational complexity",
+      "Data structures and graph, search, and optimization algorithms",
+      "Computer architecture (CPU, GPU, TPU, memory hierarchy, buses)",
+      "Operating systems, concurrency, and real-time systems (RTOS)",
+      "Databases, distributed storage, and knowledge graphs",
+      "Cybersecurity, cryptography, and medical/research data integrity"
+    ]
+  },
+  "FND-3": {
+    name: "Programming & Software Engineering",
+    description: "Practical creation of simulations, control software, embedded firmware, and data processing pipelines.",
+    topics: [
+      "Scientific and numerical programming (Python, Julia, C++, Rust)",
+      "Low-level and embedded programming (C, microcontrollers, FPGA/VHDL)",
+      "Physical, biological, and neural simulation tools",
+      "Critical systems software engineering, testing, and formal verification",
+      "Version control (Git), containerization, and reproducible research",
+      "Communication interfaces, hardware APIs, and biomedical signal acquisition"
+    ]
+  },
+  "FND-4": {
+    name: "Physics",
+    description: "Fundamental laws governing matter, energy, fields, and physical carriers of computation.",
+    topics: [
+      "Classical mechanics, continuum mechanics, and biomechanics",
+      "Thermodynamics, statistical physics, and non-equilibrium physics (life & brain)",
+      "Electromagnetism, Maxwell's equations, and wave propagation in media",
+      "Optics, photonics, and laser spectroscopy",
+      "Quantum mechanics, solid-state physics, and semiconductors",
+      "Radiation physics, dosimetry, and orbital mechanics (for Track F)"
+    ]
+  },
+  "FND-5": {
+    name: "Electronics & Dynamical Systems",
+    description: "Bridge between physics and computer science: sensors, actuators, analog circuits, neuromorphic chips, and control theory.",
+    topics: [
+      "Analog circuit theory, operational amplifiers, and filters",
+      "Digital electronics, combinational/sequential logic, and microprocessors",
+      "Signal processing (DSP), A/D and D/A converters, and biological signal filtering",
+      "Control theory, feedback loops, PID, and state-space control",
+      "Measurement sensors, biosensors, and mechatronic actuators",
+      "Neuromorphic circuits, memristors, and analog physical computers (Track C)"
+    ]
+  },
+  "FND-6": {
+    name: "Chemistry & Biochemistry",
+    description: "Molecular foundation of matter, metabolism, biomaterials, and closed life-support cycles.",
+    topics: [
+      "General and inorganic chemistry (chemical bonds, kinetics, thermochemistry)",
+      "Organic chemistry and polymer chemistry (biomaterials and scaffolds)",
+      "Structural and metabolic biochemistry (proteins, enzymes, nucleic acids)",
+      "Electrochemistry (membrane potentials, electrochemical sensors, batteries)",
+      "Analytical and environmental chemistry (water, air, and soil monitoring)",
+      "Supramolecular chemistry and drug/gene delivery systems"
+    ]
+  },
+  "FND-7": {
+    name: "Biology, Neurobiology & Physiology",
+    description: "Study of living organisms, nervous systems, genetics, tissue regeneration, and ecology.",
+    topics: [
+      "Molecular and cell biology (organelles, cell cycle, signaling)",
+      "Genetics, genomics, epigenetics, and gene expression regulation",
+      "Human anatomy and systems physiology (nervous, circulatory, muscular)",
+      "Neurobiology and electrophysiology (neurons, synapses, plasticity, connectome)",
+      "Developmental biology, stem cells, and tissue engineering",
+      "Systems ecology, microbiology, and biosphere cycles (Tracks F & G)"
+    ]
+  },
+  "FND-8": {
+    name: "Artificial Intelligence & Machine Learning",
+    description: "Statistical learning, deep neural networks, neuro-decoding, and intelligent control.",
+    topics: [
+      "Statistical learning, regression, classification, and probabilistic models",
+      "Deep neural networks (MLP, CNN, RNN, Transformers, Graph Neural Networks)",
+      "Reinforcement Learning and autonomous robotics control",
+      "Biomedical signal decoding (EEG/ECoG/EMG) for Brain-Computer Interfaces (BCI)",
+      "Spiking Neural Networks (SNN) and biologically plausible learning rules",
+      "AI interpretability, safety, alignment, and formal model limits"
+    ]
+  }
+};
+
+const TRACK_EN = {
+  A: {
+    code: "Project A",
+    name: "Bio-Digital & Robotic Human",
+    goal: "Integration of the human organism with technology, medicine, neuroengineering, and robotics.",
+    guidingQuestion: "How far can the human body be repaired, replaced, or augmented without losing health, identity, and agency?"
+  },
+  B: {
+    code: "Project B",
+    name: "Digital Mind",
+    goal: "Computational neuroscience, brain modeling, cognitive architectures, and long-term Whole Brain Emulation (WBE) research.",
+    guidingQuestion: "Which aspects of mental processes can be faithfully modeled or emulated in computational systems?"
+  },
+  C: {
+    code: "Project C",
+    name: "Analog Machines & Physical Computing",
+    goal: "Computing through continuous physical dynamics, neuromorphic electronics, photonics, and quantum systems.",
+    guidingQuestion: "How can physical dynamics directly perform computation beyond standard digital architectures?"
+  },
+  D: {
+    code: "Project D",
+    name: "'Frankenstein': Bioengineering & Synthetic Biology",
+    goal: "Genetics, stem cells, organoids, tissue engineering, and synthetic biology alongside cultural analysis of creating life.",
+    guidingQuestion: "Where lies the boundary between tissue regeneration and creating a new synthetic organism?"
+  },
+  E: {
+    code: "Project E",
+    name: "Philosophy as a Cross-Cutting Layer",
+    goal: "Philosophy of science, philosophy of mind, philosophy of technology, and bioethics across all tracks.",
+    guidingQuestion: "How do we distinguish proven empirical knowledge from hypotheses and speculation while preserving human dignity?"
+  },
+  F: {
+    code: "Project F",
+    name: "Human in Space",
+    goal: "Space physiology, radiation protection, closed-loop life support systems (BLSS), and extraterrestrial habitats.",
+    guidingQuestion: "What biological and technological conditions are required for long-term human survival beyond Earth?"
+  },
+  G: {
+    code: "Project G",
+    name: "Human on Earth: Adaptation & Biosphere Protection",
+    goal: "Systems ecology, climate adaptation, environmental engineering, and biosphere regeneration.",
+    guidingQuestion: "How can technology and ecological science protect Earth's biosphere as humanity's primary habitat?"
+  }
+};
+
+function detectSourceLang(textBlob, explicitCode = "") {
+  const code = (explicitCode || "").toUpperCase().trim();
+  if (code === "PL" || code === "EN" || code === "PL+EN") return code;
+  const raw = String(textBlob || "");
+  const hasPl =
+    raw.includes("🇵🇱") ||
+    /pwn|helion|zpe\.gov|openagh|ważniak|polsku|wydanie polskie|pzwl|forbot|polsa|gios\.gov|polsl\.pl|ccpress/i.test(raw);
+  const hasEn =
+    raw.includes("🇬🇧") ||
+    /mit press|cambridge|oxford|arxiv|ncbi|stanford|openstax\.org\/details\/books\/chemistry-2e|openstax\.org\/details\/books\/biology-2e|nature|ieee|roadmap-report/i.test(raw);
+  if (hasPl && hasEn) return "PL+EN";
+  if (hasPl) return "PL";
+  return "EN";
 }
 
-function getContributorSignature() {
-  if (appState.isAdmin) return "Ireneusz (Administrator ★)";
-  if (appState.activeResearcher) return `${appState.activeResearcher.name} (✓ Stały Badacz)`;
-  return "Gość / Obserwator";
+function renderLangBadgeHtml(langCode) {
+  const isEn = appState.lang === "en";
+  if (langCode === "PL") {
+    return `<span class="lang-tag lang-pl">🇵🇱 ${isEn ? "[PL — Polish]" : "[PL — Język polski]"}</span>`;
+  }
+  if (langCode === "PL+EN") {
+    return `<span class="lang-tag lang-plen">🇵🇱/🇬🇧 ${isEn ? "[PL + EN — Bilingual]" : "[PL + EN — Dwujęzyczne]"}</span>`;
+  }
+  return `<span class="lang-tag lang-en">🇬🇧 ${isEn ? "[EN — English]" : "[EN — Język angielski]"}</span>`;
+}
+
+function matchesSourceLangFilter(itemLangCode) {
+  if (!appState.sourceLangFilter || appState.sourceLangFilter === "ALL") return true;
+  if (appState.sourceLangFilter === "PL") return itemLangCode === "PL" || itemLangCode === "PL+EN";
+  if (appState.sourceLangFilter === "EN") return itemLangCode === "EN" || itemLangCode === "PL+EN";
+  return true;
+}
+
+function onGlobalSourceLangFilterChange(val) {
+  appState.sourceLangFilter = val || "ALL";
+  renderAll();
+}
+
+function setLanguage(lang) {
+  appState.lang = lang === "en" ? "en" : "pl";
+  localStorage.setItem(LANG_STORAGE_KEY, appState.lang);
+  document.querySelectorAll(".lang-btn").forEach((btn) => {
+    btn.classList.toggle("active", btn.dataset.lang === appState.lang);
+  });
+  applyStaticTranslations();
+  renderAll();
+}
+
+function applyStaticTranslations() {
+  const isEn = appState.lang === "en";
+  const setTxt = (id, pl, en) => {
+    const el = document.getElementById(id);
+    if (el) el.textContent = isEn ? en : pl;
+  };
+  setTxt(
+    "lockBadgeText",
+    "🔒 PRYWATNY PROJEKT BADAWCZY — DOSTĘP WYŁĄCZNIE DLA WŁAŚCICIELA",
+    "🔒 PRIVATE RESEARCH PROJECT — OWNER ACCESS ONLY"
+  );
+  setTxt(
+    "lockSubText",
+    "Projekt zamknięty dla osób postronnych. Podgląd i edycja wymagają uwierzytelnienia właściciela (PBKDF2-SHA256) lub autoryzowanego urządzenia.",
+    "Project closed to outsiders. Viewing and editing require Owner Authentication (PBKDF2-SHA256) or an Authorized Owner Device."
+  );
+  setTxt(
+    "lockPassLabel",
+    "Klucz dostępu właściciela (PBKDF2-HMAC-SHA256)",
+    "Owner Access Key (PBKDF2-HMAC-SHA256)"
+  );
+  setTxt(
+    "trustDeviceLabel",
+    "💻 Autoryzuj wyłącznie to urządzenie (pomiń hasło przy kolejnych wizytach w tej przeglądarce)",
+    "💻 Authorize this device exclusively (skip password on future visits in this browser)"
+  );
+  setTxt("gatekeeperSubmitBtn", "🔓 Odblokuj prywatny portal", "🔓 Unlock Private Portal");
+  setTxt(
+    "headerSubtitleText",
+    "Prywatny Portal Badawczy Właściciela • 8 Dziedzin Podstawowych (1–8) • 7 Ścieżek (A–G)",
+    "Private Owner Research Portal • 8 Core Foundations (1–8) • 7 Research Tracks (A–G)"
+  );
+  setTxt("authToggleBtn", "🔒 Zablokuj", "🔒 Lock");
+  setTxt("navTabStudyLabel", "🎓 1. Materiały do nauki i Biblioteka", "🎓 1. Study Materials & Library");
+  setTxt("navTabMapLabel", "🗺️ 2. Mapa 7 Ścieżek (A–G)", "🗺️ 2. 7 Research Tracks Map (A–G)");
+  setTxt("navTabWsLabel", "🔬 3. Środowiska Badawcze", "🔬 3. Research Workspaces");
+  setTxt("navTabMatLabel", "📚 4. Repozytorium Badawcze", "📚 4. Research Repository");
+  setTxt("navTabGraphLabel", "🕸️ 5. Graf Powiązań (A–G)", "🕸️ 5. Connections Graph (A–G)");
+  setTxt("navTabSecurityLabel", "🛡️ 6. Bezpieczeństwo i Urządzenie", "🛡️ 6. Security & Device");
+
+  setTxt(
+    "compassHeaderBadge",
+    "🧭 Architektura Orientacyjna Projektu (OSF • ResearchHub • Most Wiedzy • Heptabase)",
+    "🧭 Project Wayfinding Architecture (OSF • ResearchHub • Most Wiedzy • Heptabase)"
+  );
+  setTxt(
+    "compassSubText",
+    "Kliknij wybraną warstwę fundamentów (1–8) lub ścieżkę (A–G), albo użyj wyszukiwarki poniżej. Wszystkie źródła posiadają oznaczenie języka [PL] / [EN].",
+    "Click any foundation layer (1–8) or research track (A–G), or use the search bar below. Every source includes a language badge [PL] / [EN]."
+  );
+  setTxt("axis1Title", "🏛️ Oś I: 8 Dziedzin Podstawowych (po kolei)", "🏛️ Axis I: 8 Core Foundations (Sequential)");
+  setTxt("axis2Title", "🗺️ Oś II: 7 Ścieżek Badawczych (A–G)", "🗺️ Axis II: 7 Research Tracks (A–G)");
+  setTxt("axis3Title", "🔒 Oś III: Oznaczenia Języka i Rygor Epistemiczny", "🔒 Axis III: Source Language & Epistemic Status");
+  setTxt(
+    "studyHeaderTitle",
+    "🎓 Materiały do nauki — 8 dziedzin ze Wspólnych podstaw po kolei oraz odnogi Projektów A–G",
+    "🎓 Study Materials — 8 Core Foundations in Sequence & Tracks A–G Branches"
+  );
+  setTxt(
+    "studyHeaderDesc",
+    "Przeglądaj kolejne dziedziny fundamentalne (1–8), dodawaj własne materiały do nauki i uruchamiaj środowiska. Każdy materiał posiada oznaczenie języka źródła ([PL], [EN], [PL+EN]).",
+    "Explore the 8 core scientific foundations (1–8), add your own study materials, and launch workspaces. Each source is tagged with its language ([PL], [EN], [PL+EN])."
+  );
+  setTxt("btnAddStudyMatTop", "+ Dodaj materiał do nauki", "+ Add Study Material");
+  setTxt("btnAddStudyWsTop", "🚀 Uruchom środowisko dla dziedziny", "🚀 Launch Foundation Workspace");
+  setTxt(
+    "studyTracksHeaderTitle",
+    "🧭 Materiały do nauki i Biblioteka według Ścieżek A–G",
+    "🧭 Study Materials & Library by Research Tracks A–G"
+  );
+  setTxt(
+    "mapHeaderTitle",
+    "Siedem powiązanych ścieżek badawczych (Projekty A–G)",
+    "Seven Interconnected Research Tracks (Projects A–G)"
+  );
+}
+
+function getExpectedDeviceToken() {
+  const auth = getActiveAdminAuth();
+  if (!auth || !auth.hash || !auth.salt) return "";
+  return `${auth.salt.slice(0, 12)}_${auth.hash.slice(0, 28)}_g15_trusted`;
+}
+
+function updateLockScreenVisibility() {
+  const lockEl = document.getElementById("ownerLockScreen");
+  const mainEl = document.getElementById("appMainRoot");
+  const unlocked = Boolean(appState.isAdmin || appState.deviceTrusted);
+  if (lockEl) lockEl.style.display = unlocked ? "none" : "flex";
+  if (mainEl) mainEl.style.display = unlocked ? "flex" : "none";
+}
+
+function lockOwnerPortal() {
+  appState.isAdmin = false;
+  appState.deviceTrusted = false;
+  sessionStorage.removeItem("golem_xv_is_admin");
+  updateLockScreenVisibility();
+  showToast(appState.lang === "en" ? "Portal locked." : "Portal został zablokowany.");
+}
+
+function revokeDeviceTrust() {
+  localStorage.removeItem(TRUSTED_DEVICE_KEY);
+  appState.deviceTrusted = false;
+  showToast(
+    appState.lang === "en"
+      ? "Device authorization revoked. Password will be required on next visit."
+      : "Autoryzacja tego urządzenia została cofnięta."
+  );
+  renderAll();
+}
+
+function authorizeCurrentBrowserDevice() {
+  const tok = getExpectedDeviceToken();
+  if (tok) {
+    localStorage.setItem(TRUSTED_DEVICE_KEY, tok);
+    appState.deviceTrusted = true;
+    showToast(
+      appState.lang === "en"
+        ? "This browser/device is now authorized for direct owner access!"
+        : "To urządzenie zostało autoryzowane jako zaufane urządzenie właściciela!"
+    );
+    renderAll();
+  }
+}
+
+async function submitOwnerGatekeeper(e) {
+  e.preventDefault();
+  const passInput = document.getElementById("gatekeeperPassInput");
+  const trustCheck = document.getElementById("trustDeviceCheckbox");
+  const errBox = document.getElementById("gatekeeperErrorBox");
+  const candidate = passInput ? passInput.value : "";
+
+  const ok = await verifyAdminPasswordCrypto(candidate);
+  if (ok) {
+    appState.isAdmin = true;
+    sessionStorage.setItem("golem_xv_is_admin", "true");
+    if (trustCheck && trustCheck.checked) {
+      const tok = getExpectedDeviceToken();
+      if (tok) {
+        localStorage.setItem(TRUSTED_DEVICE_KEY, tok);
+        appState.deviceTrusted = true;
+      }
+    }
+    if (passInput) passInput.value = "";
+    if (errBox) errBox.style.display = "none";
+    updateLockScreenVisibility();
+    renderAll();
+    showToast(
+      appState.lang === "en"
+        ? "Welcome, Ireneusz! Owner portal unlocked."
+        : "Witaj, Ireneusz! Prywatny portal został odblokowany."
+    );
+  } else {
+    if (errBox) {
+      errBox.style.display = "block";
+      errBox.textContent =
+        appState.lang === "en"
+          ? "Access denied — invalid owner password."
+          : "Odmowa dostępu — nieprawidłowe hasło właściciela.";
+    }
+  }
 }
 
 function ensureSchema(d) {
   if (!d.projectMeta) d.projectMeta = JSON.parse(JSON.stringify(DEFAULT_SEED.projectMeta));
   d.projectMeta.title = "The Golem 15: A Human's Road to Reality";
   delete d.projectMeta.adminPassword;
+  delete d.verifiedResearchers;
   if (!d.projectMeta.adminAuth || !d.projectMeta.adminAuth.hash) {
     d.projectMeta.adminAuth = JSON.parse(JSON.stringify(DEFAULT_SEED.projectMeta.adminAuth));
-  }
-  if (!d.verifiedResearchers || !Array.isArray(d.verifiedResearchers)) {
-    d.verifiedResearchers = JSON.parse(JSON.stringify(DEFAULT_SEED.verifiedResearchers || []));
   }
   if (!d.foundationDisciplines || !d.foundationDisciplines.length) {
     d.foundationDisciplines = JSON.parse(JSON.stringify(DEFAULT_SEED.foundationDisciplines));
@@ -2500,19 +2778,31 @@ function ensureSchema(d) {
 
 async function initApp() {
   localStorage.removeItem("golem_xv_admin_pass");
-  if (sessionStorage.getItem("golem_xv_is_admin") === "true") {
+  await loadState();
+
+  const expectedTok = getExpectedDeviceToken();
+  const urlParams = new URLSearchParams(window.location.search);
+  const urlDeviceTok = urlParams.get("device_token");
+
+  if (expectedTok && urlDeviceTok && constantTimeEqual(urlDeviceTok, expectedTok)) {
+    localStorage.setItem(TRUSTED_DEVICE_KEY, expectedTok);
+    appState.deviceTrusted = true;
+    appState.isAdmin = true;
+  } else if (expectedTok && localStorage.getItem(TRUSTED_DEVICE_KEY) === expectedTok) {
+    appState.deviceTrusted = true;
+    appState.isAdmin = true;
+  } else if (sessionStorage.getItem("golem_xv_is_admin") === "true") {
     appState.isAdmin = true;
   }
-  const savedRes = sessionStorage.getItem("golem_xv_active_researcher");
-  if (savedRes) {
-    try {
-      appState.activeResearcher = JSON.parse(savedRes);
-    } catch {
-      appState.activeResearcher = null;
-    }
+
+  document.querySelectorAll(".lang-btn").forEach((btn) => {
+    btn.classList.toggle("active", btn.dataset.lang === appState.lang);
+  });
+  applyStaticTranslations();
+  updateLockScreenVisibility();
+  if (appState.isAdmin || appState.deviceTrusted) {
+    renderAll();
   }
-  await loadState();
-  renderAll();
 }
 
 async function loadState() {
@@ -2566,10 +2856,11 @@ async function saveState(toastMsg) {
 function updateServerBadge() {
   const el = document.getElementById("serverStatusBadge");
   if (!el) return;
+  const isEn = appState.lang === "en";
   if (appState.serverOnline) {
-    el.innerHTML = `<span class="status-dot" style="background:#10b981"></span> Baza serwerowa (JSON API aktywne)`;
+    el.innerHTML = `<span class="status-dot" style="background:#10b981"></span> ${isEn ? "Server DB Active" : "Baza serwerowa aktywna"}`;
   } else {
-    el.innerHTML = `<span class="status-dot" style="background:#38bdf8"></span> Baza lokalna przeglądarki`;
+    el.innerHTML = `<span class="status-dot" style="background:#38bdf8"></span> ${isEn ? "Private Browser Storage" : "Baza lokalna właściciela"}`;
   }
 }
 
@@ -2608,25 +2899,29 @@ function formatTextWithLinks(str) {
 
 function renderLinksBlock(item) {
   const links = item.links || [];
+  const isEn = appState.lang === "en";
   if (links.length > 0) {
     return `
-      <div style="margin-top:0.45rem; padding-top:0.35rem; border-top:1px dashed rgba(148,163,184,0.2);">
-        <div style="font-size:0.75rem; font-weight:700; color:#38bdf8; margin-bottom:0.2rem;">🔗 Odnośniki i linki źródłowe:</div>
-        <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.2rem;">
+      <div style="margin-top:0.5rem; padding-top:0.4rem; border-top:1px dashed rgba(148,163,184,0.2);">
+        <div style="font-size:0.75rem; font-weight:700; color:#38bdf8; margin-bottom:0.25rem;">🔗 ${isEn ? "Source Links & Language:" : "Odnośniki źródłowe i język materiału:"}</div>
+        <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.25rem;">
           ${links
-            .map(
-              (l) =>
-                `<li style="font-size:0.8rem;"><a href="${escapeHtml(l.url)}" target="_blank" rel="noopener noreferrer" style="color:#38bdf8; text-decoration:underline;">🔗 ${escapeHtml(l.label)}</a></li>`
-            )
+            .map((l) => {
+              const lCode = detectSourceLang(`${l.label || ""} ${l.url || ""}`);
+              const tag = lCode === "PL" ? `<span class="lang-tag lang-pl" style="font-size:0.65rem; padding:0.05rem 0.4rem;">[PL 🇵🇱]</span>` : `<span class="lang-tag lang-en" style="font-size:0.65rem; padding:0.05rem 0.4rem;">[EN 🇬🇧]</span>`;
+              return `<li style="font-size:0.8rem; display:flex; align-items:center; gap:0.35rem; flex-wrap:wrap;">${tag} <a href="${escapeHtml(l.url)}" target="_blank" rel="noopener noreferrer" style="color:#38bdf8; text-decoration:underline;">${escapeHtml(l.label)}</a></li>`;
+            })
             .join("")}
         </ul>
       </div>
     `;
   }
   if (item.url) {
+    const lCode = detectSourceLang(item.url, item.sourceLang);
     return `
-      <div style="margin-top:0.4rem;">
-        <a href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer" style="color:#38bdf8; font-size:0.82rem; font-weight:600; text-decoration:underline;">🔗 Otwórz materiał / źródło zewnętrzne</a>
+      <div style="margin-top:0.45rem; display:flex; align-items:center; gap:0.4rem;">
+        ${renderLangBadgeHtml(lCode)}
+        <a href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer" style="color:#38bdf8; font-size:0.82rem; font-weight:600; text-decoration:underline;">🔗 ${isEn ? "Open source material" : "Otwórz materiał źródłowy"}</a>
       </div>
     `;
   }
@@ -2634,48 +2929,29 @@ function renderLinksBlock(item) {
 }
 
 function getTrackOrFoundationById(id) {
+  const isEn = appState.lang === "en";
   const tr = appState.data.tracks.find((t) => t.id === id);
-  if (tr) return tr;
+  if (tr) {
+    return {
+      ...tr,
+      code: isEn && TRACK_EN[id] ? TRACK_EN[id].code : tr.code,
+      name: isEn && TRACK_EN[id] ? TRACK_EN[id].name : tr.name,
+      goal: isEn && TRACK_EN[id] ? TRACK_EN[id].goal : tr.goal,
+      guidingQuestion: isEn && TRACK_EN[id] ? TRACK_EN[id].guidingQuestion : tr.guidingQuestion
+    };
+  }
   const fnd = (appState.data.foundationDisciplines || []).find((f) => f.id === id);
   if (fnd) {
+    const fEn = FOUNDATION_EN[id];
     return {
       id: fnd.id,
-      code: `Podstawy ${fnd.order}`,
-      name: fnd.name,
+      code: isEn ? `Foundation ${fnd.order}` : `Podstawy ${fnd.order}`,
+      name: isEn && fEn ? fEn.name : fnd.name,
       color: fnd.color,
-      sections: [{ title: "Działy do nauki", items: fnd.topics }]
+      sections: [{ title: isEn ? "Study Topics" : "Działy do nauki", items: isEn && fEn ? fEn.topics : fnd.topics }]
     };
   }
   return { id, code: id, name: id, color: "#38bdf8", sections: [] };
-}
-
-function countPendingItems() {
-  if (!appState.data) return 0;
-  let count = 0;
-  (appState.data.studyMaterials || []).forEach((sm) => {
-    if (sm.status === "pending") count++;
-  });
-  appState.data.materials.forEach((m) => {
-    if (m.status === "pending") count++;
-  });
-  appState.data.subprojects.forEach((sp) => {
-    if (sp.status === "pending") count++;
-    if (sp.workspace) {
-      (sp.workspace.hypotheses || []).forEach((h) => {
-        if (h.approvalStatus === "pending") count++;
-      });
-      (sp.workspace.notes || []).forEach((n) => {
-        if (n.approvalStatus === "pending") count++;
-      });
-      (sp.workspace.bibliography || []).forEach((b) => {
-        if (b.approvalStatus === "pending") count++;
-      });
-    }
-  });
-  (appState.data.graphLinks || []).forEach((l) => {
-    if (l.status === "pending") count++;
-  });
-  return count;
 }
 
 function switchTab(tabName) {
@@ -2685,9 +2961,7 @@ function switchTab(tabName) {
 
 function openTrackWorkspaceFilter(trackId) {
   appState.selectedTrackFilter = trackId;
-  const matching = appState.data.subprojects.find(
-    (s) => (s.status === "approved" || appState.isAdmin) && s.trackId === trackId
-  );
+  const matching = appState.data.subprojects.find((s) => s.trackId === trackId);
   if (matching) {
     appState.selectedSubprojectId = matching.id;
   }
@@ -2696,6 +2970,10 @@ function openTrackWorkspaceFilter(trackId) {
 
 function renderAll() {
   if (!appState.data) return;
+  updateLockScreenVisibility();
+  if (!appState.isAdmin && !appState.deviceTrusted) return;
+
+  updateServerBadge();
   renderHeaderRole();
   renderNavCounts();
 
@@ -2712,61 +2990,27 @@ function renderAll() {
   if (appState.activeTab === "workspaces") renderWorkspacesView();
   if (appState.activeTab === "materials") renderMaterialsView();
   if (appState.activeTab === "graph") renderGraphView();
-  if (appState.activeTab === "researchers") renderResearchersView();
   if (appState.activeTab === "moderation") renderModerationView();
 }
 
 function renderHeaderRole() {
   const roleBadge = document.getElementById("roleBadge");
-  const authBtn = document.getElementById("authToggleBtn");
-  if (appState.isAdmin) {
-    roleBadge.className = "role-badge admin";
-    roleBadge.innerHTML = `<span>★</span> Tryb Administratora (Pełna kontrola)`;
-    authBtn.textContent = "🔓 Wyloguj";
-    authBtn.className = "btn btn-sm";
-    authBtn.style.opacity = "1";
-  } else if (appState.activeResearcher) {
-    roleBadge.className = "role-badge admin";
-    roleBadge.innerHTML = `<span>🧑‍🔬</span> Stały Badacz: ${escapeHtml(appState.activeResearcher.name)}`;
-    authBtn.textContent = "🔒";
-    authBtn.className = "btn btn-sm";
-    authBtn.style.opacity = "0.6";
-  } else {
-    roleBadge.className = "role-badge guest";
-    roleBadge.innerHTML = `<span>👁</span> Tryb Gościa / Obserwatora`;
-    authBtn.textContent = "🔒";
-    authBtn.className = "btn btn-sm";
-    authBtn.style.opacity = "0.6";
-  }
+  if (!roleBadge) return;
+  const isEn = appState.lang === "en";
+  roleBadge.className = "role-badge admin";
+  roleBadge.innerHTML = appState.deviceTrusted
+    ? `<span>💻</span> ${isEn ? "Owner: Ireneusz (Authorized Device)" : "Właściciel: Ireneusz (Zaufane Urządzenie)"}`
+    : `<span>🛡️</span> ${isEn ? "Owner: Ireneusz (Authenticated)" : "Właściciel: Ireneusz (Zalogowany)"}`;
 }
 
 function renderNavCounts() {
-  const approvedStudy = (appState.data.studyMaterials || []).filter(
-    (s) => s.status === "approved" || canAutoApprove()
-  ).length;
-  const approvedSubprojects = appState.data.subprojects.filter(
-    (s) => s.status === "approved" || canAutoApprove()
-  ).length;
-  const approvedMaterials = appState.data.materials.filter(
-    (m) => m.status === "approved" || canAutoApprove()
-  ).length;
-  const activeResCount = (appState.data.verifiedResearchers || []).filter((r) => r.status === "active").length;
-  const pendingTotal = countPendingItems();
-
   const studyCountEl = document.getElementById("navStudyCount");
   const subCountEl = document.getElementById("navSubprojectsCount");
   const matCountEl = document.getElementById("navMaterialsCount");
-  const resCountEl = document.getElementById("navResearchersCount");
-  const modCountEl = document.getElementById("navModerationCount");
 
-  if (studyCountEl) studyCountEl.textContent = approvedStudy;
-  if (subCountEl) subCountEl.textContent = approvedSubprojects;
-  if (matCountEl) matCountEl.textContent = approvedMaterials;
-  if (resCountEl) resCountEl.textContent = activeResCount;
-  if (modCountEl) {
-    modCountEl.textContent = pendingTotal;
-    modCountEl.className = pendingTotal > 0 ? "badge-count pending-alert" : "badge-count";
-  }
+  if (studyCountEl) studyCountEl.textContent = (appState.data.studyMaterials || []).length;
+  if (subCountEl) subCountEl.textContent = (appState.data.subprojects || []).length;
+  if (matCountEl) matCountEl.textContent = (appState.data.materials || []).length;
 }
 
 function renderGlobalWayfindingResults(query) {
@@ -2780,86 +3024,84 @@ function renderGlobalWayfindingResults(query) {
   }
   const hits = [];
   (appState.data.foundationDisciplines || []).forEach((f) => {
-    if (`${f.name} ${f.description} ${(f.topics || []).join(" ")}`.toLowerCase().includes(q)) {
-      hits.push(`<div>🏛️ <strong>Podstawy ${f.order}: ${escapeHtml(f.name)}</strong> — <a href="javascript:void(0)" onclick="switchTab('study')" style="color:#38bdf8;">Otwórz w Materiałach do nauki</a></div>`);
-    }
-  });
-  (appState.data.tracks || []).forEach((t) => {
-    if (`${t.code} ${t.name} ${t.goal} ${t.guidingQuestion}`.toLowerCase().includes(q)) {
-      hits.push(`<div>🗺️ <strong>${escapeHtml(t.code)} — ${escapeHtml(t.name)}</strong> — <a href="javascript:void(0)" onclick="openTrackWorkspaceFilter('${t.id}')" style="color:#38bdf8;">Otwórz ścieżkę</a></div>`);
+    const fEn = FOUNDATION_EN[f.id] || {};
+    if (`${f.name} ${fEn.name || ""} ${f.description} ${(f.topics || []).join(" ")}`.toLowerCase().includes(q)) {
+      hits.push(`<div>🏛️ <strong>${f.order}. ${escapeHtml(appState.lang === "en" && fEn.name ? fEn.name : f.name)}</strong> — <a href="javascript:void(0)" onclick="switchTab('study')" style="color:#38bdf8;">Otwórz</a></div>`);
     }
   });
   (appState.data.studyMaterials || []).forEach((sm) => {
-    if ((sm.status === "approved" || canAutoApprove()) && `${sm.title} ${sm.content} ${sm.topic}`.toLowerCase().includes(q)) {
-      hits.push(`<div>🎓 <strong>[${escapeHtml(sm.targetId)}] ${escapeHtml(sm.title)}</strong> — <a href="javascript:void(0)" onclick="switchTab('study')" style="color:#38bdf8;">Materiały do nauki</a></div>`);
+    const blob = `${sm.title} ${sm.content} ${sm.topic} ${JSON.stringify(sm.links || [])}`;
+    const lCode = detectSourceLang(blob, sm.sourceLang);
+    if (matchesSourceLangFilter(lCode) && blob.toLowerCase().includes(q)) {
+      hits.push(`<div>🎓 ${renderLangBadgeHtml(lCode)} <strong>[${escapeHtml(sm.targetId)}] ${escapeHtml(sm.title)}</strong> — <a href="javascript:void(0)" onclick="switchTab('study')" style="color:#38bdf8;">Materiały do nauki</a></div>`);
     }
   });
   (appState.data.materials || []).forEach((m) => {
-    if ((m.status === "approved" || canAutoApprove()) && `${m.title} ${m.content} ${m.branchTopic}`.toLowerCase().includes(q)) {
-      hits.push(`<div>📚 <strong>[Projekt ${escapeHtml(m.trackId)}] ${escapeHtml(m.title)}</strong> — <a href="javascript:void(0)" onclick="switchTab('materials')" style="color:#38bdf8;">Repozytorium</a></div>`);
-    }
-  });
-  (appState.data.verifiedResearchers || []).forEach((r) => {
-    if (r.status === "active" && `${r.name} ${r.roleTitle} ${r.bio}`.toLowerCase().includes(q)) {
-      hits.push(`<div>🧑‍🔬 <strong>Stały Badacz: ${escapeHtml(r.name)}</strong> (${escapeHtml(r.roleTitle)}) — <a href="javascript:void(0)" onclick="switchTab('researchers')" style="color:#38bdf8;">Profil badacza</a></div>`);
+    const blob = `${m.title} ${m.content} ${m.branchTopic} ${JSON.stringify(m.links || [])}`;
+    const lCode = detectSourceLang(blob, m.sourceLang);
+    if (matchesSourceLangFilter(lCode) && blob.toLowerCase().includes(q)) {
+      hits.push(`<div>📚 ${renderLangBadgeHtml(lCode)} <strong>[Projekt ${escapeHtml(m.trackId)}] ${escapeHtml(m.title)}</strong> — <a href="javascript:void(0)" onclick="switchTab('materials')" style="color:#38bdf8;">Repozytorium</a></div>`);
     }
   });
 
   box.style.display = "block";
   box.innerHTML = hits.length
-    ? `<div style="font-size:0.8rem; color:#38bdf8; font-weight:700; margin-bottom:0.35rem;">Znaleziono dopasowania (${hits.length}):</div><div style="display:flex; flex-direction:column; gap:0.25rem; font-size:0.82rem;">${hits.slice(0, 10).join("")}</div>`
+    ? `<div style="display:flex; flex-direction:column; gap:0.35rem; font-size:0.82rem;">${hits.slice(0, 12).join("")}</div>`
     : `<div style="font-size:0.82rem; color:var(--text-muted);">Brak dopasowań dla „${escapeHtml(query)}”.</div>`;
 }
 
-// --- WIDOK 0 (PIERWSZA OPCJA): MATERIAŁY DO NAUKI (8 DZIEDZIN PODSTAWOWYCH PO KOLEI + ODNOGI A-G + BIBLIOTEKA UZUPEŁNIAJĄCA) ---
+// --- WIDOK 0: MATERIAŁY DO NAUKI ---
 function renderStudyView() {
   const fndGrid = document.getElementById("foundationsGrid");
   const tracksTree = document.getElementById("tracksStudyTree");
   if (!fndGrid) return;
+  const isEn = appState.lang === "en";
 
   const foundations = (appState.data.foundationDisciplines || []).slice().sort((a, b) => a.order - b.order);
 
   fndGrid.innerHTML = foundations
     .map((fnd) => {
-      const mats = (appState.data.studyMaterials || []).filter(
-        (sm) =>
-          sm.categoryType === "FOUNDATION" &&
-          sm.targetId === fnd.id &&
-          (sm.status === "approved" || appState.isAdmin || sm.isSessionCreated)
-      );
-      const subCount = appState.data.subprojects.filter(
-        (s) => s.trackId === fnd.id && (s.status === "approved" || appState.isAdmin)
-      ).length;
+      const fEn = FOUNDATION_EN[fnd.id] || {};
+      const fName = isEn && fEn.name ? fEn.name : fnd.name;
+      const fDesc = isEn && fEn.description ? fEn.description : fnd.description;
+      const fTopics = isEn && fEn.topics ? fEn.topics : fnd.topics;
+
+      const mats = (appState.data.studyMaterials || []).filter((sm) => {
+        if (sm.categoryType !== "FOUNDATION" || sm.targetId !== fnd.id) return false;
+        const lCode = detectSourceLang(`${sm.title} ${sm.content} ${JSON.stringify(sm.links || [])}`, sm.sourceLang);
+        return matchesSourceLangFilter(lCode);
+      });
+      const subCount = appState.data.subprojects.filter((s) => s.trackId === fnd.id).length;
 
       return `
       <div class="track-card" style="--track-color: ${fnd.color}">
         <div>
           <div class="track-header">
             <div>
-              <span class="track-code">WSPÓLNE PODSTAWY • DZIEDZINA ${fnd.order} z 8</span>
-              <h3 class="track-title">${fnd.icon} ${escapeHtml(fnd.name)}</h3>
+              <span class="track-code">${isEn ? `CORE FOUNDATION • ${fnd.order} OF 8` : `WSPÓLNE PODSTAWY • DZIEDZINA ${fnd.order} z 8`}</span>
+              <h3 class="track-title">${fnd.icon} ${escapeHtml(fName)}</h3>
             </div>
             <button class="btn btn-sm btn-primary" onclick="openNewStudyMaterialModal('FOUNDATION', '${fnd.id}', '')">
-              + Materiał do nauki
+              + ${isEn ? "Add Material" : "Materiał do nauki"}
             </button>
           </div>
-          <p class="track-goal">${escapeHtml(fnd.description)}</p>
+          <p class="track-goal">${escapeHtml(fDesc)}</p>
 
           <div class="track-sections">
             <div class="track-section-block">
-              <h4>Program nauki po kolei (zagadnienia i działy)</h4>
+              <h4>${isEn ? "Sequential Study Topics" : "Program nauki po kolei (zagadnienia i działy)"}</h4>
               <ul class="branch-list">
-                ${fnd.topics
+                ${fTopics
                   .map(
                     (topic, idx) => `
                   <li class="branch-item">
                     <span><strong>${fnd.order}.${idx + 1}.</strong> ${escapeHtml(topic)}</span>
                     <div style="display:flex; gap:0.35rem;">
-                      <button class="btn btn-sm branch-launch-btn" onclick="openNewStudyMaterialModal('FOUNDATION', '${fnd.id}', '${escapeHtml(topic).replace(/'/g, "\\'")}')" title="Dodaj materiał do nauki dla tego działu">
-                        + Materiał
+                      <button class="btn btn-sm branch-launch-btn" onclick="openNewStudyMaterialModal('FOUNDATION', '${fnd.id}', '${escapeHtml(topic).replace(/'/g, "\\'")}')">
+                        + ${isEn ? "Material" : "Materiał"}
                       </button>
-                      <button class="btn btn-sm branch-launch-btn" onclick="openNewSubprojectModal('${fnd.id}', '${escapeHtml(topic).replace(/'/g, "\\'")}')" title="Uruchom środowisko dla tego działu">
-                        🚀 Środowisko
+                      <button class="btn btn-sm branch-launch-btn" onclick="openNewSubprojectModal('${fnd.id}', '${escapeHtml(topic).replace(/'/g, "\\'")}')">
+                        🚀 ${isEn ? "Workspace" : "Środowisko"}
                       </button>
                     </div>
                   </li>
@@ -2870,44 +3112,26 @@ function renderStudyView() {
             </div>
 
             <div class="track-section-block">
-              <h4>Przypisane materiały do nauki (${mats.length})</h4>
+              <h4>${isEn ? `Assigned Study Materials (${mats.length})` : `Przypisane materiały do nauki (${mats.length})`}</h4>
               ${
                 mats.length === 0
-                  ? `<p style="font-size:0.8rem; color:var(--text-muted);">Brak przypisanych materiałów. Kliknij „+ Materiał do nauki”, aby dodać podręcznik, kurs lub notatkę.</p>`
+                  ? `<p style="font-size:0.8rem; color:var(--text-muted);">${isEn ? "No study materials for the active filter." : "Brak materiałów dla wybranego filtru."}</p>`
                   : mats
-                      .map(
-                        (m) => `
-                    <div class="ws-card" style="margin-bottom:0.45rem;">
-                      <div style="display:flex; justify-content:space-between; align-items:center; gap:0.4rem; margin-bottom:0.2rem;">
+                      .map((m) => {
+                        const lCode = detectSourceLang(`${m.title} ${m.content} ${JSON.stringify(m.links || [])}`, m.sourceLang);
+                        return `
+                    <div class="ws-card" style="margin-bottom:0.5rem;">
+                      <div style="display:flex; justify-content:space-between; align-items:center; gap:0.4rem; margin-bottom:0.3rem; flex-wrap:wrap;">
+                        ${renderLangBadgeHtml(lCode)}
                         <span class="foundation-pill" style="font-size:0.7rem;">${escapeHtml(m.format)} • ${escapeHtml(m.level)}</span>
-                        ${
-                          m.status === "pending"
-                            ? `<span class="status-tag status-pending">Do akceptacji Admina</span>`
-                            : `<span class="status-tag status-approved">Zatwierdzony</span>`
-                        }
                       </div>
                       <strong style="font-size:0.9rem;">📖 ${escapeHtml(m.title)}</strong>
-                      <div style="font-size:0.75rem; color:var(--text-muted); margin-bottom:0.25rem;">Dział: ${escapeHtml(m.topic)}</div>
-                      <p style="font-size:0.82rem; color:var(--text-secondary);">${formatTextWithLinks(m.content)}</p>
+                      <div style="font-size:0.75rem; color:var(--text-muted); margin-bottom:0.25rem;">${isEn ? "Topic" : "Dział"}: ${escapeHtml(m.topic)}</div>
+                      <p style="font-size:0.82rem; color:var(--text-secondary); white-space:pre-line;">${formatTextWithLinks(m.content)}</p>
                       ${renderLinksBlock(m)}
-                      <div style="display:flex; justify-content:space-between; align-items:center; margin-top:0.35rem; font-size:0.74rem; color:var(--text-muted);">
-                        <span>Dodał(a): ${escapeHtml(m.author)}</span>
-                        ${
-                          appState.isAdmin
-                            ? `<div style="display:flex; gap:0.3rem;">
-                                ${
-                                  m.status === "pending"
-                                    ? `<button class="btn btn-sm btn-success" onclick="moderateItem('studyMaterial', '${m.id}', 'approve')">✓</button>`
-                                    : ""
-                                }
-                                <button class="btn btn-sm btn-danger" onclick="moderateItem('studyMaterial', '${m.id}', 'delete')">✕</button>
-                              </div>`
-                            : ""
-                        }
-                      </div>
                     </div>
-                  `
-                      )
+                  `;
+                      })
                       .join("")
               }
             </div>
@@ -2916,11 +3140,11 @@ function renderStudyView() {
 
         <div class="track-footer">
           <div class="track-stats">
-            <span>📖 Materiały do nauki: <strong>${mats.length}</strong></span>
-            <span>🔬 Środowiska: <strong>${subCount}</strong></span>
+            <span>📖 ${isEn ? "Materials" : "Materiały"}: <strong>${mats.length}</strong></span>
+            <span>🔬 ${isEn ? "Workspaces" : "Środowiska"}: <strong>${subCount}</strong></span>
           </div>
           <button class="btn btn-sm" onclick="openNewSubprojectModal('${fnd.id}', '')">
-            🚀 Nowe środowisko (${escapeHtml(fnd.name)})
+            🚀 ${isEn ? "New Workspace" : "Nowe środowisko"} (${escapeHtml(fName)})
           </button>
         </div>
       </div>
@@ -2931,9 +3155,9 @@ function renderStudyView() {
   if (tracksTree) {
     const suppLib = appState.data.supplementaryLibrary || {};
     const suppProjects = suppLib.projects || [];
-    const suppRules = suppLib.rules || suppLib.usageRules || [];
-
+    const suppRules = suppLib.rules || [];
     const readingOrder = suppLib.readingOrder || null;
+
     const readingOrderHtml = readingOrder
       ? `
         <div class="ws-card" style="margin-top:0.75rem; border-left:3px solid #10b981;">
@@ -2952,13 +3176,6 @@ function renderStudyView() {
               )
               .join("")}
           </div>
-          ${
-            readingOrder.principle
-              ? `<div style="font-size:0.82rem; color:#e2e8f0; background:rgba(56,189,248,0.1); padding:0.45rem 0.65rem; border-radius:6px;">
-                  <strong>Zasada:</strong> ${escapeHtml(readingOrder.principle)}
-                </div>`
-              : ""
-          }
         </div>
       `
       : "";
@@ -2972,7 +3189,7 @@ function renderStudyView() {
           <p>${escapeHtml(suppLib.description || "")}</p>
         </div>
         <div class="ws-card" style="margin-top:0.75rem;">
-          <h4 style="margin-bottom:0.45rem; color:#38bdf8;">📌 Zasady korzystania z biblioteki (1–6)</h4>
+          <h4 style="margin-bottom:0.45rem; color:#38bdf8;">📌 ${isEn ? "Library Principles (1–6)" : "Zasady korzystania z biblioteki (1–6)"}</h4>
           <ol style="padding-left:1.3rem; margin:0; font-size:0.86rem; color:var(--text-secondary); line-height:1.6;">
             ${suppRules.map((r) => `<li>${escapeHtml(r)}</li>`).join("")}
           </ol>
@@ -2986,12 +3203,12 @@ function renderStudyView() {
       suppBannerHtml +
       appState.data.tracks
         .map((tr) => {
-          const mats = (appState.data.studyMaterials || []).filter(
-            (sm) =>
-              sm.categoryType === "TRACK" &&
-              sm.targetId === tr.id &&
-              (sm.status === "approved" || appState.isAdmin || sm.isSessionCreated)
-          );
+          const tObj = getTrackOrFoundationById(tr.id);
+          const mats = (appState.data.studyMaterials || []).filter((sm) => {
+            if (sm.categoryType !== "TRACK" || sm.targetId !== tr.id) return false;
+            const lCode = detectSourceLang(`${sm.title} ${sm.content} ${JSON.stringify(sm.links || [])}`, sm.sourceLang);
+            return matchesSourceLangFilter(lCode);
+          });
           const suppProj = suppProjects.find((sp) => sp.trackId === tr.id);
 
           return `
@@ -2999,19 +3216,19 @@ function renderStudyView() {
           <div>
             <div class="track-header">
               <div>
-                <span class="track-code">${escapeHtml(tr.code)} • MATERIAŁY DO NAUKI</span>
-                <h3 class="track-title">${escapeHtml(tr.name)}</h3>
+                <span class="track-code">${escapeHtml(tObj.code)}</span>
+                <h3 class="track-title">${escapeHtml(tObj.name)}</h3>
               </div>
               <button class="btn btn-sm btn-primary" onclick="openNewStudyMaterialModal('TRACK', '${tr.id}', '')">
-                + Materiał do nauki
+                + ${isEn ? "Study Material" : "Materiał do nauki"}
               </button>
             </div>
             <div class="track-sections">
               ${
                 suppProj
                   ? `
-                <div class="track-section-block" style="border: 1px solid rgba(56, 189, 248, 0.35); background: rgba(15, 23, 42, 0.78);">
-                  <h4 style="color:#38bdf8;">📚 Biblioteka uzupełniająca — ${escapeHtml(suppProj.title)}</h4>
+                <div class="track-section-block" style="border: 1px solid rgba(56, 189, 248, 0.35); background: rgba(15, 23, 42, 0.78); padding: 0.75rem; border-radius: 8px;">
+                  <h4 style="color:#38bdf8;">📚 ${escapeHtml(suppProj.title)}</h4>
                   ${
                     suppProj.sequence
                       ? `<div style="margin:0.4rem 0 0.65rem; padding:0.45rem 0.65rem; border-radius:8px; background:rgba(16,185,129,0.12); border-left:3px solid #10b981; font-size:0.82rem;">
@@ -3019,69 +3236,46 @@ function renderStudyView() {
                         </div>`
                       : ""
                   }
-                  ${(suppProj.groups || suppProj.sections || [])
-                    .map(
-                      (ssec) => `
-                    <div style="margin-top:0.45rem;">
-                      <strong style="font-size:0.78rem; text-transform:uppercase; color:var(--text-secondary);">${escapeHtml(ssec.heading)}:</strong>
-                      <ul class="branch-list" style="margin-top:0.25rem;">
+                  ${(suppProj.groups || [])
+                    .map((ssec) => {
+                      const gLang = ssec.heading.toLowerCase().includes("polsku") ? "PL" : ssec.heading.toLowerCase().includes("angielsku") ? "EN" : "PL+EN";
+                      return `
+                    <div style="margin-top:0.5rem;">
+                      <div style="display:flex; align-items:center; gap:0.4rem; margin-bottom:0.25rem;">
+                        ${renderLangBadgeHtml(gLang)}
+                        <strong style="font-size:0.78rem; text-transform:uppercase; color:var(--text-secondary);">${escapeHtml(ssec.heading)}</strong>
+                      </div>
+                      <ul class="branch-list">
                         ${(ssec.items || [])
-                          .map(
-                            (it) => `
-                          <li class="branch-item" style="font-size:0.82rem;">
-                            <span>• ${formatTextWithLinks(it)}</span>
-                          </li>
-                        `
-                          )
+                          .map((it) => `<li class="branch-item" style="font-size:0.82rem;"><span>• ${formatTextWithLinks(it)}</span></li>`)
                           .join("")}
                       </ul>
                     </div>
-                  `
-                    )
+                  `;
+                    })
                     .join("")}
                   ${renderLinksBlock(suppProj)}
                 </div>
               `
                   : ""
               }
-              ${tr.sections
-                .map(
-                  (sec) => `
-                <div class="track-section-block">
-                  <h4>${escapeHtml(sec.title)}</h4>
-                  <ul class="branch-list">
-                    ${sec.items
-                      .map(
-                        (item) => `
-                      <li class="branch-item">
-                        <span>• ${escapeHtml(item)}</span>
-                        <button class="btn btn-sm branch-launch-btn" onclick="openNewStudyMaterialModal('TRACK', '${tr.id}', '${escapeHtml(item).replace(/'/g, "\\'")}')">
-                          + Materiał do nauki
-                        </button>
-                      </li>
-                    `
-                      )
-                      .join("")}
-                  </ul>
-                </div>
-              `
-                )
-                .join("")}
               ${
                 mats.length > 0
                   ? `<div class="track-section-block">
-                      <h4>Dodane materiały do nauki (${mats.length})</h4>
+                      <h4>${isEn ? `Study Materials (${mats.length})` : `Materiały do nauki (${mats.length})`}</h4>
                       ${mats
-                        .map(
-                          (m) => `
-                        <div class="ws-card" style="margin-bottom:0.4rem;">
+                        .map((m) => {
+                          const lCode = detectSourceLang(`${m.title} ${m.content} ${JSON.stringify(m.links || [])}`, m.sourceLang);
+                          return `
+                        <div class="ws-card" style="margin-bottom:0.45rem;">
+                          <div style="margin-bottom:0.25rem;">${renderLangBadgeHtml(lCode)}</div>
                           <strong>📖 ${escapeHtml(m.title)}</strong> (${escapeHtml(m.level)})
-                          <div style="font-size:0.75rem; color:var(--text-muted);">Odnoga: ${escapeHtml(m.topic)}</div>
-                          <p style="font-size:0.82rem; color:var(--text-secondary);">${formatTextWithLinks(m.content)}</p>
+                          <div style="font-size:0.75rem; color:var(--text-muted);">${escapeHtml(m.topic)}</div>
+                          <p style="font-size:0.82rem; color:var(--text-secondary); white-space:pre-line;">${formatTextWithLinks(m.content)}</p>
                           ${renderLinksBlock(m)}
                         </div>
-                      `
-                        )
+                      `;
+                        })
                         .join("")}
                     </div>`
                   : ""
@@ -3098,21 +3292,16 @@ function renderStudyView() {
 // --- WIDOK 1: MAPA PROJEKTU (ŚCIEŻKI A-G) ---
 function renderMapView() {
   const meta = appState.data.projectMeta;
+  const isEn = appState.lang === "en";
   const bannerEl = document.getElementById("overviewBanner");
   bannerEl.innerHTML = `
     <div class="overarching-goal">
-      <h2>Cel nadrzędny przedsięwzięcia</h2>
-      <p><strong>${escapeHtml(meta.overarchingGoal)}</strong></p>
+      <h2>${isEn ? "Overarching Goal" : "Cel nadrzędny przedsięwzięcia"}</h2>
+      <p><strong>${escapeHtml(isEn ? "To examine and advance the scientific, engineering, biological, computational, and philosophical foundations of understanding, augmenting, and protecting the human being across 7 research tracks (A–G)." : meta.overarchingGoal)}</strong></p>
       <p style="font-size:0.86rem; color:var(--text-muted)">${escapeHtml(meta.organizationalRule)}</p>
-      <div style="margin-top:0.85rem;">
-        <span style="font-size:0.78rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--text-muted); font-weight:700;">Wspólne podstawy naukowe (kliknij zakładkę „1. Materiały do nauki”, aby studiować po kolei):</span>
-        <div class="foundations-list">
-          ${meta.foundations.map((f) => `<span class="foundation-pill" style="cursor:pointer;" onclick="switchTab('study')">${escapeHtml(f)}</span>`).join("")}
-        </div>
-      </div>
     </div>
     <div class="fg-relation-box">
-      <h3>Relacja między projektami F i G (Kosmos ↔ Ziemia)</h3>
+      <h3>${isEn ? "Track F ↔ Track G Relation (Space ↔ Earth)" : "Relacja między projektami F i G (Kosmos ↔ Ziemia)"}</h3>
       <p>${escapeHtml(meta.fgRelation.summary)}</p>
       <p>• <strong>Kosmos (F):</strong> ${escapeHtml(meta.fgRelation.fPerspective)}</p>
       <p>• <strong>Ziemia (G):</strong> ${escapeHtml(meta.fgRelation.gPerspective)}</p>
@@ -3122,12 +3311,9 @@ function renderMapView() {
   const gridEl = document.getElementById("tracksGrid");
   gridEl.innerHTML = appState.data.tracks
     .map((track) => {
-      const subCount = appState.data.subprojects.filter(
-        (s) => s.trackId === track.id && (s.status === "approved" || appState.isAdmin)
-      ).length;
-      const matCount = appState.data.materials.filter(
-        (m) => m.trackId === track.id && (m.status === "approved" || appState.isAdmin)
-      ).length;
+      const tObj = getTrackOrFoundationById(track.id);
+      const subCount = appState.data.subprojects.filter((s) => s.trackId === track.id).length;
+      const matCount = appState.data.materials.filter((m) => m.trackId === track.id).length;
       const isCrossCutting = track.id === "E";
 
       return `
@@ -3135,18 +3321,17 @@ function renderMapView() {
         <div>
           <div class="track-header">
             <div>
-              <span class="track-code">${escapeHtml(track.code)}${isCrossCutting ? " • WARSTWA PRZEKROJOWA" : ""}</span>
-              <h3 class="track-title">${escapeHtml(track.name)}</h3>
+              <span class="track-code">${escapeHtml(tObj.code)}</span>
+              <h3 class="track-title">${escapeHtml(tObj.name)}</h3>
             </div>
             <button class="btn btn-sm" onclick="openNewSubprojectModal('${track.id}', '')">
-              + Podprojekt / Środowisko
+              + ${isEn ? "Workspace" : "Środowisko"}
             </button>
           </div>
-          <p class="track-goal"><strong>Cel:</strong> ${escapeHtml(track.goal)}</p>
+          <p class="track-goal"><strong>${isEn ? "Goal" : "Cel"}:</strong> ${escapeHtml(tObj.goal)}</p>
           <div class="guiding-question">
-            <strong>Pytanie przewodnie:</strong> ${escapeHtml(track.guidingQuestion)}
+            <strong>${isEn ? "Guiding Question" : "Pytanie przewodnie"}:</strong> ${escapeHtml(tObj.guidingQuestion)}
           </div>
-          ${track.note ? `<div class="track-note">ℹ️ ${escapeHtml(track.note)}</div>` : ""}
           <div class="track-sections">
             ${track.sections
               .map(
@@ -3161,10 +3346,10 @@ function renderMapView() {
                       <span>• ${escapeHtml(item)}</span>
                       <div style="display:flex; gap:0.35rem;">
                         <button class="btn btn-sm branch-launch-btn" onclick="openNewSubprojectModal('${track.id}', '${escapeHtml(item).replace(/'/g, "\\'")}')">
-                          🚀 Środowisko
+                          🚀 ${isEn ? "Workspace" : "Środowisko"}
                         </button>
                         <button class="btn btn-sm branch-launch-btn" onclick="openNewMaterialModal('${track.id}', '${escapeHtml(item).replace(/'/g, "\\'")}')">
-                          + Materiał
+                          + ${isEn ? "Material" : "Materiał"}
                         </button>
                       </div>
                     </li>
@@ -3180,12 +3365,11 @@ function renderMapView() {
         </div>
         <div class="track-footer">
           <div class="track-stats">
-            <span>🔬 Środowiska: <strong>${subCount}</strong></span>
-            <span>📚 Materiały: <strong>${matCount}</strong></span>
+            <span>🔬 ${isEn ? "Workspaces" : "Środowiska"}: <strong>${subCount}</strong></span>
+            <span>📚 ${isEn ? "Materials" : "Materiały"}: <strong>${matCount}</strong></span>
           </div>
           <div style="display:flex; gap:0.45rem;">
-            <button class="btn btn-sm" onclick="openTrackWorkspaceFilter('${track.id}')">Otwórz środowiska (${subCount})</button>
-            <button class="btn btn-sm" onclick="openNewMaterialModal('${track.id}', '')">+ Dodaj materiał</button>
+            <button class="btn btn-sm" onclick="openTrackWorkspaceFilter('${track.id}')">${isEn ? "Open Workspaces" : "Otwórz środowiska"} (${subCount})</button>
           </div>
         </div>
       </div>
@@ -3196,18 +3380,18 @@ function renderMapView() {
 
 // --- WIDOK 2: ŚRODOWISKA BADAWCZE I PODPROJEKTY ---
 function renderWorkspacesView() {
+  const isEn = appState.lang === "en";
   const filterSelect = document.getElementById("wsTrackFilter");
   if (filterSelect) {
     filterSelect.value = appState.selectedTrackFilter;
   }
 
   const visibleSubprojects = appState.data.subprojects.filter((sp) => {
-    const statusOk = sp.status === "approved" || appState.isAdmin || sp.isSessionCreated;
-    const trackOk =
+    return (
       appState.selectedTrackFilter === "ALL" ||
       sp.trackId === appState.selectedTrackFilter ||
-      (sp.secondaryTracks && sp.secondaryTracks.includes(appState.selectedTrackFilter));
-    return statusOk && trackOk;
+      (sp.secondaryTracks && sp.secondaryTracks.includes(appState.selectedTrackFilter))
+    );
   });
 
   if (
@@ -3219,24 +3403,19 @@ function renderWorkspacesView() {
 
   const listEl = document.getElementById("subprojectsList");
   if (visibleSubprojects.length === 0) {
-    listEl.innerHTML = `<p style="color:var(--text-muted); font-size:0.86rem;">Brak podprojektów dla wybranego filtru.</p>`;
+    listEl.innerHTML = `<p style="color:var(--text-muted); font-size:0.86rem;">${isEn ? "No workspaces for this filter." : "Brak podprojektów dla wybranego filtru."}</p>`;
   } else {
     listEl.innerHTML = visibleSubprojects
       .map((sp) => {
         const track = getTrackOrFoundationById(sp.trackId);
         const activeClass = sp.id === appState.selectedSubprojectId ? "active" : "";
-        const statusBadge =
-          sp.status === "pending"
-            ? `<span class="status-tag status-pending">Do akceptacji</span>`
-            : `<span class="status-tag status-approved">Aktywne</span>`;
         return `
         <div class="subproject-item ${activeClass}" onclick="selectSubproject('${sp.id}')">
           <div style="display:flex; justify-content:space-between; align-items:center; gap:0.4rem; margin-bottom:0.3rem;">
             <span style="font-size:0.74rem; font-weight:700; color:${track.color};">${escapeHtml(track.code)} — ${escapeHtml(track.name)}</span>
-            ${statusBadge}
           </div>
           <div style="font-weight:600; font-size:0.92rem; margin-bottom:0.25rem;">${escapeHtml(sp.title)}</div>
-          <div style="font-size:0.78rem; color:var(--text-muted);">Odnoga: ${escapeHtml(sp.branchTopic || "Ogólna")}</div>
+          <div style="font-size:0.78rem; color:var(--text-muted);">${escapeHtml(sp.branchTopic || "")}</div>
         </div>
       `;
       })
@@ -3246,56 +3425,23 @@ function renderWorkspacesView() {
   const activeSp = appState.data.subprojects.find((s) => s.id === appState.selectedSubprojectId);
   const panelEl = document.getElementById("activeWorkspacePanel");
   if (!activeSp) {
-    panelEl.innerHTML = `
-      <div style="text-align:center; padding:3rem 1rem; color:var(--text-muted);">
-        <h3>Wybierz podprojekt z listy po lewej stronie lub uruchom nowe środowisko badawcze</h3>
-        <button class="btn btn-primary" style="margin-top:1rem;" onclick="openNewSubprojectModal('A', '')">+ Uruchom nowe środowisko badawcze</button>
-      </div>
-    `;
+    panelEl.innerHTML = `<div style="text-align:center; padding:3rem 1rem; color:var(--text-muted);"><h3>${isEn ? "Select a workspace on the left" : "Wybierz środowisko z listy po lewej stronie"}</h3></div>`;
     return;
   }
 
   const primaryTrack = getTrackOrFoundationById(activeSp.trackId);
   const ws = activeSp.workspace || { hypotheses: [], notes: [], bibliography: [] };
-  const hypotheses = (ws.hypotheses || []).filter(
-    (h) => h.approvalStatus !== "pending" || appState.isAdmin || h.isSessionCreated
-  );
-  const notes = (ws.notes || []).filter(
-    (n) => n.approvalStatus !== "pending" || appState.isAdmin || n.isSessionCreated
-  );
-  const bibliography = (ws.bibliography || []).filter(
-    (b) => b.approvalStatus !== "pending" || appState.isAdmin || b.isSessionCreated
-  );
 
   panelEl.innerHTML = `
     <div style="border-bottom:1px solid var(--border-color); padding-bottom:1.1rem;">
-      <div style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-start; gap:0.75rem;">
-        <div>
-          <span class="track-code" style="color:${primaryTrack.color};">${escapeHtml(primaryTrack.code)} — ${escapeHtml(primaryTrack.name)}</span>
-          <h2 style="font-size:1.35rem; margin-bottom:0.3rem;">${escapeHtml(activeSp.title)}</h2>
-          <p style="font-size:0.84rem; color:var(--text-muted);">
-            <strong>Odnoga badawcza:</strong> ${escapeHtml(activeSp.branchTopic || "Ogólna")} •
-            <strong>Inicjator:</strong> ${escapeHtml(activeSp.author)}
-          </p>
-        </div>
-        <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
-          ${
-            appState.isAdmin && activeSp.status === "pending"
-              ? `<button class="btn btn-sm btn-success" onclick="moderateItem('subproject', '${activeSp.id}', 'approve')">✓ Zatwierdź podprojekt</button>`
-              : ""
-          }
-          ${
-            appState.isAdmin
-              ? `<button class="btn btn-sm btn-danger" onclick="moderateItem('subproject', '${activeSp.id}', 'delete')">Usuń</button>`
-              : ""
-          }
-        </div>
-      </div>
+      <span class="track-code" style="color:${primaryTrack.color};">${escapeHtml(primaryTrack.code)} — ${escapeHtml(primaryTrack.name)}</span>
+      <h2 style="font-size:1.35rem; margin-bottom:0.3rem;">${escapeHtml(activeSp.title)}</h2>
+      <p style="font-size:0.84rem; color:var(--text-muted);"><strong>${isEn ? "Branch" : "Odnoga"}:</strong> ${escapeHtml(activeSp.branchTopic || "")}</p>
       <p style="margin-top:0.75rem; color:var(--text-secondary); font-size:0.92rem;">${escapeHtml(activeSp.description)}</p>
       ${
         activeSp.philosophicalNote
           ? `<div class="track-note" style="margin-top:0.75rem; margin-bottom:0;">
-              <strong>Nakładka interpretacyjna (Projekt E — Filozofia):</strong> ${escapeHtml(activeSp.philosophicalNote)}
+              <strong>Projekt E (Filozofia):</strong> ${escapeHtml(activeSp.philosophicalNote)}
             </div>`
           : ""
       }
@@ -3304,16 +3450,15 @@ function renderWorkspacesView() {
     <div class="workspace-grid">
       <div class="ws-section">
         <h4>
-          <span>1. Hipotezy badawcze (${hypotheses.length})</span>
-          <button class="btn btn-sm" onclick="openWorkspaceEntryModal('hypothesis', '${activeSp.id}')">+ Hipoteza</button>
+          <span>1. ${isEn ? "Hypotheses" : "Hipotezy badawcze"} (${(ws.hypotheses || []).length})</span>
+          <button class="btn btn-sm" onclick="openWorkspaceEntryModal('hypothesis', '${activeSp.id}')">+ ${isEn ? "Add" : "Hipoteza"}</button>
         </h4>
-        ${hypotheses
+        ${(ws.hypotheses || [])
           .map(
             (h) => `
           <div class="ws-card">
             <span class="foundation-pill" style="font-size:0.7rem;">${escapeHtml(h.status || "Hipoteza otwarta")}</span>
             <p style="margin:0.4rem 0;">${escapeHtml(h.statement)}</p>
-            <div style="font-size:0.75rem; color:var(--text-muted);">Autor: ${escapeHtml(h.author)}</div>
           </div>
         `
           )
@@ -3322,16 +3467,15 @@ function renderWorkspacesView() {
 
       <div class="ws-section">
         <h4>
-          <span>2. Notatnik badawczy (${notes.length})</span>
-          <button class="btn btn-sm" onclick="openWorkspaceEntryModal('note', '${activeSp.id}')">+ Notatka</button>
+          <span>2. ${isEn ? "Research Notes" : "Notatnik badawczy"} (${(ws.notes || []).length})</span>
+          <button class="btn btn-sm" onclick="openWorkspaceEntryModal('note', '${activeSp.id}')">+ ${isEn ? "Add" : "Notatka"}</button>
         </h4>
-        ${notes
+        ${(ws.notes || [])
           .map(
             (n) => `
           <div class="ws-card">
             <strong>${escapeHtml(n.title)}</strong>
             <p style="color:var(--text-secondary); margin:0.35rem 0;">${escapeHtml(n.content)}</p>
-            <div style="font-size:0.75rem; color:var(--text-muted);">Autor: ${escapeHtml(n.author)}</div>
           </div>
         `
           )
@@ -3340,18 +3484,20 @@ function renderWorkspacesView() {
 
       <div class="ws-section">
         <h4>
-          <span>3. Bibliografia i źródła (${bibliography.length})</span>
-          <button class="btn btn-sm" onclick="openWorkspaceEntryModal('bibliography', '${activeSp.id}')">+ Źródło</button>
+          <span>3. ${isEn ? "Bibliography & Sources" : "Bibliografia i źródła"} (${(ws.bibliography || []).length})</span>
+          <button class="btn btn-sm" onclick="openWorkspaceEntryModal('bibliography', '${activeSp.id}')">+ ${isEn ? "Add" : "Źródło"}</button>
         </h4>
-        ${bibliography
-          .map(
-            (b) => `
+        ${(ws.bibliography || [])
+          .map((b) => {
+            const lCode = detectSourceLang(`${b.citation} ${b.url || ""}`, b.sourceLang);
+            return `
           <div class="ws-card">
+            <div style="margin-bottom:0.25rem;">${renderLangBadgeHtml(lCode)}</div>
             <p>📖 ${escapeHtml(b.citation)}</p>
-            <div style="font-size:0.75rem; color:var(--text-muted); margin-top:0.3rem;">Dodał(a): ${escapeHtml(b.addedBy)}</div>
+            ${b.url ? `<div style="margin-top:0.25rem;"><a href="${escapeHtml(b.url)}" target="_blank" style="color:#38bdf8; font-size:0.78rem;">🔗 ${escapeHtml(b.url)}</a></div>` : ""}
           </div>
-        `
-          )
+        `;
+          })
           .join("")}
       </div>
     </div>
@@ -3375,13 +3521,11 @@ function renderMaterialsView() {
   const trackFilter = appState.materialFilterTrack;
 
   const filtered = appState.data.materials.filter((m) => {
-    const visible = m.status === "approved" || appState.isAdmin || m.isSessionCreated;
-    if (!visible) return false;
     if (trackFilter !== "ALL" && m.trackId !== trackFilter) return false;
-    if (searchVal) {
-      const hay = `${m.title} ${m.content} ${m.author} ${m.branchTopic || ""}`.toLowerCase();
-      if (!hay.includes(searchVal)) return false;
-    }
+    const blob = `${m.title} ${m.content} ${m.branchTopic || ""} ${JSON.stringify(m.links || [])}`;
+    const lCode = detectSourceLang(blob, m.sourceLang);
+    if (!matchesSourceLangFilter(lCode)) return false;
+    if (searchVal && !blob.toLowerCase().includes(searchVal)) return false;
     return true;
   });
 
@@ -3393,20 +3537,16 @@ function renderMaterialsView() {
   listEl.innerHTML = filtered
     .map((m) => {
       const track = getTrackOrFoundationById(m.trackId);
+      const lCode = detectSourceLang(`${m.title} ${m.content} ${JSON.stringify(m.links || [])}`, m.sourceLang);
       return `
       <div class="ws-card" style="padding:1.15rem; border-left:4px solid ${track.color};">
-        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.45rem;">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem; margin-bottom:0.45rem;">
           <span class="track-code" style="color:${track.color}; margin:0;">${escapeHtml(track.code)}: ${escapeHtml(track.name)} • ${escapeHtml(m.type || "Materiał")}</span>
-          ${
-            m.status === "pending"
-              ? `<span class="status-tag status-pending">Oczekuje na zgodę Administratora</span>`
-              : `<span class="status-tag status-approved">Zatwierdzony</span>`
-          }
+          ${renderLangBadgeHtml(lCode)}
         </div>
         <h3 style="font-size:1.08rem; margin-bottom:0.35rem;">${escapeHtml(m.title)}</h3>
         <p style="color:var(--text-secondary); margin-bottom:0.65rem; white-space:pre-line;">${formatTextWithLinks(m.content)}</p>
         ${renderLinksBlock(m)}
-        <div style="font-size:0.8rem; color:var(--text-muted); margin-top:0.5rem;">Autor zgłoszenia: <strong>${escapeHtml(m.author)}</strong></div>
       </div>
     `;
     })
@@ -3429,9 +3569,7 @@ function renderGraphView() {
     G: { x: 690, y: 420 }
   };
 
-  const visibleLinks = (appState.data.graphLinks || []).filter(
-    (l) => l.status !== "pending" || appState.isAdmin || l.isSessionCreated
-  );
+  const visibleLinks = appState.data.graphLinks || [];
 
   const linesSvg = visibleLinks
     .map((lnk) => {
@@ -3444,13 +3582,14 @@ function renderGraphView() {
 
   const nodesSvg = appState.data.tracks
     .map((tr) => {
+      const tObj = getTrackOrFoundationById(tr.id);
       const c = coords[tr.id] || { x: 100, y: 100 };
       const r = tr.id === "E" ? 44 : 36;
       return `
       <g style="cursor:pointer;" onclick="selectGraphNode('${tr.id}')">
         <circle cx="${c.x}" cy="${c.y}" r="${r}" fill="#111827" stroke="${tr.color}" stroke-width="3" />
-        <text x="${c.x}" y="${c.y + 4}" text-anchor="middle" fill="#f8fafc" font-size="13" font-weight="700">${escapeHtml(tr.code)}</text>
-        <text x="${c.x}" y="${c.y + r + 18}" text-anchor="middle" fill="#e2e8f0" font-size="11.5" font-weight="600">${escapeHtml(tr.name)}</text>
+        <text x="${c.x}" y="${c.y + 4}" text-anchor="middle" fill="#f8fafc" font-size="13" font-weight="700">${escapeHtml(tObj.code)}</text>
+        <text x="${c.x}" y="${c.y + r + 18}" text-anchor="middle" fill="#e2e8f0" font-size="11.5" font-weight="600">${escapeHtml(tObj.name)}</text>
       </g>
     `;
     })
@@ -3467,385 +3606,59 @@ function selectGraphNode(trackId) {
   renderGraphView();
 }
 
-// --- WIDOK 5: ZESPÓŁ STAŁYCH BADACZY I DELIKATNA WERYFIKACJA AI ---
-function renderResearchersView() {
-  const container = document.getElementById("researchersContainer");
-  if (!container) return;
-
-  const activeRes = (appState.data.verifiedResearchers || []).filter((r) => r.status === "active");
-  const allTargets = [
-    ...appState.data.tracks.map((t) => ({ id: t.id, label: `${t.code} — ${t.name}` })),
-    ...(appState.data.foundationDisciplines || []).map((f) => ({ id: f.id, label: `Podstawy ${f.order}: ${f.name}` }))
-  ];
-
-  container.innerHTML = `
-    <div class="filter-bar">
-      <div>
-        <h3 style="font-size:1.08rem;">🧑‍🔬 Stałe Konta Zweryfikowanych Badaczy & Asystent Weryfikacji AI</h3>
-        <p style="font-size:0.84rem; color:var(--text-muted);">
-          Zweryfikowani Badacze posiadają stałe konta — ich materiały do nauki, artykuły, podprojekty i notatki publikują się <strong>natychmiastowo bez konieczności ręcznej akceptacji przez właściciela projektu</strong>.
-        </p>
-      </div>
-      ${
-        appState.activeResearcher
-          ? `<button class="btn btn-danger" onclick="logoutResearcher()">🔓 Wyloguj Badacza (${escapeHtml(appState.activeResearcher.name)})</button>`
-          : ""
-      }
-    </div>
-
-    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(380px, 1fr)); gap:1.25rem;">
-      <div>
-        <h4 style="margin-bottom:0.75rem; color:#38bdf8;">🏛️ Aktywni Stali Badacze (${activeRes.length})</h4>
-        <div style="display:flex; flex-direction:column; gap:0.75rem; margin-bottom:1.25rem;">
-          ${activeRes
-            .map(
-              (r) => `
-            <div class="ws-card">
-              <div style="display:flex; justify-content:space-between; align-items:center; gap:0.5rem;">
-                <strong>🧑‍🔬 ${escapeHtml(r.name)}</strong>
-                <span class="foundation-pill" style="font-size:0.72rem; color:#34d399; border-color:rgba(16,185,129,0.4);">${escapeHtml(r.badge || "✓ Stały Badacz")}</span>
-              </div>
-              <div style="font-size:0.78rem; color:#38bdf8; margin-top:0.2rem;">${escapeHtml(r.roleTitle || "")} • ${escapeHtml(r.specializationLabel || r.specialization || "")}</div>
-              <p style="font-size:0.82rem; color:var(--text-secondary); margin-top:0.35rem;">${escapeHtml(r.bio || "")}</p>
-              ${r.aiVerificationSummary ? `<div style="font-size:0.74rem; color:var(--text-muted); margin-top:0.3rem;">🤖 ${escapeHtml(r.aiVerificationSummary)}</div>` : ""}
-            </div>
-          `
-            )
-            .join("")}
-        </div>
-
-        <div class="ws-card">
-          <h4 style="margin-bottom:0.5rem;">🔑 Logowanie na istniejące konto Stałego Badacza</h4>
-          <form onsubmit="submitResearcherLogin(event)">
-            <div class="form-group">
-              <label>Wybierz swój profil</label>
-              <select id="resLoginSelect" class="select-field">
-                ${activeRes.map((r) => `<option value="${r.id}">${escapeHtml(r.name)} (${escapeHtml(r.roleTitle || "")})</option>`).join("")}
-              </select>
-            </div>
-            <div class="form-group">
-              <label>Twoje hasło Badacza</label>
-              <input type="password" id="resLoginPass" class="input-field" value="" required />
-            </div>
-            <button type="submit" class="btn btn-primary" style="width:100%;">🧑‍🔬 Zaloguj jako Stały Badacz</button>
-          </form>
-        </div>
-      </div>
-
-      <div class="ws-card">
-        <h4 style="margin-bottom:0.35rem; color:#10b981;">🤖 Dołącz na stałe jako Zweryfikowany Badacz (Delikatna Weryfikacja AI)</h4>
-        <p style="font-size:0.82rem; color:var(--text-secondary); margin-bottom:0.85rem;">
-          Wypełnij krótką kartę metodologiczną. Asystent AI oceni kalibrację epistemiczną (Zasada 5 Golema 15) oraz oparcie w literaturze. Wynik <strong>≥ 75/100 pkt</strong> automatycznie aktywuje Twoje stałe konto!
-        </p>
-        <form onsubmit="submitAiResearcherRegistration(event)">
-          <div class="form-group">
-            <label>Imię i nazwisko / Pseudonim naukowy*</label>
-            <input type="text" id="candName" class="input-field" required />
-          </div>
-          <div class="form-group">
-            <label>Główna ścieżka (A–G) lub dziedzina podstawowa (1–8)*</label>
-            <select id="candSpec" class="select-field" required>
-              ${allTargets.map((t) => `<option value="${t.id}">${escapeHtml(t.label)}</option>`).join("")}
-            </select>
-          </div>
-          <div class="form-group">
-            <label>Rola / Specjalizacja w projekcie</label>
-            <input type="text" id="candRole" class="input-field" value="Stały Badacz The Golem 15" required />
-          </div>
-          <div class="form-group">
-            <label>1️⃣ Krótka próbka badawcza (2–4 zdania o zagadnieniu, które chcesz badać lub opracowywać)*</label>
-            <textarea id="candSample" class="textarea-field" rows="3" placeholder="Np. Analizuję modele biofizyczne neuronów (Hodgkina-Huxleya oraz Izhikevicha) pod kątem estymacji przepustowości synaptycznej w Projekcie B..." required></textarea>
-          </div>
-          <div class="form-group">
-            <label>2️⃣ Przywołane źródło bazowe (podręcznik z Biblioteki Golem 15, PWN, OpenStax lub DOI/URL)*</label>
-            <input type="text" id="candCitation" class="input-field" placeholder="Np. James W. Kalat — Biologiczne podstawy psychologii (PWN) / Dayan & Abbott" required />
-          </div>
-          <div class="form-group">
-            <label>3️⃣ Kalibracja epistemiczna (Zasada 5): Jaki status ma pełna emulacja mózgu (WBE)?</label>
-            <select id="candQ1" class="select-field">
-              <option value="correct">Hipoteza / długoterminowy cel badawczy i mapa drogowa wymagająca badań podstawowych</option>
-              <option value="wrong1">Wiedza w pełni potwierdzona i gotowa technologia wdrożeniowa</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label>4️⃣ Kalibracja źródłowa (Zasady 1–4): Od jakich materiałów zaczynamy pracę nad nową dziedziną?</label>
-            <select id="candQ2" class="select-field">
-              <option value="correct">Od podręczników podstawowych (w pierwszej kolejności polskich 🇵🇱 i otwartych zasobów jak OpenStax/ZPE) oraz ćwiczeń</option>
-              <option value="wrong1">Od niezweryfikowanych spekulacji bez znajomości podstaw danej dziedziny</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label>Ustaw własne hasło Stałego Badacza (min. 6 znaków, szyfrowane PBKDF2-SHA256)*</label>
-            <input type="password" id="candPass" class="input-field" minlength="6" required />
-          </div>
-          <div id="aiVerificationFeedbackBox" style="margin-bottom:0.75rem;"></div>
-          <button type="submit" class="btn btn-primary" style="width:100%;">🤖 Zweryfikuj przez Asystenta AI i utwórz stałe konto</button>
-        </form>
-      </div>
-    </div>
-  `;
-}
-
-function logoutResearcher() {
-  appState.activeResearcher = null;
-  sessionStorage.removeItem("golem_xv_active_researcher");
-  showToast("Wylogowano z konta Stałego Badacza.");
-  renderAll();
-}
-
-async function submitResearcherLogin(e) {
-  e.preventDefault();
-  const resId = document.getElementById("resLoginSelect").value;
-  const pass = document.getElementById("resLoginPass").value;
-  const target = (appState.data.verifiedResearchers || []).find((r) => r.id === resId && r.status === "active");
-  if (!target || !target.auth) {
-    showToast("Nie znaleziono aktywnego profilu Badacza.");
-    return;
-  }
-  const derived = await derivePbkdf2Hex(pass, target.auth.salt, target.auth.iterations || 260000);
-  if (constantTimeEqual(derived, target.auth.hash)) {
-    appState.activeResearcher = target;
-    sessionStorage.setItem("golem_xv_active_researcher", JSON.stringify(target));
-    showToast(`Zalogowano jako Stały Badacz: ${target.name}!`);
-    renderAll();
-  } else {
-    showToast("Nieprawidłowe hasło Badacza.");
-  }
-}
-
-async function submitAiResearcherRegistration(e) {
-  e.preventDefault();
-  const name = document.getElementById("candName").value.trim();
-  const spec = document.getElementById("candSpec").value;
-  const role = document.getElementById("candRole").value.trim();
-  const sample = document.getElementById("candSample").value.trim();
-  const citation = document.getElementById("candCitation").value.trim();
-  const q1 = document.getElementById("candQ1").value;
-  const q2 = document.getElementById("candQ2").value;
-  const pass = document.getElementById("candPass").value.trim();
-
-  let score = 0;
-  const notes = [];
-  if (q1 === "correct") {
-    score += 20;
-    notes.push("🟢 Kalibracja epistemiczna (Zasada 5): poprawna separacja wiedzy potwierdzonej od celów WBE.");
-  } else {
-    score += 5;
-    notes.push("🟡 Wskazówka AI: pełna emulacja mózgu (WBE) to hipoteza i cel długoterminowy.");
-  }
-  if (q2 === "correct") {
-    score += 20;
-    notes.push("🟢 Rygor źródłowy: właściwa hierarchia źródeł (podręczniki polskie 🇵🇱 i otwarte zasoby).");
-  } else {
-    score += 5;
-    notes.push("🟡 Wskazówka AI: zaczynamy od podręczników podstawowych i ćwiczeń.");
-  }
-  if (sample.length >= 100) {
-    score += 35;
-    notes.push("🟢 Próbka badawcza ma odpowiednią szczegółowość merytoryczną.");
-  } else {
-    score += 15;
-    notes.push("🟡 Rozwiń opis próbki badawczej do min. 100 znaków.");
-  }
-  if (citation.length >= 10) {
-    score += 25;
-    notes.push("🟢 Przywołano weryfikowalne źródło literaturowe.");
-  } else {
-    score += 5;
-    notes.push("🟡 Podaj pełniejsze źródło (autor, tytuł lub DOI).");
-  }
-
-  const fbBox = document.getElementById("aiVerificationFeedbackBox");
-  if (score < 75) {
-    fbBox.innerHTML = `<div class="ws-card" style="border-color:#f59e0b;"><strong>Wynik AI: ${score}/100 pkt (próg: 75 pkt)</strong><ul style="margin-top:0.35rem; padding-left:1.1rem; font-size:0.8rem;">${notes.map((n) => `<li>${escapeHtml(n)}</li>`).join("")}</ul></div>`;
-    return;
-  }
-
-  const saltBytes = new Uint8Array(16);
-  window.crypto.getRandomValues(saltBytes);
-  const saltHex = bytesToHex(saltBytes);
-  const hashHex = await derivePbkdf2Hex(pass, saltHex, 260000);
-
-  const newRes = {
-    id: "res-" + Date.now(),
-    name,
-    handle: "@" + name.toLowerCase().replace(/\s+/g, "-"),
-    roleTitle: role,
-    specialization: spec,
-    specializationLabel: spec,
-    affiliation: "Zespół Badawczy The Golem 15",
-    orcid: "",
-    bio: `${sample} (Źródło: ${citation})`,
-    aiVerificationScore: score,
-    aiVerificationSummary: `Pozytywna weryfikacja metodologiczna AI (${score}/100 pkt).`,
-    badge: `✓ Stały Badacz (AI ${score}/100)`,
-    status: "active",
-    joinedAt: new Date().toISOString(),
-    auth: {
-      algorithm: "pbkdf2_sha256",
-      iterations: 260000,
-      salt: saltHex,
-      hash: hashHex
-    }
-  };
-
-  appState.data.verifiedResearchers.push(newRes);
-  appState.activeResearcher = newRes;
-  sessionStorage.setItem("golem_xv_active_researcher", JSON.stringify(newRes));
-  await saveState(`Gratulacje ${name}! Stałe konto Badacza (AI ${score}/100) zostało aktywowane.`);
-}
-
-// --- WIDOK 5: CENTRUM AUTORYZACJI ADMINISTRATORA (MODERACJA) ---
+// --- WIDOK 5: BEZPIECZEŃSTWO I AUTORYZACJA URZĄDZENIA WŁAŚCICIELA ---
 function renderModerationView() {
   const container = document.getElementById("moderationContainer");
   if (!container) return;
-
-  if (!appState.isAdmin) {
-    container.innerHTML = `
-      <div class="ws-card" style="max-width:540px; margin:2rem auto; padding:1.75rem;">
-        <h3 style="margin-bottom:0.5rem;">🔒 Sekcja moderacji zgłoszeń</h3>
-        <p style="color:var(--text-secondary); font-size:0.88rem; margin-bottom:1rem;">
-          Dostęp do zatwierdzania zgłoszeń i zarządzania projektem jest przeznaczony wyłącznie dla właściciela projektu.
-        </p>
-        <details style="margin-top:0.75rem;">
-          <summary style="cursor:pointer; font-size:0.84rem; color:var(--text-muted); user-select:none;">🔑 Autoryzacja właściciela projektu</summary>
-          <form onsubmit="submitInlineAdminLogin(event)" style="margin-top:0.9rem;">
-            <div class="form-group">
-              <label>Klucz dostępu Administratora</label>
-              <input type="password" id="inlineAdminPass" class="input-field" value="" autocomplete="current-password" required />
-            </div>
-            <button type="submit" class="btn btn-primary" style="width:100%;">Odblokuj panel</button>
-          </form>
-        </details>
-      </div>
-    `;
-    return;
-  }
-
-  const pendingStudy = (appState.data.studyMaterials || []).filter((s) => s.status === "pending");
-  const pendingSubprojects = appState.data.subprojects.filter((s) => s.status === "pending");
-  const pendingMaterials = appState.data.materials.filter((m) => m.status === "pending");
-  const totalPending = countPendingItems();
+  const isEn = appState.lang === "en";
 
   container.innerHTML = `
     <div class="filter-bar">
       <div>
-        <h3 style="font-size:1.1rem;">Kolejka autoryzacji zgłoszeń gości (${totalPending})</h3>
+        <h3 style="font-size:1.1rem;">🛡️ ${isEn ? "Owner Security, Password & Trusted Device Authorization" : "Bezpieczeństwo Projektu, Hasło Właściciela i Autoryzacja Urządzenia"}</h3>
+        <p style="font-size:0.83rem; color:var(--text-muted);">
+          ${isEn ? "This project is locked exclusively for you (Ireneusz). Manage your trusted device token and PBKDF2-HMAC-SHA256 cryptographic password below." : "Projekt jest zamknięty wyłącznie dla Ciebie (Ireneusz). Zarządzaj autoryzacją swojego urządzenia oraz hasłem kryptograficznym PBKDF2-HMAC-SHA256."}
+        </p>
       </div>
       <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
-        ${
-          totalPending > 0
-            ? `<button class="btn btn-success" onclick="approveAllPending()">✓ Zatwierdź wszystkie oczekujące (${totalPending})</button>`
-            : ""
-        }
-        <button class="btn" onclick="openChangeAdminPassModal()">🔑 Zmień hasło Administratora</button>
-        <button class="btn" onclick="exportDatabaseJson()">⬇ Eksportuj bazę JSON</button>
+        <button class="btn btn-primary" onclick="openChangeAdminPassModal()">🔑 ${isEn ? "Change Owner Password" : "Zmień hasło właściciela"}</button>
+        <button class="btn" onclick="exportDatabaseJson()">⬇ ${isEn ? "Export JSON Backup" : "Eksportuj kopię JSON"}</button>
+        <button class="btn btn-danger" onclick="lockOwnerPortal()">🔒 ${isEn ? "Lock Portal Now" : "Zablokuj portal teraz"}</button>
       </div>
     </div>
+
     <div class="workspace-grid">
+      <div class="ws-section">
+        <h4>💻 ${isEn ? "Exclusive Device Authorization" : "Autoryzacja Twojego Urządzenia"}</h4>
+        <div class="ws-card">
+          <p style="margin-bottom:0.75rem; color:var(--text-secondary);">
+            ${
+              appState.deviceTrusted
+                ? isEn
+                  ? "🟢 This browser/device is currently authorized as your trusted owner device. You can open the project directly without re-typing the password."
+                  : "🟢 Ta przeglądarka i to urządzenie posiadają aktywną autoryzację właściciela. Możesz otwierać projekt bezpośrednio bez każdorazowego wpisywania hasła."
+                : isEn
+                ? "🟡 This browser is unlocked for the current session only."
+                : "🟡 Ta przeglądarka jest odblokowana tylko na czas bieżącej sesji."
+            }
+          </p>
+          <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+            <button class="btn btn-success" onclick="authorizeCurrentBrowserDevice()">✓ ${isEn ? "Authorize This Device" : "Autoryzuj to urządzenie na stałe"}</button>
+            <button class="btn btn-danger" onclick="revokeDeviceTrust()">🚫 ${isEn ? "Revoke Device Authorization" : "Cofnij autoryzację tego urządzenia"}</button>
+          </div>
+        </div>
+      </div>
 
       <div class="ws-section">
-        <h4>Materiały do nauki (${pendingStudy.length})</h4>
-        ${pendingStudy
-          .map(
-            (sm) => `
-          <div class="ws-card">
-            <strong>${escapeHtml(sm.title)}</strong>
-            <p style="font-size:0.82rem; color:var(--text-secondary); margin:0.3rem 0;">${escapeHtml(sm.content)}</p>
-            <div style="display:flex; justify-content:space-between; align-items:center;">
-              <span style="font-size:0.75rem;">Autor: ${escapeHtml(sm.author)}</span>
-              <div style="display:flex; gap:0.35rem;">
-                <button class="btn btn-sm btn-success" onclick="moderateItem('studyMaterial', '${sm.id}', 'approve')">✓ Zatwierdź</button>
-                <button class="btn btn-sm btn-danger" onclick="moderateItem('studyMaterial', '${sm.id}', 'delete')">✕ Odrzuć</button>
-              </div>
-            </div>
-          </div>
-        `
-          )
-          .join("")}
-      </div>
-      <div class="ws-section">
-        <h4>Podprojekty i środowiska (${pendingSubprojects.length})</h4>
-        ${pendingSubprojects
-          .map(
-            (sp) => `
-          <div class="ws-card">
-            <strong>${escapeHtml(sp.title)}</strong>
-            <p style="font-size:0.82rem; color:var(--text-secondary); margin:0.3rem 0;">${escapeHtml(sp.description)}</p>
-            <div style="display:flex; justify-content:space-between; align-items:center;">
-              <span style="font-size:0.75rem;">Autor: ${escapeHtml(sp.author)}</span>
-              <div style="display:flex; gap:0.35rem;">
-                <button class="btn btn-sm btn-success" onclick="moderateItem('subproject', '${sp.id}', 'approve')">✓ Zatwierdź</button>
-                <button class="btn btn-sm btn-danger" onclick="moderateItem('subproject', '${sp.id}', 'delete')">✕ Odrzuć</button>
-              </div>
-            </div>
-          </div>
-        `
-          )
-          .join("")}
-      </div>
-      <div class="ws-section">
-        <h4>Materiały badawcze (${pendingMaterials.length})</h4>
-        ${pendingMaterials
-          .map(
-            (m) => `
-          <div class="ws-card">
-            <strong>${escapeHtml(m.title)}</strong>
-            <p style="font-size:0.82rem; color:var(--text-secondary); margin:0.3rem 0;">${escapeHtml(m.content)}</p>
-            <div style="display:flex; justify-content:space-between; align-items:center;">
-              <span style="font-size:0.75rem;">Autor: ${escapeHtml(m.author)}</span>
-              <div style="display:flex; gap:0.35rem;">
-                <button class="btn btn-sm btn-success" onclick="moderateItem('material', '${m.id}', 'approve')">✓ Zatwierdź</button>
-                <button class="btn btn-sm btn-danger" onclick="moderateItem('material', '${m.id}', 'delete')">✕ Odrzuć</button>
-              </div>
-            </div>
-          </div>
-        `
-          )
-          .join("")}
+        <h4>🔐 ${isEn ? "Cryptographic Protection Status" : "Status Ochrony Kryptograficznej"}</h4>
+        <div class="ws-card">
+          <p>• <strong>Algorytm:</strong> PBKDF2-HMAC-SHA256 (260 000 iteracji)</p>
+          <p>• <strong>Tryb dostępu:</strong> Prywatny (Single-Owner Gatekeeper — brak dostępu dla osób postronnych)</p>
+          <p>• <strong>Właściciel i jedyny autor:</strong> Ireneusz</p>
+        </div>
       </div>
     </div>
   `;
-}
-
-function moderateItem(itemType, id, action) {
-  if (!appState.isAdmin) return;
-  if (itemType === "studyMaterial") {
-    if (action === "approve") {
-      const sm = appState.data.studyMaterials.find((x) => x.id === id);
-      if (sm) sm.status = "approved";
-      saveState("Materiał do nauki został zatwierdzony.");
-    } else {
-      appState.data.studyMaterials = appState.data.studyMaterials.filter((x) => x.id !== id);
-      saveState("Materiał do nauki został usunięty.");
-    }
-  } else if (itemType === "subproject") {
-    if (action === "approve") {
-      const sp = appState.data.subprojects.find((s) => s.id === id);
-      if (sp) sp.status = "approved";
-      saveState("Podprojekt zatwierdzony.");
-    } else {
-      appState.data.subprojects = appState.data.subprojects.filter((s) => s.id !== id);
-      saveState("Podprojekt usunięty.");
-    }
-  } else if (itemType === "material") {
-    if (action === "approve") {
-      const m = appState.data.materials.find((x) => x.id === id);
-      if (m) m.status = "approved";
-      saveState("Materiał badawczy zatwierdzony.");
-    } else {
-      appState.data.materials = appState.data.materials.filter((x) => x.id !== id);
-      saveState("Materiał badawczy usunięty.");
-    }
-  }
-}
-
-function approveAllPending() {
-  if (!appState.isAdmin) return;
-  (appState.data.studyMaterials || []).forEach((sm) => (sm.status = "approved"));
-  appState.data.subprojects.forEach((sp) => (sp.status = "approved"));
-  appState.data.materials.forEach((m) => (m.status = "approved"));
-  saveState("Zatwierdzono wszystkie oczekujące zgłoszenia!");
 }
 
 function closeModal() {
@@ -3864,11 +3677,19 @@ function openNewStudyMaterialModal(categoryType = "FOUNDATION", targetId = "FND-
     <form onsubmit="submitNewStudyMaterial(event, '${categoryType}', '${targetId}')">
       <div class="form-group">
         <label>Konkretny dział / zagadnienie</label>
-        <input type="text" id="smTopicInput" class="input-field" value="${escapeHtml(defaultTopic)}" placeholder="Wpisz lub potwierdź dział do nauki..." required />
+        <input type="text" id="smTopicInput" class="input-field" value="${escapeHtml(defaultTopic)}" required />
       </div>
       <div class="form-group">
-        <label>Tytuł materiału do nauki (np. podręcznik, wykład, kurs, skrypt)</label>
-        <input type="text" id="smTitleInput" class="input-field" placeholder="np. Analiza matematyczna i równania różniczkowe w modelowaniu" required />
+        <label>Tytuł materiału do nauki</label>
+        <input type="text" id="smTitleInput" class="input-field" required />
+      </div>
+      <div class="form-group">
+        <label>Język materiału źródłowego</label>
+        <select id="smLangSelect" class="select-field">
+          <option value="PL">🇵🇱 [PL — Język polski]</option>
+          <option value="EN">🇬🇧 [EN — Język angielski]</option>
+          <option value="PL+EN">🇵🇱/🇬🇧 [PL + EN — Dwujęzyczne]</option>
+        </select>
       </div>
       <div class="form-group">
         <label>Poziom zaawansowania</label>
@@ -3883,8 +3704,7 @@ function openNewStudyMaterialModal(categoryType = "FOUNDATION", targetId = "FND-
         <select id="smFormatSelect" class="select-field">
           <option value="Podręcznik / Książka">Podręcznik / Książka</option>
           <option value="Kurs / Wykład">Kurs / Wykład</option>
-          <option value="Notatka / Skrypt do nauki">Notatka / Skrypt do nauki</option>
-          <option value="Zbiór zadań / Ćwiczenia">Zbiór zadań / Ćwiczenia</option>
+          <option value="Notatka własna">Notatka własna</option>
           <option value="Kod / Symulacja">Kod / Symulacja</option>
         </select>
       </div>
@@ -3895,10 +3715,6 @@ function openNewStudyMaterialModal(categoryType = "FOUNDATION", targetId = "FND-
       <div class="form-group">
         <label>Link zewnętrzny (opcjonalnie)</label>
         <input type="url" id="smUrlInput" class="input-field" placeholder="https://..." />
-      </div>
-      <div class="form-group">
-        <label>Autor zgłoszenia</label>
-        <input type="text" id="smAuthorInput" class="input-field" value="${escapeHtml(getContributorSignature())}" required />
       </div>
       <div style="display:flex; justify-content:flex-end; margin-top:1rem;">
         <button type="submit" class="btn btn-primary">Zapisz materiał do nauki</button>
@@ -3916,21 +3732,17 @@ function submitNewStudyMaterial(e, categoryType, targetId) {
     targetId,
     topic: document.getElementById("smTopicInput").value.trim(),
     title: document.getElementById("smTitleInput").value.trim(),
+    sourceLang: document.getElementById("smLangSelect").value,
     level: document.getElementById("smLevelSelect").value,
     format: document.getElementById("smFormatSelect").value,
     content: document.getElementById("smContentInput").value.trim(),
     url: document.getElementById("smUrlInput").value.trim(),
-    author: document.getElementById("smAuthorInput").value.trim(),
-    status: canAutoApprove() ? "approved" : "pending",
-    isSessionCreated: true,
+    author: "Ireneusz",
+    status: "approved",
     createdAt: new Date().toISOString()
   });
   closeModal();
-  saveState(
-    canAutoApprove()
-      ? "Materiał do nauki został opublikowany natychmiastowo!"
-      : "Materiał do nauki został dodany i oczekuje na zatwierdzenie."
-  );
+  saveState("Materiał do nauki został zapisany!");
 }
 
 function openNewSubprojectModal(defaultTrackId = "A", defaultBranch = "") {
@@ -3976,15 +3788,11 @@ function openNewSubprojectModal(defaultTrackId = "A", defaultBranch = "") {
         <textarea id="spDescInput" class="textarea-field" rows="3" required></textarea>
       </div>
       <div class="form-group">
-        <label>Hipoteza startowa</label>
+        <label>Hipoteza startowa (opcjonalnie)</label>
         <input type="text" id="spInitialHypothesis" class="input-field" />
       </div>
-      <div class="form-group">
-        <label>Autor / Inicjator</label>
-        <input type="text" id="spAuthorInput" class="input-field" value="${escapeHtml(getContributorSignature())}" required />
-      </div>
       <div style="display:flex; justify-content:flex-end; margin-top:1rem;">
-        <button type="submit" class="btn btn-primary">Uruchom środowisko badawcze</button>
+        <button type="submit" class="btn btn-primary">Utwórz środowisko badawcze</button>
       </div>
     </form>
   `;
@@ -3998,8 +3806,6 @@ function submitNewSubproject(e) {
   const title = document.getElementById("spTitleInput").value.trim();
   const description = document.getElementById("spDescInput").value.trim();
   const initialHyp = document.getElementById("spInitialHypothesis").value.trim();
-  const author = document.getElementById("spAuthorInput").value.trim();
-  const approval = canAutoApprove() ? "approved" : "pending";
   const newId = "sub-" + Date.now();
 
   appState.data.subprojects.unshift({
@@ -4008,9 +3814,8 @@ function submitNewSubproject(e) {
     secondaryTracks: ["E"],
     branchTopic,
     title,
-    author,
-    status: approval,
-    isSessionCreated: true,
+    author: "Ireneusz",
+    status: "approved",
     createdAt: new Date().toISOString(),
     description,
     philosophicalNote: "",
@@ -4021,9 +3826,8 @@ function submitNewSubproject(e) {
               id: "hyp-" + Date.now(),
               statement: initialHyp,
               status: "Hipoteza otwarta",
-              author,
-              approvalStatus: approval,
-              isSessionCreated: true
+              author: "Ireneusz",
+              approvalStatus: "approved"
             }
           ]
         : [],
@@ -4036,7 +3840,7 @@ function submitNewSubproject(e) {
   appState.selectedSubprojectId = newId;
   closeModal();
   switchTab("workspaces");
-  saveState("Środowisko badawcze zostało uruchomione!");
+  saveState("Środowisko badawcze zostało utworzone!");
 }
 
 function openNewMaterialModal(defaultTrackId = "A", defaultBranch = "") {
@@ -4058,16 +3862,24 @@ function openNewMaterialModal(defaultTrackId = "A", defaultBranch = "") {
         <input type="text" id="matBranchInput" class="input-field" value="${escapeHtml(defaultBranch)}" />
       </div>
       <div class="form-group">
+        <label>Język materiału źródłowego</label>
+        <select id="matLangSelect" class="select-field">
+          <option value="PL">🇵🇱 [PL — Język polski]</option>
+          <option value="EN">🇬🇧 [EN — Język angielski]</option>
+          <option value="PL+EN">🇵🇱/🇬🇧 [PL + EN — Dwujęzyczne]</option>
+        </select>
+      </div>
+      <div class="form-group">
         <label>Tytuł materiału</label>
         <input type="text" id="matTitleInput" class="input-field" required />
       </div>
       <div class="form-group">
-        <label>Treść / Abstrakt</label>
+        <label>Treść / Notatka</label>
         <textarea id="matContentInput" class="textarea-field" rows="4" required></textarea>
       </div>
       <div class="form-group">
-        <label>Autor zgłoszenia</label>
-        <input type="text" id="matAuthorInput" class="input-field" value="${escapeHtml(getContributorSignature())}" required />
+        <label>Link zewnętrzny / DOI (opcjonalnie)</label>
+        <input type="url" id="matUrlInput" class="input-field" placeholder="https://..." />
       </div>
       <div style="display:flex; justify-content:flex-end; margin-top:1rem;">
         <button type="submit" class="btn btn-primary">Zapisz materiał</button>
@@ -4085,12 +3897,12 @@ function submitNewMaterial(e) {
     branchTopic: document.getElementById("matBranchInput").value.trim(),
     subprojectId: null,
     title: document.getElementById("matTitleInput").value.trim(),
-    type: "Opracowanie badawcze",
-    author: document.getElementById("matAuthorInput").value.trim(),
+    sourceLang: document.getElementById("matLangSelect").value,
+    type: "Opracowanie własne",
+    author: "Ireneusz",
     content: document.getElementById("matContentInput").value.trim(),
-    url: "",
-    status: canAutoApprove() ? "approved" : "pending",
-    isSessionCreated: true,
+    url: document.getElementById("matUrlInput").value.trim(),
+    status: "approved",
     createdAt: new Date().toISOString()
   });
   closeModal();
@@ -4106,13 +3918,10 @@ function openWorkspaceEntryModal(entryType, spId) {
     </div>
     <form onsubmit="submitWorkspaceEntry(event, '${entryType}', '${spId}')">
       ${entryType === "note" ? `<div class="form-group"><label>Tytuł</label><input type="text" id="wsEntryTitle" class="input-field" required /></div>` : ""}
+      ${entryType === "bibliography" ? `<div class="form-group"><label>Język źródła</label><select id="wsEntryLang" class="select-field"><option value="PL">🇵🇱 [PL]</option><option value="EN">🇬🇧 [EN]</option><option value="PL+EN">🇵🇱/🇬🇧 [PL+EN]</option></select></div>` : ""}
       <div class="form-group">
         <label>Treść</label>
         <textarea id="wsEntryText" class="textarea-field" rows="3" required></textarea>
-      </div>
-      <div class="form-group">
-        <label>Autor</label>
-        <input type="text" id="wsEntryAuthor" class="input-field" value="${appState.isAdmin ? "Administrator" : "Gość"}" required />
       </div>
       <button type="submit" class="btn btn-primary">Zapisz</button>
     </form>
@@ -4124,14 +3933,31 @@ function submitWorkspaceEntry(e, entryType, spId) {
   e.preventDefault();
   const sp = appState.data.subprojects.find((s) => s.id === spId);
   if (!sp) return;
-  const author = document.getElementById("wsEntryAuthor").value.trim();
-  const approvalStatus = canAutoApprove() ? "approved" : "pending";
   if (entryType === "hypothesis") {
-    sp.workspace.hypotheses.push({ id: "hyp-" + Date.now(), statement: document.getElementById("wsEntryText").value.trim(), status: "Hipoteza otwarta", author, approvalStatus, isSessionCreated: true });
+    sp.workspace.hypotheses.push({
+      id: "hyp-" + Date.now(),
+      statement: document.getElementById("wsEntryText").value.trim(),
+      status: "Hipoteza otwarta",
+      author: "Ireneusz",
+      approvalStatus: "approved"
+    });
   } else if (entryType === "note") {
-    sp.workspace.notes.push({ id: "note-" + Date.now(), title: document.getElementById("wsEntryTitle").value.trim(), content: document.getElementById("wsEntryText").value.trim(), author, approvalStatus, isSessionCreated: true });
+    sp.workspace.notes.push({
+      id: "note-" + Date.now(),
+      title: document.getElementById("wsEntryTitle").value.trim(),
+      content: document.getElementById("wsEntryText").value.trim(),
+      author: "Ireneusz",
+      approvalStatus: "approved"
+    });
   } else {
-    sp.workspace.bibliography.push({ id: "bib-" + Date.now(), citation: document.getElementById("wsEntryText").value.trim(), url: "", addedBy: author, approvalStatus, isSessionCreated: true });
+    sp.workspace.bibliography.push({
+      id: "bib-" + Date.now(),
+      citation: document.getElementById("wsEntryText").value.trim(),
+      sourceLang: document.getElementById("wsEntryLang") ? document.getElementById("wsEntryLang").value : "PL",
+      url: "",
+      addedBy: "Ireneusz",
+      approvalStatus: "approved"
+    });
   }
   closeModal();
   saveState("Dodano wpis do środowiska.");
@@ -4210,77 +4036,20 @@ async function verifyAdminPasswordCrypto(candidatePassword) {
   }
 }
 
-function toggleAdminMode() {
-  if (appState.isAdmin) {
-    appState.isAdmin = false;
-    sessionStorage.removeItem("golem_xv_is_admin");
-    renderAll();
-  } else {
-    openAdminLoginModal();
-  }
-}
-
-function openAdminLoginModal() {
-  const modalBody = document.getElementById("modalContentBox");
-  modalBody.innerHTML = `
-    <div class="modal-header">
-      <h3>🔒 Autoryzacja właściciela</h3>
-      <button class="btn btn-sm" onclick="closeModal()">✕</button>
-    </div>
-    <form onsubmit="submitAdminLogin(event)">
-      <div class="form-group">
-        <label>Klucz dostępu Administratora</label>
-        <input type="password" id="adminPassInput" class="input-field" value="" autocomplete="current-password" required />
-      </div>
-      <button type="submit" class="btn btn-primary">Odblokuj</button>
-    </form>
-  `;
-  document.getElementById("modalBackdrop").classList.add("open");
-}
-
-async function submitAdminLogin(e) {
-  e.preventDefault();
-  const inputPass = document.getElementById("adminPassInput").value;
-  const ok = await verifyAdminPasswordCrypto(inputPass);
-  if (ok) {
-    appState.isAdmin = true;
-    sessionStorage.setItem("golem_xv_is_admin", "true");
-    closeModal();
-    showToast("Autoryzacja właściciela zakończona pomyślnie.");
-    renderAll();
-  } else {
-    showToast("Odmowa dostępu — nieprawidłowe hasło.");
-  }
-}
-
-async function submitInlineAdminLogin(e) {
-  e.preventDefault();
-  const inputPass = document.getElementById("inlineAdminPass").value;
-  const ok = await verifyAdminPasswordCrypto(inputPass);
-  if (ok) {
-    appState.isAdmin = true;
-    sessionStorage.setItem("golem_xv_is_admin", "true");
-    showToast("Autoryzacja właściciela zakończona pomyślnie.");
-    renderAll();
-  } else {
-    showToast("Odmowa dostępu — nieprawidłowe hasło.");
-  }
-}
-
 function openChangeAdminPassModal() {
   const modalBody = document.getElementById("modalContentBox");
   modalBody.innerHTML = `
     <div class="modal-header">
-      <h3>🔑 Zmień hasło Administratora (PBKDF2-SHA256)</h3>
+      <h3>🔑 Zmień hasło właściciela (PBKDF2-SHA256)</h3>
       <button class="btn btn-sm" onclick="closeModal()">✕</button>
     </div>
     <form onsubmit="submitChangeAdminPass(event)">
       <div class="form-group">
-        <label>Aktualne hasło Administratora</label>
+        <label>Aktualne hasło właściciela</label>
         <input type="password" id="currentAdminPassInput" class="input-field" value="" required />
       </div>
       <div class="form-group">
-        <label>Nowe hasło Administratora (min. 8 znaków)</label>
+        <label>Nowe hasło właściciela (min. 8 znaków)</label>
         <input type="password" id="newAdminPassInput" class="input-field" value="" minlength="8" required />
       </div>
       <div class="form-group">
@@ -4326,8 +4095,11 @@ async function submitChangeAdminPass(e) {
     appState.data.projectMeta.adminAuth = newAuth;
     delete appState.data.projectMeta.adminPassword;
   }
+  if (appState.deviceTrusted) {
+    localStorage.setItem(TRUSTED_DEVICE_KEY, getExpectedDeviceToken());
+  }
   closeModal();
-  await saveState("Hasło zostało zaszyfrowane (PBKDF2-SHA256) i zaktualizowane!");
+  await saveState("Hasło właściciela zostało zaszyfrowane (PBKDF2-SHA256) i zaktualizowane!");
 }
 
 function exportDatabaseJson() {
@@ -4335,7 +4107,7 @@ function exportDatabaseJson() {
   const url = URL.createObjectURL(blob);
   const a = document.createElement("a");
   a.href = url;
-  a.download = "the_golem_15_database.json";
+  a.download = "the_golem_15_private_backup.json";
   a.click();
   URL.revokeObjectURL(url);
 }

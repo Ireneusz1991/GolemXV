@@ -1772,14 +1772,14 @@ DEFAULT_SEED = {
             "subprojectId": "sub-1",
             "title": "Zestawienie rozdzielczości czasowo-przestrzennej metod neuroobrazowania (EEG, fNIRS, fMRI, ECoG)",
             "type": "Zestaw danych / Opracowanie",
-            "author": "Dr Janina Kowalska (Gość)",
+            "author": "Ireneusz",
             "content": "Porównanie pasma przenoszenia, stosunku sygnału do szumu (SNR) oraz biokompatybilności długoterminowej dla zastosowań w Projektach A i B.",
             "url": "https://ksiegarnia.pwn.pl/",
             "links": [
                 {"label": "🇵🇱 Wydawnictwo Naukowe PWN — Neurobiologia i metody neuroobrazowania (Kalat, Longstaff)", "url": "https://ksiegarnia.pwn.pl/"},
                 {"label": "🇬🇧 Physiological Reviews — Brain-Machine Interfaces (Lebedev & Nicolelis)", "url": "https://doi.org/10.1152/physrev.00027.2016"}
             ],
-            "status": "pending",
+            "status": "approved",
             "createdAt": "2026-10-25T13:10:00Z",
         },
     ],
@@ -1796,85 +1796,19 @@ DEFAULT_SEED = {
         {"id": "lnk-10", "source": "E", "target": "F", "label": "Etyka ekspansji kosmicznej i ochrona planetarna", "status": "approved"},
         {"id": "lnk-11", "source": "E", "target": "G", "label": "Odpowiedzialność międzypokoleniowa i filozofia przyrody", "status": "approved"},
     ],
-    "verifiedResearchers": [
-        {
-            "id": "res-founder",
-            "name": "Ireneusz",
-            "handle": "@ireneusz-architekt",
-            "roleTitle": "Inicjator i Główny Architekt Projektu The Golem 15",
-            "specialization": "ALL",
-            "specializationLabel": "Wszystkie ścieżki (A–G) i Wspólne Podstawy (1–8)",
-            "affiliation": "The Golem 15: A Human's Road to Reality",
-            "orcid": "",
-            "bio": "Twórca architektury badawczej The Golem 15 łączącej 8 fundamentów naukowych z 7 ścieżkami (A–G).",
-            "aiVerificationScore": 100,
-            "aiVerificationSummary": "Założyciel projektu — pełny rygor metodologiczny i epistemiczny.",
-            "badge": "★ Założyciel & Kurator",
-            "status": "active",
-            "joinedAt": "2026-10-25T10:00:00Z",
-            "auth": {
-                "algorithm": "pbkdf2_sha256",
-                "iterations": 260000,
-                "salt": "9f4d8a2c6e1b3f7a5c8d0e2f4a6b8c1d",
-                "hash": "673a07dbc15ac855752d7c521ffc31e200302b03a3b296310b742421cbfd4d62",
-            },
-        },
-        {
-            "id": "res-neuro-b",
-            "name": "Dr hab. Marek Nowak (Zespół Neuroinformatyki)",
-            "handle": "@m-nowak-neuro",
-            "roleTitle": "Stały Badacz — Neurobiologia Obliczeniowa i Układy Neuromorficzne",
-            "specialization": "B",
-            "specializationLabel": "Projekt B — Cyfrowy Umysł / Projekt C — Maszyny analogowe",
-            "affiliation": "Zespół Modelowania Układów Nerwowych",
-            "orcid": "https://orcid.org/",
-            "bio": "Badania nad modelami biofizycznymi Hodgkina–Huxleya, dynamiką populacji neuronalnych (Dayan & Abbott, Izhikevich) i estymacją pasma synaptycznego.",
-            "aiVerificationScore": 95,
-            "aiVerificationSummary": "Zweryfikowano przez AI: wysoki rygor matematyczno-biofizyczny, poprawna separacja modeli empirycznych od hipotez WBE.",
-            "badge": "✓ Stały Badacz (AI 95/100)",
-            "status": "active",
-            "joinedAt": "2026-10-25T12:00:00Z",
-            "auth": {
-                "algorithm": "pbkdf2_sha256",
-                "iterations": 260000,
-                "salt": "9f4d8a2c6e1b3f7a5c8d0e2f4a6b8c1d",
-                "hash": "673a07dbc15ac855752d7c521ffc31e200302b03a3b296310b742421cbfd4d62",
-            },
-        },
-        {
-            "id": "res-bio-dfg",
-            "name": "Dr Anna Wiśniewska (Zespół Biotechnologii i Biosfery)",
-            "handle": "@a-wisniewska-bio",
-            "roleTitle": "Stały Badacz — Inżynieria Tkankowa, BLSS i Ekologia Systemowa",
-            "specialization": "D",
-            "specializationLabel": "Projekt D — Biotechnologia / Oś Kosmos (F) ↔ Ziemia (G)",
-            "affiliation": "Laboratorium Biologii Syntetycznej i Ekosystemów Zamkniętych",
-            "orcid": "https://orcid.org/",
-            "bio": "Analiza rusztowań 3D (scaffolds), hodowli organoidów oraz bilansu tlenowo-węglowego w zamkniętych obiegach podtrzymywania życia (MELiSSA / LCA).",
-            "aiVerificationScore": 92,
-            "aiVerificationSummary": "Zweryfikowano przez AI: pełna zgodność z bioetyką (Projekt E) i literaturą polsko- oraz anglojęzyczną.",
-            "badge": "✓ Stały Badacz (AI 92/100)",
-            "status": "active",
-            "joinedAt": "2026-10-25T12:30:00Z",
-            "auth": {
-                "algorithm": "pbkdf2_sha256",
-                "iterations": 260000,
-                "salt": "9f4d8a2c6e1b3f7a5c8d0e2f4a6b8c1d",
-                "hash": "673a07dbc15ac855752d7c521ffc31e200302b03a3b296310b742421cbfd4d62",
-            },
-        },
-    ],
 }
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
 DB_FILE = os.path.join(DATA_DIR, "database.json")
 SEED_FILE = os.path.join(DATA_DIR, "seed.json")
+LOCAL_DEVICE_KEY_FILE = os.path.expandvars(r"%LOCALAPPDATA%\Programs\gh\golem_owner_device.key")
 
 
 def ensure_db_schema(data):
-    """Upewnia się, że baza zawiera nową nazwę oraz sekcje foundationDisciplines, studyMaterials, supplementaryLibrary i materials."""
+    """Upewnia się, że baza zawiera aktualną strukturę właściciela."""
     data["projectMeta"]["title"] = "The Golem 15: A Human's Road to Reality"
     data["projectMeta"].pop("adminPassword", None)
+    data.pop("verifiedResearchers", None)
     if "adminAuth" not in data["projectMeta"] or not isinstance(data["projectMeta"]["adminAuth"], dict):
         data["projectMeta"]["adminAuth"] = json.loads(json.dumps(DEFAULT_SEED["projectMeta"]["adminAuth"]))
     if "foundationDisciplines" not in data or not data["foundationDisciplines"]:
@@ -1886,6 +1820,7 @@ def ensure_db_schema(data):
         existing_smat_ids.add(sm["id"])
         if sm["id"] in seed_smat_by_id:
             data["studyMaterials"][idx] = json.loads(json.dumps(seed_smat_by_id[sm["id"]]))
+        data["studyMaterials"][idx]["status"] = "approved"
     for sm in DEFAULT_SEED["studyMaterials"]:
         if sm["id"] not in existing_smat_ids:
             data["studyMaterials"].append(json.loads(json.dumps(sm)))
@@ -1897,18 +1832,12 @@ def ensure_db_schema(data):
         existing_mat_ids.add(m["id"])
         if m["id"] in seed_mat_by_id:
             data["materials"][idx] = json.loads(json.dumps(seed_mat_by_id[m["id"]]))
+        data["materials"][idx]["status"] = "approved"
     for m in DEFAULT_SEED["materials"]:
         if m["id"] not in existing_mat_ids:
             data["materials"].append(json.loads(json.dumps(m)))
 
     data["supplementaryLibrary"] = json.loads(json.dumps(DEFAULT_SEED["supplementaryLibrary"]))
-    if "verifiedResearchers" not in data or not isinstance(data["verifiedResearchers"], list):
-        data["verifiedResearchers"] = json.loads(json.dumps(DEFAULT_SEED["verifiedResearchers"]))
-    else:
-        existing_res_ids = {r.get("id") for r in data["verifiedResearchers"]}
-        for r_seed in DEFAULT_SEED["verifiedResearchers"]:
-            if r_seed["id"] not in existing_res_ids:
-                data["verifiedResearchers"].append(json.loads(json.dumps(r_seed)))
     return data
 
 
@@ -1950,44 +1879,251 @@ def get_all_branches_for_track(tracks, track_id):
     return []
 
 
-def count_pending(db):
-    total = 0
-    for sm in db.get("studyMaterials", []):
-        if sm.get("status") == "pending":
-            total += 1
-    for m in db.get("materials", []):
-        if m.get("status") == "pending":
-            total += 1
-    for sp in db.get("subprojects", []):
-        if sp.get("status") == "pending":
-            total += 1
-        ws = sp.get("workspace", {})
-        for col in ("hypotheses", "notes", "bibliography"):
-            for item in ws.get(col, []):
-                if item.get("approvalStatus") == "pending":
-                    total += 1
-    for lnk in db.get("graphLinks", []):
-        if lnk.get("status") == "pending":
-            total += 1
-    return total
+# ==============================================================================
+# SŁOWNIK TŁUMACZEŃ PL / EN (BEZ TŁUMACZENIA TYTUŁU GŁÓWNEGO)
+# ==============================================================================
+I18N = {
+    "pl": {
+        "subtitle": "Prywatny portal badawczo-naukowy właściciela — 8 dziedzin podstawowych oraz 7 ścieżek (A–G)",
+        "overarchingGoal": (
+            "Zrozumieć człowieka jako organizm biologiczny, umysł, twórcę technologii "
+            "i część ziemskiej biosfery, a jednocześnie zbadać możliwości jego "
+            "funkcjonowania poza naturalnym środowiskiem Ziemi."
+        ),
+        "organizationalRule": (
+            "Każda ścieżka ma własne pytania badawcze, bibliografię i cele. Wspólne "
+            "podstawy naukowe pozwalają łączyć wiedzę, ale nie oznaczają konieczności "
+            "równoległego studiowania wszystkich dziedzin. Filozofia pozostaje przekrojową "
+            "warstwą interpretacyjną."
+        ),
+        "fgSummary": "Oba projekty badają człowieka w relacji ze środowiskiem, ale z różnych perspektyw:",
+        "fPerspective": "Projekt F — kosmos: jak stworzyć sztuczne środowisko podtrzymujące życie tam, gdzie naturalne warunki są dla człowieka nieprzyjazne.",
+        "gPerspective": "Projekt G — Ziemia: jak żyć w istniejącym, złożonym ekosystemie i chronić jego zdolność do podtrzymywania życia.",
+        "lockTitle": "🔒 Prywatny Portal Badawczy Właściciela",
+        "lockDesc": "Ten projekt jest zamknięty i dostępny wyłącznie dla właściciela po uwierzytelnieniu hasłem lub z autoryzowanego urządzenia.",
+        "passLabel": "Klucz dostępu właściciela",
+        "passPlaceholder": "Wprowadź hasło właściciela...",
+        "trustDeviceCheck": "💻 Zapamiętaj i autoryzuj to urządzenie / przeglądarkę",
+        "unlockBtn": "🔓 Odblokuj prywatny projekt",
+        "authErr": "Odmowa dostępu — nieprawidłowy klucz uwierzytelniający.",
+        "deviceTrustedBadge": "💻 Zaufane urządzenie właściciela",
+        "lockSessionBtn": "🔒 Zablokuj dostęp",
+        "searchPlaceholder": "🔍 Szukaj w całym projekcie (pojęcie, książka, autor, ścieżka A–G)...",
+        "langFilterLabel": "Język materiałów źródłowych:",
+        "langAll": "Wszystkie języki ([PL] + [EN])",
+        "langOnlyPL": "🇵🇱 Tylko źródła polskojęzyczne [PL]",
+        "langOnlyEN": "🇬🇧 Tylko źródła anglojęzyczne [EN]",
+        "tab1": "🎓 1. Materiały do nauki",
+        "tab2": "🗺️ 2. Mapa 7 Ścieżek (A–G)",
+        "tab3": "🔬 3. Środowiska Badawcze",
+        "tab4": "📚 4. Biblioteka i Repozytorium",
+        "tab5": "➕ 5. Dodaj Własny Materiał / Projekt",
+        "tab6": "🕸️ 6. Graf Powiązań (A–G)",
+        "tab7": "🔒 7. Bezpieczeństwo i Urządzenie",
+        "studyModeLabel": "Wybierz warstwę architektury nauki:",
+        "studyMode1": "1️⃣ Wspólne podstawy naukowe — 8 dziedzin po kolei (Matematyka → AI)",
+        "studyMode2": "2️⃣ Odnogi tematyczne Ścieżek Badawczych (Projekty A–G po kolei)",
+        "studyMode3": "3️⃣ Biblioteka Projektu (I–VI) i Materiały Uzupełniające (C–G)",
+        "topicsHeader": "Szczegółowe zagadnienia i działy po kolei:",
+        "assignedMaterials": "Materiały źródłowe i literatura",
+        "sourceLinks": "🔗 Odnośniki źródłowe (z oznaczeniem języka):",
+        "addStudyMatBtn": "➕ Dodaj własny materiał do nauki",
+        "addWorkspaceBtn": "🔬 Uruchom środowisko badawcze",
+        "sourceLangLabel": "Język materiału źródłowego",
+        "saveBtn": "💾 Zapisz w bazie projektu",
+        "deleteBtn": "🗑️ Usuń",
+    },
+    "en": {
+        "subtitle": "Private Owner Research Portal — 8 Foundational Disciplines & 7 Research Tracks (A–G)",
+        "overarchingGoal": (
+            "To understand the human being as a biological organism, a mind, a creator of technology, "
+            "and part of Earth's biosphere, while investigating the possibilities of human functioning "
+            "beyond Earth's natural environment."
+        ),
+        "organizationalRule": (
+            "Each track has its own research questions, bibliography, and goals. Shared scientific "
+            "foundations connect knowledge across tracks without requiring simultaneous study of all fields. "
+            "Philosophy serves as a cross-cutting interpretive layer."
+        ),
+        "fgSummary": "Both projects examine humans in relation to their environment from complementary perspectives:",
+        "fPerspective": "Project F — Space: how to engineer an artificial life-support environment where natural conditions are hostile to human life.",
+        "gPerspective": "Project G — Earth: how to live within an existing complex ecosystem and protect its life-sustaining capacity.",
+        "lockTitle": "🔒 Private Owner Research Portal",
+        "lockDesc": "This project is private and accessible exclusively to the owner upon cryptographic authentication or from an authorized device.",
+        "passLabel": "Owner Access Key",
+        "passPlaceholder": "Enter owner password...",
+        "trustDeviceCheck": "💻 Remember & authorize this device / browser",
+        "unlockBtn": "🔓 Unlock Private Project",
+        "authErr": "Access denied — invalid authentication key.",
+        "deviceTrustedBadge": "💻 Trusted Owner Device",
+        "lockSessionBtn": "🔒 Lock Session",
+        "searchPlaceholder": "🔍 Search entire project (concept, book, author, track A–G)...",
+        "langFilterLabel": "Source Material Language:",
+        "langAll": "All languages ([PL] + [EN])",
+        "langOnlyPL": "🇵🇱 Polish sources only [PL]",
+        "langOnlyEN": "🇬🇧 English sources only [EN]",
+        "tab1": "🎓 1. Study Materials",
+        "tab2": "🗺️ 2. 7 Research Tracks (A–G)",
+        "tab3": "🔬 3. Research Workspaces",
+        "tab4": "📚 4. Library & Repository",
+        "tab5": "➕ 5. Add Own Material / Project",
+        "tab6": "🕸️ 6. Connection Graph (A–G)",
+        "tab7": "🔒 7. Security & Device Access",
+        "studyModeLabel": "Select learning architecture layer:",
+        "studyMode1": "1️⃣ Shared Scientific Foundations — 8 Disciplines in Sequence (Math → AI)",
+        "studyMode2": "2️⃣ Thematic Branches of Research Tracks (Projects A–G in Sequence)",
+        "studyMode3": "3️⃣ Project Library (I–VI) & Supplementary Materials (C–G)",
+        "topicsHeader": "Detailed topics and modules in sequence:",
+        "assignedMaterials": "Source materials & literature",
+        "sourceLinks": "🔗 Source links (with language tags):",
+        "addStudyMatBtn": "➕ Add own study material",
+        "addWorkspaceBtn": "🔬 Launch research workspace",
+        "sourceLangLabel": "Source material language",
+        "saveBtn": "💾 Save to project database",
+        "deleteBtn": "🗑️ Delete",
+    },
+}
+
+FOUNDATION_EN = {
+    "FND-1": {
+        "name": "Mathematics & Logic",
+        "description": "Formal language for modeling reality, dynamical systems, data analysis, and algorithms.",
+        "topics": [
+            "Propositional logic, set theory, and methods of mathematical proof.",
+            "Linear algebra: vectors, matrices, linear transformations, eigenvalues.",
+            "Calculus: derivatives, integrals, ordinary and partial differential equations.",
+            "Probability theory, mathematical statistics, and Bayesian inference.",
+            "Discrete mathematics, graph theory, and network topology.",
+        ],
+    },
+    "FND-2": {
+        "name": "Computer Science",
+        "description": "Theory of computation, computer architecture, data structures, and information processing.",
+        "topics": [
+            "Digital logic, Boolean algebra, logic gates, and processor architecture (Petzold — Code).",
+            "Data structures and computational complexity of algorithms.",
+            "Operating systems, memory management, concurrency, and computer networks.",
+            "Databases, data serialization, and distributed systems architecture.",
+            "Information theory, coding, cryptography, and system security.",
+        ],
+    },
+    "FND-3": {
+        "name": "Programming",
+        "description": "Practical implementation of mathematical models, numerical simulations, and research tools.",
+        "topics": [
+            "Python fundamentals, structural and object-oriented programming (Matthes — Python).",
+            "Scientific computing: NumPy, SciPy, Pandas, and data visualization.",
+            "Simulation of dynamical, biological, and physical systems in code.",
+            "Version control (Git), automated testing, and reproducible research.",
+            "Hardware programming (C/C++, microcontrollers) and sensor interfaces.",
+        ],
+    },
+    "FND-4": {
+        "name": "Physics",
+        "description": "Fundamental laws of nature governing matter, energy, fields, and physical computation.",
+        "topics": [
+            "Classical mechanics, conservation laws, oscillations, and wave dynamics.",
+            "Thermodynamics, statistical physics, and entropy in physical & biological systems.",
+            "Electromagnetism, Maxwell's equations, and signal propagation.",
+            "Quantum mechanics (Griffiths) and foundations of quantum information (Nielsen & Chuang).",
+            "Biophysics and physics of extreme environments (microgravity, space radiation).",
+        ],
+    },
+    "FND-5": {
+        "name": "Electronics",
+        "description": "Analog and digital circuits, sensors, signal conversion, and neuromorphic hardware.",
+        "topics": [
+            "Passive and active components, circuit laws, and frequency analysis.",
+            "Analog electronics: operational amplifiers, filters, oscillators, feedback loops.",
+            "Digital circuits, A/D and D/A converters (ADC/DAC), and signal acquisition.",
+            "Embedded systems, biomedical sensors, and low-noise instrumentation.",
+            "Physical neuron models and analog/neuromorphic computing arrays.",
+        ],
+    },
+    "FND-6": {
+        "name": "Chemistry",
+        "description": "Atomic and molecular structure, chemical reactions, organic chemistry, and biochemistry.",
+        "topics": [
+            "General chemistry: atomic structure, chemical bonding, stoichiometry (OpenStax Chemistry).",
+            "Chemical thermodynamics, kinetics, catalysis, and acid-base equilibria.",
+            "Organic chemistry: functional groups, biopolymers, and reaction mechanisms.",
+            "Structural and metabolic biochemistry: proteins, enzymes, nucleic acids, bioenergetics.",
+            "Environmental and analytical chemistry (water, air, soil, closed-loop life support).",
+        ],
+    },
+    "FND-7": {
+        "name": "Biology",
+        "description": "Organization of living matter from molecules and cells to organisms and ecosystems.",
+        "topics": [
+            "Cell biology: membrane transport, organelles, signaling, and cell division (Campbell Biology).",
+            "Genetics and genomics: DNA replication, gene expression, regulation (Brown — Genomes).",
+            "Human anatomy and physiology: nervous, cardiovascular, musculoskeletal, and endocrine systems.",
+            "Developmental biology, embryology, stem cells, and tissue regeneration.",
+            "Population and ecosystem ecology, biogeochemical cycles, and biosphere protection.",
+        ],
+    },
+    "FND-8": {
+        "name": "Artificial Intelligence",
+        "description": "Machine learning, deep neural networks, and computational modeling of cognition.",
+        "topics": [
+            "Classical machine learning: regression, classification, clustering, validation (Géron).",
+            "Deep neural networks: backpropagation, CNNs, RNNs, and Transformer architectures.",
+            "Reinforcement learning, optimal control, and autonomous robotic agents.",
+            "Biological vs. artificial neural networks and neuromorphic algorithms.",
+            " Verification, interpretability, safety, and epistemology of AI models.",
+        ],
+    },
+}
+
+TRACK_EN = {
+    "A": {
+        "code": "Project A",
+        "name": "Bio-Digital-Robotic Human",
+        "goal": "Investigate how the biological human body can be supported, repaired, or integrated with electronic, cybernetic, and robotic systems.",
+        "guidingQuestion": "How can biological tissues, the nervous system, and technical systems work together as one functional whole?",
+    },
+    "B": {
+        "code": "Project B",
+        "name": "Digital Mind",
+        "goal": "Understand how the brain processes information and examine how far memory, perception, and cognitive processes can be modeled computationally.",
+        "guidingQuestion": "What in the functioning of the mind can be captured in mathematical and computational models, and what remains an unresolved research problem?",
+    },
+    "C": {
+        "code": "Project C",
+        "name": "Analog Machines & Physical Computing",
+        "goal": "Explore computation performed directly through continuous physical processes, dynamical systems, and neuromorphic circuits.",
+        "guidingQuestion": "How can physical systems compute directly through their continuous dynamics rather than purely digital symbol manipulation?",
+    },
+    "D": {
+        "code": "Project D",
+        "name": "'Frankenstein': Biotechnology & Organism Engineering",
+        "goal": "Understand the biological foundations of organism development, tissue engineering, regenerative medicine, and bioethics.",
+        "guidingQuestion": "Where lies the boundary between repairing a biological organism and creating or redesigning it anew?",
+    },
+    "E": {
+        "code": "Project E",
+        "name": "Philosophy (Cross-Cutting Interpretive Layer)",
+        "goal": "Provide rigorous epistemological, methodological, and ethical tools for evaluating claims across all tracks.",
+        "guidingQuestion": "How do we distinguish confirmed scientific knowledge from models, hypotheses, and speculation, and what ethical responsibilities follow?",
+    },
+    "F": {
+        "code": "Project F",
+        "name": "Humans in Space",
+        "goal": "Examine the physiological, technical, and ecological requirements for sustaining human life beyond Earth.",
+        "guidingQuestion": "How can we engineer reliable closed-loop life-support systems and protect human health in microgravity and deep space?",
+    },
+    "G": {
+        "code": "Project G",
+        "name": "Humans on Earth & Ecosystem Protection",
+        "goal": "Understand the functioning of Earth's biosphere, environmental pressures, and sustainable engineering technologies.",
+        "guidingQuestion": "How can technological civilization function without destroying the planetary ecosystems that sustain human life?",
+    },
+}
 
 
 # ==============================================================================
-# INICJALIZACJA STANU SESJI, KRYPTOGRAFIA (PBKDF2-SHA256) I ASYSTENT AI BADACZY
+# FUNKCJE KRYPTOGRAFICZNE (PBKDF2-HMAC-SHA256) I AUTORYZACJA URZĄDZENIA WŁAŚCICIELA
 # ==============================================================================
-if "is_admin" not in st.session_state:
-    st.session_state.is_admin = False
-if "active_researcher" not in st.session_state:
-    st.session_state.active_researcher = None
-if "failed_admin_attempts" not in st.session_state:
-    st.session_state.failed_admin_attempts = 0
-
-db = load_db()
-pending_count = count_pending(db)
-tracks_by_id = {t["id"]: t for t in db["tracks"]}
-foundations_by_id = {f["id"]: f for f in db["foundationDisciplines"]}
-
-
 def compute_pbkdf2_hash(password: str, salt_hex: str, iterations: int = 260000) -> str:
     salt_bytes = bytes.fromhex(salt_hex)
     dk = hashlib.pbkdf2_hmac("sha256", password.encode("utf-8"), salt_bytes, int(iterations))
@@ -2003,6 +2139,19 @@ def create_admin_auth_record(new_password: str, iterations: int = 260000) -> dic
         "salt": salt_hex,
         "hash": hash_hex,
     }
+
+
+def get_expected_device_token(db_data: dict) -> str:
+    auth = db_data.get("projectMeta", {}).get("adminAuth") or DEFAULT_SEED["projectMeta"]["adminAuth"]
+    salt_hex = auth.get("salt", "")
+    hash_hex = auth.get("hash", "")
+    if not salt_hex or not hash_hex:
+        return ""
+    return hmac.new(
+        bytes.fromhex(salt_hex),
+        (hash_hex + ":GOLEM15_TRUSTED_DEVICE").encode("utf-8"),
+        hashlib.sha256,
+    ).hexdigest()[:36]
 
 
 def verify_admin_password(candidate_password: str, db_data: dict) -> bool:
@@ -2030,709 +2179,592 @@ def verify_admin_password(candidate_password: str, db_data: dict) -> bool:
         return False
 
 
-def verify_researcher_password(candidate_password: str, researcher_record: dict) -> bool:
-    if not candidate_password or not researcher_record or researcher_record.get("status") != "active":
-        return False
-    auth = researcher_record.get("auth", {})
-    salt_hex = auth.get("salt", "")
-    expected_hash = auth.get("hash", "")
-    iterations = int(auth.get("iterations", 260000))
-    if not salt_hex or not expected_hash:
+def is_local_owner_device_authorized(db_data: dict) -> bool:
+    expected_tok = get_expected_device_token(db_data)
+    if not expected_tok:
         return False
     try:
-        candidate_hash = compute_pbkdf2_hash(candidate_password, salt_hex, iterations)
-        return hmac.compare_digest(candidate_hash, expected_hash)
+        if os.path.exists(LOCAL_DEVICE_KEY_FILE):
+            saved_tok = open(LOCAL_DEVICE_KEY_FILE, "r", encoding="utf-8").read().strip()
+            if hmac.compare_digest(saved_tok, expected_tok):
+                return True
     except Exception:
-        return False
+        pass
+    return False
 
 
-def can_auto_approve() -> bool:
-    """Zwraca True, jeśli użytkownik to Administrator lub zalogowany na stałe Zweryfikowany Badacz."""
-    return bool(st.session_state.is_admin or st.session_state.active_researcher)
+def authorize_local_owner_device(db_data: dict):
+    expected_tok = get_expected_device_token(db_data)
+    try:
+        os.makedirs(os.path.dirname(LOCAL_DEVICE_KEY_FILE), exist_ok=True)
+        with open(LOCAL_DEVICE_KEY_FILE, "w", encoding="utf-8") as f:
+            f.write(expected_tok)
+    except Exception:
+        pass
 
 
-def get_contributor_signature() -> str:
-    if st.session_state.is_admin:
-        return "Ireneusz (Administrator ★)"
-    if st.session_state.active_researcher:
-        r = st.session_state.active_researcher
-        return f"{r['name']} (✓ Stały Badacz)"
-    return "Gość / Obserwator"
-
-
-DOMAIN_KEYWORDS = {
-    "FND-1": ["macierz", "wektor", "pochodna", "całka", "prawdopodobieństwo", "statystyk", "logik", "algebr", "strang", "dowód", "równan"],
-    "FND-2": ["algorytm", "złożoność", "architektur", "komputer", "petzold", "system", "sieć", "baza", "pamięć", "struktura danych"],
-    "FND-3": ["python", "kod", "funkcj", "test", "symulacj", "numpy", "scipy", "repozytorium", "program", "matthes", "git"],
-    "FND-4": ["fizyk", "mechanik", "termodynamik", "elektromagnet", "kwant", "griffiths", "nielsen", "energia", "pole", "fala"],
-    "FND-5": ["elektronik", "układ", "czujnik", "wzmacniacz", "przetwornik", "adc", "dac", "mikrokontroler", "sygnał", "sprzężenie"],
-    "FND-6": ["chemi", "wiązani", "reakcj", "organicz", "biochemi", "białk", "enzym", "openstax", "stężeni", "termochemi"],
-    "FND-7": ["biologi", "komórk", "genom", "dna", "rna", "ewolucj", "fizjologi", "campbell", "brown", "tkank", "homeostaz"],
-    "FND-8": ["uczenie maszynowe", "sieć neuronowa", "ai", "gradient", "model", "géron", "klasyfikacj", "transformer", "dane", "walidacj"],
-    "A": ["bionicz", "protez", "interfejs", "bci", "eeg", "biomateriał", "kalat", "sterowani", "rehabilitacj", "implant", "aktuator"],
-    "B": ["neuron", "synaps", "konektom", "izhikevich", "dayan", "kandel", "hodgkin", "emulacj", "wbe", "poznawcz", "pamięć"],
-    "C": ["analog", "neuromorficz", "oscylator", "memrystor", "dynamik", "filtr", "fizyczn", "sprzężenie", "układ"],
-    "D": ["komórki macierzyste", "tkank", "organoid", "crispr", "embriologi", "syntetyczn", "bioetyk", "regeneracj", "rusztowani"],
-    "E": ["filozofi", "chalmers", "kuhn", "heller", "świadomoś", "etyk", "falsyfikacj", "paradygmat", "tożsamoś", "ontologi"],
-    "F": ["mikrograwitacj", "kosmos", "promieniowani", "orbital", "habitat", "blss", "melissa", "nasa", "esa", "podtrzymywania życia"],
-    "G": ["ekologi", "ekosystem", "bioróżnorodnoś", "klimat", "lca", "obieg", "gleb", "krystek", "renaturyzacj", "energia"],
-}
-
-
-def evaluate_researcher_application_ai(
-    name: str,
-    spec_code: str,
-    sample_text: str,
-    citation_text: str,
-    q1_epistemic: str,
-    q2_methodology: str,
-) -> dict:
-    """
-    Delikatny Asystent Weryfikacji Badacza AI:
-    Ocenia kalibrację epistemiczną (Zasada 5 Golema 15), spójność metodologiczną próbki badawczej
-    oraz ugruntowanie w literaturze, zwracając wynik 0–100 pkt i konstruktywne wskazówki.
-    """
-    score = 0
-    feedback = []
-
-    # 1. Kalibracja epistemiczna (0-40 pkt)
-    if q1_epistemic.startswith("Hipoteza / długoterminowy cel"):
-        score += 20
-        feedback.append("🟢 **Kalibracja epistemiczna (Zasada 5):** Poprawnie odróżniono wiedzę potwierdzoną od długoterminowych celów badawczych (WBE).")
+def detect_source_lang_info(text_blob: str, explicit_lang: str = "", ui_lang: str = "pl") -> dict:
+    """Wykrywa język materiału źródłowego (PL, EN, lub PL+EN) i zwraca czytelne oznaczenie."""
+    if explicit_lang in ("PL", "EN", "PL+EN"):
+        code = explicit_lang
     else:
-        score += 5
-        feedback.append("🟡 **Wskazówka epistemiczna AI:** W projekcie The Golem 15 pełna emulacja mózgu (WBE) jest traktowana jako mapa drogowa i hipoteza badawcza, a nie wiedza już potwierdzona.")
-
-    if q2_methodology.startswith("Od podręczników podstawowych"):
-        score += 20
-        feedback.append("🟢 **Rygor źródłowy (Zasady 1–4):** Właściwa hierarchia źródeł (podręczniki akademickie, otwarte zasoby badawcze i recenzowane przeglądy).")
-    else:
-        score += 5
-        feedback.append("🟡 **Wskazówka metodologiczna AI:** Zgodnie z zasadami biblioteki Golem 15 pracę zaczynamy od bezpłatnych podręczników podstawowych i weryfikowalnych przeglądów.")
-
-    # 2. Analiza semantyczna próbki badawczej (0-35 pkt)
-    clean_sample = (sample_text or "").strip()
-    text_lower = f"{clean_sample} {citation_text or ''}".lower()
-    if len(clean_sample) >= 140:
-        score += 18
-        feedback.append("🟢 **Struktura wypowiedzi badawczej:** Próbka ma odpowiednią szczegółowość merytoryczną.")
-    elif len(clean_sample) >= 70:
-        score += 12
-        feedback.append("🔵 **Struktura wypowiedzi:** Opis jest zwięzły — dodanie 1–2 zdań o metodzie pomiarowej lub modelu zwiększy precyzję.")
-    else:
-        score += 4
-        feedback.append("🟡 **Delikatna podpowiedź AI:** Rozwiń próbkę badawczą do min. 2–3 zdań opisujących problem, metodę lub model.")
-
-    domain_terms = DOMAIN_KEYWORDS.get(spec_code, []) + [
-        "model", "analiza", "pomiar", "hipotez", "eksperyment", " równani", "system", "badani", "dane", "mechanizm", "weryfikacj"
-    ]
-    matched_terms = [kw.strip() for kw in domain_terms if kw in text_lower]
-    if len(matched_terms) >= 3:
-        score += 17
-        feedback.append(f"🟢 **Spójność terminologiczna ze ścieżką ({spec_code}):** Wykryto pojęcia dziedzinowe ({', '.join(matched_terms[:5])}).")
-    elif len(matched_terms) >= 1:
-        score += 11
-        feedback.append(f"🔵 **Terminologia dziedzinowa:** Wykryto odniesienia ({', '.join(matched_terms[:3])}).")
-    else:
-        score += 5
-        feedback.append("🟡 **Podpowiedź AI:** Warto użyć w opisie konkretnych pojęć technicznych lub nazw modeli z wybranej dziedziny.")
-
-    # 3. Weryfikacja ugruntowania bibliograficznego (0-25 pkt)
-    clean_cit = (citation_text or "").strip()
-    scholarly_markers = ["openstax", "pwn", "petzold", "matthes", "strang", "griffiths", "nielsen", "brown", "campbell", "kalat", "kandel", "dayan", "izhikevich", "chalmers", "kuhn", "heller", "krystek", "nasa", "esa", "doi", "http", "wydawnictwo", "podręcznik", "nature", "science", "ieee", "arxiv"]
-    has_marker = any(m in text_lower for m in scholarly_markers)
-    if len(clean_cit) >= 15 and has_marker:
-        score += 25
-        feedback.append("🟢 **Ugruntowanie w literaturze:** Przywołano weryfikowalne źródło naukowe / podręcznik z kanonu projektu.")
-    elif len(clean_cit) >= 10:
-        score += 16
-        feedback.append("🔵 **Źródło bibliograficzne:** Podano źródło — warto dodać autora, wydawnictwo (np. PWN, OpenStax) lub link DOI/URL.")
-    else:
-        score += 4
-        feedback.append("🟡 **Delikatna podpowiedź AI:** Dopisz przynajmniej jedno źródło literaturowe (np. Kalat, Petzold, Kandel, OpenStax, Chalmers, NASA/ESA lub link DOI).")
-
-    score = min(100, max(0, score))
-    passed = score >= 75
-    summary = (
-        f"Pozytywna weryfikacja metodologiczna AI ({score}/100 pkt) w obszarze {spec_code}."
-        if passed
-        else f"Wynik wstępny {score}/100 pkt (próg automatycznej autoryzacji: 75/100 pkt) — skorzystaj z podpowiedzi AI powyżej."
-    )
-    return {
-        "score": score,
-        "passed": passed,
-        "summary": summary,
-        "feedback": feedback,
-    }
-
-
-def ai_suggest_material_metadata(title: str, content: str, target_code: str) -> dict:
-    """Delikatny Asystent AI podpowiadający klasyfikację epistemiczną i powiązane lektury polskojęzyczne."""
-    txt = f"{title} {content}".lower()
-    if any(w in txt for w in ["spekulac", "przeniesienie umysłu", "świadomość maszynowa", "hipotetycz", "dalekosiężn"]):
-        epistemic = "🟣 Spekulacja / Eksperyment myślowy"
-    elif any(w in txt for w in ["hipotez", "propozycj", "weryfikacj", "wbe", "roadmap"]):
-        epistemic = "🟡 Hipoteza badawcza"
-    elif any(w in txt for w in ["przegląd", "bci", "organoid", "neuromorficz", "melissa", "crispr", "doi.org"]):
-        epistemic = "🔵 Aktywne badania"
-    else:
-        epistemic = "🟢 Wiedza potwierdzona"
-
-    pl_recommendations = {
-        "FND-1": "🇵🇱 Podręczniki algebry liniowej i analizy matematycznej (PWN / ZPE) + G. Strang",
-        "FND-2": "🇵🇱 Charles Petzold — Kod. Ukryty język komputerów (Wyd. II)",
-        "FND-3": "🇵🇱 Eric Matthes — Python. Instrukcje dla programisty",
-        "FND-4": "🇵🇱 Fizyka dla szkół wyższych (OpenStax Polska) + D. J. Griffiths",
-        "FND-5": "🇵🇱 Podstawy elektroniki i układów cyfrowych (ZPE / PWN)",
-        "FND-6": "🇵🇱 Akademickie podręczniki chemii ogólnej i biochemii (PWN) + OpenStax Chemistry 2e",
-        "FND-7": "🇵🇱 Biologia Campbella oraz Terence A. Brown — Genomy (PWN)",
-        "FND-8": "🇵🇱 Aurélien Géron — Uczenie maszynowe z użyciem Scikit-Learn i TensorFlow (Helion)",
-        "A": "🇵🇱 James W. Kalat — Biologiczne podstawy psychologii (PWN) + podręczniki biofizyki i robotyki",
-        "B": "🇵🇱 James W. Kalat — Biologiczne podstawy psychologii (PWN) + Dayan & Abbott / Izhikevich",
-        "C": "🇵🇱 Podręczniki elektroniki analogowej i układów dynamicznych (ZPE / PWN)",
-        "D": "🇵🇱 Terence A. Brown — Genomy + Biologia Campbella + literatura z inżynierii tkankowej",
-        "E": "🇵🇱 Alan Chalmers — Czym jest to, co zwiemy nauką?, T. S. Kuhn, Michał Heller — Filozofia nauki",
-        "F": "🇵🇱 Materiały fizjologii i techniki kosmicznej + NASA Human Health / ESA Teach with Space",
-        "G": "🇵🇱 Jan Krystek — Ochrona środowiska dla inżynierów (PWN) + materiały Politechniki Śląskiej",
-    }
-    return {
-        "epistemicStatus": epistemic,
-        "recommendedLiterature": pl_recommendations.get(target_code, "🇵🇱 Biblioteka Projektu The Golem 15 (Sekcje I–VI)"),
-    }
-
-
-# ==============================================================================
-# PASEK BOCZNY: ROLA UŻYTKOWNIKA (GOŚĆ vs STAŁY BADACZ vs ADMINISTRATOR)
-# ==============================================================================
-with st.sidebar:
-    st.markdown("## 🧬 The Golem 15")
-    st.caption("A Human's Road to Reality — Architektura Orientacyjna & Badawcza")
-    st.divider()
-
-    active_researchers_list = [r for r in db.get("verifiedResearchers", []) if r.get("status") == "active"]
-
-    if st.session_state.is_admin:
-        st.success("★ **Tryb Właściciela / Administratora**\nPełne uprawnienia do moderacji, zarządzania stałymi badaczami i publikacji natychmiastowej.")
-        if st.button("🔓 Wyloguj do trybu Gościa", use_container_width=True):
-            st.session_state.is_admin = False
-            st.rerun()
-    elif st.session_state.active_researcher:
-        cur_r = st.session_state.active_researcher
-        st.success(
-            f"🧑‍🔬 **Stały Zweryfikowany Badacz**\n"
-            f"**{cur_r['name']}**\n"
-            f"*{cur_r.get('roleTitle', '')}*\n\n"
-            f"✓ Twoje materiały, podprojekty i notatki są **publikowane od razu bez kolejki moderacji**."
+        has_pl = "🇵🇱" in text_blob or any(
+            w in text_blob.lower()
+            for w in ["pwn", "helion", "zpe.gov.pl", "polsl.pl", "open.agh", "po polsku", "polskie wydanie", "wydawnictwo"]
         )
-        if st.button("🔓 Wyloguj z konta Badacza", use_container_width=True):
-            st.session_state.active_researcher = None
-            st.rerun()
-    else:
-        st.info(
-            "👁 **Tryb Gościa / Obserwatora**\n"
-            "Zgłoszenia gości trafiają do kolejki. **Zaloguj się jako Stały Badacz** lub przejdź **2-minutową weryfikację AI** w zakładce 7, aby publikować na stałe bez kolejki!"
+        has_en = "🇬🇧" in text_blob or "🌍" in text_blob or any(
+            w in text_blob.lower()
+            for w in ["po angielsku", "openstax.org/details/books/chemistry", "mitpress", "nasa.gov", "esa.int", "doi.org", "stanford.edu"]
         )
-        with st.expander("🧑‍🔬 Logowanie Stałego Badacza", expanded=False):
-            if active_researchers_list:
-                sel_res_id = st.selectbox(
-                    "Wybierz profil Badacza",
-                    options=[r["id"] for r in active_researchers_list],
-                    format_func=lambda rid: next((f"{r['name']} ({r.get('specialization', 'ALL')})" for r in active_researchers_list if r["id"] == rid), rid),
-                    key="side_res_select",
-                )
-                res_pass = st.text_input("Hasło Badacza", type="password", value="", key="side_res_pass")
-                if st.button("🧑‍🔬 Zaloguj jako Stały Badacz", type="primary", use_container_width=True, key="btn_res_login"):
-                    target_r = next((r for r in active_researchers_list if r["id"] == sel_res_id), None)
-                    if verify_researcher_password(res_pass, target_r):
-                        st.session_state.active_researcher = target_r
-                        st.rerun()
-                    else:
-                        time.sleep(0.5)
-                        st.error("Nieprawidłowe hasło Badacza.")
-                st.caption("Nowy badacz? Przejdź do zakładki **🧑‍🔬 7. Badacze i Weryfikacja AI**, aby utworzyć stałe konto.")
+        if has_pl and has_en:
+            code = "PL+EN"
+        elif has_pl:
+            code = "PL"
+        elif has_en:
+            code = "EN"
+        else:
+            code = "PL"
 
-    st.divider()
-    st.markdown("### 📊 Kompas Projektu")
-    col_s1, col_s2 = st.columns(2)
-    col_s1.metric("Dziedziny (1–8)", len(db["foundationDisciplines"]))
-    col_s2.metric("Ścieżki (A–G)", len(db["tracks"]))
-    col_s3, col_s4 = st.columns(2)
-    col_s3.metric("Materiały i książki", len(db.get("studyMaterials", [])) + len(db.get("materials", [])))
-    col_s4.metric("Stali Badacze", len(active_researchers_list))
-    st.metric("⏳ Kolejka gości", pending_count)
+    if ui_lang == "en":
+        labels = {
+            "PL": ("🇵🇱 [PL — Polish Source]", "#10b981"),
+            "EN": ("🇬🇧 [EN — English Source]", "#38bdf8"),
+            "PL+EN": ("🇵🇱/🇬🇧 [PL + EN — Bilingual Sources]", "#a855f7"),
+        }
+    else:
+        labels = {
+            "PL": ("🇵🇱 [PL — Język polski]", "#10b981"),
+            "EN": ("🇬🇧 [EN — Język angielski]", "#38bdf8"),
+            "PL+EN": ("🇵🇱/🇬🇧 [PL + EN — Źródła polskie i angielskie]", "#a855f7"),
+        }
+    lbl, color = labels.get(code, labels["PL"])
+    return {"code": code, "label": lbl, "color": color}
 
-    st.divider()
-    st.download_button(
-        "⬇ Pobierz kopię bazy JSON",
-        data=json.dumps(db, ensure_ascii=False, indent=2),
-        file_name="the_golem_15_database.json",
-        mime="application/json",
-        use_container_width=True,
-    )
 
-    if not st.session_state.is_admin:
-        st.markdown("<div style='margin-top: 1.5rem;'></div>", unsafe_allow_html=True)
-        with st.expander("🔒 Autoryzacja właściciela", expanded=False):
-            admin_pass_side = st.text_input(
-                "Klucz dostępu",
-                type="password",
-                value="",
-                placeholder="Wprowadź hasło właściciela",
-                key="sidebar_admin_pass",
-            )
-            if st.button("Odblokuj", use_container_width=True, key="btn_side_login"):
-                if st.session_state.failed_admin_attempts >= 5:
-                    time.sleep(2.0)
-                if verify_admin_password(admin_pass_side, db):
-                    st.session_state.is_admin = True
-                    st.session_state.failed_admin_attempts = 0
-                    st.rerun()
-                else:
-                    st.session_state.failed_admin_attempts += 1
-                    time.sleep(0.6)
-                    st.error("Brak autoryzacji — nieprawidłowy klucz dostępu.")
+def matches_lang_filter(code: str, filter_choice: str) -> bool:
+    if filter_choice == "ALL":
+        return True
+    if filter_choice == "PL":
+        return code in ("PL", "PL+EN")
+    if filter_choice == "EN":
+        return code in ("EN", "PL+EN")
+    return True
+
 
 # ==============================================================================
-# ARCHITEKTURA ORIENTACYJNA UI (WZOROWANA NA MOST WIEDZY, OSF, RESEARCHHUB I HEPTABASE)
+# INICJALIZACJA STANU I NOWOCZESNY STYL PORTALU WWW (WEBSITE-GRADE CSS)
 # ==============================================================================
+db = load_db()
+expected_dev_token = get_expected_device_token(db)
+
+if "lang" not in st.session_state:
+    st.session_state.lang = "pl"
+if "failed_admin_attempts" not in st.session_state:
+    st.session_state.failed_admin_attempts = 0
+if "manual_locked" not in st.session_state:
+    st.session_state.manual_locked = False
+if "owner_authenticated" not in st.session_state:
+    st.session_state.owner_authenticated = False
+
+# Automatyczna weryfikacja tokenu urządzenia z URL (?device_token=...) lub klucza lokalnego urządzenia właściciela
+query_dev_token = st.query_params.get("device_token", "")
+is_url_token_valid = bool(
+    query_dev_token and expected_dev_token and hmac.compare_digest(str(query_dev_token), expected_dev_token)
+)
+is_local_device_valid = is_local_owner_device_authorized(db)
+
+if not st.session_state.manual_locked and (is_url_token_valid or is_local_device_valid):
+    st.session_state.owner_authenticated = True
+
 st.markdown(
     """
     <style>
-    .golem-wayfinding-shell {
-        background: linear-gradient(135deg, rgba(15, 23, 42, 0.96) 0%, rgba(30, 41, 59, 0.92) 100%);
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+    html, body, [class*="css"] {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    header[data-testid="stHeader"] {
+        background: transparent !important;
+    }
+    .block-container {
+        padding-top: 1.4rem !important;
+        padding-bottom: 3rem !important;
+        max-width: 1420px !important;
+    }
+    .golem-web-navbar {
+        background: linear-gradient(135deg, rgba(11, 15, 25, 0.98) 0%, rgba(22, 31, 51, 0.96) 100%);
         border: 1px solid rgba(56, 189, 248, 0.28);
-        border-radius: 14px;
-        padding: 1.15rem 1.35rem;
-        margin-bottom: 1rem;
-        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.35);
+        border-radius: 16px;
+        padding: 1.25rem 1.5rem;
+        margin-bottom: 1.2rem;
+        box-shadow: 0 16px 36px -8px rgba(0, 0, 0, 0.55);
     }
-    .golem-wayfinding-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-        gap: 0.85rem;
-        margin-top: 0.8rem;
+    .golem-brand-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
     }
-    .golem-axis-card {
-        background: rgba(15, 23, 42, 0.75);
-        border: 1px solid rgba(148, 163, 184, 0.2);
-        border-radius: 10px;
-        padding: 0.75rem 0.9rem;
+    .golem-logo-badge {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 46px;
+        height: 46px;
+        border-radius: 12px;
+        background: linear-gradient(135deg, #38bdf8 0%, #6366f1 55%, #a855f7 100%);
+        color: #ffffff;
+        font-weight: 800;
+        font-size: 1.15rem;
+        box-shadow: 0 6px 18px rgba(99, 102, 241, 0.45);
     }
-    .golem-axis-title {
+    .golem-main-title {
+        font-size: 1.55rem;
+        font-weight: 800;
+        color: #f8fafc;
+        letter-spacing: -0.02em;
+        margin: 0;
+        line-height: 1.2;
+    }
+    .golem-sub-caption {
+        font-size: 0.86rem;
+        color: #94a3b8;
+        margin-top: 0.2rem;
+    }
+    .golem-lang-tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.3rem;
+        padding: 0.2rem 0.62rem;
+        border-radius: 999px;
         font-size: 0.74rem;
+        font-weight: 700;
+        background: rgba(16, 185, 129, 0.14);
+        border: 1px solid rgba(16, 185, 129, 0.4);
+        color: #34d399;
+    }
+    .golem-lang-tag.en {
+        background: rgba(56, 189, 248, 0.14);
+        border-color: rgba(56, 189, 248, 0.4);
+        color: #38bdf8;
+    }
+    .golem-lang-tag.bi {
+        background: rgba(168, 85, 247, 0.14);
+        border-color: rgba(168, 85, 247, 0.4);
+        color: #c084fc;
+    }
+    .golem-vault-card {
+        max-width: 540px;
+        margin: 4rem auto 1.5rem auto;
+        background: linear-gradient(145deg, rgba(15, 23, 42, 0.98) 0%, rgba(22, 31, 51, 0.95) 100%);
+        border: 1px solid rgba(56, 189, 248, 0.35);
+        border-radius: 18px;
+        padding: 2.2rem 2rem;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+        text-align: center;
+    }
+    .golem-axis-strip {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 0.85rem;
+        margin-top: 1rem;
+        padding-top: 0.9rem;
+        border-top: 1px solid rgba(148, 163, 184, 0.16);
+    }
+    .golem-axis-box {
+        background: rgba(15, 23, 42, 0.72);
+        border: 1px solid rgba(148, 163, 184, 0.18);
+        border-radius: 11px;
+        padding: 0.7rem 0.9rem;
+    }
+    .golem-axis-heading {
+        font-size: 0.72rem;
         text-transform: uppercase;
-        letter-spacing: 0.06em;
+        letter-spacing: 0.07em;
         color: #38bdf8;
         font-weight: 700;
         margin-bottom: 0.35rem;
     }
-    .golem-pill-row {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.32rem;
-    }
-    .golem-pill {
+    .golem-chip {
         display: inline-block;
-        padding: 0.18rem 0.55rem;
+        padding: 0.16rem 0.52rem;
+        margin: 0.12rem;
         border-radius: 999px;
-        font-size: 0.74rem;
+        font-size: 0.73rem;
         font-weight: 600;
-        background: rgba(56, 189, 248, 0.12);
-        border: 1px solid rgba(56, 189, 248, 0.3);
+        background: rgba(56, 189, 248, 0.1);
+        border: 1px solid rgba(56, 189, 248, 0.26);
         color: #e2e8f0;
-    }
-    .golem-epistemic-bar {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.45rem;
-        margin-top: 0.65rem;
-        padding-top: 0.6rem;
-        border-top: 1px dashed rgba(148, 163, 184, 0.2);
-        font-size: 0.76rem;
-        color: #cbd5e1;
     }
     </style>
     """,
     unsafe_allow_html=True,
 )
 
-if st.session_state.is_admin or st.session_state.active_researcher:
-    col_title, col_top_auth = st.columns([3, 1])
-    with col_title:
-        st.title("🧬 The Golem 15: A Human's Road to Reality")
-        st.markdown(f"**Cel nadrzędny:** {db['projectMeta']['overarchingGoal']}")
-    with col_top_auth:
-        if st.session_state.is_admin:
-            st.success("★ Administrator (Pełna kontrola)")
-            if st.button("Wyloguj Administratora", key="top_logout_btn", use_container_width=True):
-                st.session_state.is_admin = False
+L = I18N[st.session_state.lang]
+
+# ==============================================================================
+# BRAMKA DOSTĘPU: PROJEKT ZAMKNIĘTY WYŁĄCZNIE DLA WŁAŚCICIELA I JEGO URZĄDZENIA
+# ==============================================================================
+if not st.session_state.owner_authenticated:
+    _, col_gate, _ = st.columns([1, 1.6, 1])
+    with col_gate:
+        lang_c1, lang_c2 = st.columns([3, 1])
+        with lang_c2:
+            sel_lang = st.segmented_control(
+                "Language",
+                options=["pl", "en"],
+                default=st.session_state.lang,
+                format_func=lambda x: "🇵🇱 PL" if x == "pl" else "🇬🇧 EN",
+                label_visibility="collapsed",
+                key="gate_lang_switch",
+            )
+            if sel_lang and sel_lang != st.session_state.lang:
+                st.session_state.lang = sel_lang
                 st.rerun()
-        elif st.session_state.active_researcher:
-            st.success(f"🧑‍🔬 Stały Badacz: {st.session_state.active_researcher['name']}")
-            if st.button("Wyloguj Badacza", key="top_res_logout_btn", use_container_width=True):
-                st.session_state.active_researcher = None
-                st.rerun()
-else:
-    st.title("🧬 The Golem 15: A Human's Road to Reality")
-    st.markdown(f"**Cel nadrzędny:** {db['projectMeta']['overarchingGoal']}")
+
+        st.markdown(
+            f"""
+            <div class="golem-vault-card">
+                <div class="golem-logo-badge" style="margin:0 auto 0.9rem auto;">G15</div>
+                <h1 class="golem-main-title">The Golem 15: A Human's Road to Reality</h1>
+                <div style="color:#38bdf8; font-weight:700; font-size:0.92rem; margin-top:0.55rem;">
+                    {L['lockTitle']}
+                </div>
+                <p style="color:#94a3b8; font-size:0.86rem; margin-top:0.45rem; line-height:1.5;">
+                    {L['lockDesc']}
+                </p>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
+        with st.form("owner_vault_login_form", clear_on_submit=True):
+            vault_pass = st.text_input(
+                L["passLabel"],
+                type="password",
+                value="",
+                placeholder=L["passPlaceholder"],
+            )
+            remember_dev = st.checkbox(L["trustDeviceCheck"], value=True)
+            if st.form_submit_button(L["unlockBtn"], type="primary", use_container_width=True):
+                if st.session_state.failed_admin_attempts >= 5:
+                    time.sleep(2.0)
+                if verify_admin_password(vault_pass, db):
+                    st.session_state.owner_authenticated = True
+                    st.session_state.manual_locked = False
+                    st.session_state.failed_admin_attempts = 0
+                    if remember_dev:
+                        authorize_local_owner_device(db)
+                        st.query_params["device_token"] = expected_dev_token
+                    st.rerun()
+                else:
+                    st.session_state.failed_admin_attempts += 1
+                    time.sleep(0.6)
+                    st.error(L["authErr"])
+    st.stop()
+
+
+# ==============================================================================
+# GÓRNY PASEK PORTALU WWW: TYTUŁ + PRZEŁĄCZNIK PL/EN + STATUS URZĄDZENIA + BLOKADA
+# ==============================================================================
+tracks_by_id = {t["id"]: t for t in db["tracks"]}
+foundations_by_id = {f["id"]: f for f in db["foundationDisciplines"]}
+
+top_c1, top_c2, top_c3 = st.columns([3.4, 1.0, 0.9])
+with top_c1:
+    st.markdown(
+        f"""
+        <div style="display:flex; align-items:center; gap:0.9rem;">
+            <div class="golem-logo-badge">G15</div>
+            <div>
+                <h1 class="golem-main-title">The Golem 15: A Human's Road to Reality</h1>
+                <div class="golem-sub-caption">{L['subtitle']} • <span style="color:#34d399; font-weight:600;">{L['deviceTrustedBadge']}</span></div>
+            </div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+with top_c2:
+    new_lang = st.segmented_control(
+        "Język / Language",
+        options=["pl", "en"],
+        default=st.session_state.lang,
+        format_func=lambda x: "🇵🇱 Polski" if x == "pl" else "🇬🇧 English",
+        label_visibility="collapsed",
+        key="top_lang_switcher",
+    )
+    if new_lang and new_lang != st.session_state.lang:
+        st.session_state.lang = new_lang
+        st.rerun()
+with top_c3:
+    if st.button(L["lockSessionBtn"], use_container_width=True, key="btn_lock_vault"):
+        st.session_state.owner_authenticated = False
+        st.session_state.manual_locked = True
+        st.query_params.clear()
+        st.rerun()
+
+L = I18N[st.session_state.lang]
+is_en = st.session_state.lang == "en"
+
+# Kompas orientacyjny na górze strony WWW
+fnd_chips_html = "".join(
+    f'<span class="golem-chip">{f["order"]}. {FOUNDATION_EN[f["id"]]["name"] if is_en else f["name"]}</span>'
+    for f in sorted(db["foundationDisciplines"], key=lambda x: x["order"])
+)
+trk_chips_html = "".join(
+    f'<span class="golem-chip">{t["id"]}: {TRACK_EN[t["id"]]["name"] if is_en else t["name"]}</span>'
+    for t in db["tracks"]
+)
 
 st.markdown(
     f"""
-    <div class="golem-wayfinding-shell">
-        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem;">
-            <div>
-                <span style="font-size:0.76rem; text-transform:uppercase; letter-spacing:0.08em; color:#38bdf8; font-weight:700;">
-                    🧭 Architektura Orientacyjna Projektu (Standard OSF / ResearchHub / Most Wiedzy / Heptabase)
-                </span>
-                <div style="font-size:0.84rem; color:#cbd5e1; margin-top:0.15rem;">
-                    {db['projectMeta']['organizationalRule']}
-                </div>
-            </div>
+    <div class="golem-web-navbar">
+        <div style="font-size:0.92rem; color:#f1f5f9; font-weight:600; margin-bottom:0.25rem;">
+            🎯 {L['overarchingGoal']}
         </div>
-        <div class="golem-wayfinding-grid">
-            <div class="golem-axis-card">
-                <div class="golem-axis-title">🏛️ Oś I: Wspólne Podstawy (8 Dziedzin po kolei)</div>
-                <div class="golem-pill-row">
-                    <span class="golem-pill">1. Matematyka</span>
-                    <span class="golem-pill">2. Informatyka</span>
-                    <span class="golem-pill">3. Programowanie</span>
-                    <span class="golem-pill">4. Fizyka</span>
-                    <span class="golem-pill">5. Elektronika</span>
-                    <span class="golem-pill">6. Chemia</span>
-                    <span class="golem-pill">7. Biologia</span>
-                    <span class="golem-pill">8. AI</span>
-                </div>
-            </div>
-            <div class="golem-axis-card">
-                <div class="golem-axis-title">🗺️ Oś II: 7 Ścieżek Badawczych (Projekty A–G)</div>
-                <div class="golem-pill-row">
-                    <span class="golem-pill">A: Bio-Cyfrowy</span>
-                    <span class="golem-pill">B: Cyfrowy Umysł</span>
-                    <span class="golem-pill">C: Analog / Neuromorf</span>
-                    <span class="golem-pill">D: Biotechnologia</span>
-                    <span class="golem-pill">E: Filozofia (Przekrojowa)</span>
-                    <span class="golem-pill">F: Kosmos (BLSS)</span>
-                    <span class="golem-pill">G: Ziemia (Ekosystem)</span>
-                </div>
-            </div>
-            <div class="golem-axis-card">
-                <div class="golem-axis-title">🧑‍🔬 Oś III: Autoryzacja Epistemiczna i Zespół</div>
-                <div style="font-size:0.8rem; color:#e2e8f0; line-height:1.45;">
-                    • <strong>Stali Badacze ({len(active_researchers_list)})</strong>: publikacja natychmiastowa po weryfikacji AI<br/>
-                    • <strong>Priorytet źródeł</strong>: 🇵🇱 literatura polska → 🇬🇧 światowa
-                </div>
-            </div>
+        <div style="font-size:0.8rem; color:#94a3b8;">
+            {L['organizationalRule']}
         </div>
-        <div class="golem-epistemic-bar">
-            <strong>Statusy Epistemiczne (Zasada 5):</strong>
-            <span>🟢 Wiedza potwierdzona (podręczniki)</span> •
-            <span>🔵 Aktywne badania (przeglądy / eksperymenty)</span> •
-            <span>🟡 Hipoteza badawcza (modele)</span> •
-            <span>🟣 Spekulacja / cel długoterminowy (np. pełne WBE)</span>
+        <div class="golem-axis-strip">
+            <div class="golem-axis-box">
+                <div class="golem-axis-heading">{'🏛️ Axis I: 8 Foundational Disciplines (in sequence)' if is_en else '🏛️ Oś I: 8 Dziedzin Podstawowych (po kolei)'}</div>
+                <div>{fnd_chips_html}</div>
+            </div>
+            <div class="golem-axis-box">
+                <div class="golem-axis-heading">{'🗺️ Axis II: 7 Research Tracks (Projects A–G)' if is_en else '🗺️ Oś II: 7 Ścieżek Badawczych (Projekty A–G)'}</div>
+                <div>{trk_chips_html}</div>
+            </div>
         </div>
     </div>
     """,
     unsafe_allow_html=True,
 )
 
-with st.expander("🔍 Globalny Nawigator & Wyszukiwarka Fasetowa (Przeszukaj jednocześnie 8 dziedzin, 7 ścieżek, Bibliotekę i Badaczy)", expanded=False):
-    g_col1, g_col2 = st.columns([3, 1])
-    with g_col1:
-        global_query = st.text_input(
-            "Wpisz pojęcie, autora, technologię lub temat (np. Petzold, Kalat, Kandel, CRISPR, neuromorficzne, OpenStax, MELiSSA):",
-            key="global_wayfinding_search",
-        )
-    with g_col2:
-        global_scope = st.selectbox(
-            "Zakres fasetowy:",
-            ["Cały projekt (Wszystkie warstwy)", "Tylko polskojęzyczne (🇵🇱)", "Podstawy (1–8)", "Ścieżki (A–G)", "Stali Badacze"],
-            key="global_wayfinding_scope",
-        )
-    if global_query.strip():
-        q_low = global_query.strip().lower()
-        hits = []
-        if global_scope in ("Cały projekt (Wszystkie warstwy)", "Podstawy (1–8)"):
-            for fnd in db["foundationDisciplines"]:
-                blob = f"{fnd['name']} {fnd['description']} {' '.join(fnd['topics'])}".lower()
-                if q_low in blob:
-                    hits.append(f"🏛️ **Podstawy {fnd['order']}: {fnd['name']}** — {fnd['description']} *(Zakładka 1)*")
-        if global_scope in ("Cały projekt (Wszystkie warstwy)", "Ścieżki (A–G)"):
-            for tr in db["tracks"]:
-                blob = f"{tr['code']} {tr['name']} {tr['goal']} {tr['guidingQuestion']}".lower()
-                if q_low in blob:
-                    hits.append(f"🗺️ **{tr['code']} — {tr['name']}** — {tr['goal']} *(Zakładka 2)*")
-        for sm in db.get("studyMaterials", []):
-            if sm.get("status") != "approved" and not can_auto_approve():
-                continue
-            blob = f"{sm.get('title','')} {sm.get('content','')} {sm.get('topic','')}".lower()
-            if global_scope == "Tylko polskojęzyczne (🇵🇱)" and "🇵🇱" not in f"{sm.get('title','')} {sm.get('content','')} {json.dumps(sm.get('links',[]), ensure_ascii=False)}":
-                continue
-            if q_low in blob:
-                hits.append(f"🎓 **Materiał do nauki [{sm.get('targetId')}]: {sm['title']}** — {sm['content'][:160]}... *(Zakładka 1)*")
-        for m in db.get("materials", []):
-            if m.get("status") != "approved" and not can_auto_approve():
-                continue
-            blob = f"{m.get('title','')} {m.get('content','')} {m.get('branchTopic','')}".lower()
-            if global_scope == "Tylko polskojęzyczne (🇵🇱)" and "🇵🇱" not in f"{m.get('title','')} {m.get('content','')} {json.dumps(m.get('links',[]), ensure_ascii=False)}":
-                continue
-            if q_low in blob:
-                hits.append(f"📚 **Repozytorium [Projekt {m.get('trackId')}]: {m['title']}** — {m['content'][:160]}... *(Zakładka 4)*")
-        if global_scope in ("Cały projekt (Wszystkie warstwy)", "Stali Badacze"):
-            for r in active_researchers_list:
-                blob = f"{r['name']} {r.get('roleTitle','')} {r.get('bio','')} {r.get('specializationLabel','')}".lower()
-                if q_low in blob:
-                    hits.append(f"🧑‍🔬 **Stały Badacz: {r['name']}** ({r.get('roleTitle')}) — {r.get('bio')} *(Zakładka 7)*")
-        if hits:
-            st.success(f"Znaleziono {len(hits)} dopasowań w architekturze projektu:")
-            for h_item in hits[:15]:
-                st.markdown(f"- {h_item}")
-        else:
-            st.warning("Brak bezpośrednich dopasowań — spróbuj wpisać inne słowo kluczowe lub nazwisko autora.")
-
-
-# ==============================================================================
-# ZAKŁADKI GŁÓWNE APLIKACJI (OPCJA 1: MATERIAŁY DO NAUKI)
-# ==============================================================================
-tab_study, tab_map, tab_ws, tab_mat, tab_new, tab_graph, tab_researchers, tab_admin = st.tabs([
-    "🎓 1. Materiały do nauki (Dziedziny i Biblioteka)",
-    "🗺️ 2. Mapa 7 Ścieżek (Projekty A–G)",
-    f"🔬 3. Środowiska Badawcze ({len(db['subprojects'])})",
-    f"📚 4. Repozytorium Badawcze ({len(db['materials'])})",
-    "🚀 5. + Uruchom Środowisko / Dodaj Materiał",
-    "🕸️ 6. Graf Powiązań (A–G)",
-    f"🧑‍🔬 7. Badacze i Weryfikacja AI ({len(active_researchers_list)})",
-    f"🛡️ 8. Autoryzacja Administratora ({pending_count})",
-])
-
-# ------------------------------------------------------------------------------
-# ZAKŁADKA 1 (PIERWSZA OPCJA): MATERIAŁY DO NAUKI — 8 DZIEDZIN + ŚCIEŻKI A-G + BIBLIOTEKA UZUPEŁNIAJĄCA (C-G)
-# ------------------------------------------------------------------------------
-with tab_study:
-    st.subheader("🎓 Materiały do nauki — Wspólne podstawy (8 dziedzin), Ścieżki A–G oraz Biblioteka materiałów uzupełniających")
-    st.markdown(
-        "Drzewo kształcenia, bibliografia i materiały dydaktyczne dla **8 dziedzin fundamentalnych** "
-        "(*Matematyka i logika, Informatyka, Programowanie, Fizyka, Elektronika, Chemia, Biologia, Sztuczna inteligencja*), "
-        "odnóg **Projektów A–G** oraz **Biblioteki materiałów uzupełniających (Projekty C, D, E, F i G)**."
+# Pasek szybkiego wyszukiwania i filtra języka źródeł [PL] / [EN]
+flt_c1, flt_c2 = st.columns([2.6, 1.4])
+with flt_c1:
+    global_search_q = st.text_input(
+        "Search",
+        placeholder=L["searchPlaceholder"],
+        label_visibility="collapsed",
+        key="web_global_search",
+    )
+with flt_c2:
+    source_lang_filter = st.selectbox(
+        L["langFilterLabel"],
+        options=["ALL", "PL", "EN"],
+        format_func=lambda v: L["langAll"] if v == "ALL" else (L["langOnlyPL"] if v == "PL" else L["langOnlyEN"]),
+        label_visibility="collapsed",
+        key="web_source_lang_filter",
     )
 
+if global_search_q.strip():
+    q_low = global_search_q.strip().lower()
+    search_hits = []
+    for fnd in db["foundationDisciplines"]:
+        fname = FOUNDATION_EN[fnd["id"]]["name"] if is_en else fnd["name"]
+        fdesc = FOUNDATION_EN[fnd["id"]]["description"] if is_en else fnd["description"]
+        if q_low in f"{fnd['name']} {fname} {fnd['description']} {fdesc}".lower():
+            search_hits.append(f"🏛️ **{fnd['order']}. {fname}** — {fdesc}")
+    for sm in db.get("studyMaterials", []):
+        blob = f"{sm.get('title','')} {sm.get('content','')} {sm.get('topic','')} {json.dumps(sm.get('links',[]), ensure_ascii=False)}"
+        l_info = detect_source_lang_info(blob, sm.get("sourceLang", ""), st.session_state.lang)
+        if matches_lang_filter(l_info["code"], source_lang_filter) and q_low in blob.lower():
+            search_hits.append(f"🎓 `{l_info['label']}` **[{sm.get('targetId')}] {sm['title']}** — {sm['content'][:160]}...")
+    for m in db.get("materials", []):
+        blob = f"{m.get('title','')} {m.get('content','')} {m.get('branchTopic','')} {json.dumps(m.get('links',[]), ensure_ascii=False)}"
+        l_info = detect_source_lang_info(blob, m.get("sourceLang", ""), st.session_state.lang)
+        if matches_lang_filter(l_info["code"], source_lang_filter) and q_low in blob.lower():
+            search_hits.append(f"📚 `{l_info['label']}` **[Projekt {m.get('trackId')}] {m['title']}** — {m['content'][:160]}...")
+    with st.container(border=True):
+        if search_hits:
+            st.markdown(f"**{'Search results' if is_en else 'Wyniki wyszukiwania'} ({len(search_hits)}):**")
+            for sh in search_hits[:15]:
+                st.markdown(f"- {sh}")
+        else:
+            st.caption("No matching items found." if is_en else "Brak dopasowań dla wpisanego zapytania.")
+
+
+# ==============================================================================
+# ZAKŁADKI GŁÓWNE PORTALU
+# ==============================================================================
+tab_study, tab_map, tab_ws, tab_mat, tab_new, tab_graph, tab_security = st.tabs([
+    L["tab1"],
+    L["tab2"],
+    f"{L['tab3']} ({len(db['subprojects'])})",
+    f"{L['tab4']} ({len(db['materials'])})",
+    L["tab5"],
+    L["tab6"],
+    L["tab7"],
+])
+
+
+def render_link_with_lang_badge(lnk: dict, ui_lang: str) -> str:
+    label = lnk.get("label", "")
+    url = lnk.get("url", "")
+    if "🇵🇱" in label or any(k in url.lower() for k in ["pwn.pl", "helion.pl", "zpe.gov.pl", "polsl.pl", "agh.edu.pl", "gios.gov.pl", "/pl", "ccpress.pl"]):
+        tag = "`[PL 🇵🇱]`"
+    else:
+        tag = "`[EN 🇬🇧]`"
+    return f"- {tag} [{label}]({url})"
+
+
+# ------------------------------------------------------------------------------
+# ZAKŁADKA 1: MATERIAŁY DO NAUKI (8 DZIEDZIN + ODNOGI A-G + BIBLIOTEKA)
+# ------------------------------------------------------------------------------
+with tab_study:
     mode_study = st.radio(
-        "Wybierz warstwę drzewa do nauki:",
-        options=[
-            "1️⃣ Wspólne podstawy naukowe — 8 dziedzin po kolei (Matematyka → AI)",
-            "2️⃣ Odnogi tematyczne Ścieżek Badawczych (Projekty A–G po kolei)",
-            "3️⃣ GOLEM 15 — Biblioteka materiałów uzupełniających (Projekty C, D, E, F, G + Zasady korzystania)",
-        ],
+        L["studyModeLabel"],
+        options=[L["studyMode1"], L["studyMode2"], L["studyMode3"]],
         horizontal=True,
     )
 
     supp_lib = db.get("supplementaryLibrary", DEFAULT_SEED["supplementaryLibrary"])
     supp_by_track = {p["trackId"]: p for p in supp_lib.get("projects", [])}
 
-    if mode_study.startswith("1️⃣"):
-        st.markdown("### 🏛️ Wspólne podstawy naukowe — 8 dziedzin po kolei")
+    if mode_study == L["studyMode1"]:
         for fnd in sorted(db["foundationDisciplines"], key=lambda x: x["order"]):
             fid = fnd["id"]
-            fnd_materials = [
+            fname = FOUNDATION_EN[fid]["name"] if is_en else fnd["name"]
+            fdesc = FOUNDATION_EN[fid]["description"] if is_en else fnd["description"]
+            ftopics = FOUNDATION_EN[fid]["topics"] if is_en else fnd["topics"]
+
+            raw_fnd_mats = [
                 sm for sm in db.get("studyMaterials", [])
-                if sm.get("categoryType") == "FOUNDATION"
-                and sm.get("targetId") == fid
-                and (sm.get("status") == "approved" or st.session_state.is_admin)
+                if sm.get("categoryType") == "FOUNDATION" and sm.get("targetId") == fid
             ]
-            fnd_subprojects = [
-                sp for sp in db.get("subprojects", [])
-                if sp.get("trackId") == fid and (sp.get("status") == "approved" or st.session_state.is_admin)
-            ]
+            fnd_materials = []
+            for sm in raw_fnd_mats:
+                blob = f"{sm.get('title','')} {sm.get('content','')} {json.dumps(sm.get('links',[]), ensure_ascii=False)}"
+                l_info = detect_source_lang_info(blob, sm.get("sourceLang", ""), st.session_state.lang)
+                if matches_lang_filter(l_info["code"], source_lang_filter):
+                    fnd_materials.append((sm, l_info))
 
             with st.container(border=True):
                 c1, c2 = st.columns([4, 1])
                 with c1:
-                    st.markdown(f"### {fnd['order']}. {fnd['icon']} {fnd['name']}")
-                    st.write(fnd["description"])
-                    conn_badges = ", ".join(f"Projekt {tid}" for tid in fnd.get("connectedTracks", []))
-                    st.caption(f"🔗 Stanowi fundament dla ścieżek: **{conn_badges}**")
+                    st.markdown(f"### {fnd['order']}. {fnd['icon']} {fname}")
+                    st.write(fdesc)
+                    conn_badges = ", ".join(f"{'Track' if is_en else 'Projekt'} {tid}" for tid in fnd.get("connectedTracks", []))
+                    st.caption(f"🔗 {'Foundation for tracks' if is_en else 'Fundament dla ścieżek'}: **{conn_badges}**")
                 with c2:
-                    st.metric("Materiały do nauki", len(fnd_materials))
-                    st.metric("Środowiska nauki", len(fnd_subprojects))
+                    st.metric(L["assignedMaterials"], len(fnd_materials))
 
-                col_topics, col_mats = st.columns([1, 1])
+                col_topics, col_mats = st.columns([1, 1.15])
                 with col_topics:
-                    st.markdown("**Szczegółowe zagadnienia i działy do opanowania po kolei:**")
-                    for idx_t, topic_item in enumerate(fnd["topics"], start=1):
+                    st.markdown(f"**{L['topicsHeader']}**")
+                    for idx_t, topic_item in enumerate(ftopics, start=1):
                         st.markdown(f"**{fnd['order']}.{idx_t}.** {topic_item}")
 
                 with col_mats:
-                    st.markdown(f"**Przypisane materiały do nauki ({len(fnd_materials)}):**")
-                    if not fnd_materials:
-                        st.caption("Brak przypisanych materiałów. Dodaj pierwszy materiał przyciskiem poniżej!")
-                    for sm in fnd_materials:
+                    st.markdown(f"**{L['assignedMaterials']} ({len(fnd_materials)}):**")
+                    for sm, l_info in fnd_materials:
                         with st.container(border=True):
-                            st_badge = "🟢 Zatwierdzony" if sm.get("status") == "approved" else "🟡 Oczekuje na zgodę Admina"
-                            st.caption(f"📌 Dział: *{sm.get('topic', 'Ogólny')}* | Poziom: **{sm.get('level', 'Podstawowy')}** | {sm.get('format', 'Materiał')} | {st_badge}")
+                            st.markdown(
+                                f"<span class='golem-lang-tag {'en' if l_info['code']=='EN' else ('bi' if l_info['code']=='PL+EN' else '')}'>{l_info['label']}</span> "
+                                f"<span style='font-size:0.78rem; color:#94a3b8; margin-left:0.4rem;'>{sm.get('level', '')} • {sm.get('format', '')}</span>",
+                                unsafe_allow_html=True,
+                            )
                             st.markdown(f"**{sm['title']}**")
                             st.write(sm["content"])
                             if sm.get("links"):
-                                st.markdown("**🔗 Odnośniki i linki źródłowe:**")
+                                st.markdown(f"**{L['sourceLinks']}**")
                                 for lnk in sm["links"]:
-                                    st.markdown(f"- [🔗 {lnk['label']}]({lnk['url']})")
+                                    st.markdown(render_link_with_lang_badge(lnk, st.session_state.lang))
                             elif sm.get("url"):
-                                st.markdown(f"[🔗 Otwórz materiał / źródło]({sm['url']})")
-                            st.caption(f"Dodał(a): {sm.get('author', 'Gość')}")
+                                st.markdown(f"- [🔗 {sm['url']}]({sm['url']})")
 
-                c_btn1, c_btn2 = st.columns(2)
-                with c_btn1:
-                    with st.popover(f"➕ Dodaj materiał do nauki: {fnd['name']}", use_container_width=True):
-                        with st.form(f"add_study_fnd_{fid}"):
-                            sm_topic = st.selectbox("Wybierz dział z tej dziedziny", options=fnd["topics"] + ["Cała dziedzina / Ogólne"])
-                            sm_title = st.text_input("Tytuł materiału do nauki (np. podręcznik, wykład, kurs, skrypt)*")
-                            c_l, c_f = st.columns(2)
-                            sm_level = c_l.selectbox("Poziom", ["Podstawowy", "Średniozaawansowany", "Zaawansowany / Akademicki"])
-                            sm_format = c_f.selectbox("Format", ["Podręcznik / Książka", "Kurs wideo / Wykład", "Notatka / Skrypt do nauki", "Zbiór zadań / Ćwiczenia", "Kod / Notebook interaktywny"])
-                            sm_content = st.text_area("Opis / streszczenie / wskazówki do nauki*")
-                            sm_url = st.text_input("Link do materiału / PDF / repozytorium (opcjonalnie)")
-                            sm_author = st.text_input("Autor zgłoszenia", value=get_contributor_signature())
-                            if st.form_submit_button("📥 Zapisz materiał do nauki"):
-                                if sm_title.strip() and sm_content.strip():
-                                    db.setdefault("studyMaterials", []).insert(0, {
-                                        "id": f"smat-{int(time.time()*1000)}",
-                                        "categoryType": "FOUNDATION",
-                                        "targetId": fid,
-                                        "topic": sm_topic,
-                                        "title": sm_title.strip(),
-                                        "level": sm_level,
-                                        "format": sm_format,
-                                        "content": sm_content.strip(),
-                                        "url": sm_url.strip(),
-                                        "author": sm_author.strip() or "Gość",
-                                        "status": "approved" if can_auto_approve() else "pending",
-                                        "createdAt": datetime.utcnow().isoformat() + "Z",
-                                    })
-                                    save_db(db)
-                                    st.success("Dodano materiał do nauki!")
-                                    st.rerun()
-                with c_btn2:
-                    with st.popover(f"🔬 Uruchom środowisko badawcze / nauki dla: {fnd['name']}", use_container_width=True):
-                        with st.form(f"add_ws_fnd_{fid}"):
-                            w_topic = st.selectbox("Dział tematyczny", options=fnd["topics"])
-                            w_title = st.text_input("Nazwa środowiska / podprojektu*")
-                            w_desc = st.text_area("Cel nauki lub badania w tym środowisku*")
-                            w_hyp = st.text_input("Hipoteza / główne pytanie badawcze (opcjonalnie)")
-                            w_auth = st.text_input("Autor", value=get_contributor_signature())
-                            if st.form_submit_button("🚀 Uruchom środowisko"):
-                                if w_title.strip() and w_desc.strip():
-                                    approval = "approved" if can_auto_approve() else "pending"
-                                    db["subprojects"].insert(0, {
-                                        "id": f"sub-{int(time.time()*1000)}",
-                                        "trackId": fid,
-                                        "secondaryTracks": fnd.get("connectedTracks", [])[:2],
-                                        "branchTopic": w_topic,
-                                        "title": w_title.strip(),
-                                        "author": w_auth.strip() or "Gość",
-                                        "status": approval,
-                                        "createdAt": datetime.utcnow().isoformat() + "Z",
-                                        "description": w_desc.strip(),
-                                        "philosophicalNote": "",
-                                        "workspace": {
-                                            "hypotheses": [
-                                                {
-                                                    "id": f"hyp-{int(time.time()*1000)}",
-                                                    "statement": w_hyp.strip(),
-                                                    "status": "Hipoteza otwarta",
-                                                    "author": w_auth.strip() or "Gość",
-                                                    "approvalStatus": approval,
-                                                }
-                                            ] if w_hyp.strip() else [],
-                                            "notes": [],
-                                            "bibliography": [],
-                                        },
-                                    })
-                                    save_db(db)
-                                    st.success("Uruchomiono środowisko! Przejdź do zakładki „🔬 3. Środowiska Badawcze”.")
-                                    st.rerun()
+                with st.popover(f"{L['addStudyMatBtn']}: {fname}", use_container_width=True):
+                    with st.form(f"owner_add_study_fnd_{fid}", clear_on_submit=True):
+                        sm_topic = st.selectbox("Dział / Topic", options=fnd["topics"] + ["Ogólne / General"])
+                        sm_title = st.text_input("Tytuł materiału / Material title*")
+                        c_l, c_f, c_lg = st.columns(3)
+                        sm_level = c_l.selectbox("Poziom / Level", ["Podstawowy / Basic", "Średniozaawansowany / Intermediate", "Zaawansowany / Advanced"])
+                        sm_format = c_f.selectbox("Format", ["Podręcznik / Książka", "Kurs / Wykład", "Notatka własna", "Kod / Symulacja"])
+                        sm_lang = c_lg.selectbox(L["sourceLangLabel"], ["PL", "EN", "PL+EN"])
+                        sm_content = st.text_area("Opis / notatka własna*")
+                        sm_url = st.text_input("Link URL / DOI (opcjonalnie)")
+                        if st.form_submit_button(L["saveBtn"], type="primary"):
+                            if sm_title.strip() and sm_content.strip():
+                                db.setdefault("studyMaterials", []).insert(0, {
+                                    "id": f"smat-{int(time.time()*1000)}",
+                                    "categoryType": "FOUNDATION",
+                                    "targetId": fid,
+                                    "topic": sm_topic,
+                                    "title": sm_title.strip(),
+                                    "level": sm_level,
+                                    "format": sm_format,
+                                    "sourceLang": sm_lang,
+                                    "content": sm_content.strip(),
+                                    "url": sm_url.strip(),
+                                    "author": "Ireneusz",
+                                    "status": "approved",
+                                    "createdAt": datetime.utcnow().isoformat() + "Z",
+                                })
+                                save_db(db)
+                                st.rerun()
 
-    elif mode_study.startswith("2️⃣"):
-        st.markdown("### 🧭 Materiały do nauki według konkretnych odnóg Projektów A–G")
+    elif mode_study == L["studyMode2"]:
         for track in db["tracks"]:
             tid = track["id"]
+            t_code = TRACK_EN[tid]["code"] if is_en else track["code"]
+            t_name = TRACK_EN[tid]["name"] if is_en else track["name"]
+            t_goal = TRACK_EN[tid]["goal"] if is_en else track["goal"]
+            t_q = TRACK_EN[tid]["guidingQuestion"] if is_en else track["guidingQuestion"]
+
             tr_study_mats = [
                 sm for sm in db.get("studyMaterials", [])
-                if sm.get("categoryType") == "TRACK"
-                and sm.get("targetId") == tid
-                and (sm.get("status") == "approved" or st.session_state.is_admin)
+                if sm.get("categoryType") == "TRACK" and sm.get("targetId") == tid
             ]
             all_branches = get_all_branches_for_track(db["tracks"], tid)
 
             with st.container(border=True):
-                st.markdown(f"### {track['code']} — {track['name']}")
-                st.caption(f"**Cel:** {track['goal']} | **Pytanie przewodnie:** *{track['guidingQuestion']}*")
+                st.markdown(f"### {t_code} — {t_name}")
+                st.caption(f"**{'Goal' if is_en else 'Cel'}:** {t_goal} | **{'Guiding question' if is_en else 'Pytanie przewodnie'}:** *{t_q}*")
 
                 if tid in supp_by_track:
                     sp_proj = supp_by_track[tid]
                     st.info(f"**{sp_proj['sequenceLabel']}:** {sp_proj['sequence']}")
 
                 for sec in track["sections"]:
-                    st.markdown(f"**{sec['title']} — po kolei:**")
+                    st.markdown(f"**{sec['title']}:**")
                     for b_idx, branch_item in enumerate(sec["items"], start=1):
                         branch_mats = [m for m in tr_study_mats if m.get("topic") == branch_item]
-                        st.markdown(f"- **{b_idx}. {branch_item}** *(materiały do nauki: {len(branch_mats)})*")
+                        st.markdown(f"- **{b_idx}. {branch_item}**")
                         for bm in branch_mats:
-                            url_part = f" — [🔗 Główny link]({bm['url']})" if bm.get("url") else ""
-                            st.markdown(
-                                f"  - 📖 **{bm['title']}** ({bm.get('level')}, {bm.get('format')}) — {bm['content']}{url_part} "
-                                f"*(dodał: {bm.get('author')})*"
-                            )
+                            blob = f"{bm.get('title','')} {bm.get('content','')} {json.dumps(bm.get('links',[]), ensure_ascii=False)}"
+                            l_info = detect_source_lang_info(blob, bm.get("sourceLang", ""), st.session_state.lang)
+                            if not matches_lang_filter(l_info["code"], source_lang_filter):
+                                continue
+                            url_part = f" — [🔗 Link]({bm['url']})" if bm.get("url") else ""
+                            st.markdown(f"  - `{l_info['label']}` 📖 **{bm['title']}** ({bm.get('level')}) — {bm['content']}{url_part}")
                             for lnk in bm.get("links", []):
-                                st.markdown(f"    - 🔗 [{lnk['label']}]({lnk['url']})")
+                                st.markdown("  " + render_link_with_lang_badge(lnk, st.session_state.lang))
 
                 if tid in supp_by_track:
-                    with st.expander(f"📚 Biblioteka materiałów uzupełniających i odnośników dla {track['code']}", expanded=True):
+                    with st.expander(f"📚 {'Supplementary Library & Source Links' if is_en else 'Biblioteka materiałów uzupełniających i linki źródłowe'} ({t_code})", expanded=True):
                         sp_proj = supp_by_track[tid]
                         cols_g = st.columns(len(sp_proj["groups"]))
                         for g_idx, grp in enumerate(sp_proj["groups"]):
                             with cols_g[g_idx]:
-                                st.markdown(f"**{grp['heading']}:**")
+                                g_lang_badge = "🇵🇱 `[PL]`" if "polsku" in grp["heading"].lower() else ("🇬🇧 `[EN]`" if "angielsku" in grp["heading"].lower() else "🌐 `[PL/EN]`")
+                                st.markdown(f"**{g_lang_badge} {grp['heading']}:**")
                                 for itm in grp["items"]:
                                     st.markdown(f"- {itm}")
                         if sp_proj.get("links"):
-                            st.markdown("**🔗 Bezpośrednie odnośniki i linki źródłowe:**")
+                            st.markdown(f"**{L['sourceLinks']}**")
                             for lnk in sp_proj["links"]:
-                                st.markdown(f"- [{lnk['label']}]({lnk['url']})")
-
-                with st.popover(f"➕ Dodaj materiał do nauki dla odnogi {track['code']}", use_container_width=True):
-                    with st.form(f"add_study_trk_{tid}"):
-                        sm_topic = st.selectbox("Wybierz konkretną odnogę projektu", options=all_branches)
-                        sm_title = st.text_input("Tytuł materiału do nauki*")
-                        c_l, c_f = st.columns(2)
-                        sm_level = c_l.selectbox("Poziom", ["Podstawowy", "Średniozaawansowany", "Zaawansowany / Badawczy"])
-                        sm_format = c_f.selectbox("Format", ["Podręcznik / Książka", "Kurs / Wykład", "Artykuł przeglądowy", "Notatka do nauki", "Symulacja / Kod"])
-                        sm_content = st.text_area("Opis zagadnienia / streszczenie materiału*")
-                        sm_url = st.text_input("Link zewnętrzny / DOI (opcjonalnie)")
-                        sm_author = st.text_input("Autor", value=get_contributor_signature())
-                        if st.form_submit_button("📥 Zapisz materiał do nauki"):
-                            if sm_title.strip() and sm_content.strip():
-                                db.setdefault("studyMaterials", []).insert(0, {
-                                    "id": f"smat-{int(time.time()*1000)}",
-                                    "categoryType": "TRACK",
-                                    "targetId": tid,
-                                    "topic": sm_topic,
-                                    "title": sm_title.strip(),
-                                    "level": sm_level,
-                                    "format": sm_format,
-                                    "content": sm_content.strip(),
-                                    "url": sm_url.strip(),
-                                    "author": sm_author.strip() or "Gość",
-                                    "status": "approved" if can_auto_approve() else "pending",
-                                    "createdAt": datetime.utcnow().isoformat() + "Z",
-                                })
-                                save_db(db)
-                                st.success("Zapisano materiał do nauki!")
-                                st.rerun()
+                                st.markdown(render_link_with_lang_badge(lnk, st.session_state.lang))
 
     else:
         st.markdown(f"### 📖 {supp_lib['title']}")
         st.markdown(f"*{supp_lib['description']}*")
 
         with st.container(border=True):
-            st.markdown("#### 📜 Zasady korzystania z biblioteki")
+            st.markdown("#### 📜 " + ("Library Rules (1–6)" if is_en else "Zasady korzystania z biblioteki (1–6)"))
             for r_idx, rule_txt in enumerate(supp_lib.get("rules", []), start=1):
                 st.markdown(f"**{r_idx}.** {rule_txt}")
 
@@ -2747,112 +2779,54 @@ with tab_study:
                         for b_item in stage.get("items", []):
                             st.markdown(f"- {b_item}")
                 if reading_order.get("principle"):
-                    st.info(f"**Zasada:** {reading_order['principle']}")
+                    st.info(f"**{'Principle' if is_en else 'Zasada'}:** {reading_order['principle']}")
 
         for sp_proj in supp_lib.get("projects", []):
-            tid = sp_proj["trackId"]
-            cat_type = "FOUNDATION" if tid.startswith("FND-") else "TRACK"
-            tr_study_mats = [
-                sm for sm in db.get("studyMaterials", [])
-                if sm.get("categoryType") == cat_type
-                and sm.get("targetId") == tid
-                and (sm.get("status") == "approved" or st.session_state.is_admin)
-            ]
-            if tid in foundations_by_id:
-                all_branches = foundations_by_id[tid].get("topics", ["Ogólne"])
-            else:
-                all_branches = get_all_branches_for_track(db["tracks"], tid) or ["Ogólne"]
-
             with st.container(border=True):
                 st.markdown(f"### {sp_proj['title']}")
                 st.info(f"**{sp_proj['sequenceLabel']}:** {sp_proj['sequence']}")
-
                 cols_grp = st.columns(len(sp_proj["groups"]))
                 for g_idx, grp in enumerate(sp_proj["groups"]):
                     with cols_grp[g_idx]:
-                        st.markdown(f"#### {grp['heading']}")
+                        g_lang_badge = "🇵🇱 `[PL]`" if "polsku" in grp["heading"].lower() else ("🇬🇧 `[EN]`" if "angielsku" in grp["heading"].lower() else "🌐 `[PL/EN]`")
+                        st.markdown(f"#### {g_lang_badge} {grp['heading']}")
                         for item_txt in grp["items"]:
                             st.markdown(f"- {item_txt}")
-
                 if sp_proj.get("links"):
-                    st.markdown("#### 🔗 Bezpośrednie linki i odnośniki do źródeł")
+                    st.markdown(f"#### {L['sourceLinks']}")
                     for lnk in sp_proj["links"]:
-                        st.markdown(f"- [{lnk['label']}]({lnk['url']})")
-
-                if tr_study_mats:
-                    st.markdown(f"**Przypisane karty materiałów do nauki ({len(tr_study_mats)}):**")
-                    for bm in tr_study_mats:
-                        url_part = f" — [🔗 Otwórz główne źródło]({bm['url']})" if bm.get("url") else ""
-                        st.markdown(f"- 📖 **{bm['title']}** (*{bm.get('format')}*, poziom: *{bm.get('level')}*): {bm['content']}{url_part}")
-                        for lnk in bm.get("links", []):
-                            st.markdown(f"  - 🔗 [{lnk['label']}]({lnk['url']})")
-
-                with st.popover(f"➕ Dodaj nową pozycję do biblioteki ({sp_proj['title']})", use_container_width=True):
-                    with st.form(f"add_supp_lib_{tid}"):
-                        sm_topic = st.selectbox("Dział / odnoga projektu", options=all_branches)
-                        sm_title = st.text_input("Tytuł pozycji / źródła*")
-                        c_l, c_f = st.columns(2)
-                        sm_level = c_l.selectbox("Poziom", ["Podstawowy (Bezpłatny)", "Akademicki / Podręcznik", "Badawczy / Przegląd naukowy"])
-                        sm_format = c_f.selectbox("Kategoria", ["Po polsku", "Po angielsku", "Darmowe źródło online", "Temat do dalszego studiowania"])
-                        sm_content = st.text_area("Opis / zakres zastosowania*")
-                        sm_url = st.text_input("Link URL (opcjonalnie)")
-                        sm_author = st.text_input("Dodał(a)", value=get_contributor_signature())
-                        if st.form_submit_button("📥 Dodaj do biblioteki"):
-                            if sm_title.strip() and sm_content.strip():
-                                db.setdefault("studyMaterials", []).insert(0, {
-                                    "id": f"smat-{int(time.time()*1000)}",
-                                    "categoryType": cat_type,
-                                    "targetId": tid,
-                                    "topic": sm_topic,
-                                    "title": sm_title.strip(),
-                                    "level": sm_level,
-                                    "format": sm_format,
-                                    "content": sm_content.strip(),
-                                    "url": sm_url.strip(),
-                                    "author": sm_author.strip() or "Gość",
-                                    "status": "approved" if can_auto_approve() else "pending",
-                                    "createdAt": datetime.utcnow().isoformat() + "Z",
-                                })
-                                save_db(db)
-                                st.success("Dodano pozycję do biblioteki projektu!")
-                                st.rerun()
-
+                        st.markdown(render_link_with_lang_badge(lnk, st.session_state.lang))
 
 
 # ------------------------------------------------------------------------------
-# ZAKŁADKA 2: MAPA 7 ŚCIEŻEK (A-G)
+# ZAKŁADKA 2: MAPA 7 ŚCIEŻEK (PROJEKTY A-G)
 # ------------------------------------------------------------------------------
 with tab_map:
-    st.subheader("Mapa projektu badawczego — siedem powiązanych ścieżek (Projekty A–G)")
     st.info(
-        f"**Relacja między projektami F i G:**\n"
-        f"- {db['projectMeta']['fgRelation']['fPerspective']}\n"
-        f"- {db['projectMeta']['fgRelation']['gPerspective']}"
+        f"**{L['fgSummary']}**\n"
+        f"- {L['fPerspective']}\n"
+        f"- {L['gPerspective']}"
     )
-
     for track in db["tracks"]:
         tid = track["id"]
-        sub_list = [
-            s for s in db["subprojects"]
-            if s["trackId"] == tid and (s["status"] == "approved" or st.session_state.is_admin)
-        ]
-        mat_list = [
-            m for m in db["materials"]
-            if m["trackId"] == tid and (m["status"] == "approved" or st.session_state.is_admin)
-        ]
+        t_code = TRACK_EN[tid]["code"] if is_en else track["code"]
+        t_name = TRACK_EN[tid]["name"] if is_en else track["name"]
+        t_goal = TRACK_EN[tid]["goal"] if is_en else track["goal"]
+        t_q = TRACK_EN[tid]["guidingQuestion"] if is_en else track["guidingQuestion"]
+        sub_list = [s for s in db["subprojects"] if s["trackId"] == tid]
+        mat_list = [m for m in db["materials"] if m["trackId"] == tid]
 
         with st.container(border=True):
             c_head1, c_head2 = st.columns([4, 1])
             with c_head1:
-                badge = " • WARSTWA PRZEKROJOWA" if tid == "E" else ""
-                st.markdown(f"### {track['code']} — {track['name']}{badge}")
-                st.markdown(f"**Cel:** {track['goal']}")
-                st.markdown(f"> **Pytanie przewodnie:** *{track['guidingQuestion']}*")
+                st.markdown(f"### {t_code} — {t_name}")
+                st.markdown(f"**{'Goal' if is_en else 'Cel'}:** {t_goal}")
+                st.markdown(f"> **{'Guiding question' if is_en else 'Pytanie przewodnie'}:** *{t_q}*")
                 if track.get("note"):
                     st.warning(track["note"])
             with c_head2:
-                st.metric("Aktywne środowiska", len(sub_list))
-                st.metric("Materiały badawcze", len(mat_list))
+                st.metric("Workspaces" if is_en else "Środowiska", len(sub_list))
+                st.metric("Materials" if is_en else "Materiały", len(mat_list))
 
             cols_sec = st.columns(len(track["sections"]))
             for idx, sec in enumerate(track["sections"]):
@@ -2861,290 +2835,177 @@ with tab_map:
                     for item in sec["items"]:
                         st.markdown(f"- {item}")
 
-            if sub_list:
-                st.markdown("**Powiązane podprojekty i środowiska badawcze w tej ścieżce:**")
-                for sp in sub_list:
-                    st.markdown(f"- 🔬 **{sp['title']}** *(odnoga: {sp.get('branchTopic', 'Ogólna')})*")
 
 # ------------------------------------------------------------------------------
-# ZAKŁADKA 3: ŚRODOWISKA BADAWCZE I PODPROJEKTY
+# ZAKŁADKA 3: PRYWATNE ŚRODOWISKA BADAWCZE I PODPROJEKTY WŁAŚCICIELA
 # ------------------------------------------------------------------------------
 with tab_ws:
-    st.subheader("🔬 Wirtualne Środowiska Badawcze i Podprojekty")
-    visible_sps = [
-        sp for sp in db["subprojects"]
-        if sp.get("status") == "approved" or st.session_state.is_admin
-    ]
-
-    if not visible_sps:
-        st.info("Brak zatwierdzonych środowisk badawczych.")
+    all_sps = db.get("subprojects", [])
+    if not all_sps:
+        st.info("Brak środowisk badawczych." if not is_en else "No research workspaces yet.")
     else:
-        all_filter_options = (
-            ["WSZYSTKIE"]
-            + [t["id"] for t in db["tracks"]]
-            + [f["id"] for f in db["foundationDisciplines"]]
+        selected_sp_id = st.selectbox(
+            "Wybierz środowisko badawcze / Select research workspace:",
+            options=[sp["id"] for sp in all_sps],
+            format_func=lambda sid: next((f"[{s['trackId']}] {s['title']}" for s in all_sps if s["id"] == sid), sid),
         )
+        active_sp = next((s for s in all_sps if s["id"] == selected_sp_id), all_sps[0])
+        ws = active_sp.setdefault("workspace", {"hypotheses": [], "notes": [], "bibliography": []})
 
-        def format_target_label(code_id):
-            if code_id == "WSZYSTKIE":
-                return "Wszystkie ścieżki (A–G) i dziedziny podstawowe"
-            if code_id in tracks_by_id:
-                return f"{tracks_by_id[code_id]['code']} — {tracks_by_id[code_id]['name']}"
-            if code_id in foundations_by_id:
-                return f"Podstawy: {foundations_by_id[code_id]['name']}"
-            return code_id
+        with st.container(border=True):
+            st.markdown(f"## {active_sp['title']}")
+            st.caption(f"**{'Track' if is_en else 'Ścieżka'}:** {active_sp['trackId']} | **{'Branch' if is_en else 'Odnoga'}:** {active_sp.get('branchTopic', '')}")
+            st.write(active_sp.get("description", ""))
+            if active_sp.get("philosophicalNote"):
+                st.info(f"**Projekt E (Filozofia):** {active_sp['philosophicalNote']}")
 
-        col_sel, col_filter = st.columns([2, 1])
-        with col_filter:
-            track_filter = st.selectbox(
-                "Filtruj wg ścieżki lub dziedziny:",
-                options=all_filter_options,
-                format_func=format_target_label,
-            )
-        filtered_sps = [
-            sp for sp in visible_sps
-            if track_filter == "WSZYSTKIE" or sp["trackId"] == track_filter or track_filter in sp.get("secondaryTracks", [])
-        ]
+        col_h, col_n, col_b = st.columns(3)
+        with col_h:
+            st.markdown("#### 1. " + ("Research Hypotheses" if is_en else "Hipotezy badawcze"))
+            for h in ws.get("hypotheses", []):
+                with st.container(border=True):
+                    st.caption(f"Status: **{h.get('status', 'Hipoteza otwarta')}**")
+                    st.write(h["statement"])
+            with st.popover("➕ " + ("Add hypothesis" if is_en else "Dodaj hipotezę"), use_container_width=True):
+                with st.form(f"form_hyp_{active_sp['id']}", clear_on_submit=True):
+                    h_stmt = st.text_area("Treść hipotezy / Hypothesis statement")
+                    h_stat = st.selectbox("Status", ["Hipoteza otwarta", "W weryfikacji", "Potwierdzona częściowo", "Wymaga korekty"])
+                    if st.form_submit_button(L["saveBtn"], type="primary"):
+                        if h_stmt.strip():
+                            ws.setdefault("hypotheses", []).append({
+                                "id": f"hyp-{int(time.time()*1000)}",
+                                "statement": h_stmt.strip(),
+                                "status": h_stat,
+                                "author": "Ireneusz",
+                                "approvalStatus": "approved",
+                            })
+                            save_db(db)
+                            st.rerun()
 
-        if not filtered_sps:
-            st.warning("Brak podprojektów dla wybranego filtru.")
-        else:
-            with col_sel:
-                selected_sp_id = st.selectbox(
-                    "Wybierz aktywne środowisko badawcze:",
-                    options=[sp["id"] for sp in filtered_sps],
-                    format_func=lambda sid: next(
-                        (f"[{format_target_label(s['trackId'])}] {s['title']}" for s in filtered_sps if s["id"] == sid),
-                        sid,
-                    ),
-                )
+        with col_n:
+            st.markdown("#### 2. " + ("Research Notebook" if is_en else "Notatnik badawczy"))
+            for n in ws.get("notes", []):
+                with st.container(border=True):
+                    st.markdown(f"**{n['title']}**")
+                    st.write(n["content"])
+            with st.popover("➕ " + ("Add research note" if is_en else "Dodaj notatkę badawczą"), use_container_width=True):
+                with st.form(f"form_note_{active_sp['id']}", clear_on_submit=True):
+                    n_title = st.text_input("Tytuł notatki / Note title")
+                    n_content = st.text_area("Treść / Content")
+                    if st.form_submit_button(L["saveBtn"], type="primary"):
+                        if n_title.strip() and n_content.strip():
+                            ws.setdefault("notes", []).append({
+                                "id": f"note-{int(time.time()*1000)}",
+                                "title": n_title.strip(),
+                                "content": n_content.strip(),
+                                "author": "Ireneusz",
+                                "createdAt": datetime.utcnow().isoformat() + "Z",
+                                "approvalStatus": "approved",
+                            })
+                            save_db(db)
+                            st.rerun()
 
-            active_sp = next((s for s in filtered_sps if s["id"] == selected_sp_id), filtered_sps[0])
-            ws = active_sp.setdefault("workspace", {"hypotheses": [], "notes": [], "bibliography": []})
+        with col_b:
+            st.markdown("#### 3. " + ("Bibliography & Sources" if is_en else "Bibliografia i źródła"))
+            for b in ws.get("bibliography", []):
+                with st.container(border=True):
+                    b_info = detect_source_lang_info(f"{b.get('citation','')} {b.get('url','')}", b.get("sourceLang", ""), st.session_state.lang)
+                    st.markdown(f"`{b_info['label']}` 📖 {b['citation']}")
+                    if b.get("url"):
+                        st.markdown(f"[🔗 Link / DOI]({b['url']})")
+            with st.popover("➕ " + ("Add source" if is_en else "Dodaj źródło bibliograficzne"), use_container_width=True):
+                with st.form(f"form_bib_{active_sp['id']}", clear_on_submit=True):
+                    b_cit = st.text_area("Cytowanie / Citation")
+                    b_lang = st.selectbox(L["sourceLangLabel"], ["PL", "EN", "PL+EN"])
+                    b_url = st.text_input("Link / DOI")
+                    if st.form_submit_button(L["saveBtn"], type="primary"):
+                        if b_cit.strip():
+                            ws.setdefault("bibliography", []).append({
+                                "id": f"bib-{int(time.time()*1000)}",
+                                "citation": b_cit.strip(),
+                                "sourceLang": b_lang,
+                                "url": b_url.strip(),
+                                "addedBy": "Ireneusz",
+                                "approvalStatus": "approved",
+                            })
+                            save_db(db)
+                            st.rerun()
 
-            with st.container(border=True):
-                st.markdown(f"## {active_sp['title']}")
-                status_txt = "🟢 Zatwierdzone środowisko" if active_sp.get("status") == "approved" else "🟡 Oczekuje na zgodę Administratora"
-                st.caption(
-                    f"**Obszar główny:** {format_target_label(active_sp['trackId'])} | "
-                    f"**Odnoga:** {active_sp.get('branchTopic', 'Ogólna')} | "
-                    f"**Autor:** {active_sp.get('author', 'Gość')} | {status_txt}"
-                )
-                st.write(active_sp.get("description", ""))
-                if active_sp.get("philosophicalNote"):
-                    st.info(f"**Nakładka interpretacyjna (Projekt E — Filozofia):** {active_sp['philosophicalNote']}")
-
-            col_h, col_n, col_b = st.columns(3)
-
-            with col_h:
-                st.markdown("#### 1. Hipotezy badawcze")
-                hyps = [
-                    h for h in ws.get("hypotheses", [])
-                    if h.get("approvalStatus", "approved") == "approved" or st.session_state.is_admin
-                ]
-                for h in hyps:
-                    with st.container(border=True):
-                        badge = "⏳ Do akceptacji" if h.get("approvalStatus") == "pending" else h.get("status", "Hipoteza otwarta")
-                        st.caption(f"Status: **{badge}** | Autor: {h.get('author', 'Gość')}")
-                        st.write(h["statement"])
-                with st.popover("➕ Dodaj hipotezę do środowiska", use_container_width=True):
-                    with st.form(f"form_hyp_{active_sp['id']}"):
-                        h_stmt = st.text_area("Treść hipotezy badawczej")
-                        h_stat = st.selectbox("Status", ["Hipoteza otwarta", "W weryfikacji", "Potwierdzona częściowo", "Wymaga korekty"])
-                        h_auth = st.text_input("Autor", value=get_contributor_signature())
-                        if st.form_submit_button("Zapisz hipotezę"):
-                            if h_stmt.strip():
-                                ws.setdefault("hypotheses", []).append({
-                                    "id": f"hyp-{int(time.time()*1000)}",
-                                    "statement": h_stmt.strip(),
-                                    "status": h_stat,
-                                    "author": h_auth.strip() or "Gość",
-                                    "approvalStatus": "approved" if can_auto_approve() else "pending",
-                                })
-                                save_db(db)
-                                st.rerun()
-
-            with col_n:
-                st.markdown("#### 2. Notatnik badawczy")
-                notes = [
-                    n for n in ws.get("notes", [])
-                    if n.get("approvalStatus", "approved") == "approved" or st.session_state.is_admin
-                ]
-                for n in notes:
-                    with st.container(border=True):
-                        st.markdown(f"**{n['title']}**")
-                        st.write(n["content"])
-                        st.caption(f"Autor: {n.get('author', 'Gość')}")
-                with st.popover("➕ Dodaj notatkę badawczą", use_container_width=True):
-                    with st.form(f"form_note_{active_sp['id']}"):
-                        n_title = st.text_input("Tytuł obserwacji / notatki")
-                        n_content = st.text_area("Treść notatki")
-                        n_auth = st.text_input("Autor", value=get_contributor_signature())
-                        if st.form_submit_button("Zapisz notatkę"):
-                            if n_title.strip() and n_content.strip():
-                                ws.setdefault("notes", []).append({
-                                    "id": f"note-{int(time.time()*1000)}",
-                                    "title": n_title.strip(),
-                                    "content": n_content.strip(),
-                                    "author": n_auth.strip() or "Gość",
-                                    "createdAt": datetime.utcnow().isoformat() + "Z",
-                                    "approvalStatus": "approved" if can_auto_approve() else "pending",
-                                })
-                                save_db(db)
-                                st.rerun()
-
-            with col_b:
-                st.markdown("#### 3. Bibliografia i źródła")
-                bibs = [
-                    b for b in ws.get("bibliography", [])
-                    if b.get("approvalStatus", "approved") == "approved" or st.session_state.is_admin
-                ]
-                for b in bibs:
-                    with st.container(border=True):
-                        st.write(f"📖 {b['citation']}")
-                        if b.get("url"):
-                            st.markdown(f"[🔗 Link / DOI]({b['url']})")
-                        st.caption(f"Dodał(a): {b.get('addedBy', 'Gość')}")
-                with st.popover("➕ Dodaj źródło bibliograficzne", use_container_width=True):
-                    with st.form(f"form_bib_{active_sp['id']}"):
-                        b_cit = st.text_area("Cytowanie (Autor, rok, tytuł, źródło)")
-                        b_url = st.text_input("Link / DOI (opcjonalnie)")
-                        b_auth = st.text_input("Dodał(a)", value=get_contributor_signature())
-                        if st.form_submit_button("Dodaj źródło"):
-                            if b_cit.strip():
-                                ws.setdefault("bibliography", []).append({
-                                    "id": f"bib-{int(time.time()*1000)}",
-                                    "citation": b_cit.strip(),
-                                    "url": b_url.strip(),
-                                    "addedBy": b_auth.strip() or "Gość",
-                                    "approvalStatus": "approved" if can_auto_approve() else "pending",
-                                })
-                                save_db(db)
-                                st.rerun()
 
 # ------------------------------------------------------------------------------
-# ZAKŁADKA 4: REPOZYTORIUM MATERIAŁÓW BADAWCZYCH I UZUPEŁNIAJĄCYCH
+# ZAKŁADKA 4: BIBLIOTEKA I REPOZYTORIUM Z OZNACZENIEM JĘZYKA ŹRÓDEŁ [PL] / [EN]
 # ------------------------------------------------------------------------------
 with tab_mat:
-    st.subheader("📚 Repozytorium Materiałów Badawczych i Biblioteka Projektu GOLEM 15")
-    supp_lib_mat = db.get("supplementaryLibrary", DEFAULT_SEED["supplementaryLibrary"])
-    with st.expander("📌 Zasady korzystania z biblioteki GOLEM 15 (1–6) oraz VI. Kolejność czytania", expanded=True):
-        for r_idx, rule_txt in enumerate(supp_lib_mat.get("rules", []), start=1):
-            st.markdown(f"**{r_idx}.** {rule_txt}")
-        ro_mat = supp_lib_mat.get("readingOrder")
-        if ro_mat:
-            st.markdown(f"#### 🧭 {ro_mat.get('title', 'VI. KOLEJNOŚĆ CZYTANIA')}")
-            ro_m_cols = st.columns(len(ro_mat.get("stages", [])))
-            for s_idx, stage in enumerate(ro_mat.get("stages", [])):
-                with ro_m_cols[s_idx]:
-                    st.markdown(f"**{stage['stage']}**")
-                    for b_item in stage.get("items", []):
-                        st.markdown(f"- {b_item}")
-            if ro_mat.get("principle"):
-                st.info(f"**Zasada:** {ro_mat['principle']}")
-
     c_m1, c_m2 = st.columns([1, 2])
     with c_m1:
         m_track_filter = st.selectbox(
-            "Ścieżka projektu",
-            options=["WSZYSTKIE"] + [t["id"] for t in db["tracks"]],
-            format_func=lambda x: "Wszystkie ścieżki (A–G)" if x == "WSZYSTKIE" else f"{tracks_by_id[x]['code']} — {tracks_by_id[x]['name']}",
+            "Track",
+            options=["ALL"] + [t["id"] for t in db["tracks"]],
+            format_func=lambda x: ("All Tracks (A–G)" if is_en else "Wszystkie ścieżki (A–G)") if x == "ALL" else f"{tracks_by_id[x]['code']} — {TRACK_EN[x]['name'] if is_en else tracks_by_id[x]['name']}",
             key="mat_track_filter",
         )
     with c_m2:
-        m_search = st.text_input("Szukaj w materiałach (tytuł, treść, autor, odnoga)...")
+        m_search = st.text_input("Filter repository..." if is_en else "Filtruj repozytorium (tytuł, treść, odnoga)...")
 
-    mats = [
-        m for m in db["materials"]
-        if (m.get("status") == "approved" or st.session_state.is_admin)
-        and (m_track_filter == "WSZYSTKIE" or m["trackId"] == m_track_filter)
-        and (
-            not m_search.strip()
-            or m_search.lower() in f"{m.get('title','')} {m.get('content','')} {m.get('author','')} {m.get('branchTopic','')}".lower()
-        )
-    ]
+    for m in db.get("materials", []):
+        if m_track_filter != "ALL" and m["trackId"] != m_track_filter:
+            continue
+        blob = f"{m.get('title','')} {m.get('content','')} {m.get('branchTopic','')} {json.dumps(m.get('links',[]), ensure_ascii=False)}"
+        l_info = detect_source_lang_info(blob, m.get("sourceLang", ""), st.session_state.lang)
+        if not matches_lang_filter(l_info["code"], source_lang_filter):
+            continue
+        if m_search.strip() and m_search.lower() not in blob.lower():
+            continue
 
-    if not mats:
-        st.info("Brak materiałów badawczych dla wybranych kryteriów.")
-    for m in mats:
         with st.container(border=True):
-            status_badge = "🟢 Zatwierdzony" if m.get("status") == "approved" else "🟡 Oczekuje na zgodę Administratora"
-            st.caption(f"**Projekt {m['trackId']}** • {m.get('type', 'Materiał')} • Odnoga: *{m.get('branchTopic') or 'Ogólna'}* • {status_badge}")
+            st.markdown(
+                f"<span class='golem-lang-tag {'en' if l_info['code']=='EN' else ('bi' if l_info['code']=='PL+EN' else '')}'>{l_info['label']}</span> "
+                f"<span style='font-size:0.8rem; color:#94a3b8; margin-left:0.5rem;'><strong>Projekt {m['trackId']}</strong> • {m.get('type', 'Materiał')} • {m.get('branchTopic') or ''}</span>",
+                unsafe_allow_html=True,
+            )
             st.markdown(f"### {m['title']}")
             st.write(m["content"])
             if m.get("links"):
-                st.markdown("**🔗 Odnośniki i linki do źródeł:**")
+                st.markdown(f"**{L['sourceLinks']}**")
                 for lnk in m["links"]:
-                    st.markdown(f"- [{lnk['label']}]({lnk['url']})")
+                    st.markdown(render_link_with_lang_badge(lnk, st.session_state.lang))
             elif m.get("url"):
-                st.markdown(f"[🔗 Otwórz źródło zewnętrzne / DOI]({m['url']})")
-            st.caption(f"Zgłosił(a): **{m.get('author', 'Gość')}**")
+                st.markdown(f"[🔗 {m['url']}]({m['url']})")
+
 
 # ------------------------------------------------------------------------------
-# ZAKŁADKA 5: DODAWANIE PODPROJEKTÓW I MATERIAŁÓW + DELIKATNY ASYSTENT AI
+# ZAKŁADKA 5: DODAWANIE WŁASNYCH MATERIAŁÓW I PODPROJEKTÓW PRZEZ WŁAŚCICIELA
 # ------------------------------------------------------------------------------
 with tab_new:
-    st.subheader("🚀 Inicjowanie nowych podprojektów / środowisk oraz dodawanie materiałów")
-    if can_auto_approve():
-        st.success(f"✓ **Tryb Publikacji Natychmiastowej aktywny ({get_contributor_signature()})** — Twoje wpisy zostaną opublikowane od razu bez kolejki moderacji!")
-    else:
-        st.info("ℹ️ Jesteś w trybie Gościa (wpisy trafiają do kolejki). Możesz przejść do zakładki **🧑‍🔬 7. Badacze i Weryfikacja AI**, aby uzyskać **stałe konto Zweryfikowanego Badacza** i publikować od razu bez akceptacji!")
-
-    with st.expander("🤖 Delikatny Asystent Metodologiczny AI — sprawdź klasyfikację epistemiczną i polską literaturę przed dodaniem wpisu", expanded=False):
-        ai_c1, ai_c2 = st.columns([1, 2])
-        with ai_c1:
-            ai_target = st.selectbox(
-                "Docelowa ścieżka / dziedzina:",
-                options=[t["id"] for t in db["tracks"]] + [f["id"] for f in db["foundationDisciplines"]],
-                format_func=lambda x: f"{tracks_by_id[x]['code']} — {tracks_by_id[x]['name']}" if x in tracks_by_id else f"Podstawy {foundations_by_id[x]['order']}: {foundations_by_id[x]['name']}",
-                key="ai_helper_target",
-            )
-        with ai_c2:
-            ai_draft_text = st.text_input("Wpisz roboczy tytuł lub temat swojego materiału / hipotezy:", key="ai_helper_draft")
-        if ai_draft_text.strip():
-            sug = ai_suggest_material_metadata(ai_draft_text, ai_draft_text, ai_target)
-            st.markdown(
-                f"- **Sugerowany status epistemiczny (Zasada 5):** `{sug['epistemicStatus']}`\n"
-                f"- **Rekomendowany punkt wyjścia z Biblioteki Golem 15 (🇵🇱):** {sug['recommendedLiterature']}"
-            )
-
     col_form_sp, col_form_mat = st.columns(2)
 
     with col_form_sp:
-        st.markdown("### 🔬 1. Uruchom nowy podprojekt i środowisko badawcze")
+        st.markdown("### 🔬 " + ("1. Create New Research Workspace / Subproject" if is_en else "1. Utwórz własny podprojekt i środowisko badawcze"))
         sp_track = st.selectbox(
-            "Wybierz główną ścieżkę (Projekt A–G)",
+            "Ścieżka główna / Main Track (A–G)",
             options=[t["id"] for t in db["tracks"]],
-            format_func=lambda x: f"{tracks_by_id[x]['code']} — {tracks_by_id[x]['name']}",
+            format_func=lambda x: f"{tracks_by_id[x]['code']} — {TRACK_EN[x]['name'] if is_en else tracks_by_id[x]['name']}",
             key="new_sp_track",
         )
         available_branches = get_all_branches_for_track(db["tracks"], sp_track)
-        with st.form("create_subproject_form"):
-            sp_branch = st.selectbox("Odnoga badawcza z zakresu ścieżki", options=available_branches + ["Inna / Nowa odnoga badawcza"])
-            sp_custom_branch = st.text_input("Jeśli wybrano inną odnogę — wpisz jej nazwę (opcjonalnie)")
-            sp_title = st.text_input("Tytuł podprojektu / środowiska badawczego*")
-            sp_secondary = st.multiselect(
-                "Powiązane ścieżki dodatkowe",
-                options=[t["id"] for t in db["tracks"] if t["id"] != sp_track],
-                default=["E"] if sp_track != "E" else [],
-            )
-            sp_desc = st.text_area("Cel i opis problemu badawczego*")
-            sp_hyp = st.text_input("Hipoteza startowa")
-            sp_phil = st.text_input("Nakładka interpretacyjna (Projekt E — Filozofia)")
-            sp_author = st.text_input("Autor / Inicjator*", value=get_contributor_signature())
-
-            if st.form_submit_button("🚀 Uruchom środowisko badawcze", use_container_width=True):
+        with st.form("create_subproject_form", clear_on_submit=True):
+            sp_branch = st.selectbox("Odnoga badawcza / Branch", options=available_branches + ["Inna / Custom"])
+            sp_custom_branch = st.text_input("Własna nazwa odnogi (opcjonalnie)")
+            sp_title = st.text_input("Tytuł podprojektu / Workspace title*")
+            sp_desc = st.text_area("Cel i opis problemu badawczego / Goal & description*")
+            sp_hyp = st.text_input("Hipoteza startowa / Initial hypothesis")
+            sp_phil = st.text_input("Notatka filozoficzna (Projekt E)")
+            if st.form_submit_button("🚀 " + ("Create Workspace" if is_en else "Utwórz środowisko badawcze"), type="primary", use_container_width=True):
                 if sp_title.strip() and sp_desc.strip():
                     final_branch = sp_custom_branch.strip() if sp_custom_branch.strip() else sp_branch
-                    approval = "approved" if can_auto_approve() else "pending"
                     db["subprojects"].insert(0, {
                         "id": f"sub-{int(time.time()*1000)}",
                         "trackId": sp_track,
-                        "secondaryTracks": sp_secondary,
+                        "secondaryTracks": ["E"],
                         "branchTopic": final_branch,
                         "title": sp_title.strip(),
-                        "author": sp_author.strip() or "Gość",
-                        "status": approval,
+                        "author": "Ireneusz",
+                        "status": "approved",
                         "createdAt": datetime.utcnow().isoformat() + "Z",
                         "description": sp_desc.strip(),
                         "philosophicalNote": sp_phil.strip(),
@@ -3154,8 +3015,8 @@ with tab_new:
                                     "id": f"hyp-{int(time.time()*1000)}",
                                     "statement": sp_hyp.strip(),
                                     "status": "Hipoteza otwarta",
-                                    "author": sp_author.strip() or "Gość",
-                                    "approvalStatus": approval,
+                                    "author": "Ireneusz",
+                                    "approvalStatus": "approved",
                                 }
                             ] if sp_hyp.strip() else [],
                             "notes": [],
@@ -3163,36 +3024,36 @@ with tab_new:
                         },
                     })
                     save_db(db)
-                    st.success("Utworzono środowisko badawcze!")
+                    st.success("Zapisano nowe środowisko!" if not is_en else "Workspace saved!")
                     st.rerun()
 
     with col_form_mat:
-        st.markdown("### 📚 2. Dodaj nowy materiał badawczy")
+        st.markdown("### 📚 " + ("2. Add New Research Material" if is_en else "2. Dodaj własny materiał badawczy / źródło"))
         mat_track = st.selectbox(
-            "Wybierz ścieżkę dla materiału (Projekt A–G)",
+            "Ścieżka (Projekt A–G)",
             options=[t["id"] for t in db["tracks"]],
-            format_func=lambda x: f"{tracks_by_id[x]['code']} — {tracks_by_id[x]['name']}",
+            format_func=lambda x: f"{tracks_by_id[x]['code']} — {TRACK_EN[x]['name'] if is_en else tracks_by_id[x]['name']}",
             key="new_mat_track",
         )
         mat_branches = get_all_branches_for_track(db["tracks"], mat_track)
-        with st.form("create_material_form"):
-            mat_branch = st.selectbox("Odnoga zakresu", options=mat_branches + ["Ogólna dla ścieżki"])
-            mat_type = st.selectbox(
+        with st.form("create_material_form", clear_on_submit=True):
+            mat_branch = st.selectbox("Odnoga zakresu", options=mat_branches + ["Ogólna"])
+            c_mt1, c_mt2 = st.columns(2)
+            mat_type = c_mt1.selectbox(
                 "Typ materiału",
                 [
-                    "Artykuł / Opracowanie naukowe",
-                    "Zestaw danych / Pomiary",
+                    "Opracowanie własne / Notatka",
+                    "Książka / Podręcznik",
+                    "Artykuł naukowy / Przegląd",
                     "Model matematyczny / Symulacja",
                     "Analiza filozoficzna / Bioetyczna",
-                    "Bibliografia / Źródło zewnętrzne",
                 ],
             )
+            mat_lang = c_mt2.selectbox(L["sourceLangLabel"], ["PL", "EN", "PL+EN"])
             mat_title = st.text_input("Tytuł materiału*")
-            mat_content = st.text_area("Treść / Abstrakt / Wnioski badawcze*")
-            mat_url = st.text_input("Link zewnętrzny / DOI (opcjonalnie)")
-            mat_author = st.text_input("Autor zgłoszenia*", value=get_contributor_signature())
-
-            if st.form_submit_button("📥 Wyślij materiał badawczy", use_container_width=True):
+            mat_content = st.text_area("Treść / Notatka / Wnioski*")
+            mat_url = st.text_input("Link źródłowy / DOI (opcjonalnie)")
+            if st.form_submit_button(L["saveBtn"], type="primary", use_container_width=True):
                 if mat_title.strip() and mat_content.strip():
                     db["materials"].insert(0, {
                         "id": f"mat-{int(time.time()*1000)}",
@@ -3201,225 +3062,75 @@ with tab_new:
                         "subprojectId": None,
                         "title": mat_title.strip(),
                         "type": mat_type,
-                        "author": mat_author.strip() or "Gość",
+                        "sourceLang": mat_lang,
+                        "author": "Ireneusz",
                         "content": mat_content.strip(),
                         "url": mat_url.strip(),
-                        "status": "approved" if can_auto_approve() else "pending",
+                        "status": "approved",
                         "createdAt": datetime.utcnow().isoformat() + "Z",
                     })
                     save_db(db)
-                    st.success("Zapisano materiał badawczy!")
+                    st.success("Zapisano materiał w bazie!" if not is_en else "Material saved!")
                     st.rerun()
 
+
 # ------------------------------------------------------------------------------
-# ZAKŁADKA 6: POWIĄZANIA MIĘDZYŚCIEŻKOWE (GRAF RELACJI A-G)
+# ZAKŁADKA 6: GRAF POWIĄZAŃ (A-G)
 # ------------------------------------------------------------------------------
 with tab_graph:
-    st.subheader("🕸️ Relacje międzyścieżkowe (A–G) oraz oś Kosmos (F) ↔ Ziemia (G)")
-    links = [
-        l for l in db.get("graphLinks", [])
-        if l.get("status", "approved") == "approved" or st.session_state.is_admin
-    ]
-    for lnk in links:
+    st.subheader("🕸️ " + ("Inter-Track Connections (A–G) & Space (F) ↔ Earth (G) Axis" if is_en else "Relacje międzyścieżkowe (A–G) oraz oś Kosmos (F) ↔ Ziemia (G)"))
+    for lnk in db.get("graphLinks", []):
         s_tr = tracks_by_id.get(lnk["source"], {"code": lnk["source"], "name": ""})
         t_tr = tracks_by_id.get(lnk["target"], {"code": lnk["target"], "name": ""})
         st.markdown(f"- **{s_tr['code']} ({s_tr['name']})** ↔ **{t_tr['code']} ({t_tr['name']})**: {lnk['label']}")
 
+
 # ------------------------------------------------------------------------------
-# ZAKŁADKA 7: STAŁE KONTA ZWERYFIKOWANYCH BADACZY I DELIKATNA WERYFIKACJA AI
+# ZAKŁADKA 7: BEZPIECZEŃSTWO, HASŁO WŁAŚCICIELA I AUTORYZACJA URZĄDZENIA
 # ------------------------------------------------------------------------------
-with tab_researchers:
-    st.subheader("🧑‍🔬 Zespół Stałych Badaczy & Autoryzacja z Delikatną Pomocą AI")
-    st.markdown(
-        "Aby właściciel projektu nie musiał ręcznie zatwierdzać każdej wrzutki, badacze mogą utworzyć **stałe konto Zweryfikowanego Badacza**. "
-        "Po przejściu przyjaznej weryfikacji metodologiczno-epistemicznej wspieranej przez **Asystenta AI** (lub po dodaniu przez Administratora), "
-        "wszystkie dodawane przez Ciebie materiały do nauki, artykuły, podprojekty i notatki są **publikowane natychmiastowo (`Zatwierdzone`)**."
-    )
+with tab_security:
+    st.subheader("🔒 " + ("Owner Security, Password & Trusted Device" if is_en else "Bezpieczeństwo Projektu, Hasło Właściciela i Autoryzacja Urządzenia"))
+    sec_c1, sec_c2 = st.columns(2)
 
-    col_res_left, col_res_right = st.columns([1.15, 1.35])
-
-    with col_res_left:
-        st.markdown(f"### 🏛️ Aktywni Stali Badacze ({len(active_researchers_list)})")
-        for r in active_researchers_list:
-            with st.container(border=True):
-                st.markdown(f"#### 🧑‍🔬 {r['name']}  `{r.get('badge', '✓ Stały Badacz')}`")
-                st.caption(f"**Rola:** {r.get('roleTitle', 'Badacz')} | **Obszar:** {r.get('specializationLabel', r.get('specialization', 'ALL'))}")
-                if r.get("affiliation"):
-                    st.caption(f"🏛️ Afiliacja / Zespół: {r['affiliation']}")
-                st.write(r.get("bio", ""))
-                if r.get("aiVerificationSummary"):
-                    st.caption(f"🤖 *{r['aiVerificationSummary']}*")
-
+    with sec_c1:
         with st.container(border=True):
-            st.markdown("#### 🔑 Szybkie logowanie na konto Stałego Badacza")
-            if st.session_state.active_researcher:
-                st.success(f"Jesteś zalogowany(a) jako: **{st.session_state.active_researcher['name']}** — masz aktywne uprawnienia do publikacji bez kolejki.")
-            elif active_researchers_list:
-                with st.form("tab_researcher_login_form", clear_on_submit=True):
-                    login_res_id = st.selectbox(
-                        "Wybierz swój profil Stałego Badacza",
-                        options=[r["id"] for r in active_researchers_list],
-                        format_func=lambda rid: next((f"{r['name']} — {r.get('roleTitle', '')}" for r in active_researchers_list if r["id"] == rid), rid),
-                    )
-                    login_res_pass = st.text_input("Twoje hasło Badacza", type="password", value="")
-                    if st.form_submit_button("🧑‍🔬 Zaloguj na stałe konto Badacza", type="primary", use_container_width=True):
-                        target_r = next((r for r in active_researchers_list if r["id"] == login_res_id), None)
-                        if verify_researcher_password(login_res_pass, target_r):
-                            st.session_state.active_researcher = target_r
-                            st.success(f"Zalogowano jako {target_r['name']}!")
-                            st.rerun()
-                        else:
-                            time.sleep(0.5)
-                            st.error("Nieprawidłowe hasło dla wybranego profilu Badacza.")
+            st.markdown("#### 💻 " + ("Trusted Owner Device Authorization" if is_en else "Autoryzacja Twojego Urządzenia i Przeglądarki"))
+            st.write(
+                "Projekt jest całkowicie zablokowany dla osób postronnych. "
+                "Na swoim prywatnym komputerze oraz poprzez prywatny link z tokenem urządzenia wchodzisz bezpośrednio bez konieczności każdorazowego wpisywania hasła."
+            )
+            c_d1, c_d2 = st.columns(2)
+            if c_d1.button("✓ Autoryzuj to urządzenie lokalnie i w URL", type="primary", use_container_width=True):
+                authorize_local_owner_device(db)
+                st.query_params["device_token"] = expected_dev_token
+                st.success("Urządzenie zostało autoryzowane! Możesz dodać bieżący adres URL do zakładek w swojej przeglądarce.")
+            if c_d2.button("🗑️ Usuń autoryzację tego urządzenia", use_container_width=True):
+                if os.path.exists(LOCAL_DEVICE_KEY_FILE):
+                    try:
+                        os.remove(LOCAL_DEVICE_KEY_FILE)
+                    except Exception:
+                        pass
+                st.query_params.clear()
+                st.warning("Autoryzacja urządzenia została wyczyszczona — przy kolejnym wejściu wymagane będzie hasło.")
 
-    with col_res_right:
+            st.divider()
+            st.download_button(
+                "⬇ Pobierz kopię zapasową bazy JSON",
+                data=json.dumps(db, ensure_ascii=False, indent=2),
+                file_name="the_golem_15_private_backup.json",
+                mime="application/json",
+                use_container_width=True,
+            )
+
+    with sec_c2:
         with st.container(border=True):
-            st.markdown("### 🤖 Dołącz na stałe jako Zweryfikowany Badacz (Delikatna Weryfikacja AI)")
-            st.caption(
-                "Wypełnij poniższą kartę badawczą. Asystent AI oceni spójność z metodologią projektu The Golem 15 "
-                "(odróżnianie wiedzy potwierdzonej od hipotez i spekulacji oraz oparcie w literaturze). "
-                "Po uzyskaniu min. **75/100 pkt** Twoje stałe konto zostaje od razu aktywowane!"
-            )
-
-            spec_options = (
-                [t["id"] for t in db["tracks"]]
-                + [f["id"] for f in db["foundationDisciplines"]]
-            )
-
-            def format_spec_option(code):
-                if code in tracks_by_id:
-                    return f"{tracks_by_id[code]['code']} — {tracks_by_id[code]['name']}"
-                if code in foundations_by_id:
-                    return f"Podstawy {foundations_by_id[code]['order']}: {foundations_by_id[code]['name']}"
-                return code
-
-            cand_name = st.text_input("Imię i nazwisko / Pseudonim naukowy*", key="cand_name")
-            cand_spec = st.selectbox("Główna dziedzina lub ścieżka badawcza*", options=spec_options, format_func=format_spec_option, key="cand_spec")
-            c_af1, c_af2 = st.columns(2)
-            cand_role = c_af1.text_input("Tytuł / Rola w projekcie (np. Badacz Neuroinformatyki)", value="Stały Badacz The Golem 15", key="cand_role")
-            cand_aff = c_af2.text_input("Afiliacja / Uczelnia / Koło / ORCID (opcjonalnie)", key="cand_aff")
-
-            cand_sample = st.text_area(
-                "1️⃣ Krótka próbka badawcza / opis zagadnienia, które chcesz rozwijać w Golemie 15 (2–4 zdania)*",
-                placeholder="Np. Badam modele pobudliwości błony neuronalnej (Hodgkina-Huxleya oraz Izhikevicha) pod kątem estymacji kosztu obliczeniowego symulacji sieci korowych w Projekcie B...",
-                key="cand_sample",
-            )
-            cand_cit = st.text_input(
-                "2️⃣ Przywołane źródło bazowe (podręcznik z Biblioteki Golem 15, autor, PWN, OpenStax lub link DOI/URL)*",
-                placeholder="Np. James W. Kalat — Biologiczne podstawy psychologii (PWN) / Dayan & Abbott — Theoretical Neuroscience",
-                key="cand_cit",
-            )
-
-            if st.button("💡 Poproś Asystenta AI o delikatną podpowiedź do Twojej dziedziny", use_container_width=True):
-                hint_meta = ai_suggest_material_metadata(cand_name, cand_sample, cand_spec)
-                kw_hint = ", ".join(DOMAIN_KEYWORDS.get(cand_spec, ["model", "hipoteza", "pomiar"])[:6])
-                st.info(
-                    f"🤖 **Podpowiedź Asystenta AI dla obszaru {format_spec_option(cand_spec)}:**\n"
-                    f"- **Warto przywołać literaturę podstawową:** {hint_meta['recommendedLiterature']}\n"
-                    f"- **Przykładowe pojęcia kluczowe rozpoznawane w tym obszarze:** *{kw_hint}*\n"
-                    f"- **Wskazówka metodologiczna:** Zaznacz w opisie, co jest modelem empirycznym/podręcznikowym, a co hipotezą badawczą."
-                )
-
-            q1_ans = st.selectbox(
-                "3️⃣ Kalibracja epistemiczna (Zasada 5 Golema 15): Jaki status ma pełna emulacja ludzkiego mózgu (WBE) i przeniesienie umysłu?",
-                options=[
-                    "Hipoteza / długoterminowy cel badawczy i mapa drogowa wymagająca badań podstawowych (nie wiedza potwierdzona)",
-                    "Wiedza w pełni potwierdzona i gotowa technologia wdrożeniowa",
-                    "Zagadnienie niewymagające weryfikacji matematycznej ani biologicznej",
-                ],
-                key="cand_q1",
-            )
-            q2_ans = st.selectbox(
-                "4️⃣ Kalibracja źródłowa (Zasady 1–4): Od jakich materiałów zaczynamy pracę nad nową dziedziną w Golemie 15?",
-                options=[
-                    "Od podręczników podstawowych (w pierwszej kolejności polskich 🇵🇱 i otwartych zasobów jak OpenStax/ZPE/NASA/ESA) oraz ćwiczeń",
-                    "Od niezweryfikowanych spekulacji bez znajomości podstaw danej dziedziny",
-                    "Wyłącznie od płatnych monografii bez sprawdzania wydania i przekładu",
-                ],
-                key="cand_q2",
-            )
-
-            c_pw1, c_pw2 = st.columns(2)
-            cand_pass = c_pw1.text_input("Ustaw własne hasło Stałego Badacza (min. 6 znaków)*", type="password", value="", key="cand_pass")
-            cand_pass2 = c_pw2.text_input("Powtórz hasło Badacza*", type="password", value="", key="cand_pass2")
-
-            if st.button("🤖 Zweryfikuj przez Asystenta AI i aktywuj stałe konto Badacza", type="primary", use_container_width=True):
-                if not cand_name.strip():
-                    st.error("Podaj imię i nazwisko lub pseudonim naukowy.")
-                elif len(cand_pass.strip()) < 6:
-                    st.error("Hasło Badacza musi mieć co najmniej 6 znaków.")
-                elif cand_pass != cand_pass2:
-                    st.error("Wpisane hasła nie są identyczne.")
-                else:
-                    eval_res = evaluate_researcher_application_ai(
-                        cand_name, cand_spec, cand_sample, cand_cit, q1_ans, q2_ans
-                    )
-                    st.markdown(f"#### 📊 Wynik Weryfikacji Metodologicznej AI: **{eval_res['score']} / 100 pkt**")
-                    for fb in eval_res["feedback"]:
-                        st.markdown(f"- {fb}")
-
-                    if eval_res["passed"]:
-                        new_researcher = {
-                            "id": f"res-{int(time.time()*1000)}",
-                            "name": cand_name.strip(),
-                            "handle": "@" + cand_name.strip().lower().replace(" ", "-"),
-                            "roleTitle": cand_role.strip() or "Stały Badacz The Golem 15",
-                            "specialization": cand_spec,
-                            "specializationLabel": format_spec_option(cand_spec),
-                            "affiliation": cand_aff.strip(),
-                            "orcid": "",
-                            "bio": f"{cand_sample.strip()} (Źródło bazowe: {cand_cit.strip()})",
-                            "aiVerificationScore": eval_res["score"],
-                            "aiVerificationSummary": eval_res["summary"],
-                            "badge": f"✓ Stały Badacz (AI {eval_res['score']}/100)",
-                            "status": "active",
-                            "joinedAt": datetime.utcnow().isoformat() + "Z",
-                            "auth": create_admin_auth_record(cand_pass.strip(), iterations=260000),
-                        }
-                        db.setdefault("verifiedResearchers", []).append(new_researcher)
-                        save_db(db)
-                        st.session_state.active_researcher = new_researcher
-                        st.success(
-                            f"🎉 Gratulacje, **{new_researcher['name']}**! Twoje stałe konto Zweryfikowanego Badacza zostało utworzone i zaszyfrowane (PBKDF2-SHA256). "
-                            "Od teraz wszystkie Twoje materiały i podprojekty publikują się automatycznie bez kolejki!"
-                        )
-                    else:
-                        st.warning(eval_res["summary"])
-
-
-# ------------------------------------------------------------------------------
-# ZAKŁADKA 8: PANEL AUTORYZACJI ADMINISTRATORA (MODERACJA I ZARZĄDZANIE BADACZAMI)
-# ------------------------------------------------------------------------------
-with tab_admin:
-    st.subheader("🛡️ Centrum Moderacji i Administracji")
-    if not st.session_state.is_admin:
-        st.info("🔒 Sekcja moderacji zgłoszeń jest przeznaczona wyłącznie dla właściciela projektu.")
-        with st.expander("🔑 Autoryzacja właściciela projektu", expanded=False):
-            with st.form("main_admin_login_form", clear_on_submit=True):
-                admin_login_pass = st.text_input("Klucz dostępu Administratora", type="password", value="")
-                if st.form_submit_button("Odblokuj panel", type="primary"):
-                    if st.session_state.failed_admin_attempts >= 5:
-                        time.sleep(2.0)
-                    if verify_admin_password(admin_login_pass, db):
-                        st.session_state.is_admin = True
-                        st.session_state.failed_admin_attempts = 0
-                        st.success("Autoryzacja zakończona pomyślnie.")
-                        st.rerun()
-                    else:
-                        st.session_state.failed_admin_attempts += 1
-                        time.sleep(0.6)
-                        st.error("Odmowa dostępu — nieprawidłowe hasło.")
-    else:
-        with st.expander("🔑 Zmień / zaktualizuj hasło Administratora (PBKDF2-HMAC-SHA256)", expanded=False):
-            st.caption(
-                "Hasło nigdy nie jest zapisywane w postaci jawnej — w bazie danych przechowywany jest wyłącznie "
-                "kryptograficzny skrót PBKDF2-HMAC-SHA256 (260 000 iteracji) z losową solą 128-bitową."
-            )
-            with st.form("change_admin_pass_form", clear_on_submit=True):
-                current_pass = st.text_input("Aktualne hasło Administratora", type="password", value="")
-                new_pass = st.text_input("Nowe hasło Administratora (min. 8 znaków)", type="password", value="")
+            st.markdown("#### 🔑 " + ("Update Owner Password (PBKDF2-HMAC-SHA256)" if is_en else "Zmień / Zaktualizuj Hasło Właściciela (PBKDF2-HMAC-SHA256)"))
+            st.caption("Hasło jest chronione 260 000 iteracji PBKDF2-HMAC-SHA256 z losową solą 128-bitową. Zmiana hasła automatycznie unieważnia stare tokeny urządzeń.")
+            with st.form("change_owner_pass_form", clear_on_submit=True):
+                current_pass = st.text_input("Aktualne hasło właściciela", type="password", value="")
+                new_pass = st.text_input("Nowe hasło właściciela (min. 8 znaków)", type="password", value="")
                 new_pass_confirm = st.text_input("Powtórz nowe hasło", type="password", value="")
-                if st.form_submit_button("Zaktualizuj hasło kryptograficzne", type="primary"):
+                if st.form_submit_button("Zaktualizuj hasło kryptograficzne", type="primary", use_container_width=True):
                     if not verify_admin_password(current_pass, db):
                         st.error("Aktualne hasło jest nieprawidłowe.")
                     elif len(new_pass.strip()) < 8:
@@ -3429,138 +3140,7 @@ with tab_admin:
                     else:
                         new_auth = create_admin_auth_record(new_pass.strip(), iterations=260000)
                         db["projectMeta"]["adminAuth"] = new_auth
-                        db["projectMeta"].pop("adminPassword", None)
                         save_db(db)
-                        st.success("Hasło zostało zaszyfrowane (PBKDF2-HMAC-SHA256) i zapisane w bazie!")
-                        st.code(json.dumps(new_auth, indent=2), language="json")
-
-        with st.expander("🧑‍🔬 Zarządzaj Stałymi Badaczami (Dodaj badacza ręcznie na stałe lub zmień status)", expanded=False):
-            st.caption("Badacze ze statusem **active** mogą publikować materiały i rozwijać podprojekty bez Twojej ręcznej akceptacji.")
-            with st.form("admin_add_researcher_form", clear_on_submit=True):
-                st.markdown("**➕ Dodaj nowego Stałego Badacza bezpośrednio (bez testu AI):**")
-                ar_c1, ar_c2, ar_c3 = st.columns(3)
-                ar_name = ar_c1.text_input("Imię i nazwisko Badacza*")
-                ar_role = ar_c2.text_input("Rola / Specjalizacja", value="Stały Badacz The Golem 15")
-                ar_pass = ar_c3.text_input("Hasło startowe dla Badacza (min. 6 znaków)*", type="password")
-                ar_bio = st.text_input("Krótki opis / obszar badań")
-                if st.form_submit_button("✓ Dodaj Badacza na stałe", type="primary"):
-                    if ar_name.strip() and len(ar_pass.strip()) >= 6:
-                        new_r = {
-                            "id": f"res-{int(time.time()*1000)}",
-                            "name": ar_name.strip(),
-                            "handle": "@" + ar_name.strip().lower().replace(" ", "-"),
-                            "roleTitle": ar_role.strip() or "Stały Badacz",
-                            "specialization": "ALL",
-                            "specializationLabel": ar_role.strip() or "Wszystkie ścieżki (A–G)",
-                            "affiliation": "Zespół Badawczy The Golem 15",
-                            "orcid": "",
-                            "bio": ar_bio.strip() or "Stały członek zespołu badawczego autoryzowany przez Właściciela projektu.",
-                            "aiVerificationScore": 100,
-                            "aiVerificationSummary": "Autoryzacja bezpośrednia przez Właściciela projektu (Ireneusz).",
-                            "badge": "✓ Stały Badacz (Autoryzacja Właściciela)",
-                            "status": "active",
-                            "joinedAt": datetime.utcnow().isoformat() + "Z",
-                            "auth": create_admin_auth_record(ar_pass.strip(), iterations=260000),
-                        }
-                        db.setdefault("verifiedResearchers", []).append(new_r)
-                        save_db(db)
-                        st.success(f"Dodano stałego badacza: {new_r['name']}!")
-                        st.rerun()
-                    else:
-                        st.error("Podaj imię i nazwisko oraz hasło (min. 6 znaków).")
-
-            for r_idx, r_item in enumerate(db.get("verifiedResearchers", [])):
-                rc1, rc2 = st.columns([4, 1])
-                rc1.markdown(f"**{r_item['name']}** — *{r_item.get('roleTitle','')}* (`{r_item.get('status','active')}`)")
-                if r_item["id"] != "res-founder":
-                    if r_item.get("status") == "active":
-                        if rc2.button("Zawieś", key=f"susp_res_{r_item['id']}"):
-                            r_item["status"] = "suspended"
-                            save_db(db)
-                            st.rerun()
-                    else:
-                        if rc2.button("Aktywuj", key=f"act_res_{r_item['id']}"):
-                            r_item["status"] = "active"
-                            save_db(db)
-                            st.rerun()
-
-        pending_study = [sm for sm in db.get("studyMaterials", []) if sm.get("status") == "pending"]
-        pending_sps = [s for s in db["subprojects"] if s.get("status") == "pending"]
-        pending_mats = [m for m in db["materials"] if m.get("status") == "pending"]
-
-
-        if pending_count > 0:
-            if st.button(f"✓ Zatwierdź wszystkie oczekujące zgłoszenia ({pending_count})", type="primary"):
-                for sm in db.get("studyMaterials", []):
-                    sm["status"] = "approved"
-                for s in db["subprojects"]:
-                    s["status"] = "approved"
-                    ws = s.get("workspace", {})
-                    for col in ("hypotheses", "notes", "bibliography"):
-                        for item in ws.get(col, []):
-                            item["approvalStatus"] = "approved"
-                for m in db["materials"]:
-                    m["status"] = "approved"
-                for l in db.get("graphLinks", []):
-                    l["status"] = "approved"
-                save_db(db)
-                st.success("Zatwierdzono wszystkie oczekujące elementy!")
-                st.rerun()
-
-        col_mod0, col_mod1, col_mod2 = st.columns(3)
-        with col_mod0:
-            st.markdown(f"#### Materiały do nauki ({len(pending_study)})")
-            if not pending_study:
-                st.caption("Brak oczekujących materiałów do nauki.")
-            for sm in pending_study:
-                with st.container(border=True):
-                    st.markdown(f"**{sm['title']}**")
-                    st.caption(f"Dział: {sm.get('topic')} | Autor: {sm.get('author')}")
-                    st.write(sm.get("content"))
-                    c1, c2 = st.columns(2)
-                    if c1.button("✓ Zatwierdź", key=f"app_sm_{sm['id']}", use_container_width=True):
-                        sm["status"] = "approved"
-                        save_db(db)
-                        st.rerun()
-                    if c2.button("✕ Odrzuć", key=f"del_sm_{sm['id']}", use_container_width=True):
-                        db["studyMaterials"] = [x for x in db["studyMaterials"] if x["id"] != sm["id"]]
-                        save_db(db)
-                        st.rerun()
-
-        with col_mod1:
-            st.markdown(f"#### Podprojekty i środowiska ({len(pending_sps)})")
-            if not pending_sps:
-                st.caption("Brak oczekujących podprojektów.")
-            for sp in pending_sps:
-                with st.container(border=True):
-                    st.markdown(f"**[{sp['trackId']}] {sp['title']}**")
-                    st.caption(f"Odnoga: {sp.get('branchTopic')} | Autor: {sp.get('author')}")
-                    st.write(sp.get("description"))
-                    c1, c2 = st.columns(2)
-                    if c1.button("✓ Zatwierdź", key=f"app_sp_{sp['id']}", use_container_width=True):
-                        sp["status"] = "approved"
-                        save_db(db)
-                        st.rerun()
-                    if c2.button("✕ Odrzuć", key=f"del_sp_{sp['id']}", use_container_width=True):
-                        db["subprojects"] = [x for x in db["subprojects"] if x["id"] != sp["id"]]
-                        save_db(db)
-                        st.rerun()
-
-        with col_mod2:
-            st.markdown(f"#### Materiały badawcze ({len(pending_mats)})")
-            if not pending_mats:
-                st.caption("Brak oczekujących materiałów.")
-            for m in pending_mats:
-                with st.container(border=True):
-                    st.markdown(f"**[Projekt {m['trackId']}] {m['title']}**")
-                    st.caption(f"Typ: {m.get('type')} | Autor: {m.get('author')}")
-                    st.write(m.get("content"))
-                    c1, c2 = st.columns(2)
-                    if c1.button("✓ Zatwierdź", key=f"app_m_{m['id']}", use_container_width=True):
-                        m["status"] = "approved"
-                        save_db(db)
-                        st.rerun()
-                    if c2.button("✕ Odrzuć", key=f"del_m_{m['id']}", use_container_width=True):
-                        db["materials"] = [x for x in db["materials"] if x["id"] != m["id"]]
-                        save_db(db)
-                        st.rerun()
+                        authorize_local_owner_device(db)
+                        st.query_params["device_token"] = get_expected_device_token(db)
+                        st.success("Hasło właściciela oraz klucz Twojego urządzenia zostały zaktualizowane!")
