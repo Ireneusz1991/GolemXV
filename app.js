@@ -6868,6 +6868,9 @@ function ensureSchema(d) {
 }
 
 async function initApp() {
+  // Zastosuj zapisany motyw natychmiast bez oczekiwania na asynchroniczne zapytania sieciowe
+  setTheme(appState.theme);
+  setLanguage(appState.lang);
   localStorage.removeItem("golem_xv_admin_pass");
   await loadState();
 

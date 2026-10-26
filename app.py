@@ -6869,10 +6869,37 @@ def matches_lang_filter(code: str, filter_choice: str) -> bool:
 db = load_db()
 expected_dev_token = get_expected_device_token(db)
 
-if "lang" not in st.session_state:
-    st.session_state.lang = "pl"
+# ==============================================================================
+# TRWAŁA SYNCHRONIZACJA MOTYWU I JĘZYKA (ODPORNA NA F5 I ODŚWIEŻENIA STRONY)
+# ==============================================================================
+saved_pref_theme = str(db.get("projectMeta", {}).get("preferredTheme", "")).lower().strip()
+query_theme = str(st.query_params.get("theme", "")).lower().strip()
+
 if "theme" not in st.session_state:
-    st.session_state.theme = "light"
+    if query_theme in ("dark", "light"):
+        st.session_state.theme = query_theme
+    elif saved_pref_theme in ("dark", "light"):
+        st.session_state.theme = saved_pref_theme
+    else:
+        st.session_state.theme = "light"
+
+if st.query_params.get("theme") != st.session_state.theme:
+    st.query_params["theme"] = st.session_state.theme
+
+saved_pref_lang = str(db.get("projectMeta", {}).get("preferredLang", "")).lower().strip()
+query_lang = str(st.query_params.get("lang", "")).lower().strip()
+
+if "lang" not in st.session_state:
+    if query_lang in ("pl", "en"):
+        st.session_state.lang = query_lang
+    elif saved_pref_lang in ("pl", "en"):
+        st.session_state.lang = saved_pref_lang
+    else:
+        st.session_state.lang = "pl"
+
+if st.query_params.get("lang") != st.session_state.lang:
+    st.query_params["lang"] = st.session_state.lang
+
 if "failed_admin_attempts" not in st.session_state:
     st.session_state.failed_admin_attempts = 0
 if "manual_locked" not in st.session_state:
@@ -7143,8 +7170,13 @@ if not st.session_state.owner_authenticated:
                 label_visibility="collapsed",
                 key="gate_theme_switch",
             )
-            if sel_theme_gate and sel_theme_gate != st.session_state.theme:
+            if not sel_theme_gate:
+                st.session_state.gate_theme_switch = st.session_state.theme
+            elif sel_theme_gate != st.session_state.theme:
                 st.session_state.theme = sel_theme_gate
+                st.query_params["theme"] = sel_theme_gate
+                db.setdefault("projectMeta", {})["preferredTheme"] = sel_theme_gate
+                save_db(db)
                 st.rerun()
         with gate_c3:
             sel_lang = st.segmented_control(
@@ -7155,8 +7187,13 @@ if not st.session_state.owner_authenticated:
                 label_visibility="collapsed",
                 key="gate_lang_switch",
             )
-            if sel_lang and sel_lang != st.session_state.lang:
+            if not sel_lang:
+                st.session_state.gate_lang_switch = st.session_state.lang
+            elif sel_lang != st.session_state.lang:
                 st.session_state.lang = sel_lang
+                st.query_params["lang"] = sel_lang
+                db.setdefault("projectMeta", {})["preferredLang"] = sel_lang
+                save_db(db)
                 st.rerun()
 
         st.markdown(
@@ -7241,8 +7278,13 @@ with top_c_theme:
         label_visibility="collapsed",
         key="top_theme_switcher",
     )
-    if new_theme and new_theme != st.session_state.theme:
+    if not new_theme:
+        st.session_state.top_theme_switcher = st.session_state.theme
+    elif new_theme != st.session_state.theme:
         st.session_state.theme = new_theme
+        st.query_params["theme"] = new_theme
+        db.setdefault("projectMeta", {})["preferredTheme"] = new_theme
+        save_db(db)
         st.rerun()
 with top_c2:
     new_lang = st.segmented_control(
@@ -7253,8 +7295,13 @@ with top_c2:
         label_visibility="collapsed",
         key="top_lang_switcher",
     )
-    if new_lang and new_lang != st.session_state.lang:
+    if not new_lang:
+        st.session_state.top_lang_switcher = st.session_state.lang
+    elif new_lang != st.session_state.lang:
         st.session_state.lang = new_lang
+        st.query_params["lang"] = new_lang
+        db.setdefault("projectMeta", {})["preferredLang"] = new_lang
+        save_db(db)
         st.rerun()
 with top_c3:
     if st.button(L["lockSessionBtn"], use_container_width=True, key="btn_lock_vault"):

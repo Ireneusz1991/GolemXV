@@ -15,6 +15,13 @@
       try {
         var savedTheme = localStorage.getItem("golem_15_ui_theme") || "light";
         document.documentElement.setAttribute("data-theme", savedTheme);
+        var meta = document.getElementById("metaThemeColor");
+        if (meta) meta.setAttribute("content", savedTheme === "dark" ? "#0d1117" : "#f4f6f9");
+        window.addEventListener("DOMContentLoaded", function() {
+          document.querySelectorAll(".theme-btn").forEach(function(btn) {
+            btn.classList.toggle("active", btn.getAttribute("data-theme-btn") === savedTheme);
+          });
+        });
       } catch (e) {}
     })();
   </script>
