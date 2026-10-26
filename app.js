@@ -5762,6 +5762,22 @@ const DEFAULT_SEED = {
             "lang": "EN",
             "type": "podcast"
           }
+        ],
+        "didacticMaterials": [
+          {
+            "title": "Atomic Archive — The Smyth Report: Atomic Energy for Military Purposes (Oficjalny Raport Projektu Manhattan 1945)",
+            "url": "https://www.atomicarchive.com/resources/documents/smyth-report/index.html",
+            "type": "odtajniony raport techniczny",
+            "lang": "EN",
+            "description": "Oficjalny dokument rządu USA z 1945 r. podsumowujący organizację, kompartmentalizację i zarządzanie Projektem Manhattan w Los Alamos, Oak Ridge i Hanford."
+          },
+          {
+            "title": "Stanford Encyclopedia of Philosophy — Philosophy of Technology and Mega-Engineering",
+            "url": "https://plato.stanford.edu/entries/technology/",
+            "type": "kompendium epistemologiczne",
+            "lang": "EN",
+            "description": "Filozoficzne fundamenty technosfery, determinizm technologiczny i teoria systemów wielkoskalowych."
+          }
         ]
       },
       {
@@ -5799,6 +5815,22 @@ const DEFAULT_SEED = {
             "url": "https://radionaukowe.pl/podcast/sztuczna-inteligencja-czy-naprawde-moze-istniec-bez-czlowieka-prof-aleksandra-przegalinska/",
             "lang": "PL",
             "type": "podcast"
+          }
+        ],
+        "didacticMaterials": [
+          {
+            "title": "Komisja Europejska — Oficjalny Reżim Prawny i Ramy Regulacyjne EU AI Act (2024)",
+            "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+            "type": "specyfikacja prawna B+R",
+            "lang": "EN",
+            "description": "Zasady kategoryzacji ryzyka systemów sztucznej inteligencji, certyfikacji i zgodności badawczo-rozwojowej w Unii Europejskiej."
+          },
+          {
+            "title": "EUR-Lex — Rozporządzenie Parlamentu Europejskiego i Rady (UE) 2024/1689 (Pełny Tekst Prawny)",
+            "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689",
+            "type": "akt prawny / Dziennik Urzędowy UE",
+            "lang": "PL",
+            "description": "Zharmonizowane przepisy dotyczące sztucznej inteligencji: obowiązki audytowe, ochrona praw podstawowych i wymogi przejrzystości modeli AI."
           }
         ]
       },
@@ -5838,6 +5870,29 @@ const DEFAULT_SEED = {
             "lang": "EN",
             "type": "kurs audio/wideo"
           }
+        ],
+        "didacticMaterials": [
+          {
+            "title": "MIT OpenCourseWare — Linear Algebra (Kurs Akademicki 18.06, Prof. Gilbert Strang)",
+            "url": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/",
+            "type": "kurs akademicki MIT",
+            "lang": "EN",
+            "description": "Kanon algebry liniowej: wektory, przestrzenie Hilberta, transformacje liniowe, tensory i wartości własne będące fundamentem sieci neuronowych."
+          },
+          {
+            "title": "3Blue1Brown — Essence of Linear Algebra: Geometryczna Intuicja Wektorów i Macierzy",
+            "url": "https://www.3blue1brown.com/topics/linear-algebra",
+            "type": "interaktywny podręcznik open-access",
+            "lang": "EN",
+            "description": "Wizualne i pojęciowe objaśnienie baz wektorowych, wyznaczników, iloczynu skalarnego i wektorowego oraz transformacji przestrzeni."
+          },
+          {
+            "title": "Stanford Encyclopedia of Philosophy — Philosophy of Mathematics & Logical Foundations",
+            "url": "https://plato.stanford.edu/entries/philosophy-mathematics/",
+            "type": "kompendium filozofii matematyki",
+            "lang": "EN",
+            "description": "Fundamenty ontologii matematycznej: platonizm, formalizm hilbertowski i granice aksjomatyzacji rzeczywistości."
+          }
         ]
       },
       {
@@ -5875,6 +5930,29 @@ const DEFAULT_SEED = {
             "url": "https://radionaukowe.pl/podcast/filozofia-fizyki-czy-fizycy-wiedza-co-robia-e130/",
             "lang": "PL",
             "type": "podcast"
+          }
+        ],
+        "didacticMaterials": [
+          {
+            "title": "MIT Press — Structure and Interpretation of Computer Programs (SICP Web Edition)",
+            "url": "https://sarabander.github.io/sicp/",
+            "type": "podręcznik akademicki MIT",
+            "lang": "EN",
+            "description": "Legendarny podręcznik autorstwa H. Abelsona i G. J. Sussmana: abstrakcja danych, paradygmaty metaprogramowania, ewaluatory i maszyny wirtualne."
+          },
+          {
+            "title": "Stanford Encyclopedia of Philosophy — Turing Machines and Computational Complexity",
+            "url": "https://plato.stanford.edu/entries/turing-machine/",
+            "type": "monografia encyklopedyczna",
+            "lang": "EN",
+            "description": "Formalna definicja uniwersalnej maszyny Turinga, hipoteza Churcha-Turinga i problem nierozstrzygalności stopu."
+          },
+          {
+            "title": "Stanford Encyclopedia of Philosophy — Gödel's Incompleteness Theorems",
+            "url": "https://plato.stanford.edu/entries/goedel-incompleteness/",
+            "type": "traktat logiczny",
+            "lang": "EN",
+            "description": "Dowód pierwszego i drugiego twierdzenia o niezupełności systemów formalnych: granice dedukcji i mechanizacji prawdy."
           }
         ]
       },
@@ -5914,6 +5992,22 @@ const DEFAULT_SEED = {
             "lang": "PL",
             "type": "wideo/podcast"
           }
+        ],
+        "didacticMaterials": [
+          {
+            "title": "MIT OpenCourseWare — Computation Structures: Digital Systems & RISC (Kurs 6.004)",
+            "url": "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/",
+            "type": "kurs akademicki MIT",
+            "lang": "EN",
+            "description": "Projektowanie nowoczesnych procesorów: od bramek logicznych CMOS, przez potoki instrukcji RISC, hierarchię pamięci cache, po wąskie gardło magistrali."
+          },
+          {
+            "title": "Stanford Encyclopedia of Philosophy — Computation in Physical Systems",
+            "url": "https://plato.stanford.edu/entries/computation-physicalsystems/",
+            "type": "monografia epistemologiczna",
+            "lang": "EN",
+            "description": "Fizyczna realizacja obliczeń: czy materia jest komputerem? Granice obliczalności w fizyce relatywistycznej i mikroskopowej."
+          }
         ]
       },
       {
@@ -5951,6 +6045,29 @@ const DEFAULT_SEED = {
             "url": "https://preposterousuniverse.com/podcast/2019/07/15/55-a-conversation-with-rob-reid-on-quantum-mechanics-and-many-worlds/",
             "lang": "EN",
             "type": "podcast"
+          }
+        ],
+        "didacticMaterials": [
+          {
+            "title": "MIT OpenCourseWare — Quantum Physics I (Kurs Akademicki 8.04, Prof. Barton Zwiebach)",
+            "url": "https://ocw.mit.edu/courses/8-04-quantum-physics-i-spring-2016/",
+            "type": "kurs akademicki MIT",
+            "lang": "EN",
+            "description": "Równanie falowe Schrödingera, zasada nieoznaczoności Heisenberga, studnie potencjału, tunelowanie i formalizm operatorowy."
+          },
+          {
+            "title": "OpenStax — University Physics Vol. 3: Quantum Mechanics & Atomic Physics",
+            "url": "https://openstax.org/details/books/university-physics-volume-3",
+            "type": "podręcznik akademicki peer-reviewed",
+            "lang": "EN",
+            "description": "Otwarty podręcznik akademicki: dualizm korpuskularno-falowy, funkcja falowa, splątanie kwantowe i fizyka materii skondensowanej."
+          },
+          {
+            "title": "Stanford Encyclopedia of Philosophy — Quantum Mechanics and the Measurement Problem",
+            "url": "https://plato.stanford.edu/entries/qm/",
+            "type": "kompendium filozofii kwantowej",
+            "lang": "EN",
+            "description": "Problem pomiaru: interpretacja kopenhaska, światy równoległe Everetta, dekoherencja środowiskowa i załamanie wektora stanu."
           }
         ]
       },
@@ -5990,6 +6107,22 @@ const DEFAULT_SEED = {
             "lang": "PL",
             "type": "podcast"
           }
+        ],
+        "didacticMaterials": [
+          {
+            "title": "OpenStax — University Physics Vol. 2: Thermodynamics & The Second Law",
+            "url": "https://openstax.org/details/books/university-physics-volume-2",
+            "type": "podręcznik akademicki peer-reviewed",
+            "lang": "EN",
+            "description": "Zasady termodynamiki, cykl Carnota, definicja entropii Clausiusa i Boltzmanna oraz strzałka czasu w procesach nieodwracalnych."
+          },
+          {
+            "title": "Stanford Encyclopedia of Philosophy — Information Theory & Physical Entropy",
+            "url": "https://plato.stanford.edu/entries/information/",
+            "type": "monografia naukowa",
+            "lang": "EN",
+            "description": "Entropia informacyjna Shannona a entropia termodynamiczna Gibbsa: demon Maxwella i granica Landauera wyznaczająca koszt kasowania bitu."
+          }
         ]
       },
       {
@@ -6027,6 +6160,22 @@ const DEFAULT_SEED = {
             "url": "https://lexfridman.com/jim-keller/",
             "lang": "EN",
             "type": "podcast"
+          }
+        ],
+        "didacticMaterials": [
+          {
+            "title": "IEEE IRDS — International Roadmap for Devices and Systems (Kres Krzemu i Materiały 2D)",
+            "url": "https://irds.ieee.org/",
+            "type": "oficjalna mapa drogowa IEEE",
+            "lang": "EN",
+            "description": "Oficjalny globalny raport inżynieryjny: granice litografii sub-2nm, upływ tunelowy bramek, nanoturby węglowe, grafen i tranzystory bramkowane optycznie."
+          },
+          {
+            "title": "OpenStax — University Physics Vol. 3: Condensed Matter Physics & Semiconductor Bands",
+            "url": "https://openstax.org/details/books/university-physics-volume-3",
+            "type": "podręcznik akademicki peer-reviewed",
+            "lang": "EN",
+            "description": "Teoria pasmowa ciał stałych, pasmo wzbronione, domieszkowanie półprzewodników i fizyczne ograniczenia prądów nasycenia."
           }
         ]
       },
@@ -6066,6 +6215,22 @@ const DEFAULT_SEED = {
             "lang": "PL",
             "type": "podcast"
           }
+        ],
+        "didacticMaterials": [
+          {
+            "title": "IBM Quantum Learning — Oficjalny Podręcznik Algorytmów Kwantowych Qiskit",
+            "url": "https://learning.quantum.ibm.com/",
+            "type": "oficjalna platforma edukacyjna IBM",
+            "lang": "EN",
+            "description": "Kompleksowy kurs architektury QPU: bramki jednokubitowe i dwukubitowe (CNOT), korekcja błędów kwantowych, dekoherencja T1/T2 i algorytmy VQE."
+          },
+          {
+            "title": "Stanford Encyclopedia of Philosophy — Quantum Computing & BQP Complexity",
+            "url": "https://plato.stanford.edu/entries/qm/",
+            "type": "monografia encyklopedyczna",
+            "lang": "EN",
+            "description": "Klasy złożoności kwantowej BQP, algorytm Shora, algorytm Grovera i granica przewagi kwantowej nad maszynami klasycznymi."
+          }
         ]
       },
       {
@@ -6103,6 +6268,22 @@ const DEFAULT_SEED = {
             "url": "https://lexfridman.com/yann-lecun-2/",
             "lang": "EN",
             "type": "podcast"
+          }
+        ],
+        "didacticMaterials": [
+          {
+            "title": "Stanford Encyclopedia of Philosophy — Artificial Intelligence, Connectionism & Neural Nets",
+            "url": "https://plato.stanford.edu/entries/artificial-intelligence/",
+            "type": "kompendium AI",
+            "lang": "EN",
+            "description": "Początki koneksjonizmu: od perceptronu Rosenblatta, przez sieci impulsowe (SNN), po współczesne przetwarzanie analogowe i memrystory."
+          },
+          {
+            "title": "Centrum Kopernika Badań Interdyscyplinarnych — Filozofia Umysłu i Architektury Kognitywne",
+            "url": "https://copernicuscenter.edu.pl/",
+            "type": "kanon interdyscyplinarny",
+            "lang": "PL",
+            "description": "Materiały naukowe i monografie: ucieleśnienie umysłu, neurofilozofia i analogowe obliczenia biologiczne w relacji do cyfrowego krzemu."
           }
         ]
       },
@@ -6142,6 +6323,22 @@ const DEFAULT_SEED = {
             "lang": "PL",
             "type": "podcast"
           }
+        ],
+        "didacticMaterials": [
+          {
+            "title": "OpenBCI Documentation — Open Hardware & Biosensing Knowledge Base",
+            "url": "https://docs.openbci.com/",
+            "type": "otwarta dokumentacja inżynieryjna",
+            "lang": "EN",
+            "description": "Kompletna dokumentacja elektrod EEG/EMG/ECG, przetwarzania sygnałów neuronowych, filtrów pasmowych i integracji interfejsów mózg-komputer."
+          },
+          {
+            "title": "Stanford Encyclopedia of Philosophy — Consciousness and Brain-Machine Interfaces",
+            "url": "https://plato.stanford.edu/entries/consciousness/",
+            "type": "traktat filozoficzny",
+            "lang": "EN",
+            "description": "Epistemologia świadomości: problem 'trudnego problemu' Chalmersa, kwalioznawstwo i bioniczne rozszerzenia układu nerwowego."
+          }
         ]
       },
       {
@@ -6179,6 +6376,22 @@ const DEFAULT_SEED = {
             "url": "https://radionaukowe.pl/podcast/neurony-i-pamiec-nowe-metody-badan-weryfikuja-dawne-twierdzenia-dr-hab-jan-kaminski/",
             "lang": "PL",
             "type": "podcast"
+          }
+        ],
+        "didacticMaterials": [
+          {
+            "title": "arXiv / Future of Humanity Institute — Whole Brain Emulation: A Technology Roadmap",
+            "url": "https://arxiv.org/abs/0810.1015",
+            "type": "oficjalna mapa drogowa FHI Oxford",
+            "lang": "EN",
+            "description": "Kluczowa praca A. Sandberga i N. Bostroma: etapy skanowania konektomu, mikroskopia elektronowa, rekonstrukcja synaptyczna i wymagania mocy obliczeniowej dla WBE."
+          },
+          {
+            "title": "Stanford Encyclopedia of Philosophy — Computational Theory of Mind and Identity",
+            "url": "https://plato.stanford.edu/entries/consciousness/",
+            "type": "monografia epistemologiczna",
+            "lang": "EN",
+            "description": "Tożsamość osobowa w procesie transferu umysłu: teletransport, replikacja strukturalna konektomu i zachowanie ciągłości jaźni."
           }
         ]
       },
@@ -6218,6 +6431,22 @@ const DEFAULT_SEED = {
             "lang": "PL",
             "type": "podcast"
           }
+        ],
+        "didacticMaterials": [
+          {
+            "title": "AlphaFold / EMBL-EBI — Globalna Baza Struktur Przestrzennych Białek",
+            "url": "https://alphafold.ebi.ac.uk/",
+            "type": "otwarta baza naukowa DeepMind/EMBL",
+            "lang": "EN",
+            "description": "Miliony zweryfikowanych struktur 3D białek: przełom w biologii obliczeniowej, projektowanie de novo enzymów i szlaków metabolicznych."
+          },
+          {
+            "title": "Stanford Encyclopedia of Philosophy — Biological Information and Genetic Code",
+            "url": "https://plato.stanford.edu/entries/information/",
+            "type": "monografia naukowa",
+            "lang": "EN",
+            "description": "DNA jako nośnik informacji: semantyka kodu genetycznego, inżynieria CRISPR i granice modyfikacji genomowej organizmów żywych."
+          }
         ]
       },
       {
@@ -6255,6 +6484,22 @@ const DEFAULT_SEED = {
             "url": "https://radionaukowe.pl/podcast/lamu25-06-ile-zebow-ma-slimak-jak-niesporczaki-moga-przetrwac-w-kosmosie/",
             "lang": "PL",
             "type": "podcast"
+          }
+        ],
+        "didacticMaterials": [
+          {
+            "title": "ESA — European Space Agency: Human & Robotic Exploration and Life Support Systems",
+            "url": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration",
+            "type": "oficjalny portal badawczy ESA",
+            "lang": "EN",
+            "description": "Zaawansowane systemy podtrzymywania życia w zamkniętych obiegach (projekt MELiSSA), bioregeneracja atmosfery i planetarna homeostaza."
+          },
+          {
+            "title": "OpenStax — University Physics Vol. 1: Fluid Mechanics & Thermodynamics in Enclosed Systems",
+            "url": "https://openstax.org/details/books/university-physics-volume-1",
+            "type": "podręcznik akademicki peer-reviewed",
+            "lang": "EN",
+            "description": "Dynamika płynów, wymiana ciepła i bilans energetyczny w zamkniętych modułach habitatowych."
           }
         ]
       },
@@ -6294,6 +6539,22 @@ const DEFAULT_SEED = {
             "lang": "EN",
             "type": "podcast/wideo"
           }
+        ],
+        "didacticMaterials": [
+          {
+            "title": "Narodowe Centrum Badań Jądrowych (NCBJ) — Badawczy Reaktor Jądrowy MARIA w Świerku",
+            "url": "https://www.ncbj.gov.pl/en/maria-reactor",
+            "type": "oficjalna monografia techniczna",
+            "lang": "EN",
+            "description": "Oficjalny opis techniczny reaktora MARIA: konstrukcja rdzenia, moderatory berylowe, chłodzenie wodne, izotopy medyczne i testy materiałowe."
+          },
+          {
+            "title": "IAEA ARIS — Advanced Reactors Information System: Globalna Baza Reaktora SMR",
+            "url": "https://aris.iaea.org/",
+            "type": "oficjalna baza danych MAEA",
+            "lang": "EN",
+            "description": "Baza Międzynarodowej Agencji Energii Atomowej: konstrukcje małych reaktorów modułowych (SMR), chłodzenie gazowe (HTGR), solne i prędkie sodowe."
+          }
         ]
       },
       {
@@ -6331,6 +6592,22 @@ const DEFAULT_SEED = {
             "url": "https://www.youtube.com/@iterorganization",
             "lang": "EN",
             "type": "oficjalny kanał ITER"
+          }
+        ],
+        "didacticMaterials": [
+          {
+            "title": "ITER Organization — In a Few Lines: Fizyczne Podstawy i Konstrukcja Tokamaka ITER",
+            "url": "https://www.iter.org/proj/inafewlines",
+            "type": "oficjalne kompendium techniczne",
+            "lang": "EN",
+            "description": "Oficjalne podsumowanie fizyki plazmy w ITER: pułapka magnetyczna, kryterium Lawsona, cewki nadprzewodzące toroidalne i bilans mocy Q >= 10."
+          },
+          {
+            "title": "OpenStax — University Physics Vol. 3: Nuclear Fusion, Plasma & Binding Energy",
+            "url": "https://openstax.org/details/books/university-physics-volume-3",
+            "type": "podręcznik akademicki peer-reviewed",
+            "lang": "EN",
+            "description": "Energia wiązania jądra atomowego, bariera kulombowska, reakcje fuzji D-T i D-D oraz termonuklearna kreacja pierwiastków we Wszechświecie."
           }
         ]
       },
@@ -6370,6 +6647,22 @@ const DEFAULT_SEED = {
             "lang": "PL",
             "type": "podcast"
           }
+        ],
+        "didacticMaterials": [
+          {
+            "title": "NASA NTRS — NASA Technical Reports Server: Deep Space Avionics & Radiation Hardening",
+            "url": "https://ntrs.nasa.gov/",
+            "type": "otwarte repozytorium raportów NASA",
+            "lang": "EN",
+            "description": "Odtajnione i otwarte raporty techniczne NASA: ochrona załóg przed promieniowaniem kosmicznym GCR/SPE, sztuczna grawitacja i awionika odporna na radiację."
+          },
+          {
+            "title": "ESA — European Space Exploration Architecture & Orbital Stations",
+            "url": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration",
+            "type": "oficjalny portal ESA",
+            "lang": "EN",
+            "description": "Infrastruktura stacji orbitalnych i baz księżycowych: materiałoznawstwo próżniowe, pancerze Whipple'a i logistyka orbitalna."
+          }
         ]
       },
       {
@@ -6407,6 +6700,22 @@ const DEFAULT_SEED = {
             "url": "https://podcasty.radio.katowice.pl/swiaty-lema-odc-3-niezwyciezony/",
             "lang": "PL",
             "type": "podcast/słuchowisko"
+          }
+        ],
+        "didacticMaterials": [
+          {
+            "title": "Oficjalny Portal Stanisława Lema (lem.pl) — Summa Technologiae: Traktat o Ewolucji Technicznej",
+            "url": "https://lem.pl/",
+            "type": "kanon filozoficzny / oficjalne archiwum",
+            "lang": "PL",
+            "description": "Kluczowe dzieło futurologiczne Lema (1964): fantomatyka (VR), cerebromatyka, biotechnika, autoewolucja gatunku ludzkiego i inżynieria kosmologiczna."
+          },
+          {
+            "title": "Stanford Encyclopedia of Philosophy — Philosophy of Technology and Determinism",
+            "url": "https://plato.stanford.edu/entries/technology/",
+            "type": "kompendium filozoficzne",
+            "lang": "EN",
+            "description": "Prawa ewolucji technosfery, autonomia procesów technologicznych i relacja między biologiczną konstrukcją człowieka a jego maszynami."
           }
         ]
       },
@@ -6446,6 +6755,22 @@ const DEFAULT_SEED = {
             "lang": "PL",
             "type": "podcast"
           }
+        ],
+        "didacticMaterials": [
+          {
+            "title": "Oficjalny Portal Stanisława Lema (lem.pl) — Golem XIV: Epistemologia Pozaantropocentryczna",
+            "url": "https://lem.pl/",
+            "type": "traktat filozoficzny Lema",
+            "lang": "PL",
+            "description": "Rozum maszynowy na etapie transcendence: odrzucenie ograniczeń biologicznych, etyka syntetyczna i granice komunikacji między człowiekiem a Golemem."
+          },
+          {
+            "title": "Stanford Encyclopedia of Philosophy — Artificial Intelligence, Superintelligence & Ethical Agency",
+            "url": "https://plato.stanford.edu/entries/artificial-intelligence/",
+            "type": "monografia encyklopedyczna",
+            "lang": "EN",
+            "description": "Podmiotowość sztucznej inteligencji: od systemów uczących się po autonomię decyzyjną i egzystencjalne implikacje wyłonienia się AGI/ASI."
+          }
         ]
       },
       {
@@ -6484,11 +6809,303 @@ const DEFAULT_SEED = {
             "lang": "EN",
             "type": "podcast"
           }
+        ],
+        "didacticMaterials": [
+          {
+            "title": "Centrum Kopernika Badań Interdyscyplinarnych — Wielka Synteza Naukowa (ks. prof. Michał Heller)",
+            "url": "https://copernicuscenter.edu.pl/",
+            "type": "kanon interdyscyplinarny",
+            "lang": "PL",
+            "description": "Zwieńczenie ekosystemu: połączenie administracji, prawa, matematyki, fizyki fundamentalnej, biologii i filozofii w jedną spójną syntezę prawdy o świecie."
+          },
+          {
+            "title": "Stanford Encyclopedia of Philosophy — The Philosophy of Science and Unified Theories",
+            "url": "https://plato.stanford.edu/entries/philosophy-mathematics/",
+            "type": "kompendium filozofii nauki",
+            "lang": "EN",
+            "description": "Jedność wiedzy ludzkiej: redukcjonizm, emergencja struktur złożonych i epistemologiczne granice poznania naukowego."
+          }
         ]
       }
     ],
     "completedCarAudio": {},
-    "completedSubchapters": {}
+    "completedSubchapters": {},
+    "didacticKnowledgeCanon": [
+      {
+        "pillarId": "PIL-01",
+        "titlePl": "I. Administracja, Reżim B+R i Zarządzanie Megaprojektami",
+        "titleEn": "I. Governance, R&D Regimes & Megaproject Management",
+        "icon": "🏛️",
+        "color": "#f59e0b",
+        "descriptionPl": "Zasady kompartmentalizacji wiedzy, ochrona IP, prawo atomowe, unijne ramy EU AI Act oraz struktura sztabowa megaprojektu na całe życie.",
+        "descriptionEn": "Knowledge compartmentalization, IP protection, nuclear safety governance, EU AI Act compliance, and command structures for life-long megaprojects.",
+        "resources": [
+          {
+            "title": "The Smyth Report: Atomic Energy for Military Purposes (1945)",
+            "url": "https://www.atomicarchive.com/resources/documents/smyth-report/index.html",
+            "type": "odtajniony raport techniczny",
+            "lang": "EN",
+            "note": "Oficjalny raport rządowy opisujący organizację Los Alamos, Hanford i Oak Ridge."
+          },
+          {
+            "title": "Oficjalne Ramy Regulacyjne EU AI Act (Komisja Europejska)",
+            "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+            "type": "specyfikacja prawna",
+            "lang": "EN",
+            "note": "Zharmonizowane przepisy i wymogi audytowe dla systemów sztucznej inteligencji wysokiego ryzyka."
+          },
+          {
+            "title": "EUR-Lex — Rozporządzenie (UE) 2024/1689 (Pełny Tekst Prawny)",
+            "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689",
+            "type": "akt prawny UE",
+            "lang": "PL",
+            "note": "Dziennik Urzędowy UE: formalne wymogi certyfikacji algorytmów AI."
+          }
+        ]
+      },
+      {
+        "pillarId": "PIL-02",
+        "titlePl": "II. Matematyka Wyższa, Tensory i Logika Formalna",
+        "titleEn": "II. Higher Mathematics, Tensors & Formal Logic",
+        "icon": "📐",
+        "color": "#3b82f6",
+        "descriptionPl": "Algebra liniowa, przestrzenie Hilberta, rachunek tensorowy, geometria różniczkowa i twierdzenia Gödla jako formalny aparat opisu przyrody i sieci neuronowych.",
+        "descriptionEn": "Linear algebra, Hilbert spaces, tensor calculus, differential geometry and Gödelian logic formulating neural networks and quantum reality.",
+        "resources": [
+          {
+            "title": "MIT OpenCourseWare — Linear Algebra 18.06 (Prof. Gilbert Strang)",
+            "url": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/",
+            "type": "kurs akademicki MIT",
+            "lang": "EN",
+            "note": "Kompletny akademicki kanon algebry liniowej, przestrzeni wektorowych i wartości własnych."
+          },
+          {
+            "title": "3Blue1Brown — Essence of Linear Algebra (Open-Access)",
+            "url": "https://www.3blue1brown.com/topics/linear-algebra",
+            "type": "interaktywny podręcznik",
+            "lang": "EN",
+            "note": "Geometryczna i wizualna intuicja transformacji liniowych i przestrzeni wielowymiarowych."
+          },
+          {
+            "title": "Stanford Encyclopedia of Philosophy — Philosophy of Mathematics & Gödel",
+            "url": "https://plato.stanford.edu/entries/philosophy-mathematics/",
+            "type": "kompendium filozoficzne",
+            "lang": "EN",
+            "note": "Fundamenty aksjomatyzacji, formalizm matematyczny i granice dowodzenia prawdy."
+          }
+        ]
+      },
+      {
+        "pillarId": "PIL-03",
+        "titlePl": "III. Informatyka Teoretyczna, Architektury i Nowe Paradygmaty",
+        "titleEn": "III. Theoretical Computer Science, Architectures & New Paradigms",
+        "icon": "💻",
+        "color": "#06b6d4",
+        "descriptionPl": "Maszyny Turinga, teoria informacji Shannona, wąskie gardło von Neumanna, abstrakcja danych oraz paradygmaty programowania odporne na ograniczenia krzemu.",
+        "descriptionEn": "Turing machines, Shannon information theory, von Neumann bottleneck, data abstraction, and paradigm shifts beyond silicon limits.",
+        "resources": [
+          {
+            "title": "Structure and Interpretation of Computer Programs (SICP, MIT Press)",
+            "url": "https://sarabander.github.io/sicp/",
+            "type": "podręcznik akademicki MIT",
+            "lang": "EN",
+            "note": "Legendarna monografia H. Abelsona i G. Sussmana o strukturze programów, ewaluatorach i interpretatorach."
+          },
+          {
+            "title": "MIT OpenCourseWare — Computation Structures 6.004 (RISC & Digital Systems)",
+            "url": "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/",
+            "type": "kurs akademicki MIT",
+            "lang": "EN",
+            "note": "Projektowanie nowoczesnych procesorów, potoków instrukcji i układów cyfrowych."
+          },
+          {
+            "title": "Stanford Encyclopedia of Philosophy — Turing Machines & Computability",
+            "url": "https://plato.stanford.edu/entries/turing-machine/",
+            "type": "monografia epistemologiczna",
+            "lang": "EN",
+            "note": "Klasy złożoności obliczeniowej, problem stopu i teoria maszyn uniwersalnych."
+          }
+        ]
+      },
+      {
+        "pillarId": "PIL-04",
+        "titlePl": "IV. Fizyka Kwantowa, Materiały 2D i Nanotechnologia",
+        "titleEn": "IV. Quantum Physics, 2D Materials & Nanotechnology",
+        "icon": "⚛️",
+        "color": "#8b5cf6",
+        "descriptionPl": "Mechanika falowa Schrödingera, splątanie kwantowe, teoria pasmowa ciał stałych, grafen i zjawiska nanoelektroniczne poniżej 2 nm.",
+        "descriptionEn": "Schrödinger wave mechanics, entanglement, solid-state band theory, graphene, and nanoelectronic limits below 2 nm.",
+        "resources": [
+          {
+            "title": "MIT OpenCourseWare — Quantum Physics I 8.04 (Prof. Barton Zwiebach)",
+            "url": "https://ocw.mit.edu/courses/8-04-quantum-physics-i-spring-2016/",
+            "type": "kurs akademicki MIT",
+            "lang": "EN",
+            "note": "Fundamentalne równanie Schrödingera, zasada Heisenberga, studnie potencjału i tunelowanie."
+          },
+          {
+            "title": "OpenStax — University Physics Vol. 3: Quantum Mechanics & Condensed Matter",
+            "url": "https://openstax.org/details/books/university-physics-volume-3",
+            "type": "podręcznik akademicki peer-reviewed",
+            "lang": "EN",
+            "note": "Dualizm korpuskularno-falowy, funkcja falowa, fizyka atomowa i zjawiska półprzewodnikowe."
+          },
+          {
+            "title": "IEEE IRDS — International Roadmap for Devices and Systems (Beyond Moore)",
+            "url": "https://irds.ieee.org/",
+            "type": "oficjalna mapa drogowa IEEE",
+            "lang": "EN",
+            "note": "Oficjalny globalny konspekt rozwoju nanoelektroniki, materiałów 2D i fotoniki krzemowej."
+          }
+        ]
+      },
+      {
+        "pillarId": "PIL-05",
+        "titlePl": "V. Komputery Kwantowe (QPU) i Obliczenia Hybrydowe",
+        "titleEn": "V. Quantum Computing (QPU) & Hybrid Algorithms",
+        "icon": "🔮",
+        "color": "#ec4899",
+        "descriptionPl": "Kubity nadprzewodzące, pułapki jonowe, dekoherencja, korekcja błędów kwantowych oraz algorytmy hybrydowe VQE i QAOA w Qiskit.",
+        "descriptionEn": "Superconducting qubits, ion traps, decoherence, quantum error correction, and hybrid VQE/QAOA algorithms in Qiskit.",
+        "resources": [
+          {
+            "title": "IBM Quantum Learning — Oficjalny Podręcznik Qiskit",
+            "url": "https://learning.quantum.ibm.com/",
+            "type": "oficjalna platforma edukacyjna IBM",
+            "lang": "EN",
+            "note": "Architektura procesorów kwantowych, programowanie obwodów i kompilacja na fizyczne QPU."
+          },
+          {
+            "title": "Stanford Encyclopedia of Philosophy — Quantum Computing & Complexity",
+            "url": "https://plato.stanford.edu/entries/qm/",
+            "type": "kompendium filozofii kwantowej",
+            "lang": "EN",
+            "note": "Klasy BQP, przewaga kwantowa i fizyczna interpretacja pomiaru w rejestrach kwantowych."
+          }
+        ]
+      },
+      {
+        "pillarId": "PIL-06",
+        "titlePl": "VI. Neurobionika, Interfejsy BCI i Emulacja Mózgu (WBE)",
+        "titleEn": "VI. Neurobionics, BCI Interfaces & Whole Brain Emulation",
+        "icon": "🧠",
+        "color": "#10b981",
+        "descriptionPl": "Skanowanie konektomu, mikroskopia synaptyczna, interfejsy mózg-komputer Neuralink/OpenBCI, sieci impulsowe SNN oraz modele tożsamości w transferze jaźni.",
+        "descriptionEn": "Connectome scanning, synaptic reconstruction, BCI interfaces, spiking neural nets, and identity preservation in mind transfer.",
+        "resources": [
+          {
+            "title": "arXiv / Future of Humanity Institute — Whole Brain Emulation: A Technology Roadmap",
+            "url": "https://arxiv.org/abs/0810.1015",
+            "type": "raport techniczny Oxford FHI",
+            "lang": "EN",
+            "note": "Kanoniczny dokument Sandberga i Bostroma: etapy skanowania, rekonstrukcji synaps i emulacji kory mózgowej."
+          },
+          {
+            "title": "OpenBCI Documentation — Biosensing & Neurointerface Knowledge Base",
+            "url": "https://docs.openbci.com/",
+            "type": "otwarta platforma inżynieryjna",
+            "lang": "EN",
+            "note": "Praktyczna konstrukcja elektrod EEG, filtracja artefaktów i protokoły komunikacji neuronalnej."
+          },
+          {
+            "title": "Stanford Encyclopedia of Philosophy — Consciousness and Computational Theory of Mind",
+            "url": "https://plato.stanford.edu/entries/consciousness/",
+            "type": "monografia epistemologiczna",
+            "lang": "EN",
+            "note": "Problem świadomości, ucieleśnienie umysłu i granice biologicznego substratu myśli."
+          }
+        ]
+      },
+      {
+        "pillarId": "PIL-07",
+        "titlePl": "VII. Biologia Syntetyczna, CRISPR i Biosfera Zamknięta",
+        "titleEn": "VII. Synthetic Biology, CRISPR & Closed Biospheres",
+        "icon": "🧬",
+        "color": "#84cc16",
+        "descriptionPl": "Projektowanie sztucznych komórek, precyzyjna edycja genów CRISPR/Cas, algorytm AlphaFold oraz zamknięte ekosystemy podtrzymywania życia w kosmosie.",
+        "descriptionEn": "Synthetic cell engineering, CRISPR gene editing, AlphaFold structural biology, and closed-loop regenerative life support.",
+        "resources": [
+          {
+            "title": "AlphaFold Protein Structure Database (DeepMind & EMBL-EBI)",
+            "url": "https://alphafold.ebi.ac.uk/",
+            "type": "otwarta baza naukowa AI",
+            "lang": "EN",
+            "note": "Baza trójwymiarowych struktur białek przewidzianych przez sieci głębokie, kluczowa dla inżynierii biomolekularnej."
+          },
+          {
+            "title": "ESA — European Space Agency: Human & Robotic Exploration (MELiSSA Project)",
+            "url": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration",
+            "type": "oficjalny portal badawczy ESA",
+            "lang": "EN",
+            "note": "Zamknięte obiegi materii i regeneracja tlenu/wody dla załogowych stacji i habitatów planetarnych."
+          }
+        ]
+      },
+      {
+        "pillarId": "PIL-08",
+        "titlePl": "VIII. Energetyka Jądrowa i Termojądrowa (Fuzja)",
+        "titleEn": "VIII. Nuclear Fission & Fusion Energy",
+        "icon": "⚡",
+        "color": "#f43f5e",
+        "descriptionPl": "Fizyka reaktorów rozszczepieniowych, małe reaktory modułowe SMR, reaktor MARIA w Świerku oraz pułapki magnetyczne fuzji termojądrowej (ITER, tokamaki).",
+        "descriptionEn": "Nuclear fission reactor physics, Small Modular Reactors (SMR), MARIA research reactor, and magnetic confinement fusion (ITER tokamals).",
+        "resources": [
+          {
+            "title": "Narodowe Centrum Badań Jądrowych (NCBJ) — Reaktor Badawczy MARIA w Świerku",
+            "url": "https://www.ncbj.gov.pl/en/maria-reactor",
+            "type": "oficjalna monografia techniczna",
+            "lang": "EN",
+            "note": "Parametry jedynego czynnego polskiego reaktora jądrowego: rdzeń, moderatory, pręty kontrolne i strumień neutronów."
+          },
+          {
+            "title": "IAEA ARIS — Advanced Reactors Information System (SMR Database)",
+            "url": "https://aris.iaea.org/",
+            "type": "oficjalna baza danych MAEA",
+            "lang": "EN",
+            "note": "Globalna baza małych reaktorów modułowych (SMR) i reaktorów IV generacji (HTGR, SFR, MSR)."
+          },
+          {
+            "title": "ITER Organization — In a Few Lines: The Physics Basis of Magnetic Confinement",
+            "url": "https://www.iter.org/proj/inafewlines",
+            "type": "oficjalne kompendium techniczne",
+            "lang": "EN",
+            "note": "Fizyka plazmy wysokotemperaturowej, pole magnetyczne tokamaka i bilans mocy fuzyjnej."
+          }
+        ]
+      },
+      {
+        "pillarId": "PIL-09",
+        "titlePl": "IX. Kanon Filozoficzny Stanisława Lema i Golem XIV",
+        "titleEn": "IX. Stanisław Lem's Philosophical Canon & Golem XIV",
+        "icon": "📖",
+        "color": "#a855f7",
+        "descriptionPl": "Summa Technologiae, Dialogi, Golem XIV, Filozofia przypadku oraz pozaantropocentryczna epistemologia superinteligencji jako zwieńczenie drogi Golema.",
+        "descriptionEn": "Summa Technologiae, Dialogues, Golem XIV, and non-anthropocentric epistemology of superintelligence culminating the Golem XV ecosystem.",
+        "resources": [
+          {
+            "title": "Oficjalny Portal Stanisława Lema (lem.pl) — Summa Technologiae i Golem XIV",
+            "url": "https://lem.pl/",
+            "type": "oficjalne archiwum dzieł Lema",
+            "lang": "PL",
+            "note": "Cyfrowy przewodnik po esejach futurologicznych: fantomatyka, autoewolucja, cerebromatyka i transcendencja rozumu."
+          },
+          {
+            "title": "Centrum Kopernika Badań Interdyscyplinarnych — Filozofia Nauki (prof. Michał Heller)",
+            "url": "https://copernicuscenter.edu.pl/",
+            "type": "kanon interdyscyplinarny",
+            "lang": "PL",
+            "note": "Wielka synteza nauki: matematyczność świata, kosmologia relatywistyczna i metafizyka przyrody."
+          },
+          {
+            "title": "Stanford Encyclopedia of Philosophy — Philosophy of Technology and AI",
+            "url": "https://plato.stanford.edu/entries/technology/",
+            "type": "kompendium filozoficzne",
+            "lang": "EN",
+            "note": "Prawa ewolucji technosfery i etyczna podmiotowość maszyn autonomicznych."
+          }
+        ]
+      }
+    ]
   },
   "summaBook": {
     "title": "Summa Technologiae 2.0: Biblia Możliwości Techniki",
@@ -10463,6 +11080,44 @@ function renderManhattanView() {
           .join("")}
       </div>
     </div>
+
+    <!-- V. UZUPEŁNIAJĄCA BAZA WIEDZY I KANON DYDAKTYCZNY PROJEKTU MANHATTAN -->
+    <div class="glass-panel" style="margin-top:1.5rem; padding:1.25rem;">
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem; margin-bottom:1rem;">
+        <div>
+          <h3 style="font-size:1.15rem; color:var(--text-primary); margin:0;">📚 ${isEn ? "V. Manhattan Supplementary Didactic Canon & Knowledge Base" : "V. Uzupełniająca Baza Wiedzy i Kanon Dydaktyczny Projektu Manhattan"}</h3>
+          <p style="font-size:0.82rem; color:var(--text-secondary); margin:0.25rem 0 0 0;">
+            ${isEn ? "Authoritative open-access academic textbooks, declassified technical monographs, and philosophical treatises augmenting your life-long study curriculum." : "Autorytatywne, otwarte podręczniki akademickie, monografie techniczne, odtajnione raporty i traktaty filozoficzne stanowiące dydaktyczny fundament ekosystemu."}
+          </p>
+        </div>
+        <span class="alignment-badge" style="background:rgba(59,130,246,0.1); color:var(--accent-blue); font-weight:700; border-color:rgba(59,130,246,0.3);">
+          ${(ms.didacticKnowledgeCanon || []).length} Filarów Wiedzy Dydaktycznej
+        </span>
+      </div>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:1rem;">
+        ${(ms.didacticKnowledgeCanon || [])
+          .map((pillar) => `
+          <div style="border:1px solid var(--border-subtle); border-left:4px solid ${pillar.color || "var(--accent-blue)"}; background:var(--bg-card); border-radius:var(--radius-md); padding:1rem; display:flex; flex-direction:column; gap:0.5rem;">
+            <div style="display:flex; align-items:center; gap:0.5rem;">
+              <span style="font-size:1.25rem;">${pillar.icon}</span>
+              <strong style="font-size:0.92rem; color:var(--text-primary);">${escapeHtml(isEn ? pillar.titleEn : pillar.titlePl)}</strong>
+            </div>
+            <p style="font-size:0.79rem; color:var(--text-secondary); margin:0; line-height:1.45;">
+              ${escapeHtml(isEn ? pillar.descriptionEn : pillar.descriptionPl)}
+            </p>
+            <div style="margin-top:0.4rem; padding-top:0.45rem; border-top:1px dashed var(--border-subtle); display:flex; flex-direction:column; gap:0.35rem;">
+              ${(pillar.resources || [])
+                .map((res) => `
+                <a href="${escapeHtml(res.url)}" target="_blank" rel="noopener noreferrer" style="text-decoration:none; font-size:0.77rem; color:var(--accent-blue); display:flex; align-items:center; gap:0.35rem;" title="${escapeHtml(res.note || '')}">
+                  ${renderLangBadgeHtml(res.lang || "EN")} <strong>[${escapeHtml(res.type || "źródło")}]</strong> <span>${escapeHtml(res.title)}</span> ↗
+                </a>
+              `).join("")}
+            </div>
+          </div>
+        `).join("")}
+      </div>
+    </div>
   `;
 }
 
@@ -10952,6 +11607,28 @@ function renderCarAudioView() {
                 `
                   )
                   .join("")}
+              </div>
+            `
+                : ""
+            }
+
+            <!-- Uzupełniające materiały dydaktyczne do bazy wiedzy -->
+            ${
+              ep.didacticMaterials && ep.didacticMaterials.length
+                ? `
+              <div style="display:flex; flex-direction:column; gap:0.35rem; margin-top:0.5rem; padding-top:0.5rem; border-top:1px dashed rgba(59,130,246,0.25);">
+                <span style="font-size:0.73rem; color:var(--accent-blue); font-weight:700;">📚 ${isEn ? "Supplementary Didactic Knowledge Base (Textbooks, Monographs & Repositories):" : "Uzupełniające materiały dydaktyczne do bazy wiedzy (podręczniki, monografie, otwarte źródła):"}</span>
+                <div style="display:flex; gap:0.4rem; flex-wrap:wrap; align-items:center;">
+                  ${ep.didacticMaterials
+                    .map(
+                      (dm) => `
+                    <a href="${escapeHtml(dm.url)}" target="_blank" rel="noopener noreferrer" class="alignment-badge" style="text-decoration:none; color:var(--accent-blue); border-color:rgba(59,130,246,0.3); background:rgba(59,130,246,0.06); padding:0.22rem 0.55rem;" title="${escapeHtml(dm.description || "")}">
+                      ${renderLangBadgeHtml(dm.lang || "EN")} <strong>[${escapeHtml(dm.type || "podręcznik")}]</strong> ${escapeHtml(dm.title)} ↗
+                    </a>
+                  `
+                    )
+                    .join("")}
+                </div>
               </div>
             `
                 : ""
