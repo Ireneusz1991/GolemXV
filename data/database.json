@@ -25,7 +25,7 @@
       "fPerspective": "Projekt F — kosmos: jak stworzyć sztuczne środowisko podtrzymujące życie tam, gdzie naturalne warunki są dla człowieka nieprzyjazne. Koncentruje się na inżynierii środowiska i adaptacji do warunków pozaziemskich.",
       "gPerspective": "Projekt G — Ziemia: jak żyć w istniejącym, złożonym ekosystemie i chronić jego zdolność do podtrzymywania życia. Koncentruje się na ekologii, zdrowiu człowieka, zrównoważonej technologii i ochronie biosfery."
     },
-    "schemaVersion": "2.2.0",
+    "schemaVersion": "2.3.0",
     "capsuleMode": true,
     "adaptiveSecurityVersion": "NIST-2026-310K"
   },
@@ -6320,5 +6320,73 @@
         "contentMarkdownPl": "# Rozdział VII: Filozofia Przyszłości i Etyka Tworzenia Świata\n\nDocierając do ostatniego rozdziału Summy Technologiae 2.0, stajemy na krawędzi, za którą kończy się inżynieria cząstkowa, a zaczyna odpowiedzialność kosmiczna.\n\n### 1. Człowiek jako Demiurg Technologiczny\n\nPrzez setki tysięcy lat człowiek był dzieckiem biosfery — podmiotem kształtowanym przez przypadkowe mutacje i bezwzględny dobór naturalny. Dziś, dysponując narzędziami edycji genomu, syntezy organoidów, interfejsami mózg-maszyna i nieograniczoną energią jądra atomowego, człowiek sam staje się siłą ewolucyjną. \nTo przejście Stanisław Lem określił mianem *demiurgii*. Tworzymy nowe gatunki, syntetyczne sieci neuronalne i nowe habitaty. Jednak demiurg nie może być kapryśny. Błąd w inżynierii genomu lub niekontrolowana kaskada AI nie jest zwykłym błędem technicznym — staje się zagrożeniem egzystencjalnym.\n\n### 2. Status Istot Syntetycznych i Nowa Etyka\n\nJeśli w Projekcie B uda się wyemulować architekturę kognitywną zdolną do odczuwania cierpienia, a w Projekcie D stworzymy organoid korowy o zintegrowanej aktywności, tradycyjna etyka antropocentryczna przestanie wystarczać. \nNie możemy traktować czujących bytów cyfrowych wyłącznie jako narzędzi czy podprogramów. Będziemy musieli wypracować ramy prawne dla umysłów syntetycznych — Kodeks Istot Niematerialnych, o którym marzyła literatura science fiction, a który w Sztabie W-0 Projektu Manhattan musi stać się częścią prawa administracyjnego przyszłości.\n\n### 3. Zwieńczenie Drogi do Rzeczywistości\n\nTytuł całego naszego ekosystemu brzmi: *The Golem 15: A Human's Road to Reality*. \nGolem w tradycji żydowskiej i u Lema to istota ulepiona z martwej gliny, ożywiona słowem — literami prawdy (*EMET*). Człowiek wyruszył w drogę, aby zrozumieć rzeczywistość taką, jaka jest: w jej matematycznej precyzji, fizycznej surowości i biologicznej złożoności.\nNie robimy tego po to, aby uciec od człowieczeństwa, lecz po to, by ochronić je i wznieść na wyższy poziom poznawczy. \nDroga jest długa — zaplanowana na 3 lata Administracji i kolejne dekady studiów z rzędu. Każdy zapisany rozdział tej książki, każdy odsłuchany w samochodzie odcinek i każdy węzeł rozszczepienia w grafie przybliża nas do tego jednego, wielkiego celu: zrozumienia rzeczywistości i godnego w niej przetrwania.\n"
       }
     ]
-  }
+  },
+  "autonomousResearchProposals": [
+    {
+      "id": "res-prop-2026-neuromorphic-memristor",
+      "trackId": "C",
+      "branchTopic": "Neuromorfizm i Obliczanie Analogowe",
+      "titlePl": "Autonomiczny Projekt Badawczy: Memrystorowe Macierze Synaptyczne o Podwójnej Fazie jako Architektura Post-Krzemowa",
+      "titleEn": "Autonomous Research Project: Dual-Phase Memristive Synaptic Crossbars as a Post-Silicon Architecture",
+      "createdAt": "2026-10-26T22:00:00Z",
+      "sourcePaper": {
+        "title": "Scalable Memristive Crossbar Arrays for Deep Spiking Neural Networks with Sub-Femtojoule Synaptic Events",
+        "published": "2026-10-15",
+        "link": "https://arxiv.org/abs/2610.08942",
+        "authors": [
+          "K. Chen",
+          "M. Kowalski",
+          "A. S. Thorne"
+        ],
+        "abstractExcerpt": "We demonstrate a 64x64 TiO2-x memristive crossbar operating at 0.18 fJ per synaptic event, overcoming von Neumann memory-computation bottlenecks for biologically inspired continuous-learning networks."
+      },
+      "epistemicStatus": "🟢 Eksperymentalnie Falsyfikowalna (Popper)",
+      "falsifiableHypothesis": "Zastosowanie matrycy memrystorowej z tlenku tytanu obniża dyssypację cieplną propagacji wstecznej w sieciach SNN poniżej 0.5 fJ/synapsę przy zachowaniu dokładności klasyfikacji > 98.2% na zbiorze N-MNIST.",
+      "methodology": [
+        "Faza 1: Numeryczna symulacja stochastycznej dynamiki memrystorów w środowisku Brian2 i JAX-MD",
+        "Faza 2: Walidacja barier termodynamicznych i granic szumu Johnsona-Nyquista w niskich temperaturach",
+        "Faza 3: Fizyczna fabrykacja prototypu matrycy na podłożu SiN z elektrodami platynowymi",
+        "Faza 4: Testy odporności radiacyjnej i audyt bezpieczeństwa zgodności z normą EU AI Act 2024/1689"
+      ],
+      "equipmentAndStack": "Brian2, PyTorch-Spiking, Matryca Memrystorowa TiO2, Oscyloskop 40 GHz, Komora Próżniowa",
+      "regulatoryAudit": "EU AI Act Klasa II (Przejrzystość wag wagowych); Bezpieczeństwo chemiczne nanomateriałów RoHS-III",
+      "contextualVerification": "Pokrywa się z Sylabusem Manhattan (Fizyka Ciała Stałego Y2 + Neuromorfizm Y3) oraz Trajektorią Ścieżki C.",
+      "relevanceScore": 98,
+      "suggestedBy": "Golem XV Cognitive Engine (Multi-Model ArXiv Synthesis)",
+      "status": "PROPOSED"
+    },
+    {
+      "id": "res-prop-2026-quantum-fission-hybrid",
+      "trackId": "H",
+      "branchTopic": "Fuzja Termojądrowa i Kwantowe Sterowanie Plazmą",
+      "titlePl": "Autonomiczny Projekt Badawczy: Hybrydowe Kwantowo-Klasyczne Algorytmy Wariacyjne w Stabilizacji Plazmy Tokamaka",
+      "titleEn": "Autonomous Research Project: Hybrid Quantum-Classical Variational Algorithms for Tokamak Plasma Stabilization",
+      "createdAt": "2026-10-26T22:30:00Z",
+      "sourcePaper": {
+        "title": "Variational Quantum Eigensolver Strategies for Non-Linear Magnetohydrodynamic Instabilities in Fusion Plasmas",
+        "published": "2026-10-20",
+        "link": "https://arxiv.org/abs/2610.11024",
+        "authors": [
+          "L. V. Santos",
+          "J. Nowak",
+          "E. H. Fermi"
+        ],
+        "abstractExcerpt": "Real-time prevention of Edge Localized Modes (ELMs) in fusion reactors requires sub-millisecond solving of magnetohydrodynamic equations. We propose a VQE algorithm tailored for NISQ quantum coprocessors."
+      },
+      "epistemicStatus": "🟡 Teoretycznie Dowiedziona (Formalna)",
+      "falsifiableHypothesis": "Kwantowo-klasyczny algorytm VQE na 64-kubitowym koprocesorze nadprzewodzącym skraca czas predykcji niestabilności typu tear-mode poniżej 250 mikrosekund, wyprzedzając klasyczne metody WENO.",
+      "methodology": [
+        "Faza 1: Dekompozycja hamiltonianu magnetohydrodynamiki plazmy na bramki Pauliego w bibliotece Qiskit",
+        "Faza 2: Kalibracja na symulatorze kwantowym z modelem szumu dekoherencji T1/T2",
+        "Faza 3: Integracja pętli sprzężenia zwrotnego z symulatorem tokamaka JET/ITER w środowisku C++",
+        "Faza 4: Weryfikacja protokołów bezpieczeństwa radiologicznego zgodnie z polskim Prawem Atomowym"
+      ],
+      "equipmentAndStack": "Qiskit Aer, C++ OpenFOAM MHD, Koprocesor Kwantowy IBM Quantum / Rigetti, Pomiary Bolometryczne",
+      "regulatoryAudit": "Prawo Atomowe (Dz.U. 2024 poz. 1277); Zezwolenie PAA na sterowanie systemami wczesnego ostrzegania",
+      "contextualVerification": "Zgodny z węzłem Manhattan FIS-01 (Tokamak Sterowany Cyfrowo) oraz Rozdziałem VII Summy Technologiae 2.0.",
+      "relevanceScore": 99,
+      "suggestedBy": "Golem XV Cognitive Engine (Multi-Model ArXiv Synthesis)",
+      "status": "PROPOSED"
+    }
+  ]
 }
