@@ -5929,7 +5929,7 @@ const DEFAULT_SEED = {
         ]
       }
     ],
-    "completedCarAudio": [],
+    "completedCarAudio": {},
     "completedSubchapters": {}
   },
   "summaBook": {
@@ -6553,10 +6553,18 @@ function ensureSchema(d) {
     if (!d.manhattanSystem.completedTopicYears) {
       d.manhattanSystem.completedTopicYears = {};
     }
-    if (!d.manhattanSystem.completedSubchapters) {
+    if (Array.isArray(d.manhattanSystem.completedSubchapters)) {
+      const smap = {};
+      d.manhattanSystem.completedSubchapters.forEach((k) => { smap[k] = true; });
+      d.manhattanSystem.completedSubchapters = smap;
+    } else if (!d.manhattanSystem.completedSubchapters || typeof d.manhattanSystem.completedSubchapters !== "object") {
       d.manhattanSystem.completedSubchapters = {};
     }
-    if (!d.manhattanSystem.completedCarAudio) {
+    if (Array.isArray(d.manhattanSystem.completedCarAudio)) {
+      const cmap = {};
+      d.manhattanSystem.completedCarAudio.forEach((k) => { cmap[k] = true; });
+      d.manhattanSystem.completedCarAudio = cmap;
+    } else if (!d.manhattanSystem.completedCarAudio || typeof d.manhattanSystem.completedCarAudio !== "object") {
       d.manhattanSystem.completedCarAudio = {};
     }
     if (!Array.isArray(d.manhattanSystem.carAudioRoad) || !d.manhattanSystem.carAudioRoad.length) {

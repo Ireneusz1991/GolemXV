@@ -5955,7 +5955,7 @@ DEFAULT_SEED = {
         ]
       }
     ],
-    "completedCarAudio": [],
+    "completedCarAudio": {},
     "completedSubchapters": {}
   },
   "summaBook": {
@@ -6154,8 +6154,16 @@ def ensure_db_schema(data):
             for n in seed_ms["fissionNodes"]:
                 if n["id"] not in existing_fis:
                     ms["fissionNodes"].append(json.loads(json.dumps(n)))
-            ms.setdefault("completedSubchapters", {})
-            ms.setdefault("completedCarAudio", {})
+            if not isinstance(ms.get("completedSubchapters"), dict):
+                if isinstance(ms.get("completedSubchapters"), list):
+                    ms["completedSubchapters"] = {k: True for k in ms["completedSubchapters"]}
+                else:
+                    ms["completedSubchapters"] = {}
+            if not isinstance(ms.get("completedCarAudio"), dict):
+                if isinstance(ms.get("completedCarAudio"), list):
+                    ms["completedCarAudio"] = {k: True for k in ms["completedCarAudio"]}
+                else:
+                    ms["completedCarAudio"] = {}
             if not ms.get("carAudioRoad"):
                 ms["carAudioRoad"] = json.loads(json.dumps(seed_ms.get("carAudioRoad", [])))
             if "summaBook" not in data or not isinstance(data.get("summaBook"), dict):
@@ -7423,7 +7431,13 @@ with tab_manhattan:
 
         # Blok 0: 3 Lata Studiów Administracji (Lata 1-3)
         admin_core = ms_state.get("adminCore3Y", {})
-        admin_subs_done = ms_state.setdefault("completedSubchapters", {})
+        raw_subs_done = ms_state.get("completedSubchapters")
+        if not isinstance(raw_subs_done, dict):
+            if isinstance(raw_subs_done, list):
+                ms_state["completedSubchapters"] = {k: True for k in raw_subs_done}
+            else:
+                ms_state["completedSubchapters"] = {}
+        admin_subs_done = ms_state["completedSubchapters"]
         with st.expander(f"🏛️ LATA 1–3 ({start_cal}–{start_cal + 3}) • {admin_core.get('titleEn') if is_en else admin_core.get('titlePl')} [{len(admin_done_list)}/3]", expanded=True):
             st.caption(admin_core.get("subtitleEn") if is_en else admin_core.get("subtitlePl"))
             for yr_obj in admin_core.get("years", []):
@@ -7549,7 +7563,13 @@ with tab_caraudio:
     st.caption("Celowo ułożona ścieżka dźwiękowa do słuchania w trasie: 18 odcinków w 4 logicznych etapach od Sztabu W-0 po Fuzję Termojądrową.")
 
     road_list = ms_state.setdefault("carAudioRoad", json.loads(json.dumps(DEFAULT_SEED.get("manhattanSystem", {}).get("carAudioRoad", []))))
-    done_car_map = ms_state.setdefault("completedCarAudio", {})
+    raw_car_done = ms_state.get("completedCarAudio")
+    if not isinstance(raw_car_done, dict):
+        if isinstance(raw_car_done, list):
+            ms_state["completedCarAudio"] = {k: True for k in raw_car_done}
+        else:
+            ms_state["completedCarAudio"] = {}
+    done_car_map = ms_state["completedCarAudio"]
     done_car_count = sum(1 for ep in road_list if done_car_map.get(ep["id"], False))
     pct_road = int(round((done_car_count / len(road_list)) * 100)) if road_list else 0
     tot_min = sum(ep.get("estimatedDurationMin", 15) for ep in road_list)
