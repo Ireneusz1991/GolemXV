@@ -2754,7 +2754,7 @@
       "sourceLang": "PL",
       "author": "Jarosław Juszkiewicz (Radio Katowice)",
       "content": "Autorski, wybitny radiowy cykl Jarosława Juszkiewicza dedykowany twórczości i filozofii Stanisława Lema. Prowadzący (znany z niepowtarzalnego głosu) analizuje technologiczne, filozoficzne i socjologiczne koncepcje Lema, pokazując ich bezpośrednie urzeczywistnianie się we współczesnym świecie.\n\nOmówione dzieła i koncepcje:\n1. 'Summa Technologiae' — ewolucja technologii, fantomatyka (wirtualna rzeczywistość), kosmoinżynieria i hodowla informacji.\n2. 'Golem XIV' — granica ludzkiego rozumu, sztuczna inteligencja jako byt autonomiczny przekraczający ludzką epistemologię.\n3. 'Głos Pana' — trudność w nawiązaniu kontaktu i odczytaniu kodu obcej cywilizacji, ograniczenia nauki antropocentrycznej.\n4. 'Niezwyciężony' i 'Fiasko' — nekroewolucja mechaniczna, nanorobotyka roju i kosmiczny pancerz technologiczny.",
-      "url": "https://radio.katowice.pl/",
+      "url": "https://podcasty.radio.katowice.pl/category/swiaty-lema/",
       "links": [
         {
           "label": "🇵🇱 Światy Lema — Polskie Radio Katowice",
@@ -5745,22 +5745,22 @@
         ],
         "curatedAudioLinks": [
           {
-            "title": "Radio Naukowe — Jak zarządzać wielką nauką i megaprojektami B+R [Spotify/Web]",
-            "url": "https://radionaukowe.pl/",
-            "lang": "PL",
-            "type": "podcast"
-          },
-          {
-            "title": "Lex Fridman Podcast #267 — Mark Spitznagel: Safe Havens, Risk and Long-Term Strategy",
-            "url": "https://lexfridman.com/mark-spitznagel/",
-            "lang": "EN",
-            "type": "podcast"
-          },
-          {
-            "title": "Polskie Radio — Rygor organizacyjny i historia Projektu Manhattan w Los Alamos",
-            "url": "https://polskieradio.pl/",
+            "title": "Polskie Radio Jedynka — Prof. Łukasz Turski: Oppenheimer nie wymyślił bomby atomowej [Audio]",
+            "url": "https://jedynka.polskieradio.pl/artykul/3219621,Prof-%C5%81ukasz-Turski-Oppenheimer-nie-wymy%C5%9Bli%C5%82-bomby-atomowej",
             "lang": "PL",
             "type": "audycja"
+          },
+          {
+            "title": "Nauka. To Lubię (dr Tomasz Rożek) — Historia Oppenheimera: Genialny fizyk i Projekt Manhattan",
+            "url": "https://www.youtube.com/watch?v=9k7IgvZbs_4",
+            "lang": "PL",
+            "type": "wideo/podcast"
+          },
+          {
+            "title": "Lex Fridman Podcast #390 — Stephen Wolfram: Complexity, Computation, Physics & Manhattan Project",
+            "url": "https://lexfridman.com/stephen-wolfram-4/",
+            "lang": "EN",
+            "type": "podcast"
           }
         ]
       },
@@ -5783,20 +5783,20 @@
         ],
         "curatedAudioLinks": [
           {
-            "title": "Radio Naukowe — Prawne granice sztucznej inteligencji: regulacje EU AI Act 2024/1689",
-            "url": "https://radionaukowe.pl/",
+            "title": "Radio Naukowe — Czy możemy ufać sztucznej inteligencji? (prof. Przemysław Biecek)",
+            "url": "https://radionaukowe.pl/podcast/czy-mozemy-ufac-sztucznej-inteligencji-prof-przemyslaw-biecek/",
             "lang": "PL",
             "type": "podcast"
           },
           {
-            "title": "IAEA Nuclear Safety Podcast — International Standards & Governance for Advanced Reactors",
-            "url": "https://www.iaea.org/",
-            "lang": "EN",
+            "title": "Radio Naukowe [E106] — Sztuczna inteligencja i big data: czy technologia wyeliminuje przestępczość?",
+            "url": "https://radionaukowe.pl/podcast/sztuczna-inteligencja-i-big-data-czy-technologia-wyeliminuje-przestepczosc-e106/",
+            "lang": "PL",
             "type": "podcast"
           },
           {
-            "title": "Stacja Filozofia (TOK FM) — Etyka technologii autonomicznych i prawo nowych technologii",
-            "url": "https://audycje.tokfm.pl/audycja/Stacja-Filozofia/293",
+            "title": "Radio Naukowe — Sztuczna inteligencja: czy naprawdę może istnieć bez człowieka? (prof. Aleksandra Przegalińska)",
+            "url": "https://radionaukowe.pl/podcast/sztuczna-inteligencja-czy-naprawde-moze-istniec-bez-czlowieka-prof-aleksandra-przegalinska/",
             "lang": "PL",
             "type": "podcast"
           }
@@ -5821,22 +5821,22 @@
         ],
         "curatedAudioLinks": [
           {
-            "title": "Centrum Kopernika (prof. Michał Heller) — Geometria czasoprzestrzeni i matematyczność przyrody",
-            "url": "https://copernicuscenter.edu.pl/",
+            "title": "Radio Naukowe — Wszechświat i tajemnica (ks. prof. Michał Heller: matematyczność świata)",
+            "url": "https://radionaukowe.pl/podcast/wszechswiat-i-tajemnica-ks-prof-michal-heller/",
             "lang": "PL",
             "type": "podcast"
           },
           {
-            "title": "Zapytaj Fizyka (UW) — Tensory, symetrie i algebra przestrzeni Hilberta",
-            "url": "https://zapytajfizyka.fuw.edu.pl/",
+            "title": "Radio Naukowe — Przełom czy kradzież? OpenAI i problem milenijny (dr Bartosz Naskręcki)",
+            "url": "https://radionaukowe.pl/podcast/przelom-czy-kradziez-openai-i-problem-milenijny-komentarz-dr-bartosz-naskrecki/",
             "lang": "PL",
-            "type": "wykład"
+            "type": "podcast"
           },
           {
-            "title": "3Blue1Brown Audio Series — Essence of Linear Algebra & Tensor Fields",
-            "url": "https://www.youtube.com/@3blue1brown",
+            "title": "3Blue1Brown — Essence of Linear Algebra & Vectors/Tensors [Cykl wykładów audio/wideo]",
+            "url": "https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab",
             "lang": "EN",
-            "type": "seria"
+            "type": "kurs audio/wideo"
           }
         ]
       },
@@ -5859,22 +5859,22 @@
         ],
         "curatedAudioLinks": [
           {
-            "title": "Radio Naukowe — Czym jest informacja i jak mierzyć entropię Shannona?",
-            "url": "https://radionaukowe.pl/",
+            "title": "Radio Naukowe [E122] — Sztuczna inteligencja: jak działają sieci neuronowe i uczenie maszynowe?",
+            "url": "https://radionaukowe.pl/podcast/sztuczna-inteligencja-jak-dzialaja-sieci-neutronowe-i-uczenie-maszynowe-e122/",
             "lang": "PL",
             "type": "podcast"
           },
           {
-            "title": "Sean Carroll's Mindscape #172 — David Deutsch: Information, Computation and The Beginning of Infinity",
-            "url": "https://www.preposterousuniverse.com/podcast/",
+            "title": "Sean Carroll's Mindscape #253 — David Deutsch on Science, Complexity, and Explanation",
+            "url": "https://www.preposterousuniverse.com/podcast/2023/10/16/253-david-deutsch-on-science-complexity-and-explanation/",
             "lang": "EN",
             "type": "podcast"
           },
           {
-            "title": "Centrum Kopernika — Maszyny Turinga, twierdzenie Gödla i granice algorytmiki",
-            "url": "https://copernicuscenter.edu.pl/",
+            "title": "Radio Naukowe — Filozofia fizyki: czy fizycy wiedzą, co robią? [E130]",
+            "url": "https://radionaukowe.pl/podcast/filozofia-fizyki-czy-fizycy-wiedza-co-robia-e130/",
             "lang": "PL",
-            "type": "wykład"
+            "type": "podcast"
           }
         ]
       },
@@ -5897,22 +5897,22 @@
         ],
         "curatedAudioLinks": [
           {
-            "title": "Nauka. To Lubię — Jak powstają chipy GPU i TPU oraz maszyny litograficzne ASML EUV",
-            "url": "https://naukatolubie.pl/",
-            "lang": "PL",
-            "type": "podcast"
-          },
-          {
-            "title": "Lex Fridman Podcast #182 & #252 — Jim Keller: Microprocessor Architecture & Beyond von Neumann",
-            "url": "https://lexfridman.com/jim-keller/",
+            "title": "Lex Fridman Podcast #252 — Jim Keller: The Future of Computing, AI, Life, and Consciousness",
+            "url": "https://lexfridman.com/jim-keller-2/",
             "lang": "EN",
             "type": "podcast"
           },
           {
-            "title": "Projekt Pulsar — Wąskie gardło von Neumanna i rewolucja pamięciowa HBM",
-            "url": "https://www.projektpulsar.pl/",
+            "title": "Radio Naukowe — Superkomputer Kraken: mocarz w służbie nauki",
+            "url": "https://radionaukowe.pl/podcast/superkomputer-kraken-mocarz-w-sluzbie-nauki-dr-inz-pawel-orzechowski-mgr-inz-monika-pacek-mgr-boguslaw-smiech/",
             "lang": "PL",
             "type": "podcast"
+          },
+          {
+            "title": "Nauka. To Lubię (dr Tomasz Rożek) — Jan Czochralski i monokryształy: Technologia krzemowa, która zmieniła świat",
+            "url": "https://www.youtube.com/watch?v=fIK8RMP0qho",
+            "lang": "PL",
+            "type": "wideo/podcast"
           }
         ]
       },
@@ -5935,21 +5935,21 @@
         ],
         "curatedAudioLinks": [
           {
-            "title": "Zapytaj Fizyka (UW) — Prof. Andrzej Dragan: Niezwykłości mechaniki kwantowej i relatywistyka",
-            "url": "https://zapytajfizyka.fuw.edu.pl/",
+            "title": "Radio Naukowe [E42] — Kwantowa zasada względności: nadświetlni obserwatorzy brani na serio (prof. Andrzej Dragan)",
+            "url": "https://radionaukowe.pl/podcast/kwantowa-zasada-wzglednosci-czyli-nadswietlni-obserwatorzy-brani-na-serio-e42/",
             "lang": "PL",
-            "type": "wykład"
-          },
-          {
-            "title": "Sean Carroll's Mindscape #59 — The Many Worlds of Quantum Mechanics and Wavefunction Collapse",
-            "url": "https://www.preposterousuniverse.com/podcast/",
-            "lang": "EN",
             "type": "podcast"
           },
           {
-            "title": "Kwantowo.pl Podcast — Splątanie kwantowe, paradoks EPR i nierówności Bella",
-            "url": "https://www.kwantowo.pl/",
+            "title": "Radio Naukowe [E18] — Teleportacja kwantowa i jej zastosowania praktyczne",
+            "url": "https://radionaukowe.pl/podcast/teleportacja-kwantowa-i-jej-zastosowania-praktyczne-e18/",
             "lang": "PL",
+            "type": "podcast"
+          },
+          {
+            "title": "Sean Carroll's Mindscape #55 — A Conversation on Quantum Mechanics and Many Worlds",
+            "url": "https://preposterousuniverse.com/podcast/2019/07/15/55-a-conversation-with-rob-reid-on-quantum-mechanics-and-many-worlds/",
+            "lang": "EN",
             "type": "podcast"
           }
         ]
@@ -5973,21 +5973,21 @@
         ],
         "curatedAudioLinks": [
           {
-            "title": "Centrum Kopernika — Entropia, fizyka informacji i termodynamiczna strzałka czasu",
-            "url": "https://copernicuscenter.edu.pl/",
-            "lang": "PL",
+            "title": "Sean Carroll's Mindscape #158 — David Wallace on The Arrow of Time and Statistical Mechanics",
+            "url": "https://www.preposterousuniverse.com/podcast/2021/08/02/158-david-wallace-on-the-arrow-of-time/",
+            "lang": "EN",
             "type": "podcast"
           },
           {
-            "title": "Zapytaj Fizyka (UW) — Granica Landauera: ile energii kosztuje skasowanie jednego bitu?",
-            "url": "https://zapytajfizyka.fuw.edu.pl/",
-            "lang": "PL",
-            "type": "wykład"
+            "title": "Sean Carroll's Mindscape #51 — Anthony Aguirre on Cosmology, Zen, Entropy, and Information",
+            "url": "https://www.preposterousuniverse.com/podcast/2019/06/17/episode-51-anthony-aguirre-on-cosmology-zen-entropy-and-information/",
+            "lang": "EN",
+            "type": "podcast"
           },
           {
-            "title": "Sean Carroll's Mindscape #100 — The Big Picture: Thermodynamics, Emergence and Life",
-            "url": "https://www.preposterousuniverse.com/podcast/",
-            "lang": "EN",
+            "title": "Radio Naukowe [E131] — Fizyka w 2D: jakie supermoce mają atomowe warstwy materii?",
+            "url": "https://radionaukowe.pl/podcast/fizyka-w-2d-jakie-supermoce-maja-atomowe-warstwy-materii-e131/",
+            "lang": "PL",
             "type": "podcast"
           }
         ]
@@ -6011,20 +6011,20 @@
         ],
         "curatedAudioLinks": [
           {
-            "title": "Radio Naukowe — Kiedy skończy się krzem? Granice nanoelektroniki poniżej 2 nm",
-            "url": "https://radionaukowe.pl/",
+            "title": "Nauka. To Lubię (dr Tomasz Rożek) — Limit CPU: Fizyczne ograniczenia procesorów i koniec skalowania",
+            "url": "https://www.youtube.com/watch?v=q4rnXDeevCw",
+            "lang": "PL",
+            "type": "wideo/podcast"
+          },
+          {
+            "title": "Radio Naukowe [E131] — Fizyka w 2D: grafen i nanomateriały po erze czystego krzemu",
+            "url": "https://radionaukowe.pl/podcast/fizyka-w-2d-jakie-supermoce-maja-atomowe-warstwy-materii-e131/",
             "lang": "PL",
             "type": "podcast"
           },
           {
-            "title": "Nauka. To Lubię — Litografia EUV i załamanie prawa Moore'a",
-            "url": "https://naukatolubie.pl/",
-            "lang": "PL",
-            "type": "podcast"
-          },
-          {
-            "title": "IEEE Spectrum Podcast — The End of Silicon Scaling: 2D Materials, Spintronics & Graphene",
-            "url": "https://spectrum.ieee.org/",
+            "title": "Lex Fridman Podcast #70 — Jim Keller: Moore's Law, Microprocessors, and First Principles",
+            "url": "https://lexfridman.com/jim-keller/",
             "lang": "EN",
             "type": "podcast"
           }
@@ -6055,15 +6055,15 @@
             "type": "podcast"
           },
           {
-            "title": "Zapytaj Fizyka (UW) — Jak zbudować procesor kwantowy na kubitach nadprzewodzących?",
-            "url": "https://zapytajfizyka.fuw.edu.pl/",
+            "title": "Radio Naukowe [E111] — Materiały kwantowe: rewolucja technologiczna tuż za rogiem",
+            "url": "https://radionaukowe.pl/podcast/materialy-kwantowe-rewolucja-technologiczna-tuz-za-rogiem-e111/",
             "lang": "PL",
-            "type": "wykład"
+            "type": "podcast"
           },
           {
-            "title": "IBM Quantum Podcast — Algorytmy hybrydowe VQE i korekcja błędów kwantowych w Qiskit",
-            "url": "https://www.ibm.com/quantum",
-            "lang": "EN",
+            "title": "Radio Naukowe [E90] — Kryptografia kwantowa: jak fizyka chroni przed podsłuchami",
+            "url": "https://radionaukowe.pl/podcast/kryptografia-kwantowa-jak-fizyka-chroni-przed-podsluchami-e90/",
+            "lang": "PL",
             "type": "podcast"
           }
         ]
@@ -6087,21 +6087,21 @@
         ],
         "curatedAudioLinks": [
           {
-            "title": "Radio Naukowe — Elektroniczny mózg: chipy neuromorficzne, memrystory i sieci SNN",
-            "url": "https://radionaukowe.pl/",
+            "title": "Radio Naukowe — Przyczółki ludzkości: gdzie sztuczna inteligencja nie sięgnie (prof. Włodzisław Duch)",
+            "url": "https://radionaukowe.pl/podcast/przyczolki-ludzkosci-gdzie-sztuczna-inteligencja-nie-siegnie-prof-wlodzislaw-duch/",
             "lang": "PL",
             "type": "podcast"
           },
           {
-            "title": "Nature Podcast — Memristive Crossbars for Sub-Femtojoule Brain-Inspired Computing",
-            "url": "https://nature.com/",
+            "title": "Radio Naukowe [E99] — Minimózgi w probówkach: organoidy i neuroinżynieria",
+            "url": "https://radionaukowe.pl/podcast/mimimozgi-w-probowkach-jak-nauka-chce-pokonac-choroby-neurodegeneracyjne-e99/",
+            "lang": "PL",
+            "type": "podcast"
+          },
+          {
+            "title": "Lex Fridman Podcast #267 — Yann LeCun: Deep Learning, Neural Networks and Autonomous AI",
+            "url": "https://lexfridman.com/yann-lecun-2/",
             "lang": "EN",
-            "type": "podcast"
-          },
-          {
-            "title": "Projekt Pulsar — Obliczenia analogowe przez fizykę materii skondensowanej",
-            "url": "https://www.projektpulsar.pl/",
-            "lang": "PL",
             "type": "podcast"
           }
         ]
@@ -6125,20 +6125,20 @@
         ],
         "curatedAudioLinks": [
           {
-            "title": "Huberman Lab Podcast #48 — Neuroplasticity, Brain Circuits & Brain-Machine Interfaces",
-            "url": "https://www.hubermanlab.com/",
+            "title": "Huberman Lab Podcast — How to Rewire Your Brain and Learn Faster (Dr. Michael Kilgard)",
+            "url": "https://www.hubermanlab.com/episode/how-to-rewire-your-brain-and-learn-faster-dr-michael-kilgard",
             "lang": "EN",
             "type": "podcast"
           },
           {
-            "title": "Radio Naukowe — Czy połączymy mózg z maszyną? Interfejsy BCI Neuralink i elektrody CMOS",
-            "url": "https://radionaukowe.pl/",
-            "lang": "PL",
+            "title": "Huberman Lab Podcast — How to Focus to Change Your Brain (Neuroplasticity Protocols)",
+            "url": "https://www.hubermanlab.com/episode/how-to-focus-to-change-your-brain",
+            "lang": "EN",
             "type": "podcast"
           },
           {
-            "title": "Strefa Psyche SWPS — Neuroinżynieria bioniczna i protetyka neuronalna",
-            "url": "https://swps.pl/strefa-psyche",
+            "title": "Radio Naukowe — Neurony i pamięć: nowe metody badań (dr hab. Jan Kamiński)",
+            "url": "https://radionaukowe.pl/podcast/neurony-i-pamiec-nowe-metody-badan-weryfikuja-dawne-twierdzenia-dr-hab-jan-kaminski/",
             "lang": "PL",
             "type": "podcast"
           }
@@ -6163,21 +6163,21 @@
         ],
         "curatedAudioLinks": [
           {
-            "title": "Radio Naukowe — Konektom: mapa wszystkich połączeń synaptycznych w ludzkim mózgu",
-            "url": "https://radionaukowe.pl/",
+            "title": "Lex Fridman Podcast #83 — Nick Bostrom: Simulation and Superintelligence",
+            "url": "https://lexfridman.com/nick-bostrom/",
+            "lang": "EN",
+            "type": "podcast"
+          },
+          {
+            "title": "Radio Naukowe — Czy mózg jest jak cebula? O budowie i strukturze najważniejszego organu",
+            "url": "https://radionaukowe.pl/podcast/czy-mozg-jest-jak-cebula-o-budowie-najwazniejszego-organu/",
             "lang": "PL",
             "type": "podcast"
           },
           {
-            "title": "Oxford FHI Audio Series — Nick Bostrom & Anders Sandberg: Whole Brain Emulation Roadmap",
-            "url": "https://www.fhi.ox.ac.uk/",
-            "lang": "EN",
-            "type": "podcast"
-          },
-          {
-            "title": "Lex Fridman Podcast #333 — Nick Bostrom: Superintelligence, Brain Emulation and Humanity's Future",
-            "url": "https://lexfridman.com/nick-bostrom/",
-            "lang": "EN",
+            "title": "Radio Naukowe — Neurony i pamięć: mechanizmy utrwalania informacji (dr hab. Jan Kamiński)",
+            "url": "https://radionaukowe.pl/podcast/neurony-i-pamiec-nowe-metody-badan-weryfikuja-dawne-twierdzenia-dr-hab-jan-kaminski/",
+            "lang": "PL",
             "type": "podcast"
           }
         ]
@@ -6201,21 +6201,21 @@
         ],
         "curatedAudioLinks": [
           {
-            "title": "Radio Naukowe — CRISPR-Cas9 i inżynieria genetyczna: jak edytować kod życia",
-            "url": "https://radionaukowe.pl/",
+            "title": "Radio Naukowe [E46] — Biolog z NASA buduje sztuczne komórki: syntetyczne życie i medycyna",
+            "url": "https://radionaukowe.pl/podcast/biolog-z-nasa-buduje-sztuczne-komorki-to-ulatwi-podroze-kosmiczne-poszukiwanie-zycia-i-rozwinie-medycyne-e46/",
             "lang": "PL",
             "type": "podcast"
           },
           {
-            "title": "Nauka. To Lubię — Biologia syntetyczna: od komórek Venter'a do sztucznego życia",
-            "url": "https://naukatolubie.pl/",
+            "title": "Radio Naukowe [E13] — Wielkie wow w biologii: sztuczna inteligencja przewiduje strukturę 3D białek (AlphaFold)",
+            "url": "https://radionaukowe.pl/podcast/wielkie-wow-w-biologii-sztuczna-inteligencja-swietnie-przewiduje-strukture-3d-bialek-e13/",
             "lang": "PL",
             "type": "podcast"
           },
           {
-            "title": "The CRISPR Journal Podcast — Base Editing, Prime Editing & Synthetic Organoids",
-            "url": "https://liebertpub.com/",
-            "lang": "EN",
+            "title": "Radio Naukowe [E168] — Genetyczny Adam: to on dał początek kluczowej mutacji",
+            "url": "https://radionaukowe.pl/podcast/genetyczny-adam-to-on-dal-poczatek-kluczowej-mutacji-e168/",
+            "lang": "PL",
             "type": "podcast"
           }
         ]
@@ -6239,21 +6239,21 @@
         ],
         "curatedAudioLinks": [
           {
-            "title": "Radio Naukowe — Biosfera jako układ termodynamiczny i planetarne granice stabilności",
-            "url": "https://radionaukowe.pl/",
-            "lang": "PL",
-            "type": "podcast"
-          },
-          {
-            "title": "Crazy Nauka Podcast — Jak zaprojektować samowystarczalny zamknięty ekosystem podtrzymywania życia?",
-            "url": "https://crazynauka.pl/",
-            "lang": "PL",
-            "type": "podcast"
-          },
-          {
-            "title": "ESA Space Exploration Audio — The MELiSSA Project: Closed Ecological Life Support Systems",
-            "url": "https://esa.int/",
+            "title": "Sean Carroll's Mindscape #120 — Jeremy England on Biology, Thermodynamics, and Living Systems",
+            "url": "https://www.preposterousuniverse.com/podcast/2020/10/26/120-jeremy-england-on-biology-thermodynamics-and-the-bible/",
             "lang": "EN",
+            "type": "podcast"
+          },
+          {
+            "title": "Radio Naukowe [E110] — Rajski ogród: czy nowoczesna botanika odnalazła Eden?",
+            "url": "https://radionaukowe.pl/podcast/rajski-ogrod-czy-nowoczesna-botanika-odnalazla-eden-e110/",
+            "lang": "PL",
+            "type": "podcast"
+          },
+          {
+            "title": "Radio Naukowe [LAMU25-06] — Jak niesporczaki mogą przetrwać w próżni i kosmosie?",
+            "url": "https://radionaukowe.pl/podcast/lamu25-06-ile-zebow-ma-slimak-jak-niesporczaki-moga-przetrwac-w-kosmosie/",
+            "lang": "PL",
             "type": "podcast"
           }
         ]
@@ -6277,22 +6277,22 @@
         ],
         "curatedAudioLinks": [
           {
-            "title": "Nauka. To Lubię — Energetyka jądrowa i małe reaktory modułowe SMR w Polsce",
-            "url": "https://naukatolubie.pl/",
+            "title": "Nauka. To Lubię (dr Tomasz Rożek) — Polski Reaktor MARIA w Świerku: Co za wstyd!",
+            "url": "https://www.youtube.com/watch?v=mOTaIOZGDwM",
             "lang": "PL",
-            "type": "podcast"
+            "type": "wideo/podcast"
           },
           {
-            "title": "NCBJ Świerk Audio — Reaktor badawczy MARIA: rdzeń, pręty kontrolne i beryl",
-            "url": "https://www.ncbj.gov.pl/",
+            "title": "Narodowe Centrum Badań Jądrowych (NCBJ) — Badawczy reaktor jądrowy MARIA w Świerku",
+            "url": "https://www.youtube.com/watch?v=JSgyYTqTKvE",
             "lang": "PL",
-            "type": "audycja"
+            "type": "film/audycja"
           },
           {
-            "title": "Titans of Nuclear Podcast — Next-Gen Nuclear Fission, SMR Licensing & High-Temperature Reactors",
-            "url": "https://www.titansofnuclear.com/",
+            "title": "Catalyst with Shayle Kann — Strong Opinions on Small Modular Reactors (SMR)",
+            "url": "https://www.youtube.com/watch?v=2c3IaAd55cc",
             "lang": "EN",
-            "type": "podcast"
+            "type": "podcast/wideo"
           }
         ]
       },
@@ -6315,22 +6315,22 @@
         ],
         "curatedAudioLinks": [
           {
-            "title": "Radio Naukowe — Fuzja jądrowa: kiedy gwiazda zaświeci w gniazdku? Tokamaki i ITER",
-            "url": "https://radionaukowe.pl/",
+            "title": "Radio Naukowe [E183] — Energia fuzji: na jakim etapie są prace nad elektrownią termojądrową? (prof. Agata Chomiczewska)",
+            "url": "https://radionaukowe.pl/podcast/energia-fuzji-na-jakim-etapie-sa-prace-nad-elektrownia-termojadrowa-e183/",
             "lang": "PL",
             "type": "podcast"
           },
           {
-            "title": "ITER Official Audio Series — Building the Sun on Earth: Plasma Physics & Superconducting Magnets",
-            "url": "https://www.iter.org/",
-            "lang": "EN",
+            "title": "Radio Naukowe [E03] — Fuzja jądrowa: czy naukowcom uda się rozpalić na Ziemi mikrosłońce? (dr hab. Jacek Rzadkiewicz)",
+            "url": "https://radionaukowe.pl/podcast/e03-fuzja-jadrowa/",
+            "lang": "PL",
             "type": "podcast"
           },
           {
-            "title": "Titans of Nuclear — Fusion Breakthroughs: SPARC, Tokamak Energy & Stellarators",
-            "url": "https://www.titansofnuclear.com/",
+            "title": "ITER Organization Official — Building the Sun on Earth [Kanał wideo/audio projektu ITER]",
+            "url": "https://www.youtube.com/@iterorganization",
             "lang": "EN",
-            "type": "podcast"
+            "type": "oficjalny kanał ITER"
           }
         ]
       },
@@ -6353,20 +6353,20 @@
         ],
         "curatedAudioLinks": [
           {
-            "title": "NASA Houston We Have a Podcast — Space Radiation, Cosmic Rays & Deep Space Avionics",
-            "url": "https://nasa.gov/",
+            "title": "NASA Houston We Have a Podcast [Ep 75] — Radiation Shielding: Deep Space Hardening",
+            "url": "https://www.nasa.gov/podcasts/houston-we-have-a-podcast/radiation-shielding/",
             "lang": "EN",
             "type": "podcast"
           },
           {
-            "title": "Radio Naukowe — Człowiek w kosmosie: medycyna ekstremalna, mikrograwitacja i napędy jądrowe",
-            "url": "https://radionaukowe.pl/",
+            "title": "Radio Naukowe — Życie na Marsie i kolonizacja kosmosu",
+            "url": "https://radionaukowe.pl/podcast/zycie-na-marsie-i-kolonizacja-kosmosu/",
             "lang": "PL",
             "type": "podcast"
           },
           {
-            "title": "Polska Agencja Kosmiczna POLSA — Bezpieczeństwo misji załogowych i systemy odporne na radiację",
-            "url": "https://polsa.gov.pl/",
+            "title": "Radio Naukowe [LAMU24-02] — Czy po pierścieniach Saturna można jeździć na wrotkach? Czy polecimy w kosmos?",
+            "url": "https://radionaukowe.pl/podcast/czy-po-pierscieniach-saturna-mozna-jezdzic-na-wrotkach-czy-dzieci-poleca-w-kosmos-lamu24-odc-2/",
             "lang": "PL",
             "type": "podcast"
           }
@@ -6391,22 +6391,22 @@
         ],
         "curatedAudioLinks": [
           {
-            "title": "Światy Lema (Radio Katowice / Jarosław Juszkiewicz) — Summa Technologiae i ewolucja technosfery",
-            "url": "https://radio.katowice.pl/",
+            "title": "Radio 357 — Prekursorzy: 20 wizji lepszego świata #1: Stanisław Lem (dr hab. Agnieszka Gajewska, Jarosław Juszkiewicz)",
+            "url": "https://radio357.pl/podcasty/audycje/prekursorzy-20-wizji-lepszego-swiata/odcinek/436003/",
             "lang": "PL",
             "type": "podcast"
           },
           {
-            "title": "Radio 357 Prekursorzy — Stanisław Lem: Biografia demiurga i profetyzm Summy (dr hab. Agnieszka Gajewska)",
-            "url": "https://radio357.pl/",
+            "title": "Światy Lema (Radio Katowice / Jarosław Juszkiewicz) — Odc. 1: Powrót z Gwiazd",
+            "url": "https://podcasty.radio.katowice.pl/swiaty-lema-odc-1-powrot-z-gwiazd/",
             "lang": "PL",
-            "type": "podcast"
+            "type": "podcast/słuchowisko"
           },
           {
-            "title": "Radio Naukowe — Dlaczego Stanisław Lem przewidział wszystko? (prof. Stanisław Bereś)",
-            "url": "https://radionaukowe.pl/",
+            "title": "Światy Lema (Radio Katowice / Jarosław Juszkiewicz) — Odc. 3: Niezwyciężony (nekroewolucja maszyn)",
+            "url": "https://podcasty.radio.katowice.pl/swiaty-lema-odc-3-niezwyciezony/",
             "lang": "PL",
-            "type": "podcast"
+            "type": "podcast/słuchowisko"
           }
         ]
       },
@@ -6429,21 +6429,21 @@
         ],
         "curatedAudioLinks": [
           {
-            "title": "Światy Lema (Radio Katowice / Jarosław Juszkiewicz) — Golem XIV i granice rozumu ludzkiego",
-            "url": "https://radio.katowice.pl/",
+            "title": "Światy Lema (Radio Katowice / Jarosław Juszkiewicz) — Odc. 6: Cyberiada (konstrukcja myślących maszyn)",
+            "url": "https://podcasty.radio.katowice.pl/swiaty-lema-odc-6-cyberiada/",
+            "lang": "PL",
+            "type": "podcast/słuchowisko"
+          },
+          {
+            "title": "Radio Naukowe — Sztuczna inteligencja: czy naprawdę może istnieć bez człowieka? (prof. Aleksandra Przegalińska)",
+            "url": "https://radionaukowe.pl/podcast/sztuczna-inteligencja-czy-naprawde-moze-istniec-bez-czlowieka-prof-aleksandra-przegalinska/",
             "lang": "PL",
             "type": "podcast"
           },
           {
-            "title": "Centrum Kopernika (prof. Bartosz Brożek) — Czy maszyna może mieć świadomość i moralność?",
-            "url": "https://copernicuscenter.edu.pl/",
+            "title": "Radio Naukowe — Przyczółki ludzkości: granice maszyn i świadomość (prof. Włodzisław Duch)",
+            "url": "https://radionaukowe.pl/podcast/przyczolki-ludzkosci-gdzie-sztuczna-inteligencja-nie-siegnie-prof-wlodzislaw-duch/",
             "lang": "PL",
-            "type": "podcast"
-          },
-          {
-            "title": "Machine Learning Street Talk (MLST) — Neuro-Symbolic AI, Consciousness and Lem's Epistemology",
-            "url": "https://www.youtube.com/@MachineLearningStreetTalk",
-            "lang": "EN",
             "type": "podcast"
           }
         ]
@@ -6467,21 +6467,21 @@
         ],
         "curatedAudioLinks": [
           {
-            "title": "Centrum Kopernika (prof. Michał Heller) — Wielka Synteza Nauki: Od Administracji po Metafizykę Przyrody",
-            "url": "https://copernicuscenter.edu.pl/",
+            "title": "Radio Naukowe — Wszechświat i tajemnica (ks. prof. Michał Heller)",
+            "url": "https://radionaukowe.pl/podcast/wszechswiat-i-tajemnica-ks-prof-michal-heller/",
             "lang": "PL",
             "type": "podcast"
           },
           {
-            "title": "Sean Carroll's Mindscape #100 — The Big Picture: On the Origins of Life, Meaning, and the Universe",
-            "url": "https://www.preposterousuniverse.com/podcast/",
+            "title": "Radio Naukowe — Cokolwiek: jak nadać znaczenie byle czemu (prof. Bartosz Brożek, ks. prof. Michał Heller, prof. Jerzy Stelmach)",
+            "url": "https://radionaukowe.pl/podcast/cokolwiek-jak-nadac-znaczenie-byle-czemu-prof-b-brozek-ks-prof-m-heller-prof-j-stelmach/",
+            "lang": "PL",
+            "type": "podcast"
+          },
+          {
+            "title": "Sean Carroll's Mindscape #253 — David Deutsch on Science, Complexity, and Explanation",
+            "url": "https://www.preposterousuniverse.com/podcast/2023/10/16/253-david-deutsch-on-science-complexity-and-explanation/",
             "lang": "EN",
-            "type": "podcast"
-          },
-          {
-            "title": "Radio Naukowe — Wielka synteza naukowa XXI wieku: fizyka, biologia i AI w jednym paradygmacie",
-            "url": "https://radionaukowe.pl/",
-            "lang": "PL",
             "type": "podcast"
           }
         ]
