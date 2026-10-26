@@ -10668,6 +10668,7 @@ function saveCustomCarAudioEpisode(e) {
 }
 
 function renderCarAudioView() {
+  renderMobileAudioBar();
   const root = document.getElementById("carAudioRootContainer");
   if (!root || !appState.data || !appState.data.manhattanSystem) return;
 
@@ -11638,6 +11639,90 @@ async function triggerNativeUpdateFromGitHub() {
   } catch (err) {
     showNotification(isEn ? "GitHub update checked. Working in offline mode." : "Weryfikacja GitHub: Aplikacja działa stabilnie w autonomicznym trybie offline.");
   }
+}
+
+
+function renderMobileAudioBar() {
+  const bar = document.getElementById("mobileCarAudioBar");
+  if (!bar) return;
+
+  const isEn = appState.lang === "en";
+  const ms = appState.data && appState.data.manhattanSystem;
+  const road = (ms && ms.carAudioRoad) || [];
+  const currentEp = road.find((e) => e.id === appState.carAudioPlayingId);
+  const isSpeaking = window.speechSynthesis && window.speechSynthesis.speaking && !window.speechSynthesis.paused;
+  const isPaused = window.speechSynthesis && window.speechSynthesis.paused;
+  const isBookSpeaking = Boolean(window.bookSpeechUtterance);
+
+  if (!currentEp && !isBookSpeaking && !isPaused && !isSpeaking) {
+    bar.style.display = "none";
+    document.body.classList.remove("has-mobile-audio");
+    return;
+  }
+
+  document.body.classList.add("has-mobile-audio");
+  bar.style.display = "flex";
+
+  let title = "";
+  let badgeText = "";
+  let playPauseAction = "";
+  let nextAction = "";
+  let stopAction = "";
+
+  if (currentEp) {
+    title = isEn && currentEp.titleEn ? currentEp.titleEn : currentEp.titlePl;
+    badgeText = `🎧 Odc. #${currentEp.order} • ${currentEp.tripProfile || "Trasa"}`;
+    playPauseAction = "pauseCarAudio()";
+    stopAction = "stopCarAudio()";
+
+    const currIdx = road.findIndex((e) => e.id === currentEp.id);
+    if (currIdx >= 0 && currIdx + 1 < road.length) {
+      const nextId = road[currIdx + 1].id;
+      nextAction = `playCarAudioEpisode('${nextId}')`;
+    }
+  } else if (isBookSpeaking) {
+    title = isEn ? "Summa Technologiae 2.0 Narration" : "Summa Technologiae 2.0 — Lektor Lemowski";
+    badgeText = "📖 Rozdział Książki";
+    playPauseAction = "stopBookSpeech()";
+    stopAction = "stopBookSpeech()";
+  }
+
+  const iconPlay = isSpeaking ? "⏸" : "▶";
+  const rate = appState.carAudioRate || 1.15;
+
+  bar.innerHTML = `
+    <div style="display:flex; align-items:center; gap:0.75rem; min-width:0; flex:1;">
+      <button class="mobile-car-audio-play-btn" onclick="${playPauseAction}" aria-label="Play/Pause">
+        ${iconPlay}
+      </button>
+      <div style="min-width:0; flex:1;">
+        <div style="font-size:0.72rem; font-weight:700; color:var(--accent-blue); text-transform:uppercase; letter-spacing:0.04em;">
+          ${badgeText}
+        </div>
+        <div style="font-size:0.86rem; font-weight:700; color:var(--text-primary); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; font-family:var(--font-serif);">
+          ${title}
+        </div>
+      </div>
+    </div>
+
+    <div style="display:flex; align-items:center; gap:0.4rem; flex-shrink:0;">
+      <button class="btn btn-sm" onclick="cycleCarAudioRate()" style="font-size:0.75rem; padding:0.25rem 0.5rem; border-radius:4px;" title="Prędkość lektora">
+        ${rate}x
+      </button>
+      ${nextAction ? `<button class="btn btn-sm btn-primary" onclick="${nextAction}" title="${isEn ? "Next Episode" : "Następny odcinek"}" style="padding:0.35rem 0.65rem;">⏭</button>` : ""}
+      <button class="btn btn-sm" onclick="${stopAction}" title="${isEn ? "Stop" : "Zatrzymaj"}" style="padding:0.35rem 0.5rem; color:var(--text-muted);">⏹</button>
+    </div>
+  `;
+}
+
+function cycleCarAudioRate() {
+  const current = appState.carAudioRate || 1.15;
+  let next = 1.0;
+  if (current <= 1.05) next = 1.25;
+  else if (current <= 1.3) next = 1.5;
+  else next = 1.0;
+  setCarAudioRate(next);
+  renderMobileAudioBar();
 }
 
 window.addEventListener("DOMContentLoaded", initApp);

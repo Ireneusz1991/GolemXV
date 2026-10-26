@@ -8066,6 +8066,64 @@ st.markdown(
     .fis-select-ring {{
         stroke: var(--svg-ring);
     }}
+
+    /* ==========================================================================
+       RESPONSYWNOŚĆ MOBILNA I TABLETOWA DLA STREAMLIT (TELEFONY I TABLETY)
+       ========================================================================== */
+    @media (max-width: 960px) {{
+        .block-container {{
+            padding-left: 0.75rem !important;
+            padding-right: 0.75rem !important;
+            padding-top: 0.8rem !important;
+            padding-bottom: 4rem !important;
+        }}
+        [data-baseweb="tab-list"] {{
+            overflow-x: auto !important;
+            flex-wrap: nowrap !important;
+            -webkit-overflow-scrolling: touch !important;
+            scrollbar-width: none !important;
+            padding-bottom: 0.35rem !important;
+            gap: 0.3rem !important;
+        }}
+        [data-baseweb="tab-list"]::-webkit-scrollbar {{
+            display: none !important;
+        }}
+        [data-baseweb="tab"] {{
+            white-space: nowrap !important;
+            min-height: 48px !important;
+            padding: 0.65rem 0.95rem !important;
+            font-size: 0.88rem !important;
+            flex-shrink: 0 !important;
+            touch-action: manipulation !important;
+        }}
+        div[data-testid="column"] {{
+            width: 100% !important;
+            flex: 1 1 100% !important;
+            min-width: 100% !important;
+        }}
+        .stButton > button {{
+            min-height: 48px !important;
+            font-size: 0.96rem !important;
+            width: 100% !important;
+            touch-action: manipulation !important;
+        }}
+        .stCheckbox {{
+            min-height: 44px !important;
+            display: flex !important;
+            align-items: center !important;
+        }}
+        .stCheckbox input {{
+            transform: scale(1.3) !important;
+            margin-right: 0.4rem !important;
+        }}
+        div[data-testid="stMetricValue"] {{
+            font-size: 1.3rem !important;
+        }}
+        .stTextInput input, .stSelectbox select, .stTextArea textarea {{
+            font-size: 16px !important;
+            min-height: 44px !important;
+        }}
+    }}
     </style>
     """,
     unsafe_allow_html=True,
