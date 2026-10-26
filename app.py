@@ -18,6 +18,13 @@ st.set_page_config(
 )
 
 # ==============================================================================
+# DEFINICJE ZGODNOŚCI Z JSON (null, true, false dla ewaluacji literałów)
+# ==============================================================================
+null = None
+true = True
+false = False
+
+# ==============================================================================
 # WBUDOWANA BAZA STARTOWA (DZIAŁA NAWET GDY WGRASZ SAM PLIK app.py NA GITHUB)
 # ==============================================================================
 DEFAULT_SEED = {
@@ -2224,7 +2231,7 @@ DEFAULT_SEED = {
       "id": "mat-nwp-dg1",
       "trackId": "D",
       "branchTopic": "Inżynieria tkankowa i sztuczne narządy.",
-      "subprojectId": null,
+      "subprojectId": None,
       "title": "BIOTECHNOLOGIA, ORGANOIDY I EKOSYSTEM (Nauka w Polsce): Przeszczep wyhodowanej w laboratorium tkanki przysadki, organizmy chimeryczne oraz reakcja biosfery na zmiany klimatu",
       "type": "Przegląd artykułów — Nauka w Polsce [PL]",
       "sourceLang": "PL",
@@ -2256,7 +2263,7 @@ DEFAULT_SEED = {
       "id": "mat-13",
       "trackId": "E",
       "branchTopic": "Filozofia nauki: dowód, hipoteza, teoria i granice modeli.",
-      "subprojectId": null,
+      "subprojectId": None,
       "title": "BIBLIOTEKA PROJEKTU — VI. Kolejność czytania i zasady pracy z literaturą (w pierwszej kolejności źródła polskojęzyczne)",
       "type": "Przewodnik metodologiczny GOLEM 15",
       "author": "Administrator",
@@ -2361,7 +2368,7 @@ DEFAULT_SEED = {
       "id": "mat-10",
       "trackId": "D",
       "branchTopic": "Genetyka, DNA i regulacja genów.",
-      "subprojectId": null,
+      "subprojectId": None,
       "title": "BIBLIOTEKA PROJEKTU — III. Chemia, Biologia i Genetyka (w pierwszej kolejności po polsku: Brown „Genomy”, „Biologia Campbella”, Alberts, Stryer + OpenStax 2e)",
       "type": "Biblioteka Projektu GOLEM 15 (PL → EN)",
       "author": "Administrator",
@@ -2513,7 +2520,7 @@ DEFAULT_SEED = {
       "id": "mat-4",
       "trackId": "D",
       "branchTopic": "Biologia syntetyczna i edycja genomu.",
-      "subprojectId": null,
+      "subprojectId": None,
       "title": "GOLEM 15 — Projekt D: „Frankenstein” — biotechnologia i tworzenie organizmów (w pierwszej kolejności po polsku: Alberts, Brown, Bartel „Embriologia”, Komitet Bioetyki PAN, Lem „Summa technologiae”)",
       "type": "Biblioteka uzupełniająca GOLEM 15 (PL → EN)",
       "author": "Administrator",
@@ -2552,7 +2559,7 @@ DEFAULT_SEED = {
       "id": "mat-5",
       "trackId": "E",
       "branchTopic": "Filozofia nauki: dowód, hipoteza, teoria i granice modeli.",
-      "subprojectId": null,
+      "subprojectId": None,
       "title": "GOLEM 15 — Projekt E: Filozofia nauki, umysłu, techniki i bioetyka (w pierwszej kolejności po polsku: Chalmers, Kuhn, Heller, Tatarkiewicz, Wolne Lektury)",
       "type": "Biblioteka uzupełniająca GOLEM 15 (PL → EN)",
       "author": "Administrator",
@@ -2661,7 +2668,7 @@ DEFAULT_SEED = {
       "id": "mat-1",
       "trackId": "E",
       "branchTopic": "Filozofia nauki: dowód, hipoteza, teoria i granice modeli.",
-      "subprojectId": null,
+      "subprojectId": None,
       "title": "Granice modeli formalnych a interpretacja stanów umysłowych i biologicznych (Heller, Miłkowski & Poczobut, SEP)",
       "type": "Artykuł / Notatka przekrojowa",
       "author": "Administrator",
@@ -5119,7 +5126,7 @@ DEFAULT_SEED = {
     "fissionNodes": [
       {
         "id": "FIS-00",
-        "parentId": null,
+        "parentId": None,
         "generation": 0,
         "code": "CORE-235",
         "siteId": "SITE-W0",
