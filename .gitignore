@@ -1,0 +1,9 @@
+# Git ignore for Golem XV
+__pycache__/
+*.pyc
+*.pyo
+.streamlit/secrets.toml
+archives/
+data/database.auto_backup.json
+data/timecapsule_*.json
+*.log

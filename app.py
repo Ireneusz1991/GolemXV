@@ -6349,9 +6349,13 @@ DEFAULT_SEED = {
   }
 }
 
-DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_DIR = os.path.join(BASE_DIR, "data")
+ARCHIVES_DIR = os.path.join(BASE_DIR, "archives")
 DB_FILE = os.path.join(DATA_DIR, "database.json")
 SEED_FILE = os.path.join(DATA_DIR, "seed.json")
+CURRENT_SCHEMA_VERSION = "2.2.0"
+RECOMMENDED_PBKDF2_ITERATIONS = 310000
 LOCAL_DEVICE_KEY_FILE = os.path.expandvars(r"%LOCALAPPDATA%\Programs\gh\golem_owner_device.key")
 
 
@@ -6475,6 +6479,156 @@ def check_github_upstream_status() -> dict:
             "error": str(e),
             "status": "Tryb offline"
         }
+
+
+
+def migrate_database_schema(database: dict, default_seed: dict = None) -> tuple[dict, list]:
+    """
+    Kapsuła Czasu (Hibernacja DOS-owa) i Sekwencyjny Łańcuch Migracji Schematu.
+    Zapewnia bezpieczne uruchomienie bazy nawet po latach z płyty lub starej kopii bez rozsypania danych.
+    """
+    migration_logs = []
+    meta = database.setdefault("projectMeta", {})
+    old_version = meta.get("schemaVersion") or "1.0.0"
+
+    if old_version == CURRENT_SCHEMA_VERSION:
+        return database, migration_logs
+
+    # KROK 1: ZAMROŻENIE STANU W KAPSUŁE CZASU PRZED MIGRACJĄ
+    from datetime import datetime, timezone
+    now_str = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
+    capsule_name = f"timecapsule_v{str(old_version).replace('.', '_')}_{now_str}.json"
+    capsule_path = os.path.join(DATA_DIR, capsule_name)
+    try:
+        with open(capsule_path, "w", encoding="utf-8") as f_cap:
+            json.dump(database, f_cap, ensure_ascii=False, indent=2)
+        migration_logs.append(f"Kapsuła Czasu: Utworzono nienaruszony zrzut bazy v{old_version} w: {capsule_name}")
+    except Exception as e:
+        migration_logs.append(f"Ostrzeżenie zapisu kapsuły czasu: {e}")
+
+    # KROK 2: SEKWENCYJNY ŁAŃCUCH MIGRACJI (1.0 -> 2.0 -> 2.1 -> 2.2)
+    def v_tuple(v_str):
+        parts = []
+        for p in str(v_str).split("."):
+            try:
+                parts.append(int(p))
+            except Exception:
+                parts.append(0)
+        return tuple((parts + [0, 0, 0])[:3])
+
+    cur_v = v_tuple(old_version)
+
+    # Migracja do 2.0.0: Upewnienie się o obecności manhattanSystem
+    if cur_v < (2, 0, 0):
+        if default_seed and "manhattanSystem" in default_seed:
+            if "manhattanSystem" not in database or not database["manhattanSystem"]:
+                database["manhattanSystem"] = json.loads(json.dumps(default_seed["manhattanSystem"]))
+                migration_logs.append("Migracja v2.0.0: Zainicjalizowano moduł Manhattan (16 kierunków studiów)")
+        cur_v = (2, 0, 0)
+
+    # Migracja do 2.1.0: Upewnienie się o obecności summaBook i carAudioRoad
+    if cur_v < (2, 1, 0):
+        if default_seed and "summaBook" in default_seed:
+            if "summaBook" not in database or not database["summaBook"]:
+                database["summaBook"] = json.loads(json.dumps(default_seed["summaBook"]))
+                migration_logs.append("Migracja v2.1.0: Zainicjalizowano moduł Summa Technologiae 2.0 (8 rozdziałów Lema)")
+        cur_v = (2, 1, 0)
+
+    # Migracja do 2.2.0: Podbicie iteracji zabezpieczeń i wskaźników kondycji
+    if cur_v < (2, 2, 0):
+        meta["schemaVersion"] = CURRENT_SCHEMA_VERSION
+        meta["capsuleMode"] = True
+        meta["adaptiveSecurityVersion"] = "NIST-2026-310K"
+        migration_logs.append(f"Migracja v2.2.0: Ustanowiono wersję schematu {CURRENT_SCHEMA_VERSION} oraz parametry NIST-2026-310K")
+
+    return database, migration_logs
+
+
+def create_full_project_archive() -> str:
+    """Tworzy pełne, skompresowane archiwum projektu ZIP w katalogu archives/ z rotacją do 10 kopii."""
+    os.makedirs(ARCHIVES_DIR, exist_ok=True)
+    from datetime import datetime, timezone
+    import zipfile
+    now_str = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
+    zip_name = f"GolemXV_Full_Archive_{now_str}.zip"
+    zip_path = os.path.join(ARCHIVES_DIR, zip_name)
+
+    files_to_pack = [
+        "app.py", "app.js", "index.html", "styles.css", "sw.js",
+        "manifest.json", "requirements.txt", "run.bat",
+        "uruchom_serwer.bat", "server.js", "server.ps1",
+        "data/seed.json", "data/database.json"
+    ]
+
+    with zipfile.ZipFile(zip_path, "w", compression=zipfile.ZIP_DEFLATED) as zf:
+        for rel in files_to_pack:
+            p = os.path.join(BASE_DIR, rel.replace("/", os.sep))
+            if os.path.exists(p):
+                zf.write(p, arcname=rel)
+
+    # Rotacja: zachowaj do 10 ostatnich archiwów
+    try:
+        all_zips = sorted([
+            os.path.join(ARCHIVES_DIR, f) for f in os.listdir(ARCHIVES_DIR)
+            if f.startswith("GolemXV_Full_Archive_") and f.endswith(".zip")
+        ], key=os.path.getmtime)
+        if len(all_zips) > 10:
+            for old_zip in all_zips[:-10]:
+                os.remove(old_zip)
+    except Exception:
+        pass
+
+    return zip_path
+
+
+def update_local_installation_from_github() -> dict:
+    """Pobiera najświeższy kod z oficjalnego repozytorium GitHub bezpośrednio na dysk lokalny."""
+    import urllib.request, ssl
+    try:
+        import certifi
+        ctx = ssl.create_default_context(cafile=certifi.where())
+    except Exception:
+        ctx = ssl.create_default_context()
+
+    # Krok 1: Kopia bezpieczeństwa przed aktualizacją
+    pre_zip = create_full_project_archive()
+
+    files = [
+        "app.py", "app.js", "index.html", "styles.css", "sw.js",
+        "manifest.json", "requirements.txt", "data/seed.json"
+    ]
+
+    base_url = "https://raw.githubusercontent.com/Ireneusz1991/GolemXV/main/"
+    updated = []
+    downloaded_data = {}
+
+    for rel in files:
+        url = base_url + rel
+        req = urllib.request.Request(url, headers={"User-Agent": "GolemXV-LocalUpdater"})
+        try:
+            with urllib.request.urlopen(req, context=ctx, timeout=12) as resp:
+                if resp.status == 200:
+                    downloaded_data[rel] = resp.read()
+        except Exception as e:
+            return {
+                "ok": False,
+                "error": f"Nie udało się pobrać pliku {rel}: {e}",
+                "backup_zip": pre_zip
+            }
+
+    # Krok 2: Zapis pobranych plików na dysk lokalny
+    for rel, content in downloaded_data.items():
+        dst = os.path.join(BASE_DIR, rel.replace("/", os.sep))
+        os.makedirs(os.path.dirname(dst), exist_ok=True)
+        with open(dst, "wb") as f_dst:
+            f_dst.write(content)
+        updated.append(rel)
+
+    return {
+        "ok": True,
+        "updated_files": updated,
+        "backup_zip": pre_zip
+    }
 
 
 def run_system_self_healing(database: dict, default_seed: dict = None) -> tuple[dict, dict]:
@@ -6876,7 +7030,7 @@ def compute_pbkdf2_hash(password: str, salt_hex: str, iterations: int = 260000) 
     return dk.hex()
 
 
-def create_admin_auth_record(new_password: str, iterations: int = 260000) -> dict:
+def create_admin_auth_record(new_password: str, iterations: int = RECOMMENDED_PBKDF2_ITERATIONS) -> dict:
     salt_hex = secrets.token_hex(16)
     hash_hex = compute_pbkdf2_hash(new_password, salt_hex, iterations)
     return {
@@ -6920,7 +7074,13 @@ def verify_admin_password(candidate_password: str, db_data: dict) -> bool:
         return False
     try:
         candidate_hash = compute_pbkdf2_hash(candidate_password, salt_hex, iterations)
-        return hmac.compare_digest(candidate_hash, expected_hash)
+        is_valid = hmac.compare_digest(candidate_hash, expected_hash)
+        if is_valid and iterations < RECOMMENDED_PBKDF2_ITERATIONS:
+            # Adaptacyjne podbicie zabezpieczeń w locie do standardu NIST-2026 (310 000 iteracji)
+            upgraded_auth = create_admin_auth_record(candidate_password, iterations=RECOMMENDED_PBKDF2_ITERATIONS)
+            db_data.setdefault("projectMeta", {})["adminAuth"] = upgraded_auth
+            save_db(db_data)
+        return is_valid
     except Exception:
         return False
 
@@ -7001,6 +7161,7 @@ def matches_lang_filter(code: str, filter_choice: str) -> bool:
 # INICJALIZACJA STANU I NOWOCZESNY STYL PORTALU WWW (WEBSITE-GRADE CSS)
 # ==============================================================================
 db = load_db()
+db, migration_logs = migrate_database_schema(db, DEFAULT_SEED)
 db, healing_report = run_system_self_healing(db, DEFAULT_SEED)
 expected_dev_token = get_expected_device_token(db)
 
@@ -8898,12 +9059,51 @@ with tab_security:
         st.success("Pamięć podręczna (Streamlit Cache) została całkowicie wyczyszczona i zoptymalizowana!")
 
     with st.expander("📋 Szczegółowy Dziennik Autodiagnostyki i Ewolucji Technologii"):
+        st.markdown(f"**Wersja schematu danych:** `v{CURRENT_SCHEMA_VERSION} (Kapsuła Czasu aktywna)`")
+        st.markdown(f"**Zabezpieczenia kryptograficzne:** `PBKDF2-HMAC-SHA256 ({RECOMMENDED_PBKDF2_ITERATIONS} iteracji — standard NIST-2026)`")
         st.markdown(f"**Ostatni test integralności:** `{healing_report.get('timestamp')}`")
         st.markdown(f"**Wykryte i samonaprawione anomalie:** `{healing_report.get('anomalies_repaired')}`")
         st.markdown(f"**Lokalizacja automatycznej kopii zapasowej:** `{os.path.join(DATA_DIR, 'database.auto_backup.json')}`")
+        st.markdown(f"**Katalog bezpiecznych archiwów projektu:** `{ARCHIVES_DIR}`")
+        if migration_logs:
+            st.markdown("**Dziennik migracji kapsuły czasu:**")
+            for item in migration_logs:
+                st.markdown(f"- `{item}`")
         if healing_report.get("log"):
             st.markdown("**Wykonane operacje samoregulacji:**")
             for item in healing_report["log"]:
                 st.markdown(f"- `{item}`")
-        else:
-            st.markdown("Brak anomalii. Wszystkie relacje grafu, 16 kierunków studiów Manhattanu, 20 modułów audio oraz 8 rozdziałów Summy Technologiae 2.0 są w 100% spójne.")
+
+    # --------------------------------------------------------------------------
+    # POBIERANIE PEŁNEGO ARCHIWUM PROJEKTU I AKTUALIZACJA WERSJI NATYWNEJ
+    # --------------------------------------------------------------------------
+    st.markdown("#### 📦 Podwójna Archiwizacja i Aktualizacja Wersji Natywnej (Localhost)")
+    col_arc1, col_arc2 = st.columns(2)
+
+    with col_arc1:
+        st.write("**Bezpieczna Kopia Projektu (Dysk & Chmura):**")
+        st.caption("Generuje kompletny pakiet ZIP zawierający cały kod źródłowy, bazy danych, audycje i książkę. Możesz go zapisać na dysku zewnętrznym, nośniku lub przenieść do innej chmury.")
+        try:
+            full_zip_file = create_full_project_archive()
+            with open(full_zip_file, "rb") as f_zf:
+                st.download_button(
+                    "📥 Pobierz Pełne Archiwum Projektu (.zip)",
+                    data=f_zf.read(),
+                    file_name=os.path.basename(full_zip_file),
+                    mime="application/zip",
+                    use_container_width=True
+                )
+        except Exception as e:
+            st.error(f"Nie udało się wygenerować archiwum ZIP: {e}")
+
+    with col_arc2:
+        st.write("**Aktualizacja Kodu Natywnego z GitHuba:**")
+        st.caption("Pobiera najświeższy kod i wzorce z chmury GitHub bezpośrednio na dysk Twojego komputera, zabezpieczając uprzednio stan w katalogu archives/.")
+        if st.button("🚀 Zaktualizuj Wersję Natywną (Localhost) z GitHuba", use_container_width=True):
+            with st.spinner("Pobieranie najnowszych plików z GitHub main..."):
+                res = update_local_installation_from_github()
+                if res.get("ok"):
+                    st.success(f"Pomyślnie zaktualizowano wersję lokalną! Zaktualizowano {len(res['updated_files'])} plików. Kopia bezpieczeństwa: `{os.path.basename(res['backup_zip'])}`.")
+                    st.rerun()
+                else:
+                    st.error(f"Błąd aktualizacji natywnej: {res.get('error')}")

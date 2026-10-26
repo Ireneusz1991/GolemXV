@@ -24,7 +24,10 @@
       "summary": "Oba projekty badają człowieka w relacji ze środowiskiem, ale z różnych perspektyw:",
       "fPerspective": "Projekt F — kosmos: jak stworzyć sztuczne środowisko podtrzymujące życie tam, gdzie naturalne warunki są dla człowieka nieprzyjazne. Koncentruje się na inżynierii środowiska i adaptacji do warunków pozaziemskich.",
       "gPerspective": "Projekt G — Ziemia: jak żyć w istniejącym, złożonym ekosystemie i chronić jego zdolność do podtrzymywania życia. Koncentruje się na ekologii, zdrowiu człowieka, zrównoważonej technologii i ochronie biosfery."
-    }
+    },
+    "schemaVersion": "2.2.0",
+    "capsuleMode": true,
+    "adaptiveSecurityVersion": "NIST-2026-310K"
   },
   "foundationDisciplines": [
     {
