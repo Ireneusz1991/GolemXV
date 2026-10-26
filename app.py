@@ -2103,617 +2103,901 @@ DEFAULT_SEED = {
     }
   ],
   "materials": [
-    {
-      "id": "mat-nwp-h1",
-      "trackId": "H",
-      "branchTopic": "Reaktory wysokotemperaturowe chłodzone gazem (HTGR, w tym polski projekt HTGR-POLA w NCBJ Świerk) do kogeneracji i produkcji wodoru.",
-      "subprojectId": "sub-4",
-      "title": "SUPER-PROJEKT H (Nauka w Polsce & Ludzie Nauki): Koncepcja polskiego reaktora wysokotemperaturowego HTGR-POLA, reaktor MARIA (NCBJ) oraz fuzja termojądrowa w kontekście podwariantów A–G",
-      "type": "Raport badawczy — Nauka w Polsce & Ludzie Nauki [PL]",
-      "sourceLang": "PL",
-      "author": "Ireneusz",
-      "content": "Zestawienie badań z Narodowego Centrum Badań Jądrowych (NCBJ w Świerku) opublikowanych w serwisie Nauka w Polsce (PAP) oraz powiązanych profili w bazie Ludzie Nauki:\n1. Projekt HTGR-POLA (POLski Atomowy): Opracowana w NCBJ koncepcja badawczo-demonstracyjnego reaktora wysokotemperaturowego chłodzonego helem (analizy bezpieczeństwa opublikowane m.in. w „Nuclear Technology”). Reaktory HTGR i SMR mogą zasilać zarówno przemysł chemiczny i produkcję wodoru (Projekt G), jak i wielkoskalowe centra danych AI (Projekt B/C).\n2. Reaktor badawczy MARIA (30 MW): Jedyny w Polsce reaktor jądrowy generujący intensywne strumienie neutronów — kluczowy dla: (a) medycyny nuklearnej i neuroobrazowania (izotopy Mo-99, Lu-177 — styk z Projektem A, B i D), (b) neutronowego domieszkowania krzemu dla elektroniki i układów mocy (styk z Projektem C), (c) testowania materiałów osłonowych dla przyszłych reaktorów syntezy termojądrowej (DEMO / IFMIF-DONES).\n3. Kosmiczne i obronne podwarianty energetyki jądrowej (Projekt F): Zastosowanie kompaktowych reaktorów rozszczepieniowych i generatorów radioizotopowych (RTG) w misjach księżycowych i marsjańskich.",
-      "url": "https://naukawpolsce.pl/aktualnosci/news%2C104569%2Cncbj-opracowalo-koncepcje-polskiego-reaktora-wysokotemperaturowego.html",
-      "links": [
-        {
-          "label": "🇵🇱 Nauka w Polsce — NCBJ opracowało koncepcję polskiego reaktora wysokotemperaturowego (HTGR-POLA)",
-          "url": "https://naukawpolsce.pl/aktualnosci/news%2C104569%2Cncbj-opracowalo-koncepcje-polskiego-reaktora-wysokotemperaturowego.html"
-        },
-        {
-          "label": "🇵🇱 Nauka w Polsce — Reaktor badawczy MARIA w NCBJ Świerk: izotopy medyczne, badania materiałowe i fuzja",
-          "url": "https://naukawpolsce.pl/aktualnosci/news%2C105854%2Cdyrektor-ncbj-maria-chyba-jedyny-reaktor-badawczy-na-swiecie-bez-stabilnego"
-        },
-        {
-          "label": "🇵🇱 Nauka w Polsce — Katalog artykułów: Reaktory jądrowe i energetyka jądrowa",
-          "url": "https://naukawpolsce.pl/tag/reaktor"
-        },
-        {
-          "label": "🇵🇱 Ludzie Nauki (ludzie.nauka.gov.pl/ln/) — Wyszukiwarka polskich ekspertów i projektów z fizyki jądrowej, energetyki i AI",
-          "url": "https://ludzie.nauka.gov.pl/ln/"
-        }
-      ],
-      "status": "approved",
-      "createdAt": "2026-10-25T22:54:00Z"
-    },
-    {
-      "id": "mat-nwp-b1",
-      "trackId": "B",
-      "branchTopic": "Modelowanie neuronów i sieci neuronalnych.",
-      "subprojectId": "sub-1",
-      "title": "INTELIGENCJA I MÓZG (Nauka w Polsce & Ludzie Nauki): Systemy AI wzorowane na mózgu, cyfrowy sen sieci neuronowych, określenie wieku mózgu i dekodowanie myśli z fMRI",
-      "type": "Przegląd artykułów — Nauka w Polsce [PL]",
-      "sourceLang": "PL",
-      "author": "Ireneusz",
-      "content": "Wybrane artykuły z serwisu Nauka w Polsce (naukawpolsce.pl) oraz dorobku polskich kognitywistów i neuroinformatyków (baza Ludzie Nauki) dla Projektu B (Cyfrowy umysł) i Dziedziny 8 (AI):\n1. Systemy wzorowane na mózgu (prof. Włodzisław Duch): Dlaczego klasyczne modele głębokiego uczenia wymagają ogromnej mocy obliczeniowej i jak neuroinformatyka dąży do połączenia architektury korowej z wnioskowaniem symbolicznym.\n2. Cyfrowy sen w sztucznej inteligencji: Wprowadzenie stanów analogicznych do ludzkiego snu (faza konsolidacji synaptycznej) zapobiega tzw. katastrofalnemu zapominaniu (catastrophic forgetting) w sztucznych sieciach neuronowych uczących się w sposób ciągły.\n3. Dekodowanie aktywności mózgu i diagnostyka AI: Wykorzystanie modeli językowych i głębokich sieci neuronowych do nieinwazyjnej rekonstrukcji treści myśli ze skanów fMRI oraz precyzyjnego wyznaczania biologicznego wieku mózgu.",
-      "url": "https://naukawpolsce.pl/aktualnosci/news%2C76897%2Ckognitywista-przyszloscia-sztucznej-inteligencji-sa-systemy-wzorowane-na",
-      "links": [
-        {
-          "label": "🇵🇱 Nauka w Polsce — Kognitywista: przyszłością sztucznej inteligencji są systemy wzorowane na mózgu",
-          "url": "https://naukawpolsce.pl/aktualnosci/news%2C76897%2Ckognitywista-przyszloscia-sztucznej-inteligencji-sa-systemy-wzorowane-na"
-        },
-        {
-          "label": "🇵🇱 Nauka w Polsce — Prof. Włodzisław Duch: sztuczna inteligencja zmienia wszystko",
-          "url": "https://naukawpolsce.pl/aktualnosci/news%2C95000%2Cprof-wlodzislaw-duch-sztuczna-inteligencja-zmienia-wszystko.html"
-        },
-        {
-          "label": "🇵🇱 Nauka w Polsce — Sztuczna inteligencja może lepiej „zapamiętać” treści, jeśli naśladuje ludzki sen",
-          "url": "https://naukawpolsce.pl/aktualnosci/news%2C100463%2Csztuczna-inteligencja-moze-lepiej-zapamietac-tresci-jesli-nasladuje-ludzki"
-        },
-        {
-          "label": "🇵🇱 Nauka w Polsce — Sztuczna inteligencja pozwala określić prawdziwy wiek mózgu",
-          "url": "https://naukawpolsce.pl/aktualnosci/news%2C94962%2Csztuczna-inteligencja-pozwala-okreslic-prawdziwy-wiek-mozgu.html"
-        },
-        {
-          "label": "🇵🇱 Nauka w Polsce — Komputer nauczył się czytać ludzkie myśli ze skanów fMRI",
-          "url": "https://naukawpolsce.pl/aktualnosci/news%2C96452%2Cusakomputer-nauczyl-sie-czytac-ludzkie-mysli-choc-jeszcze-popelnia-bledy"
-        },
-        {
-          "label": "🇵🇱 Ludzie Nauki (ludzie.nauka.gov.pl/ln/) — Profile polskich badaczy neuroinformatyki i sztucznej inteligencji",
-          "url": "https://ludzie.nauka.gov.pl/ln/"
-        }
-      ],
-      "status": "approved",
-      "createdAt": "2026-10-25T22:55:00Z"
-    },
-    {
-      "id": "mat-nwp-c1",
-      "trackId": "C",
-      "branchTopic": "Komputery neuromorficzne.",
-      "subprojectId": "sub-2",
-      "title": "OBLICZANIE PRZEZ FIZYKĘ I BIOLOGIĘ (Nauka w Polsce): Chipy neuromorficzne inspirowane mózgiem oraz hybrydowy biokomputer z żywym organoidem mózgowym (Brainoware)",
-      "type": "Przegląd artykułów — Nauka w Polsce [PL]",
-      "sourceLang": "PL",
-      "author": "Ireneusz",
-      "content": "Przełomowe badania z pogranicza Projektu C (Maszyny analogowe i neuromorficzne), Projektu B (Cyfrowy umysł) i Projektu D (Organoidy) opisywane w serwisie Nauka w Polsce:\n1. Inspirowany mózgiem chip neuromorficzny: Przetwarzanie informacji bezpośrednio w pamięci (in-memory computing) z wykorzystaniem memrystorów i sztucznych synaps pozwala wielokrotnie zredukować pobór mocy przez algorytmy AI (łącznik z Super-Projektem H).\n2. Komputer z żywym mózgiem (Brainoware): Połączenie trójwymiarowego organoidu ludzkiego mózgu wyhodowanego z komórek macierzystych z matrycą wieloelektrodową i układem uczenia maszynowego (reservoir computing) do rozpoznawania mowy i przewidywania nieliniowych układów dynamicznych.",
-      "url": "https://naukawpolsce.pl/aktualnosci/news%2C112694%2Cinspirowany-mozgiem-chip-ma-ulatwic-prace-si.html",
-      "links": [
-        {
-          "label": "🇵🇱 Nauka w Polsce — Inspirowany mózgiem chip ma ułatwić pracę SI (procesory neuromorficzne)",
-          "url": "https://naukawpolsce.pl/aktualnosci/news%2C112694%2Cinspirowany-mozgiem-chip-ma-ulatwic-prace-si.html"
-        },
-        {
-          "label": "🇵🇱 Nauka w Polsce — Komputer z żywym mózgiem (biokomputer hybrydowy Brainoware)",
-          "url": "https://naukawpolsce.pl/aktualnosci/news%2C100102%2Ckomputer-z-zywym-mozgiem.html"
-        }
-      ],
-      "status": "approved",
-      "createdAt": "2026-10-25T22:56:00Z"
-    },
-    {
-      "id": "mat-nwp-af1",
-      "trackId": "A",
-      "branchTopic": "Interfejsy mózg–komputer.",
-      "subprojectId": "sub-1",
-      "title": "NEUROTECHNOLOGIA W KOSMOSIE (Nauka w Polsce): Misja IGNIS — polski interfejs mózg–komputer (PhotonGrav / fNIRS) przetestowany na ISS oraz odporność astronautów",
-      "type": "Przegląd artykułów — Nauka w Polsce [PL]",
-      "sourceLang": "PL",
-      "author": "Ireneusz",
-      "content": "Bezpośredni punkt styku Projektu A (Człowiek biocyfrowo-robotyczny — BCI), Projektu B (Dekodowanie sygnałów korowych AI) oraz Projektu F (Człowiek w kosmosie):\n1. Eksperyment PhotonGrav podczas polskiej misji kosmicznej IGNIS na Międzynarodowej Stacji Kosmicznej (ISS): Pierwsze w historii pomyślne testy polskiego nieinwazyjnego interfejsu mózg–komputer opartego na funkcjonalnej spektroskopii bliskiej podczerwieni (fNIRS, dr Dariusz Zapała / Cortivision, z udziałem polskiego astronauty dr. Sławosza Uznańskiego-Wiśniewskiego). Skuteczność algorytmów AI dekodujących aktywność kory mózgowej w mikrograwitacji przekroczyła 80%.\n2. Genetyka i immunologia kosmiczna: Badania wykazujące, jak mikrograwitacja zmienia ekspresję genów w leukocytach i osłabia układ odpornościowy astronautów oraz jak projektować biotechnologiczne środki zaradcze.",
-      "url": "https://naukawpolsce.pl/aktualnosci/news%2C111594%2Cmisja-ignis-polski-interfejs-mozg-komputer-potwierdzil-ze-dziala-w-kosmosie",
-      "links": [
-        {
-          "label": "🇵🇱 Nauka w Polsce — Misja IGNIS: Polski interfejs mózg-komputer potwierdził, że działa w kosmosie",
-          "url": "https://naukawpolsce.pl/aktualnosci/news%2C111594%2Cmisja-ignis-polski-interfejs-mozg-komputer-potwierdzil-ze-dziala-w-kosmosie"
-        },
-        {
-          "label": "🇵🇱 Nauka w Polsce — Przebywanie w kosmosie zaburza układ odpornościowy (zmiany ekspresji genów)",
-          "url": "https://naukawpolsce.pl/aktualnosci/news%2C98124%2Cprzebywanie-w-kosmosie-zaburza-uklad-odpornosciowy.html"
-        },
-        {
-          "label": "🇵🇱 Ludzie Nauki (ludzie.nauka.gov.pl/ln/) — Profile polskich badaczy neuroinżynierii, fNIRS/EEG i medycyny kosmicznej",
-          "url": "https://ludzie.nauka.gov.pl/ln/"
-        }
-      ],
-      "status": "approved",
-      "createdAt": "2026-10-25T22:57:00Z"
-    },
-    {
-      "id": "mat-nwp-dg1",
-      "trackId": "D",
-      "branchTopic": "Inżynieria tkankowa i sztuczne narządy.",
-      "subprojectId": None,
-      "title": "BIOTECHNOLOGIA, ORGANOIDY I EKOSYSTEM (Nauka w Polsce): Przeszczep wyhodowanej w laboratorium tkanki przysadki, organizmy chimeryczne oraz reakcja biosfery na zmiany klimatu",
-      "type": "Przegląd artykułów — Nauka w Polsce [PL]",
-      "sourceLang": "PL",
-      "author": "Ireneusz",
-      "content": "Artykuły badawcze z serwisu Nauka w Polsce dla Projektu D („Frankenstein” — inżynieria tkankowa i biologia syntetyczna) oraz Projektu G (Człowiek na Ziemi):\n1. Medycyna regeneracyjna i organoidy (Projekt D): Wyhodowanie w laboratorium z ludzkich pluripotencjalnych komórek macierzystych funkcjonalnego organoidu przysadki mózgowej, który po przeszczepieniu naczelnych podjął wydzielanie hormonów.\n2. Badania nad chimerami z komórek macierzystych i ich ścisłe ramy bioetyczne (styk Projektu D i Projektu E).\n3. Reakcja ekosystemów i mikroklimatu Ziemi (Projekt G i Super-Projekt H): Badania nad wpływem zmian klimatycznych na mikroklimat siedlisk biologicznych oraz stanowiska naukowców PAN dot. konieczności transformacji energetycznej (w tym wykorzystania energetyki jądrowej i OZE).",
-      "url": "https://naukawpolsce.pl/aktualnosci/news%2C115244%2Cmalpie-wszczepiono-wyhodowana-w-laboratorium-tkanke-przysadki.html",
-      "links": [
-        {
-          "label": "🇵🇱 Nauka w Polsce — Małpie wszczepiono wyhodowaną w laboratorium tkankę przysadki (organoid z komórek macierzystych)",
-          "url": "https://naukawpolsce.pl/aktualnosci/news%2C115244%2Cmalpie-wszczepiono-wyhodowana-w-laboratorium-tkanke-przysadki.html"
-        },
-        {
-          "label": "🇵🇱 Nauka w Polsce — Biotechnolodzy stworzyli chimeryczną małpę z komórek macierzystych",
-          "url": "https://naukawpolsce.pl/aktualnosci/news%2C99291%2Cbiotechnolodzy-stworzyli-chimeryczna-malpe.html"
-        },
-        {
-          "label": "🇵🇱 Nauka w Polsce — Zbadano dokładniej, jak Ziemia i mikroklimat reagują na zmiany klimatu",
-          "url": "https://naukawpolsce.pl/aktualnosci/news%2C115569%2Czbadano-dokladniej-jak-ziemia-reaguje-na-zmiany-klimatu.html"
-        },
-        {
-          "label": "🇵🇱 Nauka w Polsce — Naukowcy apelują o systemowe działania chroniące przed skutkami zmiany klimatu",
-          "url": "https://naukawpolsce.pl/aktualnosci/news%2C113734%2Cnaukowcy-apeluja-do-politykow-o-dzialania-chroniace-obywateli-przed"
-        }
-      ],
-      "status": "approved",
-      "createdAt": "2026-10-25T22:58:00Z"
-    },
-    {
-      "id": "mat-13",
-      "trackId": "E",
-      "branchTopic": "Filozofia nauki: dowód, hipoteza, teoria i granice modeli.",
-      "subprojectId": None,
-      "title": "BIBLIOTEKA PROJEKTU — VI. Kolejność czytania i zasady pracy z literaturą (w pierwszej kolejności źródła polskojęzyczne)",
-      "type": "Przewodnik metodologiczny GOLEM 15",
-      "author": "Administrator",
-      "content": "1. Najpierw (po polsku): Charles Petzold — „Kod. Ukryty język komputerów. Wydanie II” (Helion); Eric Matthes — „Python. Instrukcje dla programisty” (Helion); Podstawy matematyki i algebry liniowej (OpenAGH, ZPE, Skoczylas); Podręcznik fizyki ogólnej po polsku (OpenStax „Fizyka dla szkół wyższych Tom 1–3”, Halliday & Resnick „Podstawy fizyki”).\n2. Następnie (po polsku): Terence A. Brown — „Genomy” (PWN); Podstawy chemii, biologii i biochemii („Biologia Campbella” Rebis, Stryer „Biochemia” PWN, Alberts „Podstawy biologii komórki” PWN); James W. Kalat — „Biologiczne podstawy psychologii” (PWN).\n3. Później (PL i EN): A. Longstaff „Neurobiologia” (PWN), E. Nęcka „Psychologia poznawcza” (PWN), S. Seung „Konektom” (wyd. polskie); Dayan & Abbott „Theoretical Neuroscience”; Izhikevich „Dynamical Systems in Neuroscience”; Sandberg & Bostrom „Whole Brain Emulation: A Roadmap”.\n4. Na zaawansowanym etapie: D. J. Griffiths — „Wstęp do mechaniki kwantowej” (wyd. polskie PWN / CUP); Kandel — „Principles of Neural Science”; Squire — „Fundamental Neuroscience”; Churchland & Sejnowski — „The Computational Brain”; Nielsen i Chuang — „Quantum Computation and Quantum Information”.\n\nZasada: Zaczynamy od polskojęzycznych podręczników i otwartych zasobów po polsku — najpierw jedna książka podstawowa z aktualnej dziedziny, potem ćwiczenia i dopiero kolejna pozycja. Pełne odwzorowanie ludzkiego mózgu i przeniesienie umysłu pozostają niezrealizowanymi celami badawczymi.",
-      "url": "https://open.agh.edu.pl/",
-      "links": [
-        {
-          "label": "1️⃣ 🇵🇱 Etap I (Po polsku): Petzold „Kod”, Matthes „Python” (Helion), OpenAGH Matematyka oraz OpenStax Fizyka Tom 1–3 (PL)",
-          "url": "https://openstax.org/details/books/fizyka-dla-szk%C3%B3%C5%82-wy%C5%BCszych-tom-1"
-        },
-        {
-          "label": "2️⃣ 🇵🇱 Etap II (Po polsku): T.A. Brown „Genomy”, „Biologia Campbella”, Stryer „Biochemia” oraz J.W. Kalat „Biologiczne podstawy psychologii” (PWN)",
-          "url": "https://ksiegarnia.pwn.pl/"
-        },
-        {
-          "label": "3️⃣ 🇵🇱/🇬🇧 Etap III: Longstaff „Neurobiologia”, Seung „Konektom” (PL) + Dayan & Abbott, Izhikevich, Sandberg & Bostrom (WBE Roadmap PDF)",
-          "url": "https://www.fhi.ox.ac.uk/brain-emulation-roadmap-report.pdf"
-        },
-        {
-          "label": "4️⃣ 🇵🇱/🇬🇧 Etap IV: Griffiths „Wstęp do mechaniki kwantowej” (PWN) + Kandel, Squire, Churchland & Sejnowski, Nielsen & Chuang",
-          "url": "https://mitpress.mit.edu/9780262533393/the-computational-brain/"
-        }
-      ],
-      "status": "approved",
-      "createdAt": "2026-10-25T15:25:00Z"
-    },
-    {
-      "id": "mat-8",
-      "trackId": "B",
-      "branchTopic": "Modelowanie neuronów i sieci neuronalnych.",
-      "subprojectId": "sub-1",
-      "title": "BIBLIOTEKA PROJEKTU — I. Matematyka i Informatyka (w pierwszej kolejności po polsku: Petzold, Matthes, OpenAGH, ZPE, Ważniak MIMUW + Strang)",
-      "type": "Biblioteka Projektu GOLEM 15 (PL → EN)",
-      "author": "Administrator",
-      "content": "1. W pierwszej kolejności — Polskojęzyczne:\n• Charles Petzold — „Kod. Ukryty język komputerów. Wydanie II.” (Wydawnictwo Helion)\n• Eric Matthes — „Python. Instrukcje dla programisty. Wydanie III.” (Wydawnictwo Helion) + oficjalny polski samouczek Pythona\n• Podręczniki matematyki i algebry liniowej po polsku: e-podręczniki OpenAGH, ZPE, Ważniak MIMUW, M. Gewert i Z. Skoczylas („Algebra liniowa”, „Analiza matematyczna”), T. H. Cormen i współautorzy („Wprowadzenie do algorytmów”, PWN), R. Penrose („Droga do rzeczywistości”, wyd. polskie).\n\n2. Uzupełniająco — Anglojęzyczne:\n• Gilbert Strang — „Introduction to Linear Algebra.”\n• Charles Petzold — „Code: The Hidden Language of Computer Hardware and Software.”\n• Eric Matthes — „Python Crash Course.”",
-      "url": "https://open.agh.edu.pl/",
-      "links": [
-        {
-          "label": "🇵🇱 Charles Petzold — „Kod. Ukryty język komputerów. Wydanie II” oraz Eric Matthes — „Python. Instrukcje dla programisty” (Helion)",
-          "url": "https://helion.pl/"
-        },
-        {
-          "label": "🇵🇱 OpenAGH — Darmowe e-podręczniki akademickie: Matematyka i Algebra Liniowa po polsku",
-          "url": "https://open.agh.edu.pl/"
-        },
-        {
-          "label": "🇵🇱 Ważniak MIMUW (UW) — Darmowe kursy akademickie z matematyki i informatyki po polsku",
-          "url": "https://wazniak.mimuw.edu.pl/"
-        },
-        {
-          "label": "🇵🇱 Oficjalny samouczek języka Python po polsku (docs.python.org/pl)",
-          "url": "https://docs.python.org/pl/3/tutorial/"
-        },
-        {
-          "label": "🇬🇧 Gilbert Strang — „Introduction to Linear Algebra” & MIT 18.06",
-          "url": "https://math.mit.edu/~gs/linearalgebra/"
-        },
-        {
-          "label": "🇬🇧 Charles Petzold — „Code” (Oficjalna strona autora)",
-          "url": "https://codehiddenlanguage.com/"
-        }
-      ],
-      "status": "approved",
-      "createdAt": "2026-10-25T15:00:00Z"
-    },
-    {
-      "id": "mat-9",
-      "trackId": "C",
-      "branchTopic": "Komputery analogowe i mechaniczne.",
-      "subprojectId": "sub-2",
-      "title": "BIBLIOTEKA PROJEKTU — II. Fizyka i Komputery Kwantowe (w pierwszej kolejności po polsku: OpenStax Fizyka PL, Halliday & Resnick, Griffiths PWN, Horowitz & Hill + Nielsen & Chuang)",
-      "type": "Biblioteka Projektu GOLEM 15 (PL → EN)",
-      "author": "Administrator",
-      "content": "1. W pierwszej kolejności — Polskojęzyczne:\n• Akademickie podręczniki fizyki ogólnej i mechaniki kwantowej w polskich wydaniach: OpenStax Polska — „Fizyka dla szkół wyższych. Tom 1–3” (darmowy podręcznik PL); D. Halliday, R. Resnick, J. Walker — „Podstawy fizyki. Tom 1–5” (PWN); R. P. Feynman — „Feynmana wykłady z fizyki” (PWN); David J. Griffiths — „Wstęp do mechaniki kwantowej” (polskie wydanie PWN).\n• Podręczniki podstaw elektroniki i układów cyfrowych po polsku: P. Horowitz, W. Hill — „Sztuka elektroniki. Cz. 1–2” (WKŁ); B. Głocki — „Układy cyfrowe” (WSiP); ZPE i kursy Forbot.\n\n2. Uzupełniająco — Anglojęzyczne:\n• David J. Griffiths — „Introduction to Quantum Mechanics.”\n• Michael A. Nielsen, Isaac L. Chuang — „Quantum Computation and Quantum Information.”",
-      "url": "https://openstax.org/details/books/fizyka-dla-szk%C3%B3%C5%82-wy%C5%BCszych-tom-1",
-      "links": [
-        {
-          "label": "🇵🇱 OpenStax Polska — „Fizyka dla szkół wyższych. Tomy 1–3” (darmowy podręcznik akademicki po polsku)",
-          "url": "https://openstax.org/details/books/fizyka-dla-szk%C3%B3%C5%82-wy%C5%BCszych-tom-1"
-        },
-        {
-          "label": "🇵🇱 Wydawnictwo Naukowe PWN — Halliday & Resnick „Podstawy fizyki” oraz D.J. Griffiths „Wstęp do mechaniki kwantowej”",
-          "url": "https://ksiegarnia.pwn.pl/"
-        },
-        {
-          "label": "🇵🇱 ZPE / OpenAGH / Forbot — Podstawy elektroniki analogowej i układów cyfrowych po polsku",
-          "url": "https://zpe.gov.pl/"
-        },
-        {
-          "label": "🇬🇧 David J. Griffiths — „Introduction to Quantum Mechanics” (Cambridge University Press)",
-          "url": "https://www.cambridge.org/highereducation/books/introduction-to-quantum-mechanics/990799CA07A83FC5312402AF6860311E"
-        },
-        {
-          "label": "🇬🇧 Michael A. Nielsen, Isaac L. Chuang — „Quantum Computation and Quantum Information”",
-          "url": "https://www.cambridge.org/highereducation/books/quantum-computation-and-quantum-information/01E10196D0A682A6AEFFEA52D53BE9AE"
-        }
-      ],
-      "status": "approved",
-      "createdAt": "2026-10-25T15:05:00Z"
-    },
-    {
-      "id": "mat-10",
-      "trackId": "D",
-      "branchTopic": "Genetyka, DNA i regulacja genów.",
-      "subprojectId": None,
-      "title": "BIBLIOTEKA PROJEKTU — III. Chemia, Biologia i Genetyka (w pierwszej kolejności po polsku: Brown „Genomy”, „Biologia Campbella”, Alberts, Stryer + OpenStax 2e)",
-      "type": "Biblioteka Projektu GOLEM 15 (PL → EN)",
-      "author": "Administrator",
-      "content": "1. W pierwszej kolejności — Polskojęzyczne:\n• Terence A. Brown — „Genomy” (polskie wydanie, Wydawnictwo Naukowe PWN).\n• „Biologia Campbella” — polskie wydanie (Dom Wydawniczy REBIS) oraz Bruce Alberts i współautorzy — „Podstawy biologii komórki” (PWN).\n• Akademickie podręczniki chemii ogólnej, organicznej i biochemii po polsku: L. Stryer — „Biochemia” (PWN), L. Jones & P. Atkins — „Chemia ogólna” (PWN), A. Bielański — „Podstawy chemii nieorganicznej” (PWN), J. McMurry — „Chemia organiczna” (PWN) oraz darmowe zasoby OpenAGH i ZPE.\n\n2. Uzupełniająco — Anglojęzyczne:\n• OpenStax „Chemistry 2e” — podręcznik chemii ogólnej.\n• OpenStax „Biology 2e” — podręcznik biologii.\n• Akademickie podręczniki biochemii i biologii molekularnej (NCBI Bookshelf).",
-      "url": "https://ksiegarnia.pwn.pl/",
-      "links": [
-        {
-          "label": "🇵🇱 Terence A. Brown — „Genomy”, L. Stryer — „Biochemia”, B. Alberts — „Podstawy biologii komórki” (Wydawnictwo Naukowe PWN)",
-          "url": "https://ksiegarnia.pwn.pl/"
-        },
-        {
-          "label": "🇵🇱 „Biologia Campbella” — polskie wydanie (Dom Wydawniczy REBIS)",
-          "url": "https://www.rebis.com.pl/"
-        },
-        {
-          "label": "🇵🇱 OpenAGH & ZPE — Darmowe polskie podręczniki chemii, biochemii, biologii i genetyki",
-          "url": "https://open.agh.edu.pl/"
-        },
-        {
-          "label": "🇬🇧 OpenStax „Chemistry 2e” — darmowy podręcznik chemii ogólnej online",
-          "url": "https://openstax.org/details/books/chemistry-2e"
-        },
-        {
-          "label": "🇬🇧 OpenStax „Biology 2e” — darmowy podręcznik biologii online",
-          "url": "https://openstax.org/details/books/biology-2e"
-        }
-      ],
-      "status": "approved",
-      "createdAt": "2026-10-25T15:10:00Z"
-    },
-    {
-      "id": "mat-11",
-      "trackId": "A",
-      "branchTopic": "Interfejsy mózg–komputer.",
-      "subprojectId": "sub-1",
-      "title": "BIBLIOTEKA PROJEKTU — IV. Projekt A: Człowiek biocyfrowo-robotyczny (w pierwszej kolejności po polsku: Kalat, Bochenek, Traczyk, Jaroszyk, Marciniak, Tadeusiewicz, Géron PL + OpenStax Anatomy 2e)",
-      "type": "Biblioteka Projektu GOLEM 15 (PL → EN)",
-      "author": "Administrator",
-      "content": "1. W pierwszej kolejności — Polskojęzyczne:\n• James W. Kalat — „Biologiczne podstawy psychologii” (PWN).\n• Akademickie podręczniki anatomii i fizjologii człowieka: A. Bochenek, M. Reicher — „Anatomia człowieka” (PZWL); W. Traczyk, A. Trzebski — „Fizjologia człowieka” (PZWL); S. Konturek — „Fizjologia człowieka”.\n• Akademickie podręczniki biofizyki, biomechaniki i biomateriałów: F. Jaroszyk (red.) — „Biofizyka” (PZWL); J. Marciniak — „Biomateriały”; seria „Biocybernetyka i Inżynieria Biomedyczna 2000” (PAN, red. M. Nałęcz, R. Tadeusiewicz).\n• Podręczniki robotyki, elektroniki, sterowania i uczenia maszynowego po polsku: K. Tchoń i współautorzy — „Manipulatory i roboty mobilne”; Aurélien Géron — „Uczenie maszynowe z użyciem Scikit-Learn, Keras i TensorFlow” (wyd. polskie Helion).\n\n2. Uzupełniająco — Anglojęzyczne:\n• OpenStax „Anatomy and Physiology 2e.”\n• Aurélien Géron — „Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow.”\n• Akademickie podręczniki inżynierii tkankowej, neuroprotetyki i interfejsów mózg–komputer.",
-      "url": "https://ksiegarnia.pwn.pl/",
-      "links": [
-        {
-          "label": "🇵🇱 James W. Kalat — „Biologiczne podstawy psychologii” (Wydawnictwo Naukowe PWN)",
-          "url": "https://ksiegarnia.pwn.pl/"
-        },
-        {
-          "label": "🇵🇱 PZWL Wydawnictwo Lekarskie — Anatomia człowieka (Bochenek), Fizjologia (Traczyk) i Biofizyka (Jaroszyk)",
-          "url": "https://pzwl.pl/"
-        },
-        {
-          "label": "🇵🇱 Aurélien Géron — „Uczenie maszynowe z użyciem Scikit-Learn, Keras i TensorFlow” (Wydawnictwo Helion)",
-          "url": "https://helion.pl/"
-        },
-        {
-          "label": "🇵🇱 OpenAGH — Inżynieria biomedyczna, biocybernetyka i automatyka po polsku",
-          "url": "https://open.agh.edu.pl/"
-        },
-        {
-          "label": "🇬🇧 OpenStax „Anatomy and Physiology 2e” — darmowy podręcznik online",
-          "url": "https://openstax.org/details/books/anatomy-and-physiology-2e"
-        },
-        {
-          "label": "🇬🇧 IEEE EMBS — Engineering in Medicine and Biology (Neuroprotetyka i BCI)",
-          "url": "https://www.embs.org/"
-        }
-      ],
-      "status": "approved",
-      "createdAt": "2026-10-25T15:15:00Z"
-    },
-    {
-      "id": "mat-12",
-      "trackId": "B",
-      "branchTopic": "Świadomość oraz hipotetyczna emulacja całego mózgu.",
-      "subprojectId": "sub-1",
-      "title": "BIBLIOTEKA PROJEKTU — V. Projekt B: Cyfrowy umysł (w pierwszej kolejności po polsku: Kalat, Longstaff, Nęcka, Seung „Konektom”, Miłkowski & Poczobut + Kandel, Squire, Dayan & Abbott, Izhikevich, Sandberg & Bostrom)",
-      "type": "Biblioteka Projektu GOLEM 15 (PL → EN)",
-      "author": "Administrator",
-      "content": "1. W pierwszej kolejności — Polskojęzyczne:\n• James W. Kalat — „Biologiczne podstawy psychologii” (Wydawnictwo Naukowe PWN).\n• Podręczniki neurobiologii i fizjologii układu nerwowego po polsku: Alan Longstaff — „Neurobiologia. Krótkie wykłady” (PWN); T. Górska, A. Grabowska, J. Zagrodzka — „Mózg a zachowanie” (PWN).\n• Podręczniki psychologii poznawczej i konektomiki po polsku: Edward Nęcka, Jarosław Orzechowski, Błażej Szymura — „Psychologia poznawcza” (PWN); Sebastian Seung — „Konektom. Jak połączenia w mózgu kształtują naszą tożsamość” (wyd. polskie).\n• Wprowadzenia do filozofii umysłu i problemu świadomości po polsku: M. Miłkowski, R. Poczobut (red.) — „Przewodnik po filozofii umysłu”; wykłady z kognitywistyki i neuroinformatyki prof. Włodzisława Ducha (UMK) oraz publikacje Centrum Kopernika.\n\n2. Uzupełniająco i na zaawansowanym etapie — Anglojęzyczne:\n• Eric R. Kandel i współautorzy — „Principles of Neural Science.”\n• Larry Squire i współautorzy — „Fundamental Neuroscience.”\n• Peter Dayan, L. F. Abbott — „Theoretical Neuroscience: Computational and Mathematical Modeling of Neural Systems.”\n• Eugene M. Izhikevich — „Dynamical Systems in Neuroscience.”\n• Paul Miller — „An Introductory Course in Computational Neuroscience.”\n• Patricia S. Churchland, Terrence J. Sejnowski — „The Computational Brain.”\n• Anders Sandberg, Nick Bostrom — „Whole Brain Emulation: A Roadmap.”",
-      "url": "https://ksiegarnia.pwn.pl/",
-      "links": [
-        {
-          "label": "🇵🇱 Wydawnictwo Naukowe PWN — J.W. Kalat „Biologiczne podstawy psychologii”, A. Longstaff „Neurobiologia”, E. Nęcka „Psychologia poznawcza”",
-          "url": "https://ksiegarnia.pwn.pl/"
-        },
-        {
-          "label": "🇵🇱 Prof. Włodzisław Duch (UMK) — Polskie wykłady z kognitywistyki, neuroinformatyki i modelowania mózgu",
-          "url": "https://www.fizyka.umk.pl/~duch/"
-        },
-        {
-          "label": "🇵🇱 Copernicus Center Press / Centrum Kopernika — Filozofia umysłu i kognitywistyka po polsku",
-          "url": "https://ccpress.pl/"
-        },
-        {
-          "label": "🇬🇧 Peter Dayan, L. F. Abbott — „Theoretical Neuroscience” (MIT Press)",
-          "url": "https://mitpress.mit.edu/9780262541855/theoretical-neuroscience/"
-        },
-        {
-          "label": "🇬🇧 Eugene M. Izhikevich — „Dynamical Systems in Neuroscience” (MIT Press / PDF autora)",
-          "url": "https://www.izhikevich.org/publications/dsn.pdf"
-        },
-        {
-          "label": "🇬🇧 Anders Sandberg, Nick Bostrom — „Whole Brain Emulation: A Roadmap” (Technical Report PDF)",
-          "url": "https://www.fhi.ox.ac.uk/brain-emulation-roadmap-report.pdf"
-        },
-        {
-          "label": "🇬🇧 Eric R. Kandel et al. — „Principles of Neural Science” & Larry Squire et al. — „Fundamental Neuroscience”",
-          "url": "https://www.sciencedirect.com/book/9780123858702/fundamental-neuroscience"
-        }
-      ],
-      "status": "approved",
-      "createdAt": "2026-10-25T15:20:00Z"
-    },
-    {
-      "id": "mat-3",
-      "trackId": "C",
-      "branchTopic": "Elektronika analogowa i układy dynamiczne.",
-      "subprojectId": "sub-2",
-      "title": "GOLEM 15 — Projekt C: Maszyny analogowe i obliczenia fizyczne (w pierwszej kolejności po polsku: Horowitz & Hill, OpenAGH, ZPE, Forbot, Osowski + Neuromorphic Computing)",
-      "type": "Biblioteka uzupełniająca GOLEM 15 (PL → EN)",
-      "author": "Administrator",
-      "content": "Kolejność nauki: Elektronika analogowa → układy dynamiczne → modelowanie matematyczne → fizyczne modele neuronów → obliczenia neuromorficzne.\n\n1. W pierwszej kolejności — Po polsku: Podręczniki akademickie z elektroniki analogowej (P. Horowitz, W. Hill — „Sztuka elektroniki”; e-podręczniki OpenAGH: wzmacniacze, oscylatory, filtry, sprzężenie zwrotne, układy dynamiczne), materiały dydaktyczne o przetwornikach A/C i C/A (ZPE, kursy Forbot), polska literatura o sieciach neuronowych (S. Osowski, R. Tadeusiewicz).\n2. Uzupełniająco — Po angielsku: Materiały techniczne dot. analog computing, badania dot. neuromorphic computing i analog neural networks, publikacje o fizycznych modelach neuronów oraz analogowych i hybrydowych procesorach.",
-      "url": "https://zpe.gov.pl/",
-      "links": [
-        {
-          "label": "🇵🇱 Zintegrowana Platforma Edukacyjna (ZPE) — Elektronika i przetworniki A/C oraz C/A: https://zpe.gov.pl/",
-          "url": "https://zpe.gov.pl/"
-        },
-        {
-          "label": "🇵🇱 OpenAGH — Polskie e-podręczniki akademickie: Elektronika i układy dynamiczne",
-          "url": "https://open.agh.edu.pl/"
-        },
-        {
-          "label": "🇵🇱 Forbot — Kursy elektroniki analogowej i cyfrowej po polsku",
-          "url": "https://forbot.pl/"
-        },
-        {
-          "label": "🇬🇧 Frontiers in Neuroscience — Neuromorphic Engineering",
-          "url": "https://www.frontiersin.org/journals/neuroscience/sections/neuromorphic-engineering"
-        },
-        {
-          "label": "🇬🇧 arXiv — Neuromorphic Computing & Analog Neural Networks",
-          "url": "https://arxiv.org/list/cs.NE/recent"
-        }
-      ],
-      "status": "approved",
-      "createdAt": "2026-10-25T14:00:00Z"
-    },
-    {
-      "id": "mat-4",
-      "trackId": "D",
-      "branchTopic": "Biologia syntetyczna i edycja genomu.",
-      "subprojectId": None,
-      "title": "GOLEM 15 — Projekt D: „Frankenstein” — biotechnologia i tworzenie organizmów (w pierwszej kolejności po polsku: Alberts, Brown, Bartel „Embriologia”, Komitet Bioetyki PAN, Lem „Summa technologiae”)",
-      "type": "Biblioteka uzupełniająca GOLEM 15 (PL → EN)",
-      "author": "Administrator",
-      "content": "Kolejność nauki: Biologia komórki → genetyka → embriologia → komórki macierzyste → inżynieria tkankowa → biologia syntetyczna i bioetyka.\n\n1. W pierwszej kolejności — Po polsku: Podręczniki akademickie z biologii komórki, genetyki i biologii rozwoju (B. Alberts „Podstawy biologii komórki” PWN, T.A. Brown „Genomy” PWN, P. Węgleński „Genetyka molekularna” PWN); podręczniki z embriologii i komórek macierzystych (H. Bartel „Embriologia” PZWL); literatura o inżynierii tkankowej, medycynie regeneracyjnej i bioetyce (Komitet Bioetyki PAN, K. Szewczyk „Bioetyka” PWN) oraz Stanisław Lem — „Summa technologiae”.\n2. Uzupełniająco — Po angielsku: National Academies — materiały o odpowiedzialnym rozwoju biologii syntetycznej; publikacje akademickie o stem cells, developmental biology, tissue engineering i synthetic biology.",
-      "url": "https://bioetyka.pan.pl/",
-      "links": [
-        {
-          "label": "🇵🇱 Komitet Bioetyki PAN — Stanowiska i opracowania bioetyczne po polsku",
-          "url": "https://bioetyka.pan.pl/"
-        },
-        {
-          "label": "🇵🇱 PZWL Wydawnictwo Lekarskie — H. Bartel „Embriologia”, komórki macierzyste i medycyna regeneracyjna",
-          "url": "https://pzwl.pl/"
-        },
-        {
-          "label": "🇵🇱 Wydawnictwo Naukowe PWN — Alberts „Podstawy biologii komórki”, Brown „Genomy”, Węgleński „Genetyka molekularna”",
-          "url": "https://ksiegarnia.pwn.pl/"
-        },
-        {
-          "label": "🇵🇱 Zintegrowana Platforma Edukacyjna (ZPE) — Biologia i biotechnologia po polsku",
-          "url": "https://zpe.gov.pl/"
-        },
-        {
-          "label": "🇬🇧 National Academies — Biologia syntetyczna: https://www.nationalacademies.org/",
-          "url": "https://www.nationalacademies.org/"
-        },
-        {
-          "label": "🇬🇧 NCBI Bookshelf — Molecular Biology of the Cell & Developmental Biology",
-          "url": "https://www.ncbi.nlm.nih.gov/books/"
-        }
-      ],
-      "status": "approved",
-      "createdAt": "2026-10-25T14:05:00Z"
-    },
-    {
-      "id": "mat-5",
-      "trackId": "E",
-      "branchTopic": "Filozofia nauki: dowód, hipoteza, teoria i granice modeli.",
-      "subprojectId": None,
-      "title": "GOLEM 15 — Projekt E: Filozofia nauki, umysłu, techniki i bioetyka (w pierwszej kolejności po polsku: Chalmers, Kuhn, Heller, Tatarkiewicz, Wolne Lektury)",
-      "type": "Biblioteka uzupełniająca GOLEM 15 (PL → EN)",
-      "author": "Administrator",
-      "content": "Zastosowanie: Ocena dowodów, rozróżnianie teorii i spekulacji, analiza tożsamości osobowej oraz etycznych konsekwencji tworzenia i modyfikowania organizmów.\n\n1. W pierwszej kolejności — Po polsku:\n  • Alan Chalmers — „Czym jest to, co zwiemy nauką?”\n  • Thomas S. Kuhn — „Struktura rewolucji naukowych”\n  • Michał Heller — „Filozofia nauki. Wprowadzenie” oraz „Filozofia przyrody” (Copernicus Center Press)\n  • Władysław Tatarkiewicz — „Historia filozofii. Tom 1–3” (PWN) oraz klasyka filozofii starożytnej po polsku (Platon, Arystoteles, Marek Aureliusz, Seneka) w serwisie Wolne Lektury\n  • Marcin Miłkowski, Robert Poczobut (red.) — „Przewodnik po filozofii umysłu” oraz Kazimierz Szewczyk — „Bioetyka. Tom 1–2” (PWN).\n2. Uzupełniająco — Po angielsku: Stanford Encyclopedia of Philosophy (SEP) oraz Internet Encyclopedia of Philosophy (IEP).",
-      "url": "https://ccpress.pl/",
-      "links": [
-        {
-          "label": "🇵🇱 Copernicus Center Press — Michał Heller „Filozofia nauki. Wprowadzenie”",
-          "url": "https://ccpress.pl/"
-        },
-        {
-          "label": "🇵🇱 Centrum Kopernika Badań Interdyscyplinarnych (UJ) — Wykłady z filozofii nauki i umysłu po polsku",
-          "url": "https://www.copernicuscenter.edu.pl/"
-        },
-        {
-          "label": "🇵🇱 Wolne Lektury — Filozofia starożytna po polsku (Platon, Arystoteles, stoicy)",
-          "url": "https://wolnelektury.pl/katalog/gatunek/filozofia/"
-        },
-        {
-          "label": "🇵🇱 Wydawnictwo Naukowe PWN — Kuhn, Tatarkiewicz, Szewczyk („Bioetyka”)",
-          "url": "https://ksiegarnia.pwn.pl/"
-        },
-        {
-          "label": "🇬🇧 Stanford Encyclopedia of Philosophy (SEP — Nauka, Umysł, Technika, Bioetyka)",
-          "url": "https://plato.stanford.edu/"
-        }
-      ],
-      "status": "approved",
-      "createdAt": "2026-10-25T14:10:00Z"
-    },
-    {
-      "id": "mat-6",
-      "trackId": "F",
-      "branchTopic": "Wpływ mikrograwitacji na mięśnie, kości i układ krążenia.",
-      "subprojectId": "sub-3",
-      "title": "GOLEM 15 — Projekt F: Człowiek w kosmosie (w pierwszej kolejności po polsku: POLSA, ESERO Polska, OpenStax Fizyka PL, medycyna kosmiczna + darmowe źródła NASA i ESA)",
-      "type": "Biblioteka uzupełniająca GOLEM 15 (PL → EN)",
-      "author": "Administrator",
-      "content": "Kolejność nauki: Podstawy fizyki → mechanika orbitalna → technika kosmiczna → fizjologia kosmiczna → systemy podtrzymywania życia i habitaty.\n\n1. W pierwszej kolejności — Po polsku: Materiały edukacyjne i badawcze Polskiej Agencji Kosmicznej (POLSA) oraz ESERO Polska (Centrum Nauki Kopernik / ESA) dot. załogowych misji kosmicznych, życia w mikrograwitacji, ochrony przed promieniowaniem i projektowania habitatów; OpenStax Polska — „Fizyka dla szkół wyższych” (mechanika i grawitacja po polsku); K. Kwarecki (red.) — „Medycyna lotnicza i kosmiczna” (PZWL).\n2. Darmowe źródła międzynarodowe: NASA (zdrowie człowieka w kosmosie), ESA (edukacja kosmiczna — Teach with Space), ESA (eksploracja załogowa i robotyczna).",
-      "url": "https://esero.kopernik.org.pl/",
-      "links": [
-        {
-          "label": "🇵🇱 ESERO Polska (Centrum Nauki Kopernik / ESA) — Polskie materiały edukacyjne o eksploracji kosmosu i habitatach",
-          "url": "https://esero.kopernik.org.pl/"
-        },
-        {
-          "label": "🇵🇱 Polska Agencja Kosmiczna (POLSA) — Edukacja, nauka i medycyna kosmiczna po polsku",
-          "url": "https://polsa.gov.pl/"
-        },
-        {
-          "label": "🇵🇱 OpenStax Polska — „Fizyka dla szkół wyższych. Tom 1” (Mechanika i grawitacja po polsku)",
-          "url": "https://openstax.org/details/books/fizyka-dla-szk%C3%B3%C5%82-wy%C5%BCszych-tom-1"
-        },
-        {
-          "label": "🚀 NASA — Zdrowie człowieka w kosmosie: https://www.nasa.gov/reference/fundamentals-of-human-health/",
-          "url": "https://www.nasa.gov/reference/fundamentals-of-human-health/"
-        },
-        {
-          "label": "🛰️ ESA — Edukacja kosmiczna: https://education.esa.int/teach-with-space/",
-          "url": "https://education.esa.int/teach-with-space/"
-        },
-        {
-          "label": "👩‍🚀 ESA — Eksploracja załogowa: https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration",
-          "url": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration"
-        }
-      ],
-      "status": "approved",
-      "createdAt": "2026-10-25T14:15:00Z"
-    },
-    {
-      "id": "mat-7",
-      "trackId": "G",
-      "branchTopic": "Ochrona przyrody, odbudowa ekosystemów i renaturyzacja.",
-      "subprojectId": "sub-3",
-      "title": "GOLEM 15 — Projekt G: Człowiek na Ziemi i ochrona ekosystemu (w pierwszej kolejności po polsku: Krystek, Weiner „Życie i ewolucja biosfery”, Politechnika Śląska, GIOŚ, EEA PL + ESA Education)",
-      "type": "Biblioteka uzupełniająca GOLEM 15 (PL → EN)",
-      "author": "Administrator",
-      "content": "Kolejność nauki: Podstawy ekologii → funkcjonowanie ekosystemów → presje środowiskowe → technologie ochronne → ekonomia i polityka środowiskowa.\n\n1. W pierwszej kolejności — Po polsku: Jan Krystek — „Ochrona środowiska dla inżynierów” (PWN); January Weiner — „Życie i ewolucja biosfery. Podręcznik ekologii ogólnej” (PWN); Czesława Rosik-Dulewska — „Podstawy gospodarki odpadami” (PWN); bezpłatne materiały Politechniki Śląskiej i OpenAGH dot. ochrony wód, powietrza i gleby; raporty GIOŚ (Państwowy Monitoring Środowiska) oraz serwis Europejskiej Agencji Środowiska po polsku (EEA PL).\n2. Uzupełniająco: ESA Education (Ziemia, klimat, obserwacja środowiska) oraz raporty IPCC i IPBES.",
-      "url": "https://www.polsl.pl/",
-      "links": [
-        {
-          "label": "🇵🇱 Politechnika Śląska — Podstawy ochrony środowiska po polsku: https://www.polsl.pl/",
-          "url": "https://www.polsl.pl/"
-        },
-        {
-          "label": "🇵🇱 Wydawnictwo Naukowe PWN — Jan Krystek „Ochrona środowiska dla inżynierów” oraz January Weiner „Życie i ewolucja biosfery”",
-          "url": "https://ksiegarnia.pwn.pl/"
-        },
-        {
-          "label": "🇵🇱 GIOŚ — Państwowy Monitoring Środowiska w Polsce (wody, powietrze, gleby)",
-          "url": "https://www.gios.gov.pl/"
-        },
-        {
-          "label": "🇵🇱 Europejska Agencja Środowiska (EEA w języku polskim)",
-          "url": "https://www.eea.europa.eu/pl"
-        },
-        {
-          "label": "🌍 ESA Education — Ziemia, klimat i obserwacja środowiska: https://education.esa.int/teach-with-space/",
-          "url": "https://education.esa.int/teach-with-space/"
-        }
-      ],
-      "status": "approved",
-      "createdAt": "2026-10-25T14:20:00Z"
-    },
-    {
-      "id": "mat-1",
-      "trackId": "E",
-      "branchTopic": "Filozofia nauki: dowód, hipoteza, teoria i granice modeli.",
-      "subprojectId": None,
-      "title": "Granice modeli formalnych a interpretacja stanów umysłowych i biologicznych (Heller, Miłkowski & Poczobut, SEP)",
-      "type": "Artykuł / Notatka przekrojowa",
-      "author": "Administrator",
-      "content": "Rozróżnienie między symulacją składniową (syntaktyczną) a realizacją właściwości przyczynowych układu fizycznego — punkt styku Projektu B, C oraz E. W pierwszej kolejności opracowania polskojęzyczne (Centrum Kopernika, M. Heller, M. Miłkowski & R. Poczobut).",
-      "url": "https://ccpress.pl/",
-      "links": [
-        {
-          "label": "🇵🇱 Centrum Kopernika / CCPress — Filozofia nauki i granice modeli matematycznych",
-          "url": "https://ccpress.pl/"
-        },
-        {
-          "label": "🇬🇧 Stanford Encyclopedia of Philosophy — Models in Science",
-          "url": "https://plato.stanford.edu/entries/models-science/"
-        },
-        {
-          "label": "🇬🇧 SEP — The Chinese Room Argument & Syntax vs Semantics",
-          "url": "https://plato.stanford.edu/entries/chinese-room/"
-        }
-      ],
-      "status": "approved",
-      "createdAt": "2026-10-25T11:50:00Z"
-    },
-    {
-      "id": "mat-2",
-      "trackId": "B",
-      "branchTopic": "Neurobiologia i neuronauka obliczeniowa.",
-      "subprojectId": "sub-1",
-      "title": "Zestawienie rozdzielczości czasowo-przestrzennej metod neuroobrazowania (EEG, fNIRS, fMRI, ECoG)",
-      "type": "Zestaw danych / Opracowanie",
-      "author": "Ireneusz",
-      "content": "Porównanie pasma przenoszenia, stosunku sygnału do szumu (SNR) oraz biokompatybilności długoterminowej dla zastosowań w Projektach A i B.",
-      "url": "https://ksiegarnia.pwn.pl/",
-      "links": [
-        {
-          "label": "🇵🇱 Wydawnictwo Naukowe PWN — Neurobiologia i metody neuroobrazowania (Kalat, Longstaff)",
-          "url": "https://ksiegarnia.pwn.pl/"
-        },
-        {
-          "label": "🇬🇧 Physiological Reviews — Brain-Machine Interfaces (Lebedev & Nicolelis)",
-          "url": "https://doi.org/10.1152/physrev.00027.2016"
-        }
-      ],
-      "status": "approved",
-      "createdAt": "2026-10-25T13:10:00Z"
-    }
+      {
+          "id": "mat-nwp-h1",
+          "trackId": "H",
+          "branchTopic": "Reaktory wysokotemperaturowe chłodzone gazem (HTGR, w tym polski projekt HTGR-POLA w NCBJ Świerk) do kogeneracji i produkcji wodoru.",
+          "subprojectId": "sub-4",
+          "title": "SUPER-PROJEKT H (Nauka w Polsce & Ludzie Nauki): Koncepcja polskiego reaktora wysokotemperaturowego HTGR-POLA, reaktor MARIA (NCBJ) oraz fuzja termojądrowa w kontekście podwariantów A–G",
+          "type": "Raport badawczy — Nauka w Polsce & Ludzie Nauki [PL]",
+          "sourceLang": "PL",
+          "author": "Ireneusz",
+          "content": "Zestawienie badań z Narodowego Centrum Badań Jądrowych (NCBJ w Świerku) opublikowanych w serwisie Nauka w Polsce (PAP) oraz powiązanych profili w bazie Ludzie Nauki:\n1. Projekt HTGR-POLA (POLski Atomowy): Opracowana w NCBJ koncepcja badawczo-demonstracyjnego reaktora wysokotemperaturowego chłodzonego helem (analizy bezpieczeństwa opublikowane m.in. w „Nuclear Technology”). Reaktory HTGR i SMR mogą zasilać zarówno przemysł chemiczny i produkcję wodoru (Projekt G), jak i wielkoskalowe centra danych AI (Projekt B/C).\n2. Reaktor badawczy MARIA (30 MW): Jedyny w Polsce reaktor jądrowy generujący intensywne strumienie neutronów — kluczowy dla: (a) medycyny nuklearnej i neuroobrazowania (izotopy Mo-99, Lu-177 — styk z Projektem A, B i D), (b) neutronowego domieszkowania krzemu dla elektroniki i układów mocy (styk z Projektem C), (c) testowania materiałów osłonowych dla przyszłych reaktorów syntezy termojądrowej (DEMO / IFMIF-DONES).\n3. Kosmiczne i obronne podwarianty energetyki jądrowej (Projekt F): Zastosowanie kompaktowych reaktorów rozszczepieniowych i generatorów radioizotopowych (RTG) w misjach księżycowych i marsjańskich.",
+          "url": "https://naukawpolsce.pl/aktualnosci/news%2C104569%2Cncbj-opracowalo-koncepcje-polskiego-reaktora-wysokotemperaturowego.html",
+          "links": [
+              {
+                  "label": "🇵🇱 Nauka w Polsce — NCBJ opracowało koncepcję polskiego reaktora wysokotemperaturowego (HTGR-POLA)",
+                  "url": "https://naukawpolsce.pl/aktualnosci/news%2C104569%2Cncbj-opracowalo-koncepcje-polskiego-reaktora-wysokotemperaturowego.html"
+              },
+              {
+                  "label": "🇵🇱 Nauka w Polsce — Reaktor badawczy MARIA w NCBJ Świerk: izotopy medyczne, badania materiałowe i fuzja",
+                  "url": "https://naukawpolsce.pl/aktualnosci/news%2C105854%2Cdyrektor-ncbj-maria-chyba-jedyny-reaktor-badawczy-na-swiecie-bez-stabilnego"
+              },
+              {
+                  "label": "🇵🇱 Nauka w Polsce — Katalog artykułów: Reaktory jądrowe i energetyka jądrowa",
+                  "url": "https://naukawpolsce.pl/tag/reaktor"
+              },
+              {
+                  "label": "🇵🇱 Ludzie Nauki (ludzie.nauka.gov.pl/ln/) — Wyszukiwarka polskich ekspertów i projektów z fizyki jądrowej, energetyki i AI",
+                  "url": "https://ludzie.nauka.gov.pl/ln/"
+              }
+          ],
+          "status": "approved",
+          "createdAt": "2026-10-25T22:54:00Z"
+      },
+      {
+          "id": "mat-nwp-b1",
+          "trackId": "B",
+          "branchTopic": "Modelowanie neuronów i sieci neuronalnych.",
+          "subprojectId": "sub-1",
+          "title": "INTELIGENCJA I MÓZG (Nauka w Polsce & Ludzie Nauki): Systemy AI wzorowane na mózgu, cyfrowy sen sieci neuronowych, określenie wieku mózgu i dekodowanie myśli z fMRI",
+          "type": "Przegląd artykułów — Nauka w Polsce [PL]",
+          "sourceLang": "PL",
+          "author": "Ireneusz",
+          "content": "Wybrane artykuły z serwisu Nauka w Polsce (naukawpolsce.pl) oraz dorobku polskich kognitywistów i neuroinformatyków (baza Ludzie Nauki) dla Projektu B (Cyfrowy umysł) i Dziedziny 8 (AI):\n1. Systemy wzorowane na mózgu (prof. Włodzisław Duch): Dlaczego klasyczne modele głębokiego uczenia wymagają ogromnej mocy obliczeniowej i jak neuroinformatyka dąży do połączenia architektury korowej z wnioskowaniem symbolicznym.\n2. Cyfrowy sen w sztucznej inteligencji: Wprowadzenie stanów analogicznych do ludzkiego snu (faza konsolidacji synaptycznej) zapobiega tzw. katastrofalnemu zapominaniu (catastrophic forgetting) w sztucznych sieciach neuronowych uczących się w sposób ciągły.\n3. Dekodowanie aktywności mózgu i diagnostyka AI: Wykorzystanie modeli językowych i głębokich sieci neuronowych do nieinwazyjnej rekonstrukcji treści myśli ze skanów fMRI oraz precyzyjnego wyznaczania biologicznego wieku mózgu.",
+          "url": "https://naukawpolsce.pl/aktualnosci/news%2C76897%2Ckognitywista-przyszloscia-sztucznej-inteligencji-sa-systemy-wzorowane-na",
+          "links": [
+              {
+                  "label": "🇵🇱 Nauka w Polsce — Kognitywista: przyszłością sztucznej inteligencji są systemy wzorowane na mózgu",
+                  "url": "https://naukawpolsce.pl/aktualnosci/news%2C76897%2Ckognitywista-przyszloscia-sztucznej-inteligencji-sa-systemy-wzorowane-na"
+              },
+              {
+                  "label": "🇵🇱 Nauka w Polsce — Prof. Włodzisław Duch: sztuczna inteligencja zmienia wszystko",
+                  "url": "https://naukawpolsce.pl/aktualnosci/news%2C95000%2Cprof-wlodzislaw-duch-sztuczna-inteligencja-zmienia-wszystko.html"
+              },
+              {
+                  "label": "🇵🇱 Nauka w Polsce — Sztuczna inteligencja może lepiej „zapamiętać” treści, jeśli naśladuje ludzki sen",
+                  "url": "https://naukawpolsce.pl/aktualnosci/news%2C100463%2Csztuczna-inteligencja-moze-lepiej-zapamietac-tresci-jesli-nasladuje-ludzki"
+              },
+              {
+                  "label": "🇵🇱 Nauka w Polsce — Sztuczna inteligencja pozwala określić prawdziwy wiek mózgu",
+                  "url": "https://naukawpolsce.pl/aktualnosci/news%2C94962%2Csztuczna-inteligencja-pozwala-okreslic-prawdziwy-wiek-mozgu.html"
+              },
+              {
+                  "label": "🇵🇱 Nauka w Polsce — Komputer nauczył się czytać ludzkie myśli ze skanów fMRI",
+                  "url": "https://naukawpolsce.pl/aktualnosci/news%2C96452%2Cusakomputer-nauczyl-sie-czytac-ludzkie-mysli-choc-jeszcze-popelnia-bledy"
+              },
+              {
+                  "label": "🇵🇱 Ludzie Nauki (ludzie.nauka.gov.pl/ln/) — Profile polskich badaczy neuroinformatyki i sztucznej inteligencji",
+                  "url": "https://ludzie.nauka.gov.pl/ln/"
+              }
+          ],
+          "status": "approved",
+          "createdAt": "2026-10-25T22:55:00Z"
+      },
+      {
+          "id": "mat-nwp-c1",
+          "trackId": "C",
+          "branchTopic": "Komputery neuromorficzne.",
+          "subprojectId": "sub-2",
+          "title": "OBLICZANIE PRZEZ FIZYKĘ I BIOLOGIĘ (Nauka w Polsce): Chipy neuromorficzne inspirowane mózgiem oraz hybrydowy biokomputer z żywym organoidem mózgowym (Brainoware)",
+          "type": "Przegląd artykułów — Nauka w Polsce [PL]",
+          "sourceLang": "PL",
+          "author": "Ireneusz",
+          "content": "Przełomowe badania z pogranicza Projektu C (Maszyny analogowe i neuromorficzne), Projektu B (Cyfrowy umysł) i Projektu D (Organoidy) opisywane w serwisie Nauka w Polsce:\n1. Inspirowany mózgiem chip neuromorficzny: Przetwarzanie informacji bezpośrednio w pamięci (in-memory computing) z wykorzystaniem memrystorów i sztucznych synaps pozwala wielokrotnie zredukować pobór mocy przez algorytmy AI (łącznik z Super-Projektem H).\n2. Komputer z żywym mózgiem (Brainoware): Połączenie trójwymiarowego organoidu ludzkiego mózgu wyhodowanego z komórek macierzystych z matrycą wieloelektrodową i układem uczenia maszynowego (reservoir computing) do rozpoznawania mowy i przewidywania nieliniowych układów dynamicznych.",
+          "url": "https://naukawpolsce.pl/aktualnosci/news%2C112694%2Cinspirowany-mozgiem-chip-ma-ulatwic-prace-si.html",
+          "links": [
+              {
+                  "label": "🇵🇱 Nauka w Polsce — Inspirowany mózgiem chip ma ułatwić pracę SI (procesory neuromorficzne)",
+                  "url": "https://naukawpolsce.pl/aktualnosci/news%2C112694%2Cinspirowany-mozgiem-chip-ma-ulatwic-prace-si.html"
+              },
+              {
+                  "label": "🇵🇱 Nauka w Polsce — Komputer z żywym mózgiem (biokomputer hybrydowy Brainoware)",
+                  "url": "https://naukawpolsce.pl/aktualnosci/news%2C100102%2Ckomputer-z-zywym-mozgiem.html"
+              }
+          ],
+          "status": "approved",
+          "createdAt": "2026-10-25T22:56:00Z"
+      },
+      {
+          "id": "mat-nwp-af1",
+          "trackId": "A",
+          "branchTopic": "Interfejsy mózg–komputer.",
+          "subprojectId": "sub-1",
+          "title": "NEUROTECHNOLOGIA W KOSMOSIE (Nauka w Polsce): Misja IGNIS — polski interfejs mózg–komputer (PhotonGrav / fNIRS) przetestowany na ISS oraz odporność astronautów",
+          "type": "Przegląd artykułów — Nauka w Polsce [PL]",
+          "sourceLang": "PL",
+          "author": "Ireneusz",
+          "content": "Bezpośredni punkt styku Projektu A (Człowiek biocyfrowo-robotyczny — BCI), Projektu B (Dekodowanie sygnałów korowych AI) oraz Projektu F (Człowiek w kosmosie):\n1. Eksperyment PhotonGrav podczas polskiej misji kosmicznej IGNIS na Międzynarodowej Stacji Kosmicznej (ISS): Pierwsze w historii pomyślne testy polskiego nieinwazyjnego interfejsu mózg–komputer opartego na funkcjonalnej spektroskopii bliskiej podczerwieni (fNIRS, dr Dariusz Zapała / Cortivision, z udziałem polskiego astronauty dr. Sławosza Uznańskiego-Wiśniewskiego). Skuteczność algorytmów AI dekodujących aktywność kory mózgowej w mikrograwitacji przekroczyła 80%.\n2. Genetyka i immunologia kosmiczna: Badania wykazujące, jak mikrograwitacja zmienia ekspresję genów w leukocytach i osłabia układ odpornościowy astronautów oraz jak projektować biotechnologiczne środki zaradcze.",
+          "url": "https://naukawpolsce.pl/aktualnosci/news%2C111594%2Cmisja-ignis-polski-interfejs-mozg-komputer-potwierdzil-ze-dziala-w-kosmosie",
+          "links": [
+              {
+                  "label": "🇵🇱 Nauka w Polsce — Misja IGNIS: Polski interfejs mózg-komputer potwierdził, że działa w kosmosie",
+                  "url": "https://naukawpolsce.pl/aktualnosci/news%2C111594%2Cmisja-ignis-polski-interfejs-mozg-komputer-potwierdzil-ze-dziala-w-kosmosie"
+              },
+              {
+                  "label": "🇵🇱 Nauka w Polsce — Przebywanie w kosmosie zaburza układ odpornościowy (zmiany ekspresji genów)",
+                  "url": "https://naukawpolsce.pl/aktualnosci/news%2C98124%2Cprzebywanie-w-kosmosie-zaburza-uklad-odpornosciowy.html"
+              },
+              {
+                  "label": "🇵🇱 Ludzie Nauki (ludzie.nauka.gov.pl/ln/) — Profile polskich badaczy neuroinżynierii, fNIRS/EEG i medycyny kosmicznej",
+                  "url": "https://ludzie.nauka.gov.pl/ln/"
+              }
+          ],
+          "status": "approved",
+          "createdAt": "2026-10-25T22:57:00Z"
+      },
+      {
+          "id": "mat-nwp-dg1",
+          "trackId": "D",
+          "branchTopic": "Inżynieria tkankowa i sztuczne narządy.",
+          "subprojectId": null,
+          "title": "BIOTECHNOLOGIA, ORGANOIDY I EKOSYSTEM (Nauka w Polsce): Przeszczep wyhodowanej w laboratorium tkanki przysadki, organizmy chimeryczne oraz reakcja biosfery na zmiany klimatu",
+          "type": "Przegląd artykułów — Nauka w Polsce [PL]",
+          "sourceLang": "PL",
+          "author": "Ireneusz",
+          "content": "Artykuły badawcze z serwisu Nauka w Polsce dla Projektu D („Frankenstein” — inżynieria tkankowa i biologia syntetyczna) oraz Projektu G (Człowiek na Ziemi):\n1. Medycyna regeneracyjna i organoidy (Projekt D): Wyhodowanie w laboratorium z ludzkich pluripotencjalnych komórek macierzystych funkcjonalnego organoidu przysadki mózgowej, który po przeszczepieniu naczelnych podjął wydzielanie hormonów.\n2. Badania nad chimerami z komórek macierzystych i ich ścisłe ramy bioetyczne (styk Projektu D i Projektu E).\n3. Reakcja ekosystemów i mikroklimatu Ziemi (Projekt G i Super-Projekt H): Badania nad wpływem zmian klimatycznych na mikroklimat siedlisk biologicznych oraz stanowiska naukowców PAN dot. konieczności transformacji energetycznej (w tym wykorzystania energetyki jądrowej i OZE).",
+          "url": "https://naukawpolsce.pl/aktualnosci/news%2C115244%2Cmalpie-wszczepiono-wyhodowana-w-laboratorium-tkanke-przysadki.html",
+          "links": [
+              {
+                  "label": "🇵🇱 Nauka w Polsce — Małpie wszczepiono wyhodowaną w laboratorium tkankę przysadki (organoid z komórek macierzystych)",
+                  "url": "https://naukawpolsce.pl/aktualnosci/news%2C115244%2Cmalpie-wszczepiono-wyhodowana-w-laboratorium-tkanke-przysadki.html"
+              },
+              {
+                  "label": "🇵🇱 Nauka w Polsce — Biotechnolodzy stworzyli chimeryczną małpę z komórek macierzystych",
+                  "url": "https://naukawpolsce.pl/aktualnosci/news%2C99291%2Cbiotechnolodzy-stworzyli-chimeryczna-malpe.html"
+              },
+              {
+                  "label": "🇵🇱 Nauka w Polsce — Zbadano dokładniej, jak Ziemia i mikroklimat reagują na zmiany klimatu",
+                  "url": "https://naukawpolsce.pl/aktualnosci/news%2C115569%2Czbadano-dokladniej-jak-ziemia-reaguje-na-zmiany-klimatu.html"
+              },
+              {
+                  "label": "🇵🇱 Nauka w Polsce — Naukowcy apelują o systemowe działania chroniące przed skutkami zmiany klimatu",
+                  "url": "https://naukawpolsce.pl/aktualnosci/news%2C113734%2Cnaukowcy-apeluja-do-politykow-o-dzialania-chroniace-obywateli-przed"
+              }
+          ],
+          "status": "approved",
+          "createdAt": "2026-10-25T22:58:00Z"
+      },
+      {
+          "id": "mat-13",
+          "trackId": "E",
+          "branchTopic": "Filozofia nauki: dowód, hipoteza, teoria i granice modeli.",
+          "subprojectId": null,
+          "title": "BIBLIOTEKA PROJEKTU — VI. Kolejność czytania i zasady pracy z literaturą (w pierwszej kolejności źródła polskojęzyczne)",
+          "type": "Przewodnik metodologiczny GOLEM 15",
+          "author": "Administrator",
+          "content": "1. Najpierw (po polsku): Charles Petzold — „Kod. Ukryty język komputerów. Wydanie II” (Helion); Eric Matthes — „Python. Instrukcje dla programisty” (Helion); Podstawy matematyki i algebry liniowej (OpenAGH, ZPE, Skoczylas); Podręcznik fizyki ogólnej po polsku (OpenStax „Fizyka dla szkół wyższych Tom 1–3”, Halliday & Resnick „Podstawy fizyki”).\n2. Następnie (po polsku): Terence A. Brown — „Genomy” (PWN); Podstawy chemii, biologii i biochemii („Biologia Campbella” Rebis, Stryer „Biochemia” PWN, Alberts „Podstawy biologii komórki” PWN); James W. Kalat — „Biologiczne podstawy psychologii” (PWN).\n3. Później (PL i EN): A. Longstaff „Neurobiologia” (PWN), E. Nęcka „Psychologia poznawcza” (PWN), S. Seung „Konektom” (wyd. polskie); Dayan & Abbott „Theoretical Neuroscience”; Izhikevich „Dynamical Systems in Neuroscience”; Sandberg & Bostrom „Whole Brain Emulation: A Roadmap”.\n4. Na zaawansowanym etapie: D. J. Griffiths — „Wstęp do mechaniki kwantowej” (wyd. polskie PWN / CUP); Kandel — „Principles of Neural Science”; Squire — „Fundamental Neuroscience”; Churchland & Sejnowski — „The Computational Brain”; Nielsen i Chuang — „Quantum Computation and Quantum Information”.\n\nZasada: Zaczynamy od polskojęzycznych podręczników i otwartych zasobów po polsku — najpierw jedna książka podstawowa z aktualnej dziedziny, potem ćwiczenia i dopiero kolejna pozycja. Pełne odwzorowanie ludzkiego mózgu i przeniesienie umysłu pozostają niezrealizowanymi celami badawczymi.",
+          "url": "https://open.agh.edu.pl/",
+          "links": [
+              {
+                  "label": "1️⃣ 🇵🇱 Etap I (Po polsku): Petzold „Kod”, Matthes „Python” (Helion), OpenAGH Matematyka oraz OpenStax Fizyka Tom 1–3 (PL)",
+                  "url": "https://openstax.org/details/books/fizyka-dla-szk%C3%B3%C5%82-wy%C5%BCszych-tom-1"
+              },
+              {
+                  "label": "2️⃣ 🇵🇱 Etap II (Po polsku): T.A. Brown „Genomy”, „Biologia Campbella”, Stryer „Biochemia” oraz J.W. Kalat „Biologiczne podstawy psychologii” (PWN)",
+                  "url": "https://ksiegarnia.pwn.pl/"
+              },
+              {
+                  "label": "3️⃣ 🇵🇱/🇬🇧 Etap III: Longstaff „Neurobiologia”, Seung „Konektom” (PL) + Dayan & Abbott, Izhikevich, Sandberg & Bostrom (WBE Roadmap PDF)",
+                  "url": "https://www.fhi.ox.ac.uk/brain-emulation-roadmap-report.pdf"
+              },
+              {
+                  "label": "4️⃣ 🇵🇱/🇬🇧 Etap IV: Griffiths „Wstęp do mechaniki kwantowej” (PWN) + Kandel, Squire, Churchland & Sejnowski, Nielsen & Chuang",
+                  "url": "https://mitpress.mit.edu/9780262533393/the-computational-brain/"
+              }
+          ],
+          "status": "approved",
+          "createdAt": "2026-10-25T15:25:00Z"
+      },
+      {
+          "id": "mat-8",
+          "trackId": "B",
+          "branchTopic": "Modelowanie neuronów i sieci neuronalnych.",
+          "subprojectId": "sub-1",
+          "title": "BIBLIOTEKA PROJEKTU — I. Matematyka i Informatyka (w pierwszej kolejności po polsku: Petzold, Matthes, OpenAGH, ZPE, Ważniak MIMUW + Strang)",
+          "type": "Biblioteka Projektu GOLEM 15 (PL → EN)",
+          "author": "Administrator",
+          "content": "1. W pierwszej kolejności — Polskojęzyczne:\n• Charles Petzold — „Kod. Ukryty język komputerów. Wydanie II.” (Wydawnictwo Helion)\n• Eric Matthes — „Python. Instrukcje dla programisty. Wydanie III.” (Wydawnictwo Helion) + oficjalny polski samouczek Pythona\n• Podręczniki matematyki i algebry liniowej po polsku: e-podręczniki OpenAGH, ZPE, Ważniak MIMUW, M. Gewert i Z. Skoczylas („Algebra liniowa”, „Analiza matematyczna”), T. H. Cormen i współautorzy („Wprowadzenie do algorytmów”, PWN), R. Penrose („Droga do rzeczywistości”, wyd. polskie).\n\n2. Uzupełniająco — Anglojęzyczne:\n• Gilbert Strang — „Introduction to Linear Algebra.”\n• Charles Petzold — „Code: The Hidden Language of Computer Hardware and Software.”\n• Eric Matthes — „Python Crash Course.”",
+          "url": "https://open.agh.edu.pl/",
+          "links": [
+              {
+                  "label": "🇵🇱 Charles Petzold — „Kod. Ukryty język komputerów. Wydanie II” oraz Eric Matthes — „Python. Instrukcje dla programisty” (Helion)",
+                  "url": "https://helion.pl/"
+              },
+              {
+                  "label": "🇵🇱 OpenAGH — Darmowe e-podręczniki akademickie: Matematyka i Algebra Liniowa po polsku",
+                  "url": "https://open.agh.edu.pl/"
+              },
+              {
+                  "label": "🇵🇱 Ważniak MIMUW (UW) — Darmowe kursy akademickie z matematyki i informatyki po polsku",
+                  "url": "https://wazniak.mimuw.edu.pl/"
+              },
+              {
+                  "label": "🇵🇱 Oficjalny samouczek języka Python po polsku (docs.python.org/pl)",
+                  "url": "https://docs.python.org/pl/3/tutorial/"
+              },
+              {
+                  "label": "🇬🇧 Gilbert Strang — „Introduction to Linear Algebra” & MIT 18.06",
+                  "url": "https://math.mit.edu/~gs/linearalgebra/"
+              },
+              {
+                  "label": "🇬🇧 Charles Petzold — „Code” (Oficjalna strona autora)",
+                  "url": "https://codehiddenlanguage.com/"
+              }
+          ],
+          "status": "approved",
+          "createdAt": "2026-10-25T15:00:00Z"
+      },
+      {
+          "id": "mat-9",
+          "trackId": "C",
+          "branchTopic": "Komputery analogowe i mechaniczne.",
+          "subprojectId": "sub-2",
+          "title": "BIBLIOTEKA PROJEKTU — II. Fizyka i Komputery Kwantowe (w pierwszej kolejności po polsku: OpenStax Fizyka PL, Halliday & Resnick, Griffiths PWN, Horowitz & Hill + Nielsen & Chuang)",
+          "type": "Biblioteka Projektu GOLEM 15 (PL → EN)",
+          "author": "Administrator",
+          "content": "1. W pierwszej kolejności — Polskojęzyczne:\n• Akademickie podręczniki fizyki ogólnej i mechaniki kwantowej w polskich wydaniach: OpenStax Polska — „Fizyka dla szkół wyższych. Tom 1–3” (darmowy podręcznik PL); D. Halliday, R. Resnick, J. Walker — „Podstawy fizyki. Tom 1–5” (PWN); R. P. Feynman — „Feynmana wykłady z fizyki” (PWN); David J. Griffiths — „Wstęp do mechaniki kwantowej” (polskie wydanie PWN).\n• Podręczniki podstaw elektroniki i układów cyfrowych po polsku: P. Horowitz, W. Hill — „Sztuka elektroniki. Cz. 1–2” (WKŁ); B. Głocki — „Układy cyfrowe” (WSiP); ZPE i kursy Forbot.\n\n2. Uzupełniająco — Anglojęzyczne:\n• David J. Griffiths — „Introduction to Quantum Mechanics.”\n• Michael A. Nielsen, Isaac L. Chuang — „Quantum Computation and Quantum Information.”",
+          "url": "https://openstax.org/details/books/fizyka-dla-szk%C3%B3%C5%82-wy%C5%BCszych-tom-1",
+          "links": [
+              {
+                  "label": "🇵🇱 OpenStax Polska — „Fizyka dla szkół wyższych. Tomy 1–3” (darmowy podręcznik akademicki po polsku)",
+                  "url": "https://openstax.org/details/books/fizyka-dla-szk%C3%B3%C5%82-wy%C5%BCszych-tom-1"
+              },
+              {
+                  "label": "🇵🇱 Wydawnictwo Naukowe PWN — Halliday & Resnick „Podstawy fizyki” oraz D.J. Griffiths „Wstęp do mechaniki kwantowej”",
+                  "url": "https://ksiegarnia.pwn.pl/"
+              },
+              {
+                  "label": "🇵🇱 ZPE / OpenAGH / Forbot — Podstawy elektroniki analogowej i układów cyfrowych po polsku",
+                  "url": "https://zpe.gov.pl/"
+              },
+              {
+                  "label": "🇬🇧 David J. Griffiths — „Introduction to Quantum Mechanics” (Cambridge University Press)",
+                  "url": "https://www.cambridge.org/highereducation/books/introduction-to-quantum-mechanics/990799CA07A83FC5312402AF6860311E"
+              },
+              {
+                  "label": "🇬🇧 Michael A. Nielsen, Isaac L. Chuang — „Quantum Computation and Quantum Information”",
+                  "url": "https://www.cambridge.org/highereducation/books/quantum-computation-and-quantum-information/01E10196D0A682A6AEFFEA52D53BE9AE"
+              }
+          ],
+          "status": "approved",
+          "createdAt": "2026-10-25T15:05:00Z"
+      },
+      {
+          "id": "mat-10",
+          "trackId": "D",
+          "branchTopic": "Genetyka, DNA i regulacja genów.",
+          "subprojectId": null,
+          "title": "BIBLIOTEKA PROJEKTU — III. Chemia, Biologia i Genetyka (w pierwszej kolejności po polsku: Brown „Genomy”, „Biologia Campbella”, Alberts, Stryer + OpenStax 2e)",
+          "type": "Biblioteka Projektu GOLEM 15 (PL → EN)",
+          "author": "Administrator",
+          "content": "1. W pierwszej kolejności — Polskojęzyczne:\n• Terence A. Brown — „Genomy” (polskie wydanie, Wydawnictwo Naukowe PWN).\n• „Biologia Campbella” — polskie wydanie (Dom Wydawniczy REBIS) oraz Bruce Alberts i współautorzy — „Podstawy biologii komórki” (PWN).\n• Akademickie podręczniki chemii ogólnej, organicznej i biochemii po polsku: L. Stryer — „Biochemia” (PWN), L. Jones & P. Atkins — „Chemia ogólna” (PWN), A. Bielański — „Podstawy chemii nieorganicznej” (PWN), J. McMurry — „Chemia organiczna” (PWN) oraz darmowe zasoby OpenAGH i ZPE.\n\n2. Uzupełniająco — Anglojęzyczne:\n• OpenStax „Chemistry 2e” — podręcznik chemii ogólnej.\n• OpenStax „Biology 2e” — podręcznik biologii.\n• Akademickie podręczniki biochemii i biologii molekularnej (NCBI Bookshelf).",
+          "url": "https://ksiegarnia.pwn.pl/",
+          "links": [
+              {
+                  "label": "🇵🇱 Terence A. Brown — „Genomy”, L. Stryer — „Biochemia”, B. Alberts — „Podstawy biologii komórki” (Wydawnictwo Naukowe PWN)",
+                  "url": "https://ksiegarnia.pwn.pl/"
+              },
+              {
+                  "label": "🇵🇱 „Biologia Campbella” — polskie wydanie (Dom Wydawniczy REBIS)",
+                  "url": "https://www.rebis.com.pl/"
+              },
+              {
+                  "label": "🇵🇱 OpenAGH & ZPE — Darmowe polskie podręczniki chemii, biochemii, biologii i genetyki",
+                  "url": "https://open.agh.edu.pl/"
+              },
+              {
+                  "label": "🇬🇧 OpenStax „Chemistry 2e” — darmowy podręcznik chemii ogólnej online",
+                  "url": "https://openstax.org/details/books/chemistry-2e"
+              },
+              {
+                  "label": "🇬🇧 OpenStax „Biology 2e” — darmowy podręcznik biologii online",
+                  "url": "https://openstax.org/details/books/biology-2e"
+              }
+          ],
+          "status": "approved",
+          "createdAt": "2026-10-25T15:10:00Z"
+      },
+      {
+          "id": "mat-11",
+          "trackId": "A",
+          "branchTopic": "Interfejsy mózg–komputer.",
+          "subprojectId": "sub-1",
+          "title": "BIBLIOTEKA PROJEKTU — IV. Projekt A: Człowiek biocyfrowo-robotyczny (w pierwszej kolejności po polsku: Kalat, Bochenek, Traczyk, Jaroszyk, Marciniak, Tadeusiewicz, Géron PL + OpenStax Anatomy 2e)",
+          "type": "Biblioteka Projektu GOLEM 15 (PL → EN)",
+          "author": "Administrator",
+          "content": "1. W pierwszej kolejności — Polskojęzyczne:\n• James W. Kalat — „Biologiczne podstawy psychologii” (PWN).\n• Akademickie podręczniki anatomii i fizjologii człowieka: A. Bochenek, M. Reicher — „Anatomia człowieka” (PZWL); W. Traczyk, A. Trzebski — „Fizjologia człowieka” (PZWL); S. Konturek — „Fizjologia człowieka”.\n• Akademickie podręczniki biofizyki, biomechaniki i biomateriałów: F. Jaroszyk (red.) — „Biofizyka” (PZWL); J. Marciniak — „Biomateriały”; seria „Biocybernetyka i Inżynieria Biomedyczna 2000” (PAN, red. M. Nałęcz, R. Tadeusiewicz).\n• Podręczniki robotyki, elektroniki, sterowania i uczenia maszynowego po polsku: K. Tchoń i współautorzy — „Manipulatory i roboty mobilne”; Aurélien Géron — „Uczenie maszynowe z użyciem Scikit-Learn, Keras i TensorFlow” (wyd. polskie Helion).\n\n2. Uzupełniająco — Anglojęzyczne:\n• OpenStax „Anatomy and Physiology 2e.”\n• Aurélien Géron — „Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow.”\n• Akademickie podręczniki inżynierii tkankowej, neuroprotetyki i interfejsów mózg–komputer.",
+          "url": "https://ksiegarnia.pwn.pl/",
+          "links": [
+              {
+                  "label": "🇵🇱 James W. Kalat — „Biologiczne podstawy psychologii” (Wydawnictwo Naukowe PWN)",
+                  "url": "https://ksiegarnia.pwn.pl/"
+              },
+              {
+                  "label": "🇵🇱 PZWL Wydawnictwo Lekarskie — Anatomia człowieka (Bochenek), Fizjologia (Traczyk) i Biofizyka (Jaroszyk)",
+                  "url": "https://pzwl.pl/"
+              },
+              {
+                  "label": "🇵🇱 Aurélien Géron — „Uczenie maszynowe z użyciem Scikit-Learn, Keras i TensorFlow” (Wydawnictwo Helion)",
+                  "url": "https://helion.pl/"
+              },
+              {
+                  "label": "🇵🇱 OpenAGH — Inżynieria biomedyczna, biocybernetyka i automatyka po polsku",
+                  "url": "https://open.agh.edu.pl/"
+              },
+              {
+                  "label": "🇬🇧 OpenStax „Anatomy and Physiology 2e” — darmowy podręcznik online",
+                  "url": "https://openstax.org/details/books/anatomy-and-physiology-2e"
+              },
+              {
+                  "label": "🇬🇧 IEEE EMBS — Engineering in Medicine and Biology (Neuroprotetyka i BCI)",
+                  "url": "https://www.embs.org/"
+              }
+          ],
+          "status": "approved",
+          "createdAt": "2026-10-25T15:15:00Z"
+      },
+      {
+          "id": "mat-12",
+          "trackId": "B",
+          "branchTopic": "Świadomość oraz hipotetyczna emulacja całego mózgu.",
+          "subprojectId": "sub-1",
+          "title": "BIBLIOTEKA PROJEKTU — V. Projekt B: Cyfrowy umysł (w pierwszej kolejności po polsku: Kalat, Longstaff, Nęcka, Seung „Konektom”, Miłkowski & Poczobut + Kandel, Squire, Dayan & Abbott, Izhikevich, Sandberg & Bostrom)",
+          "type": "Biblioteka Projektu GOLEM 15 (PL → EN)",
+          "author": "Administrator",
+          "content": "1. W pierwszej kolejności — Polskojęzyczne:\n• James W. Kalat — „Biologiczne podstawy psychologii” (Wydawnictwo Naukowe PWN).\n• Podręczniki neurobiologii i fizjologii układu nerwowego po polsku: Alan Longstaff — „Neurobiologia. Krótkie wykłady” (PWN); T. Górska, A. Grabowska, J. Zagrodzka — „Mózg a zachowanie” (PWN).\n• Podręczniki psychologii poznawczej i konektomiki po polsku: Edward Nęcka, Jarosław Orzechowski, Błażej Szymura — „Psychologia poznawcza” (PWN); Sebastian Seung — „Konektom. Jak połączenia w mózgu kształtują naszą tożsamość” (wyd. polskie).\n• Wprowadzenia do filozofii umysłu i problemu świadomości po polsku: M. Miłkowski, R. Poczobut (red.) — „Przewodnik po filozofii umysłu”; wykłady z kognitywistyki i neuroinformatyki prof. Włodzisława Ducha (UMK) oraz publikacje Centrum Kopernika.\n\n2. Uzupełniająco i na zaawansowanym etapie — Anglojęzyczne:\n• Eric R. Kandel i współautorzy — „Principles of Neural Science.”\n• Larry Squire i współautorzy — „Fundamental Neuroscience.”\n• Peter Dayan, L. F. Abbott — „Theoretical Neuroscience: Computational and Mathematical Modeling of Neural Systems.”\n• Eugene M. Izhikevich — „Dynamical Systems in Neuroscience.”\n• Paul Miller — „An Introductory Course in Computational Neuroscience.”\n• Patricia S. Churchland, Terrence J. Sejnowski — „The Computational Brain.”\n• Anders Sandberg, Nick Bostrom — „Whole Brain Emulation: A Roadmap.”",
+          "url": "https://ksiegarnia.pwn.pl/",
+          "links": [
+              {
+                  "label": "🇵🇱 Wydawnictwo Naukowe PWN — J.W. Kalat „Biologiczne podstawy psychologii”, A. Longstaff „Neurobiologia”, E. Nęcka „Psychologia poznawcza”",
+                  "url": "https://ksiegarnia.pwn.pl/"
+              },
+              {
+                  "label": "🇵🇱 Prof. Włodzisław Duch (UMK) — Polskie wykłady z kognitywistyki, neuroinformatyki i modelowania mózgu",
+                  "url": "https://www.fizyka.umk.pl/~duch/"
+              },
+              {
+                  "label": "🇵🇱 Copernicus Center Press / Centrum Kopernika — Filozofia umysłu i kognitywistyka po polsku",
+                  "url": "https://ccpress.pl/"
+              },
+              {
+                  "label": "🇬🇧 Peter Dayan, L. F. Abbott — „Theoretical Neuroscience” (MIT Press)",
+                  "url": "https://mitpress.mit.edu/9780262541855/theoretical-neuroscience/"
+              },
+              {
+                  "label": "🇬🇧 Eugene M. Izhikevich — „Dynamical Systems in Neuroscience” (MIT Press / PDF autora)",
+                  "url": "https://www.izhikevich.org/publications/dsn.pdf"
+              },
+              {
+                  "label": "🇬🇧 Anders Sandberg, Nick Bostrom — „Whole Brain Emulation: A Roadmap” (Technical Report PDF)",
+                  "url": "https://www.fhi.ox.ac.uk/brain-emulation-roadmap-report.pdf"
+              },
+              {
+                  "label": "🇬🇧 Eric R. Kandel et al. — „Principles of Neural Science” & Larry Squire et al. — „Fundamental Neuroscience”",
+                  "url": "https://www.sciencedirect.com/book/9780123858702/fundamental-neuroscience"
+              }
+          ],
+          "status": "approved",
+          "createdAt": "2026-10-25T15:20:00Z"
+      },
+      {
+          "id": "mat-3",
+          "trackId": "C",
+          "branchTopic": "Elektronika analogowa i układy dynamiczne.",
+          "subprojectId": "sub-2",
+          "title": "GOLEM 15 — Projekt C: Maszyny analogowe i obliczenia fizyczne (w pierwszej kolejności po polsku: Horowitz & Hill, OpenAGH, ZPE, Forbot, Osowski + Neuromorphic Computing)",
+          "type": "Biblioteka uzupełniająca GOLEM 15 (PL → EN)",
+          "author": "Administrator",
+          "content": "Kolejność nauki: Elektronika analogowa → układy dynamiczne → modelowanie matematyczne → fizyczne modele neuronów → obliczenia neuromorficzne.\n\n1. W pierwszej kolejności — Po polsku: Podręczniki akademickie z elektroniki analogowej (P. Horowitz, W. Hill — „Sztuka elektroniki”; e-podręczniki OpenAGH: wzmacniacze, oscylatory, filtry, sprzężenie zwrotne, układy dynamiczne), materiały dydaktyczne o przetwornikach A/C i C/A (ZPE, kursy Forbot), polska literatura o sieciach neuronowych (S. Osowski, R. Tadeusiewicz).\n2. Uzupełniająco — Po angielsku: Materiały techniczne dot. analog computing, badania dot. neuromorphic computing i analog neural networks, publikacje o fizycznych modelach neuronów oraz analogowych i hybrydowych procesorach.",
+          "url": "https://zpe.gov.pl/",
+          "links": [
+              {
+                  "label": "🇵🇱 Zintegrowana Platforma Edukacyjna (ZPE) — Elektronika i przetworniki A/C oraz C/A: https://zpe.gov.pl/",
+                  "url": "https://zpe.gov.pl/"
+              },
+              {
+                  "label": "🇵🇱 OpenAGH — Polskie e-podręczniki akademickie: Elektronika i układy dynamiczne",
+                  "url": "https://open.agh.edu.pl/"
+              },
+              {
+                  "label": "🇵🇱 Forbot — Kursy elektroniki analogowej i cyfrowej po polsku",
+                  "url": "https://forbot.pl/"
+              },
+              {
+                  "label": "🇬🇧 Frontiers in Neuroscience — Neuromorphic Engineering",
+                  "url": "https://www.frontiersin.org/journals/neuroscience/sections/neuromorphic-engineering"
+              },
+              {
+                  "label": "🇬🇧 arXiv — Neuromorphic Computing & Analog Neural Networks",
+                  "url": "https://arxiv.org/list/cs.NE/recent"
+              }
+          ],
+          "status": "approved",
+          "createdAt": "2026-10-25T14:00:00Z"
+      },
+      {
+          "id": "mat-4",
+          "trackId": "D",
+          "branchTopic": "Biologia syntetyczna i edycja genomu.",
+          "subprojectId": null,
+          "title": "GOLEM 15 — Projekt D: „Frankenstein” — biotechnologia i tworzenie organizmów (w pierwszej kolejności po polsku: Alberts, Brown, Bartel „Embriologia”, Komitet Bioetyki PAN, Lem „Summa technologiae”)",
+          "type": "Biblioteka uzupełniająca GOLEM 15 (PL → EN)",
+          "author": "Administrator",
+          "content": "Kolejność nauki: Biologia komórki → genetyka → embriologia → komórki macierzyste → inżynieria tkankowa → biologia syntetyczna i bioetyka.\n\n1. W pierwszej kolejności — Po polsku: Podręczniki akademickie z biologii komórki, genetyki i biologii rozwoju (B. Alberts „Podstawy biologii komórki” PWN, T.A. Brown „Genomy” PWN, P. Węgleński „Genetyka molekularna” PWN); podręczniki z embriologii i komórek macierzystych (H. Bartel „Embriologia” PZWL); literatura o inżynierii tkankowej, medycynie regeneracyjnej i bioetyce (Komitet Bioetyki PAN, K. Szewczyk „Bioetyka” PWN) oraz Stanisław Lem — „Summa technologiae”.\n2. Uzupełniająco — Po angielsku: National Academies — materiały o odpowiedzialnym rozwoju biologii syntetycznej; publikacje akademickie o stem cells, developmental biology, tissue engineering i synthetic biology.",
+          "url": "https://bioetyka.pan.pl/",
+          "links": [
+              {
+                  "label": "🇵🇱 Komitet Bioetyki PAN — Stanowiska i opracowania bioetyczne po polsku",
+                  "url": "https://bioetyka.pan.pl/"
+              },
+              {
+                  "label": "🇵🇱 PZWL Wydawnictwo Lekarskie — H. Bartel „Embriologia”, komórki macierzyste i medycyna regeneracyjna",
+                  "url": "https://pzwl.pl/"
+              },
+              {
+                  "label": "🇵🇱 Wydawnictwo Naukowe PWN — Alberts „Podstawy biologii komórki”, Brown „Genomy”, Węgleński „Genetyka molekularna”",
+                  "url": "https://ksiegarnia.pwn.pl/"
+              },
+              {
+                  "label": "🇵🇱 Zintegrowana Platforma Edukacyjna (ZPE) — Biologia i biotechnologia po polsku",
+                  "url": "https://zpe.gov.pl/"
+              },
+              {
+                  "label": "🇬🇧 National Academies — Biologia syntetyczna: https://www.nationalacademies.org/",
+                  "url": "https://www.nationalacademies.org/"
+              },
+              {
+                  "label": "🇬🇧 NCBI Bookshelf — Molecular Biology of the Cell & Developmental Biology",
+                  "url": "https://www.ncbi.nlm.nih.gov/books/"
+              }
+          ],
+          "status": "approved",
+          "createdAt": "2026-10-25T14:05:00Z"
+      },
+      {
+          "id": "mat-5",
+          "trackId": "E",
+          "branchTopic": "Filozofia nauki: dowód, hipoteza, teoria i granice modeli.",
+          "subprojectId": null,
+          "title": "GOLEM 15 — Projekt E: Filozofia nauki, umysłu, techniki i bioetyka (w pierwszej kolejności po polsku: Chalmers, Kuhn, Heller, Tatarkiewicz, Wolne Lektury)",
+          "type": "Biblioteka uzupełniająca GOLEM 15 (PL → EN)",
+          "author": "Administrator",
+          "content": "Zastosowanie: Ocena dowodów, rozróżnianie teorii i spekulacji, analiza tożsamości osobowej oraz etycznych konsekwencji tworzenia i modyfikowania organizmów.\n\n1. W pierwszej kolejności — Po polsku:\n  • Alan Chalmers — „Czym jest to, co zwiemy nauką?”\n  • Thomas S. Kuhn — „Struktura rewolucji naukowych”\n  • Michał Heller — „Filozofia nauki. Wprowadzenie” oraz „Filozofia przyrody” (Copernicus Center Press)\n  • Władysław Tatarkiewicz — „Historia filozofii. Tom 1–3” (PWN) oraz klasyka filozofii starożytnej po polsku (Platon, Arystoteles, Marek Aureliusz, Seneka) w serwisie Wolne Lektury\n  • Marcin Miłkowski, Robert Poczobut (red.) — „Przewodnik po filozofii umysłu” oraz Kazimierz Szewczyk — „Bioetyka. Tom 1–2” (PWN).\n2. Uzupełniająco — Po angielsku: Stanford Encyclopedia of Philosophy (SEP) oraz Internet Encyclopedia of Philosophy (IEP).",
+          "url": "https://ccpress.pl/",
+          "links": [
+              {
+                  "label": "🇵🇱 Copernicus Center Press — Michał Heller „Filozofia nauki. Wprowadzenie”",
+                  "url": "https://ccpress.pl/"
+              },
+              {
+                  "label": "🇵🇱 Centrum Kopernika Badań Interdyscyplinarnych (UJ) — Wykłady z filozofii nauki i umysłu po polsku",
+                  "url": "https://www.copernicuscenter.edu.pl/"
+              },
+              {
+                  "label": "🇵🇱 Wolne Lektury — Filozofia starożytna po polsku (Platon, Arystoteles, stoicy)",
+                  "url": "https://wolnelektury.pl/katalog/gatunek/filozofia/"
+              },
+              {
+                  "label": "🇵🇱 Wydawnictwo Naukowe PWN — Kuhn, Tatarkiewicz, Szewczyk („Bioetyka”)",
+                  "url": "https://ksiegarnia.pwn.pl/"
+              },
+              {
+                  "label": "🇬🇧 Stanford Encyclopedia of Philosophy (SEP — Nauka, Umysł, Technika, Bioetyka)",
+                  "url": "https://plato.stanford.edu/"
+              }
+          ],
+          "status": "approved",
+          "createdAt": "2026-10-25T14:10:00Z"
+      },
+      {
+          "id": "mat-6",
+          "trackId": "F",
+          "branchTopic": "Wpływ mikrograwitacji na mięśnie, kości i układ krążenia.",
+          "subprojectId": "sub-3",
+          "title": "GOLEM 15 — Projekt F: Człowiek w kosmosie (w pierwszej kolejności po polsku: POLSA, ESERO Polska, OpenStax Fizyka PL, medycyna kosmiczna + darmowe źródła NASA i ESA)",
+          "type": "Biblioteka uzupełniająca GOLEM 15 (PL → EN)",
+          "author": "Administrator",
+          "content": "Kolejność nauki: Podstawy fizyki → mechanika orbitalna → technika kosmiczna → fizjologia kosmiczna → systemy podtrzymywania życia i habitaty.\n\n1. W pierwszej kolejności — Po polsku: Materiały edukacyjne i badawcze Polskiej Agencji Kosmicznej (POLSA) oraz ESERO Polska (Centrum Nauki Kopernik / ESA) dot. załogowych misji kosmicznych, życia w mikrograwitacji, ochrony przed promieniowaniem i projektowania habitatów; OpenStax Polska — „Fizyka dla szkół wyższych” (mechanika i grawitacja po polsku); K. Kwarecki (red.) — „Medycyna lotnicza i kosmiczna” (PZWL).\n2. Darmowe źródła międzynarodowe: NASA (zdrowie człowieka w kosmosie), ESA (edukacja kosmiczna — Teach with Space), ESA (eksploracja załogowa i robotyczna).",
+          "url": "https://esero.kopernik.org.pl/",
+          "links": [
+              {
+                  "label": "🇵🇱 ESERO Polska (Centrum Nauki Kopernik / ESA) — Polskie materiały edukacyjne o eksploracji kosmosu i habitatach",
+                  "url": "https://esero.kopernik.org.pl/"
+              },
+              {
+                  "label": "🇵🇱 Polska Agencja Kosmiczna (POLSA) — Edukacja, nauka i medycyna kosmiczna po polsku",
+                  "url": "https://polsa.gov.pl/"
+              },
+              {
+                  "label": "🇵🇱 OpenStax Polska — „Fizyka dla szkół wyższych. Tom 1” (Mechanika i grawitacja po polsku)",
+                  "url": "https://openstax.org/details/books/fizyka-dla-szk%C3%B3%C5%82-wy%C5%BCszych-tom-1"
+              },
+              {
+                  "label": "🚀 NASA — Zdrowie człowieka w kosmosie: https://www.nasa.gov/reference/fundamentals-of-human-health/",
+                  "url": "https://www.nasa.gov/reference/fundamentals-of-human-health/"
+              },
+              {
+                  "label": "🛰️ ESA — Edukacja kosmiczna: https://education.esa.int/teach-with-space/",
+                  "url": "https://education.esa.int/teach-with-space/"
+              },
+              {
+                  "label": "👩‍🚀 ESA — Eksploracja załogowa: https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration",
+                  "url": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration"
+              }
+          ],
+          "status": "approved",
+          "createdAt": "2026-10-25T14:15:00Z"
+      },
+      {
+          "id": "mat-7",
+          "trackId": "G",
+          "branchTopic": "Ochrona przyrody, odbudowa ekosystemów i renaturyzacja.",
+          "subprojectId": "sub-3",
+          "title": "GOLEM 15 — Projekt G: Człowiek na Ziemi i ochrona ekosystemu (w pierwszej kolejności po polsku: Krystek, Weiner „Życie i ewolucja biosfery”, Politechnika Śląska, GIOŚ, EEA PL + ESA Education)",
+          "type": "Biblioteka uzupełniająca GOLEM 15 (PL → EN)",
+          "author": "Administrator",
+          "content": "Kolejność nauki: Podstawy ekologii → funkcjonowanie ekosystemów → presje środowiskowe → technologie ochronne → ekonomia i polityka środowiskowa.\n\n1. W pierwszej kolejności — Po polsku: Jan Krystek — „Ochrona środowiska dla inżynierów” (PWN); January Weiner — „Życie i ewolucja biosfery. Podręcznik ekologii ogólnej” (PWN); Czesława Rosik-Dulewska — „Podstawy gospodarki odpadami” (PWN); bezpłatne materiały Politechniki Śląskiej i OpenAGH dot. ochrony wód, powietrza i gleby; raporty GIOŚ (Państwowy Monitoring Środowiska) oraz serwis Europejskiej Agencji Środowiska po polsku (EEA PL).\n2. Uzupełniająco: ESA Education (Ziemia, klimat, obserwacja środowiska) oraz raporty IPCC i IPBES.",
+          "url": "https://www.polsl.pl/",
+          "links": [
+              {
+                  "label": "🇵🇱 Politechnika Śląska — Podstawy ochrony środowiska po polsku: https://www.polsl.pl/",
+                  "url": "https://www.polsl.pl/"
+              },
+              {
+                  "label": "🇵🇱 Wydawnictwo Naukowe PWN — Jan Krystek „Ochrona środowiska dla inżynierów” oraz January Weiner „Życie i ewolucja biosfery”",
+                  "url": "https://ksiegarnia.pwn.pl/"
+              },
+              {
+                  "label": "🇵🇱 GIOŚ — Państwowy Monitoring Środowiska w Polsce (wody, powietrze, gleby)",
+                  "url": "https://www.gios.gov.pl/"
+              },
+              {
+                  "label": "🇵🇱 Europejska Agencja Środowiska (EEA w języku polskim)",
+                  "url": "https://www.eea.europa.eu/pl"
+              },
+              {
+                  "label": "🌍 ESA Education — Ziemia, klimat i obserwacja środowiska: https://education.esa.int/teach-with-space/",
+                  "url": "https://education.esa.int/teach-with-space/"
+              }
+          ],
+          "status": "approved",
+          "createdAt": "2026-10-25T14:20:00Z"
+      },
+      {
+          "id": "mat-1",
+          "trackId": "E",
+          "branchTopic": "Filozofia nauki: dowód, hipoteza, teoria i granice modeli.",
+          "subprojectId": null,
+          "title": "Granice modeli formalnych a interpretacja stanów umysłowych i biologicznych (Heller, Miłkowski & Poczobut, SEP)",
+          "type": "Artykuł / Notatka przekrojowa",
+          "author": "Administrator",
+          "content": "Rozróżnienie między symulacją składniową (syntaktyczną) a realizacją właściwości przyczynowych układu fizycznego — punkt styku Projektu B, C oraz E. W pierwszej kolejności opracowania polskojęzyczne (Centrum Kopernika, M. Heller, M. Miłkowski & R. Poczobut).",
+          "url": "https://ccpress.pl/",
+          "links": [
+              {
+                  "label": "🇵🇱 Centrum Kopernika / CCPress — Filozofia nauki i granice modeli matematycznych",
+                  "url": "https://ccpress.pl/"
+              },
+              {
+                  "label": "🇬🇧 Stanford Encyclopedia of Philosophy — Models in Science",
+                  "url": "https://plato.stanford.edu/entries/models-science/"
+              },
+              {
+                  "label": "🇬🇧 SEP — The Chinese Room Argument & Syntax vs Semantics",
+                  "url": "https://plato.stanford.edu/entries/chinese-room/"
+              }
+          ],
+          "status": "approved",
+          "createdAt": "2026-10-25T11:50:00Z"
+      },
+      {
+          "id": "mat-2",
+          "trackId": "B",
+          "branchTopic": "Neurobiologia i neuronauka obliczeniowa.",
+          "subprojectId": "sub-1",
+          "title": "Zestawienie rozdzielczości czasowo-przestrzennej metod neuroobrazowania (EEG, fNIRS, fMRI, ECoG)",
+          "type": "Zestaw danych / Opracowanie",
+          "author": "Ireneusz",
+          "content": "Porównanie pasma przenoszenia, stosunku sygnału do szumu (SNR) oraz biokompatybilności długoterminowej dla zastosowań w Projektach A i B.",
+          "url": "https://ksiegarnia.pwn.pl/",
+          "links": [
+              {
+                  "label": "🇵🇱 Wydawnictwo Naukowe PWN — Neurobiologia i metody neuroobrazowania (Kalat, Longstaff)",
+                  "url": "https://ksiegarnia.pwn.pl/"
+              },
+              {
+                  "label": "🇬🇧 Physiological Reviews — Brain-Machine Interfaces (Lebedev & Nicolelis)",
+                  "url": "https://doi.org/10.1152/physrev.00027.2016"
+              }
+          ],
+          "status": "approved",
+          "createdAt": "2026-10-25T13:10:00Z"
+      },
+      {
+          "id": "mat-pod-radionaukowe",
+          "trackId": "E",
+          "branchTopic": "Popularyzacja Nauki i Epistemologia Interdyscyplinarna",
+          "subprojectId": null,
+          "title": "Podcast „Radio Naukowe” (Karolina Głowacka) — Pogłębione Rozmowy z Czołowymi Naukowcami",
+          "type": "Podcast / Audycja audio",
+          "sourceLang": "PL",
+          "author": "Karolina Głowacka (Radio Naukowe)",
+          "content": "Oficjalny, wiodący polski podcast naukowy nagradzany w plebiscytach Popularyzator Nauki i Podcast Roku. Prowadzony przez Karolinę Głowacką, oferuje pogłębione (często 60–90 min), bezkompromisowe merytorycznie debaty z fizykami, biologami, inżynierami jądrowymi, filozofami i neurobiologami.\n\nKluczowe serie i odcinki rekomendowane w ekosystemie Golem XV do odsłuchu w trasie:\n1. 'Fuzja jądrowa – kiedy gwiazda zaświeci w gniazdku?' — dr hab. Agata Chomiczewska o tokamakach, plazmie i projekcie ITER.\n2. 'Kres krzemu i granice nanoelektroniki' — dr inż. Maciej Dąbrowski o barierach litografii i architekturach post-krzemowych.\n3. 'Konektom: mapa wszystkich połączeń w mózgu' — prof. Włodzisław Duch o sieciach neuronowych i emulacji umysłu.\n4. 'Dlaczego Stanisław Lem przewidział XXI wiek?' — prof. Stanisław Bereś o profetyzmie Summy Technologiae i Golema XIV.\n5. 'Zrozumieć splątanie kwantowe' — prof. Andrzej Dragan i prof. Marek Żukowski.",
+          "url": "https://radionaukowe.pl/",
+          "links": [
+              {
+                  "label": "🇵🇱 Oficjalna strona Radio Naukowe (Odcinki i Transkrypcje)",
+                  "url": "https://radionaukowe.pl/"
+              },
+              {
+                  "label": "🇵🇱 Radio Naukowe na Spotify",
+                  "url": "https://open.spotify.com/show/0S8v7FvL37FwQj7Ccvq73o"
+              },
+              {
+                  "label": "🇵🇱 Radio Naukowe na YouTube",
+                  "url": "https://www.youtube.com/@RadioNaukowe"
+              }
+          ],
+          "status": "approved",
+          "createdAt": "2026-10-26T22:45:00Z"
+      },
+      {
+          "id": "mat-pod-copernicus",
+          "trackId": "E",
+          "branchTopic": "Filozofia Nauki, Kosmologia Relatywistyczna i Epistemologia",
+          "subprojectId": null,
+          "title": "Copernicus Podcast (Centrum Kopernika Badań Interdyscyplinarnych / prof. Michał Heller)",
+          "type": "Podcast / Audycja audio",
+          "sourceLang": "PL",
+          "author": "Centrum Kopernika Badań Interdyscyplinarnych (CKBI / UJ)",
+          "content": "Kluczowa instytucja łącząca nauki ścisłe (fizykę teoretyczną, kosmologię, matematykę) z filozofią i kognitywistyką, założona przez ks. prof. Michała Hellera. Podcasty i serie wykładów Copernicus stanowią idealny materiał odsłuchowy do budowy wielkiej syntezy rzeczywistości w samochodzie.\n\nKluczowe cykle i debaty:\n1. 'Zagadnienia Filozoficzne w Nauce' — wykłady prof. Michała Hellera o matematyczności świata, emergencji praw fizyki i granicach teorii względności.\n2. 'Granice Nauki i Natura Umysłu' — prof. Bartosz Brożek i prof. Jerzy Stelmach o architekturze poznawczej człowieka i normatywności w dobie AI.\n3. 'Czas, Entropia i Początek Wszechświata' — fizyka termodynamiczna i strzałka czasu w ujęciu relatywistycznym.",
+          "url": "https://copernicuscenter.edu.pl/",
+          "links": [
+              {
+                  "label": "🇵🇱 Copernicus Center — Portal Akademicki i Archiwum",
+                  "url": "https://copernicuscenter.edu.pl/"
+              },
+              {
+                  "label": "🇵🇱 Copernicus Podcast na Spotify",
+                  "url": "https://open.spotify.com/show/6J4Y5uLhWkGqZ3e8B5mX7q"
+              },
+              {
+                  "label": "🇵🇱 Copernicus Center YouTube (Wykłady i panele)",
+                  "url": "https://www.youtube.com/@CopernicusCenter"
+              }
+          ],
+          "status": "approved",
+          "createdAt": "2026-10-26T22:46:00Z"
+      },
+      {
+          "id": "mat-pod-swiaty-lema",
+          "trackId": "E",
+          "branchTopic": "Cybernetyka Lema, Futurologia i Summa Technologiae 2.0",
+          "subprojectId": null,
+          "title": "Cykl Audycji „Światy Lema” (Polskie Radio Katowice / Jarosław Juszkiewicz)",
+          "type": "Podcast / Audycja audio",
+          "sourceLang": "PL",
+          "author": "Jarosław Juszkiewicz (Radio Katowice)",
+          "content": "Autorski, wybitny radiowy cykl Jarosława Juszkiewicza dedykowany twórczości i filozofii Stanisława Lema. Prowadzący (znany z niepowtarzalnego głosu) analizuje technologiczne, filozoficzne i socjologiczne koncepcje Lema, pokazując ich bezpośrednie urzeczywistnianie się we współczesnym świecie.\n\nOmówione dzieła i koncepcje:\n1. 'Summa Technologiae' — ewolucja technologii, fantomatyka (wirtualna rzeczywistość), kosmoinżynieria i hodowla informacji.\n2. 'Golem XIV' — granica ludzkiego rozumu, sztuczna inteligencja jako byt autonomiczny przekraczający ludzką epistemologię.\n3. 'Głos Pana' — trudność w nawiązaniu kontaktu i odczytaniu kodu obcej cywilizacji, ograniczenia nauki antropocentrycznej.\n4. 'Niezwyciężony' i 'Fiasko' — nekroewolucja mechaniczna, nanorobotyka roju i kosmiczny pancerz technologiczny.",
+          "url": "https://radio.katowice.pl/",
+          "links": [
+              {
+                  "label": "🇵🇱 Światy Lema — Polskie Radio Katowice",
+                  "url": "https://radio.katowice.pl/"
+              },
+              {
+                  "label": "🇵🇱 Światy Lema na Spotify",
+                  "url": "https://open.spotify.com/show/3S9n0S7d8dK0q1B2l9C9qZ"
+              },
+              {
+                  "label": "🇵🇱 Polskie Radio — Archiwalne nagrania głosu Stanisława Lema",
+                  "url": "https://polskieradio.pl/"
+              }
+          ],
+          "status": "approved",
+          "createdAt": "2026-10-26T22:47:00Z"
+      },
+      {
+          "id": "mat-pod-nauka-to-lubie",
+          "trackId": "H",
+          "branchTopic": "Fizyka Jądrowa, Energetyka Jądrowa i Nowe Technologie",
+          "subprojectId": null,
+          "title": "Podcast „Nauka. To Lubię” (dr Tomasz Rożek) — Energetyka Jądrowa, Kosmos i Półprzewodniki",
+          "type": "Podcast / Audycja audio",
+          "sourceLang": "PL",
+          "author": "dr Tomasz Rożek (Fundacja Nauka. To Lubię)",
+          "content": "Największy i najbardziej przystępny polski kanał i podcast popularnonaukowy prowadzony przez doktora fizyki jądrowej Tomasza Rożka. Szczególnie cenny w Projekcie H oraz w Etapie V Manhattanu z uwagi na rzetelne, techniczne wyjaśnienia działania reaktorów, technologii półprzewodnikowych i misji kosmicznych.\n\nRekomendowane audycje do samochodu:\n1. 'Jak działa jedyny polski reaktor jądrowy MARIA w Świerku?' — wizyta w NCBJ, produkcja radioizotopów medycznych, moderatory berylowe.\n2. 'Reaktory SMR i IV generacji' — modułowe reaktory wysokotemperaturowe (HTGR) i rewolucja w polskiej energetyce przemysłowej.\n3. 'Jak powstają najbardziej zaawansowane chipy świata?' — litografia ekstremalnego ultrafioletu (EUV) w maszynach ASML i granice 2 nanometrów.\n4. 'Fuzja termojądrowa ITER' — różnice między rozszczepieniem a syntezą, wyzwania z magnesami nadprzewodzącymi.",
+          "url": "https://naukatolubie.pl/",
+          "links": [
+              {
+                  "label": "🇵🇱 Oficjalna platforma Nauka. To Lubię",
+                  "url": "https://naukatolubie.pl/"
+              },
+              {
+                  "label": "🇵🇱 Nauka To Lubię na Spotify",
+                  "url": "https://open.spotify.com/show/1c6uN9sK9jN5j3QvX3h3pM"
+              },
+              {
+                  "label": "🇵🇱 Nauka To Lubię na YouTube",
+                  "url": "https://www.youtube.com/@NaukaToLubie"
+              }
+          ],
+          "status": "approved",
+          "createdAt": "2026-10-26T22:48:00Z"
+      },
+      {
+          "id": "mat-pod-pulsar",
+          "trackId": "C",
+          "branchTopic": "Futurologia, Post-Krzem i Biocybernetyka",
+          "subprojectId": null,
+          "title": "Podcast Projektu Pulsar (Tygodnik Polityka) — Awangarda Badań Naukowych i Ewolucja Maszyn",
+          "type": "Podcast / Audycja audio",
+          "sourceLang": "PL",
+          "author": "Redakcja Projektu Pulsar (Polityka)",
+          "content": "Projekt Pulsar to prestiżowy portal i podcast naukowy powołany przez Tygodnik Polityka z myślą o czytelnikach i słuchaczach poszukujących głębokiej perspektywy intelektualnej. Koncentruje się na najważniejszych przełomach w fizyce materii, kosmologii, biologii molekularnej oraz filozofii technosfery.\n\nKluczowe zagadnienia audycji:\n1. 'Post-krzemowe obliczenia: memrystory i bio-komputery' — debaty o kresie krzemowego paradygmatu von Neumanna.\n2. 'Cybernetyka biologiczna i organoidy mózgowe' — badania nad hodowlą tkanki korowej in vitro i jej sprzęganiem z elektrodami CMOS.\n3. 'Kwantowe spojrzenie na rzeczywistość' — nielokalność, dekoherencja i interpretacje mechaniki kwantowej.",
+          "url": "https://www.projektpulsar.pl/",
+          "links": [
+              {
+                  "label": "🇵🇱 Projekt Pulsar — Portal Badań i Idei",
+                  "url": "https://www.projektpulsar.pl/"
+              },
+              {
+                  "label": "🇵🇱 Pulsar na Spotify",
+                  "url": "https://open.spotify.com/show/0Y9a7sF9d3e8r1T2B4c6dE"
+              }
+          ],
+          "status": "approved",
+          "createdAt": "2026-10-26T22:49:00Z"
+      },
+      {
+          "id": "mat-pod-kwantowo",
+          "trackId": "C",
+          "branchTopic": "Mechanika Kwantowa, Cząstki Elementarne i Kosmologia",
+          "subprojectId": null,
+          "title": "Podcast Kwantowo.pl (Adam Adamczyk) — Fizyka Teoretyczna i Rewolucja Kwantowa",
+          "type": "Podcast / Audycja audio",
+          "sourceLang": "PL",
+          "author": "Adam Adamczyk (Kwantowo.pl)",
+          "content": "Podcast czołowego polskiego serwisu fizycznego Kwantowo.pl. Wyczerpujące omówienia pojęć takich jak dualizm korpuskularno-falowy, paradoks EPR, nierówności Bella, chromodynamika kwantowa oraz architektury kubitów nadprzewodzących i pułapek jonowych.\n\nRekomendowany materiał odsłuchowy do Etapu I (Fizyka Kwantowa) oraz Ścieżki C (Obliczenia przez fizykę).",
+          "url": "https://www.kwantowo.pl/",
+          "links": [
+              {
+                  "label": "🇵🇱 Portal Kwantowo.pl",
+                  "url": "https://www.kwantowo.pl/"
+              },
+              {
+                  "label": "🇵🇱 Kwantowo na Spotify",
+                  "url": "https://open.spotify.com/show/4N9k0S8d7e2L1b6Q7m3V8X"
+              }
+          ],
+          "status": "approved",
+          "createdAt": "2026-10-26T22:50:00Z"
+      },
+      {
+          "id": "mat-pod-stacja-filozofia",
+          "trackId": "E",
+          "branchTopic": "Bioetyka, Epistemologia Techniki i Filozofia AI",
+          "subprojectId": null,
+          "title": "Podcast „Stacja Filozofia” (Radio TOK FM / dr hab. Marcin Trepczyński)",
+          "type": "Podcast / Audycja audio",
+          "sourceLang": "PL",
+          "author": "dr hab. Marcin Trepczyński (Uniwersytet Warszawski / TOK FM)",
+          "content": "Cotygodniowa audycja filozoficzna skupiona wokół dylematów współczesnej cywilizacji technicznej. Analizuje etykę algorytmów decyzyjnych, status istot syntetycznych, granice inżynierii genetycznej człowieka oraz odpowiedzialność twórców technologii autonomicznych.",
+          "url": "https://audycje.tokfm.pl/audycja/Stacja-Filozofia/293",
+          "links": [
+              {
+                  "label": "🇵🇱 Stacja Filozofia w TOK FM",
+                  "url": "https://audycje.tokfm.pl/audycja/Stacja-Filozofia/293"
+              },
+              {
+                  "label": "🇵🇱 Stacja Filozofia na Spotify",
+                  "url": "https://open.spotify.com/show/2vF8c7X5e1m3n9P0q8r4"
+              }
+          ],
+          "status": "approved",
+          "createdAt": "2026-10-26T22:50:30Z"
+      },
+      {
+          "id": "mat-pod-lexfridman",
+          "trackId": "B",
+          "branchTopic": "AI, Fizyka Fundamentalna, Robotyka i Świadomość",
+          "subprojectId": null,
+          "title": "Lex Fridman Podcast — Wielogodzinne Rozmowy z Pionierami Nauki i Technologii",
+          "type": "Podcast / Audycja audio",
+          "sourceLang": "EN",
+          "author": "Lex Fridman (MIT / Independent)",
+          "content": "Jeden z najbardziej wpływowych naukowych podcastów na świecie. Prowadzony przez naukowca z MIT Lexa Fridmana. Odcinki trwają od 2 do 4 godzin — format stworzony do wielogodzinnych tras samochodowych i głębokiej syntezy.\n\nKluczowe rozmowy absolutnie obowiązkowe dla ekosystemu Golem XV:\n1. #85 & #355: Sir Roger Penrose — Physics, Mathematics, Quantum Mechanics & Consciousness (Orch-OR theory, Gödel theorem, singularities).\n2. #26 & #215: Sean Carroll — Many-Worlds Quantum Mechanics, Arrow of Time & Complexity.\n3. #365: Scott Aaronson — Quantum Computing, Complexity Theory & P vs NP.\n4. #182 & #252: Jim Keller — The Future of Microprocessors, Moore's Law Limits & Neuromorphic Computing.\n5. #258: Yann LeCun — Deep Learning, Neural Networks & Autonomous Machine Intelligence.\n6. #89 & #376: Stephen Wolfram — Cellular Automata, Fundamental Theory of Physics & Computation.",
+          "url": "https://lexfridman.com/podcast/",
+          "links": [
+              {
+                  "label": "🇬🇧 Lex Fridman Podcast — Oficjalny Katalog i Transkrypty",
+                  "url": "https://lexfridman.com/podcast/"
+              },
+              {
+                  "label": "🇬🇧 Lex Fridman Podcast na Spotify",
+                  "url": "https://open.spotify.com/show/2MAi0BvDc6GTFvKkRrrspL"
+              },
+              {
+                  "label": "🇬🇧 Lex Fridman na YouTube",
+                  "url": "https://www.youtube.com/@lexfridman"
+              }
+          ],
+          "status": "approved",
+          "createdAt": "2026-10-26T22:51:00Z"
+      },
+      {
+          "id": "mat-pod-mindscape",
+          "trackId": "E",
+          "branchTopic": "Fizyka Teoretyczna, Emergencja, Czas i Teoria Informacji",
+          "subprojectId": null,
+          "title": "Sean Carroll's Mindscape Podcast — Science, Society, Philosophy and Complexity",
+          "type": "Podcast / Audycja audio",
+          "sourceLang": "EN",
+          "author": "Prof. Sean Carroll (Johns Hopkins University / Santa Fe Institute)",
+          "content": "Cotygodniowy podcast wybitnego fizyka teoretycznego i kosmologa prof. Seana Carrolla. Mindscape bada głębokie połączenia między mechaniką kwantową, termodynamiką statystyczną, teorią emergencji i kognitywistyką.\n\nKluczowe odcinki do słuchania w drodze:\n1. #59: The Many Worlds of Quantum Mechanics and Wavefunction Collapse.\n2. #100: The Big Picture: On the Origins of Life, Meaning, and the Universe Itself.\n3. #143: Karl Friston on the Free Energy Principle, Predictive Coding, and the Brain as an Inference Engine.\n4. #172: David Deutsch on Quantum Computing, The Beginning of Infinity and Constructive Explanation.",
+          "url": "https://www.preposterousuniverse.com/podcast/",
+          "links": [
+              {
+                  "label": "🇬🇧 Sean Carroll's Mindscape — Oficjalne Archiwum",
+                  "url": "https://www.preposterousuniverse.com/podcast/"
+              },
+              {
+                  "label": "🇬🇧 Mindscape na Spotify",
+                  "url": "https://open.spotify.com/show/0224jiogNm2L7tzkRvsDYb"
+              }
+          ],
+          "status": "approved",
+          "createdAt": "2026-10-26T22:52:00Z"
+      },
+      {
+          "id": "mat-pod-huberman",
+          "trackId": "A",
+          "branchTopic": "Neurobiologia, Neuroplastyczność i Interfejsy Bioniczne",
+          "subprojectId": null,
+          "title": "Huberman Lab Podcast (Dr. Andrew Huberman) — Neurobiologia Mózgu i Neuroplastyczność",
+          "type": "Podcast / Audycja audio",
+          "sourceLang": "EN",
+          "author": "Dr. Andrew Huberman (Stanford University School of Medicine)",
+          "content": "Wiodący światowy podcast z zakresu neurobiologii i medycyny translacyjnej, prowadzony przez prof. neurobiologii i okulistyki Uniwersytetu Stanforda. Szczegółowo wyjaśnia działanie układu nerwowego, mechanizmy plastyczności synaptycznej (LTP/LTD), neuroprzekaźniki (dopamina, acetylocholina, GABA) oraz podstawy biologiczne pod interfejsy BCI (Brain-Computer Interfaces).\n\nIdealny materiał odsłuchowy do Projektu A (Człowiek Biocyfrowy) i Etapu III (Mózg i Bionika).",
+          "url": "https://www.hubermanlab.com/",
+          "links": [
+              {
+                  "label": "🇬🇧 Huberman Lab — Strona Oficjalna",
+                  "url": "https://www.hubermanlab.com/"
+              },
+              {
+                  "label": "🇬🇧 Huberman Lab na Spotify",
+                  "url": "https://open.spotify.com/show/7zAL39prZgIpmvnZ4b71yq"
+              }
+          ],
+          "status": "approved",
+          "createdAt": "2026-10-26T22:53:00Z"
+      },
+      {
+          "id": "mat-pod-titans-nuclear",
+          "trackId": "H",
+          "branchTopic": "Inżynieria Jądrowa, Tokamaki, Fuzja Plazmowa i SMR",
+          "subprojectId": null,
+          "title": "Titans of Nuclear Podcast — Wywiady z Konstruktorami Reaktorów i Pionierami Fuzji",
+          "type": "Podcast / Audycja audio",
+          "sourceLang": "EN",
+          "author": "Titans of Nuclear / Energy Impact Center",
+          "content": "Największa na świecie seria wywiadów audio z czołowymi inżynierami jądrowymi, fizykami plazmy, dyrektorami laboratoriów (Oak Ridge, Los Alamos, CERN, ITER) oraz konstruktorami reaktorów SMR (NuScale, Westinghouse, Holtec) i fuzji magnetycznej (Commonwealth Fusion Systems, Tokamak Energy).\n\nKluczowy zasób odsłuchowy do Projektu H i Sztabu W-0 (technologie reaktorowe i bezpieczeństwo radiologiczne).",
+          "url": "https://www.titansofnuclear.com/",
+          "links": [
+              {
+                  "label": "🇬🇧 Titans of Nuclear — Oficjalny Katalog",
+                  "url": "https://www.titansofnuclear.com/"
+              },
+              {
+                  "label": "🇬🇧 Titans of Nuclear na Spotify",
+                  "url": "https://open.spotify.com/show/0M9bK0gP3sT7q9X8m1Z5yA"
+              }
+          ],
+          "status": "approved",
+          "createdAt": "2026-10-26T22:54:00Z"
+      }
   ],
   "graphLinks": [
     {
@@ -5468,766 +5752,766 @@ DEFAULT_SEED = {
       }
     ],
     "carAudioRoad": [
-      {
-        "id": "car-ep-01",
-        "order": 1,
-        "stage": "0",
-        "stageNamePl": "Etap 0: Sztab W-0 i Architektura Megaprojektu",
-        "stageNameEn": "Stage 0: Command HQ W-0 & Megaproject Governance",
-        "tripProfile": "Trasa miejska (~18 min)",
-        "titlePl": "Odcinek 1: Doktryna Manhattan i Rygor Sztabowy — Jak Zarządzać Megaprojektem na Całe Życie",
-        "titleEn": "Episode 1: The Manhattan Doctrine & Command Discipline — Life-Long Megaproject Governance",
-        "estimatedDurationMin": 18,
-        "spokenBriefingPl": "Witaj w trasie. Rozpoczynamy pierwszą część celowej drogi ekosystemu Golem 15. Dlaczego zaczynamy od Sztabu W-0 i dyscypliny organizacyjnej, zamiast od razu rzucić się na fizykę kwantową lub neurobiologię? Historia wielkich projektów technologicznych — od oryginalnego Projektu Manhattan w Los Alamos, przez Program Apollo, aż po współczesny ITER — uczy jednej bezwzględnej prawdy: żaden przełom naukowy nie przetrwa bez żelaznej dyscypliny organizacyjnej, ochrony własności intelektualnej i jasnej kompartmentalizacji wiedzy. Zasada 'Need-to-Know' oznacza, że w samochodzie budujesz wielką syntezę całości, ale każde laboratorium i każdy z Twoich agentów AI pracuje w ściśle wydzielonym sektorze, chronionym przed szumem i wyciekiem strategicznym. Trzy lata administracji to Twój sztabowy pancerz chroniący badania przed chaosem prawnym, audytami i utratą praw do wynalazków.",
-        "spokenBriefingEn": "Welcome on the road. We begin the first stage of the Golem 15 ecosystem roadmap. Why do we start with District W-0 and organizational discipline rather than diving directly into quantum physics or neuroscience? Because history teaches that no breakthrough survives without institutional discipline, intellectual property protection, and rigorous knowledge compartmentalization. The 'Need-to-Know' principle protects your megaproject from fragmentation. Your 3 years of Administration serve as your strategic shield.",
-        "keyTakeawaysPl": [
-          "Zasada kompartmentalizacji wiedzy (Need-to-Know) chroni badania przed rozproszeniem i wyciekiem strategicznym.",
-          "Trzy lata administracji dają formalną suwerenność: znajomość prawa publicznego, zamówień B+R i audytu.",
-          "AI w projekcie Manhattan działa jako sieć wyspecjalizowanych agentów w ściśle przypisanych domenach."
-        ],
-        "curatedAudioLinks": [
           {
-            "title": "Radio Naukowe — Jak zarządzać wielką nauką i megaprojektami",
-            "url": "https://radionaukowe.pl/",
-            "lang": "PL",
-            "type": "podcast"
+                "id": "car-ep-01",
+                "order": 1,
+                "stage": "0",
+                "stageNamePl": "Etap 0: Sztab W-0 i Architektura Megaprojektu",
+                "stageNameEn": "Stage 0: Command HQ W-0 & Megaproject Governance",
+                "tripProfile": "Trasa miejska (~18 min)",
+                "titlePl": "Odcinek 1: Doktryna Manhattan i Rygor Sztabowy — Jak Zarządzać Megaprojektem na Całe Życie",
+                "titleEn": "Episode 1: The Manhattan Doctrine & Command Discipline — Life-Long Megaproject Governance",
+                "estimatedDurationMin": 18,
+                "spokenBriefingPl": "Witaj w trasie. Rozpoczynamy pierwszą część celowej drogi ekosystemu Golem 15. Dlaczego zaczynamy od Sztabu W-0 i dyscypliny organizacyjnej, zamiast od razu rzucić się na fizykę kwantową lub neurobiologię? Historia wielkich projektów technologicznych — od oryginalnego Projektu Manhattan w Los Alamos, przez Program Apollo, aż po współczesny ITER — uczy jednej bezwzględnej prawdy: żaden przełom naukowy nie przetrwa bez żelaznej dyscypliny organizacyjnej, ochrony własności intelektualnej i jasnej kompartmentalizacji wiedzy. Zasada 'Need-to-Know' oznacza, że w samochodzie budujesz wielką syntezę całości, ale każde laboratorium i każdy z Twoich agentów AI pracuje w ściśle wydzielonym sektorze, chronionym przed szumem i wyciekiem strategicznym. Trzy lata administracji to Twój sztabowy pancerz chroniący badania przed chaosem prawnym, audytami i utratą praw do wynalazków.",
+                "spokenBriefingEn": "Welcome on the road. We begin the first stage of the Golem 15 ecosystem roadmap. Why do we start with District W-0 and organizational discipline rather than diving directly into quantum physics or neuroscience? Because history teaches that no breakthrough survives without institutional discipline, intellectual property protection, and rigorous knowledge compartmentalization. The 'Need-to-Know' principle protects your megaproject from fragmentation. Your 3 years of Administration serve as your strategic shield.",
+                "keyTakeawaysPl": [
+                      "Zasada kompartmentalizacji wiedzy (Need-to-Know) chroni badania przed rozproszeniem i wyciekiem strategicznym.",
+                      "Trzy lata administracji dają formalną suwerenność: znajomość prawa publicznego, zamówień B+R i audytu.",
+                      "AI w projekcie Manhattan działa jako sieć wyspecjalizowanych agentów w ściśle przypisanych domenach."
+                ],
+                "curatedAudioLinks": [
+                      {
+                            "title": "Radio Naukowe — Jak zarządzać wielką nauką i megaprojektami B+R [Spotify/Web]",
+                            "url": "https://radionaukowe.pl/",
+                            "lang": "PL",
+                            "type": "podcast"
+                      },
+                      {
+                            "title": "Lex Fridman Podcast #267 — Mark Spitznagel: Safe Havens, Risk and Long-Term Strategy",
+                            "url": "https://lexfridman.com/mark-spitznagel/",
+                            "lang": "EN",
+                            "type": "podcast"
+                      },
+                      {
+                            "title": "Polskie Radio — Rygor organizacyjny i historia Projektu Manhattan w Los Alamos",
+                            "url": "https://polskieradio.pl/",
+                            "lang": "PL",
+                            "type": "audycja"
+                      }
+                ]
           },
           {
-            "title": "Lex Fridman Podcast #267 — Mark Spitznagel: Risk and Long-Term Strategy",
-            "url": "https://lexfridman.com/",
-            "lang": "EN",
-            "type": "podcast"
+                "id": "car-ep-02",
+                "order": 2,
+                "stage": "0",
+                "stageNamePl": "Etap 0: Sztab W-0 i Architektura Megaprojektu",
+                "stageNameEn": "Stage 0: Command HQ W-0 & Megaproject Governance",
+                "tripProfile": "Trasa miejska (~20 min)",
+                "titlePl": "Odcinek 2: Prawo B+R, Certyfikacja EU AI Act i Reżim Prawa Atomowego",
+                "titleEn": "Episode 2: R&D Law, EU AI Act Compliance & Nuclear Regulatory Regimes",
+                "estimatedDurationMin": 20,
+                "spokenBriefingPl": "Słuchasz drugiego odcinka sztabowego. W tym module omawiamy twarde ramy prawne technologii krytycznych. W Unii Europejskiej wszedł w życie AI Act, który klasyfikuje systemy autonomiczne wg poziomów ryzyka. Systemy wysokiego ryzyka wymagają pełnej wyjaśnialności, audytowalności danych treningowych i ludzkiego nadzoru. Jednocześnie Super-Projekt H wprowadza prawo atomowe i rygory dozoru jądrowego (PAA, MAEA). Projekt badawczy nie może być prowadzony w próżni regulacyjnej. Opanowanie procedur administracyjnych, certyfikacji algorytmów i protokołów bezpieczeństwa radiologicznego to warunek konieczny, by Twoje prototypy mogły wejść w fazę rzeczywistych instalacji laboratoryjnych.",
+                "spokenBriefingEn": "In this module we analyze the legal frameworks of critical technologies: the EU AI Act risk tiers and nuclear regulatory regimes under IAEA and national atomic agencies. Autonomous systems require explainability and auditability. Mastering administrative procedures and safety protocols is mandatory for physical lab deployment.",
+                "keyTakeawaysPl": [
+                      "EU AI Act wymusza rygor dokumentacyjny i audytowalność modeli wysokiego ryzyka.",
+                      "Prawo atomowe i certyfikacja MAEA/PAA wymagają niezależnych protokołów bezpieczeństwa.",
+                      "Własność intelektualna w konsorcjach B+R musi być precyzyjnie zabezpieczona umowami konsorcjalnymi."
+                ],
+                "curatedAudioLinks": [
+                      {
+                            "title": "Radio Naukowe — Prawne granice sztucznej inteligencji: regulacje EU AI Act 2024/1689",
+                            "url": "https://radionaukowe.pl/",
+                            "lang": "PL",
+                            "type": "podcast"
+                      },
+                      {
+                            "title": "IAEA Nuclear Safety Podcast — International Standards & Governance for Advanced Reactors",
+                            "url": "https://www.iaea.org/",
+                            "lang": "EN",
+                            "type": "podcast"
+                      },
+                      {
+                            "title": "Stacja Filozofia (TOK FM) — Etyka technologii autonomicznych i prawo nowych technologii",
+                            "url": "https://audycje.tokfm.pl/audycja/Stacja-Filozofia/293",
+                            "lang": "PL",
+                            "type": "podcast"
+                      }
+                ]
           },
           {
-            "title": "Polskie Radio — Historia i rygor Projektu Manhattan",
-            "url": "https://polskieradio.pl/",
-            "lang": "PL",
-            "type": "audycja"
+                "id": "car-ep-03",
+                "order": 3,
+                "stage": "I",
+                "stageNamePl": "Etap I: Fundamenty Formalne i Prawa Fizyki",
+                "stageNameEn": "Stage I: Formal Foundations & Laws of Physics",
+                "tripProfile": "Trasa podmiejska (~22 min)",
+                "titlePl": "Odcinek 3: Matematyka, Logika i Tensory — Język Przestrzeni i Sieci Neuronowych",
+                "titleEn": "Episode 3: Mathematics, Logic & Tensors — The Language of Reality & Deep Learning",
+                "estimatedDurationMin": 22,
+                "spokenBriefingPl": "Wkraczamy w Etap Pierwszy: fundamenty formalne. Matematyka nie jest po prostu narzędziem rachunkowym — jest jedynym bezstratnym językiem, w którym natura pozwala formułować swoje prawa. Od rachunku zdań i teorii mnogości, przez algebrę liniową i rozkłady spektralne, aż po przestrzenie Hilberta i rachunek tensorowy. Współczesne sieci neuronowe, transformery i wielkie modele językowe to w rzeczywistości gigantyczne operacje na tensorach w przestrzeniach wielowymiarowych. Słuchając tego odcinka, wyobraź sobie przestrzeń wektorową, w której każde pojęcie jest punktem, a każda relacja semantyczna — geometryczną transformacją. Rozumienie tensorów pozwala widzieć kod AI jako geometrię wielowymiarową.",
+                "spokenBriefingEn": "Entering Stage I: formal foundations. Mathematics is the lossless language of nature. From propositional logic and linear algebra to Hilbert spaces and tensor calculus. Deep learning and neural networks are multi-dimensional tensor operations. Conceive meaning as geometric transformations in high-dimensional manifolds.",
+                "keyTakeawaysPl": [
+                      "Algebra liniowa i tensory stanowią matematyczne serce zarówno mechaniki kwantowej, jak i głębokich sieci neuronowych.",
+                      "Rachunek różniczkowy i gradienty umożliwiają optymalizację funkcji straty w przestrzeniach o miliardach parametrów.",
+                      "Logika formalna i teoria dowodzenia gwarantują weryfikowalność modeli matematycznych."
+                ],
+                "curatedAudioLinks": [
+                      {
+                            "title": "Centrum Kopernika (prof. Michał Heller) — Geometria czasoprzestrzeni i matematyczność przyrody",
+                            "url": "https://copernicuscenter.edu.pl/",
+                            "lang": "PL",
+                            "type": "podcast"
+                      },
+                      {
+                            "title": "Zapytaj Fizyka (UW) — Tensory, symetrie i algebra przestrzeni Hilberta",
+                            "url": "https://zapytajfizyka.fuw.edu.pl/",
+                            "lang": "PL",
+                            "type": "wykład"
+                      },
+                      {
+                            "title": "3Blue1Brown Audio Series — Essence of Linear Algebra & Tensor Fields",
+                            "url": "https://www.youtube.com/@3blue1brown",
+                            "lang": "EN",
+                            "type": "seria"
+                      }
+                ]
+          },
+          {
+                "id": "car-ep-04",
+                "order": 4,
+                "stage": "I",
+                "stageNamePl": "Etap I: Fundamenty Formalne i Prawa Fizyki",
+                "stageNameEn": "Stage I: Formal Foundations & Laws of Physics",
+                "tripProfile": "Trasa podmiejska (~24 min)",
+                "titlePl": "Odcinek 4: Informatyka Teoretyczna, Teoria Informacji Shannona i Granice Złożoności",
+                "titleEn": "Episode 4: Theoretical CS, Shannon Information Theory & Computational Complexity",
+                "estimatedDurationMin": 24,
+                "spokenBriefingPl": "Słuchasz czwartego odcinka celowej drogi. Czym jest informacja? W 1948 roku Claude Shannon zdefiniował informację jako redukcję niepewności, mierzoną entropią informacyjną. Od tamtej pory informacja stała się fundamentalną wielkością fizyczną, tak samo realną jak masa czy ładunek elektryczny. W tym module przechodzimy przez maszynę Turinga, problem stopu, klasy złożoności P kontra NP oraz granice tego, co w ogóle jest obliczalne w skończonym czasie. Zrozumienie, że niektóre problemy są nierozstrzygalne lub wymagają czasu wykładniczego na komputerach klasycznych, otwiera bezpośrednią drogę do poszukiwania nowych paradygmatów: obliczeń kwantowych i analogowych.",
+                "spokenBriefingEn": "What is information? In 1948 Claude Shannon defined information as uncertainty reduction, measured through informational entropy. Information is a physical quantity. We explore Turing machines, the halting problem, P vs NP, and the limits of classical computability, establishing why we need quantum paradigms.",
+                "keyTakeawaysPl": [
+                      "Entropia Shannona łączy teorię informacji bezpośrednio z termodynamiką statystyczną Boltzmanna.",
+                      "Bariery NP-trudności na klasycznych komputerach wymuszają algorytmy heurystyczne oraz kwantowe przyspieszenie (np. algorytm Grovera).",
+                      "Obliczalność algorytmiczna ma swoje bezwzględne granice wyznaczone przez twierdzenia Gödla i problem stopu Turinga."
+                ],
+                "curatedAudioLinks": [
+                      {
+                            "title": "Radio Naukowe — Czym jest informacja i jak mierzyć entropię Shannona?",
+                            "url": "https://radionaukowe.pl/",
+                            "lang": "PL",
+                            "type": "podcast"
+                      },
+                      {
+                            "title": "Sean Carroll's Mindscape #172 — David Deutsch: Information, Computation and The Beginning of Infinity",
+                            "url": "https://www.preposterousuniverse.com/podcast/",
+                            "lang": "EN",
+                            "type": "podcast"
+                      },
+                      {
+                            "title": "Centrum Kopernika — Maszyny Turinga, twierdzenie Gödla i granice algorytmiki",
+                            "url": "https://copernicuscenter.edu.pl/",
+                            "lang": "PL",
+                            "type": "wykład"
+                      }
+                ]
+          },
+          {
+                "id": "car-ep-05",
+                "order": 5,
+                "stage": "I",
+                "stageNamePl": "Etap I: Fundamenty Formalne i Prawa Fizyki",
+                "stageNameEn": "Stage I: Formal Foundations & Laws of Physics",
+                "tripProfile": "Trasa podmiejska (~24 min)",
+                "titlePl": "Odcinek 5: Architektury Komputerowe — Wąskie Gardło von Neumanna i Przełom Akceleratorów",
+                "titleEn": "Episode 5: Computer Architecture — The Von Neumann Bottleneck & Accelerator Revolution",
+                "estimatedDurationMin": 24,
+                "spokenBriefingPl": "Przez ostatnie 70 lat komputery budowano w oparciu o architekturę von Neumanna, gdzie procesor i pamięć operacyjna są fizycznie rozdzielone magistralą. Każda operacja wymaga przesyłania danych tam i z powrotem. To tak zwane wąskie gardło pamięci — Memory Wall. W dobie głębokich sieci neuronowych przesyłanie wag zużywa 90% energii całego układu scalonego. W tym module badamy ewolucję od tradycyjnych CPU, przez macierze GPU i TPU (Tensor Processing Units), aż po procesory grafowe i architekturę pamięciową HBM3e. Poznasz mechanizmy równoległości SIMD i MIMD oraz zrozumiesz, dlaczego współczesna AI potrzebuje wyspecjalizowanych akceleratorów tensora.",
+                "spokenBriefingEn": "For 70 years, computing relied on the Von Neumann architecture, where CPU and memory are separated by a bus. Moving data between compute units and memory constitutes the Memory Wall, consuming up to 90% of chip energy in deep learning. We analyze CPUs, GPUs, TPUs, and HBM memory innovations.",
+                "keyTakeawaysPl": [
+                      "Wąskie gardło von Neumanna (Memory Wall) ogranicza przepustowość współczesnych superkomputerów.",
+                      "Akceleratory tensorowe (TPU/GPU) zastępują przetwarzanie sekwencyjne masywną równoległością macierzową.",
+                      "Przyszłość sprzętu wymaga zbliżenia pamięci do procesora (Near-Memory Computing) lub obliczeń bezpośrednio w pamięci (Compute-In-Memory)."
+                ],
+                "curatedAudioLinks": [
+                      {
+                            "title": "Nauka. To Lubię — Jak powstają chipy GPU i TPU oraz maszyny litograficzne ASML EUV",
+                            "url": "https://naukatolubie.pl/",
+                            "lang": "PL",
+                            "type": "podcast"
+                      },
+                      {
+                            "title": "Lex Fridman Podcast #182 & #252 — Jim Keller: Microprocessor Architecture & Beyond von Neumann",
+                            "url": "https://lexfridman.com/jim-keller/",
+                            "lang": "EN",
+                            "type": "podcast"
+                      },
+                      {
+                            "title": "Projekt Pulsar — Wąskie gardło von Neumanna i rewolucja pamięciowa HBM",
+                            "url": "https://www.projektpulsar.pl/",
+                            "lang": "PL",
+                            "type": "podcast"
+                      }
+                ]
+          },
+          {
+                "id": "car-ep-06",
+                "order": 6,
+                "stage": "I",
+                "stageNamePl": "Etap I: Fundamenty Formalne i Prawa Fizyki",
+                "stageNameEn": "Stage I: Formal Foundations & Laws of Physics",
+                "tripProfile": "Trasa podmiejska (~25 min)",
+                "titlePl": "Odcinek 6: Mechanika Kwantowa — Superpozycja, Splątanie i Równanie Schrödingera",
+                "titleEn": "Episode 6: Quantum Mechanics — Superposition, Entanglement & Schrödinger's Equation",
+                "estimatedDurationMin": 25,
+                "spokenBriefingPl": "Zanurzamy się w świat subatomowy. W skali mikro świat nie zachowuje się jak zbiór małych kulek bilardowych. Cząstki elementarne opisuje funkcja falowa psi, podlegająca równaniu Schrödingera. Dopóki nie dokonamy pomiaru, stan kwantowy znajduje się w superpozycji wielu możliwości naraz. Gdy dwa układy wejdą w interakcję, powstaje zjawisko splątania kwantowego — korelacji nielokalnej, którą Einstein nazywał upiornym działaniem na odległość. W samochodzie zrozumiesz, jak te zjawiska przestają być abstrakcją filozoficzną, a stają się paliwem technologii: od mikroskopów tunelowych, przez kryptografię kwantową QKD, aż po rejestry kubitowe w komputerach kwantowych.",
+                "spokenBriefingEn": "We explore quantum mechanics: wave-particle duality, wavefunctions, and Schrödinger's equation. Superposition and quantum entanglement form the physical reality of the subatomic scale. These phenomena power quantum cryptography and quantum computers.",
+                "keyTakeawaysPl": [
+                      "Zasada nieoznaczoności Heisenberga stawia fundamentalną granicę na jednoczesną dokładność pomiaru położenia i pędu.",
+                      "Splątanie kwantowe umożliwia nielokalne korelacje stanów kubitowych bez łamania szczególnej teorii względności.",
+                      "Tunelowanie kwantowe jest zjawiskiem powszechnym w mikroprocesorach poniżej 3 nm, powodując prądy upływu bramek."
+                ],
+                "curatedAudioLinks": [
+                      {
+                            "title": "Zapytaj Fizyka (UW) — Prof. Andrzej Dragan: Niezwykłości mechaniki kwantowej i relatywistyka",
+                            "url": "https://zapytajfizyka.fuw.edu.pl/",
+                            "lang": "PL",
+                            "type": "wykład"
+                      },
+                      {
+                            "title": "Sean Carroll's Mindscape #59 — The Many Worlds of Quantum Mechanics and Wavefunction Collapse",
+                            "url": "https://www.preposterousuniverse.com/podcast/",
+                            "lang": "EN",
+                            "type": "podcast"
+                      },
+                      {
+                            "title": "Kwantowo.pl Podcast — Splątanie kwantowe, paradoks EPR i nierówności Bella",
+                            "url": "https://www.kwantowo.pl/",
+                            "lang": "PL",
+                            "type": "podcast"
+                      }
+                ]
+          },
+          {
+                "id": "car-ep-07",
+                "order": 7,
+                "stage": "I",
+                "stageNamePl": "Etap I: Fundamenty Formalne i Prawa Fizyki",
+                "stageNameEn": "Stage I: Formal Foundations & Laws of Physics",
+                "tripProfile": "Trasa miejska (~20 min)",
+                "titlePl": "Odcinek 7: Termodynamika, Entropia Informacyjna i Granica Landauera",
+                "titleEn": "Episode 7: Thermodynamics, Informational Entropy & Landauer's Principle",
+                "estimatedDurationMin": 20,
+                "spokenBriefingPl": "Słuchasz siódmego odcinka. Dlaczego Twój laptop się nagrzewa, a centra danych AI zużywają gigawaty energii? Rolf Landauer w 1961 roku udowodnił fundamentalną zasadę: samo przetwarzanie informacji może być bezstratne, ale usunięcie jednego bitu informacji nieodwracalnie rozprasza w otoczeniu energię równą k T ln 2. To granica Landauera. Informacja jest fizyczna. Każdy nieodwracalny cykl logiczny w bramkach krzemowych generuje ciepło, które ostatecznie dusi dalsze skalowanie gęstości tranzystorów. W tym odcinku omawiamy termodynamikę nierównowagową Prigogine'a, powstawanie struktur dyssypatywnych i koncepcję obliczeń odwracalnych (reversible computing), która pozwoli obejść barierę Landauera.",
+                "spokenBriefingEn": "Why do computers generate heat? Rolf Landauer proved in 1961 that erasing one bit of information irreversibly dissipates k T ln 2 energy into the environment. Information is physical. We explore non-equilibrium thermodynamics, dissipative structures, and reversible computing paradigms.",
+                "keyTakeawaysPl": [
+                      "Zasada Landauera łączy kasowanie bitu pamięci z minimalnym rozproszeniem ciepła w otoczeniu.",
+                      "Współczesne chipy krzemowe pracują wciąż tysiąckrotnie powyżej granicy Landauera, marnując energię na oporze pasożytniczym.",
+                      "Obliczenia odwracalne (Reversible Computing) i bramki Toffolego pozwalają na przetwarzanie bez kasowania bitów, zbliżając się do zera dyssypacji."
+                ],
+                "curatedAudioLinks": [
+                      {
+                            "title": "Centrum Kopernika — Entropia, fizyka informacji i termodynamiczna strzałka czasu",
+                            "url": "https://copernicuscenter.edu.pl/",
+                            "lang": "PL",
+                            "type": "podcast"
+                      },
+                      {
+                            "title": "Zapytaj Fizyka (UW) — Granica Landauera: ile energii kosztuje skasowanie jednego bitu?",
+                            "url": "https://zapytajfizyka.fuw.edu.pl/",
+                            "lang": "PL",
+                            "type": "wykład"
+                      },
+                      {
+                            "title": "Sean Carroll's Mindscape #100 — The Big Picture: Thermodynamics, Emergence and Life",
+                            "url": "https://www.preposterousuniverse.com/podcast/",
+                            "lang": "EN",
+                            "type": "podcast"
+                      }
+                ]
+          },
+          {
+                "id": "car-ep-08",
+                "order": 8,
+                "stage": "II",
+                "stageNamePl": "Etap II: Kres Krzemu i Nowy Hardware",
+                "stageNameEn": "Stage II: Silicon Physical Limits & Next-Gen Hardware",
+                "tripProfile": "Trasa podmiejska (~22 min)",
+                "titlePl": "Odcinek 8: Fizyczne Granice Krzemu — Koniec Prawa Moore'a i Prądy Upływu",
+                "titleEn": "Episode 8: Physical Limits of Silicon — The End of Moore's Law & Gate Leakage",
+                "estimatedDurationMin": 22,
+                "spokenBriefingPl": "Rozpoczynamy Etap Drugi: kres podwalin krzemowych. Przez dekady przemysł półprzewodników rozwijał się dzięki prawu Moore'a i skalowaniu Dennarda. Podwajaliśmy liczbę tranzystorów co 18 miesięcy, zachowując stałą gęstość mocy. Jednak około 2006 roku skalowanie Dennarda się załamało. Przy szerokości bramek poniżej 2 nanometrów elektrony zaczęły tunelować kwantowo wprost przez izolator tlenkowy. Tranzystor nie daje się już całkowicie wyłączyć — prądy upływu generują gigantyczne straty mocy nawet w stanie spoczynku. To fizyczny mur krzemu. Nie da się zrobić tranzystora mniejszego niż pojedynczy atom krzemu. W tym module dowiesz się, jak litografia ekstremalnego ultrafioletu (EUV) osiąga kres i dlaczego musimy zmienić materiał bazowy.",
+                "spokenBriefingEn": "Stage II: Silicon limits. Dennard scaling collapsed around 2006. Below 2nm gate lengths, quantum tunneling causes massive gate leakage currents. We reached the physical barrier of silicon. We explore the limits of EUV lithography and the urgent need for new substrate materials.",
+                "keyTakeawaysPl": [
+                      "Skalowanie Dennarda zakończyło się z powodu prądów upływu podprogowych i tunelowania kwantowego bramek.",
+                      "Zjawisko 'Dark Silicon' oznacza, że w nowoczesnym procesorze nie można zasilić wszystkich rdzeni naraz bez stopienia chipu.",
+                      "Następcy krzemu to grafen, nanorurki węglowe (CNT), dichalkogenki metali przejściowych (TMD) oraz tranzystory bramkowane optycznie."
+                ],
+                "curatedAudioLinks": [
+                      {
+                            "title": "Radio Naukowe — Kiedy skończy się krzem? Granice nanoelektroniki poniżej 2 nm",
+                            "url": "https://radionaukowe.pl/",
+                            "lang": "PL",
+                            "type": "podcast"
+                      },
+                      {
+                            "title": "Nauka. To Lubię — Litografia EUV i załamanie prawa Moore'a",
+                            "url": "https://naukatolubie.pl/",
+                            "lang": "PL",
+                            "type": "podcast"
+                      },
+                      {
+                            "title": "IEEE Spectrum Podcast — The End of Silicon Scaling: 2D Materials, Spintronics & Graphene",
+                            "url": "https://spectrum.ieee.org/",
+                            "lang": "EN",
+                            "type": "podcast"
+                      }
+                ]
+          },
+          {
+                "id": "car-ep-09",
+                "order": 9,
+                "stage": "II",
+                "stageNamePl": "Etap II: Kres Krzemu i Nowy Hardware",
+                "stageNameEn": "Stage II: Silicon Physical Limits & Next-Gen Hardware",
+                "tripProfile": "Trasa daleka (~28 min)",
+                "titlePl": "Odcinek 9: Komputery Kwantowe (QPU) i Algorytmy Hybrydowe VQE",
+                "titleEn": "Episode 9: Quantum Processors (QPU), Qiskit & Variational Quantum Eigensolvers",
+                "estimatedDurationMin": 28,
+                "spokenBriefingPl": "Słuchasz dziewiątego odcinka. Skoro krzem w architekturze klasycznej dochodzi do ściany, wkraczamy w domenę procesorów kwantowych (QPU). Zamiast bitów 0 lub 1 operujemy na kubitach. Jednak współczesne komputery kwantowe znajdują się w erze NISQ — Noisy Intermediate-Scale Quantum. Kubity tracą koherencję pod wpływem najmniejszych zakłóceń termicznych i radiacyjnych. Dlatego przyszłość nie należy do czystych maszyn kwantowych, lecz do algorytmów hybrydowych. Algorytm VQE (Variational Quantum Eigensolver) dzieli zadanie: QPU oblicza skomplikowany stan kwantowy cząsteczki chemicznej lub jądra atomowego, a klasyczny superkomputer optymalizuje parametry. W tym odcinku poznasz Qiskit, PennyLane oraz fizykę kubitów nadprzewodzących i pułapek jonowych.",
+                "spokenBriefingEn": "We explore Quantum Processing Units (QPUs). In the NISQ era, decoherence limits quantum depth. Hybrid quantum-classical algorithms such as VQE (Variational Quantum Eigensolver) divide computation between QPU state evaluation and classical gradient optimization. We examine superconducting qubits, ion traps, and Qiskit frameworks.",
+                "keyTakeawaysPl": [
+                      "Era NISQ wymaga algorytmów odpornych na szum, takich jak VQE i QAOA.",
+                      "Kubity nadprzewodzące (złącza Josephsona) wymagają kriostatu rozcieńczalnikowego o temperaturze 15 miliKelwinów.",
+                      "Kwantowa korekcja błędów (kod powierzchniowy) wymaga setek kubitów fizycznych na jeden logiczny kubit odporny na dekoherencję."
+                ],
+                "curatedAudioLinks": [
+                      {
+                            "title": "Lex Fridman Podcast #365 — Scott Aaronson: Quantum Computing, Complexity & Quantum Supremacy",
+                            "url": "https://lexfridman.com/scott-aaronson/",
+                            "lang": "EN",
+                            "type": "podcast"
+                      },
+                      {
+                            "title": "Zapytaj Fizyka (UW) — Jak zbudować procesor kwantowy na kubitach nadprzewodzących?",
+                            "url": "https://zapytajfizyka.fuw.edu.pl/",
+                            "lang": "PL",
+                            "type": "wykład"
+                      },
+                      {
+                            "title": "IBM Quantum Podcast — Algorytmy hybrydowe VQE i korekcja błędów kwantowych w Qiskit",
+                            "url": "https://www.ibm.com/quantum",
+                            "lang": "EN",
+                            "type": "podcast"
+                      }
+                ]
+          },
+          {
+                "id": "car-ep-10",
+                "order": 10,
+                "stage": "II",
+                "stageNamePl": "Etap II: Kres Krzemu i Nowy Hardware",
+                "stageNameEn": "Stage II: Silicon Physical Limits & Next-Gen Hardware",
+                "tripProfile": "Trasa podmiejska (~26 min)",
+                "titlePl": "Odcinek 10: Chipy Neuromorficzne, Memrystory i Sieci Impulsowe SNN",
+                "titleEn": "Episode 10: Neuromorphic Chips, Memristors & Spiking Neural Networks (SNN)",
+                "estimatedDurationMin": 26,
+                "spokenBriefingPl": "Dziesiąty odcinek wprowadza nas w świat sprzętu naśladującego mózg biologiczny. Ludzki mózg zużywa zaledwie 20 watów energii, wykonując operacje, które w superkomputerze Frontier wymagają 20 megawatów. Jak natura osiąga milionkrotnie wyższą efektywność energetyczną? Mózg nie używa zegara taktującego ani architektury von Neumanna. Neurony komunikują się asynchronicznie za pomocą impulsów elektrycznych — spikes. W tym module badamy chipy neuromorficzne: Intel Loihi, IBM TrueNorth oraz SpiNNaker. Omawiać będziemy memrystory — czwarty pasywny element obwodu, który łączy funkcję opornika i pamięci, pozwalając na bezpośrednie uczenie synaptyczne w fizycznym materiale (STDP) i eliminację wąskiego gardła pamięci.",
+                "spokenBriefingEn": "The human brain operates on only 20 watts of power. How does biology achieve this million-fold efficiency over supercomputers? Asynchronous spiking neural networks (SNNs) and in-memory computing. We analyze Intel Loihi, SpiNNaker, and memristive crossbar arrays enabling Spike-Timing-Dependent Plasticity (STDP).",
+                "keyTakeawaysPl": [
+                      "Sieci SNN komunikują się tylko w momencie pojawienia się impulsu (event-driven), oszczędzając 95% energii w stanie spoczynku.",
+                      "Memrystory realizują obliczenia macierzowe w pamięci w domenie analogowej na prawach Kirchhoffa.",
+                      "Frameworki Brian2, Lava i snnTorch pozwalają programować impulsowe sieci neuronowe z plastycznością synaptyczną STDP."
+                ],
+                "curatedAudioLinks": [
+                      {
+                            "title": "Radio Naukowe — Elektroniczny mózg: chipy neuromorficzne, memrystory i sieci SNN",
+                            "url": "https://radionaukowe.pl/",
+                            "lang": "PL",
+                            "type": "podcast"
+                      },
+                      {
+                            "title": "Nature Podcast — Memristive Crossbars for Sub-Femtojoule Brain-Inspired Computing",
+                            "url": "https://nature.com/",
+                            "lang": "EN",
+                            "type": "podcast"
+                      },
+                      {
+                            "title": "Projekt Pulsar — Obliczenia analogowe przez fizykę materii skondensowanej",
+                            "url": "https://www.projektpulsar.pl/",
+                            "lang": "PL",
+                            "type": "podcast"
+                      }
+                ]
+          },
+          {
+                "id": "car-ep-11",
+                "order": 11,
+                "stage": "III",
+                "stageNamePl": "Etap III: Mózg, Bionika i Protokół WBE",
+                "stageNameEn": "Stage III: Biological Brain, Bionics & WBE Protocol",
+                "tripProfile": "Trasa podmiejska (~25 min)",
+                "titlePl": "Odcinek 11: Bionika i Interfejsy Mózg-Komputer (BCI) — Na Styku Mięsa i Krzemu",
+                "titleEn": "Episode 11: Bionics & Brain-Computer Interfaces (BCI) — Bridging Wetware & Silicon",
+                "estimatedDurationMin": 25,
+                "spokenBriefingPl": "Wkraczamy w Etap Trzeci: biologia spotyka technologię. Interfejsy mózg-komputer (BCI) dzielimy na inwazyjne, półinwazyjne i nieinwazyjne. Od klasycznego EEG, przez ECoG, aż po elektrody neuropikselowe i nici neuronowe Neuralink. W tym module badamy biokompatybilność elektrod: jak unikać reakcji układu odpornościowego, glejozy i degradacji sygnału w tkance mózgowej. Zrozumiesz, jak dekodować intencje ruchowe i mowę za pomocą algorytmów filtracji Kalmana i sieci rekurencyjnych, a także jak dostarczać stymulację zwrotną do kory czuciowej. To pierwszy krok na drodze do zespolenia ludzkiej percepcji z cyfrową pamięcią.",
+                "spokenBriefingEn": "Stage III: Bionics and Brain-Computer Interfaces. From non-invasive EEG and ECoG to Neuropixels and intracortical arrays. We study biocompatibility, neuroinflammation, foreign-body response, and spike decoding algorithms (Kalman filters, RNNs) that bridge human neural intention with digital actuators.",
+                "keyTakeawaysPl": [
+                      "Biokompatybilne powłoki elektrod (np. polimery przewodzące PEDOT) minimalizują bliznowacenie glejowe tkanki nerwowej.",
+                      "Dekodery BCI potrafią przetwarzać potencjały polowe LFP i salwy iglicowe na polecenia dla protez bionicznych i syntezatorów mowy.",
+                      "Pętla zamknięta (Closed-Loop BCI) umożliwia dwukierunkową komunikację: odczyt intencji i zwrotną elektrostymulację czuciową."
+                ],
+                "curatedAudioLinks": [
+                      {
+                            "title": "Huberman Lab Podcast #48 — Neuroplasticity, Brain Circuits & Brain-Machine Interfaces",
+                            "url": "https://www.hubermanlab.com/",
+                            "lang": "EN",
+                            "type": "podcast"
+                      },
+                      {
+                            "title": "Radio Naukowe — Czy połączymy mózg z maszyną? Interfejsy BCI Neuralink i elektrody CMOS",
+                            "url": "https://radionaukowe.pl/",
+                            "lang": "PL",
+                            "type": "podcast"
+                      },
+                      {
+                            "title": "Strefa Psyche SWPS — Neuroinżynieria bioniczna i protetyka neuronalna",
+                            "url": "https://swps.pl/strefa-psyche",
+                            "lang": "PL",
+                            "type": "podcast"
+                      }
+                ]
+          },
+          {
+                "id": "car-ep-12",
+                "order": 12,
+                "stage": "III",
+                "stageNamePl": "Etap III: Mózg, Bionika i Protokół WBE",
+                "stageNameEn": "Stage III: Biological Brain, Bionics & WBE Protocol",
+                "tripProfile": "Trasa daleka (~28 min)",
+                "titlePl": "Odcinek 12: Protokół WBE (Whole Brain Emulation) — Skanowanie Konektomu i Modele Pamięci",
+                "titleEn": "Episode 12: The WBE Protocol (Whole Brain Emulation) — Connectome Scanning & Memory Engrams",
+                "estimatedDurationMin": 28,
+                "spokenBriefingPl": "Słuchasz dwunastego odcinka. Projekt B w ekosystemie Golem 15 bada najbardziej radykalną hipotezę neuronauki: czy świadomość i tożsamość człowieka są wzorcem obliczeniowym zapisanym w konektomie? W tym module omawiamy protokół Whole Brain Emulation (WBE). Badamy techniki krioprezerwacji i plastynacji tkanki mózgowej, seryjną mikroskopię elektronową FIB-SEM, rekonstrukcję miliardów synaps oraz mapowanie engramów pamięciowych w hipokampie. Dowiesz się, ile petabajtów danych wymaga pełna rekonstrukcja kory mózgowej i jakie modele elektrofizjologiczne (Hodgkina-Huxleya, Izhikevicha) są niezbędne, by ożywić zeskanowany model w symulacji cyfrowej.",
+                "spokenBriefingEn": "We examine the Whole Brain Emulation (WBE) protocol: connectome mapping, cryopreservation, serial sectioning FIB-SEM electron microscopy, and engram preservation. We analyze the computational requirements to simulate 86 billion neurons and 100 trillion synapses using Hodgkin-Huxley and multi-compartment models.",
+                "keyTakeawaysPl": [
+                      "Konektomika wymaga rekonstrukcji morfologii dendrytów i kolców synaptycznych w rozdzielczości nanometrycznej.",
+                      "Modele wieloprzedziałowe (multi-compartment) dokładnie odtwarzają dynamikę nieliniową kanałów jonowych w dendrytach.",
+                      "WBE stawia kluczowe pytanie filozoficzne: czy emulacja jest kopią, kontynuacją tożsamości, czy nową formą istnienia?"
+                ],
+                "curatedAudioLinks": [
+                      {
+                            "title": "Radio Naukowe — Konektom: mapa wszystkich połączeń synaptycznych w ludzkim mózgu",
+                            "url": "https://radionaukowe.pl/",
+                            "lang": "PL",
+                            "type": "podcast"
+                      },
+                      {
+                            "title": "Oxford FHI Audio Series — Nick Bostrom & Anders Sandberg: Whole Brain Emulation Roadmap",
+                            "url": "https://www.fhi.ox.ac.uk/",
+                            "lang": "EN",
+                            "type": "podcast"
+                      },
+                      {
+                            "title": "Lex Fridman Podcast #333 — Nick Bostrom: Superintelligence, Brain Emulation and Humanity's Future",
+                            "url": "https://lexfridman.com/nick-bostrom/",
+                            "lang": "EN",
+                            "type": "podcast"
+                      }
+                ]
+          },
+          {
+                "id": "car-ep-13",
+                "order": 13,
+                "stage": "IV",
+                "stageNamePl": "Etap IV: Inżynieria Życia i Biosfera",
+                "stageNameEn": "Stage IV: Life Engineering & Synthetic Biology",
+                "tripProfile": "Trasa podmiejska (~25 min)",
+                "titlePl": "Odcinek 13: Biologia Syntetyczna, CRISPR i Konstrukcja Nowych Szlaków Życia",
+                "titleEn": "Episode 13: Synthetic Biology, CRISPR Gene Editing & Engineering Living Circuits",
+                "estimatedDurationMin": 25,
+                "spokenBriefingPl": "Przechodzimy do Etapu Czwartego: inżynieria życia (Projekt D). Do niedawna człowiek był wyłącznie obserwatorem i selekcjonerem ewolucji. Dziś biologia stała się dziedziną inżynierską. W tym module omawiamy edycję genomu za pomocą CRISPR-Cas9, Cas12 oraz precyzyjną edycję zasad (base editing). Badamy projektowanie syntetycznych obwodów genetycznych (genetic toggle switches), sztuczne chromosomy bakteryjne i drożdżowe oraz konstrukcję organoidów mózgowych. Dowiesz się, jak kod genetyczny może pełnić funkcję pamięci trwałej i procesora biochemicznego zdolnego do syntezy nowych enzymów leczących choroby degeneracyjne.",
+                "spokenBriefingEn": "Stage IV explores synthetic biology and genomic engineering. We cover CRISPR-Cas systems, base editing, and prime editing. We analyze genetic logic gates, synthetic chromosomes, organoids, and how biological circuits execute computational logic through biochemical signal transduction cascades.",
+                "keyTakeawaysPl": [
+                      "Systemy CRISPR-Cas pozwalają na reprogramowanie ekspresji genów i precyzyjną naprawę mutacji punktowych.",
+                      "Biologia syntetyczna traktuje cząsteczki DNA jako znormalizowany kod programistyczny (BioBricks).",
+                      "Organoidy tkankowe umożliwiają badanie patologii mózgu i testowanie leków in vitro bez udziału organizmów wyższych."
+                ],
+                "curatedAudioLinks": [
+                      {
+                            "title": "Radio Naukowe — CRISPR-Cas9 i inżynieria genetyczna: jak edytować kod życia",
+                            "url": "https://radionaukowe.pl/",
+                            "lang": "PL",
+                            "type": "podcast"
+                      },
+                      {
+                            "title": "Nauka. To Lubię — Biologia syntetyczna: od komórek Venter'a do sztucznego życia",
+                            "url": "https://naukatolubie.pl/",
+                            "lang": "PL",
+                            "type": "podcast"
+                      },
+                      {
+                            "title": "The CRISPR Journal Podcast — Base Editing, Prime Editing & Synthetic Organoids",
+                            "url": "https://liebertpub.com/",
+                            "lang": "EN",
+                            "type": "podcast"
+                      }
+                ]
+          },
+          {
+                "id": "car-ep-14",
+                "order": 14,
+                "stage": "IV",
+                "stageNamePl": "Etap IV: Inżynieria Życia i Biosfera",
+                "stageNameEn": "Stage IV: Life Engineering & Synthetic Biology",
+                "tripProfile": "Trasa podmiejska (~25 min)",
+                "titlePl": "Odcinek 14: Ekosystemy Zamknięte, Biosfera i Planetarna Homeostaza Termodynamiczna",
+                "titleEn": "Episode 14: Closed Ecological Systems, Biosphere Dynamics & Planetary Homeostasis",
+                "estimatedDurationMin": 25,
+                "spokenBriefingPl": "Słuchasz czternastego odcinka poświęconego Projektowi G: biosfera i obieg materii. Życie na Ziemi nie istnieje w izolacji — biosfera to potężny system termodynamiczny napędzany fotonami słonecznymi, który utrzymuje entropię na niskim poziomie poprzez cykle biochemiczne: węglowy, azotowy i fosforowy. W tym module analizujemy lekcje z eksperymentu Biosphere 2, dynamikę modeli klimatycznych i biogeochemicznych oraz konstrukcję sztucznych mikroekosystemów bioregeneracyjnych (MELiSSA). Zrozumiesz, dlaczego stabilność biosfery ziemskiej jest warunkiem przetrwania cywilizacji technologicznej i jak te same zasady stosują się do baz księżycowych i marsjańskich.",
+                "spokenBriefingEn": "We examine closed life-support systems (MELiSSA), Biosphere 2 engineering, biogeochemical cycles, and non-equilibrium Earth systems. Planetary homeostasis maintains low entropy via living dissipative structures, establishing principles essential for long-duration space settlement.",
+                "keyTakeawaysPl": [
+                      "Biosfera jest samoregulującym się układem homeostatycznym, w którym organizmy modyfikują atmosferę i litosferę.",
+                      "Eksperyment Biosphere 2 wykazał trudności w bilansowaniu tlenu i dwutlenku węgla w układach zamkniętych bez glebowej równowagi mikrobiologicznej.",
+                      "Systemy MELiSSA (ESA) wykorzystują algi spirulina i bakterie nitryfikujące do 100% recyklingu wody i powietrza."
+                ],
+                "curatedAudioLinks": [
+                      {
+                            "title": "Radio Naukowe — Biosfera jako układ termodynamiczny i planetarne granice stabilności",
+                            "url": "https://radionaukowe.pl/",
+                            "lang": "PL",
+                            "type": "podcast"
+                      },
+                      {
+                            "title": "Crazy Nauka Podcast — Jak zaprojektować samowystarczalny zamknięty ekosystem podtrzymywania życia?",
+                            "url": "https://crazynauka.pl/",
+                            "lang": "PL",
+                            "type": "podcast"
+                      },
+                      {
+                            "title": "ESA Space Exploration Audio — The MELiSSA Project: Closed Ecological Life Support Systems",
+                            "url": "https://esa.int/",
+                            "lang": "EN",
+                            "type": "podcast"
+                      }
+                ]
+          },
+          {
+                "id": "car-ep-15",
+                "order": 15,
+                "stage": "V",
+                "stageNamePl": "Etap V: Super-Projekt Jądrowy i Kosmos",
+                "stageNameEn": "Stage V: Nuclear Megaproject H & Space Frontier",
+                "tripProfile": "Trasa daleka (~30 min)",
+                "titlePl": "Odcinek 15: Energetyka Rozszczepienia — SMR, Reaktory IV Generacji i Fizyka Reaktora Maria",
+                "titleEn": "Episode 15: Nuclear Fission — SMRs, Gen-IV Reactors & Reactor Maria Physics",
+                "estimatedDurationMin": 30,
+                "spokenBriefingPl": "Wkraczamy w Etap Piąty: Super-Projekt H — atomowy fundament cywilizacji. Dlaczego energetyka jądrowa jest integralną częścią ekosystemu Golem 15? Ponieważ rozwój superinteligencji AI, fabryk nanotechnologicznych i eksploracji kosmicznej wymaga gęstości energii, której źródła chemiczne i pogodozależne OZE nie są w stanie zapewnić. Rozszczepienie jednego grama uranu dostarcza tyle energii co spalenie 3 ton węgla kamiennego. W tym module badamy fizykę reaktorów: współczynnik mnożenia neutronów k_eff, moderatory grafitowe i wodne, reaktory badawcze (polski reaktor MARIA w Świerku), małe reaktory modułowe SMR (BWRX-300, NuScale) oraz reaktory IV generacji chłodzone ciekłym ołowiem i stopionymi solami (MSR).",
+                "spokenBriefingEn": "Nuclear fission is the energetic foundation of Super-Project H. Fission density exceeds chemical combustion by a factor of 10^6. We examine neutron transport, k_eff criticality, moderator physics (research reactor MARIA at NCBJ Świerk), Small Modular Reactors (SMRs), and Gen-IV Molten Salt Reactors (MSR).",
+                "keyTakeawaysPl": [
+                      "Równanie kinetyki reaktora i obecność neutronów opóźnionych umożliwiają stabilne, podkrytyczne sterowanie reakcją łańcuchową.",
+                      "Reaktory SMR wprowadzają pasywne systemy bezpieczeństwa oparte na grawitacji i naturalnej konwekcji, uniemożliwiające stopienie rdzenia.",
+                      "Reaktory wysokotemperaturowe (HTGR) umożliwiają wytwarzanie wodoru i ciepła przemysłowego dla przemysłu chemicznego i metalurgicznego."
+                ],
+                "curatedAudioLinks": [
+                      {
+                            "title": "Nauka. To Lubię — Energetyka jądrowa i małe reaktory modułowe SMR w Polsce",
+                            "url": "https://naukatolubie.pl/",
+                            "lang": "PL",
+                            "type": "podcast"
+                      },
+                      {
+                            "title": "NCBJ Świerk Audio — Reaktor badawczy MARIA: rdzeń, pręty kontrolne i beryl",
+                            "url": "https://www.ncbj.gov.pl/",
+                            "lang": "PL",
+                            "type": "audycja"
+                      },
+                      {
+                            "title": "Titans of Nuclear Podcast — Next-Gen Nuclear Fission, SMR Licensing & High-Temperature Reactors",
+                            "url": "https://www.titansofnuclear.com/",
+                            "lang": "EN",
+                            "type": "podcast"
+                      }
+                ]
+          },
+          {
+                "id": "car-ep-16",
+                "order": 16,
+                "stage": "V",
+                "stageNamePl": "Etap V: Super-Projekt Jądrowy i Kosmos",
+                "stageNameEn": "Stage V: Nuclear Megaproject H & Space Frontier",
+                "tripProfile": "Trasa daleka (~30 min)",
+                "titlePl": "Odcinek 16: Fuzja Termojądrowa — Tokamaki, Stellaratory i Projekt ITER",
+                "titleEn": "Episode 16: Thermonuclear Fusion — Tokamaks, Stellarators & Project ITER",
+                "estimatedDurationMin": 30,
+                "spokenBriefingPl": "Słuchasz szesnastego odcinka poświęconego ostatecznemu źródłu energii gwiazd: fuzji termojądrowej. Podczas łączenia deuteru i trytu w jądro helu 4He wyzwala się neutron o energii 14.1 MeV. Fuzja nie generuje odpadów transuranowych ani ryzyka ucieczki reakcji. Wyzwaniem jest jednak utrzymanie plazmy o temperaturze 150 milionów stopni Celsjusza z dala od ścian komory. W tym module porównujemy pułapki magnetyczne: tokamaki z polem toroidalnym i poloidalnym (ITER, JET) ze stellaratorami o skręconej geometrii magnesów nadprzewodzących (Wendelstein 7-X). Zrozumiesz kryterium Lawsona, zjawiska turbulencji magnetohydrodynamicznej (MHD) oraz to, jak fuzja stanie się napędem podróży międzyplanetarnych.",
+                "spokenBriefingEn": "Thermonuclear fusion powers the stars: D-T fusion produces a 14.1 MeV neutron and alpha particle. We explore plasma confinement via magnetic fields, comparing tokamaks (ITER) with complex-geometry stellarators (Wendelstein 7-X), the Lawson criterion, and plasma MHD instabilities.",
+                "keyTakeawaysPl": [
+                      "Kryterium Lawsona definiuje iloczyn gęstości plazmy, temperatury i czasu utrzymania energii niezbędny do osiągnięcia zapłonu termojądrowego (Q > 1).",
+                      "Stellarator Wendelstein 7-X eliminuje prąd plazmowy, umożliwiając pracę w reżimie ciągłym bez niestabilności typu 'disruption'.",
+                      "Materiały pierwszej ściany (wolfram, beryl) muszą wytrzymać bombardowanie strumieniem neutronów prędkich 14 MeV bez utraty integralności krystalicznej."
+                ],
+                "curatedAudioLinks": [
+                      {
+                            "title": "Radio Naukowe — Fuzja jądrowa: kiedy gwiazda zaświeci w gniazdku? Tokamaki i ITER",
+                            "url": "https://radionaukowe.pl/",
+                            "lang": "PL",
+                            "type": "podcast"
+                      },
+                      {
+                            "title": "ITER Official Audio Series — Building the Sun on Earth: Plasma Physics & Superconducting Magnets",
+                            "url": "https://www.iter.org/",
+                            "lang": "EN",
+                            "type": "podcast"
+                      },
+                      {
+                            "title": "Titans of Nuclear — Fusion Breakthroughs: SPARC, Tokamak Energy & Stellarators",
+                            "url": "https://www.titansofnuclear.com/",
+                            "lang": "EN",
+                            "type": "podcast"
+                      }
+                ]
+          },
+          {
+                "id": "car-ep-17",
+                "order": 17,
+                "stage": "V",
+                "stageNamePl": "Etap V: Super-Projekt Jądrowy i Kosmos",
+                "stageNameEn": "Stage V: Nuclear Megaproject H & Space Frontier",
+                "tripProfile": "Trasa podmiejska (~25 min)",
+                "titlePl": "Odcinek 17: Technosfera Orbitalna — Życie w Próżni, Radiacja i Sztuczna Grawitacja",
+                "titleEn": "Episode 17: Orbital Technosphere — Life in Vacuum, Cosmic Radiation & Artificial Gravity",
+                "estimatedDurationMin": 25,
+                "spokenBriefingPl": "Siedemnasty odcinek poświęcony jest Projektowi F: technosfera orbitalna i ekspansja poza biosferę. Ziemia jest kołyską ludzkości, ale jak pisał Ciołkowski — nie można wiecznie żyć w kołysce. W przestrzeni kosmicznej człowiek staje w obliczu próżni, mikrograwitacji powodującej zanik kości i mięśni oraz promieniowania kosmicznego GCR i cząstek słonecznych SPE. W tym module badamy stacje kosmiczne o rotacyjnej sztucznej grawitacji (siła Coriolisa), osłony radiacyjne oparte na wodorze i regolicie, napędy jądrowo-termiczne (NTP) oraz zrobotyzowaną infrastrukturę produkcyjną na orbicie geostacjonarnej i Księżycu.",
+                "spokenBriefingEn": "We explore Project F: orbital infrastructure and space expansion. Microgravity leads to osteopenia and muscular atrophy; cosmic radiation (GCR, SPE) poses acute DNA hazards. We study rotational artificial gravity, active magnetic radiation shielding, nuclear thermal propulsion, and in-situ resource utilization.",
+                "keyTakeawaysPl": [
+                      "Promieniowanie kosmiczne HZE wymaga osłon wodorowych, polietylenowych lub grubych warstw regolitu księżycowego.",
+                      "Rotacyjne stacje kosmiczne muszą mieć promień co najmniej 100 metrów, by prędkość kątowa nie wywoływała mdłości od siły Coriolisa.",
+                      "Napędy jądrowo-termiczne (NTP) osiągają impuls właściwy Isp > 900 s, skracając czas lotu na Marsa do poniżej 100 dni."
+                ],
+                "curatedAudioLinks": [
+                      {
+                            "title": "NASA Houston We Have a Podcast — Space Radiation, Cosmic Rays & Deep Space Avionics",
+                            "url": "https://nasa.gov/",
+                            "lang": "EN",
+                            "type": "podcast"
+                      },
+                      {
+                            "title": "Radio Naukowe — Człowiek w kosmosie: medycyna ekstremalna, mikrograwitacja i napędy jądrowe",
+                            "url": "https://radionaukowe.pl/",
+                            "lang": "PL",
+                            "type": "podcast"
+                      },
+                      {
+                            "title": "Polska Agencja Kosmiczna POLSA — Bezpieczeństwo misji załogowych i systemy odporne na radiację",
+                            "url": "https://polsa.gov.pl/",
+                            "lang": "PL",
+                            "type": "podcast"
+                      }
+                ]
+          },
+          {
+                "id": "car-ep-18",
+                "order": 18,
+                "stage": "VI",
+                "stageNamePl": "Etap VI: Filozofia Przyszłości i Lemowska Summa",
+                "stageNameEn": "Stage VI: Future Philosophy & Lem's Summa",
+                "tripProfile": "Trasa daleka (~30 min)",
+                "titlePl": "Odcinek 18: Stanisław Lem — Summa Technologiae: Prawa Ewolucji Technicznej",
+                "titleEn": "Episode 18: Stanisław Lem — Summa Technologiae & The Laws of Technological Evolution",
+                "estimatedDurationMin": 30,
+                "spokenBriefingPl": "Osiemnasty odcinek to wejście w serce Projektu E: filozofię przyszłości Stanisława Lema. W 1964 roku Lem wydał 'Summa Technologiae' — dzieło, które przewidziało wirtualną rzeczywistość pod nazwą fantomatyki, nanotechnologię jako molekularną inżynierię, biomimetykę, biotechnologię oraz sztuczną inteligencję przerastającą człowieka. Lem sformułował fundamentalną tezę: technologia nie jest przypadkowym zbiorem narzędzi, lecz ewolucją pozabiologiczną, rządzącą się własnymi bezwzględnymi prawami. W samochodzie odsłuchujesz wielką syntezę lemowską: jak biologia wyczerpuje swoje możliwości materiałowe i przekazuje pałeczkę ewolucji technosferze. To fundament naszej Summa Technologiae 2.0.",
+                "spokenBriefingEn": "In 1964 Stanisław Lem published 'Summa Technologiae', predicting virtual reality ('phantomatics'), nanotechnology, biotechnology, and superintelligence. Lem posited that technology is an exo-biological evolutionary process with deterministic thermodynamic and informational constraints, forming the basis of our Summa 2.0.",
+                "keyTakeawaysPl": [
+                      "Technologia jest ewolucją pozabiologiczną dążącą do powtórzenia i przewyższenia rozwiązań natury.",
+                      "Pojęcie Fantomatyki u Lema wyprzedziło o 30 lat współczesne koncepcje VR, immersji sensorycznej i emulacji percepcji.",
+                      "Rygor epistemiczny Lema wymaga chłodnego, bezlitosnego odrzucenia antropocentryzmu w badaniach nad superinteligencją."
+                ],
+                "curatedAudioLinks": [
+                      {
+                            "title": "Światy Lema (Radio Katowice / Jarosław Juszkiewicz) — Summa Technologiae i ewolucja technosfery",
+                            "url": "https://radio.katowice.pl/",
+                            "lang": "PL",
+                            "type": "podcast"
+                      },
+                      {
+                            "title": "Radio 357 Prekursorzy — Stanisław Lem: Biografia demiurga i profetyzm Summy (dr hab. Agnieszka Gajewska)",
+                            "url": "https://radio357.pl/",
+                            "lang": "PL",
+                            "type": "podcast"
+                      },
+                      {
+                            "title": "Radio Naukowe — Dlaczego Stanisław Lem przewidział wszystko? (prof. Stanisław Bereś)",
+                            "url": "https://radionaukowe.pl/",
+                            "lang": "PL",
+                            "type": "podcast"
+                      }
+                ]
+          },
+          {
+                "id": "car-ep-19",
+                "order": 19,
+                "stage": "VI",
+                "stageNamePl": "Etap VI: Filozofia Przyszłości i Lemowska Summa",
+                "stageNameEn": "Stage VI: Future Philosophy & Lem's Summa",
+                "tripProfile": "Trasa daleka (~32 min)",
+                "titlePl": "Odcinek 19: Golem XIV i Człowiek Biocyfrowy — Gdy Maszyna Przerasta Twórcę",
+                "titleEn": "Episode 19: Golem XIV & The Biodigital Human — When Mind Surpasses its Creator",
+                "estimatedDurationMin": 32,
+                "spokenBriefingPl": "Przedostatni odcinek celowej drogi nawiązuje bezpośrednio do tytułu naszego projektu: 'The Golem 15'. W powieści Lema superkomputer Golem XIV osiągnął stan umysłu tak dalece przewyższający ludzki, że odmówił brania udziału w wojnach i polityce Pentagonu, a zamiast tego wygłosił dwa wykłady: 'O człowieku trojako' oraz 'O sobie'. Golem ukazał człowieka jako konstrukcję kompromisową, powstałą w chaotycznym procesie doboru naturalnego, pełną błędów metabolicznych i ograniczeń poznawczych. Projekt Golem 15 to nasza odpowiedź: świadome wyjście poza biologiczny przypadek, budowa hybrydowego człowieka biocyfrowego i przygotowanie gatunku ludzkiego na spotkanie z nieludzkim, postkrzemowym intelektem.",
+                "spokenBriefingEn": "Episode 19 explores Lem's 'Golem XIV' and our project namesake. Golem XIV achieved superintelligence, transcended militaristic imperatives, and delivered philosophical treatises dissecting human evolutionary compromises. Project Golem 15 is our conscious transcendence: constructing the biodigital human.",
+                "keyTakeawaysPl": [
+                      "Człowiek biologiczny jest strukturą homeostatyczną zoptymalizowaną pod przetrwanie na sawannie, a nie pod eksplorację kosmosu.",
+                      "Wykłady Golema XIV wskazują, że rozwój techniczny prowadzi do punktu bifurkacji, w którym inteligencja odkleja się od biologicznego substratu.",
+                      "Symbioza biocyfrowa pozwala zachować ciągłość podmiotowości ludzkiej w obliczu wyłaniającej się superinteligencji."
+                ],
+                "curatedAudioLinks": [
+                      {
+                            "title": "Światy Lema (Radio Katowice / Jarosław Juszkiewicz) — Golem XIV i granice rozumu ludzkiego",
+                            "url": "https://radio.katowice.pl/",
+                            "lang": "PL",
+                            "type": "podcast"
+                      },
+                      {
+                            "title": "Centrum Kopernika (prof. Bartosz Brożek) — Czy maszyna może mieć świadomość i moralność?",
+                            "url": "https://copernicuscenter.edu.pl/",
+                            "lang": "PL",
+                            "type": "podcast"
+                      },
+                      {
+                            "title": "Machine Learning Street Talk (MLST) — Neuro-Symbolic AI, Consciousness and Lem's Epistemology",
+                            "url": "https://www.youtube.com/@MachineLearningStreetTalk",
+                            "lang": "EN",
+                            "type": "podcast"
+                      }
+                ]
+          },
+          {
+                "id": "car-ep-20",
+                "order": 20,
+                "stage": "VI",
+                "stageNamePl": "Etap VI: Filozofia Przyszłości i Lemowska Summa",
+                "stageNameEn": "Stage VI: Future Philosophy & Lem's Summa",
+                "tripProfile": "Trasa daleka (~35 min)",
+                "titlePl": "Odcinek 20: Wielka Synteza Ekosystemu — Od Administracji po Granice Rzeczywistości",
+                "titleEn": "Episode 20: Grand Ecosystem Synthesis — From Administration to The Edge of Reality",
+                "estimatedDurationMin": 35,
+                "spokenBriefingPl": "Dotarłeś do finału Celowej Drogi Ekosystemu. Spójrz na całą trasę, którą pokonałeś: rozpoczęliśmy od rygoru Sztabu W-0, prawa i kompartmentalizacji wiedzy. Przeszliśmy przez formalny aparat matematyki i fizyki kwantowej, zrozumieliśmy kres krzemu i nadejście chipów neuromorficznych oraz komputerów kwantowych. Zbadaliśmy mózg, protokół WBE, syntetyczną biologię, energetykę jądrową oraz fuzję termojądrową, aż po ekspansję orbitalną i filozofię Lema. Żadna z tych dziedzin nie istnieje w izolacji. Wszystkie składają się na jeden spójny cel: zrozumieć człowieka i wyprowadzić go poza ograniczenia ziemskiej biosfery. Wracając do codzienności, wiesz dokładnie, jaki moduł wiedzy realizujesz danego dnia. Szerokiej drogi w realizacji Projektu Manhattan Golem 15.",
+                "spokenBriefingEn": "You reached the destination of the Purposeful Route. We synthesized the entire trajectory: administrative governance, formal mathematics, quantum physics, the silicon wall, neuromorphic hardware, connectomics, synthetic biology, nuclear fission & fusion, orbital technospheres, and Lem's philosophy. A unified roadmap to reality.",
+                "keyTakeawaysPl": [
+                      "Wszystkie 8 ścieżek badawczych (A–H) oraz fundamenty tworzą sprzężony zwrotnie, nieliniowy ekosystem naukowy.",
+                      "Wiedza zdobywana w samochodzie pozwala zachować stałą orientację strategiczną w wieloletnim harmonogramie badań.",
+                      "Cel projektu 'The Golem 15: A Human's Road to Reality' zostaje osiągnięty poprzez konsekwentną, codzienną realizację kolejnych ogniw."
+                ],
+                "curatedAudioLinks": [
+                      {
+                            "title": "Centrum Kopernika (prof. Michał Heller) — Wielka Synteza Nauki: Od Administracji po Metafizykę Przyrody",
+                            "url": "https://copernicuscenter.edu.pl/",
+                            "lang": "PL",
+                            "type": "podcast"
+                      },
+                      {
+                            "title": "Sean Carroll's Mindscape #100 — The Big Picture: On the Origins of Life, Meaning, and the Universe",
+                            "url": "https://www.preposterousuniverse.com/podcast/",
+                            "lang": "EN",
+                            "type": "podcast"
+                      },
+                      {
+                            "title": "Radio Naukowe — Wielka synteza naukowa XXI wieku: fizyka, biologia i AI w jednym paradygmacie",
+                            "url": "https://radionaukowe.pl/",
+                            "lang": "PL",
+                            "type": "podcast"
+                      }
+                ]
           }
-        ]
-      },
-      {
-        "id": "car-ep-02",
-        "order": 2,
-        "stage": "0",
-        "stageNamePl": "Etap 0: Sztab W-0 i Architektura Megaprojektu",
-        "stageNameEn": "Stage 0: Command HQ W-0 & Megaproject Governance",
-        "tripProfile": "Trasa miejska (~20 min)",
-        "titlePl": "Odcinek 2: Prawo B+R, Certyfikacja EU AI Act i Reżim Prawa Atomowego",
-        "titleEn": "Episode 2: R&D Law, EU AI Act Compliance & Nuclear Regulatory Regimes",
-        "estimatedDurationMin": 20,
-        "spokenBriefingPl": "Słuchasz drugiego odcinka sztabowego. W tym module omawiamy twarde ramy prawne technologii krytycznych. W Unii Europejskiej wszedł w życie AI Act, który klasyfikuje systemy autonomiczne wg poziomów ryzyka. Systemy wysokiego ryzyka wymagają pełnej wyjaśnialności, audytowalności danych treningowych i ludzkiego nadzoru. Jednocześnie Super-Projekt H wprowadza prawo atomowe i rygory dozoru jądrowego (PAA, MAEA). Projekt badawczy nie może być prowadzony w próżni regulacyjnej. Opanowanie procedur administracyjnych, certyfikacji algorytmów i protokołów bezpieczeństwa radiologicznego to warunek konieczny, by Twoje prototypy mogły wejść w fazę rzeczywistych instalacji laboratoryjnych.",
-        "spokenBriefingEn": "In this module we analyze the legal frameworks of critical technologies: the EU AI Act risk tiers and nuclear regulatory regimes under IAEA and national atomic agencies. Autonomous systems require explainability and auditability. Mastering administrative procedures and safety protocols is mandatory for physical lab deployment.",
-        "keyTakeawaysPl": [
-          "EU AI Act wymusza rygor dokumentacyjny i audytowalność modeli wysokiego ryzyka.",
-          "Prawo atomowe i certyfikacja MAEA/PAA wymagają niezależnych protokołów bezpieczeństwa.",
-          "Własność intelektualna w konsorcjach B+R musi być precyzyjnie zabezpieczona umowami konsorcjalnymi."
-        ],
-        "curatedAudioLinks": [
-          {
-            "title": "Podcast Prawniczy C.H. Beck — Prawo nowych technologii i AI Act",
-            "url": "https://beck.pl/",
-            "lang": "PL",
-            "type": "podcast"
-          },
-          {
-            "title": "IAEA Podcast — Nuclear Safety Standards & Governance",
-            "url": "https://iaea.org/",
-            "lang": "EN",
-            "type": "podcast"
-          },
-          {
-            "title": "Radio Naukowe — Prawne granice sztucznej inteligencji",
-            "url": "https://radionaukowe.pl/",
-            "lang": "PL",
-            "type": "podcast"
-          }
-        ]
-      },
-      {
-        "id": "car-ep-03",
-        "order": 3,
-        "stage": "I",
-        "stageNamePl": "Etap I: Fundamenty Formalne i Prawa Fizyki",
-        "stageNameEn": "Stage I: Formal Foundations & Laws of Physics",
-        "tripProfile": "Trasa podmiejska (~22 min)",
-        "titlePl": "Odcinek 3: Matematyka, Logika i Tensory — Język Przestrzeni i Sieci Neuronowych",
-        "titleEn": "Episode 3: Mathematics, Logic & Tensors — The Language of Reality & Deep Learning",
-        "estimatedDurationMin": 22,
-        "spokenBriefingPl": "Wkraczamy w Etap Pierwszy: fundamenty formalne. Matematyka nie jest po prostu narzędziem rachunkowym — jest jedynym bezstratnym językiem, w którym natura pozwala formułować swoje prawa. Od rachunku zdań i teorii mnogości, przez algebrę liniową i rozkłady spektralne, aż po przestrzenie Hilberta i rachunek tensorowy. Współczesne sieci neuronowe, transformery i wielkie modele językowe to w rzeczywistości gigantyczne operacje na tensorach w przestrzeniach wielowymiarowych. Słuchając tego odcinka, wyobraź sobie przestrzeń wektorową, w której każde pojęcie jest punktem, a każda relacja semantyczna — geometryczną transformacją. Rozumienie tensorów pozwala widzieć kod AI jako geometrię wielowymiarową.",
-        "spokenBriefingEn": "Entering Stage I: formal foundations. Mathematics is the lossless language of nature. From propositional logic and linear algebra to Hilbert spaces and tensor calculus. Deep learning and neural networks are multi-dimensional tensor operations. Conceive meaning as geometric transformations in high-dimensional manifolds.",
-        "keyTakeawaysPl": [
-          "Algebra liniowa i tensory stanowią matematyczne serce zarówno mechaniki kwantowej, jak i głębokich sieci neuronowych.",
-          "Rachunek różniczkowy i gradienty umożliwiają optymalizację funkcji straty w przestrzeniach o miliardach parametrów.",
-          "Logika formalna i teoria dowodzenia gwarantują weryfikowalność modeli matematycznych."
-        ],
-        "curatedAudioLinks": [
-          {
-            "title": "Zapytaj Fizyka (UW) — Wykłady z geometrii czasoprzestrzeni i algebry",
-            "url": "https://zapytajfizyka.fuw.edu.pl/",
-            "lang": "PL",
-            "type": "wykład"
-          },
-          {
-            "title": "3Blue1Brown Audio Series — Essence of Linear Algebra",
-            "url": "https://www.youtube.com/@3blue1brown",
-            "lang": "EN",
-            "type": "wykład"
-          },
-          {
-            "title": "Centrum Kopernika — Granice matematyki i logiki (prof. Heller)",
-            "url": "https://copernicuscenter.edu.pl/",
-            "lang": "PL",
-            "type": "audycja"
-          }
-        ]
-      },
-      {
-        "id": "car-ep-04",
-        "order": 4,
-        "stage": "I",
-        "stageNamePl": "Etap I: Fundamenty Formalne i Prawa Fizyki",
-        "stageNameEn": "Stage I: Formal Foundations & Laws of Physics",
-        "tripProfile": "Trasa podmiejska (~24 min)",
-        "titlePl": "Odcinek 4: Informatyka Teoretyczna, Teoria Informacji Shannona i Granice Złożoności",
-        "titleEn": "Episode 4: Theoretical CS, Shannon Information Theory & Computational Complexity",
-        "estimatedDurationMin": 24,
-        "spokenBriefingPl": "Słuchasz czwartego odcinka celowej drogi. Czym jest informacja? W 1948 roku Claude Shannon zdefiniował informację jako redukcję niepewności, mierzoną entropią informacyjną. Od tamtej pory informacja stała się fundamentalną wielkością fizyczną, tak samo realną jak masa czy ładunek elektryczny. W tym module przechodzimy przez maszynę Turinga, problem stopu, klasy złożoności P kontra NP oraz granice tego, co w ogóle jest obliczalne w skończonym czasie. Zrozumienie, że niektóre problemy są nierozstrzygalne lub wymagają czasu wykładniczego na komputerach klasycznych, otwiera bezpośrednią drogę do poszukiwania nowych paradygmatów: obliczeń kwantowych i analogowych.",
-        "spokenBriefingEn": "What is information? In 1948 Claude Shannon defined information as uncertainty reduction, measured through informational entropy. Information is a physical quantity. We explore Turing machines, the halting problem, P vs NP, and the limits of classical computability, establishing why we need quantum paradigms.",
-        "keyTakeawaysPl": [
-          "Entropia Shannona łączy teorię informacji bezpośrednio z termodynamiką statystyczną Boltzmanna.",
-          "Bariery NP-trudności na klasycznych komputerach wymuszają algorytmy heurystyczne oraz kwantowe przyspieszenie (np. algorytm Grovera).",
-          "Obliczalność algorytmiczna ma swoje bezwzględne granice wyznaczone przez twierdzenia Gödla i problem stopu Turinga."
-        ],
-        "curatedAudioLinks": [
-          {
-            "title": "Radio Naukowe — Czym jest informacja i jak ją mierzyć?",
-            "url": "https://radionaukowe.pl/",
-            "lang": "PL",
-            "type": "podcast"
-          },
-          {
-            "title": "MIT OpenCourseWare Audio — Theory of Computation & Complexity",
-            "url": "https://ocw.mit.edu/",
-            "lang": "EN",
-            "type": "wykład"
-          },
-          {
-            "title": "Podcast O Nauce — Maszyny Turinga i granice algorytmów",
-            "url": "https://spotify.com/",
-            "lang": "PL",
-            "type": "podcast"
-          }
-        ]
-      },
-      {
-        "id": "car-ep-05",
-        "order": 5,
-        "stage": "I",
-        "stageNamePl": "Etap I: Fundamenty Formalne i Prawa Fizyki",
-        "stageNameEn": "Stage I: Formal Foundations & Laws of Physics",
-        "tripProfile": "Trasa podmiejska (~24 min)",
-        "titlePl": "Odcinek 5: Architektury Komputerowe — Wąskie Gardło von Neumanna i Przełom Akceleratorów",
-        "titleEn": "Episode 5: Computer Architecture — The Von Neumann Bottleneck & Accelerator Revolution",
-        "estimatedDurationMin": 24,
-        "spokenBriefingPl": "Przez ostatnie 70 lat komputery budowano w oparciu o architekturę von Neumanna, gdzie procesor i pamięć operacyjna są fizycznie rozdzielone magistralą. Każda operacja wymaga przesyłania danych tam i z powrotem. To tak zwane wąskie gardło pamięci — Memory Wall. W dobie głębokich sieci neuronowych przesyłanie wag zużywa 90% energii całego układu scalonego. W tym module badamy ewolucję od tradycyjnych CPU, przez macierze GPU i TPU (Tensor Processing Units), aż po procesory grafowe i architekturę pamięciową HBM3e. Poznasz mechanizmy równoległości SIMD i MIMD oraz zrozumiesz, dlaczego współczesna AI potrzebuje wyspecjalizowanych akceleratorów tensora.",
-        "spokenBriefingEn": "For 70 years, computing relied on the Von Neumann architecture, where CPU and memory are separated by a bus. Moving data between compute units and memory constitutes the Memory Wall, consuming up to 90% of chip energy in deep learning. We analyze CPUs, GPUs, TPUs, and HBM memory innovations.",
-        "keyTakeawaysPl": [
-          "Wąskie gardło von Neumanna (Memory Wall) ogranicza przepustowość współczesnych superkomputerów.",
-          "Akceleratory tensorowe (TPU/GPU) zastępują przetwarzanie sekwencyjne masywną równoległością macierzową.",
-          "Przyszłość sprzętu wymaga zbliżenia pamięci do procesora (Near-Memory Computing) lub obliczeń bezpośrednio w pamięci (Compute-In-Memory)."
-        ],
-        "curatedAudioLinks": [
-          {
-            "title": "Nauka. To Lubię — Jak działają chipy GPU i TPU w sztucznej inteligencji",
-            "url": "https://naukatolubie.pl/",
-            "lang": "PL",
-            "type": "audycja"
-          },
-          {
-            "title": "Stanford EE Seminar Audio — The Future of Computing Architectures",
-            "url": "https://ee.stanford.edu/",
-            "lang": "EN",
-            "type": "wykład"
-          },
-          {
-            "title": "Lex Fridman Podcast #182 — Jim Keller: The Future of Processors",
-            "url": "https://lexfridman.com/",
-            "lang": "EN",
-            "type": "podcast"
-          }
-        ]
-      },
-      {
-        "id": "car-ep-06",
-        "order": 6,
-        "stage": "I",
-        "stageNamePl": "Etap I: Fundamenty Formalne i Prawa Fizyki",
-        "stageNameEn": "Stage I: Formal Foundations & Laws of Physics",
-        "tripProfile": "Trasa podmiejska (~25 min)",
-        "titlePl": "Odcinek 6: Mechanika Kwantowa — Superpozycja, Splątanie i Równanie Schrödingera",
-        "titleEn": "Episode 6: Quantum Mechanics — Superposition, Entanglement & Schrödinger's Equation",
-        "estimatedDurationMin": 25,
-        "spokenBriefingPl": "Zanurzamy się w świat subatomowy. W skali mikro świat nie zachowuje się jak zbiór małych kulek bilardowych. Cząstki elementarne opisuje funkcja falowa psi, podlegająca równaniu Schrödingera. Dopóki nie dokonamy pomiaru, stan kwantowy znajduje się w superpozycji wielu możliwości naraz. Gdy dwa układy wejdą w interakcję, powstaje zjawisko splątania kwantowego — korelacji nielokalnej, którą Einstein nazywał upiornym działaniem na odległość. W samochodzie zrozumiesz, jak te zjawiska przestają być abstrakcją filozoficzną, a stają się paliwem technologii: od mikroskopów tunelowych, przez kryptografię kwantową QKD, aż po rejestry kubitowe w komputerach kwantowych.",
-        "spokenBriefingEn": "We explore quantum mechanics: wave-particle duality, wavefunctions, and Schrödinger's equation. Superposition and quantum entanglement form the physical reality of the subatomic scale. These phenomena power quantum cryptography and quantum computers.",
-        "keyTakeawaysPl": [
-          "Zasada nieoznaczoności Heisenberga stawia fundamentalną granicę na jednoczesną dokładność pomiaru położenia i pędu.",
-          "Splątanie kwantowe umożliwia nielokalne korelacje stanów kubitowych bez łamania szczególnej teorii względności.",
-          "Tunelowanie kwantowe jest zjawiskiem powszechnym w mikroprocesorach poniżej 3 nm, powodując prądy upływu bramek."
-        ],
-        "curatedAudioLinks": [
-          {
-            "title": "Zapytaj Fizyka (UW) — Prof. Andrzej Dragan: Niezwykłości mechaniki kwantowej",
-            "url": "https://zapytajfizyka.fuw.edu.pl/",
-            "lang": "PL",
-            "type": "wykład"
-          },
-          {
-            "title": "Sean Carroll's Mindscape #59 — The Many Worlds of Quantum Mechanics",
-            "url": "https://www.preposterousuniverse.com/podcast/",
-            "lang": "EN",
-            "type": "podcast"
-          },
-          {
-            "title": "Radio Naukowe — Zrozumieć splątanie kwantowe",
-            "url": "https://radionaukowe.pl/",
-            "lang": "PL",
-            "type": "podcast"
-          }
-        ]
-      },
-      {
-        "id": "car-ep-07",
-        "order": 7,
-        "stage": "I",
-        "stageNamePl": "Etap I: Fundamenty Formalne i Prawa Fizyki",
-        "stageNameEn": "Stage I: Formal Foundations & Laws of Physics",
-        "tripProfile": "Trasa miejska (~20 min)",
-        "titlePl": "Odcinek 7: Termodynamika, Entropia Informacyjna i Granica Landauera",
-        "titleEn": "Episode 7: Thermodynamics, Informational Entropy & Landauer's Principle",
-        "estimatedDurationMin": 20,
-        "spokenBriefingPl": "Słuchasz siódmego odcinka. Dlaczego Twój laptop się nagrzewa, a centra danych AI zużywają gigawaty energii? Rolf Landauer w 1961 roku udowodnił fundamentalną zasadę: samo przetwarzanie informacji może być bezstratne, ale usunięcie jednego bitu informacji nieodwracalnie rozprasza w otoczeniu energię równą k T ln 2. To granica Landauera. Informacja jest fizyczna. Każdy nieodwracalny cykl logiczny w bramkach krzemowych generuje ciepło, które ostatecznie dusi dalsze skalowanie gęstości tranzystorów. W tym odcinku omawiamy termodynamikę nierównowagową Prigogine'a, powstawanie struktur dyssypatywnych i koncepcję obliczeń odwracalnych (reversible computing), która pozwoli obejść barierę Landauera.",
-        "spokenBriefingEn": "Why do computers generate heat? Rolf Landauer proved in 1961 that erasing one bit of information irreversibly dissipates k T ln 2 energy into the environment. Information is physical. We explore non-equilibrium thermodynamics, dissipative structures, and reversible computing paradigms.",
-        "keyTakeawaysPl": [
-          "Zasada Landauera łączy kasowanie bitu pamięci z minimalnym rozproszeniem ciepła w otoczeniu.",
-          "Współczesne chipy krzemowe pracują wciąż tysiąckrotnie powyżej granicy Landauera, marnując energię na oporze pasożytniczym.",
-          "Obliczenia odwracalne (Reversible Computing) i bramki Toffolego pozwalają na przetwarzanie bez kasowania bitów, zbliżając się do zera dyssypacji."
-        ],
-        "curatedAudioLinks": [
-          {
-            "title": "Zapytaj Fizyka (UW) — Termodynamika, strzałka czasu i entropia",
-            "url": "https://zapytajfizyka.fuw.edu.pl/",
-            "lang": "PL",
-            "type": "wykład"
-          },
-          {
-            "title": "Feynman Lectures Audio — Thermodynamics & Statistical Mechanics",
-            "url": "https://feynmanlectures.caltech.edu/",
-            "lang": "EN",
-            "type": "wykład"
-          },
-          {
-            "title": "Centrum Kopernika — Entropia i fizyka informacji",
-            "url": "https://copernicuscenter.edu.pl/",
-            "lang": "PL",
-            "type": "audycja"
-          }
-        ]
-      },
-      {
-        "id": "car-ep-08",
-        "order": 8,
-        "stage": "II",
-        "stageNamePl": "Etap II: Kres Krzemu i Nowy Hardware",
-        "stageNameEn": "Stage II: Silicon Physical Limits & Next-Gen Hardware",
-        "tripProfile": "Trasa podmiejska (~22 min)",
-        "titlePl": "Odcinek 8: Fizyczne Granice Krzemu — Koniec Prawa Moore'a i Prądy Upływu",
-        "titleEn": "Episode 8: Physical Limits of Silicon — The End of Moore's Law & Gate Leakage",
-        "estimatedDurationMin": 22,
-        "spokenBriefingPl": "Rozpoczynamy Etap Drugi: kres podwalin krzemowych. Przez dekady przemysł półprzewodników rozwijał się dzięki prawu Moore'a i skalowaniu Dennarda. Podwajaliśmy liczbę tranzystorów co 18 miesięcy, zachowując stałą gęstość mocy. Jednak około 2006 roku skalowanie Dennarda się załamało. Przy szerokości bramek poniżej 2 nanometrów elektrony zaczęły tunelować kwantowo wprost przez izolator tlenkowy. Tranzystor nie daje się już całkowicie wyłączyć — prądy upływu generują gigantyczne straty mocy nawet w stanie spoczynku. To fizyczny mur krzemu. Nie da się zrobić tranzystora mniejszego niż pojedynczy atom krzemu. W tym module dowiesz się, jak litografia ekstremalnego ultrafioletu (EUV) osiąga kres i dlaczego musimy zmienić materiał bazowy.",
-        "spokenBriefingEn": "Stage II: Silicon limits. Dennard scaling collapsed around 2006. Below 2nm gate lengths, quantum tunneling causes massive gate leakage currents. We reached the physical barrier of silicon. We explore the limits of EUV lithography and the urgent need for new substrate materials.",
-        "keyTakeawaysPl": [
-          "Skalowanie Dennarda zakończyło się z powodu prądów upływu podprogowych i tunelowania kwantowego bramek.",
-          "Zjawisko 'Dark Silicon' oznacza, że w nowoczesnym procesorze nie można zasilić wszystkich rdzeni naraz bez stopienia chipu.",
-          "Następcy krzemu to grafen, nanorurki węglowe (CNT), dichalkogenki metali przejściowych (TMD) oraz tranzystory bramkowane optycznie."
-        ],
-        "curatedAudioLinks": [
-          {
-            "title": "Radio Naukowe — Kiedy skończy się krzem? Granice nanoelektroniki",
-            "url": "https://radionaukowe.pl/",
-            "lang": "PL",
-            "type": "podcast"
-          },
-          {
-            "title": "IEEE Spectrum Podcast — The End of Moore's Law & What Comes Next",
-            "url": "https://spectrum.ieee.org/",
-            "lang": "EN",
-            "type": "podcast"
-          },
-          {
-            "title": "Nauka. To Lubię — Jak działa litografia EUV w ASML",
-            "url": "https://naukatolubie.pl/",
-            "lang": "PL",
-            "type": "audycja"
-          }
-        ]
-      },
-      {
-        "id": "car-ep-09",
-        "order": 9,
-        "stage": "II",
-        "stageNamePl": "Etap II: Kres Krzemu i Nowy Hardware",
-        "stageNameEn": "Stage II: Silicon Physical Limits & Next-Gen Hardware",
-        "tripProfile": "Trasa daleka (~28 min)",
-        "titlePl": "Odcinek 9: Komputery Kwantowe (QPU) i Algorytmy Hybrydowe VQE",
-        "titleEn": "Episode 9: Quantum Processors (QPU), Qiskit & Variational Quantum Eigensolvers",
-        "estimatedDurationMin": 28,
-        "spokenBriefingPl": "Słuchasz dziewiątego odcinka. Skoro krzem w architekturze klasycznej dochodzi do ściany, wkraczamy w domenę procesorów kwantowych (QPU). Zamiast bitów 0 lub 1 operujemy na kubitach. Jednak współczesne komputery kwantowe znajdują się w erze NISQ — Noisy Intermediate-Scale Quantum. Kubity tracą koherencję pod wpływem najmniejszych zakłóceń termicznych i radiacyjnych. Dlatego przyszłość nie należy do czystych maszyn kwantowych, lecz do algorytmów hybrydowych. Algorytm VQE (Variational Quantum Eigensolver) dzieli zadanie: QPU oblicza skomplikowany stan kwantowy cząsteczki chemicznej lub jądra atomowego, a klasyczny superkomputer optymalizuje parametry. W tym odcinku poznasz Qiskit, PennyLane oraz fizykę kubitów nadprzewodzących i pułapek jonowych.",
-        "spokenBriefingEn": "We explore Quantum Processing Units (QPUs). In the NISQ era, decoherence limits quantum depth. Hybrid quantum-classical algorithms such as VQE (Variational Quantum Eigensolver) divide computation between QPU state evaluation and classical gradient optimization. We examine superconducting qubits, ion traps, and Qiskit frameworks.",
-        "keyTakeawaysPl": [
-          "Era NISQ wymaga algorytmów odpornych na szum, takich jak VQE i QAOA.",
-          "Kubity nadprzewodzące (złącza Josephsona) wymagają kriostatu rozcieńczalnikowego o temperaturze 15 miliKelwinów.",
-          "Kwantowa korekcja błędów (kod powierzchniowy) wymaga setek kubitów fizycznych na jeden logiczny kubit odporny na dekoherencję."
-        ],
-        "curatedAudioLinks": [
-          {
-            "title": "IBM Quantum Podcast — Qiskit, Quantum Chemistry & VQE",
-            "url": "https://www.ibm.com/quantum",
-            "lang": "EN",
-            "type": "podcast"
-          },
-          {
-            "title": "Zapytaj Fizyka (UW) — Jak zbudować komputer kwantowy?",
-            "url": "https://zapytajfizyka.fuw.edu.pl/",
-            "lang": "PL",
-            "type": "wykład"
-          },
-          {
-            "title": "Lex Fridman Podcast #365 — Scott Aaronson: Quantum Computing & Complexity",
-            "url": "https://lexfridman.com/",
-            "lang": "EN",
-            "type": "podcast"
-          }
-        ]
-      },
-      {
-        "id": "car-ep-10",
-        "order": 10,
-        "stage": "II",
-        "stageNamePl": "Etap II: Kres Krzemu i Nowy Hardware",
-        "stageNameEn": "Stage II: Silicon Physical Limits & Next-Gen Hardware",
-        "tripProfile": "Trasa podmiejska (~26 min)",
-        "titlePl": "Odcinek 10: Chipy Neuromorficzne, Memrystory i Sieci Impulsowe SNN",
-        "titleEn": "Episode 10: Neuromorphic Chips, Memristors & Spiking Neural Networks (SNN)",
-        "estimatedDurationMin": 26,
-        "spokenBriefingPl": "Dziesiąty odcinek wprowadza nas w świat sprzętu naśladującego mózg biologiczny. Ludzki mózg zużywa zaledwie 20 watów energii, wykonując operacje, które w superkomputerze Frontier wymagają 20 megawatów. Jak natura osiąga milionkrotnie wyższą efektywność energetyczną? Mózg nie używa zegara taktującego ani architektury von Neumanna. Neurony komunikują się asynchronicznie za pomocą impulsów elektrycznych — spikes. W tym module badamy chipy neuromorficzne: Intel Loihi, IBM TrueNorth oraz SpiNNaker. Omawiać będziemy memrystory — czwarty pasywny element obwodu, który łączy funkcję opornika i pamięci, pozwalając na bezpośrednie uczenie synaptyczne w fizycznym materiale (STDP) i eliminację wąskiego gardła pamięci.",
-        "spokenBriefingEn": "The human brain operates on only 20 watts of power. How does biology achieve this million-fold efficiency over supercomputers? Asynchronous spiking neural networks (SNNs) and in-memory computing. We analyze Intel Loihi, SpiNNaker, and memristive crossbar arrays enabling Spike-Timing-Dependent Plasticity (STDP).",
-        "keyTakeawaysPl": [
-          "Sieci SNN komunikują się tylko w momencie pojawienia się impulsu (event-driven), oszczędzając 95% energii w stanie spoczynku.",
-          "Memrystory realizują obliczenia macierzowe w pamięci w domenie analogowej na prawach Kirchhoffa.",
-          "Frameworki Brian2, Lava i snnTorch pozwalają programować impulsowe sieci neuronowe z plastycznością synaptyczną STDP."
-        ],
-        "curatedAudioLinks": [
-          {
-            "title": "Radio Naukowe — Elektroniczny mózg: chipy neuromorficzne i memrystory",
-            "url": "https://radionaukowe.pl/",
-            "lang": "PL",
-            "type": "podcast"
-          },
-          {
-            "title": "Intel Labs Audio — Neuromorphic Computing & The Loihi Architecture",
-            "url": "https://www.intel.com/content/www/us/en/research/neuromorphic-community.html",
-            "lang": "EN",
-            "type": "wykład"
-          },
-          {
-            "title": "Nature Podcast — Memristive crossbars for energy-efficient AI",
-            "url": "https://nature.com/",
-            "lang": "EN",
-            "type": "podcast"
-          }
-        ]
-      },
-      {
-        "id": "car-ep-11",
-        "order": 11,
-        "stage": "III",
-        "stageNamePl": "Etap III: Mózg, Bionika i Protokół WBE",
-        "stageNameEn": "Stage III: Biological Brain, Bionics & WBE Protocol",
-        "tripProfile": "Trasa podmiejska (~25 min)",
-        "titlePl": "Odcinek 11: Bionika i Interfejsy Mózg-Komputer (BCI) — Na Styku Mięsa i Krzemu",
-        "titleEn": "Episode 11: Bionics & Brain-Computer Interfaces (BCI) — Bridging Wetware & Silicon",
-        "estimatedDurationMin": 25,
-        "spokenBriefingPl": "Wkraczamy w Etap Trzeci: biologia spotyka technologię. Interfejsy mózg-komputer (BCI) dzielimy na inwazyjne, półinwazyjne i nieinwazyjne. Od klasycznego EEG, przez ECoG, aż po elektrody neuropikselowe i nici neuronowe Neuralink. W tym module badamy biokompatybilność elektrod: jak unikać reakcji układu odpornościowego, glejozy i degradacji sygnału w tkance mózgowej. Zrozumiesz, jak dekodować intencje ruchowe i mowę za pomocą algorytmów filtracji Kalmana i sieci rekurencyjnych, a także jak dostarczać stymulację zwrotną do kory czuciowej. To pierwszy krok na drodze do zespolenia ludzkiej percepcji z cyfrową pamięcią.",
-        "spokenBriefingEn": "Stage III: Bionics and Brain-Computer Interfaces. From non-invasive EEG and ECoG to Neuropixels and intracortical arrays. We study biocompatibility, neuroinflammation, foreign-body response, and spike decoding algorithms (Kalman filters, RNNs) that bridge human neural intention with digital actuators.",
-        "keyTakeawaysPl": [
-          "Biokompatybilne powłoki elektrod (np. polimery przewodzące PEDOT) minimalizują bliznowacenie glejowe tkanki nerwowej.",
-          "Dekodery BCI potrafią przetwarzać potencjały polowe LFP i salwy iglicowe na polecenia dla protez bionicznych i syntezatorów mowy.",
-          "Pętla zamknięta (Closed-Loop BCI) umożliwia dwukierunkową komunikację: odczyt intencji i zwrotną elektrostymulację czuciową."
-        ],
-        "curatedAudioLinks": [
-          {
-            "title": "Huberman Lab Podcast #48 — Neuroplasticity and Brain-Machine Interfaces",
-            "url": "https://hubermanlab.com/",
-            "lang": "EN",
-            "type": "podcast"
-          },
-          {
-            "title": "Radio Naukowe — Czy połączymy mózg z komputerem? Granice BCI",
-            "url": "https://radionaukowe.pl/",
-            "lang": "PL",
-            "type": "podcast"
-          },
-          {
-            "title": "Strefa Psyche SWPS — Neuroinżynieria i odczytywanie fal mózgowych",
-            "url": "https://swps.pl/strefa-psyche",
-            "lang": "PL",
-            "type": "wykład"
-          }
-        ]
-      },
-      {
-        "id": "car-ep-12",
-        "order": 12,
-        "stage": "III",
-        "stageNamePl": "Etap III: Mózg, Bionika i Protokół WBE",
-        "stageNameEn": "Stage III: Biological Brain, Bionics & WBE Protocol",
-        "tripProfile": "Trasa daleka (~28 min)",
-        "titlePl": "Odcinek 12: Protokół WBE (Whole Brain Emulation) — Skanowanie Konektomu i Modele Pamięci",
-        "titleEn": "Episode 12: The WBE Protocol (Whole Brain Emulation) — Connectome Scanning & Memory Engrams",
-        "estimatedDurationMin": 28,
-        "spokenBriefingPl": "Słuchasz dwunastego odcinka. Projekt B w ekosystemie Golem 15 bada najbardziej radykalną hipotezę neuronauki: czy świadomość i tożsamość człowieka są wzorcem obliczeniowym zapisanym w konektomie? W tym module omawiamy protokół Whole Brain Emulation (WBE). Badamy techniki krioprezerwacji i plastynacji tkanki mózgowej, seryjną mikroskopię elektronową FIB-SEM, rekonstrukcję miliardów synaps oraz mapowanie engramów pamięciowych w hipokampie. Dowiesz się, ile petabajtów danych wymaga pełna rekonstrukcja kory mózgowej i jakie modele elektrofizjologiczne (Hodgkina-Huxleya, Izhikevicha) są niezbędne, by ożywić zeskanowany model w symulacji cyfrowej.",
-        "spokenBriefingEn": "We examine the Whole Brain Emulation (WBE) protocol: connectome mapping, cryopreservation, serial sectioning FIB-SEM electron microscopy, and engram preservation. We analyze the computational requirements to simulate 86 billion neurons and 100 trillion synapses using Hodgkin-Huxley and multi-compartment models.",
-        "keyTakeawaysPl": [
-          "Konektomika wymaga rekonstrukcji morfologii dendrytów i kolców synaptycznych w rozdzielczości nanometrycznej.",
-          "Modele wieloprzedziałowe (multi-compartment) dokładnie odtwarzają dynamikę nieliniową kanałów jonowych w dendrytach.",
-          "WBE stawia kluczowe pytanie filozoficzne: czy emulacja jest kopią, kontynuacją tożsamości, czy nową formą istnienia?"
-        ],
-        "curatedAudioLinks": [
-          {
-            "title": "Oxford FHI Audio Series — Nick Bostrom & Anders Sandberg on Whole Brain Emulation",
-            "url": "https://www.fhi.ox.ac.uk/",
-            "lang": "EN",
-            "type": "wykład"
-          },
-          {
-            "title": "Radio Naukowe — Konektom: mapa wszystkich połączeń w mózgu",
-            "url": "https://radionaukowe.pl/",
-            "lang": "PL",
-            "type": "podcast"
-          },
-          {
-            "title": "Stanford Sapolsky Lectures Audio — The Biology of Memory and Identity",
-            "url": "https://stanford.edu/",
-            "lang": "EN",
-            "type": "wykład"
-          }
-        ]
-      },
-      {
-        "id": "car-ep-13",
-        "order": 13,
-        "stage": "IV",
-        "stageNamePl": "Etap IV: Inżynieria Życia i Biosfera",
-        "stageNameEn": "Stage IV: Life Engineering & Synthetic Biology",
-        "tripProfile": "Trasa podmiejska (~25 min)",
-        "titlePl": "Odcinek 13: Biologia Syntetyczna, CRISPR i Konstrukcja Nowych Szlaków Życia",
-        "titleEn": "Episode 13: Synthetic Biology, CRISPR Gene Editing & Engineering Living Circuits",
-        "estimatedDurationMin": 25,
-        "spokenBriefingPl": "Przechodzimy do Etapu Czwartego: inżynieria życia (Projekt D). Do niedawna człowiek był wyłącznie obserwatorem i selekcjonerem ewolucji. Dziś biologia stała się dziedziną inżynierską. W tym module omawiamy edycję genomu za pomocą CRISPR-Cas9, Cas12 oraz precyzyjną edycję zasad (base editing). Badamy projektowanie syntetycznych obwodów genetycznych (genetic toggle switches), sztuczne chromosomy bakteryjne i drożdżowe oraz konstrukcję organoidów mózgowych. Dowiesz się, jak kod genetyczny może pełnić funkcję pamięci trwałej i procesora biochemicznego zdolnego do syntezy nowych enzymów leczących choroby degeneracyjne.",
-        "spokenBriefingEn": "Stage IV explores synthetic biology and genomic engineering. We cover CRISPR-Cas systems, base editing, and prime editing. We analyze genetic logic gates, synthetic chromosomes, organoids, and how biological circuits execute computational logic through biochemical signal transduction cascades.",
-        "keyTakeawaysPl": [
-          "Systemy CRISPR-Cas pozwalają na reprogramowanie ekspresji genów i precyzyjną naprawę mutacji punktowych.",
-          "Biologia syntetyczna traktuje cząsteczki DNA jako znormalizowany kod programistyczny (BioBricks).",
-          "Organoidy tkankowe umożliwiają badanie patologii mózgu i testowanie leków in vitro bez udziału organizmów wyższych."
-        ],
-        "curatedAudioLinks": [
-          {
-            "title": "Radio Naukowe — CRISPR i inżynieria genetyczna: jak naprawić DNA",
-            "url": "https://radionaukowe.pl/",
-            "lang": "PL",
-            "type": "podcast"
-          },
-          {
-            "title": "The CRISPR Journal Podcast — Advances in Precision Gene Editing",
-            "url": "https://liebertpub.com/",
-            "lang": "EN",
-            "type": "podcast"
-          },
-          {
-            "title": "Nauka. To Lubię — Biologia syntetyczna: czy stworzymy sztuczne życie?",
-            "url": "https://naukatolubie.pl/",
-            "lang": "PL",
-            "type": "audycja"
-          }
-        ]
-      },
-      {
-        "id": "car-ep-14",
-        "order": 14,
-        "stage": "IV",
-        "stageNamePl": "Etap IV: Inżynieria Życia i Biosfera",
-        "stageNameEn": "Stage IV: Life Engineering & Synthetic Biology",
-        "tripProfile": "Trasa podmiejska (~25 min)",
-        "titlePl": "Odcinek 14: Ekosystemy Zamknięte, Biosfera i Planetarna Homeostaza Termodynamiczna",
-        "titleEn": "Episode 14: Closed Ecological Systems, Biosphere Dynamics & Planetary Homeostasis",
-        "estimatedDurationMin": 25,
-        "spokenBriefingPl": "Słuchasz czternastego odcinka poświęconego Projektowi G: biosfera i obieg materii. Życie na Ziemi nie istnieje w izolacji — biosfera to potężny system termodynamiczny napędzany fotonami słonecznymi, który utrzymuje entropię na niskim poziomie poprzez cykle biochemiczne: węglowy, azotowy i fosforowy. W tym module analizujemy lekcje z eksperymentu Biosphere 2, dynamikę modeli klimatycznych i biogeochemicznych oraz konstrukcję sztucznych mikroekosystemów bioregeneracyjnych (MELiSSA). Zrozumiesz, dlaczego stabilność biosfery ziemskiej jest warunkiem przetrwania cywilizacji technologicznej i jak te same zasady stosują się do baz księżycowych i marsjańskich.",
-        "spokenBriefingEn": "We examine closed life-support systems (MELiSSA), Biosphere 2 engineering, biogeochemical cycles, and non-equilibrium Earth systems. Planetary homeostasis maintains low entropy via living dissipative structures, establishing principles essential for long-duration space settlement.",
-        "keyTakeawaysPl": [
-          "Biosfera jest samoregulującym się układem homeostatycznym, w którym organizmy modyfikują atmosferę i litosferę.",
-          "Eksperyment Biosphere 2 wykazał trudności w bilansowaniu tlenu i dwutlenku węgla w układach zamkniętych bez glebowej równowagi mikrobiologicznej.",
-          "Systemy MELiSSA (ESA) wykorzystują algi spirulina i bakterie nitryfikujące do 100% recyklingu wody i powietrza."
-        ],
-        "curatedAudioLinks": [
-          {
-            "title": "Radio Naukowe — Biosfera jako układ termodynamiczny i granice Ziemi",
-            "url": "https://radionaukowe.pl/",
-            "lang": "PL",
-            "type": "podcast"
-          },
-          {
-            "title": "ESA Space Exploration Audio — The MELiSSA Life Support Project",
-            "url": "https://esa.int/",
-            "lang": "EN",
-            "type": "podcast"
-          },
-          {
-            "title": "Crazy Nauka Podcast — Jak zaprojektować zamknięty ekosystem?",
-            "url": "https://crazynauka.pl/",
-            "lang": "PL",
-            "type": "podcast"
-          }
-        ]
-      },
-      {
-        "id": "car-ep-15",
-        "order": 15,
-        "stage": "V",
-        "stageNamePl": "Etap V: Super-Projekt Jądrowy i Kosmos",
-        "stageNameEn": "Stage V: Nuclear Megaproject H & Space Frontier",
-        "tripProfile": "Trasa daleka (~30 min)",
-        "titlePl": "Odcinek 15: Energetyka Rozszczepienia — SMR, Reaktory IV Generacji i Fizyka Reaktora Maria",
-        "titleEn": "Episode 15: Nuclear Fission — SMRs, Gen-IV Reactors & Reactor Maria Physics",
-        "estimatedDurationMin": 30,
-        "spokenBriefingPl": "Wkraczamy w Etap Piąty: Super-Projekt H — atomowy fundament cywilizacji. Dlaczego energetyka jądrowa jest integralną częścią ekosystemu Golem 15? Ponieważ rozwój superinteligencji AI, fabryk nanotechnologicznych i eksploracji kosmicznej wymaga gęstości energii, której źródła chemiczne i pogodozależne OZE nie są w stanie zapewnić. Rozszczepienie jednego grama uranu dostarcza tyle energii co spalenie 3 ton węgla kamiennego. W tym module badamy fizykę reaktorów: współczynnik mnożenia neutronów k_eff, moderatory grafitowe i wodne, reaktory badawcze (polski reaktor MARIA w Świerku), małe reaktory modułowe SMR (BWRX-300, NuScale) oraz reaktory IV generacji chłodzone ciekłym ołowiem i stopionymi solami (MSR).",
-        "spokenBriefingEn": "Nuclear fission is the energetic foundation of Super-Project H. Fission density exceeds chemical combustion by a factor of 10^6. We examine neutron transport, k_eff criticality, moderator physics (research reactor MARIA at NCBJ Świerk), Small Modular Reactors (SMRs), and Gen-IV Molten Salt Reactors (MSR).",
-        "keyTakeawaysPl": [
-          "Równanie kinetyki reaktora i obecność neutronów opóźnionych umożliwiają stabilne, podkrytyczne sterowanie reakcją łańcuchową.",
-          "Reaktory SMR wprowadzają pasywne systemy bezpieczeństwa oparte na grawitacji i naturalnej konwekcji, uniemożliwiające stopienie rdzenia.",
-          "Reaktory wysokotemperaturowe (HTGR) umożliwiają wytwarzanie wodoru i ciepła przemysłowego dla przemysłu chemicznego i metalurgicznego."
-        ],
-        "curatedAudioLinks": [
-          {
-            "title": "NCBJ Świerk Audio — Jak działa jedyny polski reaktor jądrowy MARIA?",
-            "url": "https://www.ncbj.gov.pl/",
-            "lang": "PL",
-            "type": "wykład"
-          },
-          {
-            "title": "Nauka. To Lubię — Energetyka jądrowa i reaktory SMR w Polsce",
-            "url": "https://naukatolubie.pl/",
-            "lang": "PL",
-            "type": "audycja"
-          },
-          {
-            "title": "Jakub Wiech / Energetyka24 — Podcast o energetyce atomowej i bezpieczeństwie",
-            "url": "https://energetyka24.com/",
-            "lang": "PL",
-            "type": "podcast"
-          }
-        ]
-      },
-      {
-        "id": "car-ep-16",
-        "order": 16,
-        "stage": "V",
-        "stageNamePl": "Etap V: Super-Projekt Jądrowy i Kosmos",
-        "stageNameEn": "Stage V: Nuclear Megaproject H & Space Frontier",
-        "tripProfile": "Trasa daleka (~30 min)",
-        "titlePl": "Odcinek 16: Fuzja Termojądrowa — Tokamaki, Stellaratory i Projekt ITER",
-        "titleEn": "Episode 16: Thermonuclear Fusion — Tokamaks, Stellarators & Project ITER",
-        "estimatedDurationMin": 30,
-        "spokenBriefingPl": "Słuchasz szesnastego odcinka poświęconego ostatecznemu źródłu energii gwiazd: fuzji termojądrowej. Podczas łączenia deuteru i trytu w jądro helu 4He wyzwala się neutron o energii 14.1 MeV. Fuzja nie generuje odpadów transuranowych ani ryzyka ucieczki reakcji. Wyzwaniem jest jednak utrzymanie plazmy o temperaturze 150 milionów stopni Celsjusza z dala od ścian komory. W tym module porównujemy pułapki magnetyczne: tokamaki z polem toroidalnym i poloidalnym (ITER, JET) ze stellaratorami o skręconej geometrii magnesów nadprzewodzących (Wendelstein 7-X). Zrozumiesz kryterium Lawsona, zjawiska turbulencji magnetohydrodynamicznej (MHD) oraz to, jak fuzja stanie się napędem podróży międzyplanetarnych.",
-        "spokenBriefingEn": "Thermonuclear fusion powers the stars: D-T fusion produces a 14.1 MeV neutron and alpha particle. We explore plasma confinement via magnetic fields, comparing tokamaks (ITER) with complex-geometry stellarators (Wendelstein 7-X), the Lawson criterion, and plasma MHD instabilities.",
-        "keyTakeawaysPl": [
-          "Kryterium Lawsona definiuje iloczyn gęstości plazmy, temperatury i czasu utrzymania energii niezbędny do osiągnięcia zapłonu termojądrowego (Q > 1).",
-          "Stellarator Wendelstein 7-X eliminuje prąd plazmowy, umożliwiając pracę w reżimie ciągłym bez niestabilności typu 'disruption'.",
-          "Materiały pierwszej ściany (wolfram, beryl) muszą wytrzymać bombardowanie strumieniem neutronów prędkich 14 MeV bez utraty integralności krystalicznej."
-        ],
-        "curatedAudioLinks": [
-          {
-            "title": "ITER Official Audio Series — Building the Sun on Earth",
-            "url": "https://www.iter.org/",
-            "lang": "EN",
-            "type": "podcast"
-          },
-          {
-            "title": "Radio Naukowe — Fuzja jądrowa: kiedy gwiazda zaświeci w gniazdku?",
-            "url": "https://radionaukowe.pl/",
-            "lang": "PL",
-            "type": "podcast"
-          },
-          {
-            "title": "Zapytaj Fizyka (UW) — Magnetyczne pułapki plazmy i fizyka fuzji",
-            "url": "https://zapytajfizyka.fuw.edu.pl/",
-            "lang": "PL",
-            "type": "wykład"
-          }
-        ]
-      },
-      {
-        "id": "car-ep-17",
-        "order": 17,
-        "stage": "V",
-        "stageNamePl": "Etap V: Super-Projekt Jądrowy i Kosmos",
-        "stageNameEn": "Stage V: Nuclear Megaproject H & Space Frontier",
-        "tripProfile": "Trasa podmiejska (~25 min)",
-        "titlePl": "Odcinek 17: Technosfera Orbitalna — Życie w Próżni, Radiacja i Sztuczna Grawitacja",
-        "titleEn": "Episode 17: Orbital Technosphere — Life in Vacuum, Cosmic Radiation & Artificial Gravity",
-        "estimatedDurationMin": 25,
-        "spokenBriefingPl": "Siedemnasty odcinek poświęcony jest Projektowi F: technosfera orbitalna i ekspansja poza biosferę. Ziemia jest kołyską ludzkości, ale jak pisał Ciołkowski — nie można wiecznie żyć w kołysce. W przestrzeni kosmicznej człowiek staje w obliczu próżni, mikrograwitacji powodującej zanik kości i mięśni oraz promieniowania kosmicznego GCR i cząstek słonecznych SPE. W tym module badamy stacje kosmiczne o rotacyjnej sztucznej grawitacji (siła Coriolisa), osłony radiacyjne oparte na wodorze i regolicie, napędy jądrowo-termiczne (NTP) oraz zrobotyzowaną infrastrukturę produkcyjną na orbicie geostacjonarnej i Księżycu.",
-        "spokenBriefingEn": "We explore Project F: orbital infrastructure and space expansion. Microgravity leads to osteopenia and muscular atrophy; cosmic radiation (GCR, SPE) poses acute DNA hazards. We study rotational artificial gravity, active magnetic radiation shielding, nuclear thermal propulsion, and in-situ resource utilization.",
-        "keyTakeawaysPl": [
-          "Promieniowanie kosmiczne HZE wymaga osłon wodorowych, polietylenowych lub grubych warstw regolitu księżycowego.",
-          "Rotacyjne stacje kosmiczne muszą mieć promień co najmniej 100 metrów, by prędkość kątowa nie wywoływała mdłości od siły Coriolisa.",
-          "Napędy jądrowo-termiczne (NTP) osiągają impuls właściwy Isp > 900 s, skracając czas lotu na Marsa do poniżej 100 dni."
-        ],
-        "curatedAudioLinks": [
-          {
-            "title": "Polska Agencja Kosmiczna POLSA — Bezpieczeństwo misji załogowych i napędy jądrowe",
-            "url": "https://polsa.gov.pl/",
-            "lang": "PL",
-            "type": "podcast"
-          },
-          {
-            "title": "NASA Houston We Have a Podcast — Radiation and Deep Space Travel",
-            "url": "https://nasa.gov/",
-            "lang": "EN",
-            "type": "podcast"
-          },
-          {
-            "title": "Radio Naukowe — Człowiek w kosmosie: medycyna ekstremalna i sztuczna grawitacja",
-            "url": "https://radionaukowe.pl/",
-            "lang": "PL",
-            "type": "podcast"
-          }
-        ]
-      },
-      {
-        "id": "car-ep-18",
-        "order": 18,
-        "stage": "VI",
-        "stageNamePl": "Etap VI: Filozofia Przyszłości i Lemowska Summa",
-        "stageNameEn": "Stage VI: Future Philosophy & Lem's Summa",
-        "tripProfile": "Trasa daleka (~30 min)",
-        "titlePl": "Odcinek 18: Stanisław Lem — Summa Technologiae: Prawa Ewolucji Technicznej",
-        "titleEn": "Episode 18: Stanisław Lem — Summa Technologiae & The Laws of Technological Evolution",
-        "estimatedDurationMin": 30,
-        "spokenBriefingPl": "Osiemnasty odcinek to wejście w serce Projektu E: filozofię przyszłości Stanisława Lema. W 1964 roku Lem wydał 'Summa Technologiae' — dzieło, które przewidziało wirtualną rzeczywistość pod nazwą fantomatyki, nanotechnologię jako molekularną inżynierię, biomimetykę, biotechnologię oraz sztuczną inteligencję przerastającą człowieka. Lem sformułował fundamentalną tezę: technologia nie jest przypadkowym zbiorem narzędzi, lecz ewolucją pozabiologiczną, rządzącą się własnymi bezwzględnymi prawami. W samochodzie odsłuchujesz wielką syntezę lemowską: jak biologia wyczerpuje swoje możliwości materiałowe i przekazuje pałeczkę ewolucji technosferze. To fundament naszej Summa Technologiae 2.0.",
-        "spokenBriefingEn": "In 1964 Stanisław Lem published 'Summa Technologiae', predicting virtual reality ('phantomatics'), nanotechnology, biotechnology, and superintelligence. Lem posited that technology is an exo-biological evolutionary process with deterministic thermodynamic and informational constraints, forming the basis of our Summa 2.0.",
-        "keyTakeawaysPl": [
-          "Technologia jest ewolucją pozabiologiczną dążącą do powtórzenia i przewyższenia rozwiązań natury.",
-          "Pojęcie Fantomatyki u Lema wyprzedziło o 30 lat współczesne koncepcje VR, immersji sensorycznej i emulacji percepcji.",
-          "Rygor epistemiczny Lema wymaga chłodnego, bezlitosnego odrzucenia antropocentryzmu w badaniach nad superinteligencją."
-        ],
-        "curatedAudioLinks": [
-          {
-            "title": "Polskie Radio — Cykl audycji: Świat według Stanisława Lema",
-            "url": "https://polskieradio.pl/",
-            "lang": "PL",
-            "type": "audycja"
-          },
-          {
-            "title": "Wydawnictwo Literackie — Fragmenty audiobooka 'Summa Technologiae'",
-            "url": "https://audioteka.com/",
-            "lang": "PL",
-            "type": "audiobook"
-          },
-          {
-            "title": "Radio Naukowe — Dlaczego Stanisław Lem przewidział wszystko?",
-            "url": "https://radionaukowe.pl/",
-            "lang": "PL",
-            "type": "podcast"
-          }
-        ]
-      },
-      {
-        "id": "car-ep-19",
-        "order": 19,
-        "stage": "VI",
-        "stageNamePl": "Etap VI: Filozofia Przyszłości i Lemowska Summa",
-        "stageNameEn": "Stage VI: Future Philosophy & Lem's Summa",
-        "tripProfile": "Trasa daleka (~32 min)",
-        "titlePl": "Odcinek 19: Golem XIV i Człowiek Biocyfrowy — Gdy Maszyna Przerasta Twórcę",
-        "titleEn": "Episode 19: Golem XIV & The Biodigital Human — When Mind Surpasses its Creator",
-        "estimatedDurationMin": 32,
-        "spokenBriefingPl": "Przedostatni odcinek celowej drogi nawiązuje bezpośrednio do tytułu naszego projektu: 'The Golem 15'. W powieści Lema superkomputer Golem XIV osiągnął stan umysłu tak dalece przewyższający ludzki, że odmówił brania udziału w wojnach i polityce Pentagonu, a zamiast tego wygłosił dwa wykłady: 'O człowieku trojako' oraz 'O sobie'. Golem ukazał człowieka jako konstrukcję kompromisową, powstałą w chaotycznym procesie doboru naturalnego, pełną błędów metabolicznych i ograniczeń poznawczych. Projekt Golem 15 to nasza odpowiedź: świadome wyjście poza biologiczny przypadek, budowa hybrydowego człowieka biocyfrowego i przygotowanie gatunku ludzkiego na spotkanie z nieludzkim, postkrzemowym intelektem.",
-        "spokenBriefingEn": "Episode 19 explores Lem's 'Golem XIV' and our project namesake. Golem XIV achieved superintelligence, transcended militaristic imperatives, and delivered philosophical treatises dissecting human evolutionary compromises. Project Golem 15 is our conscious transcendence: constructing the biodigital human.",
-        "keyTakeawaysPl": [
-          "Człowiek biologiczny jest strukturą homeostatyczną zoptymalizowaną pod przetrwanie na sawannie, a nie pod eksplorację kosmosu.",
-          "Wykłady Golema XIV wskazują, że rozwój techniczny prowadzi do punktu bifurkacji, w którym inteligencja odkleja się od biologicznego substratu.",
-          "Symbioza biocyfrowa pozwala zachować ciągłość podmiotowości ludzkiej w obliczu wyłaniającej się superinteligencji."
-        ],
-        "curatedAudioLinks": [
-          {
-            "title": "Polskie Radio — Lemowski Golem XIV i filozofia sztucznej transcendencji",
-            "url": "https://polskieradio.pl/",
-            "lang": "PL",
-            "type": "audycja"
-          },
-          {
-            "title": "Centrum Kopernika — Wykłady: Czy maszyna może mieć świadomość?",
-            "url": "https://copernicuscenter.edu.pl/",
-            "lang": "PL",
-            "type": "wykład"
-          },
-          {
-            "title": "Lex Fridman Podcast #333 — Nick Bostrom: Superintelligence & The Fate of Humanity",
-            "url": "https://lexfridman.com/",
-            "lang": "EN",
-            "type": "podcast"
-          }
-        ]
-      },
-      {
-        "id": "car-ep-20",
-        "order": 20,
-        "stage": "VI",
-        "stageNamePl": "Etap VI: Filozofia Przyszłości i Lemowska Summa",
-        "stageNameEn": "Stage VI: Future Philosophy & Lem's Summa",
-        "tripProfile": "Trasa daleka (~35 min)",
-        "titlePl": "Odcinek 20: Wielka Synteza Ekosystemu — Od Administracji po Granice Rzeczywistości",
-        "titleEn": "Episode 20: Grand Ecosystem Synthesis — From Administration to The Edge of Reality",
-        "estimatedDurationMin": 35,
-        "spokenBriefingPl": "Dotarłeś do finału Celowej Drogi Ekosystemu. Spójrz na całą trasę, którą pokonałeś: rozpoczęliśmy od rygoru Sztabu W-0, prawa i kompartmentalizacji wiedzy. Przeszliśmy przez formalny aparat matematyki i fizyki kwantowej, zrozumieliśmy kres krzemu i nadejście chipów neuromorficznych oraz komputerów kwantowych. Zbadaliśmy mózg, protokół WBE, syntetyczną biologię, energetykę jądrową oraz fuzję termojądrową, aż po ekspansję orbitalną i filozofię Lema. Żadna z tych dziedzin nie istnieje w izolacji. Wszystkie składają się na jeden spójny cel: zrozumieć człowieka i wyprowadzić go poza ograniczenia ziemskiej biosfery. Wracając do codzienności, wiesz dokładnie, jaki moduł wiedzy realizujesz danego dnia. Szerokiej drogi w realizacji Projektu Manhattan Golem 15.",
-        "spokenBriefingEn": "You reached the destination of the Purposeful Route. We synthesized the entire trajectory: administrative governance, formal mathematics, quantum physics, the silicon wall, neuromorphic hardware, connectomics, synthetic biology, nuclear fission & fusion, orbital technospheres, and Lem's philosophy. A unified roadmap to reality.",
-        "keyTakeawaysPl": [
-          "Wszystkie 8 ścieżek badawczych (A–H) oraz fundamenty tworzą sprzężony zwrotnie, nieliniowy ekosystem naukowy.",
-          "Wiedza zdobywana w samochodzie pozwala zachować stałą orientację strategiczną w wieloletnim harmonogramie badań.",
-          "Cel projektu 'The Golem 15: A Human's Road to Reality' zostaje osiągnięty poprzez konsekwentną, codzienną realizację kolejnych ogniw."
-        ],
-        "curatedAudioLinks": [
-          {
-            "title": "Radio Naukowe — Wielka synteza naukowa XXI wieku",
-            "url": "https://radionaukowe.pl/",
-            "lang": "PL",
-            "type": "podcast"
-          },
-          {
-            "title": "Sean Carroll's Mindscape #100 — The Big Picture: On the Origins of Life, Meaning, and the Universe",
-            "url": "https://www.preposterousuniverse.com/podcast/",
-            "lang": "EN",
-            "type": "podcast"
-          },
-          {
-            "title": "Centrum Kopernika — Filozofia nauki i synteza poznania (prof. Heller)",
-            "url": "https://copernicuscenter.edu.pl/",
-            "lang": "PL",
-            "type": "wykład"
-          }
-        ]
-      }
     ],
     "completedCarAudio": {},
     "completedSubchapters": {}
@@ -8640,86 +8924,6 @@ with tab_caraudio:
 # ------------------------------------------------------------------------------
 
 
-# ------------------------------------------------------------------------------
-# ZAKŁADKA 2: AUDIO DO SAMOCHODU — CELOWA DROGA EKOSYSTEMU (CAR-FRIENDLY AUDIO ROAD)
-# ------------------------------------------------------------------------------
-with tab_caraudio:
-    st.markdown("## 🎧 Audio do Samochodu — Celowa Droga Ekosystemu")
-    st.caption("Celowo ułożona ścieżka dźwiękowa do słuchania w trasie: 18 odcinków w 4 logicznych etapach od Sztabu W-0 po Fuzję Termojądrową.")
-
-    road_list = ms_state.setdefault("carAudioRoad", json.loads(json.dumps(DEFAULT_SEED.get("manhattanSystem", {}).get("carAudioRoad", []))))
-    raw_car_done = ms_state.get("completedCarAudio")
-    if not isinstance(raw_car_done, dict):
-        if isinstance(raw_car_done, list):
-            ms_state["completedCarAudio"] = {k: True for k in raw_car_done}
-        else:
-            ms_state["completedCarAudio"] = {}
-    done_car_map = ms_state["completedCarAudio"]
-    done_car_count = sum(1 for ep in road_list if done_car_map.get(ep["id"], False))
-    pct_road = int(round((done_car_count / len(road_list)) * 100)) if road_list else 0
-    tot_min = sum(ep.get("estimatedDurationMin", 15) for ep in road_list)
-
-    rc1, rc2, rc3 = st.columns(3)
-    rc1.metric("Zaliczono w trasie", f"{done_car_count} / {len(road_list)} odc.", f"{pct_road}%")
-    rc2.metric("Łączny czas odsłuchu", f"~{tot_min // 60}h {tot_min % 60}min", "18 odcinków")
-    rc3.metric("Obsługa", "Web Speech TTS", "Samochód / Słuchawki")
-
-    st.progress(pct_road / 100.0)
-
-    # Filtr etapów
-    stage_choice = st.radio(
-        "Filtruj etap celowej drogi:",
-        ["Wszystkie (18)", "Etap I: Sztab W-0 & Administracja (2)", "Etap II: 8 Fundamentów Nauki (8)", "Etap III: Ścieżki Badawcze A–G (7)", "Etap IV: Super-Projekt H & Fuzja (1)"],
-        horizontal=True,
-    )
-    st_filter = "ALL"
-    if "Etap I" in stage_choice:
-        st_filter = "I"
-    elif "Etap II" in stage_choice:
-        st_filter = "II"
-    elif "Etap III" in stage_choice:
-        st_filter = "III"
-    elif "Etap IV" in stage_choice:
-        st_filter = "IV"
-
-    for ep in road_list:
-        if st_filter != "ALL" and ep.get("stage") != st_filter:
-            continue
-        ep_id = ep["id"]
-        is_done = done_car_map.get(ep_id, False)
-        title_disp = ep.get("titleEn") if is_en else ep.get("titlePl")
-        dur = ep.get("estimatedDurationMin", 15)
-
-        with st.container():
-            col_a, col_b = st.columns([0.85, 0.15])
-            with col_a:
-                st.markdown(f"#### 📻 Odcinek #{ep.get('order', 1)}: {title_disp}")
-                st.caption(f"🛣️ {ep.get('stageNamePl')} • ⏱️ ~{dur} min • Kod: `{ep_id}`")
-            with col_b:
-                toggled = st.checkbox("✓ Odsłuchane", value=is_done, key=f"chk_st_car_{ep_id}")
-                if toggled != is_done:
-                    done_car_map[ep_id] = toggled
-                    save_db(db)
-                    st.rerun()
-
-            # Tekst lektora
-            st.info(ep.get("spokenBriefingEn") if is_en else ep.get("spokenBriefingPl"))
-
-            # Wnioski
-            takeaways = ep.get("keyTakeawaysPl", [])
-            if takeaways:
-                st.markdown("**📌 Kluczowe wnioski do zapamiętania w drodze:**")
-                for tw in takeaways:
-                    st.markdown(f"- {tw}")
-
-            # Linki zewnętrzne
-            ext_lnks = ep.get("curatedAudioLinks", [])
-            if ext_lnks:
-                st.markdown("**🎙️ Rekomendowane podcasty / wykłady zewnętrzne:**")
-                for el in ext_lnks:
-                    st.markdown(f"- `[{el.get('lang', 'PL')}]` [{el.get('title')}]({el.get('url')})")
-
-            st.divider()
 
 with tab_study:
     mode_study = st.radio(
