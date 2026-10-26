@@ -1262,3 +1262,233 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* ============================================================================
+   SZCZEGÓŁOWE PODROZDZIAŁY LAT STUDIÓW & POKRYCIE Z MATERIAŁAMI
+   ============================================================================ */
+.subchapters-accordion {
+  margin-top: 0.55rem;
+  padding: 0.55rem 0.75rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+}
+
+.subchapter-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+  padding: 0.32rem 0.2rem;
+  border-bottom: 1px dashed var(--border-subtle);
+  font-size: 0.81rem;
+}
+
+.subchapter-row:last-child {
+  border-bottom: none;
+}
+
+.subchapter-row.done span {
+  color: var(--success);
+  font-weight: 600;
+  text-decoration: line-through;
+}
+
+.alignment-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.71rem;
+  font-weight: 700;
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  color: var(--success);
+}
+
+/* ============================================================================
+   AUDIO DO SAMOCHODU — CELOWA DROGA EKOSYSTEMU (CAR-FRIENDLY AUDIO PLAYER)
+   Wysoki kontrast, duże przyciski dotykowe w trasie, Web Speech API TTS
+   ============================================================================ */
+.car-player-deck {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-top: 4px solid var(--accent-blue);
+  border-radius: var(--radius-md);
+  padding: 1.35rem;
+  margin-bottom: 1.25rem;
+  box-shadow: var(--shadow-md);
+  position: sticky;
+  top: 5rem;
+  z-index: 100;
+}
+
+.car-player-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.car-btn-group {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+}
+
+.car-btn-tactile {
+  min-height: 48px;
+  padding: 0.65rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  transition: all 0.15s ease;
+}
+
+.car-btn-play {
+  background: var(--header-stripe);
+  color: #ffffff;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 2px 6px rgba(15, 61, 104, 0.3);
+}
+
+.car-btn-play:hover {
+  background: var(--accent-blue);
+}
+
+.car-road-progress {
+  width: 100%;
+  height: 8px;
+  background: var(--border-color);
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 0.65rem 0 0.35rem;
+}
+
+.car-road-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-blue), var(--success));
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.car-episode-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-left: 4px solid var(--stage-color, var(--accent-blue));
+  border-radius: var(--radius-md);
+  padding: 1rem 1.15rem;
+  margin-bottom: 0.85rem;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.12s ease, border-color 0.12s ease;
+}
+
+.car-episode-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.car-episode-card.is-playing {
+  border-color: var(--accent-blue);
+  background: var(--bg-subtle);
+  box-shadow: 0 0 0 2px rgba(15, 76, 129, 0.25);
+}
+
+.car-episode-card.is-done {
+  opacity: 0.88;
+  border-left-color: var(--success);
+}
+
+/* ============================================================================
+   MODUŁ KSIĄŻKOWY — SUMMA TECHNOLOGIAE 2.0 (STANISŁAW LEM)
+   Klasyczny czytnik i edytor rękopisu
+   ============================================================================ */
+.book-layout {
+  display: grid;
+  grid-template-columns: 310px 1fr;
+  gap: 1.25rem;
+  align-items: start;
+}
+
+@media (max-width: 960px) {
+  .book-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.book-toc {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-top: 3px solid var(--accent-purple);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+  position: sticky;
+  top: 5.5rem;
+}
+
+.book-toc-item {
+  padding: 0.55rem 0.65rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  border: 1px solid transparent;
+  margin-bottom: 0.35rem;
+  transition: all 0.14s ease;
+}
+
+.book-toc-item:hover {
+  background: var(--bg-subtle);
+  border-color: var(--border-subtle);
+}
+
+.book-toc-item.active {
+  background: var(--bg-subtle);
+  border-color: var(--accent-purple);
+  border-left: 3px solid var(--accent-purple);
+}
+
+.book-manuscript-reader {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-top: 4px solid var(--header-stripe);
+  border-radius: var(--radius-md);
+  padding: 1.85rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.book-lem-quote {
+  background: var(--bg-subtle);
+  border-left: 4px solid var(--accent-purple);
+  padding: 0.85rem 1.15rem;
+  margin: 1rem 0 1.35rem;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.book-body-prose {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.02rem;
+  line-height: 1.72;
+  color: var(--text-primary);
+}
+
+.book-body-prose h1, .book-body-prose h2, .book-body-prose h3 {
+  font-family: Georgia, 'Times New Roman', serif;
+  color: var(--text-primary);
+  margin-top: 1.4rem;
+  margin-bottom: 0.55rem;
+}
+
+.book-body-prose p {
+  margin-bottom: 1.1rem;
+}
+

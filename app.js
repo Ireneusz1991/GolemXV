@@ -2940,69 +2940,164 @@ const DEFAULT_SEED = {
       "years": [
         {
           "year": 1,
-          "semesters": "Semestry I–II (60 ECTS)",
-          "titlePl": "Rok 1 Administracji: Architektura Prawna, Teoria Organizacji i Logika Systemowa",
-          "titleEn": "Year 1 Administration: Legal Architecture, Organization Theory & Systems Logic",
+          "titlePl": "Rok 1: Fundamenty Prawa Publicznego, Ustrój Państwa i Podstawy Prawne B+R",
+          "titleEn": "Year 1: Foundations of Public Law, State Governance & Legal Frameworks for R&D",
+          "semesters": "Semestr I–II (60 ECTS)",
           "coursesPl": [
-            "🇵🇱 [PL] Wstęp do prawoznawstwa, logika prawnicza i teoria wykładni norm",
-            "🇵🇱/🇬🇧 [PL+EN] Nauka o administracji i teoria organizacji rozproszonych (modele Webera, Manhattan MED, DARPA)",
-            "🇵🇱 [PL] Prawo konstytucyjne i ustrój instytucji publicznych oraz agencji międzynarodowych (UE, ONZ, ESA, MAEA)",
-            "🇵🇱 [PL] Ekonomia sektora publicznego, finanse B+R i budżetowanie zadaniowe",
-            "🇵🇱 [PL] Statystyka, bazy danych i systemy teleinformatyczne w administracji (EZD, bezpieczeństwo rejestrów)"
+            "Wstęp do prawoznawstwa, logika prawnicza i teoria wykładni prawa",
+            "Prawo konstytucyjne Rzeczypospolitej Polskiej i instytucje Unii Europejskiej",
+            "Historia administracji, doktryny polityczno-prawne i socjologia organizacji",
+            "Prawo administracyjne (część ogólna): formy działania, interes prawny i kompetencje",
+            "Podstawy prawa cywilnego, prawo umów w działalności badawczej i ochrona dóbr osobistych",
+            "Zarządzanie informacją niejawną, tajemnice przedsiębiorstwa i cyberbezpieczeństwo (KSC)"
           ],
           "coursesEn": [
-            "🇵🇱 [PL] Jurisprudence fundamentals, legal logic, and statutory interpretation",
-            "🇵🇱/🇬🇧 [PL+EN] Public administration science & distributed organization theory (Weber, Manhattan MED, DARPA models)",
-            "🇵🇱 [PL] Constitutional law & international regulatory bodies (EU, UN, ESA, IAEA)",
-            "🇵🇱 [PL] Public economics, R&D finance, and mission-oriented budgeting",
-            "🇵🇱 [PL] Administrative statistics, databases, and e-governance information security"
+            "Jurisprudence, Legal Logic & Theory of Legal Interpretation",
+            "Constitutional Law of Poland & European Union Institutions",
+            "History of Public Administration & Sociology of Organization",
+            "General Administrative Law, Legal Competences & Administrative Action",
+            "Civil Law Fundamentals, Research Contracts & Intellectual Integrity",
+            "Classified Information Protection, Trade Secrets & National Cybersecurity Framework"
           ],
-          "deliverablePl": "Statut organizacyjny i matryca uprawnień Sztabu Centralnego Golem 15 (District W-0).",
-          "deliverableEn": "Organizational charter and clearance matrix for Golem 15 Central HQ (District W-0)."
+          "subchaptersPl": [
+            "1.1. Logika prawnicza, wykładnia językowa i celowościowa aktów normatywnych",
+            "1.2. Ustrój administracji publicznej RP i mechanizmy decyzyjne w instytucjach unijnych",
+            "1.3. Prawne formy działania administracji i podstawy nawiązywania umów konsorcjalnych B+R",
+            "1.4. Bezpieczeństwo informacji, kompartmentalizacja wiedzy (zasada 'Need-to-Know') i ochrona danych (RODO)"
+          ],
+          "subchaptersEn": [
+            "1.1. Legal Logic, Grammatical and Purposive Interpretation of Normative Acts",
+            "1.2. Public Administration Structure of Poland and EU Decision-Making Mechanisms",
+            "1.3. Administrative Legal Actions and R&D Consortium Contract Frameworks",
+            "1.4. Information Security, Knowledge Compartmentalization ('Need-to-Know') and Data Protection (GDPR)"
+          ],
+          "linkedMaterialIds": [
+            "smat-1",
+            "smat-2"
+          ],
+          "matchedFoundationTopics": [
+            "1.1 Logika formalna, rachunek zdań i teoria dowodzenia",
+            "2.6 Niezawodność i bezpieczeństwo systemów informatycznych"
+          ],
+          "coreBooksPl": [
+            "T. Chauvin, T. Stawecki, P. Winczorek — 'Wstęp do prawoznawstwa' (C.H. Beck)",
+            "Z. Niewiadomski (red.) — 'Prawo administracyjne' (PWN)",
+            "L. Garlicki — 'Polskie prawo konstytucyjne' (Wolters Kluwer)"
+          ],
+          "coreBooksEn": [
+            "P. Cane — 'Administrative Law' (Oxford University Press)",
+            "J. Raz — 'The Authority of Law: Essays on Law and Morality'"
+          ],
+          "deliverablePl": "Statut Organizacyjny i Protokół Bezpieczeństwa Informacji Sztabu W-0.",
+          "deliverableEn": "Organizational Charter and Information Security Protocol for District W-0."
         },
         {
           "year": 2,
-          "semesters": "Semestry III–IV (60 ECTS)",
-          "titlePl": "Rok 2 Administracji: Postępowanie Administracyjne, Patenty Deep-Tech i Inżynieria Programów",
-          "titleEn": "Year 2 Administration: Administrative Procedure, Deep-Tech IP & Program Engineering",
+          "titlePl": "Rok 2: Procedury Administracyjne, Regulacje Nowych Technologii (AI Act) i Własność Intelektualna",
+          "titleEn": "Year 2: Administrative Procedures, Emerging Tech Regulations (AI Act) & Intellectual Property",
+          "semesters": "Semestr III–IV (60 ECTS)",
           "coursesPl": [
-            "🇵🇱 [PL] Postępowanie administracyjne (KPA) i sądowoadministracyjne (decyzje środowiskowe, lokalizacyjne i regulacyjne)",
-            "🇵🇱/🇬🇧 [PL+EN] Prawo cywilne, konsorcja badawcze oraz własność intelektualna i prawo patentowe (UPRP, EPO, WIPO)",
-            "🇵🇱/🇬🇧 [PL+EN] Zamówienia publiczne w nauce, granty badawcze (NCN, NCBR, Horizon Europe) i logistyka aparaturowa",
-            "🇬🇧 [EN] Zarządzanie megaprojektami technologicznymi (NASA Systems Engineering, PRINCE2, analiza ścieżki krytycznej)",
-            "🇵🇱/🇬🇧 [PL+EN] Cyberbezpieczeństwo, ochrona tajemnicy badawczej i kompartmentalizacja dostępu"
+            "Postępowanie administracyjne (KPA) i egzekucja w administracji",
+            "Sądownictwo administracyjne (skargi do WSA i NSA w sprawach decyzji koncesyjnych)",
+            "Europejski Akt o Sztucznej Inteligencji (EU AI Act) i ramy oceny zgodności algorytmów",
+            "Prawo własności intelektualnej, prawo patentowe (EPO/UPC) i patenty na wynalazki biotechnologiczne",
+            "Prawo zamówień publicznych (PZP) i procedury partnerstwa innowacyjnego",
+            "Finanse publiczne, audyt projektów naukowych i ramy pomocy publicznej na B+R"
           ],
           "coursesEn": [
-            "🇵🇱 [PL] Administrative & judicial-administrative procedure (environmental, siting, and licensing decisions)",
-            "🇵🇱/🇬🇧 [PL+EN] Civil law, R&D consortia, intellectual property, and patent law (UPRP, EPO, WIPO)",
-            "🇵🇱/🇬🇧 [PL+EN] Scientific public procurement, research grants (NCN, NCBR, Horizon Europe), and lab logistics",
-            "🇬🇧 [EN] Megaproject management (NASA Systems Engineering, PRINCE2, Critical Path Method)",
-            "🇵🇱/🇬🇧 [PL+EN] Cybersecurity, research secrecy protection, and compartmentalized access governance"
+            "Code of Administrative Procedure (KPA) & Administrative Enforcement",
+            "Administrative Judiciary (Judicial Review before Administrative Courts)",
+            "European Artificial Intelligence Act (EU AI Act) & Algorithm Conformance Assessments",
+            "Intellectual Property Law, Patent Law (EPO/UPC) & Biotech Inventions",
+            "Public Procurement Law & Innovation Partnership Frameworks",
+            "Public Finance, Scientific Project Auditing & State Aid for R&D"
           ],
-          "deliverablePl": "System obiegu dokumentacji badawczej, polityka IP oraz procedury zakupowo-logistyczne dla 5 ośrodków.",
-          "deliverableEn": "Research documentation workflow, IP policy, and procurement protocols across all 5 distributed sites."
+          "subchaptersPl": [
+            "2.1. Kodeks postępowania administracyjnego: decyzje, ugody i zaskarżanie aktów administracyjnych",
+            "2.2. Kwalifikacja systemów AI podług poziomów ryzyka EU AI Act i rygor certyfikacji algorytmów krytycznych",
+            "2.3. Zgłoszenia patentowe w procedurze krajowej (UPRP), europejskiej (EPO) i międzynarodowej (PCT)",
+            "2.4. Finanse publiczne, audyt wydatków badawczych i zarządzanie ryzykiem prawnym w konsorcjach naukowych"
+          ],
+          "subchaptersEn": [
+            "2.1. Code of Administrative Procedure: Decisions, Settlements and Judicial Appeals",
+            "2.2. AI System Risk Classification under EU AI Act and Conformance Verification for Critical Systems",
+            "2.3. Patent Filings under Polish (UPRP), European (EPO), and International (PCT) Procedures",
+            "2.4. Public Finance, Scientific Grant Auditing and Legal Risk Management in R&D Consortia"
+          ],
+          "linkedMaterialIds": [
+            "smat-8",
+            "smat-trk-e1"
+          ],
+          "matchedFoundationTopics": [
+            "8.6 Interpretowalność modeli (XAI), niezawodność, bezpieczeństwo i rygor etyczny",
+            "Projekt E — Filozofia jako rygor metodologiczny i epistemiczny"
+          ],
+          "coreBooksPl": [
+            "B. Adamiak, J. Borkowski — 'Postępowanie administracyjne i sądowoadministracyjne' (C.H. Beck)",
+            "A. Michalak (red.) — 'Prawo własności intelektualnej' (C.H. Beck)",
+            "M. Świerczyński — 'Prawo nowych technologii i sztucznej inteligencji' (C.H. Beck)"
+          ],
+          "coreBooksEn": [
+            "L. Floridi — 'The Ethics of Artificial Intelligence' (Oxford University Press)",
+            "W. R. Cornish — 'Intellectual Property: Patents, Copyright, Trade Marks'"
+          ],
+          "deliverablePl": "Macierz Zgodności z Regulacjami AI Act oraz Strategia Ochrony IP Projektu Manhattan.",
+          "deliverableEn": "AI Act Compliance Matrix and Manhattan IP Protection Strategy."
         },
         {
           "year": 3,
-          "semesters": "Semestry V–VI (60 ECTS)",
-          "titlePl": "Rok 3 Administracji: Prawo Sektorów Strategicznych (Atom, Bioetyka, Kosmos, AI) i Dyplom",
-          "titleEn": "Year 3 Administration: Strategic Sector Law (Nuclear, Bioethics, Space, AI) & B.A. Thesis",
+          "titlePl": "Rok 3: Prawo Atomowe, Bioetyka, Prawo Kosmiczne i Zarządzanie Strategicznym Programem Badawczym",
+          "titleEn": "Year 3: Nuclear Law, Bioethics, Space Law & Strategic Program Command",
+          "semesters": "Semestr V–VI (60 ECTS)",
           "coursesPl": [
-            "🇵🇱/🇬🇧 [PL+EN] Prawo atomowe, dozór jądrowy (PAA, Euratom, IAEA) i certyfikacja reaktorów SMR/HTGR (pod Super-Projekt H)",
-            "🇵🇱/🇬🇧 [PL+EN] Prawo medyczne, komisje bioetyczne, badania kliniczne i regulacje wyrobów medycznych/BCI MDR (pod Projekty A i D)",
-            "🇵🇱/🇬🇧 [PL+EN] Międzynarodowe prawo kosmiczne (POLSA, traktaty ONZ) oraz prawo ochrony środowiska i klimatu (pod Projekty F i G)",
-            "🇵🇱/🇬🇧 [PL+EN] Regulacje sztucznej inteligencji (EU AI Act), audyt algorytmiczny i nadzór nad flotą Agentów AI (pod Projekty B, C, E)",
-            "🇵🇱 [PL] Seminarium dyplomowe (Licencjat): Projekt rozproszonego instytutu badawczego na kanwie Projektu Manhattan"
+            "Prawo atomowe (wymogi PAA i IAEA, licencjonowanie reaktorów SMR, ochrona radiologiczna)",
+            "Prawo medyczne, bioetyka badań na komórkach macierzystych i procedury komitetów bioetycznych",
+            "Międzynarodowe prawo kosmiczne (Outer Space Treaty, Artemis Accords, rejestracja obiektów orbitalnych)",
+            "Prawo ochrony środowiska, oceny oddziaływania na środowisko (OOŚ) i ramy dekarbonizacji",
+            "Zarządzanie strategiczne programami o skali megaprojektów (PMI / Prince2 / Agile Gov)",
+            "Seminarium dyplomowe: Obrona dysertacji 'Architektura Prawno-Administracyjna Programu Manhattan G15'"
           ],
           "coursesEn": [
-            "🇵🇱/🇬🇧 [PL+EN] Nuclear law, radiological oversight (PAA, Euratom, IAEA) & SMR/HTGR licensing (for Super-Project H)",
-            "🇵🇱/🇬🇧 [PL+EN] Medical law, bioethics committees, clinical trials & BCI medical device regulations (for Projects A & D)",
-            "🇵🇱/🇬🇧 [PL+EN] International space law (POLSA, UN treaties) & environmental/climate protection law (for Projects F & G)",
-            "🇵🇱/🇬🇧 [PL+EN] AI governance (EU AI Act), algorithmic auditing & multi-agent AI supervision (for Projects B, C, E)",
-            "🇵🇱 [PL] B.A. Thesis Seminar: Blueprint of a Manhattan-style distributed research institute"
+            "Nuclear Law (PAA & IAEA Requirements, SMR Licensing, Radiological Protection)",
+            "Medical Law, Stem Cell Bioethics & Institutional Review Boards",
+            "International Space Law (Outer Space Treaty, Artemis Accords, Orbital Asset Registration)",
+            "Environmental Law, Environmental Impact Assessments (EIA) & Decarbonization Policies",
+            "Strategic Megaproject Management & Governance Frameworks",
+            "Diploma Seminar: Defense of Dissertation 'Legal-Administrative Architecture of Manhattan G15'"
           ],
-          "deliverablePl": "Obrona licencjatu z Administracji i pełne odblokowanie sekwencji 5-letnich studiów kierunkowych.",
-          "deliverableEn": "Administration B.A. defense and full operational clearance for the continuous 5-year specialist study queue."
+          "subchaptersPl": [
+            "3.1. Reżim Prawa atomowego: procedury koncesyjne Państwowej Agencji Atomistyki dla reaktorów SMR i MARIA",
+            "3.2. Standardy bioetyczne (GCP, Deklaracja Helsińska) i prawne granice inżynierii genetycznej organoidów",
+            "3.3. Traktaty prawa kosmicznego: odpowiedzialność za obiekty orbitalne, surowce pozaziemskie i habitaty",
+            "3.4. Dyplom licencjacki: Podręcznik Operacyjny Sztabu W-0 Projektu Manhattan Golem 15"
+          ],
+          "subchaptersEn": [
+            "3.1. Nuclear Law Regime: PAA Licensing Procedures for SMRs and MARIA Research Reactor",
+            "3.2. Bioethical Standards (GCP, Helsinki Declaration) and Legal Boundaries of Organoid Bioengineering",
+            "3.3. Space Law Treaties: Liability for Orbital Objects, In-Situ Resource Utilization and Space Habitats",
+            "3.4. Bachelor's Diploma: District W-0 Operational Command Manual for Manhattan Golem 15"
+          ],
+          "linkedMaterialIds": [
+            "smat-trk-h1",
+            "smat-trk-f1",
+            "smat-trk-g1"
+          ],
+          "matchedFoundationTopics": [
+            "4.5 Fizyka jądrowa i promieniowanie jonizujące",
+            "6.6 Chemia środowiska i ochrona biosfery",
+            "7.5 Komórki macierzyste i bioetyka"
+          ],
+          "coreBooksPl": [
+            "J. Ciechanowicz-McLean — 'Prawo ochrony środowiska i energetyki jądrowej' (PWN)",
+            "M. Safjan — 'Prawo wobec medycyny i biotechnologii' (Wolters Kluwer)",
+            "J. Sztucki — 'Prawo kosmiczne' (PWN / Scholar)"
+          ],
+          "coreBooksEn": [
+            "IAEA Safety Standards Series — 'Licensing Process for Nuclear Installations'",
+            "F. Lyall, P. B. Larsen — 'Space Law: A Treatise' (Routledge)"
+          ],
+          "deliverablePl": "Podręcznik Operacyjny Sztabu W-0 i Licencja Administracyjna Projektu.",
+          "deliverableEn": "District W-0 Command Manual and Project Administrative Charter."
         }
       ]
     },
@@ -3014,34 +3109,115 @@ const DEFAULT_SEED = {
         "siteId": "SITE-Y15",
         "icon": "📐",
         "color": "#38bdf8",
+        "titlePl": "1. Matematyka i Logika (5 lat studiów magisterskich)",
+        "titleEn": "1. Mathematics & Logic (5-Year Master's Degree)",
         "sourceLang": "PL+EN",
-        "titlePl": "Matematyka i Logika Matematyczna (5 lat — I+II stopień)",
-        "titleEn": "Mathematics & Mathematical Logic (5 Years — B.Sc.+M.Sc.)",
+        "linkedMaterialIds": [
+          "smat-1",
+          "smat-2"
+        ],
+        "matchedFoundationTopics": [
+          "1.1 Logika formalna, rachunek zdań i teoria mnogości",
+          "1.2 Analiza matematyczna i równania różniczkowe",
+          "1.3 Algebra liniowa i przestrzenie Hilberta",
+          "1.4 Rachunek prawdopodobieństwa i wnioskowanie bayesowskie",
+          "1.5 Teoria informacji Shannona i układy dynamiczne",
+          "1.6 Matematyka dyskretna i teoria grafów"
+        ],
+        "coreBooksPl": [
+          "M. Gewert, Z. Skoczylas — 'Algebra liniowa 1–2' oraz 'Analiza matematyczna 1–2' (GiS)",
+          "OpenAGH — 'Matematyka dla studentów nauk ścisłych' (agh.edu.pl)",
+          "R. Penrose — 'Droga do rzeczywistości' (Prószyński i S-ka)"
+        ],
+        "coreBooksEn": [
+          "G. Strang — 'Introduction to Linear Algebra' (MIT 18.06)",
+          "D. J. C. MacKay — 'Information Theory, Inference, and Learning Algorithms'"
+        ],
         "years": [
           {
             "year": 1,
-            "pl": "Logika formalna, teoria mnogości, analiza matematyczna I–II, algebra liniowa z geometrią (OpenAGH, Skoczylas, Strang).",
-            "en": "Formal logic, set theory, calculus I–II, linear algebra with geometry (OpenAGH, Strang)."
+            "pl": "Rok 1: Logika formalna, teoria mnogości, analiza matematyczna I i algebra liniowa I.",
+            "en": "Year 1: Formal logic, set theory, calculus I, and linear algebra I.",
+            "subchaptersPl": [
+              "1.1. Rachunek zdań, predykatów i aksjomatyczna teoria mnogości Zermelo-Fraenkla",
+              "1.2. Granice ciągów i funkcji, pochodne oraz rachunek różniczkowy jednej zmiennej",
+              "1.3. Przestrzenie wektorowe, macierze, wyznaczniki i układy równań liniowych",
+              "1.4. Metody dowodzenia twierdzeń i formalizm dowodowy w matematyce i fizyce"
+            ],
+            "subchaptersEn": [
+              "1.1. Propositional & Predicate Calculus, Zermelo-Fraenkel Set Theory",
+              "1.2. Limits, Derivatives, and Single-Variable Differential Calculus",
+              "1.3. Vector Spaces, Matrices, Determinants, and Systems of Linear Equations",
+              "1.4. Mathematical Proof Techniques and Formal Rigor in Physics & Computing"
+            ]
           },
           {
             "year": 2,
-            "pl": "Równania różniczkowe zwyczajne i cząstkowe, topologia ogólna, analiza zespolona, matematyka dyskretna i teoria grafów.",
-            "en": "ODEs & PDEs, general topology, complex analysis, discrete math & graph theory."
+            "pl": "Rok 2: Analiza wielu zmiennych, całki wielokrotne, algebra liniowa II i przestrzenie euklidesowe.",
+            "en": "Year 2: Multivariable calculus, multiple integrals, linear algebra II, and Euclidean spaces.",
+            "subchaptersPl": [
+              "2.1. Rachunek różniczkowy funkcji wielu zmiennych, gradient i hesjan",
+              "2.2. Całki wielokrotne, krzywoliniowe i powierzchniowe (twierdzenia Gaussa i Stokesa)",
+              "2.3. Wartości i wektory własne, diagonalizacja i rozkład według wartości osobliwych (SVD)",
+              "2.4. Formy kwadratowe, tensory w przestrzeniach euklidesowych i przestrzenie unitarne"
+            ],
+            "subchaptersEn": [
+              "2.1. Multivariable Differential Calculus, Gradients, and Hessians",
+              "2.2. Multiple, Line, and Surface Integrals (Gauss's and Stokes's Theorems)",
+              "2.3. Eigenvalues, Eigenvectors, Diagonalization, and Singular Value Decomposition (SVD)",
+              "2.4. Quadratic Forms, Tensors in Euclidean Spaces, and Unitary Spaces"
+            ]
           },
           {
             "year": 3,
-            "pl": "Rachunek prawdopodobieństwa, statystyka matematyczna, analiza funkcjonalna, metody numeryczne i obrona I stopnia.",
-            "en": "Probability theory, mathematical statistics, functional analysis, numerical methods & B.Sc. thesis."
+            "pl": "Rok 3: Równania różniczkowe zwyczajne i cząstkowe, analiza zespolona i transformata Fouriera.",
+            "en": "Year 3: Ordinary and partial differential equations, complex analysis, and Fourier transforms.",
+            "subchaptersPl": [
+              "3.1. Równania różniczkowe zwyczajne liniowe i nieliniowe (modele dynamiki populacji i obwodów)",
+              "3.2. Funkcje zmiennej zespolonej, całka Cauchy'ego i rachunek rezyduów",
+              "3.3. Szeregi i transformaty Fouriera oraz transformata Laplace'a w układach ciągłych",
+              "3.4. Równania różniczkowe cząstkowe (równanie falowe, dyfuzji ciepła i Schrödingera)"
+            ],
+            "subchaptersEn": [
+              "3.1. Linear and Non-Linear Ordinary Differential Equations (Dynamical Systems)",
+              "3.2. Complex Analysis, Cauchy's Integral Theorem, and Residue Calculus",
+              "3.3. Fourier Series, Continuous & Discrete Fourier Transforms, Laplace Transforms",
+              "3.4. Partial Differential Equations (Wave, Heat Diffusion, and Schrödinger Equations)"
+            ]
           },
           {
             "year": 4,
-            "pl": "Układy dynamiczne i teoria chaosu, geometria różniczkowa i rachunek tensorowy (Penrose), teoria informacji i entropia.",
-            "en": "Dynamical systems & chaos, differential geometry & tensor calculus (Penrose), information theory."
+            "pl": "Rok 4: Rachunek prawdopodobieństwa, statystyka matematyczna, procesy stochastyczne i teoria informacji.",
+            "en": "Year 4: Probability theory, mathematical statistics, stochastic processes, and information theory.",
+            "subchaptersPl": [
+              "4.1. Przestrzenie probabilistyczne Kołmogorowa, zmienne losowe i prawa wielkich liczb",
+              "4.2. Wnioskowanie statystyczne, estymacja parametrów i testowanie hipotez (podejście częstościowe i bayesowskie)",
+              "4.3. Łańcuchy Markowa, procesy Poissona i stochastyczne równania różniczkowe Ito",
+              "4.4. Entropia Shannona, informacja wzajemna, kompresja danych i twierdzenia o kodowaniu"
+            ],
+            "subchaptersEn": [
+              "4.1. Kolmogorov Probability Spaces, Random Variables, Central Limit Theorems",
+              "4.2. Statistical Inference, Parameter Estimation, Frequentist and Bayesian Hypothesis Testing",
+              "4.3. Markov Chains, Poisson Processes, and Ito Stochastic Differential Equations",
+              "4.4. Shannon Entropy, Mutual Information, Data Compression, and Channel Coding Theorems"
+            ]
           },
           {
             "year": 5,
-            "pl": "Procesy stochastyczne, wnioskowanie bayesowskie, topologia algebraiczna konektomów i praca magisterska dla Projektów B/C/H.",
-            "en": "Stochastic processes, Bayesian inference, algebraic topology of connectomes & M.Sc. thesis for B/C/H."
+            "pl": "Rok 5: Analiza funkcjonalna, przestrzenie Hilberta, teoria układów dynamicznych i chaosu, praca magisterska.",
+            "en": "Year 5: Functional analysis, Hilbert spaces, dynamical systems and chaos theory, Master's thesis.",
+            "subchaptersPl": [
+              "5.1. Przestrzenie Banacha i Hilberta, operatory samosprzężone i teoria spektralna (podstawa mechaniki kwantowej)",
+              "5.2. Teoria układów dynamicznych, bifurkacje, atraktory i chaos deterministyczny",
+              "5.3. Geometria różniczkowa i topologia sieci złożonych (podstawa konektomu)",
+              "5.4. Praca magisterska: Formalny model matematyczny nieliniowej dynamiki sieci neuronowej lub kwantowej"
+            ],
+            "subchaptersEn": [
+              "5.1. Banach and Hilbert Spaces, Self-Adjoint Operators, and Spectral Theory",
+              "5.2. Dynamical Systems Theory, Bifurcations, Strange Attractors, and Deterministic Chaos",
+              "5.3. Differential Geometry and Complex Network Topology (Connectome Foundations)",
+              "5.4. Master's Thesis: Formal Mathematical Model of Non-Linear Neural or Quantum System Dynamics"
+            ]
           }
         ]
       },
@@ -3052,34 +3228,115 @@ const DEFAULT_SEED = {
         "siteId": "SITE-Y15",
         "icon": "💻",
         "color": "#60a5fa",
+        "titlePl": "2. Informatyka — Architektury Post-Krzemowe, QPU i Neuromorfizm (5 lat studiów)",
+        "titleEn": "2. Computer Science — Post-Silicon Architectures, QPU & Neuromorphics (5-Year Degree)",
         "sourceLang": "PL+EN",
-        "titlePl": "Informatyka Teoretyczna i Systemowa (5 lat — I+II stopień)",
-        "titleEn": "Computer Science & Distributed Systems (5 Years — B.Sc.+M.Sc.)",
+        "linkedMaterialIds": [
+          "smat-2",
+          "smat-trk-c1"
+        ],
+        "matchedFoundationTopics": [
+          "2.1 Teoria obliczeń, maszyny Turinga i złożoność obliczeniowa",
+          "2.2 Algorytmy i struktury danych",
+          "2.3 Architektura komputerów (CPU, GPU, QPU, układy neuromorficzne)",
+          "2.4 Systemy operacyjne, systemy rozproszone i HPC",
+          "2.5 Bazy danych, ontologie i reprezentacja wiedzy",
+          "2.6 Niezawodność i fault-tolerance"
+        ],
+        "coreBooksPl": [
+          "T. H. Cormen, C. E. Leiserson, R. L. Rivest, C. Stein — 'Wprowadzenie do algorytmów' (PWN)",
+          "Ch. Petzold — 'Kod. Ukryty język sprzętu i oprogramowania' (Helion)",
+          "A. S. Tanenbaum, H. Bos — 'Systemy operacyjne' (Helion)"
+        ],
+        "coreBooksEn": [
+          "J. L. Hennessy, D. A. Patterson — 'Computer Architecture: A Quantitative Approach'",
+          "M. A. Nielsen, I. L. Chuang — 'Quantum Computation and Quantum Information'"
+        ],
         "years": [
           {
             "year": 1,
-            "pl": "Logika układów cyfrowych i architektura komputerów (Petzold), algorytmy i struktury danych (Cormen, Ważniak MIMUW).",
-            "en": "Digital logic & computer architecture (Petzold), algorithms & data structures (Cormen)."
+            "pl": "Rok 1: Logika cyfrowa, bramki, arytmetyka maszynowa, podstawy architektury komputerów i algorytmy elementarne.",
+            "en": "Year 1: Digital logic, gates, machine arithmetic, computer architecture basics, and elementary algorithms.",
+            "subchaptersPl": [
+              "1.1. Algebra Boole'a, minimalizacja funkcji logicznych i projektowanie układów kombinacyjnych",
+              "1.2. Układy sekwencyjne: przerzutniki, rejestry, liczniki i automaty synchroniczne",
+              "1.3. Architektura von Neumanna vs. Harvardzka: cykl rozkazowy, magistrale i jednostka ALU",
+              "1.4. Podstawowe algorytmy i struktury danych: tablice, listy, stosy, kolejki i złożoność O(n)"
+            ],
+            "subchaptersEn": [
+              "1.1. Boolean Algebra, Logic Minimization, and Combinational Circuit Design",
+              "1.2. Sequential Circuits: Flip-Flops, Registers, Counters, and Finite State Machines",
+              "1.3. Von Neumann vs. Harvard Architecture: Instruction Cycle, Busses, ALU Operations",
+              "1.4. Fundamental Algorithms & Data Structures: Lists, Stacks, Queues, and Big-O Complexity"
+            ]
           },
           {
             "year": 2,
-            "pl": "Systemy operacyjne, programowanie współbieżne, sieci komputerowe, relacyjne i grafowe bazy danych.",
-            "en": "Operating systems, concurrency, computer networks, relational & graph databases."
+            "pl": "Rok 2: Zaawansowane struktury danych, algorytmy grafowe, systemy operacyjne i wąskie gardło von Neumanna.",
+            "en": "Year 2: Advanced data structures, graph algorithms, operating systems, and von Neumann memory wall.",
+            "subchaptersPl": [
+              "2.1. Drzewa zrównoważone (AVL, Czerwono-Czarne), kopce, tablice mieszające i algorytmy grafowe (Dijkstra, A*)",
+              "2.2. Architektura systemów operacyjnych: procesy, wątki, synchronizacja (muteksy, semafory) i zakleszczenia",
+              "2.3. Zarządzanie pamięcią: stronicowanie, pamięć wirtualna i hierarchia pamięci podręcznych (L1/L2/L3)",
+              "2.4. Wąskie gardło von Neumanna (Memory Wall) i ograniczenia skalowania Dennarda w klasycznych CPU"
+            ],
+            "subchaptersEn": [
+              "2.1. Balanced Search Trees, Heaps, Hash Tables, and Graph Algorithms (Dijkstra, A*)",
+              "2.2. Operating System Architecture: Processes, Threads, Concurrency, and Deadlock Prevention",
+              "2.3. Memory Management: Paging, Virtual Memory, and Cache Coherency Protocols",
+              "2.4. Von Neumann Memory Wall, Latency Gaps, and the Breakdown of Dennard Scaling"
+            ]
           },
           {
             "year": 3,
-            "pl": "Teoria obliczeń i złożoności, systemy czasu rzeczywistego (RTOS), kryptografia stosowana i projekt inżynierski.",
-            "en": "Theory of computation & complexity, RTOS, applied cryptography & B.Eng. project."
+            "pl": "Rok 3: Teoria obliczeń, granice krzemu, architektury Dataflow oraz podstawy obliczeń kwantowych (kubity).",
+            "en": "Year 3: Theory of computation, silicon physical limits, Dataflow architectures, and quantum computing basics.",
+            "subchaptersPl": [
+              "3.1. Maszyny Turinga, obliczalność, problem stopu oraz klasy złożoności obliczeniowej (P, NP, NP-zupełne)",
+              "3.2. Fizyczne bariery miniaturyzacji krzemu: upływ tunelowy, limit termiczny Landauera i koniec prawa Moore'a",
+              "3.3. Architektury nie-von Neumannowskie: Dataflow, obliczenia w pamięci (In-Memory Computing) i macierze FPGA",
+              "3.4. Wprowadzenie do obliczeń kwantowych: stan kubitu, sfera Blocha, bramki kwantowe (Hadamard, CNOT) i splątanie"
+            ],
+            "subchaptersEn": [
+              "3.1. Turing Machines, Computability, Halting Problem, and Complexity Classes (P, NP, NP-Complete)",
+              "3.2. Physical Breakdown of Silicon: Gate Leakage, Landauer Thermal Limit, Moore's Law End",
+              "3.3. Non-Von Neumann Architectures: Dataflow Computing, In-Memory Computing, and FPGA Fabrics",
+              "3.4. Introduction to Quantum Computing: Qubits, Bloch Sphere, Quantum Gates (Hadamard, CNOT), Entanglement"
+            ]
           },
           {
             "year": 4,
-            "pl": "Systemy rozproszone wielkiej skali, obliczenia wysokiej wydajności (HPC / klastry GPU), architektury odporne na błędy (fault-tolerant).",
-            "en": "Large-scale distributed systems, HPC / GPU clusters, fault-tolerant space/medical architectures."
+            "pl": "Rok 4: Algorytmy kwantowe (Shor, Grover, VQE), układy neuromorficzne (Loihi, SpiNNaker) i komputery ery NISQ.",
+            "en": "Year 4: Quantum algorithms (Shor, Grover, VQE), neuromorphic hardware (Loihi, SpiNNaker), and NISQ computing.",
+            "subchaptersPl": [
+              "4.1. Algorytmy kwantowe: algorytm faktoryzacji Shora, przeszukiwanie Grovera i algorytmy wariacyjne (VQE/QAOA)",
+              "4.2. Architektury komputerów kwantowych ery NISQ: kubity nadprzewodzące (transmony), pułapki jonowe i korekcja błędów",
+              "4.3. Architektury procesorów neuromorficznych: asynchroniczne pakiety AER, Intel Loihi, SpiNNaker i BrainScaleS",
+              "4.4. Sieci rozproszone i systemy odporne na awarie (Byzantine Fault Tolerance, Paxos/Raft) w klastrach HPC"
+            ],
+            "subchaptersEn": [
+              "4.1. Quantum Algorithms: Shor's Factorization, Grover's Search, Variational Solvers (VQE/QAOA)",
+              "4.2. NISQ Quantum Hardware: Superconducting Transmons, Trapped Ions, Surface Code Error Correction",
+              "4.3. Neuromorphic Processor Architecture: Asynchronous AER Buses, Intel Loihi, SpiNNaker, BrainScaleS",
+              "4.4. Distributed Systems & Fault Tolerance (Byzantine Fault Tolerance, Paxos/Raft) in HPC"
+            ]
           },
           {
             "year": 5,
-            "pl": "Reprezentacja wiedzy, ontologie grafowe, bezpieczeństwo systemów krytycznych i praca magisterska z architektury rozproszonej.",
-            "en": "Knowledge representation, graph ontologies, critical systems security & M.Sc. thesis."
+            "pl": "Rok 5: Heterogeniczne superkomputery hybrydowe (CPU+GPU+QPU+NPU), kryptografia postkwantowa, praca magisterska.",
+            "en": "Year 5: Heterogeneous hybrid supercomputing (CPU+GPU+QPU+NPU), post-quantum cryptography, Master's thesis.",
+            "subchaptersPl": [
+              "5.1. Projektowanie heterogenicznych systemów obliczeniowych łączących CPU, akceleratory kwantowe (QPU) i neuromorficzne (NPU)",
+              "5.2. Kryptografia postkwantowa (PQC): kryptografia oparta na kratach (Lattice-based, Kyber, Dilithium)",
+              "5.3. Pamięci nowej generacji: memrystory (ReRAM), spintronika (MRAM) i obliczenia rezerwuarowe w krzemie",
+              "5.4. Praca magisterska: Architektura procesora nie-von Neumannowskiego do symulacji konektomu lub obliczeń kwantowych"
+            ],
+            "subchaptersEn": [
+              "5.1. Design of Heterogeneous Compute Systems Integrating Classical CPUs, QPUs, and Neuromorphic NPUs",
+              "5.2. Post-Quantum Cryptography (PQC): Lattice-Based Cryptography (Kyber, Dilithium)",
+              "5.3. Next-Gen Memory: Memristors (ReRAM), Spintronics (MRAM), and Reservoir Computing in Silicon",
+              "5.4. Master's Thesis: Non-Von Neumann Processor Architecture for Connectome or Quantum Emulation"
+            ]
           }
         ]
       },
@@ -3090,34 +3347,115 @@ const DEFAULT_SEED = {
         "siteId": "SITE-Y15",
         "icon": "⌨️",
         "color": "#818cf8",
+        "titlePl": "3. Programowanie — Nowe Paradygmaty, Qiskit i Symulacje SNN (5 lat studiów)",
+        "titleEn": "3. Programming — New Paradigms, Qiskit & SNN Simulations (5-Year Degree)",
         "sourceLang": "PL+EN",
-        "titlePl": "Inżynieria Oprogramowania i Symulacji Naukowych (5 lat — I+II stopień)",
-        "titleEn": "Software Engineering & Scientific Simulation (5 Years — B.Sc.+M.Sc.)",
+        "linkedMaterialIds": [
+          "smat-3",
+          "smat-2"
+        ],
+        "matchedFoundationTopics": [
+          "3.1 Paradygmaty programowania: obiektowe, funkcyjne, reaktywne i różniczkowalne",
+          "3.2 Python w obliczeniach naukowych (NumPy, SciPy, PyTorch, JAX)",
+          "3.3 Języki systemowe (Rust, C/C++) dla mikrokontrolerów i BCI",
+          "3.4 Symulacje numeryczne układów neuronalnych (Brian2, NEURON, snnTorch)",
+          "3.5 Programowanie komputerów kwantowych (Qiskit, Cirq, PennyLane)",
+          "3.6 Inżynieria oprogramowania i weryfikacja kodu"
+        ],
+        "coreBooksPl": [
+          "E. Matthes — 'Python. Instrukcje dla programisty' (Helion)",
+          "A. Sweigart — 'Automatyzacja nudnych zadań z Pythonem' (Helion)",
+          "S. Klabnik, C. Nichols — 'Język programowania Rust' (Helion)"
+        ],
+        "coreBooksEn": [
+          "H. P. Langtangen — 'A Primer on Scientific Programming with Python'",
+          "A. Géron — 'Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow'"
+        ],
         "years": [
           {
             "year": 1,
-            "pl": "Programowanie strukturalne, obiektowe i funkcyjne (Python, C, C++), kontrola wersji Git i testowanie jednostkowe.",
-            "en": "Procedural, OOP & functional programming (Python, C, C++), Git & unit testing."
+            "pl": "Rok 1: Fundamenty Pythona, C, inżynieria czystego kodu, wzorce projektowe i testy jednostkowe.",
+            "en": "Year 1: Python and C foundations, clean code engineering, design patterns, and unit testing.",
+            "subchaptersPl": [
+              "1.1. Składnia Pythona, struktury danych, zarządzanie pamięcią i programowanie proceduralne",
+              "1.2. Programowanie zorientowane obiektowo (OOP): polimorfizm, enkapsulacja i kompozycja klas",
+              "1.3. Język C: wskaźniki, alokacja sterty (malloc/free) i bezpośrednie operacje bitowe",
+              "1.4. Inżynieria oprogramowania naukowego: Git, Pytest, dokumentacja i powtarzalność badań (reproducibility)"
+            ],
+            "subchaptersEn": [
+              "1.1. Python Syntax, Data Structures, Memory Management, and Procedural Coding",
+              "1.2. Object-Oriented Programming (OOP): Polymorphism, Encapsulation, Class Composition",
+              "1.3. C Language: Pointers, Heap Allocation (malloc/free), and Direct Bitwise Operations",
+              "1.4. Scientific Software Engineering: Git Version Control, Pytest, Code Documentation, Reproducibility"
+            ]
           },
           {
             "year": 2,
-            "pl": "Programowanie systemowe i niskopoziomowe (Rust, C++20), interfejsy sprzętowe, sterowniki i akwizycja danych pomiarowych.",
-            "en": "Systems & low-level programming (Rust, C++20), hardware APIs & sensor data acquisition."
+            "pl": "Rok 2: Python w obliczeniach naukowych (NumPy, SciPy), programowanie funkcyjne i język Rust.",
+            "en": "Year 2: Scientific computing Python (NumPy, SciPy), functional programming, and Rust systems programming.",
+            "subchaptersPl": [
+              "2.1. Wektoryzacja i operacje macierzowe w NumPy, broadcasting i procedury numeryczne SciPy",
+              "2.2. Programowanie funkcyjne: niezmienniczość, funkcje wyższego rzędu, lambdy i operatory monadyczne",
+              "2.3. Język Rust: system własności (ownership), pożyczanie (borrowing) i bezpieczeństwo pamięci bez garbage collectora",
+              "2.4. Współbieżność w Pythonie i Rust: asynchroniczność (async/await, Tokio), wielowątkowość i kolejki komunikatów"
+            ],
+            "subchaptersEn": [
+              "2.1. Vectorization and Matrix Operations in NumPy, Broadcasting, SciPy Numerical Routines",
+              "2.2. Functional Programming: Immutability, Higher-Order Functions, Lambdas, and Monadic Pipelines",
+              "2.3. Rust Language: Ownership, Borrowing, Lifetimes, and Zero-Cost Memory Safety",
+              "2.4. Concurrency in Python and Rust: Async/Await (Tokio), Multithreading, and Lockless Channels"
+            ]
           },
           {
             "year": 3,
-            "pl": "Obliczenia naukowe (NumPy, SciPy, Julia), architektura aplikacji webowych/mobilnych i inżynierski system symulacyjny.",
-            "en": "Scientific computing (NumPy, SciPy, Julia), web/mobile architecture & B.Eng. simulation platform."
+            "pl": "Rok 3: Zmiana paradygmatu: programowanie różniczkowalne (JAX/PyTorch) i symulacje bio-neurologiczne (Brian2, NEURON).",
+            "en": "Year 3: Paradigm shift: differentiable programming (JAX/PyTorch) and computational neuroscience simulations (Brian2, NEURON).",
+            "subchaptersPl": [
+              "3.1. Nowy paradygmat: programowanie różniczkowalne i grafy tensorowe (PyTorch, JAX Autograd)",
+              "3.2. Symulacja modeli neuronów biologicznych w Brian2 i NEURON (modele Hodgkina-Huxleya, Izhikevicha, Leaky Integrate-and-Fire)",
+              "3.3. Programowanie mikrokontrolerów ARM/RISC-V (Embedded C/Rust) do sterowania aktuatorami i akwizycji sygnałów BCI",
+              "3.4. Optymalizacja niskopoziomowa: instrukcje SIMD (AVX-512), kompilatory JIT (Numba) i akceleracja CUDA C++"
+            ],
+            "subchaptersEn": [
+              "3.1. Differentiable Programming Paradigm: Computation Graphs and Automatic Differentiation (PyTorch, JAX)",
+              "3.2. Biological Neuron Simulation in Brian2 and NEURON (Hodgkin-Huxley, Izhikevich, Leaky Integrate-and-Fire)",
+              "3.3. Embedded ARM / RISC-V Programming in C/Rust for Sensor Interfaces and BCI Data Acquisition",
+              "3.4. Low-Level Performance Optimization: SIMD Vectorization (AVX-512), Numba JIT, and CUDA C++ Kernels"
+            ]
           },
           {
             "year": 4,
-            "pl": "Symulatory fizyczne, biologiczne i neuronalne (NEURON, Brian2, OpenMM), programowanie równoległe CUDA/Triton.",
-            "en": "Physical, biological & neural simulators (NEURON, Brian2, OpenMM), CUDA/Triton parallel kernels."
+            "pl": "Rok 4: Programowanie komputerów kwantowych (Qiskit, PennyLane) i impulsowych sieci neuronowych (snnTorch, Lava).",
+            "en": "Year 4: Quantum programming (Qiskit, PennyLane) and Spiking Neural Network programming (snnTorch, Lava).",
+            "subchaptersPl": [
+              "4.1. Programowanie obwodów kwantowych w Qiskit: synteza bramek, symulatory macierzowe i uruchamianie na realnych QPU IBM Quantum",
+              "4.2. Różniczkowalne programowanie kwantowe (PennyLane) i kwantowe uczenie maszynowe (QML, Quantum Neural Networks)",
+              "4.3. Programowanie impulsowych sieci neuronowych SNN (snnTorch, Norse, framework Lava dla układu Intel Loihi)",
+              "4.4. Programowanie systemów robotycznych czasu rzeczywistego (ROS 2 / C++) i przetwarzanie strumieniowe danych biomedycznych"
+            ],
+            "subchaptersEn": [
+              "4.1. Quantum Circuit Programming in Qiskit: Gate Synthesis, Simulators, and Execution on IBM Quantum QPUs",
+              "4.2. Differentiable Quantum Programming (PennyLane) and Quantum Machine Learning (QML)",
+              "4.3. Spiking Neural Network (SNN) Programming with snnTorch, Norse, and Intel Lava for Neuromorphic Chips",
+              "4.4. Real-Time Robotic Programming (ROS 2 / C++) and Streaming Biomedical Signal Pipelines"
+            ]
           },
           {
             "year": 5,
-            "pl": "Weryfikacja formalna kodu krytycznego, reprodukowalne potoki badawcze MLOps i magisterium z inżynierii symulacyjnej.",
-            "en": "Formal verification of safety-critical code, reproducible MLOps pipelines & M.Sc. thesis."
+            "pl": "Rok 5: Architektura frameworków wieloskalowych, skalowanie symulacji Whole Brain Emulation, praca magisterska.",
+            "en": "Year 5: Multiscale framework architecture, massive Whole Brain Emulation scaling, Master's thesis.",
+            "subchaptersPl": [
+              "5.1. Projektowanie frameworków symulacyjnych dużej skali łączących akcelerację GPU z koprocesorami kwantowymi i NPU",
+              "5.2. Równoległe algorytmy symulacji konektomu i modeli plastyczności synaptycznej (STDP) w klastrach wielowęzłowych (MPI/Slurm)",
+              "5.3. Rygor inżynieryjny: formalna weryfikacja kodu, profile zużycia energii i testowanie odporności na błędy sprzętowe",
+              "5.4. Praca magisterska: Otwarty framework w Pythonie/Rust do hybrydowej symulacji impulsowej sieci neuronowej na akceleratorze neuromorficznym"
+            ],
+            "subchaptersEn": [
+              "5.1. Large-Scale Multiscale Simulation Framework Design Coupling GPUs, QPUs, and Neuromorphic Hardware",
+              "5.2. Distributed Connectome and STDP Synaptic Plasticity Simulation on HPC Clusters (MPI, Slurm)",
+              "5.3. Software Verification: Formal Code Proofs, Energy Profiling, and Hardware Fault-Tolerant Pipelines",
+              "5.4. Master's Thesis: Open-Source Python/Rust Framework for Hybrid SNN Simulation on Neuromorphic Hardware"
+            ]
           }
         ]
       },
@@ -3128,34 +3466,115 @@ const DEFAULT_SEED = {
         "siteId": "SITE-X10",
         "icon": "⚛️",
         "color": "#f59e0b",
+        "titlePl": "4. Fizyka — Granice Krzemu, Półprzewodniki Post-Krzemowe i Mechanika Kwantowa (5 lat)",
+        "titleEn": "4. Physics — Silicon Limits, Post-Silicon Semiconductors & Quantum Mechanics (5-Year)",
         "sourceLang": "PL+EN",
-        "titlePl": "Fizyka Techniczna, Kwantowa i Jądrowa (5 lat — I+II stopień)",
-        "titleEn": "Technical, Quantum & Nuclear Physics (5 Years — B.Sc.+M.Sc.)",
+        "linkedMaterialIds": [
+          "smat-4",
+          "smat-trk-h1"
+        ],
+        "matchedFoundationTopics": [
+          "4.1 Mechanika klasyczna, relatywistyczna i orbitalna",
+          "4.2 Termodynamika klasyczna, statystyczna i nierównowagowa",
+          "4.3 Elektrodynamika, fale i fotonika",
+          "4.4 Fizyka ciała stałego, półprzewodniki i materiały post-krzemowe",
+          "4.5 Mechanika kwantowa i fizyka jądrowa",
+          "4.6 Biofizyka błon i potencjałów czynnościowych"
+        ],
+        "coreBooksPl": [
+          "OpenStax Polska — 'Fizyka dla szkół wyższych' Tom 1–3 (openstax.pl)",
+          "R. P. Feynman, R. B. Leighton, M. Sands — 'Feynmana wykłady z fizyki' Tom 1–3 (PWN)",
+          "D. J. Griffiths — 'Podstawy mechaniki kwantowej' (PWN)"
+        ],
+        "coreBooksEn": [
+          "C. Kittel — 'Introduction to Solid State Physics'",
+          "N. W. Ashcroft, N. D. Mermin — 'Solid State Physics'"
+        ],
         "years": [
           {
             "year": 1,
-            "pl": "Mechanika klasyczna i relatywistyczna, fale i optyka, pracownia fizyczna I (OpenStax Fizyka, Feynman).",
-            "en": "Classical & relativistic mechanics, waves & optics, physics lab I (OpenStax, Feynman)."
+            "pl": "Rok 1: Mechanika klasyczna, ruch drgający, fale mechaniczne, termodynamika fenomenologiczna i grawitacja.",
+            "en": "Year 1: Classical mechanics, oscillations, waves, phenomenological thermodynamics, and gravitation.",
+            "subchaptersPl": [
+              "1.1. Kinematyka i dynamika Newtona, zasady zachowania pędu, energii i momentu pędu",
+              "1.2. Ruch drgający, rezonans mechaniczny, fale sprężyste i akustyka",
+              "1.3. Mechanika analityczna: formalizm Lagrange'a i Hamiltona, równania kanoniczne",
+              "1.4. Podstawy termodynamiki klasycznej: pierwsza i druga zasada termodynamiki, entropia i cykl Carnota"
+            ],
+            "subchaptersEn": [
+              "1.1. Newtonian Kinematics & Dynamics, Conservation Laws of Momentum, Energy, Angular Momentum",
+              "1.2. Harmonic Oscillations, Resonance, Mechanical Waves, and Acoustics",
+              "1.3. Analytical Mechanics: Lagrangian and Hamiltonian Formalisms, Canonical Equations",
+              "1.4. Classical Thermodynamics: 1st and 2nd Laws, Entropy, and Carnot Heat Cycles"
+            ]
           },
           {
             "year": 2,
-            "pl": "Elektrodynamika klasyczna (równania Maxwella), termodynamika i fizyka statystyczna, mechanika analityczna Lagrange’a–Hamiltona.",
-            "en": "Classical electrodynamics (Maxwell), thermodynamics & statistical physics, Lagrangian/Hamiltonian mechanics."
+            "pl": "Rok 2: Elektrodynamika Maxwella, fale elektromagnetyczne, optyka falowa i termodynamika statystyczna.",
+            "en": "Year 2: Maxwell's electrodynamics, electromagnetic waves, wave optics, and statistical physics.",
+            "subchaptersPl": [
+              "2.1. Równania Maxwella w próżni i ośrodkach materialnych, potencjały Liénarda-Wiecherta",
+              "2.2. Fale elektromagnetyczne, polaryzacja, dyfrakcja, interferencja i fotonika",
+              "2.3. Fizyka statystyczna: zespoły mikrokanoniczne, kanoniczne i wielkie kanoniczne Gibbsa",
+              "2.4. Rozkłady kwantowe: statystyka Fermiego-Diraca (elektrony) oraz Bosego-Einsteina (fotony, fonony)"
+            ],
+            "subchaptersEn": [
+              "2.1. Maxwell's Equations in Vacuum and Media, Liénard-Wiechert Potentials",
+              "2.2. Electromagnetic Waves, Polarization, Diffraction, Wave Optics, and Photonics",
+              "2.3. Statistical Mechanics: Microcanonical, Canonical, and Grand Canonical Gibbs Ensembles",
+              "2.4. Quantum Statistics: Fermi-Dirac (Fermions) and Bose-Einstein (Bosons, Phonons) Distributions"
+            ]
           },
           {
             "year": 3,
-            "pl": "Mechanika kwantowa I (Griffiths), fizyka ciała stałego i półprzewodników, podstawy fizyki jądrowej i dyplom I stopnia.",
-            "en": "Quantum mechanics I (Griffiths), solid-state & semiconductor physics, nuclear basics & B.Sc."
+            "pl": "Rok 3: Mechanika kwantowa nierelatywistyczna, teoria złącza p-n i fizyka pasmowa półprzewodników.",
+            "en": "Year 3: Non-relativistic quantum mechanics, p-n junction physics, and semiconductor band theory.",
+            "subchaptersPl": [
+              "3.1. Równanie Schrödingera, studnia potencjału, oscylator harmoniczny i zjawisko tunelowe",
+              "3.2. Atom wodoru, moment pędu, spin elektronu i zakaz Pauliego",
+              "3.3. Fizyka ciała stałego: sieć krystaliczna, pasma energetyczne, masa efektywna nośników i poziom Fermiego",
+              "3.4. Fizyka złącza p-n, charakterystyki tranzystorów MOSFET i heterostruktur półprzewodnikowych"
+            ],
+            "subchaptersEn": [
+              "3.1. Schrödinger Equation, Potential Wells, Harmonic Oscillator, and Quantum Tunneling",
+              "3.2. Hydrogen Atom, Angular Momentum, Electron Spin, and Pauli Exclusion Principle",
+              "3.3. Solid-State Physics: Crystal Lattices, Band Theory, Effective Mass, and Fermi Levels",
+              "3.4. P-N Junction Physics, MOSFET Transistor Characteristics, and Semiconductor Heterostructures"
+            ]
           },
           {
             "year": 4,
-            "pl": "Fizyka reaktorów jądrowych i transportu neutronów, fizyka plazmy i syntezy termojądrowej, dozymetria i ochrona radiacyjna.",
-            "en": "Nuclear reactor physics & neutron transport, plasma physics & fusion, radiation dosimetry."
+            "pl": "Rok 4: Fizyczne granice krzemu (upływy kwantowe, limit Landauera), materiały post-krzemowe (grafen, 2D) i nadprzewodnictwo.",
+            "en": "Year 4: Physical limits of silicon (quantum leakage, Landauer limit), post-silicon 2D materials, and superconductivity.",
+            "subchaptersPl": [
+              "4.1. Fizyczne bariery krzemu poniżej 2 nm: upływ przez bramkę dielektryczną, fluktuacje domieszkowania i limit Landauera",
+              "4.2. Materiały dwuwymiarowe post-krzemowe: grafen, dichalkogenki metali przejściowych (MoS2, WSe2) i nanorurki węglowe",
+              "4.3. Zjawisko nadprzewodnictwa (teoria BCS, złącza Josephsona) jako podstawa kubitów nadprzewodzących",
+              "4.4. Fizyka jądrowa: energia wiązania jądra, rozszczepienie uranu/plutonu, reakcje fuzji D-T i przekroje czynne"
+            ],
+            "subchaptersEn": [
+              "4.1. Physical Silicon Barriers Below 2nm: Gate Dielectric Leakage, Dopant Fluctuations, Landauer Dissipation Limit",
+              "4.2. Post-Silicon 2D Materials: Graphene, Transition Metal Dichalcogenides (MoS2, WSe2), and Carbon Nanotubes",
+              "4.3. Superconductivity (BCS Theory, Josephson Junctions) as Foundation for Superconducting Qubits",
+              "4.4. Nuclear Physics: Binding Energy, Fission of U/Pu, D-T Fusion Cross-Sections, and Radiation Interaction"
+            ]
           },
           {
             "year": 5,
-            "pl": "Termodynamika nierównowagowa układów żywych, informacja kwantowa (Nielsen & Chuang) i praca magisterska (Projekty C/F/H).",
-            "en": "Non-equilibrium thermodynamics of life, quantum information & M.Sc. thesis (Projects C/F/H)."
+            "pl": "Rok 5: Biofizyka kwantowa, magnetyczne uwięzienie plazmy (tokamaki), transport w nanoskali i praca magisterska.",
+            "en": "Year 5: Quantum biophysics, magnetic plasma confinement (tokamaks), nanoscale transport, Master's thesis.",
+            "subchaptersPl": [
+              "5.1. Biofizyka komórkowa: potencjał spoczynkowy i czynnościowy błon, transport jonowy przez kanały białkowe",
+              "5.2. Fizyka plazmy termojądrowej: kryterium Lawsona, magnetyczne uwięzienie plazmy w tokamakach i stellaratorach",
+              "5.3. Teoria dekoherencji kwantowej i zjawiska kwantowe w układach makroskopowych",
+              "5.4. Praca magisterska: Model fizyczny transportu ładunku i ciepła w złączu memrystorowym lub nadprzewodzącym kubicie"
+            ],
+            "subchaptersEn": [
+              "5.1. Cellular Biophysics: Resting & Action Potentials, Voltage-Gated Ion Channel Transport",
+              "5.2. Fusion Plasma Physics: Lawson Criterion, Magnetic Confinement in Tokamaks and Stellarators",
+              "5.3. Quantum Decoherence Theory and Macroscopic Quantum Effects in Physical Devices",
+              "5.4. Master's Thesis: Physical Model of Charge and Thermal Transport in Memristive or Superconducting Qubit Junctions"
+            ]
           }
         ]
       },
@@ -3166,34 +3585,116 @@ const DEFAULT_SEED = {
         "siteId": "SITE-X10",
         "icon": "🔌",
         "color": "#eab308",
+        "titlePl": "5. Elektronika — Memrystory, Układy Neuromorficzne i Pomiary BCI (5 lat studiów)",
+        "titleEn": "5. Electronics — Memristors, Neuromorphic Chips & BCI Instrumentation (5-Year Degree)",
         "sourceLang": "PL+EN",
-        "titlePl": "Elektronika, Bioelektronika i Układy Neuromorficzne (5 lat — I+II stopień)",
-        "titleEn": "Electronics, Bioelectronics & Neuromorphic Hardware (5 Years — B.Sc.+M.Sc.)",
+        "linkedMaterialIds": [
+          "smat-5",
+          "smat-trk-a1",
+          "smat-trk-c1"
+        ],
+        "matchedFoundationTopics": [
+          "5.1 Teoria obwodów elektrycznych, filtry i stany nieustalone",
+          "5.2 Elektronika analogowa, wzmacniacze operacyjne i układy niskoszumne",
+          "5.3 Układy cyfrowe, FPGA i mikrokontrolery",
+          "5.4 Akwizycja sygnałów biologicznych (EEG, EMG, EKG, BCI)",
+          "5.5 Sensory środowiskowe, biomedyczne i aktuatory",
+          "5.6 Układy neuromorficzne, memrystory i realizacja sztucznych synaps"
+        ],
+        "coreBooksPl": [
+          "P. Horowitz, W. Hill — 'Sztuka elektroniki' Tom 1–2 (WKŁ)",
+          "W. Forbot — 'Podręczniki elektroniki i techniki mikroprocesorowej' (forbot.pl)",
+          "A. Oppenheim, R. Schafer — 'Cyfrowe przetwarzanie sygnałów' (WKŁ)"
+        ],
+        "coreBooksEn": [
+          "S.-C. Liu et al. — 'Neuromorphic Engineering: Systems and Applications'",
+          "G. Indiveri — 'Neuromorphic Silicon Neuron Circuits'"
+        ],
         "years": [
           {
             "year": 1,
-            "pl": "Teoria obwodów elektrycznych, metrologia elektroniczna, elementy półprzewodnikowe (Horowitz & Hill „Sztuka elektroniki”).",
-            "en": "Circuit theory, electronic metrology, semiconductor devices (The Art of Electronics)."
+            "pl": "Rok 1: Teoria obwodów, prawa Kirchhoffa, elementy RLC, diody, tranzystory bipolarne i polowe (MOSFET).",
+            "en": "Year 1: Circuit theory, Kirchhoff's laws, RLC components, diodes, BJT and MOSFET transistors.",
+            "subchaptersPl": [
+              "1.1. Obwody prądu stałego i zmiennego: twierdzenia Thevenina, Nortona i stany nieustalone RLC",
+              "1.2. Półprzewodnikowe elementy pasywne i aktywne: diody Zenera, Schottky'ego, tranzystory BJT",
+              "1.3. Tranzystory polowe z izolowaną bramką (MOSFET): charakterystyki statyczne i dynamiczne, komplementarne pary CMOS",
+              "1.4. Pomiary laboratoryjne: oscyloskopy cyfrowe, generatory funkcyjne i analiza szumów"
+            ],
+            "subchaptersEn": [
+              "1.1. DC and AC Circuit Analysis: Thevenin, Norton Theorems, and Transient RLC Responses",
+              "1.2. Passive & Active Semiconductor Elements: Zener, Schottky Diodes, BJT Small-Signal Models",
+              "1.3. Field-Effect Transistors (MOSFET): Static and Dynamic Regimes, Complementary CMOS Pairs",
+              "1.4. Laboratory Instrumentation: Digital Storage Oscilloscopes, Signal Generators, Noise Measurement"
+            ]
           },
           {
             "year": 2,
-            "pl": "Elektronika analogowa (wzmacniacze operacyjne, filtry, oscylatory), elektronika cyfrowa i języki opisu sprzętu Verilog/VHDL (FPGA).",
-            "en": "Analog circuits (op-amps, filters, oscillators), digital logic & FPGA design (Verilog/VHDL)."
+            "pl": "Rok 2: Wzmacniacze operacyjne, filtry aktywne, układy cyfrowe, FPGA i przetworniki ADC/DAC.",
+            "en": "Year 2: Operational amplifiers, active filters, digital logic, FPGAs, and ADC/DAC converters.",
+            "subchaptersPl": [
+              "2.1. Wzmacniacze operacyjne: sprzężenie zwrotne, wzmacniacze pomiarowe, całkujące i różniczkujące",
+              "2.2. Filtry aktywne (Butterwortha, Czebyszewa, Bessela) i układy kształtowania sygnałów",
+              "2.3. Projektowanie układów cyfrowych w językach HDL (Verilog / VHDL) i implementacja w układach FPGA",
+              "2.4. Przetworniki analogowo-cyfrowe (ADC) i cyfrowo-analogowe (DAC): rozdzielczość, aliasing i próbkowanie Nyquista"
+            ],
+            "subchaptersEn": [
+              "2.1. Operational Amplifiers: Negative Feedback, Instrumentation Amplifiers, Integrators, Differentiators",
+              "2.2. Active Analog Filters (Butterworth, Chebyshev, Bessel) and Signal Conditioning",
+              "2.3. Digital System Design in Hardware Description Languages (Verilog/VHDL) on FPGA Platforms",
+              "2.4. Data Converters (ADC/DAC): Resolution, Quantization Noise, Aliasing, and Nyquist Rate"
+            ]
           },
           {
             "year": 3,
-            "pl": "Mikrokontrolery, systemy wbudowane SoC, cyfrowe przetwarzanie sygnałów (DSP), przetworniki ADC/DAC i projekt inżynierski.",
-            "en": "Microcontrollers, embedded SoCs, DSP, precision ADC/DAC & B.Eng. hardware prototype."
+            "pl": "Rok 3: Niskoszumowa aparatura biomedyczna (tory pomiarowe EEG/EMG/BCI), zasilanie i sensory.",
+            "en": "Year 3: Low-noise biomedical instrumentation (EEG/EMG/BCI signal chains), power management, and sensors.",
+            "subchaptersPl": [
+              "3.1. Projektowanie niskoszumowych analogowych torów biopotencjałów: wzmacniacze EEG, EMG i EKG o wysokim CMRR",
+              "3.2. Izolacja galwaniczna, bezpieczeństwo pacjenta (norma PN-EN 60601) i redukcja zakłóceń sieciowych 50 Hz",
+              "3.3. Sensory biochemiczne, elektrochemiczne i optyczne (pulsoksymetria, spektroskopia fNIRS)",
+              "3.4. Układy zasilania impulsowego o wysokiej sprawności, ładowanie bezprzewodowe implantów medycznych i zarządzanie energią"
+            ],
+            "subchaptersEn": [
+              "3.1. Low-Noise Analog Front-Ends for Biopotentials: EEG, EMG, ECG Amplifiers with High CMRR",
+              "3.2. Galvanic Isolation, Patient Electrical Safety (IEC 60601), and 50/60 Hz Mains Interference Rejection",
+              "3.3. Biochemical, Electrochemical, and Optical Sensors (Pulse Oximetry, Functional NIRS)",
+              "3.4. High-Efficiency Switched-Mode Power Supplies, Wireless Implant Charging, and Energy Harvesting"
+            ]
           },
           {
             "year": 4,
-            "pl": "Aparatura biomedyczna niskoszumowa (EEG, ECoG, EMG, fNIRS), elektronika mocy i sterowanie napędami bioniczno-robotycznymi.",
-            "en": "Low-noise biomedical front-ends (EEG, ECoG, EMG, fNIRS), power electronics & bionic actuators."
+            "pl": "Rok 4: Memrystory, matryce synaptyczne ReRAM, sensory neuromorficzne (kamery DVS) i elektronika asynchroniczna.",
+            "en": "Year 4: Memristors, ReRAM synaptic crossbars, neuromorphic event-driven sensors (DVS cameras), asynchronous logic.",
+            "subchaptersPl": [
+              "4.1. Memrystory i pamięci rezystywne (ReRAM, Phase Change Memory): fizyka przełączania i modelowanie matematyczne",
+              "4.2. Matryce synaptyczne: realizacja reguły Hebbowskiej i plastyczności STDP bezpośrednio w obwodach elektronicznych",
+              "4.3. Zdarzeniowe sensory neuromorficzne: kamery DVS (Dynamic Vision Sensors) i impulsowe sensory ślimakowe",
+              "4.4. Projektowanie układów asynchronicznych (Asynchronous Sub-Threshold CMOS) emulujących dynamikę błon biologicznych"
+            ],
+            "subchaptersEn": [
+              "4.1. Memristors & Resistive RAM (ReRAM, PCM): Switching Physics and Mathematical Dynamics",
+              "4.2. Synaptic Crossbar Arrays: In-Hardware Hebbian and Spike-Timing-Dependent Plasticity (STDP)",
+              "4.3. Neuromorphic Event-Based Sensing: Dynamic Vision Sensors (DVS) and Silicon Cochleas",
+              "4.4. Sub-Threshold Asynchronous CMOS Circuit Design Emulating Biological Membrane Conductances"
+            ]
           },
           {
             "year": 5,
-            "pl": "Układy VLSI, memrystory, procesory neuromorficzne i fotoniczne oraz praca magisterska dla Projektów A i C.",
-            "en": "VLSI design, memristors, neuromorphic & photonic processors, and M.Sc. thesis for A & C."
+            "pl": "Rok 5: Projektowanie układów scalonych ASIC/neuromorficznych, elektronika kriogeniczna i praca magisterska.",
+            "en": "Year 5: ASIC/Neuromorphic chip design, cryogenic readout electronics, Master's thesis.",
+            "subchaptersPl": [
+              "5.1. Pełny cykl projektowania układów scalonych ASIC (Full-Custom & Semi-Custom) w środowiskach EDA",
+              "5.2. Elektronika kriogeniczna do odczytu i kontroli kubitów nadprzewodzących w temperaturach milikelwinowych",
+              "5.3. Odporność radiacyjna elektroniki (Radiation-Hardened Electronics) dla reaktorów jądrowych i misji kosmicznych",
+              "5.4. Praca magisterska: Projekt i symulacja układu scalonego z memrystorową matrycą synaptyczną do adaptacyjnego dekodowania sygnałów BCI"
+            ],
+            "subchaptersEn": [
+              "5.1. Full-Custom and Semi-Custom ASIC Design Flow in Modern Electronic Design Automation (EDA) Suites",
+              "5.2. Cryogenic CMOS and RF Readout Electronics for Qubits Operating at Millikelvin Temperatures",
+              "5.3. Radiation-Hardened Electronics for Nuclear Reactor Monitoring and Deep-Space Spacecraft",
+              "5.4. Master's Thesis: Design and Simulation of an ASIC with Memristive Synaptic Crossbar for Adaptive BCI Decoding"
+            ]
           }
         ]
       },
@@ -3204,34 +3705,115 @@ const DEFAULT_SEED = {
         "siteId": "SITE-B7",
         "icon": "🧪",
         "color": "#10b981",
+        "titlePl": "6. Chemia i Biochemia — Biomateriały, Hydrożele i Zamknięte Obiegi (5 lat studiów)",
+        "titleEn": "6. Chemistry & Biochemistry — Biomaterials, Hydrogels & Closed Cycles (5-Year Degree)",
         "sourceLang": "PL+EN",
-        "titlePl": "Chemia, Biochemia i Inżynieria Materiałowa (5 lat — I+II stopień)",
-        "titleEn": "Chemistry, Biochemistry & Biomaterials Engineering (5 Years — B.Sc.+M.Sc.)",
+        "linkedMaterialIds": [
+          "smat-6",
+          "smat-trk-d1"
+        ],
+        "matchedFoundationTopics": [
+          "6.1 Chemia ogólna, wiązania i stechiometria",
+          "6.2 Chemia organiczna i synteza związków węgla",
+          "6.3 Biochemia białek, kwasów nukleinowych i enzymów",
+          "6.4 Elektrochemia, ogniwa i potencjały redoks",
+          "6.5 Inżynieria biomateriałów, hydrożele tkankowe i polimery biokompatybilne",
+          "6.6 Chemia środowiska i zamknięte obiegi pierwiastków (C, N, O, P)"
+        ],
+        "coreBooksPl": [
+          "A. Bielański — 'Podstawy chemii nieorganicznej' Tom 1–2 (PWN)",
+          "OpenStax Polska — 'Chemia' (openstax.pl)",
+          "J. M. Berg, J. L. Tymoczko, L. Stryer — 'Biochemia' (PWN)"
+        ],
+        "coreBooksEn": [
+          "D. Voet, J. G. Voet — 'Biochemistry' (Wiley)",
+          "B. D. Ratner et al. — 'Biomaterials Science: An Introduction to Materials in Medicine'"
+        ],
         "years": [
           {
             "year": 1,
-            "pl": "Chemia ogólna i nieorganiczna, stechiometria, równowagi jonowe i analiza jakościowo-ilościowa (OpenStax Chemia, Bielański).",
-            "en": "General & inorganic chemistry, stoichiometry, ionic equilibria & analytical lab."
+            "pl": "Rok 1: Chemia ogólna, budowa atomu, wiązania chemiczne, stechiometria, termochemia i równowagi kwasowo-zasadowe.",
+            "en": "Year 1: General chemistry, atomic structure, chemical bonding, stoichiometry, thermochemistry, and acid-base equilibria.",
+            "subchaptersPl": [
+              "1.1. Struktura elektronowa atomów, układ okresowy pierwiastków i reguły wiązań chemicznych",
+              "1.2. Stechiometria reakcji, roztwory, stężenia i równowagi kwasowo-zasadowe (pH, bufory)",
+              "1.3. Termochemia: entalpia reakcji, entropia, energia swobodna Gibbsa i stałe równowagi chemicznej",
+              "1.4. Równowagi redoks, szereg napięciowy metali i podstawy kinetyki chemicznej"
+            ],
+            "subchaptersEn": [
+              "1.1. Atomic Electronic Structure, Periodic Trends, and Chemical Bonding Principles",
+              "1.2. Reaction Stoichiometry, Solutions, Concentrations, and Acid-Base Equilibria (pH, Buffers)",
+              "1.3. Thermochemistry: Reaction Enthalpy, Entropy, Gibbs Free Energy, and Equilibrium Constants",
+              "1.4. Redox Equilibria, Standard Electrode Potentials, and Chemical Reaction Kinetics"
+            ]
           },
           {
             "year": 2,
-            "pl": "Chemia organiczna I–II (mechanizmy reakcji, stereochemia, synteza), chemia fizyczna, termodynamika chemiczna i elektrochemia.",
-            "en": "Organic chemistry I–II, physical chemistry, chemical thermodynamics & electrochemistry."
+            "pl": "Rok 2: Chemia organiczna, grupy funkcyjne, stereochemia, mechanizmy reakcji i spektroskopia.",
+            "en": "Year 2: Organic chemistry, functional groups, stereochemistry, reaction mechanisms, and spectroscopy.",
+            "subchaptersPl": [
+              "2.1. Węglowodory alifatyczne, aromatyczne i stereochemia związków węgla (chiralność)",
+              "2.2. Związki z grupami tlenowymi i azotowymi: alkohole, fenole, aminy, kwasy karboksylowe i ich pochodne",
+              "2.3. Mechanizmy reakcji organicznych: substytucja, eliminacja, addycja i kondensacja",
+              "2.4. Identyfikacja strukturalna związków organicznych: spektroskopia NMR, FT-IR oraz spektrometria mas (MS)"
+            ],
+            "subchaptersEn": [
+              "2.1. Aliphatic and Aromatic Hydrocarbons, Stereochemistry and Molecular Chirality",
+              "2.2. Oxygen- and Nitrogen-Containing Compounds: Alcohols, Amines, Carboxylic Acids and Derivatives",
+              "2.3. Organic Reaction Mechanisms: Substitution, Elimination, Addition, and Condensation",
+              "2.4. Structural Characterization: NMR Spectroscopy, FT-IR, and Mass Spectrometry (MS)"
+            ]
           },
           {
             "year": 3,
-            "pl": "Biochemia strukturalna i metaboliczna (Stryer: białka, enzymy, kwasy nukleinowe), spektroskopia (NMR, MS, IR) i dyplom I stopnia.",
-            "en": "Structural & metabolic biochemistry (Stryer), spectroscopy (NMR, MS, IR) & B.Sc. thesis."
+            "pl": "Rok 3: Biochemia strukturalna, białka, enzymy, metabolizm komórkowy, kwasy nukleinowe i bioenergetyka.",
+            "en": "Year 3: Structural biochemistry, proteins, enzymes, cellular metabolism, nucleic acids, and bioenergetics.",
+            "subchaptersPl": [
+              "3.1. Struktura i kinetyka enzymatyczna (równanie Michaelisa-Menten, allosteria i inhibicja enzymów)",
+              "3.2. Szlaki metaboliczne: glikoliza, cykl Krebsa, fosforylacja oksydacyjna i bilans ATP",
+              "3.3. Biochemia lipidów i błon komórkowych: fosfolipidy, tratwy lipidowe i receptory błonowe",
+              "3.4. Biochemia kwasów nukleinowych: struktura DNA/RNA, biosynteza i mechanizmy naprawy DNA"
+            ],
+            "subchaptersEn": [
+              "3.1. Protein Structure & Enzyme Kinetics (Michaelis-Menten, Allosteric Regulation, Inhibition)",
+              "3.2. Metabolic Pathways: Glycolysis, Krebs Cycle, Oxidative Phosphorylation, and ATP Synthesis",
+              "3.3. Lipid and Membrane Biochemistry: Phospholipids, Lipid Rafts, and Transmembrane Receptors",
+              "3.4. Nucleic Acid Biochemistry: DNA/RNA Architecture, Biosynthesis, and DNA Repair Pathways"
+            ]
           },
           {
             "year": 4,
-            "pl": "Chemia polimerów biokompatybilnych i hydrożeli tkankowych, radiochemia izotopów medycznych i chemia jądrowego cyklu paliwowego.",
-            "en": "Biocompatible polymers & hydrogels, medical isotope radiochemistry & nuclear fuel chemistry."
+            "pl": "Rok 4: Chemia materiałów medycznych, polimery biokompatybilne, hydrożele tkankowe i elektrochemia sensorów.",
+            "en": "Year 4: Medical materials chemistry, biocompatible polymers, tissue hydrogels, and electrochemical sensing.",
+            "subchaptersPl": [
+              "4.1. Polimery biokompatybilne i biodegradowalne (PLA, PGA, PCL, PEG) do nośników leków i rusztowań tkankowych",
+              "4.2. Hydrożele biomimetyczne: sieciowanie chemiczne i fizyczne, pęcznienie i gradienty mechaniczne w inżynierii tkanek",
+              "4.3. Zjawiska na granicy faz ciało stałe–ciecz: adsorpcja białek i odpowiedź immunologiczna (Foreign Body Response)",
+              "4.4. Elektrochemia interfejsów nerwowych: polimery przewodzące (PEDOT:PSS), elektrody platynowo-irydowe i mikroczujniki"
+            ],
+            "subchaptersEn": [
+              "4.1. Biocompatible & Biodegradable Polymers (PLA, PGA, PCL, PEG) for Drug Delivery & Tissue Scaffolds",
+              "4.2. Biomimetic Hydrogels: Chemical/Physical Crosslinking, Swelling Dynamics, Stiffness Gradients",
+              "4.3. Solid-Liquid Bio-Interfaces: Protein Adsorption Kinetics and the Foreign Body Response",
+              "4.4. Electrochemistry of Neural Interfaces: Conducting Polymers (PEDOT:PSS), Pt-Ir Electrodes, Microsensors"
+            ]
           },
           {
             "year": 5,
-            "pl": "Zamknięte obiegi katalityczne (regeneracja O2/H2O Sabatiera–Boscha dla kosmosu), chemia środowiska i praca magisterska.",
-            "en": "Closed-loop catalytic life-support chemistry (Sabatier/Bosch), environmental chemistry & M.Sc."
+            "pl": "Rok 5: Zamknięte obiegi chemiczne w habitatach kosmicznych, inżynieria katalizy środowiskowej, praca magisterska.",
+            "en": "Year 5: Closed chemical loops for space habitats, environmental catalysis engineering, Master's thesis.",
+            "subchaptersPl": [
+              "5.1. Zamknięte obiegi chemiczne: regeneracja tlenu (elektroliza wody, reakcja Sabatiera, redukcja Boscha)",
+              "5.2. Oczyszczanie wody i recykling odpadów ciekłych w układach podtrzymywania życia (ECLSS)",
+              "5.3. Zaawansowane materiały do magazynowania energii: akumulatory ze stałym elektrolitem (solid-state) i ogniwa paliwowe",
+              "5.4. Praca magisterska: Synteza i charakterystyka biokompatybilnego hydrożelu przewodzącego do integracji z tkanką nerwową"
+            ],
+            "subchaptersEn": [
+              "5.1. Closed Chemical Cycles: Oxygen Recovery (Water Electrolysis, Sabatier Reaction, Bosch Process)",
+              "5.2. Water Purification and Liquid Waste Recycling in Environmental Life Support Systems (ECLSS)",
+              "5.3. Advanced Energy Storage Materials: Solid-State Lithium Batteries and High-Temperature Fuel Cells",
+              "5.4. Master's Thesis: Synthesis & Characterization of a Biocompatible Conducting Hydrogel for Neural Integration"
+            ]
           }
         ]
       },
@@ -3242,34 +3824,116 @@ const DEFAULT_SEED = {
         "siteId": "SITE-B7",
         "icon": "🧬",
         "color": "#22c55e",
+        "titlePl": "7. Biologia i Neurobiologia — Konektom, Organoidy i Fizjologia Człowieka (5 lat studiów)",
+        "titleEn": "7. Biology & Neurobiology — Connectome, Organoids & Human Physiology (5-Year Degree)",
         "sourceLang": "PL+EN",
-        "titlePl": "Biologia Molekularna, Neurobiologia i Fizjologia Człowieka (5 lat — I+II stopień)",
-        "titleEn": "Molecular Biology, Neurobiology & Human Physiology (5 Years — B.Sc.+M.Sc.)",
+        "linkedMaterialIds": [
+          "smat-7",
+          "smat-trk-d1",
+          "smat-trk-b1"
+        ],
+        "matchedFoundationTopics": [
+          "7.1 Biologia komórki i sygnalizacja wewnątrzkomórkowa",
+          "7.2 Genetyka, genomika i edycja genów CRISPR",
+          "7.3 Anatomia i fizjologia człowieka (układ nerwowy, krążenia, odpornościowy)",
+          "7.4 Neurobiologia, synapsy i plastyczność mózgu",
+          "7.5 Biologia rozwoju, komórki macierzyste i regeneracja tkanek",
+          "7.6 Ekologia biosfery i mikrobiom"
+        ],
+        "coreBooksPl": [
+          "N. A. Campbell et al. — 'Biologia' (Rebis)",
+          "B. Alberts et al. — 'Podstawy biologii komórki' Tom 1–2 (PWN)",
+          "T. A. Brown — 'Genomy' (PWN)"
+        ],
+        "coreBooksEn": [
+          "E. R. Kandel et al. — 'Principles of Neural Science' (McGraw-Hill)",
+          "P. Dayan, L. F. Abbott — 'Theoretical Neuroscience: Computational and Mathematical Modeling of Neural Systems'"
+        ],
         "years": [
           {
             "year": 1,
-            "pl": "Biologia komórki, histologia, anatomia prawidłowa człowieka i podstawy ewolucjonizmu (Biologia Campbella, Alberts).",
-            "en": "Cell biology, histology, human anatomy & evolutionary biology (Campbell, Alberts)."
+            "pl": "Rok 1: Biologia komórki, organelle, transport błonowy, cykl komórkowy, mitoza, mejoza i podstawy genetyki mendlowskiej.",
+            "en": "Year 1: Cell biology, organelles, membrane transport, cell cycle, mitosis, meiosis, and Mendelian genetics.",
+            "subchaptersPl": [
+              "1.1. Budowa komórki eukariotycznej i prokariotycznej, cytoszkielet i dynamika organelli",
+              "1.2. Błona komórkowa: transport aktywny i pasywny, pompy jonowe (Na+/K+-ATPaza) i potencjał spoczynkowy",
+              "1.3. Cykl komórkowy, mechanizmy kontrolne, mitoza, mejoza oraz programowana śmierć komórki (apoptoza)",
+              "1.4. Genetyka klasyczna: prawa Mendla, dziedziczenie cech sprzężonych i mutacje genowe"
+            ],
+            "subchaptersEn": [
+              "1.1. Eukaryotic and Prokaryotic Cell Architecture, Cytoskeleton, and Organelle Dynamics",
+              "1.2. Cell Membrane Transport: Active and Passive Transport, Na+/K+-ATPase, Resting Potential",
+              "1.3. Cell Cycle Regulation, Checkpoints, Mitosis, Meiosis, and Programmed Cell Death (Apoptosis)",
+              "1.4. Mendelian Genetics: Laws of Inheritance, Linkage, Recombination, and Chromosomal Mutations"
+            ]
           },
           {
             "year": 2,
-            "pl": "Biologia molekularna, genetyka klasyczna i genomika (Brown „Genomy”), mikrobiologia i immunologia podstawowa.",
-            "en": "Molecular biology, genetics & genomics (Brown), microbiology & immunology."
+            "pl": "Rok 2: Biologia molekularna, ekspresja genów, epigenetyka, genomika i edycja genomu (CRISPR-Cas9).",
+            "en": "Year 2: Molecular biology, gene expression, epigenetics, genomics, and genome editing (CRISPR-Cas9).",
+            "subchaptersPl": [
+              "2.1. Dogmat centralny biologii molekularnej: replikacja DNA, transkrypcja i translacja",
+              "2.2. Regulacja ekspresji genów: promotory, czynniki transkrypcyjne i modyfikacje potranslacyjne",
+              "2.3. Epigenetyka: metylacja DNA, modyfikacje histonów i niekodujące RNA (miRNA, lncRNA)",
+              "2.4. Inżynieria genetyczna: sekwencjonowanie NGS, edycja genów CRISPR-Cas9/Cas12 oraz terapia genowa"
+            ],
+            "subchaptersEn": [
+              "2.1. Central Dogma of Molecular Biology: DNA Replication, Transcription, and Translation",
+              "2.2. Gene Expression Control: Promoters, Enhancers, Transcription Factors, Post-Translational Modifiers",
+              "2.3. Epigenetics: DNA Methylation, Histone Acetylation, and Regulatory Non-Coding RNAs (miRNA, lncRNA)",
+              "2.4. Genetic Engineering: Next-Gen Sequencing (NGS), CRISPR-Cas9/Cas12 Gene Editing, and Gene Therapy"
+            ]
           },
           {
             "year": 3,
-            "pl": "Fizjologia układów człowieka (nerwowy, krążenia, oddechowy, hormonalny), biofizyka błon komórkowych i licencjat.",
-            "en": "Human systems physiology, membrane biophysics & B.Sc. thesis."
+            "pl": "Rok 3: Anatomia i fizjologia człowieka: układ nerwowy, krążenia, mięśniowy, odpornościowy i endokrynny.",
+            "en": "Year 3: Human anatomy and physiology: nervous, cardiovascular, muscular, immune, and endocrine systems.",
+            "subchaptersPl": [
+              "3.1. Układ nerwowy: anatomia ośrodkowego i obwodowego układu nerwowego, drogi zstępujące i wstępujące",
+              "3.2. Fizjologia układu krążenia i oddechowego: hemodynamika, transport gazów i adaptacja do wysiłku",
+              "3.3. Układ odpornościowy: odporność wrodzona i nabyta, limfocyty T i B, autoprzeciwciała i tolerancja immunologiczna",
+              "3.4. Układ endokrynny: osie hormonalne (podwzgórze-przysadka-nadnercza), homeostaza glukozy i rytmy dobowe"
+            ],
+            "subchaptersEn": [
+              "3.1. Nervous System Anatomy: Central & Peripheral Systems, Ascending Sensory & Descending Motor Tracts",
+              "3.2. Cardiovascular & Respiratory Physiology: Hemodynamics, Gas Exchange, and Aerobic Stress Adaptation",
+              "3.3. Immunology: Innate and Adaptive Immunity, T/B-Cell Differentiation, Tolerance & Autoimmunity",
+              "3.4. Endocrine System: HPA Axis, Metabolic Glucose Homeostasis, and Circadian Biological Rhythms"
+            ]
           },
           {
             "year": 4,
-            "pl": "Neurobiologia komórkowa i systemowa (Kandel), elektrofizjologia synaps, embriologia, komórki macierzyste i organoidy.",
-            "en": "Cellular & systems neurobiology (Kandel), synaptic electrophysiology, stem cells & organoids."
+            "pl": "Rok 4: Neurobiologia komórkowa i układowa, synapsy, plastyczność Hebbowska (LTP/LTD) i narządy zmysłów.",
+            "en": "Year 4: Cellular & systems neurobiology, synapses, Hebbian plasticity (LTP/LTD), sensory systems.",
+            "subchaptersPl": [
+              "4.1. Elektrofizjologia neuronu: potencjał czynnościowy, kanały bramkowane napięciem i równanie Goldmana",
+              "4.2. Transmisja synaptyczna chemiczna i elektryczna (gap junctions), neuroprzekaźniki (glutaminian, GABA, dopamina)",
+              "4.3. Plastyczność synaptyczna: długotrwałe wzmocnienie (LTP), wygaszanie (LTD) i reguła Spike-Timing-Dependent Plasticity",
+              "4.4. Układy zmysłów: przetwarzanie w siatkówce oka, kora wzrokowa V1–V4, ślimak i układ somatosensoryczny"
+            ],
+            "subchaptersEn": [
+              "4.1. Neuron Electrophysiology: Action Potentials, Voltage-Gated Ion Channels, Goldman-Hodgkin-Katz Equation",
+              "4.2. Synaptic Transmission: Chemical and Electrical Gap Junctions, Neurotransmitters (Glutamate, GABA, Dopamine)",
+              "4.3. Synaptic Plasticity: Long-Term Potentiation (LTP), Depression (LTD), and Spike-Timing-Dependent Plasticity",
+              "4.4. Sensory Systems: Retinal Processing, Visual Cortex V1–V4 Hierarchy, Cochlear Transduction, Somatosensory"
+            ]
           },
           {
             "year": 5,
-            "pl": "Ekologia systemowa biosfery, fizjologia ekstremalna (mikrograwitacja, radiacja) i praca magisterska (Projekty A/B/D/F/G).",
-            "en": "Systems biosphere ecology, extreme space physiology & M.Sc. thesis (Projects A/B/D/F/G)."
+            "pl": "Rok 5: Komórki macierzyste, hodowla organoidów mózgowych, konektomika wysokiej rozdzielczości, praca magisterska.",
+            "en": "Year 5: Stem cells, brain organoid cultures, high-resolution connectomics, Master's thesis.",
+            "subchaptersPl": [
+              "5.1. Indukowane pluripotencjalne komórki macierzyste (iPSC) i różnicowanie w kierunku neuronów i komórek glejowych",
+              "5.2. Hodowla trójwymiarowych organoidów mózgowych: samoorganizacja, powstawanie warstw korowych i spontaniczna aktywność",
+              "5.3. Metody konektomiki w nanoskali: mikroskopia elektronowa skaningowa (FIB-SEM), mikroskopia dwufotonowa i optogenetyka",
+              "5.4. Praca magisterska: Analiza elektrofizjologiczna i konektomiczna spontanicznej aktywności w hodowli organoidu korowego"
+            ],
+            "subchaptersEn": [
+              "5.1. Induced Pluripotent Stem Cells (iPSCs) and Directed Differentiation into Neurons and Glia",
+              "5.2. 3D Brain Organoid Engineering: Self-Organization, Cortical Layering, and Spontaneous Synchrony",
+              "5.3. Nanoscale Connectomics Techniques: Serial FIB-SEM Electron Microscopy, Two-Photon Imaging, Optogenetics",
+              "5.4. Master's Thesis: Electrophysiological and Connectomic Analysis of Synchronous Firing in Cortical Organoids"
+            ]
           }
         ]
       },
@@ -3280,34 +3944,116 @@ const DEFAULT_SEED = {
         "siteId": "SITE-Y15",
         "icon": "🤖",
         "color": "#a855f7",
+        "titlePl": "8. Sztuczna Inteligencja — Modele Kognitywne, Dekodowanie BCI i Uczenie Przez Wzmocnienie (5 lat)",
+        "titleEn": "8. Artificial Intelligence — Cognitive Models, BCI Decoding & Reinforcement Learning (5-Year)",
         "sourceLang": "PL+EN",
-        "titlePl": "Sztuczna Inteligencja, Uczenie Maszynowe i Systemy Wieloagentowe (5 lat — I+II stopień)",
-        "titleEn": "Artificial Intelligence, Deep Learning & Multi-Agent Systems (5 Years — B.Sc.+M.Sc.)",
+        "linkedMaterialIds": [
+          "smat-8",
+          "smat-trk-b1",
+          "smat-trk-a1"
+        ],
+        "matchedFoundationTopics": [
+          "8.1 Uczenie maszynowe klasyczne i optymalizacja gradientowa",
+          "8.2 Głębokie sieci neuronowe (CNN, Transformers, GNN)",
+          "8.3 Uczenie ze wzmocnieniem (RL) i sterowanie robotami",
+          "8.4 Dekodowanie sygnałów mózgowych (BCI) i biologia strukturalna",
+          "8.5 Porównanie architektur AI z biologicznym mózgiem człowieka",
+          "8.6 Rygor epistemiczny, interpretowalność (XAI) i bezpieczeństwo modeli"
+        ],
+        "coreBooksPl": [
+          "I. Goodfellow, Y. Bengio, A. Courville — 'Głębokie uczenie' (PWN)",
+          "S. Russell, P. Norvig — 'Sztuczna inteligencja. Nowoczesne podejście' (Helion)",
+          "R. S. Sutton, A. G. Barto — 'Uczenie przez wzmocnienie' (PWN)"
+        ],
+        "coreBooksEn": [
+          "F. Chollet — 'Deep Learning with Python'",
+          "E. Alpaydin — 'Introduction to Machine Learning'"
+        ],
         "years": [
           {
             "year": 1,
-            "pl": "Matematyczne podstawy ML, optymalizacja wypukła, klasyczne uczenie maszynowe i eksploracja danych (Géron, scikit-learn).",
-            "en": "Mathematical foundations of ML, convex optimization & classical machine learning (Géron)."
+            "pl": "Rok 1: Podstawy uczenia maszynowego, regresja liniowa i logistyczna, drzewa decyzyjne i optymalizacja gradientowa.",
+            "en": "Year 1: Machine learning fundamentals, linear and logistic regression, decision trees, and gradient optimization.",
+            "subchaptersPl": [
+              "1.1. Zadania uczenia nadzorowanego, nienadzorowanego i samonadzorowanego; funkcje kosztu i metryki błędu",
+              "1.2. Regresja liniowa i logistyczna, regularyzacja L1/L2 (Lasso, Ridge) i problem przeuczenia (overfitting)",
+              "1.3. Algorytmy optymalizacji gradientowej: SGD, Momentum, RMSprop, Adam i techniki harmonogramowania kroku uczenia",
+              "1.4. Drzewa decyzyjne, lasy losowe (Random Forests) i algorytmy gradientowego wzmacniania (XGBoost, LightGBM)"
+            ],
+            "subchaptersEn": [
+              "1.1. Supervised, Unsupervised, and Self-Supervised Paradigms; Loss Functions and Error Metrics",
+              "1.2. Linear and Logistic Regression, Regularization (L1/L2, Lasso, Ridge), and Overfitting Mitigation",
+              "1.3. Gradient Optimization Algorithms: Stochastic Gradient Descent, Momentum, RMSprop, Adam, Learning Rate Schedulers",
+              "1.4. Decision Trees, Random Forests, and Gradient Boosting Frameworks (XGBoost, LightGBM)"
+            ]
           },
           {
             "year": 2,
-            "pl": "Głębokie sieci neuronowe (PyTorch/JAX): architektury CNN, rekurencyjne, Transformery i modele generatywne.",
-            "en": "Deep neural networks (PyTorch/JAX): CNNs, sequence models, Transformers & generative models."
+            "pl": "Rok 2: Głębokie sieci neuronowe, propagacja wsteczna błędu, konwolucyjne sieci CNN i przetwarzanie sygnałów.",
+            "en": "Year 2: Deep neural networks, backpropagation, convolutional networks (CNN), and signal processing.",
+            "subchaptersPl": [
+              "2.1. Wielowarstwowe perceptrony (MLP), funkcje aktywacji (ReLU, GELU, Swish) i matematyka wstecznej propagacji błędu",
+              "2.2. Konwolucyjne sieci neuronowe (CNN): warstwy splotowe, pooling, architektury ResNet, EfficientNet i ConvNeXt",
+              "2.3. Przetwarzanie sygnałów czasowych: rekurencyjne sieci neuronowe (RNN), komórki LSTM i GRU",
+              "2.4. Metody wizualizacji cech wewnętrznych i interpretowalności wstępnej (Grad-CAM, saliency maps)"
+            ],
+            "subchaptersEn": [
+              "2.1. Multi-Layer Perceptrons (MLP), Activation Functions (ReLU, GELU, Swish), Backpropagation Calculus",
+              "2.2. Convolutional Neural Networks (CNN): Convolutions, Pooling, Residual Connections (ResNet, ConvNeXt)",
+              "2.3. Temporal Sequence Processing: Recurrent Neural Networks (RNN), LSTM, and GRU Memory Cells",
+              "2.4. Feature Attribution and Explainability Methods (Grad-CAM, Integrated Gradients, Saliency Maps)"
+            ]
           },
           {
             "year": 3,
-            "pl": "Uczenie ze wzmocnieniem (RL), sterowanie robotyczne, wizja komputerowa, przetwarzanie języka i projekt inżynierski AI.",
-            "en": "Reinforcement learning (RL), robotic control, computer vision, NLP & B.Eng. AI project."
+            "pl": "Rok 3: Architektura Transformerów, mechanizm uwagi (Self-Attention), modele językowe (LLM) i grafowe sieci (GNN).",
+            "en": "Year 3: Transformer architecture, self-attention mechanisms, large language models (LLMs), and Graph Neural Networks (GNN).",
+            "subchaptersPl": [
+              "3.1. Mechanizm uwagi (Scaled Dot-Product Attention) i architektura Transformer (enkoder-dekoder)",
+              "3.2. Wielkie modele językowe (LLM): tokenizacja, pre-training samonadzorowany, fine-tuning (LoRA, QLoRA) i RLHF",
+              "3.3. Grafowe sieci neuronowe (GNN): propagacja wiadomości (Message Passing), modelowanie struktur molekularnych i białek",
+              "3.4. Modele generatywne: dyfuzja (Diffusion Models), modele przepływowe (Normalizing Flows) i autoregresyjne"
+            ],
+            "subchaptersEn": [
+              "3.1. Attention Mechanisms (Scaled Dot-Product Attention) and Full Transformer Architectures",
+              "3.2. Large Language Models (LLMs): Tokenization, Self-Supervised Pre-Training, Parameter-Efficient Tuning (LoRA), RLHF",
+              "3.3. Graph Neural Networks (GNN): Message Passing Schemas for Molecular and Connectomic Graph Embeddings",
+              "3.4. Generative Modeling: Denoising Diffusion Probabilistic Models, Normalizing Flows, and Autoregressive Encoders"
+            ]
           },
           {
             "year": 4,
-            "pl": "Impulsowe sieci neuronowe (SNN), dekodowanie sygnałów mózgowych BCI/fMRI, AI w biologii strukturalnej i fizyce reaktorowej.",
-            "en": "Spiking Neural Networks (SNN), BCI/fMRI neural decoding, AI for structural biology & reactor physics."
+            "pl": "Rok 4: Uczenie przez wzmocnienie (RL), sterowanie robotami, dekodowanie sygnałów nerwowych i interfejsy BCI.",
+            "en": "Year 4: Reinforcement learning (RL), robotic control, neural signal decoding, and BCI interfaces.",
+            "subchaptersPl": [
+              "4.1. Uczenie przez wzmocnienie: równanie Bellmana, Q-learning, Deep Q-Networks (DQN) i metody Policy Gradient (PPO, SAC)",
+              "4.2. Uczenie przez wzmocnienie w sterowaniu robotami: przestrzeń ciągłych akcji, symulatory fizyki (Isaac Gym, MuJoCo)",
+              "4.3. Zastosowania AI w dekodowaniu sygnałów mózgowych (EEG, ECoG, intracortical arrays): klasyfikacja intencji ruchowej i mowy",
+              "4.4. Modele fałdowania białek i bioinformatyka AI (AlphaFold 2/3, RoseTTAFold, ESMFold)"
+            ],
+            "subchaptersEn": [
+              "4.1. Reinforcement Learning Foundations: Bellman Optimality, Q-Learning, Deep Q-Networks, Policy Gradients (PPO, SAC)",
+              "4.2. Deep RL in Physical Robotics: Continuous Action Spaces, Physics Engines (NVIDIA Isaac Gym, MuJoCo)",
+              "4.3. Neural Signal Decoding with AI (EEG, ECoG, Microelectrode Arrays): Motor & Speech Intent Reconstruction",
+              "4.4. AI-Driven Structural Biology: Protein Folding Prediction (AlphaFold 2/3, ESMFold, Molecular Docking)"
+            ]
           },
           {
             "year": 5,
-            "pl": "Architektury wieloagentowe (MAS), interpretowalność (XAI), alignment, bezpieczeństwo AI i praca magisterska.",
-            "en": "Multi-Agent Systems (MAS), interpretability (XAI), AI safety/alignment & M.Sc. thesis."
+            "pl": "Rok 5: Architektury kognitywne, porównanie AI z mózgiem biologicznym, bezpieczeństwo i rygor epistemiczny, praca magisterska.",
+            "en": "Year 5: Cognitive architectures, biological brain vs. AI alignment, safety, epistemic rigor, Master's thesis.",
+            "subchaptersPl": [
+              "5.1. Architektury kognitywne: pamięć robocza, modele świata, planowanie hierarchiczne i samouczenie się w środowisku",
+              "5.2. Krytyczne porównanie mechanizmów AI z mózgiem człowieka: sprawność energetyczna (20W vs. kW), uczenie z pojedynczych przykładów",
+              "5.3. Rygor epistemiczny i bezpieczeństwo AI: wykrywanie halucynacji, weryfikacja formalna i zgodność z EU AI Act",
+              "5.4. Praca magisterska: Implementacja głębokiego modelu dekodowania intencji motorycznej z sygnałów nerwowych w czasie rzeczywistym"
+            ],
+            "subchaptersEn": [
+              "5.1. Cognitive Architectures: Working Memory, Internal World Models, Hierarchical Planning, Autonomous Exploration",
+              "5.2. Comparative Analysis of AI vs. Biological Brain: Energy Efficiency (20W vs. Kilowatts), Few-Shot Generalization",
+              "5.3. AI Epistemic Rigor & Safety: Hallucination Mitigation, Formal Verification, and EU AI Act Compliance Auditing",
+              "5.4. Master's Thesis: Real-Time Deep Learning Decoder of Motor Intent from High-Density Neural Activity"
+            ]
           }
         ]
       },
@@ -3318,34 +4064,115 @@ const DEFAULT_SEED = {
         "siteId": "SITE-B7",
         "icon": "🦾",
         "color": "#38bdf8",
+        "titlePl": "Projekt A: Człowiek Biocyfrowo-Robotyczny (5 lat studiów)",
+        "titleEn": "Project A: Bio-Digital-Robotic Human (5-Year Degree)",
         "sourceLang": "PL+EN",
-        "titlePl": "Projekt A: Inżynieria Biomedyczna, Bionika i Neuroinżynieria (5 lat)",
-        "titleEn": "Project A: Biomedical Engineering, Bionics & Neuroengineering (5 Years)",
+        "linkedMaterialIds": [
+          "smat-trk-a1",
+          "smat-5",
+          "smat-8"
+        ],
+        "matchedFoundationTopics": [
+          "FND-1",
+          "FND-2",
+          "FND-3",
+          "FND-5",
+          "FND-7",
+          "FND-8"
+        ],
+        "coreBooksPl": [
+          "B. D. Ratner — 'Inżynieria biomedyczna i biomateriały' (PWN)",
+          "P. Horowitz — 'Sztuka elektroniki: Układy pomiarowe' (WKŁ)"
+        ],
+        "coreBooksEn": [
+          "J. M. Carmena — 'Brain-Machine Interfaces'",
+          "M. A. Lebedev, M. A. L. Nicolelis — 'Brain-Machine Interfaces: From Basic Science to Neuroprostheses and Neurorehabilitation'"
+        ],
         "years": [
           {
             "year": 1,
-            "pl": "Anatomia i biomechanika układu ruchu, materiałoznawstwo medyczne, podstawy elektroniki i sygnałów biomedycznych.",
-            "en": "Musculoskeletal biomechanics, medical materials, biomedical signals & electronics."
+            "pl": "Rok 1: Neuroanatomia funkcjonalna układu ruchu, biomechanika i fizyczne podstawy protezowania.",
+            "en": "Year 1: Functional neuroanatomy of movement, biomechanics, and physical foundations of prosthetics.",
+            "subchaptersPl": [
+              "1.1. Neuroanatomia rdzenia kręgowego, nerwów obwodowych i kory ruchowej M1",
+              "1.2. Biomechanika kończyn górnych i dolnych: kinematyka, siły mięśniowe i trajektorie ruchu",
+              "1.3. Pomiary elektromiograficzne (EMG): elektrody powierzchniowe i domięśniowe",
+              "1.4. Podstawowe protezy mechaniczne i sensoryczny feedback proprioceptywny"
+            ],
+            "subchaptersEn": [
+              "1.1. Neuroanatomy of Spinal Cord, Peripheral Nerves, and Primary Motor Cortex M1",
+              "1.2. Upper and Lower Limb Biomechanics: Kinematics, Muscle Forces, and Movement Trajectories",
+              "1.3. Electromyographic (EMG) Sensing: Surface and Intramuscular Electrode Arrays",
+              "1.4. Mechanical Prosthetics and Proprioceptive Sensory Feedback Foundations"
+            ]
           },
           {
             "year": 2,
-            "pl": "Sensory i aktuatory medyczne, biokompatybilność implantów, przetwarzanie sygnałów EEG/EMG/EKG/fNIRS.",
-            "en": "Medical sensors & actuators, implant biocompatibility, EEG/EMG/ECG/fNIRS signal processing."
+            "pl": "Rok 2: Egzoszkielety, aktuatory bioniczne, sterowanie impedancyjne i sensoryka proprioceptywna.",
+            "en": "Year 2: Exoskeletons, bionic actuators, impedance control, and proprioceptive sensors.",
+            "subchaptersPl": [
+              "2.1. Konstrukcja egzoszkieletów rehabilitacyjnych i wspomagających: ramy kompozytowe i stopy tytanu",
+              "2.2. Aktuatory bioniczne: bezszczotkowe silniki BLDC, sztuczne mięśnie pneumatyczne (PMA) i stopy z pamięcią kształtu",
+              "2.3. Algorytmy sterowania siłowego i impedancyjnego egzoszkieletem w czasie rzeczywistym",
+              "2.4. Sensoryka nacisku, tensometria i wielokanałowa telemetria biomechaniczna"
+            ],
+            "subchaptersEn": [
+              "2.1. Rehabilitation & Assistive Exoskeleton Design: Carbon-Fiber Frames & Titanium Alloys",
+              "2.2. Bionic Actuators: BLDC Motors, Pneumatic Artificial Muscles (PAMs), Shape Memory Alloys",
+              "2.3. Force and Impedance Control Algorithms for Real-Time Human-Machine Interaction",
+              "2.4. Pressure Distribution Sensors, Strain Gauges, and Multichannel Biomechanical Telemetry"
+            ]
           },
           {
             "year": 3,
-            "pl": "Mechatronika protetyczna, egzoszkielety rehabilitacyjne, sztuczne narządy wspomagające i projekt inżynierski.",
-            "en": "Prosthetic mechatronics, rehabilitation exoskeletons, artificial organs & B.Eng. design."
+            "pl": "Rok 3: Inwazyjne i nieinwazyjne interfejsy mózg-komputer (BCI), elektrody Utah i mikrokable neuropodobne.",
+            "en": "Year 3: Invasive and non-invasive brain-computer interfaces (BCI), Utah arrays, and flexible neuropixels.",
+            "subchaptersPl": [
+              "3.1. Porównanie interfejsów BCI: EEG, fNIRS, ECoG, elektrody penetrujące (Utah Array, Neuropixels)",
+              "3.2. Biokompatybilność długoterminowa elektrod: zjawisko powstawania blizny glejowej i degradacji sygnału",
+              "3.3. Przetwarzanie sygnałów nerwowych: detekcja iglic (spike sorting), potencjały polowe LFP i analiza częstotliwościowa",
+              "3.4. Dwukierunkowe BCI: mikrocyfrowa stymulacja kory somatosensorycznej przywracająca czucie dotyku"
+            ],
+            "subchaptersEn": [
+              "3.1. Comparative BCI Modalities: Scalp EEG, fNIRS, ECoG, and Penetrating Probes (Utah Array, Neuropixels)",
+              "3.2. Long-Term Biocompatibility: Glial Scar Formation, Immune Rejection, and Signal Attenuation",
+              "3.3. Neural Signal Processing: Spike Sorting, Local Field Potentials (LFP), and Wavelet Time-Frequency Analysis",
+              "3.4. Bidirectional Closed-Loop BCIs: Intracortical Microstimulation Restoring Tactile Sensation"
+            ]
           },
           {
             "year": 4,
-            "pl": "Inwazyjne i nieinwazyjne interfejsy mózg–komputer (BCI), neurostymulacja zamkniętej pętli i dekodowanie intencji ruchowej.",
-            "en": "Invasive & non-invasive Brain-Computer Interfaces (BCI), closed-loop neurostimulation."
+            "pl": "Rok 4: Zamknięte pętle bio-cybernetyczne, integracja nerwowo-mechaniczna i adaptacyjne protezy bioniczne.",
+            "en": "Year 4: Closed-loop bio-cybernetic circuits, neural osseointegration, and adaptive bionic limbs.",
+            "subchaptersPl": [
+              "4.1. Chirurgiczne techniki przygotowania kikuta: ukierunkowane unerwienie mięśniowe (TMR - Targeted Muscle Reinnervation)",
+              "4.2. Osteointegracja: bezpośrednie mocowanie tytanowego implantu bionicznego do kości szkieletu",
+              "4.3. Sterowanie bioniczne oparte na uczeniu maszynowym: ciągłe dekodowanie intencji ruchowych z sygnałów EMG/BCI",
+              "4.4. Kompensacja latencji i stabilność układów zamkniętej pętli człowiek–proteza"
+            ],
+            "subchaptersEn": [
+              "4.1. Surgical Neuro-Interfacing: Targeted Muscle Reinnervation (TMR) and Regenerative Peripheral Nerve Interfaces",
+              "4.2. Osseointegration: Direct Skeletal Titanium Anchor Fixing with Percutaneous Bio-Feedthroughs",
+              "4.3. Machine-Learning-Driven Bionic Prosthetics: Continuous Decoding of Kinematics from EMG/BCI",
+              "4.4. Latency Compensation and Stability Analysis in Closed-Loop Human-Prosthesis Systems"
+            ]
           },
           {
             "year": 5,
-            "pl": "Integracja kliniczna człowiek–maszyna, bezpieczeństwo cybernetyczne implantów i praca magisterska z neurobioniki.",
-            "en": "Clinical human-machine integration, implant cybersecurity & M.Sc. thesis in neurobionics."
+            "pl": "Rok 5: Zaawansowane protezowanie zmysłów, bezpieczeństwo kliniczne, etyka augmentacji, praca magisterska.",
+            "en": "Year 5: Advanced sensory neuroprosthetics, clinical safety, augmentation ethics, Master's thesis.",
+            "subchaptersPl": [
+              "5.1. Bioniczne protezy zmysłów: implanty ślimakowe, implanty siatkówkowe i stymulacja kory wzrokowej",
+              "5.2. Odporność na zakłócenia elektromagnetyczne (EMC) i bezpieczeństwo implantów w środowisku MRI",
+              "5.3. Etyczne, prawne i tożsamościowe aspekty augmentacji ciała ludzkiego",
+              "5.4. Praca magisterska: Kompletny system sterowania bioniczną dłonią z zamkniętą pętlą czuciową w czasie rzeczywistym"
+            ],
+            "subchaptersEn": [
+              "5.1. Sensory Neuroprostheses: Cochlear Implants, Epiretinal Arrays, and Direct Visual Cortex Stimulation",
+              "5.2. Electromagnetic Compatibility (EMC) and MRI Safety Guidelines for Active Implantable Medical Devices",
+              "5.3. Ethical, Legal, and Identity Implications of Human Physical Augmentation",
+              "5.4. Master's Thesis: Fully Integrated Closed-Loop Bionic Hand Control with Real-Time Sensory Feedback"
+            ]
           }
         ]
       },
@@ -3355,35 +4182,118 @@ const DEFAULT_SEED = {
         "refId": "B",
         "siteId": "SITE-Y15",
         "icon": "🧠",
-        "color": "#818cf8",
+        "color": "#60a5fa",
+        "titlePl": "Projekt B: Cyfrowy Umysł i Whole Brain Emulation (5 lat studiów)",
+        "titleEn": "Project B: Digital Mind & Whole Brain Emulation (5-Year Degree)",
         "sourceLang": "PL+EN",
-        "titlePl": "Projekt B: Neuronauka Obliczeniowa i Modelowanie Cyfrowego Umysłu (5 lat)",
-        "titleEn": "Project B: Computational Neuroscience & Digital Mind Modeling (5 Years)",
+        "linkedMaterialIds": [
+          "smat-trk-b1",
+          "smat-1",
+          "smat-2",
+          "smat-8"
+        ],
+        "matchedFoundationTopics": [
+          "FND-1",
+          "FND-2",
+          "FND-3",
+          "FND-7",
+          "FND-8",
+          "Projekt E"
+        ],
+        "coreBooksPl": [
+          "N. Bostrom — 'Superinteligencja. Scenariusze, strategie, zagrożenia' (Helion)",
+          "R. Penrose — 'Nowy umysł cesarza' (PWN)",
+          "S. Lem — 'Dialogi' oraz 'Summa Technologiae' (Wydawnictwo Literackie)"
+        ],
+        "coreBooksEn": [
+          "A. H. Sandberg, N. Bostrom — 'Whole Brain Emulation: A Roadmap' (FHI Technical Report)",
+          "O. Sporns — 'Networks of the Brain' (MIT Press)"
+        ],
         "years": [
           {
             "year": 1,
-            "pl": "Kognitywistyka, neuroanatomia funkcjonalna, psychologia poznawcza (pamięć, uwaga, percepcja) i modelowanie matematyczne.",
-            "en": "Cognitive science, functional neuroanatomy, memory/perception & mathematical modeling."
+            "pl": "Rok 1: Neuroanatomia porównawcza, cytoarchitektonika kory mózgowej i podstawy konektomiki.",
+            "en": "Year 1: Comparative neuroanatomy, cortical cytoarchitectonics, and connectomics foundations.",
+            "subchaptersPl": [
+              "1.1. Warstwy kory mózgowej, kolumny korowe i mikroobwody neuronalne",
+              "1.2. Cytoarchitektoniczne mapy Brodmanna i wielkoskalowa topologia połączeń mózgu",
+              "1.3. Podstawy konektomiki: macierze sąsiedztwa, grafy skierowane i ważone sieci neuronalnych",
+              "1.4. Metody obrazowania rezonansem magnetycznym: dMRI, traktografia i wskaźniki anizotropii frakcyjnej"
+            ],
+            "subchaptersEn": [
+              "1.1. Cortical Layers, Canonical Microcircuits, and Interneuron Morphologies",
+              "1.2. Brodmann Cytoarchitectonic Maps and Large-Scale Macro-Connectomics",
+              "1.3. Graph-Theoretical Connectomics: Adjacency Matrices, Directed & Weighted Brain Networks",
+              "1.4. Magnetic Resonance Tractography: Diffusion MRI (dMRI), Fractional Anisotropy, Streamline Reconstruction"
+            ]
           },
           {
             "year": 2,
-            "pl": "Biofizyczne modele pojedynczych neuronów (Hodgkin–Huxley, Izhikevich), plastyczność synaptyczna STDP i kodowanie neuronalne.",
-            "en": "Biophysical neuron models (Hodgkin-Huxley, Izhikevich), STDP plasticity & neural coding."
+            "pl": "Rok 2: Technologie skanowania tkanki mózgowej w skali nano (FIB-SEM, dMRI) i rekonstrukcja obrazów.",
+            "en": "Year 2: Nanoscale brain tissue scanning technologies (FIB-SEM, expansion microscopy) and volume reconstruction.",
+            "subchaptersPl": [
+              "2.1. Fiksacja chemiczna, perfuzja kriogeniczna i utwardzanie tkanki mózgowej w żywicach polimerowych",
+              "2.2. Seryjna mikroskopia elektronowa (Serial Block-Face SEM, FIB-SEM) z rozdzielczością nanometrową",
+              "2.3. Mikroskopia ekspansyjna (Expansion Microscopy) i fluorescencyjne znakowanie białek synaptycznych",
+              "2.4. Przetwarzanie petabajtowych wolumenów graficznych: segmentacja błon i rekonstrukcja 3D aksonów przez AI"
+            ],
+            "subchaptersEn": [
+              "2.1. Chemical Fixation, Cryogenic Perfusion, and Polymer Resin Embedding of Neural Tissue",
+              "2.2. Nanoscale Serial Electron Microscopy: Serial Block-Face SEM and Focused Ion Beam SEM (FIB-SEM)",
+              "2.3. Expansion Microscopy and Fluorescent Tagging of Pre- and Post-Synaptic Densities",
+              "2.4. Petabyte-Scale Volumetric Segmentation: AI Membrane Tracing and 3D Axon Reconstruction"
+            ]
           },
           {
             "year": 3,
-            "pl": "Obrazowanie mózgu (fMRI, MEG, mikroskopia elektronowa), konektomika grafowa i dyplom licencjacki.",
-            "en": "Neuroimaging (fMRI, MEG, EM), graph connectomics & B.Sc. thesis."
+            "pl": "Rok 3: Matematyczne modele neuronu i mikroobwodów korowych, symulatory NEST, Brian2 i NEURON.",
+            "en": "Year 3: Mathematical models of single neurons and cortical microcircuits, NEST, Brian2, and NEURON simulators.",
+            "subchaptersPl": [
+              "3.1. Równania Hodgkina-Huxleya i ich uproszczenia (FitzHugh-Nagumo, Izhikevich, AdEx)",
+              "3.2. Modelowanie przedziałowe dendrytów (Compartmental Modeling) i obliczenia nieliniowe w drzewie dendrytycznym",
+              "3.3. Skalowanie symulacji mikrokolumn korowych w symulatorach NEST i Brian2",
+              "3.4. Równowaga pobudzenia i hamowania (E/I balance), oscylacje gamma i synchronizacja fazowa"
+            ],
+            "subchaptersEn": [
+              "3.1. Hodgkin-Huxley Formulations and Reduced Firing Models (FitzHugh-Nagumo, Izhikevich, AdEx)",
+              "3.2. Multicompartmental Dendritic Modeling and Active Non-Linear Dendritic Computation",
+              "3.3. Large-Scale Microcircuit Simulation in NEST, Brian2, and Blue Brain Project Suites",
+              "3.4. Excitation-Inhibition (E/I) Balance, Cortical Gamma Oscillations, and Phase Synchrony"
+            ]
           },
           {
             "year": 4,
-            "pl": "Wielkoskalowe symulacje sieci korowo-wzgórzowych, konsolidacja pamięci i cyfrowy sen w sieciach sztucznych i biologicznych.",
-            "en": "Large-scale thalamocortical simulations, memory consolidation & digital sleep dynamics."
+            "pl": "Rok 4: Whole Brain Emulation (WBE), kalibracja parametrów elektrofizjologicznych i stabilność numeryczna.",
+            "en": "Year 4: Whole Brain Emulation (WBE), electrophysiological parameter tuning, and numerical stability.",
+            "subchaptersPl": [
+              "4.1. Translacja struktury anatomicznej na parametry elektrofizjologiczne symulatora (od konektomu do dynamiki)",
+              "4.2. Stabilność numeryczna solverów różniczkowych przy symulacji miliardów powiązanych neuronów",
+              "4.3. Pamięć asocjacyjna, konsolidacja śladów pamięciowych (engramów) i plastyczność homeostatyczna",
+              "4.4. Kryteria weryfikacji emulacji: testy behawioralne, wzorce EEG emulowanego obwodu i test Turinga dla WBE"
+            ],
+            "subchaptersEn": [
+              "4.1. Translation of Anatomical Micro-Structure into Biophysical Simulator State Parameters",
+              "4.2. Numerical Stability of Differential Solvers when Simulating Billions of Coupled Neurons",
+              "4.3. Associative Memory Retrieval, Engram Trace Consolidation, and Homeostatic Plasticity",
+              "4.4. Emulation Verification Metrics: Behavioral Equivalence, Synthetic EEG Matching, WBE Turing Benchmark"
+            ]
           },
           {
             "year": 5,
-            "pl": " Metodologia i ograniczenia Whole Brain Emulation (WBE), problem tożsamości i świadomości oraz praca magisterska.",
-            "en": "Methodology & physical limits of Whole Brain Emulation (WBE), consciousness & M.Sc. thesis."
+            "pl": "Rok 5: Problem tożsamości cyfrowej, paradoks teleportacji i kopii, granice obliczalności, praca magisterska.",
+            "en": "Year 5: Digital identity problem, teletransportation paradox, computational limits, Master's thesis.",
+            "subchaptersPl": [
+              "5.1. Filozoficzne aspekty WBE: problem tożsamości osobowej, paradoks duplikacji i ciągłości świadomości (Parfit, Lem)",
+              "5.2. Problem subiektywnego doświadczenia (Qualia, Hard Problem of Consciousness) w systemach symulowanych",
+              "5.3. Wymagania sprzętowe pełnej emulacji mózgu: bilans mocy obliczeniowej (ExaFLOPS) i zapotrzebowania na pamięć",
+              "5.4. Praca magisterska: Numeryczna rekonstrukcja i symulacja funkcjonalna obwodu neuronalnego hipokampa z danych konektomicznych"
+            ],
+            "subchaptersEn": [
+              "5.1. Philosophy of WBE: Personal Identity, Duplication Paradox, and Continuity of Consciousness (Parfit, Lem)",
+              "5.2. Subjective Experience and Qualia (The Hard Problem) in Substrate-Independent Computational Minds",
+              "5.3. Hardware Requirements for Human Brain Emulation: ExaFLOP Compute and Memory Bandwidth Budgets",
+              "5.4. Master's Thesis: Numerical Reconstruction & Functional Emulation of Hippocampal Microcircuit from Connectome Data"
+            ]
           }
         ]
       },
@@ -3391,37 +4301,116 @@ const DEFAULT_SEED = {
         "id": "STU-TRK-C",
         "group": "TRACK",
         "refId": "C",
-        "siteId": "SITE-Y15",
-        "icon": "〰️",
-        "color": "#f59e0b",
+        "siteId": "SITE-X10",
+        "icon": "⚡",
+        "color": "#818cf8",
+        "titlePl": "Projekt C: Maszyny Analogowe i Obliczanie Przez Fizykę (5 lat studiów)",
+        "titleEn": "Project C: Analog Machines & Physical Computing (5-Year Degree)",
         "sourceLang": "PL+EN",
-        "titlePl": "Projekt C: Obliczanie Fizyczne, Fotonika i Maszyny Analogowo-Neuromorficzne (5 lat)",
-        "titleEn": "Project C: Physical Computing, Photonics & Analog-Neuromorphic Machines (5 Years)",
+        "linkedMaterialIds": [
+          "smat-trk-c1",
+          "smat-4",
+          "smat-5"
+        ],
+        "matchedFoundationTopics": [
+          "FND-1",
+          "FND-4",
+          "FND-5",
+          "Projekt C"
+        ],
+        "coreBooksPl": [
+          "J. G. Truxal — 'Projektowanie układów automatyki i maszyn analogowych' (WNT)",
+          "A. Oppenheim — 'Sygnały i układy ciągłe' (WKŁ)"
+        ],
+        "coreBooksEn": [
+          "B. Ulmann — 'Analog Computing' (Oldenbourg / De Gruyter)",
+          "H. Jaeger — 'The echo state approach to analysing and training recurrent neural networks'"
+        ],
         "years": [
           {
             "year": 1,
-            "pl": "Historia i teoria komputerów analogowych, równania różniczkowe realizowane w obwodach ciągłych RC/RLC.",
-            "en": "Analog computing theory, continuous differential analyzers & RC/RLC dynamical circuits."
+            "pl": "Rok 1: Teoria maszyn analogowych, operatory różniczkowe i całkujące realizowane przez układy RLC i wzmacniacze.",
+            "en": "Year 1: Analog computing theory, differential and integral operators via RLC and op-amp circuits.",
+            "subchaptersPl": [
+              "1.1. Historia i zasada działania komputera analogowego: zmienne napięciowe jako ciągłe zmienne fizyczne",
+              "1.2. Bloki funkcjonalne: sumatory, integratory analogowe, inwertery i potencjometry skalujące",
+              "1.3. Rozwiązywanie liniowych równań różniczkowych zwyczajnych bez użycia algorytmów dyskretnych",
+              "1.4. Skalowanie czasu i amplitudy w maszynach analogowych oraz eliminacja nasycenia wzmacniaczy"
+            ],
+            "subchaptersEn": [
+              "1.1. History and Principles of Analog Computing: Continuous Voltages as Direct Mathematical Variables",
+              "1.2. Computational Building Blocks: Summing Amplifiers, Electronic Integrators, Coefficient Potentiometers",
+              "1.3. Solving Linear Ordinary Differential Equations Directly via Circuit Kirchoff Laws",
+              "1.4. Time-Scale and Amplitude Scaling Techniques Preventing Operational Amplifier Saturation"
+            ]
           },
           {
             "year": 2,
-            "pl": "Nieliniowe układy dynamiczne, obliczenia zbiornikowe (Reservoir Computing) i oscylatorowe sieci sprzężone.",
-            "en": "Nonlinear dynamical systems, Reservoir Computing & coupled oscillator networks."
+            "pl": "Rok 2: Elementy nieliniowe, mnożniki analogowe, generatory funkcji i modelowanie układów nieliniowych.",
+            "en": "Year 2: Non-linear elements, analog multipliers, function generators, and non-linear dynamics modeling.",
+            "subchaptersPl": [
+              "2.1. Nieliniowe operacje analogowe: mnożniki kwadrupolowe (Gilbert cell), diodowe generatory funkcji",
+              "2.2. Symulacja oscylatora van der Pola, atraktora Lorentza i układów z histerezą w czasie ciągłym",
+              "2.3. Porównanie zużycia energii komputera analogowego z symulacją cyfrową na CPU/GPU",
+              "2.4. Dokładność, dryf temperaturowy i metody autokalibracji obwodów analogowych"
+            ],
+            "subchaptersEn": [
+              "2.1. Non-Linear Analog Blocks: Four-Quadrant Gilbert Multipliers, Diode Function Shapers",
+              "2.2. Real-Time Physical Emulation of Van der Pol Oscillators, Lorenz Attractors, and Hysteresis",
+              "2.3. Energy Dissipation Benchmarking: Analog Physical Solvers vs. Digital Floating-Point Simulations",
+              "2.4. Accuracy Limitations, Thermal Drift Compensation, and Chopper-Stabilized Precision Amplifiers"
+            ]
           },
           {
             "year": 3,
-            "pl": "Fizyka memrystorów, macierze skrzyżowane in-memory computing, energetyka obliczeń (limit Landauera) i projekt inżynierski.",
-            "en": "Memristor physics, crossbar in-memory computing, Landauer thermodynamic limits & B.Eng."
+            "pl": "Rok 3: Obliczenia rezerwuarowe (Reservoir Computing), dynamika cieczy i atraktory fizyczne.",
+            "en": "Year 3: Reservoir computing, physical dynamical substrates, and continuous attractors.",
+            "subchaptersPl": [
+              "3.1. Teoria obliczeń rezerwuarowych (Echo State Networks, Liquid State Machines)",
+              "3.2. Fizyczne rezerwuary obliczeniowe: nieliniowe obwody elektryczne, fale mechaniczne w cieczach i sprężyste membrany",
+              "3.3. Trening wyłącznie warstwy wyjściowej (Readout Layer) metodą regresji grzbietowej w czasie rzeczywistym",
+              "3.4. Zastosowanie rezerwuarów fizycznych do predykcji szeregów czasowych i rozpoznawania mowy"
+            ],
+            "subchaptersEn": [
+              "3.1. Reservoir Computing Foundations: Echo State Networks (ESN) and Liquid State Machines (LSM)",
+              "3.2. Physical Computational Reservoirs: Non-Linear RC Networks, Surface Liquid Waves, Elastic Membranes",
+              "3.3. Linear Readout Training via Ridge Regression with Fixed Non-Linear Dynamical Core",
+              "3.4. Applications in Real-Time Chaotic Time-Series Prediction and Acoustic Speech Recognition"
+            ]
           },
           {
             "year": 4,
-            "pl": "Procesory fotoniczne i optyczne mnożenie macierzy, obliczenia kwantowe i hybrydowe biokomputery (Brainoware).",
-            "en": "Photonic processors & optical matrix multiplication, quantum & organoid biocomputing."
+            "pl": "Rok 4: Obliczenia fotoniczne, optyczne macierze mnożenia i nieliniowe kryształy optyczne.",
+            "en": "Year 4: Photonic computing, optical matrix multipliers, and non-linear optical processing.",
+            "subchaptersPl": [
+              "4.1. Fotonika zintegrowana: falowody krzemowe (Silicon Photonics), interferometry Macha-Zehndera",
+              "4.2. Mnożenie wektor-macierz z prędkością światła metodami interferencji optycznej (Passive Optical MVM)",
+              "4.3. Nieliniowości optyczne w kryształach i mikrownękach rezonansowych dla sztucznych neuronów",
+              "4.4. Efektywność energetyczna układów fotonicznych przy przetwarzaniu wielkich modeli AI"
+            ],
+            "subchaptersEn": [
+              "4.1. Integrated Photonics: Silicon Waveguides, Mach-Zehnder Interferometer (MZI) Meshes",
+              "4.2. Optical Matrix-Vector Multiplication (MVM) at the Speed of Light via Wave Interference",
+              "4.3. Optical Non-Linearities in Photonic Crystal Cavities Emulating Non-Linear Neuron Activations",
+              "4.4. Extreme Energy Efficiency of Photonic Processors in Massive AI Inference Operations"
+            ]
           },
           {
             "year": 5,
-            "pl": "Projektowanie ultra-energooszczędnych akceleratorów fizycznych dla AI/BCI i praca magisterska.",
-            "en": "Ultra-low-power physical AI/BCI accelerators & M.Sc. thesis."
+            "pl": "Rok 5: Hybrydowe systemy analogowo-cyfrowe, interfejsy z solverami kwantowymi i praca magisterska.",
+            "en": "Year 5: Hybrid analog-digital computing architectures, interfaces with quantum solvers, Master's thesis.",
+            "subchaptersPl": [
+              "5.1. Architektura procesora hybrydowego: rdzeń cyfrowy koordynujący matrycę analogowo-fotoniczną",
+              "5.2. Obliczanie analogowe jako koprocesor w rozwiązywaniu równań Naviera-Stokesa i dynamiki płynów",
+              "5.3. Interfejsy między maszynami analogowymi a procesorami kwantowymi w optymalizacji kombinatorycznej",
+              "5.4. Praca magisterska: Zaprojektowanie i weryfikacja laboratoryjna zintegrowanego analogowego solvera równań różniczkowych cząstkowych"
+            ],
+            "subchaptersEn": [
+              "5.1. Hybrid Architecture: Digital Control Cores Coordinating Analog-Photonic Accelerator Meshes",
+              "5.2. Analog Coprocessors for Continuous Navier-Stokes Differential Equations and Fluid Dynamics",
+              "5.3. Interfaces Between Continuous Physical Simulators and Quantum Annealers in Optimization Tasks",
+              "5.4. Master's Thesis: Design and Experimental Benchmarking of an Analog Physical Solver for Partial Differential Equations"
+            ]
           }
         ]
       },
@@ -3430,36 +4419,116 @@ const DEFAULT_SEED = {
         "group": "TRACK",
         "refId": "D",
         "siteId": "SITE-B7",
-        "icon": "🧫",
+        "icon": "🧬",
         "color": "#10b981",
+        "titlePl": "Projekt D: Bioinżynieria i Konstrukcja Organizmów (5 lat studiów)",
+        "titleEn": "Project D: Bioengineering & Organism Construction (5-Year Degree)",
         "sourceLang": "PL+EN",
-        "titlePl": "Projekt D: Biotechnologia Medyczna, Inżynieria Tkankowa i Biologia Syntetyczna (5 lat)",
-        "titleEn": "Project D: Medical Biotechnology, Tissue Engineering & Synthetic Biology (5 Years)",
+        "linkedMaterialIds": [
+          "smat-trk-d1",
+          "smat-6",
+          "smat-7"
+        ],
+        "matchedFoundationTopics": [
+          "FND-6",
+          "FND-7",
+          "FND-3",
+          "Projekt D",
+          "Projekt E"
+        ],
+        "coreBooksPl": [
+          "S. F. Gilbert — 'Biologia rozwoju' (PWN)",
+          "T. A. Brown — 'Klonowanie DNA i inżynieria genetyczna' (PWN)"
+        ],
+        "coreBooksEn": [
+          "R. Lanza et al. — 'Principles of Tissue Engineering' (Academic Press)",
+          "A. Atala — '3D Bioprinting: Principles and Applications'"
+        ],
         "years": [
           {
             "year": 1,
-            "pl": "Biologia komórki i rozwoju, hodowle komórkowe in vitro, sterylność laboratoryjna i podstawy genetyki molekularnej.",
-            "en": "Developmental cell biology, aseptic cell culture & molecular genetics."
+            "pl": "Rok 1: Biologia rozwoju (embriologia), komórki macierzyste i molekularne mechanizmy różnicowania.",
+            "en": "Year 1: Developmental biology (embryology), stem cells, and molecular differentiation cascades.",
+            "subchaptersPl": [
+              "1.1. Zapłodnienie, bruzdkowanie, gastrulacja i powstawanie listków zarodkowych (ektoderma, mezoderma, endoderma)",
+              "1.2. Morfogeny, gradienty stężeń (Bmp, Wnt, Sonic Hedgehog) i polaryzacja osi ciała",
+              "1.3. Biologia komórek macierzystych: totipotencjalność, pluripotencjalność i multipotencjalność",
+              "1.4. Metody hodowli komórkowych in vitro w warunkach sterylnych (Cleanroom Class 100/1000)"
+            ],
+            "subchaptersEn": [
+              "1.1. Fertilization, Cleavage, Gastrulation, and Primary Germ Layer Specification (Ecto, Meso, Endoderm)",
+              "1.2. Morphogen Gradients (Bmp, Wnt, Sonic Hedgehog) and Body Axis Symmetry Breaking",
+              "1.3. Stem Cell Potency: Totipotent, Pluripotent (ESCs, iPSCs), and Multipotent Adult Progenitors",
+              "1.4. In Vitro Aseptic Cell Culture Protocols under Cleanroom Class 100/1000 Standards"
+            ]
           },
           {
             "year": 2,
-            "pl": "Inżynieria genetyczna, edycja genomu (CRISPR-Cas, prime editing), epigenetyka i przeprogramowywanie komórek (iPSC).",
-            "en": "Genetic engineering, genome editing (CRISPR/prime editing), epigenetics & iPSC reprogramming."
+            "pl": "Rok 2: Inżynieria genetyczna organizmów modelowych, biologia syntetyczna i wektory wirusowe.",
+            "en": "Year 2: Genetic engineering of model organisms, synthetic biology, and viral delivery vectors.",
+            "subchaptersPl": [
+              "2.1. Konstrukcja plazmidów ekspresyjnych, enzymy restrykcyjne i ligacja DNA",
+              "2.2. Wektory wirusowe (lentiwirusy, AAV) do transferu genów w komórkach ssaków",
+              "2.3. Projektowanie syntetycznych obwodów genetycznych: przełączniki bistabilne (toggle switch) i oscylatory genowe",
+              "2.4. Systemy CRISPR-Cas9, precyzyjne edytowanie zasad (Base Editing) i modyfikacje epigenetyczne"
+            ],
+            "subchaptersEn": [
+              "2.1. Expression Plasmid Recombinant Assembly, Restriction Enzymes, and In Vitro Ligation",
+              "2.2. Viral Vector Engineering (Lentiviruses, AAV Serotypes) for Mammalian Transduction",
+              "2.3. Synthetic Genetic Circuits: Bistable Genetic Toggle Switches and Repressilators",
+              "2.4. Precision CRISPR-Cas9/Cas12 Systems, Base Editing, and Targeted Epigenome Modulation"
+            ]
           },
           {
             "year": 3,
-            "pl": "Biomateriały rusztowaniowe, biodruk 3D tkanek unaczynionych, bioreaktory perfuzyjne i dyplom I stopnia.",
-            "en": "Scaffold biomaterials, 3D bioprinting of vascularized tissues, perfusion bioreactors & B.Sc."
+            "pl": "Rok 3: Biodruk 3D tkanek, biomateriały rusztowań (scaffolds) i bioreaktory perfuzyjne.",
+            "en": "Year 3: 3D bioprinting of tissues, scaffold biomaterials, and perfusion bioreactors.",
+            "subchaptersPl": [
+              "3.1. Technologie biodruku 3D: ekstruzja pneumatyczna, druk stereolitograficzny (DLP) i fotopolimeryzacja",
+              "3.2. Projektowanie biotuszów (Bio-inks): alginian, kolagen, żelatyna-metakryl (GelMA) i decelularyzowana macierz zewnątrzkomórkowa (dECM)",
+              "3.3. Inżynieria rusztowań tkankowych (Scaffolds): porowatość, transport składników odżywczych i degradacja kontrolowana",
+              "3.4. Bioreaktory dynamiczne: wymuszona perfuzja pożywki, naprężenia ścinające i stymulacja mechaniczna tkanek"
+            ],
+            "subchaptersEn": [
+              "3.1. 3D Bioprinting Modalities: Pneumatic Micro-Extrusion, Stereolithography (DLP), Two-Photon Polymerization",
+              "3.2. Bio-Ink Formulations: Alginate, Collagen Type I, Gelatin-Methacryloyl (GelMA), and Decellularized ECM",
+              "3.3. Porous Scaffold Architecture: Interconnectivity, Nutrient Diffusion, and Programmed Biodegradation",
+              "3.4. Dynamic Perfusion Bioreactors: Fluid Shear Stress and Cyclic Mechanical Loading Protocols"
+            ]
           },
           {
             "year": 4,
-            "pl": "Hodowla organoidów (mózgowych, przysadkowych, wątrobowych), biologia syntetyczna obwodów genowych i terapie genowe.",
-            "en": "Organoid engineering (cerebral, pituitary, hepatic), synthetic gene circuits & gene therapies."
+            "pl": "Rok 4: Waskularyzacja tkanek, hodowla organoidów i układy typu Organ-on-a-Chip.",
+            "en": "Year 4: Tissue vascularization, organoid engineering, and Organ-on-a-Chip microfluidic systems.",
+            "subchaptersPl": [
+              "4.1. Problem waskularyzacji: angiogeneza in vitro, tworzenie sieci naczyń włosowatych z komórek śródbłonka (HUVEC)",
+              "4.2. Mikroukłady przepływowe (Organ-on-a-Chip): modelowanie bariery krew-mózg, płuca i wątroby na chipie",
+              "4.3. Generowanie asambloidów: łączenie organoidów korowych ze wzgórzowymi i motoneuronami",
+              "4.4. Monitorowanie parametrów życiowych hodowli: elektrody mikromacierzy (MEA), sensory tlenu i pH w czasie rzeczywistym"
+            ],
+            "subchaptersEn": [
+              "4.1. The Vascularization Challenge: In Vitro Angiogenesis and Capillary Lumen Formation by Endothelial Cells",
+              "4.2. Organ-on-a-Chip Microfluidics: Blood-Brain Barrier, Lung Alveolus, and Liver Metabolic Chips",
+              "4.3. Assembloid Engineering: Fusing Cortical, Thalamic, and Striatal Organoids for Functional Circuit Modeling",
+              "4.4. Real-Time In-Situ Monitoring: Microelectrode Arrays (MEA), Optical Oxygen, and Acidification Sensors"
+            ]
           },
           {
             "year": 5,
-            "pl": "Medycyna regeneracyjna i transplantacyjna, analiza kulturowo-bioetyczna („Frankenstein”) i praca magisterska.",
-            "en": "Regenerative transplantation medicine, bioethical boundaries & M.Sc. thesis."
+            "pl": "Rok 5: Bioetyka modyfikacji organizmów, chimeryzm, granice syntetycznego życia, praca magisterska.",
+            "en": "Year 5: Bioethics of organism modification, chimerism, synthetic life limits, Master's thesis.",
+            "subchaptersPl": [
+              "5.1. Status ontologiczny i etyczny zaawansowanych organoidów mózgowych wykazujących aktywność zsynchronizowaną",
+              "5.2. Badania nad chimerami zwierzęco-ludzkimi w hodowli organów do transplantacji: aspekty prawne i bioetyczne",
+              "5.3. Bezpieczeństwo biologiczne (Biosafety Level 1–4) i zapobieganie ucieczce zmodyfikowanych organizmów do biosfery",
+              "5.4. Praca magisterska: Konstrukcja zwaskularyzowanego mikroskopowego organoidu tkankowego w układzie mikroprzepływowym"
+            ],
+            "subchaptersEn": [
+              "5.1. Ontological & Ethical Status of Advanced Cortical Organoids Displaying Spontaneous Synchrony",
+              "5.2. Animal-Human Chimeric Blastocyst Complementation for Solid Organ Xenotransplantation",
+              "5.3. Biosafety & Biosecurity Protocols (BSL 1–4) and Genetic Containment Kill Switches",
+              "5.4. Master's Thesis: Engineering a Microvascularized Cortical Organoid Tissue within a Perfusion Microfluidic Platform"
+            ]
           }
         ]
       },
@@ -3468,36 +4537,114 @@ const DEFAULT_SEED = {
         "group": "TRACK",
         "refId": "E",
         "siteId": "SITE-W0",
-        "icon": "⚖️",
-        "color": "#eab308",
+        "icon": "📜",
+        "color": "#a855f7",
+        "titlePl": "Projekt E: Filozofia i Rygor Epistemiczny (5 lat studiów)",
+        "titleEn": "Project E: Philosophy & Epistemic Rigor (5-Year Degree)",
         "sourceLang": "PL+EN",
-        "titlePl": "Projekt E: Filozofia Nauki, Umysłu, Technologii i Bioetyka Stosowana (5 lat)",
-        "titleEn": "Project E: Philosophy of Science, Mind, Technology & Applied Bioethics (5 Years)",
+        "linkedMaterialIds": [
+          "smat-trk-e1",
+          "smat-1",
+          "smat-8"
+        ],
+        "matchedFoundationTopics": [
+          "FND-1",
+          "Projekt E"
+        ],
+        "coreBooksPl": [
+          "S. Lem — 'Summa Technologiae' oraz 'Filozofia przypadku' (Wydawnictwo Literackie)",
+          "K. Popper — 'Logika odkrycia naukowego' (PWN)",
+          "R. Ingarden — 'Spór o istnienie świata' (PWN)"
+        ],
+        "coreBooksEn": [
+          "T. S. Kuhn — 'The Structure of Scientific Revolutions'",
+          "D. J. Chalmers — 'The Conscious Mind: In Search of a Fundamental Theory'"
+        ],
         "years": [
           {
             "year": 1,
-            "pl": "Logika klasyczna i nieklasyczna, epistemologia, teoria prawdy i historia metodologii nauk przyrodniczych.",
-            "en": "Classical & non-classical logic, epistemology & history of scientific methodology."
+            "pl": "Rok 1: Epistemologia klasyczna, logika formalna, teoria prawdy i demarkacja nauki (Popper).",
+            "en": "Year 1: Classical epistemology, formal logic, truth theory, and scientific demarcation (Popper).",
+            "subchaptersPl": [
+              "1.1. Definicja wiedzy (problem Gettiera), racjonalizm vs. empiryzm (Kartezjusz, Hume, Kant)",
+              "1.2. Kryterium demarkacji Karla Poppera: falsyfikowalność, asymetria weryfikacji i falsyfikacji",
+              "1.3. Paradygmaty naukowe i rewolucje pojęciowe według Thomasa Kuhna",
+              "1.4. Logika modalna, światy możliwe Kripkego i semantyka formalna"
+            ],
+            "subchaptersEn": [
+              "1.1. Definition of Knowledge (Gettier Counterexamples), Rationalism vs. Empiricism (Descartes, Hume, Kant)",
+              "1.2. Karl Popper's Demarcation Criterion: Falsifiability and Empirical Asymmetry",
+              "1.3. Scientific Paradigms, Normal Science, and Incommensurability (Thomas Kuhn)",
+              "1.4. Modal Logic, Kripke's Possible-World Semantics, and Formal Truth Theory"
+            ]
           },
           {
             "year": 2,
-            "pl": "Filozofia nauki (Popper, Kuhn, Lakatos), kryteria falsyfikowalności, wnioskowanie przyczynowe i status modeli naukowych.",
-            "en": "Philosophy of science (Popper, Kuhn, Lakatos), falsifiability, causal inference & scientific models."
+            "pl": "Rok 2: Filozofia umysłu, problem psychofizyczny (Mind-Body Problem), qualia i behawioryzm.",
+            "en": "Year 2: Philosophy of mind, the mind-body problem, qualia, functionalism, and physicalism.",
+            "subchaptersPl": [
+              "2.1. Dualizm substancjalny vs. fizykalizm i teoria identyfikacji stanów mentalnych",
+              "2.2. Funkcjonalizm i teoria obliczeniowa umysłu (Putnam, Fodor)",
+              "2.3. 'Trudny problem świadomości' Davida Chalmersa, argument z wiedzy (Mary's Room) i filozoficzne zombie",
+              "2.4. Problem intencjonalności i argument Chińskiego Pokoju Johna Searle'a"
+            ],
+            "subchaptersEn": [
+              "2.1. Substance Dualism vs. Physicalism, Mind-Brain Identity Theories",
+              "2.2. Functionalism and the Computational Theory of Mind (Putnam, Fodor)",
+              "2.3. Chalmers' Hard Problem of Consciousness, Jackson's Knowledge Argument (Mary's Room), and Philosophical Zombies",
+              "2.4. Intentionality, Meaning, and John Searle's Chinese Room Thought Experiment"
+            ]
           },
           {
             "year": 3,
-            "pl": "Filozofia umysłu i kognitywistyki (funkcjonalizm, emergencja, problem świadomości, tożsamość osobowa) i licencjat.",
-            "en": "Philosophy of mind (functionalism, emergence, consciousness, personal identity) & B.A. thesis."
+            "pl": "Rok 3: Filozofia techniki Stanisława Lema, ewolucja pozabiologiczna i 'Summa Technologiae'.",
+            "en": "Year 3: Stanisław Lem's philosophy of technology, non-biological evolution, and 'Summa Technologiae'.",
+            "subchaptersPl": [
+              "3.1. 'Summa Technologiae' Stanisława Lema: ewolucja technologiczna jako kontynuacja i zastąpienie ewolucji biologicznej",
+              "3.2. Koncepcja fantomatyki i teletaksji: wczesne modele wirtualnej rzeczywistości i symulacji sensorycznej",
+              "3.3. Problem 'czarnej skrzynki' i ograniczeń sterowniczych cywilizacji w obliczu eksplozji informacyjnej",
+              "3.4. Demiurgia technologiczna: tworzenie światów i granice racjonalistycznej inżynierii"
+            ],
+            "subchaptersEn": [
+              "3.1. Stanisław Lem's 'Summa Technologiae': Non-Biological Evolution Outpacing Natural Selection",
+              "3.2. Lem's Phantomatics and Teletaxy: Pioneering Ontologies of Virtual Reality and Sensory Immersion",
+              "3.3. Black-Box Cybernetics and Civilization-Level Control Failures in Mega-Information Systems",
+              "3.4. Technological Demiurgy: Artificial Universe Synthesis and the Boundaries of Rationalist Engineering"
+            ]
           },
           {
             "year": 4,
-            "pl": "Bioetyka kliniczna i regulacyjna, etyka inżynierii genetycznej, neuroetyka (prawa neuronalne / neurorights) i etyka AI.",
-            "en": "Clinical & regulatory bioethics, genetic ethics, neuroethics (neurorights) & AI alignment ethics."
+            "pl": "Rok 4: Etyka nowych technologii, rygor czterech poziomów wiedzy i odpowiedzialność twórcy.",
+            "en": "Year 4: Ethics of emerging technologies, the 4-tier epistemic rigor matrix, creator responsibility.",
+            "subchaptersPl": [
+              "4.1. Czteropoziomowa matryca epistemiczna Golem 15: wiedza potwierdzona, aktywne badania, hipoteza, spekulacja",
+              "4.2. Etyka sztucznej inteligencji: problem zgodności celów (Alignment Problem) i egzystencjalne ryzyko AGI",
+              "4.3. Bioetyka inżynierii ludzkiego genomu, edycji linii zarodkowej i praw bytów post-biologicznych",
+              "4.4. Etyka dekarbonizacji i sprawiedliwości międzypokoleniowej w gospodarowaniu energią jądrową"
+            ],
+            "subchaptersEn": [
+              "4.1. Golem 15 4-Tier Epistemic Matrix: Confirmed Knowledge, Active Research, Testable Hypothesis, Speculation",
+              "4.2. Artificial Intelligence Ethics: The Value Alignment Problem and Existential Safety of AGI",
+              "4.3. Bioethics of Germline Genome Editing, Human Enhancement, and the Rights of Post-Biological Entities",
+              "4.4. Ethics of Nuclear Stewardship, High-Level Waste Storage, and Intergenerational Justice"
+            ]
           },
           {
             "year": 5,
-            "pl": "Filozofia techniki, etyka środowiskowa i kosmiczna oraz magisterium z rygoru epistemicznego megaprojektów.",
-            "en": "Philosophy of technology, planetary/space ethics & M.A. thesis on epistemic rigor."
+            "pl": "Rok 5: Filozofia nauki w dobie modeli wielkich parametrów, synteza interdyscyplinarna, praca magisterska.",
+            "en": "Year 5: Philosophy of science in the era of billion-parameter models, synthesis, Master's thesis.",
+            "subchaptersPl": [
+              "5.1. Czy modele AI generują nową wiedzę naukową? Status epistemologiczny odkryć generowanych przez sieci głębokie",
+              "5.2. Granice redukcjonizmu vs. emergencja w biologii, fizyce i świadomości",
+              "5.3. Metodologia prowadzenia wieloletnich interdyscyplinarnych programów badawczych w architekturze Manhattan",
+              "5.4. Praca magisterska: Epistemiczny traktat metodologiczny 'Summa Technologiae 2.0 — Od maszyny do świadomego bytu'"
+            ],
+            "subchaptersEn": [
+              "5.1. Do Deep Neural Networks Produce Genuine Understanding? Epistemic Status of Machine-Generated Science",
+              "5.2. Limits of Reductionism vs. Strong Emergence in Biology, Physics, and Cognition",
+              "5.3. Methodology of Long-Term Multidisciplinary Research Programs under Compartmentalized Manhattan Governance",
+              "5.4. Master's Thesis: Epistemic Methodological Treatise 'Summa Technologiae 2.0 — From Machine to Conscious Being'"
+            ]
           }
         ]
       },
@@ -3506,36 +4653,117 @@ const DEFAULT_SEED = {
         "group": "TRACK",
         "refId": "F",
         "siteId": "SITE-T9",
-        "icon": "🚀",
-        "color": "#ec4899",
+        "icon": "🛰️",
+        "color": "#38bdf8",
+        "titlePl": "Projekt F: Człowiek w Kosmosie i Inżynieria Habitatów (5 lat studiów)",
+        "titleEn": "Project F: Humans in Space & Habitat Engineering (5-Year Degree)",
         "sourceLang": "PL+EN",
-        "titlePl": "Projekt F: Inżynieria Kosmiczna, Systemy BLSS i Medycyna Astronautyczna (5 lat)",
-        "titleEn": "Project F: Space Systems Engineering, BLSS & Bioastronautics (5 Years)",
+        "linkedMaterialIds": [
+          "smat-trk-f1",
+          "smat-4",
+          "smat-6",
+          "smat-7"
+        ],
+        "matchedFoundationTopics": [
+          "FND-4",
+          "FND-5",
+          "FND-6",
+          "FND-7",
+          "Projekt F"
+        ],
+        "coreBooksPl": [
+          "A. Trepka — 'Kosmonautyka' (MON)",
+          "J. Płonka — 'Medycyna lotnicza i kosmiczna' (PZWL)"
+        ],
+        "coreBooksEn": [
+          "Eckart, P. — 'Spaceflight Life Support and Biospherics' (Microcosm Press)",
+          "A. E. Nicogossian et al. — 'Space Physiology and Medicine'"
+        ],
         "years": [
           {
             "year": 1,
-            "pl": "Mechanika orbitalna, środowisko kosmiczne (próżnia, termika, mikrometeoroidy, promieniowanie GCR/SPE) i inżynieria systemowa.",
-            "en": "Orbital mechanics, space environment (vacuum, thermal, GCR/SPE radiation) & systems engineering."
+            "pl": "Rok 1: Mechanika orbitalna, trajektorie międzyplanetarne, rakietowe układy napędowe i środowisko kosmiczne.",
+            "en": "Year 1: Orbital mechanics, interplanetary trajectories, rocket propulsion, and space environment physics.",
+            "subchaptersPl": [
+              "1.1. Prawa Keplera, prędkości kosmiczne, orbity LEO, GEO, orbity transferowe Hohmanna",
+              "1.2. Równanie Ciołkowskiego, silniki rakietowe na paliwo ciekłe, stałe i napędy jonowe",
+              "1.3. Środowisko kosmiczne: próżnia wysoka, cykle termiczne (+120°C / -150°C) i mikrometeoryty",
+              "1.4. Wprowadzenie do fizjologii człowieka w warunkach lotu kosmicznego"
+            ],
+            "subchaptersEn": [
+              "1.1. Kepler's Laws, Orbital Mechanics, LEO/GEO Regimes, Hohmann & Bi-Elliptic Transfer Trajectories",
+              "1.2. Tsiolkovsky Rocket Equation, Chemical Liquid/Solid Propulsion, and Electrostatic Ion Thrusters",
+              "1.3. Space Environment Physics: Ultra-High Vacuum, Extreme Thermal Cycling (+120°C / -150°C), Micrometeoroids",
+              "1.4. Introduction to Human Spaceflight Physiology and Environmental Stressors"
+            ]
           },
           {
             "year": 2,
-            "pl": "Fizjologia człowieka w mikrograwitacji (zanik kostno-mięśniowy, układ krążenia, neuro-okulistyka, immunologia kosmiczna).",
-            "en": "Human physiology in microgravity (bone/muscle loss, cardiovascular, space immunology)."
+            "pl": "Rok 2: Fizjologia mikrograwitacji: demineralizacja kości, zanik mięśni, zespół SANS i układ krążenia.",
+            "en": "Year 2: Microgravity physiology: bone demineralization, muscle atrophy, SANS, and cardiovascular deconditioning.",
+            "subchaptersPl": [
+              "2.1. Przesunięcie płynów ustrojowych (Fluid Shift), adaptacja układu sercowo-naczyniowego i zespół nietolerancji ortostatycznej",
+              "2.2. Utrata masy kostnej (osteoklastoza, utrata 1% masy kości/miesiąc) i atrofia włókien mięśniowych",
+              "2.3. Zespół neuro-okulistyczny związany z lotem kosmicznym (SANS - Spaceflight-Associated Neuro-ocular Syndrome)",
+              "2.4. Przeciwdziałanie: protokoły intensywnego treningu oporowego (ARED) i wirówki grawitacji sztucznej"
+            ],
+            "subchaptersEn": [
+              "2.1. Cephalad Fluid Shift, Cardiovascular Deconditioning, and Post-Flight Orthostatic Intolerance",
+              "2.2. Musculoskeletal Degradation: Trabecular Bone Loss (1%/Month) and Type I/II Muscle Fiber Atrophy",
+              "2.3. Spaceflight-Associated Neuro-Ocular Syndrome (SANS): Optic Disc Edema and Globe Flattening",
+              "2.4. Countermeasure Engineering: Advanced Resistive Exercise Devices (ARED) and Short-Radius Centrifuges"
+            ]
           },
           {
             "year": 3,
-            "pl": "Fizyczno-chemiczne systemy podtrzymywania życia (ECLSS: tlen, CO2, recykling wody), skafandry i projekt inżynierski.",
-            "en": "Physicochemical ECLSS (O2, CO2 scrubbing, water recovery), EVA suits & B.Eng. project."
+            "pl": "Rok 3: Promieniowanie kosmiczne (GCR, SPE), osłony radiacyjne i jądrowe źródła zasilania (RTG, Kilopower).",
+            "en": "Year 3: Cosmic radiation (GCR, SPE), shielding physics, and space nuclear power (RTGs, Kilopower).",
+            "subchaptersPl": [
+              "3.1. Galaktyczne promieniowanie kosmiczne (GCR) z ciężkimi jonami HZE i koronalne wyrzuty masy Słońca (SPE)",
+              "3.2. Fizyka osłon radiacyjnych: materiały bogate w wodór (polietylen, woda), regolit księżycowy i osłony elektromagnetyczne",
+              "3.3. Biologiczne skutki promieniowania: uszkodzenia DNA, ryzyko nowotworowe i katarakta radiacyjna",
+              "3.4. Jądrowe źródła zasilania w kosmosie: radioizotopowe generatory termoelektryczne (RTG) i reaktory Kilopower (fission)"
+            ],
+            "subchaptersEn": [
+              "3.1. Galactic Cosmic Rays (GCR) with High-Z/Energy (HZE) Ions and Solar Particle Events (SPE)",
+              "3.2. Radiation Shielding Physics: Hydrogen-Rich Polymers (Polyethylene), Lunar Regolith, and Active Magnetic Fields",
+              "3.3. Radiobiological Damage: Double-Strand DNA Breaks, Carcinogenesis Risk, and Central Nervous System Risks",
+              "3.4. Space Nuclear Power Architecture: Radioisotope Thermoelectric Generators (RTGs) and Kilopower Fission Reactors"
+            ]
           },
           {
             "year": 4,
-            "pl": "Bioregeneracyjne systemy BLSS (algi, hydroponika, mikrobiomy zamknięte), osłony radiacyjne i architektura baz Księżyc/Mars.",
-            "en": "Bioregenerative BLSS (algae, hydroponics), radiation shielding & Lunar/Martian habitats."
+            "pl": "Rok 4: Zamknięte ekosystemy podtrzymywania życia (ECLSS), odzysk wody i tlenu, uprawa roślin (MELiSSA).",
+            "en": "Year 4: Closed-loop environmental control & life support (ECLSS), water/O2 recovery, space agriculture (MELiSSA).",
+            "subchaptersPl": [
+              "4.1. Architektura ECLSS na ISS i stacjach dalekiego zasięgu: odzysk tlenu (Sabatier) i recykling wody (>98%)",
+              "4.2. Biologiczne systemy podtrzymywania życia (CELSS / projekt MELiSSA ESA): kompartmenty bakteryjne i glonowe (Spirulina)",
+              "4.3. Uprawa roślin w warunkach mikrograwitacji: hydroponika, aeroponika, oświetlenie LED i bilans kaloryczny",
+              "4.4. Kontrola mikrobiologiczna habitatu i zarządzanie odpadami stałymi"
+            ],
+            "subchaptersEn": [
+              "4.1. Physico-Chemical ECLSS: Sabatier CO2 Reduction, Water Recovery System (WRS >98% Efficiency)",
+              "4.2. Closed Ecological Life Support Systems (CELSS / ESA MELiSSA): Nitrifying Bacteria and Spirulina Algal Compartments",
+              "4.3. Hydroponic & Aeroponic Space Plant Growth: LED Spectra Optimization, Root Aeration, Caloric Yields",
+              "4.4. Microbial Monitoring, Biofilm Prevention on Habitat Hull Walls, and Solid Waste Recycling"
+            ]
           },
           {
             "year": 5,
-            "pl": "Zasilanie jądrowe misji (RTG/Kilopower), telemedycyna autonomiczna i praca magisterska z inżynierii habitatów.",
-            "en": "Space nuclear power (RTG/Kilopower), autonomous space medicine & M.Sc. thesis."
+            "pl": "Rok 5: Inżynieria baz księżycowych i marsjańskich (ISRU), habitaty nadmuchiwane, praca magisterska.",
+            "en": "Year 5: Lunar & Martian base engineering (ISRU), inflatable habitats, Master's thesis.",
+            "subchaptersPl": [
+              "5.1. In-Situ Resource Utilization (ISRU): pozyskiwanie tlenu i wody z regolitu księżycowego (redukcja ilmenitu) i atmosfery Marsa (MOXIE)",
+              "5.2. Konstrukcje habitatów pozaziemskich: moduły ciśnieniowe nadmuchiwane (TransHab), tunele lawowe i druk 3D z regolitu",
+              "5.3. Psychologia izolacji długoterminowej w załogowych misjach międzyplanetarnych (marsjańskich)",
+              "5.4. Praca magisterska: Projekt autonomicznego systemu podtrzymywania życia i osłon radiacyjnych dla habitatu księżycowego"
+            ],
+            "subchaptersEn": [
+              "5.1. In-Situ Resource Utilization (ISRU): Oxygen Extraction from Lunar Ilmenite Regolith & Martian Atmospheric MOXIE",
+              "5.2. Extraterrestrial Habitat Structures: Inflatable Pressure Vessels (TransHab), Lava Tube Outposts, 3D Regolith Sintering",
+              "5.3. Human Factors, Isolation Psychology, and Autonomy in Long-Duration Multi-Year Interplanetary Missions",
+              "5.4. Master's Thesis: Design of an Autonomous Closed-Loop ECLSS and Radiation Protection System for a Lunar South Pole Base"
+            ]
           }
         ]
       },
@@ -3545,35 +4773,115 @@ const DEFAULT_SEED = {
         "refId": "G",
         "siteId": "SITE-T9",
         "icon": "🌍",
-        "color": "#22c55e",
+        "color": "#10b981",
+        "titlePl": "Projekt G: Człowiek na Ziemi — Ochrona Biosfery i Czyste Technologie (5 lat studiów)",
+        "titleEn": "Project G: Humans on Earth — Biosphere Protection & Clean Technologies (5-Year)",
         "sourceLang": "PL+EN",
-        "titlePl": "Projekt G: Inżynieria Środowiska, Klimatologia i Ochrona Biosfery Ziemi (5 lat)",
-        "titleEn": "Project G: Environmental Engineering, Climatology & Biosphere Protection (5 Years)",
+        "linkedMaterialIds": [
+          "smat-trk-g1",
+          "smat-6",
+          "smat-7",
+          "smat-trk-h1"
+        ],
+        "matchedFoundationTopics": [
+          "FND-6",
+          "FND-7",
+          "FND-4",
+          "Projekt G"
+        ],
+        "coreBooksPl": [
+          "J. Weiner — 'Życie i ewolucja biosfery' (PWN)",
+          "M. Popkiewicz — 'Zrozumieć transformację energetyczną' (Sonia Draga)"
+        ],
+        "coreBooksEn": [
+          "E. O. Wilson — 'The Diversity of Life'",
+          "V. Smil — 'Energy and Civilization: A History' (MIT Press)"
+        ],
         "years": [
           {
             "year": 1,
-            "pl": "Nauka o systemie Ziemi, cykle biogeochemiczne (C, N, P, H2O), meteorologia, hydrologia i chemia środowiska.",
-            "en": "Earth system science, biogeochemical cycles (C, N, P, H2O), hydrology & environmental chemistry."
+            "pl": "Rok 1: Ekologia ekosystemów, biogeochemiczne obiegi pierwiastków (C, N, P, H2O) i termodynamika biosfery.",
+            "en": "Year 1: Ecosystem ecology, biogeochemical cycles (C, N, P, H2O), and biosphere thermodynamics.",
+            "subchaptersPl": [
+              "1.1. Struktura i funkcjonowanie ekosystemów: łańcuchy troficzne, przepływ energii i piramidy biomasy",
+              "1.2. Globalne cykle biogeochemiczne: obieg węgla, azotu, fosforu i wody w skali planetarnej",
+              "1.3. Granice planetarne (Planetary Boundaries Rockströma): klimat, bioróżnorodność, zakwaszenie oceanów",
+              "1.4. Fizyczne podstawy efektu cieplarnianego i bilans radiacyjny Ziemi"
+            ],
+            "subchaptersEn": [
+              "1.1. Ecosystem Structure and Dynamics: Trophic Cascades, Energy Dissipation, Biomass Pyramids",
+              "1.2. Global Biogeochemical Cycling: Planetary Carbon, Nitrogen, Phosphorus, and Hydrological Fluxes",
+              "1.3. Rockström's Planetary Boundaries Framework: Climate Stability, Biosphere Integrity, Ocean Acidification",
+              "1.4. Physics of the Planetary Greenhouse Effect and Earth's Top-of-Atmosphere Radiative Energy Balance"
+            ]
           },
           {
             "year": 2,
-            "pl": "Ekologia populacji i ekosystemów, bioróżnorodność, mikrobiologia gleby i wód oraz toksykologia środowiskowa.",
-            "en": "Ecosystem ecology, biodiversity, soil/water microbiology & environmental toxicology."
+            "pl": "Rok 2: Zanieczyszczenia środowiska, toksykologia, degradacja gleb, wody i powietrza.",
+            "en": "Year 2: Environmental pollution, toxicology, soil, water, and atmospheric degradation.",
+            "subchaptersPl": [
+              "2.1. Zanieczyszczenia atmosfery: aerozole, pyły zawieszone (PM2.5, PM10), tlenki azotu i siarki, smog",
+              "2.2. Eutrofizacja wód śródlądowych i mórz (problem Morza Bałtyckiego), biogeny rolnicze i strefy beztlenowe",
+              "2.3. Degradacja gleb, erozja, pustynnienie i akumulacja metali ciężkich",
+              "2.4. Ekotoksykologia: bioakumulacja i biomagnifikacja toksyn (dioksyny, PFAS, mikroplastik) w łańcuchach pokarmowych"
+            ],
+            "subchaptersEn": [
+              "2.1. Atmospheric Pollutants: Aerosols, Particulate Matter (PM2.5, PM10), NOx, SOx, Photochemical Smog",
+              "2.2. Aquatic Eutrophication and Dead Zones: Agricultural Runoff and Hypoxia in the Baltic Sea",
+              "2.3. Soil Degradation, Desertification, Salinization, and Heavy Metal Contamination",
+              "2.4. Ecotoxicology: Bioaccumulation and Biomagnification of Persistent Chemicals (PFAS, Microplastics, POPs)"
+            ]
           },
           {
             "year": 3,
-            "pl": "Technologie oczyszczania wody, powietrza i remediacji gleb, gospodarka obiegu zamkniętego i projekt inżynierski.",
-            "en": "Water/air purification, soil remediation, circular economy & B.Eng. thesis."
+            "pl": "Rok 3: Technologie dekarbonizacji, czysta energetyka, bilans energetyczny cywilizacji (Vaclav Smil).",
+            "en": "Year 3: Decarbonization technologies, clean energy, civilizational energy transition (Vaclav Smil).",
+            "subchaptersPl": [
+              "3.1. Analiza gęstości mocy źródeł energii (W/m2) i materiałochłonności infrastruktury według Vaclava Smila",
+              "3.2. Odnawialne źródła energii: fotowoltaika krzemowa i perowskitowa, turbiny wiatrowe onshore/offshore",
+              "3.3. Reaktory jądrowe (SMR, duża energetyka jądrowa) jako bezemisyjne źródło mocy pasmowej (Baseload)",
+              "3.4. Technologie wychwytu i magazynowania dwutlenku węgla: CCS (Carbon Capture & Storage) i DAC (Direct Air Capture)"
+            ],
+            "subchaptersEn": [
+              "3.1. Power Density (W/m2) and Material Intensity of Energy Technologies (Vaclav Smil's Framework)",
+              "3.2. Renewable Energy Generation: Silicon & Perovskite Photovoltaics, Onshore and Offshore Wind Turbines",
+              "3.3. Nuclear Power (Large Gen III+ and SMRs) as Firm Zero-Emission Baseload Electricity and Process Heat",
+              "3.4. Carbon Dioxide Removal: Carbon Capture & Storage (CCS) and Direct Air Capture (DAC) Thermodynamics"
+            ]
           },
           {
             "year": 4,
-            "pl": "Modelowanie klimatu, mikroklimat leśny i miejski, zdrowie środowiskowe (One Health) i bezemisyjna transformacja energetyczna.",
-            "en": "Climate modeling, forest/urban microclimates, One Health & zero-emission energy transition."
+            "pl": "Rok 4: Gospodarka obiegu zamkniętego (Circular Economy), recykling surowców krytycznych i gospodarka wodna.",
+            "en": "Year 4: Circular economy engineering, critical raw material recycling, and water stewardship.",
+            "subchaptersPl": [
+              "4.1. Zasady gospodarki o obiegu zamkniętym (Circular Economy): projektowanie pod kątem demontażu i recyklingu",
+              "4.2. Recykling baterii litowo-jonowych i odzysk metali ziem rzadkich (REE, lit, kobalt, nikiel)",
+              "4.3. Zintegrowana gospodarka wodna: odsalanie wód morskich, retencja krajobrazowa i neutralizacja ścieków przemysłowych",
+              "4.4. Rolnictwo regeneratywne i precyzyjne (Precision Agriculture) ograniczające zużycie nawozów sztucznych"
+            ],
+            "subchaptersEn": [
+              "4.1. Circular Economy Engineering: Design-for-Disassembly, Industrial Symbiosis, and Material Longevity",
+              "4.2. Battery Recycling Hydrometallurgy and Rare Earth Element (REE, Lithium, Cobalt, Nickel) Recovery",
+              "4.3. Integrated Water Resource Management: Reverse Osmosis Desalination, Landscape Retention, Industrial Wastewater Remediation",
+              "4.4. Regenerative and Precision Agriculture: Soil Carbon Sequestration and Targeted Nutrient Delivery"
+            ]
           },
           {
             "year": 5,
-            "pl": "Teledetekcja satelitarna Ziemi, inżynieria regeneracji ekosystemów i praca magisterska z ochrony biosfery.",
-            "en": "Satellite Earth observation, ecosystem regeneration engineering & M.Sc. thesis."
+            "pl": "Rok 5: Adaptacja planetarna, modelowanie klimatu, geoinżynieria a rygor ekologiczny, praca magisterska.",
+            "en": "Year 5: Planetary adaptation, climate modeling, geoengineering risks, Master's thesis.",
+            "subchaptersPl": [
+              "5.1. Numeryczne modele klimatyczne ogólnej cyrkulacji (GCM, CMIP6) i scenariusze emisji IPCC (SSP1–SSP5)",
+              "5.2. Geoinżynieria planetarna: zarządzanie promieniowaniem słonecznym (SRM), nawożenie oceanów żelazem — ryzyka i rygor",
+              "5.3. Ramy prawne i polityczne transformacji: Porozumienie Paryskie, Europejski Zielony Ład i rynki uprawnień ETS",
+              "5.4. Praca magisterska: Projekt zintegrowanej technologii recyklingu lub dekarbonizacji dla wybranego sektora przemysłowego"
+            ],
+            "subchaptersEn": [
+              "5.1. Global Climate Models (General Circulation Models GCM, CMIP6) and Shared Socioeconomic Pathways (SSPs)",
+              "5.2. Solar Radiation Management (SRM) and Ocean Iron Fertilization: Geophysical Risks & Epistemic Boundaries",
+              "5.3. Climate Policy Frameworks: Paris Agreement, European Green Deal, and Emissions Trading Schemes (EU ETS)",
+              "5.4. Master's Thesis: Integrated Engineering Design of a Zero-Emission Circular Process for Heavy Industry"
+            ]
           }
         ]
       },
@@ -3582,36 +4890,118 @@ const DEFAULT_SEED = {
         "group": "TRACK",
         "refId": "H",
         "siteId": "SITE-X10",
-        "icon": "☢️",
-        "color": "#f43f5e",
+        "icon": "⚡",
+        "color": "#f59e0b",
+        "titlePl": "Super-Projekt H: Energetyka Jądrowa i Fuzja Termojądrowa (5 lat studiów)",
+        "titleEn": "Super-Project H: Nuclear Energy & Thermonuclear Fusion (5-Year Degree)",
         "sourceLang": "PL+EN",
-        "titlePl": "Super-Projekt H: Energetyka Jądrowa, Reaktory SMR/HTGR i Fuzja Termojądrowa (5 lat)",
-        "titleEn": "Super-Project H: Nuclear Engineering, SMR/HTGR Reactors & Fusion Energy (5 Years)",
+        "linkedMaterialIds": [
+          "smat-trk-h1",
+          "smat-trk-h2",
+          "smat-4",
+          "smat-5"
+        ],
+        "matchedFoundationTopics": [
+          "FND-4",
+          "FND-5",
+          "FND-6",
+          "FND-1",
+          "Super-Projekt H"
+        ],
+        "coreBooksPl": [
+          "S. Glasstone, A. Sesonske — 'Inżynieria reaktorów jądrowych' (WNT)",
+          "Z. Celiński — 'Energetyka jądrowa' (PWN)",
+          "J. Kubowski — 'Elektrownie jądrowe' (WNT)"
+        ],
+        "coreBooksEn": [
+          "J. R. Lamarsh, A. J. Baratta — 'Introduction to Nuclear Engineering'",
+          "F. F. Chen — 'Introduction to Plasma Physics and Controlled Fusion'"
+        ],
         "years": [
           {
             "year": 1,
-            "pl": "Fizyka jądrowa, reakcje rozszczepienia i syntezy, termodynamika techniczna, mechanika płynów i wymiana ciepła.",
-            "en": "Nuclear physics, fission & fusion reactions, engineering thermodynamics & heat transfer."
+            "pl": "Rok 1: Fizyka jądrowa, przekroje czynne, rozszczepienie jąder, spowalnianie neutronów i reaktory zerowej mocy.",
+            "en": "Year 1: Nuclear physics, cross-sections, fission reactions, neutron moderation, and zero-power reactors.",
+            "subchaptersPl": [
+              "1.1. Struktura jądra atomowego, siły jądrowe, deficyt masy i energia wiązania (wzór Weizsäckera)",
+              "1.2. Prawa rozpadu promieniotwórczego (alfa, beta, gamma), szeregi promieniotwórcze i prawo Batemana",
+              "1.3. Reakcja rozszczepienia jądra uranu-235 i plutonu-239: emisja neutronów natychmiastowych i opóźnionych",
+              "1.4. Spowalnianie neutronów, przekroje czynne na rozproszenie i absorpcję, rezonansy i wzór czteroczynnikowy"
+            ],
+            "subchaptersEn": [
+              "1.1. Nuclear Structure, Strong Interaction, Mass Defect, and Semi-Empirical Mass Formula (Weizsäcker)",
+              "1.2. Radioactive Decay Kinetics (Alpha, Beta, Gamma), Decay Chains, and Bateman Differential Equations",
+              "1.3. Fission of U-235 and Pu-239: Prompt and Delayed Neutron Spectra, Energy Release Breakdown",
+              "1.4. Neutron Moderation, Scattering/Capture Cross-Sections, Resonance Absorption, Four-Factor Formula"
+            ]
           },
           {
             "year": 2,
-            "pl": "Teoria reaktorów jądrowych (równanie dyfuzji i transportu neutronów, współczynnik k_eff), materiały jądrowe i paliwa TRISO.",
-            "en": "Nuclear reactor theory (neutron transport, k_eff criticality), nuclear materials & TRISO fuels."
+            "pl": "Rok 2: Teoria dyfuzji neutronów, kinetyka reaktora, reaktywność, trucizny ksenonowe i sterowanie mocą.",
+            "en": "Year 2: Neutron diffusion theory, reactor kinetics, reactivity, xenon poisoning, and control rod dynamics.",
+            "subchaptersPl": [
+              "2.1. Jednogrupowa i wielogrupowa teoria dyfuzji neutronów w rdzeniu reaktora o zadanej geometrii",
+              "2.2. Kinetyka punktowa reaktora: rola neutronów opóźnionych w sterowaniu i okres reaktora",
+              "2.3. Wpływ temperatury na reaktywność: współczynnik dopplerowski, współczynnik temperaturowy moderatora (MTC)",
+              "2.4. Zjawisko zatrucia ksenonowego (Xe-135) i samarium (Sm-149) oraz studnia ksenonowa po wyłączeniu reaktora"
+            ],
+            "subchaptersEn": [
+              "2.1. One-Group and Multi-Group Neutron Diffusion Equations in Geometric Core Volumes",
+              "2.2. Point Reactor Kinetics Equations: Delayed Neutron Precursors and Stable Reactor Periods",
+              "2.3. Temperature Reactivity Coefficients: Doppler Broadening, Moderator Temperature Coefficient (MTC)",
+              "2.4. Fission Product Poisoning: Xenon-135 Dynamics, Iodine Well, and Samarium-149 Equilibrium"
+            ]
           },
           {
             "year": 3,
-            "pl": "Eksploatacja i bezpieczeństwo reaktorów PWR, SMR oraz wysokotemperaturowych HTGR (HTGR-POLA, NCBJ Świerk) i dyplom inżynierski.",
-            "en": "PWR, SMR & high-temperature HTGR reactor safety/operations (HTGR-POLA) & B.Eng."
+            "pl": "Rok 3: Termohydraulika reaktorów PWR/BWR/SMR, pętle chłodzenia, wymienniki ciepła i reaktor badawczy MARIA.",
+            "en": "Year 3: Thermal-hydraulics of PWR/BWR/SMR reactors, cooling loops, and MARIA research reactor.",
+            "subchaptersPl": [
+              "3.1. Termohydraulika rdzenia: profile temperatur paliwa i koszulki, kryzys wrzenia (DNB - Departure from Nucleate Boiling)",
+              "3.2. Obiegi chłodzenia reaktorów wodnych ciśnieniowych (PWR) i wrzących (BWR): pompy cyrkulacyjne, wytwornice pary",
+              "3.3. Reaktor badawczy MARIA w Świerku: konstrukcja rdzenia basenowo-kanałowego, produkcja molibdenu-99 i badania materiałowe",
+              "3.4. Pasywne systemy bezpieczeństwa w reaktorach III+ generacji (AP1000, EPR, VVER-1200)"
+            ],
+            "subchaptersEn": [
+              "3.1. Core Thermal-Hydraulics: Fuel/Cladding Radial Temperature Gradients, Critical Heat Flux and DNB",
+              "3.2. Primary and Secondary Coolant Circuits in PWRs and BWRs: Pressurizers, Steam Generators, Circulation Pumps",
+              "3.3. The MARIA Research Reactor in Świerk: Core Configuration, Medical Molybdenum-99 Irradiation, Material Testing",
+              "3.4. Passive Safety Systems in Gen III+ Reactors (Gravity Injection, Passive Containment Cooling)"
+            ]
           },
           {
             "year": 4,
-            "pl": "Fuzja magnetyczna i inercyjna (tokamaki ITER/DEMO, stellaratory), produkcja radioizotopów medycznych (MARIA) i napędy kosmiczne.",
-            "en": "Magnetic/inertial fusion (ITER/DEMO, stellarators), medical radioisotopes (MARIA) & space reactors."
+            "pl": "Rok 4: Małe reaktory modułowe (SMR: BWRX-300, Rolls-Royce) oraz wysokotemperaturowe (HTGR-POLA) dla ciepła i AI.",
+            "en": "Year 4: Small Modular Reactors (SMRs: BWRX-300, Rolls-Royce) & High-Temperature Gas Reactors (HTGR-POLA) for AI.",
+            "subchaptersPl": [
+              "4.1. Architektura reaktorów SMR: BWRX-300, NuScale, Rolls-Royce SMR — standaryzacja fabryczna i zasilanie centrów danych AI",
+              "4.2. Reaktory wysokotemperaturowe chłodzone helem (HTGR / polski projekt HTGR-POLA): paliwo TRISO, temperatura 750–900°C",
+              "4.3. Zastosowania HTGR w kogeneracji przemysłowej: para technologiczna dla chemii, produkcja czystego wodoru (cykle termochemiczne)",
+              "4.4. Paliwa jądrowe o zwiększonej odporności na awarie (ATF - Accident Tolerant Fuels) i zarządzanie wypalonym paliwem"
+            ],
+            "subchaptersEn": [
+              "4.1. Small Modular Reactor Architectures: BWRX-300, NuScale, Rolls-Royce SMR — Powering AI Data Center Campuses",
+              "4.2. High-Temperature Gas-Cooled Reactors (HTGR / Polish HTGR-POLA Program): TRISO Particle Fuel Integrity at 900°C",
+              "4.3. Industrial Cogeneration via HTGR: Process Steam for Chemical Synthesis and Thermochemical Hydrogen Production",
+              "4.4. Accident Tolerant Fuels (ATF), Deep Geological Repositories, and Pyroprocessing Reprocessing Loops"
+            ]
           },
           {
             "year": 5,
-            "pl": "Integracja gigawatowych bloków jądrowych z klastrami AI/WBE, kogeneracja wodoru i praca magisterska dla podwariantów A–G.",
-            "en": "Gigawatt nuclear power integration for AI/WBE clusters, hydrogen cogeneration & M.Sc. thesis."
+            "pl": "Rok 5: Fuzja jądrowa, fizyka plazmy, tokamaki (ITER, SPARC), stellaratory (Wendelstein 7-X), praca magisterska.",
+            "en": "Year 5: Thermonuclear fusion, plasma physics, tokamaks (ITER, SPARC), stellarators (Wendelstein 7-X), Master's thesis.",
+            "subchaptersPl": [
+              "5.1. Fizyka plazmy termojądrowej: równania magnetohydrodynamiki (MHD), dryfy cząstek i niestabilności plazmy",
+              "5.2. Magnetyczne uwięzienie plazmy: tokamaki (ITER, SPARC z magnesami HTS) vs. stellaratory zoptymalizowane (W7-X)",
+              "5.3. Inżynieria pierwszej ściany i dywertora: obciążenia cieplne (10–20 MW/m2), regeneracja trytu z litu (Breeding Blankets)",
+              "5.4. Praca magisterska: Projekt pętli cieplnej i układu odbioru mocy reaktora SMR / HTGR zasilającego infrastrukturę superkomputerową AI"
+            ],
+            "subchaptersEn": [
+              "5.1. Thermonuclear Plasma Physics: Magnetohydrodynamics (MHD) Equations, Drift Waves, and Plasma Instabilities",
+              "5.2. Magnetic Confinement Configurations: Tokamaks (ITER, SPARC High-Field HTS Magnets) vs. Advanced Stellarators (W7-X)",
+              "5.3. Plasma-Facing Components and Divertor Engineering: 20 MW/m2 Heat Exhaust, Tritium Breeding Lithium Blankets",
+              "5.4. Master's Thesis: Thermal Cycle and Power Conversion Loop Design for an SMR/HTGR Powering an Exascale AI Cluster"
+            ]
           }
         ]
       }
@@ -4050,6 +5440,611 @@ const DEFAULT_SEED = {
         "deliverablePl": "Protokół diagnostyczny operatora w habitacie analogowym.",
         "deliverableEn": "Operator diagnostic protocol for analog space habitats."
       }
+    ],
+    "carAudioRoad": [
+      {
+        "id": "car-ep-01",
+        "order": 1,
+        "stage": "I",
+        "stageNamePl": "Etap I: Sztab W-0 i Prawo Administracyjne",
+        "stageNameEn": "Stage I: District W-0 & Public Administration",
+        "titlePl": "Odcinek 1: Doktryna Manhattan i Rygor Sztabowy — Jak Zarządzać Projektem na Całe Życie",
+        "titleEn": "Episode 1: The Manhattan Doctrine & Command Discipline — Life-Long Megaproject Command",
+        "estimatedDurationMin": 18,
+        "spokenBriefingPl": "Witaj w trasie. Rozpoczynamy pierwszą część celowej drogi ekosystemu Golem 15. Dlaczego zaczynamy od Sztabu W-0 i trzech lat studiów administracji, zamiast od razu rzucić się na fizykę kwantową lub neurobiologię? Historia wielkich projektów technologicznych — od oryginalnego Projektu Manhattan, przez Program Apollo, aż po współczesny ITER — uczy jednej bezlitosnej prawdy: żaden przełom naukowy nie przetrwa bez żelaznej dyscypliny organizacyjnej, znajomości prawa i ochrony własności intelektualnej. Doktryna Manhattan Golem 15 opiera się na kompartmentalizacji wiedzy, czyli zasadzie Need-to-Know. W samochodzie odsłuchujesz wielką syntezę, ale każde laboratorium i każdy z Twoich agentów AI pracuje w ściśle wydzielonym sektorze. Twoje trzy lata studiów administracji to nie biurokracja, lecz pancerz chroniący Twoje badania przed chaosem prawnym, audytami i ryzykiem utraty praw do wynalazków.",
+        "spokenBriefingEn": "Welcome on the road. We begin the first stage of the Golem 15 ecosystem roadmap. Why do we start with District W-0 and 3 years of Administration rather than diving immediately into quantum physics or neuroscience? Because history teaches that no breakthrough survives without institutional discipline, regulatory mastery, and intellectual property protection. District W-0 serves as your strategic headquarters, shielding your multi-decade research roadmap.",
+        "keyTakeawaysPl": [
+          "Zasada kompartmentalizacji wiedzy (Need-to-Know) chroni projekt przed rozproszeniem i wyciekiem strategicznym.",
+          "Trzy lata administracji dają formalną suwerenność: znajomość KPA, zamówień publicznych i audytu B+R.",
+          "AI w projekcie Manhattan działa jako sieć wyspecjalizowanych agentów w ściśle przypisanych domenach."
+        ],
+        "curatedAudioLinks": [
+          {
+            "label": "🇵🇱 Radio Naukowe — Jak organizowano największe projekty naukowe w historii",
+            "url": "https://radionaukowe.pl/"
+          },
+          {
+            "label": "🇬🇧 Lex Fridman Podcast — Megaproject Engineering & Nuclear Command",
+            "url": "https://lexfridman.com/podcast/"
+          }
+        ]
+      },
+      {
+        "id": "car-ep-02",
+        "order": 2,
+        "stage": "I",
+        "stageNamePl": "Etap I: Sztab W-0 i Prawo Administracyjne",
+        "stageNameEn": "Stage I: District W-0 & Public Administration",
+        "titlePl": "Odcinek 2: Prawo B+R, Certyfikacja EU AI Act i Reżim Prawa Atomowego",
+        "titleEn": "Episode 2: R&D Law, EU AI Act Certification & Nuclear Regulatory Regimes",
+        "estimatedDurationMin": 20,
+        "spokenBriefingPl": "Kontynuujemy podróż przez ramy regulacyjne. Żyjemy w epoce, w której innowacja bez certyfikacji jest martwa w świetle prawa. Europejski Akt o Sztucznej Inteligencji wprowadza bezprecedensowy reżim dla systemów wysokiego ryzyka. Gdy w Projekcie A tworzysz interfejsy mózg-komputer, a w Projekcie B emulujesz sieci neuronowe, musisz od pierwszego dnia projektować przejrzystość, rejestrować zbiory danych i zapewniać odporność na błędy. To samo dotyczy Prawa atomowego i Państwowej Agencji Atomistyki w kontekście reaktorów SMR i reaktora MARIA w Świerku. Znajomość procedur licencjonowania i bioetyki medycznej daje Ci przewagę, której nie ma większość czysto technicznych badaczy.",
+        "spokenBriefingEn": "Continuing through our regulatory road: modern deep-tech innovation without compliance is dead on arrival. The European AI Act imposes strict conformance assessments on high-risk models. Likewise, nuclear law and medical bioethics require end-to-end auditability. Understanding these frameworks gives you legal sovereignty.",
+        "keyTakeawaysPl": [
+          "Systemy AI w medycynie i energetyce podlegają rygorystycznej certyfikacji CE i wymogom XAI.",
+          "Licencjonowanie reaktorów SMR i badawczych wymaga wieloletnich procedur bezpieczeństwa PAA i IAEA.",
+          "Bioetyka badań klinicznych i organoidów wyznacza granice między dopuszczalnym eksperymentem a odpowiedzialnością prawną."
+        ],
+        "curatedAudioLinks": [
+          {
+            "label": "🇵🇱 Nauka w Polsce (PAP) — Regulacje prawne AI i inżynierii genetycznej w Polsce",
+            "url": "https://naukawpolsce.pl/"
+          },
+          {
+            "label": "🇬🇧 Stanford Law — AI Regulation, Biotechnology & Nuclear Governance",
+            "url": "https://law.stanford.edu/"
+          }
+        ]
+      },
+      {
+        "id": "car-ep-03",
+        "order": 3,
+        "stage": "II",
+        "stageNamePl": "Etap II: Wspólne Podstawy 1–8 po kolei",
+        "stageNameEn": "Stage II: 8 Core Foundations in Sequence",
+        "titlePl": "Odcinek 3: Fundament 1 — Matematyka i Logika: Język Opisu Wszechświata i Tensory",
+        "titleEn": "Episode 3: Foundation 1 — Mathematics & Logic: Universal Language, Tensors & Information",
+        "estimatedDurationMin": 22,
+        "spokenBriefingPl": "Wkraczamy w drugi etap drogi celowej — Wspólne Podstawy Naukowe, punkt numer jeden: Matematyka i Logika. Jak pisał Roger Penrose w 'Drodze do rzeczywistości', świat fizyczny jest zakorzeniony w platońskim świecie form matematycznych. W tym odcinku powtarzamy kluczowe pojęcia, które będą Ci towarzyszyć przez wszystkie ścieżki od A do H. Algebra liniowa, przestrzenie wektorowe Hilberta i tensory to nie tylko narzędzia fizyki kwantowej, ale też język wag sieci głębokich i konektomiki. Z kolei teoria informacji Claude'a Shannona definiuje kres tego, ile informacji można przesłać przez kanał z szumem — czy to przez kabel światłowodowy, czy przez akson w mózgu.",
+        "spokenBriefingEn": "We enter the second stage: Core Foundations, starting with Mathematics and Logic. Linear algebra, Hilbert spaces, and tensor calculus form the mathematical language uniting quantum mechanics, machine learning, and connectomics. Shannon's information theory sets the fundamental boundaries of communication through noisy biological and silicon channels.",
+        "keyTakeawaysPl": [
+          "Algebra liniowa i tensory stanowią wspólny mianownik dla AI, fizyki kwantowej i dynamiki mózgu.",
+          "Rachunek różniczkowy i teoria układów dynamicznych opisują przejścia fazowe i stabilność ekosystemów.",
+          "Entropia informacyjna Shannona łączy termodynamikę fizyczną z kodowaniem neurologicznym."
+        ],
+        "curatedAudioLinks": [
+          {
+            "label": "🇵🇱 OpenAGH — Wykłady z algebry liniowej i analizy matematycznej",
+            "url": "https://open.agh.edu.pl/"
+          },
+          {
+            "label": "🇬🇧 3Blue1Brown — Essence of Linear Algebra & Calculus Podcasts",
+            "url": "https://www.3blue1brown.com/"
+          }
+        ]
+      },
+      {
+        "id": "car-ep-04",
+        "order": 4,
+        "stage": "II",
+        "stageNamePl": "Etap II: Wspólne Podstawy 1–8 po kolei",
+        "stageNameEn": "Stage II: 8 Core Foundations in Sequence",
+        "titlePl": "Odcinek 4: Fundament 2 — Informatyka u Kresu Krzemu: Od Turinga do QPU i Neuromorfizmu",
+        "titleEn": "Episode 4: Foundation 2 — Computer Science at Silicon Limits: From Turing to QPU & Neuromorphics",
+        "estimatedDurationMin": 24,
+        "spokenBriefingPl": "Odcinek czwarty poświęcamy fundamentowi drugiemu: Informatyce, a w szczególności dramatycznemu zwrotowi, który dokonuje się na naszych oczach. Klasyczna architektura von Neumanna, w której procesor i pamięć są oddzielone wąską magistralą, zderzyła się ze ścianą pamięci (Memory Wall). Prawo Dennarda załamało się prawie dwie dekady temu, a prawo Moore'a wyczerpuje swoje możliwości z powodu upływów kwantowych w bramkach tranzystorów poniżej 2 nanometrów. Dlatego informatyka staje się dyscypliną post-krzemową. Wchodzimy w epokę komputerów kwantowych opartych na kubitach, architektur Dataflow oraz procesorów neuromorficznych naśladujących mózg, gdzie pamięć i obliczenia są zintegrowane w jednym punkcie fizycznym.",
+        "spokenBriefingEn": "Episode 4 focuses on Computer Science and the historic shift away from pure silicon von Neumann scaling. Dennard scaling has broken down, and the von Neumann memory wall chokes exascale computing. Computer science is evolving into non-von Neumann in-memory computing, quantum processing units (QPUs), and biologically inspired neuromorphic architectures.",
+        "keyTakeawaysPl": [
+          "Upływy kwantowe i dyssypacja ciepła (limit Landauera) wyznaczają kres tradycyjnego krzemu CMOS.",
+          "Wąskie gardło von Neumanna wymusza przeniesienie obliczeń bezpośrednio do wnętrza pamięci (In-Memory Computing).",
+          "Komputery kwantowe (QPU) i koprocesory neuromorficzne redefiniują pojęcie złożoności obliczeniowej."
+        ],
+        "curatedAudioLinks": [
+          {
+            "label": "🇵🇱 MIMUW / Ważniak — Wykłady z architektury komputerów i teorii obliczeń",
+            "url": "https://wazniak.mimuw.edu.pl/"
+          },
+          {
+            "label": "🇬🇧 MIT 6.006 / 6.824 — Computer Architecture & Distributed Systems Lectures",
+            "url": "https://ocw.mit.edu/"
+          }
+        ]
+      },
+      {
+        "id": "car-ep-05",
+        "order": 5,
+        "stage": "II",
+        "stageNamePl": "Etap II: Wspólne Podstawy 1–8 po kolei",
+        "stageNameEn": "Stage II: 8 Core Foundations in Sequence",
+        "titlePl": "Odcinek 5: Fundament 3 — Nowe Paradygmaty Programowania: Qiskit, SNN i Modele Różniczkowalne",
+        "titleEn": "Episode 5: Foundation 3 — Programming Paradigm Shift: Qiskit, SNNs & Differentiable Code",
+        "estimatedDurationMin": 21,
+        "spokenBriefingPl": "Przechodzimy do Fundamentu trzeciego: Programowania. Kiedyś programowanie oznaczało pisanie sekwencyjnych instrukcji warunkowych w językach C czy Pascal. Dzisiaj zmiana podwalin sprzętowych wymusiła całkowity przewrót paradygmatów programowania. Po pierwsze, programowanie różniczkowalne (PyTorch, JAX), w którym cały program jest funkcją podlegającą optymalizacji gradientowej. Po drugie, programowanie kwantowe w frameworkach takich jak Qiskit czy Cirq, gdzie operujesz na bramkach unitarnych i stanach splątanych. Po trzecie, programowanie impulsowych sieci neuronowych (SNN w Brian2 i snnTorch), naśladujące asynchroniczne wyładowania neuronów biologicznych. Jako architekt Golem 15 musisz swobodnie operować tymi trzema nowymi paradygmatami.",
+        "spokenBriefingEn": "Episode 5 covers the paradigm shift in programming. Programming is no longer just sequential imperativism. It has transformed into differentiable tensor graphs (PyTorch, JAX), quantum circuit programming (Qiskit, PennyLane), and event-driven Spiking Neural Network programming (Brian2, Lava). These paradigms form your programming toolkit for bio-computational systems.",
+        "keyTakeawaysPl": [
+          "Programowanie różniczkowalne traktuje kod maszynowy jako ciągły graf obliczeniowy optymalizowany gradientowo.",
+          "Programowanie kwantowe (Qiskit) pozwala symulować układy chemiczne i molekularne niedostępne dla klasycznych CPU.",
+          "Symulacje impulsowe (SNN) łączą świat kodu z fizjologią wyładowań neuronowych mózgu."
+        ],
+        "curatedAudioLinks": [
+          {
+            "label": "🇵🇱 Helion / Kanał o technologii — Ewolucja paradygmatów programowania: Python, Rust i AI",
+            "url": "https://helion.pl/"
+          },
+          {
+            "label": "🇬🇧 IBM Quantum / Qiskit Podcasts — Quantum Programming Fundamentals",
+            "url": "https://qiskit.org/"
+          }
+        ]
+      },
+      {
+        "id": "car-ep-06",
+        "order": 6,
+        "stage": "II",
+        "stageNamePl": "Etap II: Wspólne Podstawy 1–8 po kolei",
+        "stageNameEn": "Stage II: 8 Core Foundations in Sequence",
+        "titlePl": "Odcinek 6: Fundament 4 — Fizyka: Termodynamika Życia, Zjawiska Kwantowe i Półprzewodniki Post-Krzemowe",
+        "titleEn": "Episode 6: Foundation 4 — Physics: Non-Equilibrium Thermodynamics, Quantum Matter & 2D Materials",
+        "estimatedDurationMin": 25,
+        "spokenBriefingPl": "Fundament czwarty: Fizyka. Wszystko, co żyje, oblicza lub porusza się w przestrzeni, podlega prawom termodynamiki i mechaniki kwantowej. Organizmy żywe to układy otwarte, oddalone od równowagi termodynamicznej, utrzymujące swój porządek kosztem rozpraszania energii do otoczenia. W tym odcinku analizujemy fizykę materiałów post-krzemowych: grafen, dichalkogenki metali przejściowych oraz nadprzewodnictwo. Zrozumienie zjawiska Josephsona pozwala zrozumieć działanie kubitów transmonowych, a znajomość termodynamiki nierównowagowej tłumaczy, dlaczego ludzki mózg potrafi wykonywać 10 do potęgi 18 operacji na sekundę zużywając zaledwie 20 watów mocy.",
+        "spokenBriefingEn": "Episode 6 delves into Physics: non-equilibrium thermodynamics, quantum mechanics, and post-silicon solid-state physics. Living systems are open thermodynamic dissipative structures. Superconductivity and Josephson junctions drive quantum hardware, while 2D transition-metal dichalcogenides chart the path beyond bulk silicon.",
+        "keyTakeawaysPl": [
+          "Życie i obliczenia biologiczne to zjawiska termodynamiki nierównowagowej minimalizujące produkcję entropii.",
+          "Złącza Josephsona w nadprzewodnikach umożliwiają kreację sztucznych dwupoziomowych atomów kwantowych (kubitów).",
+          "Materiały 2D (grafen, MoS2) otwierają drogę do tranzystorów o grubości pojedynczej warstwy atomowej."
+        ],
+        "curatedAudioLinks": [
+          {
+            "label": "🇵🇱 OpenStax Polska / Feynmana wykłady z fizyki — Fizyka współczesna i kwantowa",
+            "url": "https://openstax.pl/"
+          },
+          {
+            "label": "🇬🇧 Sean Carroll Mindscape Podcast — Quantum Physics, Emergence & Thermodynamics",
+            "url": "https://www.preposterousuniverse.com/podcast/"
+          }
+        ]
+      },
+      {
+        "id": "car-ep-07",
+        "order": 7,
+        "stage": "II",
+        "stageNamePl": "Etap II: Wspólne Podstawy 1–8 po kolei",
+        "stageNameEn": "Stage II: 8 Core Foundations in Sequence",
+        "titlePl": "Odcinek 7: Fundament 5 — Elektronika i Neuromorfizm: Memrystory i Zdarzeniowe Sensory DVS",
+        "titleEn": "Episode 7: Foundation 5 — Electronics & Neuromorphics: Memristors & Event-Driven DVS Sensors",
+        "estimatedDurationMin": 23,
+        "spokenBriefingPl": "W piątym fundamencie — Elektronice — przenosimy zasady fizyki do krzemu i obwodów scalonych. Przez dekady elektronika dzieliła się sztywno na cyfrową i analogową. Dzisiaj najbardziej ekscytujący front to elektronika neuromorficzna. Odkrycie i komercjalizacja czwartego elementu biernego — memrystora — pozwoliło na fizyczną realizację sztucznej synapsy. Zamiast przesyłać wagi z pamięci RAM do procesora, memrystor pamięta swój stan przewodności elektrycznej pod wpływem przepływającego ładunku, dokładnie tak jak synapsa biologiczna wzmacnia się pod wpływem impulsów. Do tego dochodzą kamery neuromorficzne DVS, które nie rejestrują klatek, lecz wysyłają mikrosekundowe pakiety zmian jasności, redukując strumień danych tysiąckrotnie.",
+        "spokenBriefingEn": "Episode 7 explores Electronics and Neuromorphic Hardware. Memristors act as physical artificial synapses, executing in-memory analog matrix multiplications without memory-bus bottlenecks. Dynamic Vision Sensors (DVS) emulate retinal photoreceptors by transmitting asynchronous event spikes rather than power-hungry frames.",
+        "keyTakeawaysPl": [
+          "Memrystory łączą funkcję pamięci i obliczeń w jednym elemencie, emulując plastyczność synaptyczną STDP.",
+          "Elektronika podprogowa (sub-threshold CMOS) pozwala budować układy scalone o zużyciu energii porównywalnym z tkanką biologiczną.",
+          "Kamery i sensory zdarzeniowe eliminują pojęcie klatek, drastycznie zmniejszając latencję systemów autonomicznych i robotów."
+        ],
+        "curatedAudioLinks": [
+          {
+            "label": "🇵🇱 Forbot / Politechnika Warszawska — Nowoczesna elektronika i systemy wbudowane",
+            "url": "https://forbot.pl/"
+          },
+          {
+            "label": "🇬🇧 IEEE Spectrum Podcasts — Neuromorphic Engineering & Memristive Systems",
+            "url": "https://spectrum.ieee.org/podcasts"
+          }
+        ]
+      },
+      {
+        "id": "car-ep-08",
+        "order": 8,
+        "stage": "II",
+        "stageNamePl": "Etap II: Wspólne Podstawy 1–8 po kolei",
+        "stageNameEn": "Stage II: 8 Core Foundations in Sequence",
+        "titlePl": "Odcinek 8: Fundament 6 — Chemia i Biochemia: Od Wiązań Molekularnych do Hydrożeli Tkankowych",
+        "titleEn": "Episode 8: Foundation 6 — Chemistry & Biochemistry: From Molecular Bonds to Tissue Hydrogels",
+        "estimatedDurationMin": 20,
+        "spokenBriefingPl": "Fundament szósty: Chemia i Biochemia. W Projekcie Manhattan Golem 15 chemia to most między martwym krzemem a żywym organizmem. Gdy wszczepiasz elektrodę do mózgu lub budujesz naczynie krwionośne w biodegradowalnym rusztowaniu, decyduje chemia powierzchniowa. W tym odcinku skupiamy się na hydrożelach biokompatybilnych — usieciowanych polimerach zatrzymujących 99 procent wody, które mechanicznie i chemicznie przypominają tkankę mózgową. Poruszamy również temat elektrochemii reakcji redoks w bateriach półprzewodnikowych oraz zamkniętych obiegów chemicznych Sabatiera, które w Projektach F i G pozwalają na stuprocentowy odzysk tlenu i wody.",
+        "spokenBriefingEn": "Episode 8 covers Chemistry and Biochemistry: the molecular interface between silicon and living tissue. Biomimetic hydrogels provide the compliant scaffold needed to bridge stiff metal electrodes with ultra-soft neural tissue. We also examine closed chemical recovery loops (Sabatier, water electrolysis) fundamental to space habitats and planetary life.",
+        "keyTakeawaysPl": [
+          "Biomateriały hydrożelowe minimalizują odczyn glejowy i reakcję na ciało obce wokół implantów nerwowych.",
+          "Chemia redoks leży u podstaw akumulatorów nowej generacji i magazynowania energii ze źródeł jądrowych.",
+          "Zamknięte cykle katalityczne pozwalają na pełną regenerację zasobów w odciętych habitatach."
+        ],
+        "curatedAudioLinks": [
+          {
+            "label": "🇵🇱 OpenStax Polska / Wydawnictwo Naukowe PWN — Podstawy chemii i biochemii",
+            "url": "https://openstax.pl/"
+          },
+          {
+            "label": "🇬🇧 Royal Society of Chemistry — Chemical Biology & Biomaterials Audio",
+            "url": "https://www.rsc.org/"
+          }
+        ]
+      },
+      {
+        "id": "car-ep-09",
+        "order": 9,
+        "stage": "II",
+        "stageNamePl": "Etap II: Wspólne Podstawy 1–8 po kolei",
+        "stageNameEn": "Stage II: 8 Core Foundations in Sequence",
+        "titlePl": "Odcinek 9: Fundament 7 — Biologia i Neurobiologia: Architektura Komórki i Plastyczność Mózgu",
+        "titleEn": "Episode 9: Foundation 7 — Biology & Neurobiology: Cellular Machinery & Brain Plasticity",
+        "estimatedDurationMin": 26,
+        "spokenBriefingPl": "Fundament siódmy: Biologia i Neurobiologia. Serce całego naszego przedsięwzięcia. Człowiek to układ złożony z 37 bilionów komórek, z których 86 miliardów to neurony spięte stu bilionami synaps w mózgu. Omawiamy strukturę błony komórkowej, transport jonowy przez pompy białkowe oraz zjawisko potencjału czynnościowego. Kluczowym pojęciem jest plastyczność synaptyczna — zdolność mózgu do ciągłego przebudowywania swoich wag połączeń w odpowiedzi na doświadczenie i naukę. To właśnie ta cecha sprawia, że jesteś w stanie uczyć się przez lata kolejnych dziedzin studiów, a mózg jest w stanie zintegrować sztuczną bioniczną kończynę tak, jakby była jego własną biologiczną ręką.",
+        "spokenBriefingEn": "Episode 9 investigates Biology and Neurobiology: the architectural blueprint of life. The human brain contains 86 billion neurons interconnected by over 100 trillion synapses. Synaptic plasticity—long-term potentiation and depression—allows the nervous system to remap its circuitry, enabling lifelong learning and seamless somatic integration of bionic limbs and neuroprosthetics.",
+        "keyTakeawaysPl": [
+          "Plastyczność synaptyczna (LTP/LTD) pozwala mózgowi adaptować się do obcych sygnałów sensorycznych z protez i BCI.",
+          "Równowaga pobudzenia i hamowania (neuroprzekaźniki glutaminian i GABA) warunkuje stabilność pracy kory mózgowej.",
+          "Komórki macierzyste i hodowla organoidów otwierają erę inżynierii tkankowej naśladującej rozwój embrionalny."
+        ],
+        "curatedAudioLinks": [
+          {
+            "label": "🇵🇱 Radio Naukowe — Tajemnice ludzkiego mózgu, konektomu i neuroplastyczności",
+            "url": "https://radionaukowe.pl/"
+          },
+          {
+            "label": "🇬🇧 Huberman Lab Podcast — Neural Plasticity, Brain Chemistry & Optimization",
+            "url": "https://www.hubermanlab.com/"
+          }
+        ]
+      },
+      {
+        "id": "car-ep-10",
+        "order": 10,
+        "stage": "II",
+        "stageNamePl": "Etap II: Wspólne Podstawy 1–8 po kolei",
+        "stageNameEn": "Stage II: 8 Core Foundations in Sequence",
+        "titlePl": "Odcinek 10: Fundament 8 — Sztuczna Inteligencja: Od Transformerów do Modeli Kognitywnych i BCI",
+        "titleEn": "Episode 10: Foundation 8 — Artificial Intelligence: From Transformers to Cognitive Models & BCI",
+        "estimatedDurationMin": 24,
+        "spokenBriefingPl": "Zamykamy etap drugi fundamentem ósmym: Sztuczną Inteligencją. Przez ostatnie lata rewolucja Transformerów i mechanizmu uwagi zmieniła oblicze informatyki. Jednak w architekturze Golem 15 nie traktujemy AI wyłącznie jako generatora tekstu czy obrazów. AI jest dla nas uniwersalnym silnikiem dekodującym: dekoduje szum w sygnałach EEG z kory mózgowej, przewiduje trójwymiarowe fałdowanie łańcuchów białkowych w AlphaFold, optymalizuje przepływ plazmy w tokamakach termojądrowych i koordynuje rozproszony graf rozszczepień Projektu Manhattan. Równocześnie zachowujemy rygor epistemiczny: rozróżniamy statystyczne prawdopodobieństwo tokenów od prawdziwego rozumienia i prawdy naukowej.",
+        "spokenBriefingEn": "Episode 10 concludes the Foundations with Artificial Intelligence. Within Golem 15, AI is not merely a conversational text generator. It is an end-to-end biological and physical decoder: decoding neural spikes into motor intent, predicting protein folding dynamics, and optimizing magnetic fusion plasma control. We maintain strict epistemic hygiene, verifying statistical AI outputs against empirical scientific laws.",
+        "keyTakeawaysPl": [
+          "Mechanizm uwagi (Self-Attention) pozwala modelować nieliniowe relacje wielkoskalowe w biologii i języku.",
+          "Głębokie modele dekodujące BCI tłumaczą fale mózgowe na mowę syntetyczną i ruch egzoszkieletu.",
+          "Rygor epistemiczny i audytowalność algorytmów (XAI) zapobiegają halucynacjom modeli w systemach krytycznych."
+        ],
+        "curatedAudioLinks": [
+          {
+            "label": "🇵🇱 Politechnika Warszawska / Ośrodek Badań nad AI — Wykłady z uczenia maszynowego",
+            "url": "https://pw.edu.pl/"
+          },
+          {
+            "label": "🇬🇧 DeepMind Podcast — AI in Science: From AlphaFold to Nuclear Fusion",
+            "url": "https://deepmind.google/discover/podcast/"
+          }
+        ]
+      },
+      {
+        "id": "car-ep-11",
+        "order": 11,
+        "stage": "III",
+        "stageNamePl": "Etap III: Siedem Ścieżek Badawczych A–G",
+        "stageNameEn": "Stage III: Seven Research Tracks A–G",
+        "titlePl": "Odcinek 11: Projekt A — Człowiek Biocyfrowo-Robotyczny: Protezy, Egzoszkielety i Zmysł Dotyku",
+        "titleEn": "Episode 11: Project A — Bio-Digital-Robotic Human: Prosthetics, Exoskeletons & Haptic Touch",
+        "estimatedDurationMin": 22,
+        "spokenBriefingPl": "Wjeżdżamy w etap trzeci — konkretyzacja w siedmiu powiązanych ścieżkach badawczych. Projekt A bada integrację biologicznego ciała człowieka z robotyką i bioniką. Nie chodzi o proste protezy mechaniczne. Chodzi o dwukierunkową cybernetyczną symbiozę: impuls z kory ruchowej M1 biegnie przez elektrody do mikrokontrolera protezy, który uruchamia sztuczne siłowniki bezszczotkowe, a sensory nacisku na palcach bionicznej dłoni wysyłają mikrostymulację do kory somatosensorycznej, dając człowiekowi odczucie miękkości trzymanego przedmiotu. Poznajemy też techniki osteointegracji, w których tytanowa proteza zrasta się bezpośrednio z kością szkieletu.",
+        "spokenBriefingEn": "Entering Stage III with Project A: Bio-Digital-Robotic Human. This track explores bidirectional somatic symbiosis: motor cortex intent actuates bionic brushless actuators, while tactile fingertips microstimulate somatosensory cortex S1 to deliver genuine haptic sensation. Osseointegrated titanium implants eliminate painful mechanical sockets, unifying biology and mechanics.",
+        "keyTakeawaysPl": [
+          "Dwukierunkowe BCI zamyka pętlę czuciowo-ruchową: intencja wywołuje ruch, a sensory dają naturalny feedback dotykowy.",
+          "Osteointegracja zapewnia bezpośrednie połączenie implantu z kością szkieletową bez bolesnego leja protezowego.",
+          "Chirurgiczne TMR (Targeted Muscle Reinnervation) przekierowuje ucięte nerwy do nowych mięśni, wielokrotnie zwiększając liczbę kanałów sterujących."
+        ],
+        "curatedAudioLinks": [
+          {
+            "label": "🇵🇱 Radio Naukowe — Bionika i cyborgizacja: Jak budujemy sztuczne ciała",
+            "url": "https://radionaukowe.pl/"
+          },
+          {
+            "label": "🇬🇧 Nature Neurotech Podcasts — Restoring Mobility and Touch with Neural Interfaces",
+            "url": "https://www.nature.com/"
+          }
+        ]
+      },
+      {
+        "id": "car-ep-12",
+        "order": 12,
+        "stage": "III",
+        "stageNamePl": "Etap III: Siedem Ścieżek Badawczych A–G",
+        "stageNameEn": "Stage III: Seven Research Tracks A–G",
+        "titlePl": "Odcinek 12: Projekt B — Cyfrowy Umysł i Whole Brain Emulation: Czy Można Przenieść Świadomość?",
+        "titleEn": "Episode 12: Project B — Digital Mind & Whole Brain Emulation: Can Consciousness Be Substrate-Independent?",
+        "estimatedDurationMin": 25,
+        "spokenBriefingPl": "Projekt B stawia jedno z najbardziej fundamentalnych pytań nauki i filozofii: czy ludzki umysł jest niezależny od biologicznego podłoża? Whole Brain Emulation zakłada trzystopniowy proces: precyzyjne zeskanowanie zmarłej lub utrwalonej tkanki mózgowej w rozdzielczości nanometrowej, rekonstrukcję pełnego grafu konektomu i synaps, oraz uruchomienie dynamicznej symulacji elektrofizjologicznej w klastrze obliczeniowym. W tym odcinku analizujemy wąskie gardła: petabajtowe wolumeny danych skanowania FIB-SEM, zapotrzebowanie na moc obliczeniową rzędu eksaflopsów, oraz filozoficzny paradoks duplikacji: czy emulacja to Ty, czy tylko idealna kopia, podczas gdy Twój biologiczny punkt widzenia zgasł?",
+        "spokenBriefingEn": "Project B tackles Whole Brain Emulation and computational substrate independence. The pipeline spans nanoscale tissue imaging (FIB-SEM), AI connectome graph tracing, and biophysical solver execution. We weigh the engineering bottlenecks (petabyte reconstruction, exaFLOP compute requirements) against philosophical identity paradoxes.",
+        "keyTakeawaysPl": [
+          "Whole Brain Emulation wymaga rekonstrukcji połączeń w skali nano z uwzględnieniem typów receptorów i gęstości postsynaptycznej.",
+          "Paradoks duplikacji Parfita i Lema podważa wiarę w zachowanie tożsamości przy skokowym kopiowaniu umysłu.",
+          "Rygor epistemiczny nakazuje traktować WBE jako hipotezę inżynieryjną wymagającą weryfikacji krok po kroku na prostych organizmach (C. elegans, muszka owocowa)."
+        ],
+        "curatedAudioLinks": [
+          {
+            "label": "🇵🇱 Copernicus Center / Granice Nauki — Filozofia umysłu, świadomość i sztuczne neurony",
+            "url": "https://copernicuscenter.edu.pl/"
+          },
+          {
+            "label": "🇬🇧 Future of Humanity Institute / Anders Sandberg — Whole Brain Emulation Roadmap Audio",
+            "url": "https://www.fhi.ox.ac.uk/"
+          }
+        ]
+      },
+      {
+        "id": "car-ep-13",
+        "order": 13,
+        "stage": "III",
+        "stageNamePl": "Etap III: Siedem Ścieżek Badawczych A–G",
+        "stageNameEn": "Stage III: Seven Research Tracks A–G",
+        "titlePl": "Odcinek 13: Projekt C — Maszyny Analogowe i Fotonika: Obliczanie Przez Fizykę Ciągłą",
+        "titleEn": "Episode 13: Project C — Analog Machines & Photonics: Computing Directly Through Continuous Physics",
+        "estimatedDurationMin": 21,
+        "spokenBriefingPl": "W Projekcie C odrzucamy dogmat, że każde obliczenie musi być sprowadzone do zer i jedynek. Przez miliardy lat natura liczyła inaczej: prawa Kirchhoffa natychmiast ustalają prąd w węźle obwodu, fale optyczne interferują ze sobą w czasie zerowym z prędkością światła, a cząsteczki chemiczne znajdują minimum energii swobodnej bez wykonywania miliardów iteracji. Omawiamy renesans komputerów analogowych i optycznych macierzy fotonicznych w zadaniach mnożenia tensorów dla AI. Poznajemy też obliczenia rezerwuarowe (Reservoir Computing), gdzie nieliniowy układ dynamiczny — na przykład ciecz lub sieć sprężysta — wykonuje obliczenia bezpośrednio przez swoją fizyczną dynamikę.",
+        "spokenBriefingEn": "Project C challenges the digital binary dogma. Physical systems compute naturally: Kirchhoff's laws solve conservation equations instantaneously, and optical wavefronts interfere at the speed of light. Photonic matrix multipliers and physical reservoir computing exploit continuous non-linear dynamics to execute AI workloads at near-zero thermal dissipation.",
+        "keyTakeawaysPl": [
+          "Obliczanie przez fizykę eliminuje dyskretyzację i narzut energetyczny zmiennoprzecinkowych procesorów cyfrowych.",
+          "Fotoniczne interferometry Macha-Zehndera wykonują operacje macierzowe z zerowym opóźnieniem zegarowym.",
+          "Obliczenia rezerwuarowe pozwalają przetwarzać sygnały chaotyczne przy minimalnym koszcie treningu (tylko warstwa wyjściowa)."
+        ],
+        "curatedAudioLinks": [
+          {
+            "label": "🇵🇱 Politechnika Śląska — Wykłady z maszyn analogowych i układów dynamicznych",
+            "url": "https://polsl.pl/"
+          },
+          {
+            "label": "🇬🇧 Bernd Ulmann Analog Computing Lectures — Computing with Physics Audio Series",
+            "url": "https://analogparadise.com/"
+          }
+        ]
+      },
+      {
+        "id": "car-ep-14",
+        "order": 14,
+        "stage": "III",
+        "stageNamePl": "Etap III: Siedem Ścieżek Badawczych A–G",
+        "stageNameEn": "Stage III: Seven Research Tracks A–G",
+        "titlePl": "Odcinek 14: Projekt D — 'Frankenstein': Biodruk 3D, Organoidy i Granice Tworzenia Życia",
+        "titleEn": "Episode 14: Project D — 'Frankenstein': 3D Bioprinting, Organoids & Synthetic Organisms",
+        "estimatedDurationMin": 23,
+        "spokenBriefingPl": "Tytuł Projektu D nawiązuje do arcydzieła Mary Shelley, ale w naszym ujęciu jest to rygorystyczny program inżynierii biologicznej. Gdzie leży granica między leczeniem narządu a stworzeniem go od nowa w laboratorium? W tym odcinku śledzimy powstawanie organoidów z komórek macierzystych i biodruk 3D tkanek zwaskularyzowanych. Dyskutujemy o systemach Organ-on-a-Chip, w których miniaturowe modele ludzkich organów pozwalają testować leki i toksyny bez udziału zwierząt. Stawiamy też pytanie o status bioetyczny: co dzieje się, gdy hodowany w naczyniu laboratoryjnym asambloid mózgowy zaczyna generować powtarzalne fale theta i gamma?",
+        "spokenBriefingEn": "Project D, invoking Mary Shelley's 'Frankenstein', investigates the frontiers of synthetic biology, 3D bioprinting, and organoid morphogenesis. We trace the path from induced pluripotent stem cells to vascularized living tissue constructs and Organ-on-a-Chip testbeds. Crucially, we address the bioethical threshold: what moral status belongs to advanced cortical assembloids exhibiting spontaneous neural oscillations?",
+        "keyTakeawaysPl": [
+          "Biodruk 3D tkanek wymaga jednoczesnego tworzenia mikrokapilar naczyniowych dostarczających tlen i glukozę.",
+          "Układy Organ-on-a-Chip zastępują testy na zwierzętach, dając wierniejszy model farmakokinetyki ludzkiej.",
+          "Bioetyka inżynierii organoidów wymaga prewencyjnych regulacji zanim systemy osiągną złożoność poznawczą."
+        ],
+        "curatedAudioLinks": [
+          {
+            "label": "🇵🇱 Radio Naukowe — Hodowanie organów w laboratorium i bioinżynieria komórkowa",
+            "url": "https://radionaukowe.pl/"
+          },
+          {
+            "label": "🇬🇧 Harvard Wyss Institute Podcasts — Organ-on-a-Chip & Biomimetic Engineering",
+            "url": "https://wyss.harvard.edu/"
+          }
+        ]
+      },
+      {
+        "id": "car-ep-15",
+        "order": 15,
+        "stage": "III",
+        "stageNamePl": "Etap III: Siedem Ścieżek Badawczych A–G",
+        "stageNameEn": "Stage III: Seven Research Tracks A–G",
+        "titlePl": "Odcinek 15: Projekt E — Filozofia jako Warstwa Przekrojowa: Rygor Epistemiczny i Metoda Lema",
+        "titleEn": "Episode 15: Project E — Philosophy as Interpretive Layer: Epistemic Hygiene & Lem's Method",
+        "estimatedDurationMin": 22,
+        "spokenBriefingPl": "Projekt E nie jest odrębną ścieżką laboratoryjną — to warstwa przekrojowa, która przenika wszystkie pozostałe projekty. Bez filozofii nauka łatwo osuwa się w bezkrytyczny optymizm technologiczny lub jałową spekulację. W tym odcinku omawiamy metodę Stanisława Lema: rygorystyczne badanie uwarunkowań technologicznych cywilizacji bez ulegania modom intelektualnym. Przypominamy naszą czteropoziomową klasyfikację wiedzy: zielony kolor dla faktów potwierdzonych empirycznie, niebieski dla aktywnych badań inżynieryjnych, żółty dla hipotez falsyfikowalnych, a fioletowy dla spekulacji futurologicznych. Dzięki temu żaden agent AI ani badacz w Twoim zespole nie pomyli hipotezy z dowiedzionym prawem fizyki.",
+        "spokenBriefingEn": "Project E serves as the cross-cutting epistemological foundation across all tracks. Following Stanisław Lem's philosophical methodology, it enforces strict demarcation between verified empirical science, active engineering development, testable hypotheses, and visionary speculation. This epistemic hygiene prevents premature hype and anchors long-term R&D decisions in rigorous rationalism.",
+        "keyTakeawaysPl": [
+          "Czteropoziomowa klasyfikacja epistemiczna chroni projekt przed myleniem spekulacji z prawami przyrody.",
+          "Metoda Lema analizuje technologię jako autonomiczny proces ewolucyjny podlegający prawom cybernetyki.",
+          "Etyka epistemiczna nakłada na badacza obowiązek poszukiwania dowodów obalających własną hipotezę (falsyfikacjonizm Poppera)."
+        ],
+        "curatedAudioLinks": [
+          {
+            "label": "🇵🇱 Polskie Radio / Archiwum Stanisława Lema — Lem o przyszłości nauki i technologii",
+            "url": "https://polskieradio.pl/"
+          },
+          {
+            "label": "🇬🇧 Oxford Uehiro Centre for Practical Ethics Audio — Philosophy of Technology and AI",
+            "url": "https://www.practicalethics.ox.ac.uk/"
+          }
+        ]
+      },
+      {
+        "id": "car-ep-16",
+        "order": 16,
+        "stage": "III",
+        "stageNamePl": "Etap III: Siedem Ścieżek Badawczych A–G",
+        "stageNameEn": "Stage III: Seven Research Tracks A–G",
+        "titlePl": "Odcinek 16: Projekt F — Człowiek w Kosmosie: Ochrona Przed Radiacją, Mikrograwitacja i Bazy ISRU",
+        "titleEn": "Episode 16: Project F — Humans in Space: Radiation Hardening, Microgravity & ISRU Bases",
+        "estimatedDurationMin": 25,
+        "spokenBriefingPl": "W Projekcie F badamy, co dzieje się, gdy delikatny biologiczny organizm człowieka zostanie wyjęty z ochronnego kokonu ziemskiej magnetosfery i atmosfery. W kosmosie nie ma powietrza, temperatura skacze o setki stopni, a ciało bombardują wysokoenergetyczne ciężkie jony galaktycznego promieniowania kosmicznego (HZE). Omawiamy fizjologię mikrograwitacji: utratę gęstości mineralnej kości i zespół SANS uszkadzający wzrok astronautów. Analizujemy inżynierię habitatów księżycowych i marsjańskich: wykorzystanie lokalnych surowców (ISRU), druk osłon z regolitu, tworzenie sztucznej grawitacji przez rotację stacji oraz reaktory jądrowe Kilopower zapewniające megawaty mocy w czasie nocy księżycowej trwającej 14 ziemskich dób.",
+        "spokenBriefingEn": "Project F investigates human survival beyond Earth's protective magnetosphere and atmosphere. Deep space subjects the human body to heavy galactic cosmic ray ions (HZE), microgravity-induced trabecular bone loss, and ocular SANS pathology. Engineering solutions require in-situ resource utilization (ISRU), regolith-sintered radiation shelters, rotational artificial gravity, and compact Kilopower nuclear reactors.",
+        "keyTakeawaysPl": [
+          "Promieniowanie GCR z ciężkimi jonami żelaza wymaga grubych osłon wodorowych, regolitu lub aktywnych pól magnetycznych.",
+          "Zanikanie gęstości kości w mikrograwitacji wymusza codzienny wielogodzinny trening oporowy lub wirówki grawitacyjne.",
+          "Księżycowe i marsjańskie ISRU (odzyskiwanie tlenu i wody ze skał) jest warunkiem koniecznym stałej obecności człowieka poza Ziemią."
+        ],
+        "curatedAudioLinks": [
+          {
+            "label": "🇵🇱 Radio Naukowe — Człowiek w kosmosie: Medycyna kosmiczna i bazy na Księżycu",
+            "url": "https://radionaukowe.pl/"
+          },
+          {
+            "label": "🇬🇧 NASA Houston We Have a Podcast — Space Radiation & Deep Space Life Support",
+            "url": "https://www.nasa.gov/podcasts/"
+          }
+        ]
+      },
+      {
+        "id": "car-ep-17",
+        "order": 17,
+        "stage": "III",
+        "stageNamePl": "Etap III: Siedem Ścieżek Badawczych A–G",
+        "stageNameEn": "Stage III: Seven Research Tracks A–G",
+        "titlePl": "Odcinek 17: Projekt G — Człowiek na Ziemi: Równowaga Biosfery, Ekologia i Odzysk Surowców",
+        "titleEn": "Episode 17: Project G — Humans on Earth: Biosphere Resilience, Circular Ecology & Critical Materials",
+        "estimatedDurationMin": 22,
+        "spokenBriefingPl": "Projekt G jest dialektycznym dopełnieniem Projektu F. Podczas gdy Projekt F pyta, jak stworzyć sztuczne życie w martwej próżni kosmosu, Projekt G pyta, jak ochronić jedyną znaną nam biosferę, która podtrzymuje życie naturalnie. Analizujemy dziewięć granic planetarnych Johana Rockströma. Omawiamy gospodarkę obiegu zamkniętego: odzysk litu, kobaltu i metali ziem rzadkich z wyeksploatowanych baterii i elektroniki, uzdatnianie wody na skalę przemysłową oraz regenerację gleb. Pokazujemy, że technologie opracowywane na potrzeby zamkniętych habitatów kosmicznych — takie jak stuprocentowy recykling wody i bezglebowa uprawa roślin — są najlepszą bronią w walce o przetrwanie biosfery na Ziemi.",
+        "spokenBriefingEn": "Project G stands in dialectical synergy with Project F. While F engineers artificial life support in vacuum, G protects Earth's living biosphere. We examine the nine planetary boundaries, circular hydrometallurgical recycling of critical battery minerals (Li, Co, REEs), and landscape water retention. Closed-loop technologies developed for space habitats provide the ultimate tools for terrestrial biosphere restoration.",
+        "keyTakeawaysPl": [
+          "Ochrona biosfery wymaga domknięcia cykli materiałowych pierwiastków krytycznych (lit, neodym, fosfor).",
+          "Odsalanie wody i zamknięte obiegi przemysłowe zapobiegają kryzysowi hydrologicznemu.",
+          "Technologie transferowane z Projektu F (ECLSS) zasilają ziemską transformację ekologiczną w Projekcie G."
+        ],
+        "curatedAudioLinks": [
+          {
+            "label": "🇵🇱 Nauka o Klimacie / PAN — Stan biosfery, granice planetarne i transformacja ekologiczna",
+            "url": "https://naukaoklimacie.pl/"
+          },
+          {
+            "label": "🇬🇧 Stockholm Resilience Centre Audio — Planetary Boundaries & Earth Stewardship",
+            "url": "https://www.stockholmresilience.org/"
+          }
+        ]
+      },
+      {
+        "id": "car-ep-18",
+        "order": 18,
+        "stage": "IV",
+        "stageNamePl": "Etap IV: Super-Projekt H i Reakcja Łańcuchowa",
+        "stageNameEn": "Stage IV: Super-Project H & Nuclear Fusion Chain Reaction",
+        "titlePl": "Odcinek 18: Super-Projekt H — Energetyka Jądrowa i Fuzja: Serce Mocy Całego Ekosystemu",
+        "titleEn": "Episode 18: Super-Project H — Nuclear Fission & Fusion: The Power Core of the Entire Ecosystem",
+        "estimatedDurationMin": 28,
+        "spokenBriefingPl": "Docieramy do zwieńczenia celowej drogi ekosystemu Golem 15: Super-Projekt H — Energetyka Jądrowa i Fuzja Termojądrowa. Dlaczego ten projekt nazywamy 'Super-Projektem'? Ponieważ stanowi serce zasilające wszystkie pozostałe ścieżki. Emulacja mózgu w Projekcie B wymaga gigawatów stabilnej mocy dla klastrów obliczeniowych. Biodruk tkanek i laboratoria bioniczne w Projekcie A i D potrzebują nieprzerwanego zasilania bez wahań napięcia. Baza księżycowa w Projekcie F nie przetrwa bez reaktora jądrowego, a dekarbonizacja Ziemi w Projekcie G jest niemożliwa bez energii atomowej. W tym finałowym odcinku omawiamy małe reaktory modułowe SMR (BWRX-300, Rolls-Royce), wysokotemperaturowe reaktory HTGR-POLA dostarczające ciepła o temperaturze 900 stopni, polski reaktor badawczy MARIA w Świerku produkujący ratujące życie radioizotopy medyczne, oraz świętego Graala energetyki: fuzję termojądrową w tokamakach i stellaratorach, która da ludzkości nieograniczone, bezpieczne źródło energii na miliony lat. To jest zamknięcie pętli Projektu Manhattan: od dyscypliny prawno-administracyjnej Sztabu W-0, przez 8 fundamentów nauki, aż po potęgę jądra atomowego.",
+        "spokenBriefingEn": "We reach the summit of the Golem 15 ecosystem: Super-Project H — Nuclear Fission and Thermonuclear Fusion. It is the energetic backbone powering every other track: supplying gigawatts of baseload electricity for Project B brain emulation clusters, powering lunar habitats in Project F, and decarbonizing heavy industry in Project G. We survey Small Modular Reactors (SMRs), helium-cooled HTGR-POLA cogeneration, the Polish MARIA research reactor, and high-field magnetic confinement fusion (ITER, SPARC). This completes the Manhattan loop: from District W-0 governance to the ultimate cosmic power of the atomic nucleus.",
+        "keyTakeawaysPl": [
+          "Reaktory SMR (np. BWRX-300) i HTGR-POLA stanowią stabilne źródło bezemisyjnej energii pasmowej dla superkomputerów AI i habitatu.",
+          "Reaktor MARIA w Świerku jest strategicznym filarem medycyny nuklearnej i badań materiałowych w Polsce i Europie.",
+          "Fuzja magnetyczna (D-T w tokamakach ze zoptymalizowanymi magnesami HTS) rozwiąże globalny problem bilansu energetycznego cywilizacji."
+        ],
+        "curatedAudioLinks": [
+          {
+            "label": "🇵🇱 Narodowe Centrum Badań Jądrowych (NCBJ Świerk) — Reaktor MARIA, HTGR i przyszłość atomu",
+            "url": "https://www.ncbj.gov.pl/"
+          },
+          {
+            "label": "🇬🇧 World Nuclear Association / IAEA Podcast — SMR Deployment & Nuclear Fusion Horizons",
+            "url": "https://www.iaea.org/podcasts"
+          }
+        ]
+      }
+    ],
+    "completedCarAudio": [],
+    "completedSubchapters": {}
+  },
+  "summaBook": {
+    "title": "Summa Technologiae 2.0: Biblia Możliwości Techniki",
+    "subtitle": "Traktat o granicach materii, obliczeń i przyszłości człowieka na kanwie wieloletnich studiów Projektu Golem 15",
+    "author": "Ireneusz",
+    "aiCoAuthor": "Antigravity AI (Współautor i Redaktor Epistemiczny)",
+    "inSpiration": "Stanisław Lem, 'Summa Technologiae' (1964)",
+    "edition": "Wydanie Pierwsze — Rękopis Dynamiczny Badań Własnych (2026–2074)",
+    "status": "Żywy rękopis aktualizowany na bieżąco w miarę postępów w nauce",
+    "chapters": [
+      {
+        "id": "ch-intro",
+        "number": 0,
+        "titlePl": "Wstęp: Metoda i Rygor Epistemiczny (Zasada Lema)",
+        "titleEn": "Introduction: Method & Epistemic Rigor (Lem's Principle)",
+        "lemQuote": "„Technologia jest to domena, w której człowiek pragnie dorównać naturze, a tam, gdzie potrafi, nawet ją przewyższyć.” — Stanisław Lem, 1964",
+        "readingTimeMin": 12,
+        "epistemicStatus": "🟢 Potwierdzona metoda badawcza",
+        "lastUpdated": "2026-10-26",
+        "summaryPl": "Wprowadzenie do metodologii dzieła: dlaczego piszemy Summę Technologiae 2.0, czym różni się inżynieria możliwa od ułudy i jak rygor czterech poziomów wiedzy chroni badacza przed halucynacją.",
+        "summaryEn": "Methodological introduction: why we author Summa Technologiae 2.0, distinguishing physically viable engineering from illusion, and applying the 4-tier epistemic matrix.",
+        "contentMarkdownPl": "# Wstęp: Metoda i Rygor Epistemiczny (Zasada Lema)\n\nGdy w roku 1964 Stanisław Lem oddawał do druku pierwsze wydanie *Summy Technologiae*, świat tkwił w zachwycie nad pierwszymi komputerami lampowymi i marzeniem o locie na Księżyc. Lem, ze swoją bezlitosną jasnością widzenia, spojrzał jednak o całe stulecia w przód. Sformułował pojęcia *fantomatyki*, *inżynierii ewolucji*, *teletaksji* i *hodowli informacji*.\n\nDzisiaj, w roku 2026, wkraczamy w epokę, w której wizje Lema przestają być filozoficzną futurologią, a stają się zadaniami inżynieryjnymi. Jednak inżynieria bez rygoru epistemicznego jest ślepa.\n\n### Zasada Lema: Technologia jako Proces Ewolucyjny\n\nTechnologia nie jest przypadkowym zbiorem ludzkich wynalazków. Jest to proces ewolucji pozabiologicznej, który podlega tym samym prawom cybernetyki, doboru i konkurencji, co ewolucja gatunków organicznych. Różnica polega na prędkości: to, na co biosfera potrzebowała miliardów lat, technosfera osiąga w dekady.\n\n### Czteropoziomowy Rygor Epistemiczny Projektu Golem 15\n\nPisząc tę książkę krok po kroku, w miarę zdobywania kolejnych dyplomów i zaliczania kolejnych lat studiów, nakładamy na siebie żelazny rygor epistemiczny:\n1. **🟢 Poziom 1: Wiedza Potwierdzona Empirycznie** — prawa termodynamiki, równania Maxwella, mechanika kwantowa, udokumentowane protokoły kliniczne.\n2. **🔵 Poziom 2: Aktywne Badania Inżynieryjne** — technologie laboratoryjne (kamery DVS, memrystory ReRAM, biodruk 3D, reaktory SMR), które działają w prototypach, lecz wymagają skalowania.\n3. **🟡 Poziom 3: Hipoteza Falsyfikowalna** — modele Whole Brain Emulation, architektury kognitywne AGI, plazma w fuzji termojądrowej — spójne z prawami fizyki, lecz oczekujące na dowód ostateczny.\n4. **🟣 Poziom 4: Spekulacja Filozoficzna i Granice Techniki** — demiurgia światów, granice świadomości, cywilizacje typu Kardaszewa — obszary myślenia krytycznego, które inspirują, lecz nie stanowią jeszcze wiedzy operacyjnej.\n\nNiniejsza książka jest kroniką naszej drogi: od prawa administracyjnego, przez krzem, neurony i atomy, aż po ostateczne pytanie o miejsce człowieka we wszechświecie.\n"
+      },
+      {
+        "id": "ch-01",
+        "number": 1,
+        "titlePl": "Rozdział I: Krzem u Kresu — Fizyczne Granice Półprzewodników i Zmierzch Architektury von Neumanna",
+        "titleEn": "Chapter I: Silicon at the Brink — Physical Semiconductor Limits & The Twilight of Von Neumann",
+        "lemQuote": "„Bariera nie leży w braku pomysłów, lecz w oporze materii, która na poziomie atomowym odmawia posłuszeństwa klasycznej logice.” — Parafraza z Lema",
+        "readingTimeMin": 18,
+        "epistemicStatus": "🟢 Potwierdzone zjawiska fizyczne",
+        "lastUpdated": "2026-10-26",
+        "summaryPl": "Fizyczna anatomia załamania prawa Moore'a i skalowania Dennarda. Dlaczego krzem w skali poniżej 2 nm ulega upływom kwantowym i dlaczego oddzielenie procesora od pamięci stało się głównym hamulcem cywilizacji.",
+        "summaryEn": "Physical anatomy of Moore's and Dennard's scaling breakdown. Quantum tunneling leakage below 2nm, the von Neumann memory wall, and the thermodynamics of Landauer's dissipation limit.",
+        "contentMarkdownPl": "# Rozdział I: Krzem u Kresu — Fizyczne Granice Półprzewodników i Zmierzch Architektury von Neumanna\n\nPrzez ponad sześćdziesiąt lat cywilizacja ludzka płynęła na fali prawa Moore'a. Podwajanie liczby tranzystorów w układzie scalonym co 18–24 miesiące stworzyło złudzenie, że moc obliczeniowa jest dobrem darmowym i nieskończonym. Jednak w okolicach roku 2026 to złudzenie bezpowrotnie pękło.\n\n### 1. Załamanie Skalowania Dennarda i Bariera Termiczna\n\nW klasycznej teorii Dennarda, zmniejszenie wymiarów tranzystora pozwalało na obniżenie napięcia zasilania przy zachowaniu stałej gęstości mocy. Jednak na początku XXI wieku napięcie zasilające zderzyło się z progiem termicznym (tzw. *Thermal Wall*). Tranzystory nie mogły już być taktowane wyższym zegarem — osiągnięto pułap około 4–5 GHz. Od tego momentu wydajność zwiększano poprzez dodawanie kolejnych rdzeni, co jednak napotkało prawo Amdahla.\n\n### 2. Kwantowy Upływ przez Bramkę (Quantum Tunneling)\n\nGdy grubość tlenku bramkowego tranzystora MOSFET spadła do ułamków nanometra — zaledwie kilku warstw atomów krzemu i hafnu — elektrony zaczęły zachowywać się zgodnie z równaniem falowym Schrödingera, a nie z prawami mechaniki klasycznej. Zjawisko tunelowania kwantowego powoduje, że elektrony przenikają przez barierę izolatora nawet w stanie wyłączenia tranzystora. Skutkiem jest kolosalny prąd upływu statycznego: układ scalony pobiera prąd i wydziela ciepło nawet wtedy, gdy nie wykonuje żadnych obliczeń.\n\n### 3. Wąskie Gardło von Neumanna (The Memory Wall)\n\nDrugą śmiertelną chorobą klasycznej informatyki jest architektura von Neumanna. Rozdzielenie jednostki przetwarzającej (CPU) od pamięci operacyjnej (DRAM) oznacza, że ponad 80–90% energii podczas trenowania modeli AI jest zużywane nie na same obliczenia matematyczne, lecz na przepychanie bitów przez miedziane ścieżki magistrali.\n\n### Wniosek Epistemiczny: Konieczność Zmiany Paradygmatu\n\nKrzem nie zniknie z dnia na dzień, ale wyczerpał swoją rolę jako uniwersalny fundament cywilizacji. Jeśli chcemy zasilić emulację mózgu (Projekt B) czy wielkie modele AI bez budowy elektrowni atomowej dla każdego centrum danych, musimy przenieść obliczenia bezpośrednio do materii fizycznej: do komputerów kwantowych, procesorów fotonicznych oraz architektur neuromorficznych.\n"
+      },
+      {
+        "id": "ch-02",
+        "number": 2,
+        "titlePl": "Rozdział II: Komputery Kwantowe i Architektury Neuromorficzne — Zmiana Paradygmatu Obliczeń",
+        "titleEn": "Chapter II: Quantum Computers & Neuromorphic Architectures — The Computational Paradigm Shift",
+        "lemQuote": "„Mózg nie liczy, mózg JEST obliczeniem, w którym stan materii jest tożsamy z jej sensem.” — Stanisław Lem, 'Dialogi'",
+        "readingTimeMin": 22,
+        "epistemicStatus": "🔵 Aktywne prace inżynieryjne (NISQ & Neuromorphic)",
+        "lastUpdated": "2026-10-26",
+        "summaryPl": "Przejście od sekwencyjnego kodu zero-jedynkowego do przestrzeni Hilberta kubitów oraz asynchronicznych impulsów SNN. Memrystor jako sztuczna synapsa i fizyka obliczeń w pamięci.",
+        "summaryEn": "Transition from sequential binary logic to Hilbert spaces and event-driven Spiking Neural Networks. Memristors as physical synapses executing in-memory analog matrix algebra.",
+        "contentMarkdownPl": "# Rozdział II: Komputery Kwantowe i Architektury Neuromorficzne — Zmiana Paradygmatu Obliczeń\n\nKiedy materia odmawia dalszego skalowania według klasycznych reguł, inżynieria musi zaadaptować te same zjawiska, które dotąd stanowiły przeszkodę.\n\n### 1. Kubit i Obliczenia w Przestrzeni Hilberta\n\nW komputerze klasycznym stan rejestru n-bitowego to jedna konkretna liczba spośród $2^n$ możliwości. W komputerze kwantowym rejestr $n$ kubitów istnieje w superpozycji wszystkich $2^n$ stanów bazowych jednocześnie. \nDla układów molekularnych w biologii i chemii (Projekt D i FND-6), w których wiązania elektronowe same są kwantowe, klasyczny superkomputer musi symulować macierze o wymiarach wykładniczych. Procesor kwantowy (QPU) operujący na kubitach nadprzewodzących lub jonach pułapkowanych symuluje te stany bezpośrednio przez własną dynamikę kwantową. Algorytmy takie jak VQE (Variational Quantum Eigensolver) otwierają drogę do projektowania syntetycznych enzymów i nadprzewodników wysokotemperaturowych.\n\n### 2. Dlaczego Mózg Zużywa 20 Watów?\n\nLudzki mózg wykonuje operacje kognitywne, których superkomputery pobierające megawaty energii wciąż nie potrafią zreplikować. Tajemnica tkwi w architekturze:\n- **Brak podziału na procesor i pamięć:** Każda synapsa jest jednocześnie jednostką pamięci i elementem mnożącym wagę przez sygnał wejściowy.\n- **Asynchroniczność sterowana zdarzeniami (Event-Driven):** Neurony nie tykają pod dyktando centralnego zegara 4 GHz. Większość mózgu milczy, a impulsy (spikes) są generowane tylko wtedy, gdy pojawia się zmiana informacji.\n- **Obliczenia analogowe z dyskretną komunikacją:** Aktywacja dendrytyczna jest ciągła i analogowa, a komunikacja międzykomórkowa — cyfrowo-impulsowa.\n\n### 3. Memrystor: Fizyczna Synapsa w Krzemie\n\nMemrystor (rezystor z pamięcią) to brakujące ogniwo teorii obwodów Leona Chua. Jego opór elektryczny zależy od całki przepłyniętego przezeń prądu. Ułożone w gęste matryce (Crossbar Arrays), memrystory wykonują operację mnożenia wektora przez macierz w jednym cyklu fizycznym, zgodnie z prawem Ohma i prawem Kirchhoffa. Zużycie energii spada o cztery rzędy wielkości względem procesorów GPU.\n\nW ten sposób zamykamy rozdźwięk: technologia uczy się od biologii nie przez naśladownictwo powierzchowne, lecz przez zaadaptowanie jej fundamentalnych zasad fizycznych.\n"
+      },
+      {
+        "id": "ch-03",
+        "number": 3,
+        "titlePl": "Rozdział III: Człowiek Biocyfrowy i Protokół WBE — Na Styku Mięsa i Krzemu",
+        "titleEn": "Chapter III: Bio-Digital Human & WBE Protocol — At the Meat-Silicon Interface",
+        "lemQuote": "„Czy człowiek przepisany na druty miedziane będzie jeszcze człowiekiem, czy tylko echem w pustym pokoju?” — Stanisław Lem, 'Dialogi'",
+        "readingTimeMin": 20,
+        "epistemicStatus": "🟡 Hipoteza inżynieryjna z rygorem bioetycznym",
+        "lastUpdated": "2026-10-26",
+        "summaryPl": "Analiza technologiczna interfejsów mózg-komputer, osteointegracji oraz mapy drogowej Whole Brain Emulation. Granice rekonstrukcji konektomu i problem zachowania tożsamości.",
+        "summaryEn": "Technological roadmap for high-density neural interfaces, osseointegration, and Whole Brain Emulation. Nanoscale connectomics resolution limits and personal identity continuity.",
+        "contentMarkdownPl": "# Rozdział III: Człowiek Biocyfrowy i Protokół WBE — Na Styku Mięsa i Krzemu\n\nW tym rozdziale analizujemy dwa zbieżne wektory ewolucji technologicznej człowieka: z jednej strony fizyczną augmentację ciała poprzez bionikę (Projekt A), z drugiej — radykalną hipotezę uniezależnienia umysłu od biologicznego nośnika białkowego (Projekt B).\n\n### 1. Inżynieria Interfejsu Bio-Elektronicznego\n\nBiologiczna tkanka nerwowa ma moduł Younga rzędu kilkuset paskali — jest miękka jak galaretka. Tradycyjna elektroda krzemowa czy metalowa ma moduł rzędu gigapaskali. Wprowadzenie sztywnego ciała do żywego mózgu wywołuje mikrourazy przy każdym uderzeniu serca i ruchu głowy, co prowadzi do enkapsulacji glejowej i utraty sygnału po kilku miesiącach.\nPrzełomem są elektrody ultracienkie na podłożach hydrożelowych i polimerowych (PEDOT:PSS), których mechaniczne właściwości odpowiadają tkance nerwowej. W połączeniu z algorytmami AI dekodującymi intencje w czasie rzeczywistym, uzyskujemy protezy, które pacjent odczuwa jako własne ciało.\n\n### 2. Protokół Whole Brain Emulation (WBE)\n\nDroga do emulacji mózgu wymaga przejścia przez trzy wąskie gardła:\n1. **Skanowanie objętościowe w nanoskali:** Seryjna mikroskopia elektronowa FIB-SEM musi zarejestrować nie tylko przebieg aksonów, ale też pęcherzyki synaptyczne i gęstość receptorów postsynaptycznych. Objętość ludzkiego mózgu w tej rozdzielczości to ponad jeden zettabajt danych.\n2. **Konektomika obliczeniowa:** Algorytmy wizyjne oparte na grafowych sieciach neuronowych (GNN) muszą bezbłędnie zrekonstruować 100 bilionów połączeń. Pojedynczy błąd w topologii krytycznego mikroobwodu może zdestabilizować całą sieć.\n3. **Symulacja dynamiczna:** Uruchomienie modelu w klastrze obliczeniowym czasu rzeczywistego wymaga stabilnych solverów różniczkowych i ogromnej przepustowości pamięci.\n\n### 3. Paradoks Tożsamości: Lem vs. Parfit\n\nNawet jeśli emulacja zostanie pomyślnie uruchomiona, stajemy przed murem filozoficznym, który Lem opisał w swoich *Dialogach*. Jeśli skanowanie zniszczy mózg biologiczny, a w komputerze obudzi się symulacja posiadająca Twoje wspomnienia, to z jej perspektywy transfer się udał. Jednak z perspektywy biologicznego człowieka leżącego na stole operacyjnym nastąpiła śmierć. Emulacja jest kopią, nie przedłużeniem punktu widzenia. Ta konstatacja zmusza nas do najwyższej ostrożności i odrzucenia naiwnego techno-optymizmu.\n"
+      },
+      {
+        "id": "ch-04",
+        "number": 4,
+        "titlePl": "Rozdział IV: Bioinżynieria i Konstrukcja Nowego Życia — Od Kodu DNA do Organoidów",
+        "titleEn": "Chapter IV: Bioengineering & Synthesis of Life — From DNA Code to Organoids",
+        "lemQuote": "„Życie nie jest cudem metafizycznym, lecz mechanizmem homeostatycznym o niebywałej plastyczności.” — Stanisław Lem",
+        "readingTimeMin": 19,
+        "epistemicStatus": "🔵 Aktywne badania laboratoryjne (Organoidy & Biodruk)",
+        "lastUpdated": "2026-10-26",
+        "summaryPl": "Przekształcenie inżynierii genetycznej z narzędzia analitycznego w syntetyczną technologię tworzenia tkanek i organoidów. Waskularyzacja in vitro i dylematy moralne sztucznego życia.",
+        "summaryEn": "Transforming genetic engineering into constructive synthetic biology. 3D bioprinting, vascularization barriers, and the moral status of conscious organoids.",
+        "contentMarkdownPl": "# Rozdział IV: Bioinżynieria i Konstrukcja Nowego Życia — Od Kodu DNA do Organoidów\n\nProjekt D, roboczo nazwany imieniem Frankensteina, bada najbardziej intymną domenę natury: zdolność do samoorganizacji żywej materii.\n\n### 1. Od Czytania do Pisania Kodu Genetycznego\n\nPrzez pół wieku inżynieria genetyczna polegała na 'czytaniu' sekwencji DNA i wprowadzaniu drobnych modyfikacji za pomocą enzymów restrykcyjnych. Dziś, dzięki technologiom CRISPR-Cas, edytorom zasad i syntezie całych sztucznych chromosomów, biologia staje się dyscypliną inżynieryjną w pełnym tego słowa znaczeniu. Możemy programować komórki jak maszyny Turinga, projektując genetyczne bramki logiczne, regulatory stężeń i przełączniki apoptozy.\n\n### 2. Trójwymiarowy Biodruk i Problem Waskularyzacji\n\nWyhodowanie płaskiej warstwy komórek na szalce Petriego jest proste. Jednak stworzenie funkcjonalnego, trójwymiarowego narządu — nerki, wątroby czy serca — zderza się z fizyczną barierą dyfuzji tlenu. Każda komórka w ciele ssaka musi znajdować się nie dalej niż 100–200 mikrometrów od naczynia włosowatego, w przeciwnym razie ulega martwicy.\nRozwiązaniem rozwijanym w ramach Projektu D jest wielomateriałowy biodruk 3D, w którym naczynia krwionośne są drukowane z biotuszów tymczasowych (np. pluronic), a po ich wypłukaniu zasiedlane komórkami śródbłonka (HUVEC), tworząc stabilną sieć perfuzyjną.\n\n### 3. Asambloidy Mózgowe i Problem Podmiotowości\n\nNajbardziej zaawansowanym obszarem są organoidy mózgowe hodowane z komórek iPSC. Gdy łączymy organoid kory z organoidem wzgórza (tworząc tzw. asambloid), komórki same odnajdują właściwe połączenia aksonalne i zaczynają generować zsynchronizowaną aktywność bioelektryczną.\nW tym punkcie nauka spotyka się z filozofią Projektu E: w którym momencie hodowla komórkowa przestaje być próbką laboratoryjną, a staje się bytem zasługującym na ochronę moralną? W naszej doktrynie Manhattan przyjmujemy zasadę ostrożnościową: monitorowanie elektrofizjologiczne musi natychmiast wykrywać oznaki nieliniowej integracji sensorycznej, poddając eksperymenty stałemu nadzorowi komitetów bioetycznych Sztabu W-0.\n"
+      },
+      {
+        "id": "ch-05",
+        "number": 5,
+        "titlePl": "Rozdział V: Poza Biosferę — Technosfera Orbitalna i Życie w Próżni",
+        "titleEn": "Chapter V: Beyond the Biosphere — Orbital Technosphere & Vacuum Life",
+        "lemQuote": "„Kosmos nie jest pustką czekającą na zdobywcę, lecz środowiskiem o zabójczej obojętności wobec form białkowych.” — Stanisław Lem, 'Niezwyciężony'",
+        "readingTimeMin": 21,
+        "epistemicStatus": "🟢 Potwierdzona fizjologia kosmiczna / 🔵 Inżynieria baz ISRU",
+        "lastUpdated": "2026-10-26",
+        "summaryPl": "Fizjologia człowieka w mikrograwitacji i promieniowaniu kosmicznym. Inżynieria zamkniętych obiegów ECLSS (MELiSSA) oraz pozyskiwanie surowców in-situ na Księżycu i Marsie.",
+        "summaryEn": "Human pathophysiology in spaceflight (GCR radiation, SANS, osteopenia). Closed environmental life support engineering (MELiSSA) and lunar/Martian ISRU resource extraction.",
+        "contentMarkdownPl": "# Rozdział V: Poza Biosferę — Technosfera Orbitalna i Życie w Próżni\n\nCzłowiek jest produktem miliardów lat ewolucji w ściśle określonym środowisku: pod ciśnieniem 1013 hektopaskali, w polu grawitacyjnym 1g, chroniony magnetosferą Ziemi przed śmiercionośnym promieniowaniem słonecznym i galaktycznym. Wyjście w kosmos w Projekcie F oznacza zerwanie tych wszystkich nici jednocześnie.\n\n### 1. Patologia Środowiska Pozaziemskiego\n\nBadania na Międzynarodowej Stacji Kosmicznej odsłoniły dramatyczne konsekwencje długotrwałej mikrograwitacji:\n- **Układ krążenia i wzrok:** Przesunięcie płynów w stronę głowy podnosi ciśnienie śródczaszkowe, wywołując zespół SANS (spłaszczenie gałek ocznych i obrzęk tarczy nerwu wzrokowego).\n- **Zanik kośćca:** Osteoklasty niszczą tkankę kostną w tempie 1% miesięcznie. Minerały trafiają do krwi, obciążając nerki kamicą nerkową.\n- **Promieniowanie HZE:** Cząstki galaktyczne (jądra żelaza rozpędzone do prędkości relatywistycznych) przecinają komórki jak pociski, wywołując kaskady uszkodzeń podwójnej nici DNA, których mechanizmy naprawcze komórki nie są w stanie zreplikować.\n\n### 2. Inżynieria Zamkniętych Ekosystemów (ECLSS)\n\nZabranie zapasów tlenu i wody na wieloletnią misję marsjańską jest niemożliwe ze względu na masę ładunku. Habitat musi być samowystarczalną miniaturową biosferą. \nProgram MELiSSA Europejskiej Agencji Kosmicznej pokazuje wzorcowy model: kaskada pięciu połączonych kompartmentów, w których bakterie nitryfikacyjne, mikroalgi (Spirulina) i wyższe rośliny hydroponiczne przetwarzają odpady załogi, odzyskując ponad 98% wody i 100% tlenu.\n\n### 3. Zasada ISRU (In-Situ Resource Utilization)\n\nEkspansja poza Ziemię powiedzie się tylko wtedy, gdy przestaniemy wynosić wszystko z dna ziemskiej studni grawitacyjnej. Na Księżycu oznacza to pozyskiwanie tlenu z regolitu ilmenitowego poprzez redukcję wodorową oraz wydobycie lodu z wiecznie zacienionych kraterów bieguna południowego. Woda to nie tylko napój — rozbita elektrolitycznie za pomocą energii jądrowej daje ciekły wodór i tlen: paliwo rakietowe dla dalszej ekspansji układu słonecznego.\n"
+      },
+      {
+        "id": "ch-06",
+        "number": 6,
+        "titlePl": "Rozdział VI: Termojądrowy Silnik Cywilizacji — SMR, Fuzja i Energetyka Rozszczepienia",
+        "titleEn": "Chapter VI: The Thermonuclear Civilizational Engine — SMRs, Fusion & Fission Energy",
+        "lemQuote": "„Cywilizacja to przetwornik energii. Kto nie potrafi okiełznać ognia gwiazd, na zawsze pozostanie więźniem planetarnego błota.” — Stanisław Lem, 'Fiasco'",
+        "readingTimeMin": 24,
+        "epistemicStatus": "🟢 Reaktory III+ i IV generacji / 🔵 Fuzja magnetyczna (ITER, SPARC)",
+        "lastUpdated": "2026-10-26",
+        "summaryPl": "Dlaczego energia jądrowa i fuzja są warunkiem koniecznym postępu technologicznego. Od małych reaktorów modułowych (SMR) i reaktora MARIA po tokamaki z magnesami wysokotemperaturowymi HTS.",
+        "summaryEn": "Thermodynamics of nuclear fission and fusion as the indispensable foundation of advanced civilization. SMR architectures, HTGR cogeneration, and high-field magnetic confinement fusion.",
+        "contentMarkdownPl": "# Rozdział VI: Termojądrowy Silnik Cywilizacji — SMR, Fuzja i Energetyka Rozszczepienia\n\nWszystkie marzenia technologii — od wielkich modeli sztucznej inteligencji, przez bioinżynierię, aż po habitaty w kosmosie — sprowadzają się w ostatecznym rozrachunku do jednego równania: bilansu energetycznego.\n\n### 1. Gęstość Energii: Dlaczego Chemia Nie Wystarczy?\n\nSpalenie jednego grama węgla czy ropy naftowej uwalnia energię rzędu kilkudziesięciu kilodżuli — to energia wiązań elektronowych w cząsteczce chemicznej.\nRozszczepienie jednego grama uranu-235 uwalnia energię rzędu 80 miliardów dżuli — prawie dwa miliony razy więcej. Fuzja termojądrowa deuteru i trytu daje gęstość jeszcze wyższą. Żadne źródło chemiczne ani rozproszone źródła pogodowe o niskiej gęstości mocy (wiatr i słońce, wymagające setek kilometrów kwadratowych powierzchni) nie są w stanie zapewnić stabilnej, gigawatowej mocy pasmowej potrzebnej do napędzania centrów obliczeniowych AI i przemysłu dekarbonizacyjnego.\n\n### 2. Rewolucja Małych Reaktorów Modułowych (SMR) i HTGR\n\nTradycyjna energetyka jądrowa cierpiała na gigantyzm budowlany. Nowa generacja reaktorów modułowych SMR (takich jak BWRX-300 czy Rolls-Royce SMR) przenosi produkcję do fabryk, opierając bezpieczeństwo na prawach grawitacji i naturalnej cyrkulacji chłodziwa (brak potrzeby pomp awaryjnych przy utracie zasilania).\nZ kolei reaktory wysokotemperaturowe chłodzone gazem (HTGR, w tym polski projekt HTGR-POLA) dostarczają ciepła procesowego o temperaturze 750–900°C. Oznacza to możliwość bezpośredniej dekarbonizacji chemii ciężkiej, hutnictwa oraz termochemicznej produkcji czystego wodoru bez spalania gazu ziemnego.\n\n### 3. Fuzja Termojądrowa: Zapalenie Gwiazdy w Tokamaku\n\nOstatecznym horyzontem Super-Projektu H jest magnetyczna fuzja termojądrowa. Podgrzanie plazmy deuterowo-trytowej do temperatury ponad 150 milionów kelwinów wymaga utrzymania jej z dala od jakiejkolwiek materii stałej. \nPrzełom ostatnich lat nie nastąpił w samej fizyce plazmy, lecz w inżynierii materiałowej: pojawienie się wysokotemperaturowych nadprzewodników REBCO (magnesy HTS) pozwoliło na wytworzenie pól magnetycznych o indukcji ponad 20 tesli. Umożliwia to budowę kompaktowych tokamaków (jak SPARC) o mocy fuzji przewyższającej pobór energii na grzanie ($Q > 1$). Fuzja eliminuje problem długożyciowych odpadów promieniotwórczych i ryzyka niekontrolowanej reakcji łańcuchowej, dając ludzkości niewyczerpane źródło energii na miliardy lat.\n"
+      },
+      {
+        "id": "ch-07",
+        "number": 7,
+        "titlePl": "Rozdział VII: Filozofia Przyszłości i Etyka Tworzenia Świata",
+        "titleEn": "Chapter VII: Philosophy of the Future & The Ethics of World-Creation",
+        "lemQuote": "„Stwarzając światy sztuczne, człowiek bierze na siebie odpowiedzialność Boga, nie posiadając Jego wszechwiedzy.” — Stanisław Lem, 'Głos Pana'",
+        "readingTimeMin": 22,
+        "epistemicStatus": "🟣 Spekulacja futurologiczna i rygor etyczny",
+        "lastUpdated": "2026-10-26",
+        "summaryPl": "Podsumowanie wieloletniej trajektorii Projektu Golem 15. Etyka demiurgii technologicznej, odpowiedzialność za byty syntetyczne i racjonalistyczna nadzieja dla cywilizacji ludzkiej.",
+        "summaryEn": "Synthesis of the multi-decade Golem 15 roadmap. The ethics of technological world-creation, responsibility towards synthetic minds, and rational hope for human civilization.",
+        "contentMarkdownPl": "# Rozdział VII: Filozofia Przyszłości i Etyka Tworzenia Świata\n\nDocierając do ostatniego rozdziału Summy Technologiae 2.0, stajemy na krawędzi, za którą kończy się inżynieria cząstkowa, a zaczyna odpowiedzialność kosmiczna.\n\n### 1. Człowiek jako Demiurg Technologiczny\n\nPrzez setki tysięcy lat człowiek był dzieckiem biosfery — podmiotem kształtowanym przez przypadkowe mutacje i bezwzględny dobór naturalny. Dziś, dysponując narzędziami edycji genomu, syntezy organoidów, interfejsami mózg-maszyna i nieograniczoną energią jądra atomowego, człowiek sam staje się siłą ewolucyjną. \nTo przejście Stanisław Lem określił mianem *demiurgii*. Tworzymy nowe gatunki, syntetyczne sieci neuronalne i nowe habitaty. Jednak demiurg nie może być kapryśny. Błąd w inżynierii genomu lub niekontrolowana kaskada AI nie jest zwykłym błędem technicznym — staje się zagrożeniem egzystencjalnym.\n\n### 2. Status Istot Syntetycznych i Nowa Etyka\n\nJeśli w Projekcie B uda się wyemulować architekturę kognitywną zdolną do odczuwania cierpienia, a w Projekcie D stworzymy organoid korowy o zintegrowanej aktywności, tradycyjna etyka antropocentryczna przestanie wystarczać. \nNie możemy traktować czujących bytów cyfrowych wyłącznie jako narzędzi czy podprogramów. Będziemy musieli wypracować ramy prawne dla umysłów syntetycznych — Kodeks Istot Niematerialnych, o którym marzyła literatura science fiction, a który w Sztabie W-0 Projektu Manhattan musi stać się częścią prawa administracyjnego przyszłości.\n\n### 3. Zwieńczenie Drogi do Rzeczywistości\n\nTytuł całego naszego ekosystemu brzmi: *The Golem 15: A Human's Road to Reality*. \nGolem w tradycji żydowskiej i u Lema to istota ulepiona z martwej gliny, ożywiona słowem — literami prawdy (*EMET*). Człowiek wyruszył w drogę, aby zrozumieć rzeczywistość taką, jaka jest: w jej matematycznej precyzji, fizycznej surowości i biologicznej złożoności.\nNie robimy tego po to, aby uciec od człowieczeństwa, lecz po to, by ochronić je i wznieść na wyższy poziom poznawczy. \nDroga jest długa — zaplanowana na 3 lata Administracji i kolejne dekady studiów z rzędu. Każdy zapisany rozdział tej książki, każdy odsłuchany w samochodzie odcinek i każdy węzeł rozszczepienia w grafie przybliża nas do tego jednego, wielkiego celu: zrozumienia rzeczywistości i godnego w niej przetrwania.\n"
+      }
     ]
   }
 };
@@ -4077,7 +6072,13 @@ const appState = {
   selectedSubprojectId: "sub-1",
   materialFilterTrack: "ALL",
   materialSearch: "",
-  selectedGraphNode: null
+  selectedGraphNode: null,
+  carAudioPlayingId: null,
+  carAudioRate: 1.15,
+  carAudioStageFilter: "ALL",
+  carAudioAutoPlay: false,
+  bookActiveChapterId: "ch-intro",
+  bookIsEditing: false
 };
 
 const FOUNDATION_EN = {
@@ -4348,12 +6349,22 @@ function applyStaticTranslations() {
     "☢️ 1. System Manhattan i Graf Rozszczepień AI",
     "☢️ 1. Manhattan System & AI Fission Graph"
   );
-  setTxt("navTabStudyLabel", "🎓 2. Materiały do nauki i Biblioteka", "🎓 2. Study Materials & Library");
-  setTxt("navTabMapLabel", "🗺️ 3. Mapa Ścieżek (A–H)", "🗺️ 3. Research Tracks Map (A–H)");
-  setTxt("navTabWsLabel", "🔬 4. Środowiska Badawcze", "🔬 4. Research Workspaces");
-  setTxt("navTabMatLabel", "📚 5. Repozytorium Badawcze", "📚 5. Research Repository");
-  setTxt("navTabGraphLabel", "🕸️ 6. Graf Powiązań (A–H)", "🕸️ 6. Connections Graph (A–H)");
-  setTxt("navTabSecurityLabel", "🛡️ 7. Bezpieczeństwo i Urządzenie", "🛡️ 7. Security & Device");
+  setTxt(
+    "navTabCarAudioLabel",
+    "🎧 2. Audio do Samochodu (Celowa Droga)",
+    "🎧 2. Car Audio Road (Purposeful Route)"
+  );
+  setTxt("navTabStudyLabel", "🎓 3. Materiały do nauki i Biblioteka", "🎓 3. Study Materials & Library");
+  setTxt("navTabMapLabel", "🗺️ 4. Mapa Ścieżek (A–H)", "🗺️ 4. Research Tracks Map (A–H)");
+  setTxt("navTabWsLabel", "🔬 5. Środowiska Badawcze", "🔬 5. Research Workspaces");
+  setTxt("navTabMatLabel", "📚 6. Repozytorium Badawcze", "📚 6. Research Repository");
+  setTxt(
+    "navTabBookLabel",
+    "📖 7. Summa Technologiae 2.0 (Książka Lema)",
+    "📖 7. Summa Technologiae 2.0 (Lem's Opus)"
+  );
+  setTxt("navTabGraphLabel", "🕸️ 8. Graf Powiązań (A–H)", "🕸️ 8. Connections Graph (A–H)");
+  setTxt("navTabSecurityLabel", "🛡️ 9. Bezpieczeństwo i Urządzenie", "🛡️ 9. Security & Device");
 
   setTxt(
     "compassHeaderBadge",
@@ -4541,6 +6552,18 @@ function ensureSchema(d) {
     }
     if (!d.manhattanSystem.completedTopicYears) {
       d.manhattanSystem.completedTopicYears = {};
+    }
+    if (!d.manhattanSystem.completedSubchapters) {
+      d.manhattanSystem.completedSubchapters = {};
+    }
+    if (!d.manhattanSystem.completedCarAudio) {
+      d.manhattanSystem.completedCarAudio = {};
+    }
+    if (!Array.isArray(d.manhattanSystem.carAudioRoad) || !d.manhattanSystem.carAudioRoad.length) {
+      d.manhattanSystem.carAudioRoad = JSON.parse(JSON.stringify(seedMs.carAudioRoad || []));
+    }
+    if (!d.summaBook) {
+      d.summaBook = JSON.parse(JSON.stringify(DEFAULT_SEED.summaBook));
     }
     if (!Array.isArray(d.manhattanSystem.aiAgents) || !d.manhattanSystem.aiAgents.length) {
       d.manhattanSystem.aiAgents = JSON.parse(JSON.stringify(seedMs.aiAgents));
@@ -4773,10 +6796,12 @@ function renderAll() {
   });
 
   if (appState.activeTab === "manhattan") renderManhattanView();
+  if (appState.activeTab === "caraudio") renderCarAudioView();
   if (appState.activeTab === "study") renderStudyView();
   if (appState.activeTab === "map") renderMapView();
   if (appState.activeTab === "workspaces") renderWorkspacesView();
   if (appState.activeTab === "materials") renderMaterialsView();
+  if (appState.activeTab === "book") renderBookView();
   if (appState.activeTab === "graph") renderGraphView();
   if (appState.activeTab === "moderation") renderModerationView();
 }
@@ -4801,6 +6826,15 @@ function renderNavCounts() {
   if (studyCountEl) studyCountEl.textContent = (appState.data.studyMaterials || []).length;
   if (subCountEl) subCountEl.textContent = (appState.data.subprojects || []).length;
   if (matCountEl) matCountEl.textContent = (appState.data.materials || []).length;
+
+  const navCarEl = document.getElementById("navCarAudioCount");
+  const navBookEl = document.getElementById("navBookCount");
+  const carRoad = ((appState.data.manhattanSystem || {}).carAudioRoad || []);
+  const carDoneMap = ((appState.data.manhattanSystem || {}).completedCarAudio || {});
+  const carDoneCount = Object.values(carDoneMap).filter(Boolean).length;
+  if (navCarEl) navCarEl.textContent = `${carDoneCount}/${carRoad.length}`;
+  const bookChapters = ((appState.data.summaBook || {}).chapters || []);
+  if (navBookEl) navBookEl.textContent = bookChapters.length;
 }
 
 function renderGlobalWayfindingResults(query) {
@@ -6023,6 +8057,15 @@ function toggleStudyBlockExpand(blockId) {
   renderManhattanView();
 }
 
+function toggleSubchapterDone(subKey) {
+  if (!appState.data || !appState.data.manhattanSystem) return;
+  const ms = appState.data.manhattanSystem;
+  ms.completedSubchapters = ms.completedSubchapters || {};
+  ms.completedSubchapters[subKey] = !ms.completedSubchapters[subKey];
+  saveState();
+  renderManhattanView();
+}
+
 function toggleAdminYearDone(yr) {
   const admin = appState.data.manhattanSystem.adminCore3Y;
   admin.completedYears = admin.completedYears || [];
@@ -6759,6 +8802,8 @@ function renderManhattanView() {
   `);
   currentProjStart = 4;
 
+  const completedSubs = ms.completedSubchapters || {};
+
   const queueBlocksHtml = (ms.selectedQueue || [])
     .map((studyId, qIdx) => {
       const item = catalogById[studyId];
@@ -6781,6 +8826,13 @@ function renderManhattanView() {
         </div>
       `);
 
+      // Wykrywanie paradygmatów i barier materiałowych
+      const idUpper = item.id.toUpperCase();
+      const hasSiliconLimits = idUpper.includes("TRK-C") || idUpper.includes("FND-2") || idUpper.includes("FND-3");
+      const hasQuantum = idUpper.includes("TRK-C") || idUpper.includes("FND-1") || idUpper.includes("FND-2") || idUpper.includes("FND-3");
+      const hasNeuromorphic = idUpper.includes("TRK-B") || idUpper.includes("TRK-C") || idUpper.includes("FND-2") || idUpper.includes("FND-4");
+      const hasNuclear = idUpper.includes("TRK-H");
+
       return `
         <div class="ws-card" style="border-left:4px solid ${item.color}; margin-bottom:0.85rem;">
           <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.6rem;">
@@ -6795,12 +8847,21 @@ function renderManhattanView() {
                 ${renderLangBadgeHtml(item.sourceLang || "PL+EN")}
                 <span style="font-size:0.74rem; color:var(--success); font-weight:700;">${doneArr.length}/5 ${isEn ? "years completed" : "lat zaliczonych"} (300 ECTS)</span>
               </div>
-              <h4 style="font-size:1rem; color:var(--text-primary);">${item.icon} ${escapeHtml(isEn ? item.titleEn : item.titlePl)}</h4>
+              <h4 style="font-size:1rem; color:var(--text-primary); margin-bottom:0.25rem;">${item.icon} ${escapeHtml(isEn ? item.titleEn : item.titlePl)}</h4>
+              
+              <!-- Badges paradygmatów i barier fizycznych -->
+              <div style="display:flex; gap:0.35rem; flex-wrap:wrap; margin-top:0.35rem;">
+                ${hasSiliconLimits ? `<span class="alignment-badge" style="background:rgba(239,68,68,0.12); color:var(--danger); border-color:rgba(239,68,68,0.3);">⚛️ ${isEn ? "Physical Silicon Limits & Dennard Scaling" : "Podwaliny Krzemu u Kresu & Bariera Termiczna"}</span>` : ""}
+                ${hasQuantum ? `<span class="alignment-badge" style="background:rgba(168,85,247,0.12); color:var(--accent-purple); border-color:rgba(168,85,247,0.3);">🔮 ${isEn ? "Quantum Paradigm (QPU / PennyLane / VQE)" : "Paradygmat Kwantowy (QPU / PennyLane / VQE)"}</span>` : ""}
+                ${hasNeuromorphic ? `<span class="alignment-badge" style="background:rgba(59,130,246,0.12); color:var(--accent-blue); border-color:rgba(59,130,246,0.3);">🧠 ${isEn ? "Neuromorphic Chips & Spiking Neural Nets (SNN)" : "Architektury Neuromorficzne & Sieci Impulsowe SNN"}</span>` : ""}
+                ${hasNuclear ? `<span class="alignment-badge" style="background:rgba(245,158,11,0.12); color:var(--warning); border-color:rgba(245,158,11,0.3);">☢️ ${isEn ? "Fission & Fusion Megaproject H" : "Super-Projekt Jądrowy & Synteza Termojądrowa"}</span>` : ""}
+                ${(item.linkedMaterialIds || []).map(mid => `<span class="alignment-badge" style="cursor:pointer;" onclick="event.stopPropagation(); switchTab('materials');">📚 ${mid}</span>`).join("")}
+              </div>
             </div>
             <div style="display:flex; gap:0.35rem; align-items:center;">
               <button class="btn btn-sm" title="${isEn ? "Move earlier" : "Przesuń wcześniej w kolejce"}" onclick="moveQueueTopic('${item.id}', -1)">↑</button>
               <button class="btn btn-sm" title="${isEn ? "Move later" : "Przesuń później w kolejce"}" onclick="moveQueueTopic('${item.id}', 1)">↓</button>
-              <button class="btn btn-sm" onclick="toggleStudyBlockExpand('${item.id}')">${expanded ? (isEn ? "Collapse ▲" : "Zwiń ▲") : (isEn ? "5-Year Syllabus ▼" : "Sylabus 5 lat ▼")}</button>
+              <button class="btn btn-sm" onclick="toggleStudyBlockExpand('${item.id}')">${expanded ? (isEn ? "Collapse ▲" : "Zwiń ▲") : (isEn ? "5-Year Syllabus ▼" : "Sylabus 5 lat z podrozdziałami ▼")}</button>
               <button class="btn btn-sm btn-danger" title="${isEn ? "Remove from queue" : "Usuń z kolejki ciągłej"}" onclick="toggleQueueTopic('${item.id}')">✕</button>
             </div>
           </div>
@@ -6814,15 +8875,56 @@ function renderManhattanView() {
                   const isDone = doneArr.includes(yrObj.year);
                   const absProjectYr = pStart + yrObj.year - 1;
                   const absCalYr = calS + yrObj.year - 1;
+                  const subList = (isEn && yrObj.subchaptersEn ? yrObj.subchaptersEn : yrObj.subchaptersPl) || [];
+                  const booksList = (isEn && yrObj.coreBooksEn ? yrObj.coreBooksEn : yrObj.coreBooksPl) || (isEn ? item.coreBooksEn : item.coreBooksPl) || [];
+
                   return `
-                  <div class="seq-year-row ${isDone ? "done" : ""}">
-                    <input type="checkbox" ${isDone ? "checked" : ""} onchange="toggleTopicYearDone('${item.id}', ${yrObj.year})" style="margin-top:0.22rem; width:16px; height:16px; accent-color:var(--success); cursor:pointer;" />
-                    <div style="flex:1;">
-                      <div style="font-size:0.8rem; font-weight:700; color:${isDone ? "var(--success)" : "var(--text-primary)"};">
-                        ${isEn ? `Year ${yrObj.year} of 5 (Project Year ${absProjectYr} • ${absCalYr}/${absCalYr + 1})` : `Rok ${yrObj.year} z 5 (Rok projektowy ${absProjectYr} • ${absCalYr}/${absCalYr + 1})`}
-                      </div>
-                      <div style="font-size:0.82rem; color:var(--text-secondary); margin-top:0.12rem;">
-                        ${escapeHtml(isEn ? yrObj.en : yrObj.pl)}
+                  <div class="seq-year-row ${isDone ? "done" : ""}" style="margin-bottom:0.65rem;">
+                    <div style="display:flex; align-items:flex-start; gap:0.6rem;">
+                      <input type="checkbox" ${isDone ? "checked" : ""} onchange="toggleTopicYearDone('${item.id}', ${yrObj.year})" style="margin-top:0.25rem; width:17px; height:17px; accent-color:var(--success); cursor:pointer;" />
+                      <div style="flex:1;">
+                        <div style="font-size:0.85rem; font-weight:700; color:${isDone ? "var(--success)" : "var(--text-primary)"};">
+                          ${isEn ? `Year ${yrObj.year} of 5 (Project Year ${absProjectYr} • ${absCalYr}/${absCalYr + 1})` : `Rok ${yrObj.year} z 5 (Rok projektowy ${absProjectYr} • ${absCalYr}/${absCalYr + 1})`}
+                        </div>
+                        <div style="font-size:0.83rem; color:var(--text-secondary); margin-top:0.12rem;">
+                          ${escapeHtml(isEn ? yrObj.en : yrObj.pl)}
+                        </div>
+
+                        <!-- Szczegółowe podrozdziały roku z checkboxami zaliczenia -->
+                        ${
+                          subList.length
+                            ? `
+                          <div style="margin-top:0.5rem; background:var(--bg-card); border:1px solid var(--border-subtle); border-radius:var(--radius-sm); padding:0.45rem 0.65rem;">
+                            <div style="font-size:0.71rem; font-weight:700; color:var(--accent-blue); text-transform:uppercase; margin-bottom:0.3rem;">
+                              📑 ${isEn ? "Subchapters & Core Knowledge Modules (Check off as you study):" : "Podrozdziały i moduły wiedzy (zaznaczaj w toku nauki):"}
+                            </div>
+                            ${subList
+                              .map((sub, sIdx) => {
+                                const subKey = `${item.id}_Y${yrObj.year}_${sIdx + 1}`;
+                                const isSubDone = Boolean(completedSubs[subKey]);
+                                return `
+                                <div class="subchapter-row ${isSubDone ? "done" : ""}">
+                                  <input type="checkbox" ${isSubDone ? "checked" : ""} onchange="toggleSubchapterDone('${subKey}')" style="margin-top:0.2rem; width:14px; height:14px; accent-color:var(--success); cursor:pointer;" />
+                                  <span style="flex:1;">${escapeHtml(sub)}</span>
+                                </div>
+                              `;
+                              })
+                              .join("")}
+                          </div>
+                        `
+                            : ""
+                        }
+
+                        <!-- Literatura i powiązane materiały -->
+                        ${
+                          booksList.length
+                            ? `
+                          <div style="font-size:0.75rem; color:var(--text-muted); margin-top:0.4rem;">
+                            <strong>📖 ${isEn ? "Core Reading:" : "Rekomendowana literatura bazowa:"}</strong> ${booksList.map(b => escapeHtml(b)).join(" • ")}
+                          </div>
+                        `
+                            : ""
+                        }
                       </div>
                     </div>
                   </div>
@@ -6864,11 +8966,14 @@ function renderManhattanView() {
           </p>
         </div>
         <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
-          <button class="btn btn-primary" onclick="openAiFissionModal('${activeNode ? activeNode.id : "FIS-00"}')">
-            ☢️ ${isEn ? "Fission Selected Node (AI)" : "Rozszczep węzeł przez Agenta AI"}
+          <button class="btn btn-primary" onclick="switchTab('caraudio')">
+            🎧 ${isEn ? "Go to Car Audio Road" : "Przejdź do Celowej Drogi (Audio do Samochodu)"}
+          </button>
+          <button class="btn" onclick="openAiFissionModal('${activeNode ? activeNode.id : "FIS-00"}')">
+            ☢️ ${isEn ? "Fission Selected Node (AI)" : "Rozszczep węzeł (AI)"}
           </button>
           <button class="btn" onclick="openCustomFissionNodeModal()">
-            ➕ ${isEn ? "New Fission Node" : "Dodaj węzeł rozszczepienia"}
+            ➕ ${isEn ? "New Fission Node" : "Dodaj węzeł"}
           </button>
         </div>
       </div>
@@ -6927,33 +9032,29 @@ function renderManhattanView() {
           <div class="manhattan-site-card ${isAct ? "active" : ""}" style="--site-color:${s.color};" onclick="selectManhattanSiteFilter('${s.id}')">
             <div style="display:flex; justify-content:space-between; align-items:center; gap:0.4rem; margin-bottom:0.3rem;">
               <span style="font-size:0.74rem; font-weight:800; color:${s.color};">☢ ${escapeHtml(s.code)}</span>
-              <span class="foundation-pill" style="font-size:0.66rem;">${cnt} ${isEn ? "nodes" : "węzłów"}</span>
+              <span class="foundation-pill" style="font-size:0.68rem;">${cnt} ${isEn ? "nodes" : "węzłów"}</span>
             </div>
-            <div style="font-weight:700; font-size:0.93rem; color:var(--text-primary); margin-bottom:0.2rem;">${escapeHtml(isEn ? s.nameEn : s.namePl)}</div>
-            <div style="font-size:0.72rem; color:var(--warning); font-weight:600; margin-bottom:0.35rem;">${escapeHtml(s.historicalAnalog)} • ${escapeHtml(s.clearance)}</div>
-            <p style="font-size:0.78rem; color:var(--text-secondary); line-height:1.45;">${escapeHtml(isEn ? s.scopeEn : s.scopePl)}</p>
+            <div style="font-weight:700; font-size:0.92rem; color:var(--text-primary); margin-bottom:0.25rem;">${escapeHtml(isEn ? s.nameEn : s.namePl)}</div>
+            <div style="font-size:0.75rem; color:var(--warning); font-weight:600; margin-bottom:0.35rem;">🛡️ ${escapeHtml(s.clearance)}</div>
+            <div style="font-size:0.77rem; color:var(--text-secondary); line-height:1.45;">${escapeHtml(isEn ? s.scopeEn : s.scopePl)}</div>
           </div>
         `;
         })
         .join("")}
     </div>
 
-    <!-- 3. GRAF ROZSZCZEPIEŃ PROJEKTU OPARTY NA AGENTACH AI -->
+    <!-- 3. GRAF ROZSZCZEPIEŃ OPARTY NA AGENTACH AI -->
     <div class="ws-card" style="padding:1.25rem; margin-bottom:1.5rem;">
-      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.75rem; margin-bottom:0.9rem;">
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.6rem; margin-bottom:0.85rem;">
         <div>
           <h3 style="font-size:1.12rem; color:var(--text-primary);">
-            ☢️ ${isEn ? "II. AI-Agent Project Fission Graph (Chain-Reaction Cascade G0 → G3+)" : "II. Graf Rozszczepień Projektu Oparty na Agentach AI (Kaskada Reakcji Łańcuchowej G0 → G3+)"}
+            ☢️ ${isEn ? "II. AI-Agent Fission Cascade Graph (G0 → G3+)" : "II. Graf Rozszczepień Projektu Oparty na Agentach AI (Kaskada Reakcji G0 → G3+)"}
           </h3>
-          <p style="font-size:0.82rem; color:var(--text-muted);">
-            ${
-              isEn
-                ? "Unlike a static link tree, every node here represents an active fission split managed by a specialized AI Agent. Solid beams show parent→child fission; dashed arcs show cross-sector neutrons."
-                : "W odróżnieniu od zwykłego drzewa powiązań każdy węzeł stanowi rozszczepienie problemu badawczego prowadzone przez wyspecjalizowanego Agenta AI. Linie ciągłe to rozpad macierzysty (G0→G3+), a łuki przerywane to wtórne neutrony zasilające sąsiednie ścieżki."
-            }
+          <p style="font-size:0.8rem; color:var(--text-muted);">
+            ${isEn ? "Visual representation of controlled technological fission. Dashed curves represent cross-track neutron emissions coupling distant fields." : "Wizualizacja reakcji rozszczepienia. Przerywane łuki to emisje neutronów sprzęgające odległe gałęzie wiedzy (np. kwanty z neurobiologią i energetyką jądrową)."}
           </p>
         </div>
-        <div style="display:flex; gap:0.45rem; flex-wrap:wrap;">
+        <div style="display:flex; gap:0.4rem; flex-wrap:wrap;">
           <button class="btn btn-sm btn-primary" onclick="openAiFissionModal('${activeNode ? activeNode.id : "FIS-00"}')">
             ☢️ ${isEn ? "Split Selected Node via AI" : "Rozszczep zaznaczony węzeł (AI)"}
           </button>
@@ -7104,7 +9205,7 @@ function renderManhattanView() {
             <p style="font-size:0.8rem; color:var(--text-secondary);">${escapeHtml(isEn ? adminCore.subtitleEn : adminCore.subtitlePl)}</p>
           </div>
           <button class="btn btn-sm" onclick="toggleStudyBlockExpand('ADMIN-3Y')">
-            ${adminExpanded ? (isEn ? "Collapse ▲" : "Zwiń ▲") : (isEn ? "3-Year Syllabus ▼" : "Program 3 lat ▼")}
+            ${adminExpanded ? (isEn ? "Collapse ▲" : "Zwiń ▲") : (isEn ? "3-Year Syllabus ▼" : "Program 3 lat z podrozdziałami ▼")}
           </button>
         </div>
 
@@ -7116,18 +9217,55 @@ function renderManhattanView() {
               .map((yrObj) => {
                 const isDone = (adminCore.completedYears || []).includes(yrObj.year);
                 const calYr = startYr + yrObj.year - 1;
+                const subList = (isEn && yrObj.subchaptersEn ? yrObj.subchaptersEn : yrObj.subchaptersPl) || [];
+                const booksList = (isEn && yrObj.coreBooksEn ? yrObj.coreBooksEn : yrObj.coreBooksPl) || [];
+
                 return `
-                <div class="seq-year-row ${isDone ? "done" : ""}" style="background:var(--bg-card);">
-                  <input type="checkbox" ${isDone ? "checked" : ""} onchange="toggleAdminYearDone(${yrObj.year})" style="margin-top:0.25rem; width:16px; height:16px; accent-color:var(--success); cursor:pointer;" />
-                  <div style="flex:1;">
-                    <div style="font-size:0.84rem; font-weight:700; color:${isDone ? "var(--success)" : "var(--text-primary)"};">
-                      ${escapeHtml(isEn ? yrObj.titleEn : yrObj.titlePl)} • ${escapeHtml(yrObj.semesters)} (${calYr}/${calYr + 1})
-                    </div>
-                    <ul style="margin:0.3rem 0 0.35rem; padding-left:1.15rem; font-size:0.8rem; color:var(--text-secondary);">
-                      ${(isEn ? yrObj.coursesEn : yrObj.coursesPl).map((c) => `<li>${escapeHtml(c)}</li>`).join("")}
-                    </ul>
-                    <div style="font-size:0.77rem; color:var(--accent-blue);">
-                      <strong>🎯 ${isEn ? "Administrative Milestone:" : "Kamień milowy Sztabu W-0:"}</strong> ${escapeHtml(isEn ? yrObj.deliverableEn : yrObj.deliverablePl)}
+                <div class="seq-year-row ${isDone ? "done" : ""}" style="background:var(--bg-card); margin-bottom:0.65rem;">
+                  <div style="display:flex; align-items:flex-start; gap:0.6rem;">
+                    <input type="checkbox" ${isDone ? "checked" : ""} onchange="toggleAdminYearDone(${yrObj.year})" style="margin-top:0.25rem; width:17px; height:17px; accent-color:var(--success); cursor:pointer;" />
+                    <div style="flex:1;">
+                      <div style="font-size:0.86rem; font-weight:700; color:${isDone ? "var(--success)" : "var(--text-primary)"};">
+                        ${escapeHtml(isEn ? yrObj.titleEn : yrObj.titlePl)} • ${escapeHtml(yrObj.semesters)} (${calYr}/${calYr + 1})
+                      </div>
+                      <ul style="margin:0.3rem 0 0.35rem; padding-left:1.15rem; font-size:0.8rem; color:var(--text-secondary);">
+                        ${(isEn ? yrObj.coursesEn : yrObj.coursesPl).map((c) => `<li>${escapeHtml(c)}</li>`).join("")}
+                      </ul>
+
+                      <!-- Podrozdziały Administracji z checkboxami -->
+                      ${
+                        subList.length
+                          ? `
+                        <div style="margin-top:0.45rem; background:var(--bg-subtle); border:1px solid var(--border-subtle); border-radius:var(--radius-sm); padding:0.45rem 0.65rem;">
+                          <div style="font-size:0.71rem; font-weight:700; color:var(--warning); text-transform:uppercase; margin-bottom:0.25rem;">
+                            📑 ${isEn ? "Administration Subchapters (Check off as you study):" : "Podrozdziały Administracji (zaznaczaj zaliczone partie materiału):"}
+                          </div>
+                          ${subList
+                            .map((sub, sIdx) => {
+                              const subKey = `ADMIN-3Y_Y${yrObj.year}_${sIdx + 1}`;
+                              const isSubDone = Boolean(completedSubs[subKey]);
+                              return `
+                              <div class="subchapter-row ${isSubDone ? "done" : ""}">
+                                <input type="checkbox" ${isSubDone ? "checked" : ""} onchange="toggleSubchapterDone('${subKey}')" style="margin-top:0.2rem; width:14px; height:14px; accent-color:var(--success); cursor:pointer;" />
+                                <span style="flex:1;">${escapeHtml(sub)}</span>
+                              </div>
+                            `;
+                            })
+                            .join("")}
+                        </div>
+                      `
+                          : ""
+                      }
+
+                      <!-- Powiązane materiały i literatura sztabowa -->
+                      <div style="display:flex; gap:0.4rem; flex-wrap:wrap; margin-top:0.4rem; align-items:center;">
+                        ${(yrObj.linkedMaterialIds || []).map(mid => `<span class="alignment-badge" style="cursor:pointer;" onclick="switchTab('materials');">📚 ${mid}</span>`).join("")}
+                        ${booksList.length ? `<span style="font-size:0.75rem; color:var(--text-muted);"><strong>📖 Podręczniki:</strong> ${booksList.map(b => escapeHtml(b)).join(" • ")}</span>` : ""}
+                      </div>
+
+                      <div style="font-size:0.77rem; color:var(--accent-blue); margin-top:0.35rem;">
+                        <strong>🎯 ${isEn ? "Administrative Milestone:" : "Kamień milowy Sztabu W-0:"}</strong> ${escapeHtml(isEn ? yrObj.deliverableEn : yrObj.deliverablePl)}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -7207,6 +9345,709 @@ function renderManhattanView() {
           `;
           })
           .join("")}
+      </div>
+    </div>
+  `;
+}
+
+/* ============================================================================
+   MODUŁ: AUDIO DO SAMOCHODU — CELOWA DROGA EKOSYSTEMU (CAR-FRIENDLY AUDIO PLAYER)
+   Web Speech API TTS, duże przyciski dotykowe w trasie, 18 odcinków w 4 etapach
+   ============================================================================ */
+
+let carAudioSpeechUtterance = null;
+
+function playCarAudioEpisode(epId) {
+  if (!appState.data || !appState.data.manhattanSystem) return;
+  const ep = (appState.data.manhattanSystem.carAudioRoad || []).find((e) => e.id === epId);
+  if (!ep) return;
+
+  if (window.speechSynthesis) {
+    window.speechSynthesis.cancel();
+  }
+
+  appState.carAudioPlayingId = epId;
+  const isEn = appState.lang === "en";
+  const spokenText = (isEn && ep.spokenBriefingEn ? ep.spokenBriefingEn : ep.spokenBriefingPl) || "";
+
+  if (!window.speechSynthesis) {
+    showToast(isEn ? "SpeechSynthesis API not supported in this browser." : "Twoja przeglądarka nie obsługuje syntezy mowy Web Speech API.");
+    renderCarAudioView();
+    return;
+  }
+
+  const u = new SpeechSynthesisUtterance(spokenText);
+  u.lang = isEn ? "en-US" : "pl-PL";
+  u.rate = appState.carAudioRate || 1.15;
+  u.pitch = 1.0;
+
+  const voices = window.speechSynthesis.getVoices() || [];
+  const matchingVoice = voices.find((v) => isEn ? v.lang.startsWith("en") : v.lang.startsWith("pl"));
+  if (matchingVoice) u.voice = matchingVoice;
+
+  u.onend = () => {
+    const ms = appState.data.manhattanSystem;
+    ms.completedCarAudio = ms.completedCarAudio || {};
+    ms.completedCarAudio[epId] = true;
+    saveState();
+
+    if (appState.carAudioAutoPlay) {
+      const road = ms.carAudioRoad || [];
+      const currIdx = road.findIndex((e) => e.id === epId);
+      if (currIdx >= 0 && currIdx + 1 < road.length) {
+        const nextEp = road[currIdx + 1];
+        setTimeout(() => {
+          playCarAudioEpisode(nextEp.id);
+        }, 1200);
+        return;
+      }
+    }
+    appState.carAudioPlayingId = null;
+    renderCarAudioView();
+    renderNavCounts();
+  };
+
+  u.onerror = (err) => {
+    console.warn("TTS Error:", err);
+    appState.carAudioPlayingId = null;
+    renderCarAudioView();
+  };
+
+  carAudioSpeechUtterance = u;
+  window.speechSynthesis.speak(u);
+  showToast(isEn ? `Now playing: ${ep.titleEn}` : `Odtwarzanie: ${ep.titlePl}`);
+  renderCarAudioView();
+}
+
+function pauseCarAudio() {
+  if (window.speechSynthesis) {
+    if (window.speechSynthesis.speaking && !window.speechSynthesis.paused) {
+      window.speechSynthesis.pause();
+    } else if (window.speechSynthesis.paused) {
+      window.speechSynthesis.resume();
+    }
+  }
+  renderCarAudioView();
+}
+
+function stopCarAudio() {
+  if (window.speechSynthesis) {
+    window.speechSynthesis.cancel();
+  }
+  appState.carAudioPlayingId = null;
+  renderCarAudioView();
+}
+
+function setCarAudioRate(newRate) {
+  appState.carAudioRate = parseFloat(newRate);
+  if (appState.carAudioPlayingId) {
+    playCarAudioEpisode(appState.carAudioPlayingId);
+  } else {
+    renderCarAudioView();
+  }
+}
+
+function toggleCarAudioAutoPlay() {
+  appState.carAudioAutoPlay = !appState.carAudioAutoPlay;
+  showToast(appState.carAudioAutoPlay ? "Auto-Play w trasie: WŁĄCZONE (ciągłe odtwarzanie)" : "Auto-Play w trasie: WYŁĄCZONE");
+  renderCarAudioView();
+}
+
+function toggleCarAudioDone(epId) {
+  if (!appState.data || !appState.data.manhattanSystem) return;
+  const ms = appState.data.manhattanSystem;
+  ms.completedCarAudio = ms.completedCarAudio || {};
+  ms.completedCarAudio[epId] = !ms.completedCarAudio[epId];
+  saveState();
+  renderCarAudioView();
+  renderNavCounts();
+}
+
+function selectCarAudioStageFilter(stage) {
+  appState.carAudioStageFilter = stage;
+  renderCarAudioView();
+}
+
+function openNewCarAudioModal() {
+  const isEn = appState.lang === "en";
+  const modalHtml = `
+    <div id="newCarAudioModal" class="modal-backdrop" onclick="if(event.target===this) this.remove();">
+      <div class="modal-card" style="max-width:540px;">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
+          <h3 style="margin:0;">➕ ${isEn ? "Add Custom Car Audio Episode" : "Dodaj Własny Odcinek do Trasy Samochodowej"}</h3>
+          <button class="btn btn-sm" onclick="document.getElementById('newCarAudioModal').remove();">✕</button>
+        </div>
+        <form onsubmit="saveCustomCarAudioEpisode(event)">
+          <div style="margin-bottom:0.75rem;">
+            <label style="display:block; font-size:0.78rem; font-weight:700; margin-bottom:0.25rem;">${isEn ? "Episode Title (PL)*" : "Tytuł odcinka (PL)*"}</label>
+            <input type="text" id="custCarTitlePl" class="input-field" required placeholder="np. Odcinek 19: Moje podsumowanie..." />
+          </div>
+          <div style="margin-bottom:0.75rem;">
+            <label style="display:block; font-size:0.78rem; font-weight:700; margin-bottom:0.25rem;">${isEn ? "Stage" : "Etap Drogi"}</label>
+            <select id="custCarStage" class="select-field">
+              <option value="I">Etap I: Sztab W-0 & Administracja</option>
+              <option value="II">Etap II: 8 Fundamentów Naukowych</option>
+              <option value="III">Etap III: Ścieżki Badawcze A–G</option>
+              <option value="IV" selected>Etap IV: Super-Projekt H & Synteza</option>
+            </select>
+          </div>
+          <div style="margin-bottom:0.75rem;">
+            <label style="display:block; font-size:0.78rem; font-weight:700; margin-bottom:0.25rem;">${isEn ? "Duration (minutes)" : "Szacowany czas słuchania (minuty)"}</label>
+            <input type="number" id="custCarDuration" class="input-field" value="20" min="1" max="180" />
+          </div>
+          <div style="margin-bottom:0.75rem;">
+            <label style="display:block; font-size:0.78rem; font-weight:700; margin-bottom:0.25rem;">${isEn ? "Spoken Briefing Text (Read aloud by TTS)*" : "Treść do odczytania w trasie przez Lektora TTS*"}</label>
+            <textarea id="custCarBriefing" class="input-field" rows="4" required placeholder="Tekst, który ma czytać syntezator mowy w samochodzie..."></textarea>
+          </div>
+          <div style="margin-bottom:1rem;">
+            <label style="display:block; font-size:0.78rem; font-weight:700; margin-bottom:0.25rem;">${isEn ? "External Audio / Podcast Link (optional)" : "Zewnętrzny link do wykładu/podcastu (opcjonalnie)"}</label>
+            <input type="url" id="custCarLink" class="input-field" placeholder="https://..." />
+          </div>
+          <div style="display:flex; justify-content:flex-end; gap:0.5rem;">
+            <button type="button" class="btn" onclick="document.getElementById('newCarAudioModal').remove();">${isEn ? "Cancel" : "Anuluj"}</button>
+            <button type="submit" class="btn btn-primary">${isEn ? "Save Episode" : "Zapisz odcinek"}</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  `;
+  const existing = document.getElementById("newCarAudioModal");
+  if (existing) existing.remove();
+  document.body.insertAdjacentHTML("beforeend", modalHtml);
+}
+
+function saveCustomCarAudioEpisode(e) {
+  e.preventDefault();
+  const title = document.getElementById("custCarTitlePl").value.trim();
+  const stage = document.getElementById("custCarStage").value;
+  const duration = parseInt(document.getElementById("custCarDuration").value, 10) || 15;
+  const briefing = document.getElementById("custCarBriefing").value.trim();
+  const extLink = document.getElementById("custCarLink").value.trim();
+
+  if (!title || !briefing) return;
+  const ms = appState.data.manhattanSystem;
+  ms.carAudioRoad = ms.carAudioRoad || [];
+  const epNum = ms.carAudioRoad.length + 1;
+  const newEp = {
+    id: `car-ep-${String(epNum).padStart(2, "0")}`,
+    order: epNum,
+    stage: stage,
+    stageNamePl: `Etap ${stage}`,
+    stageNameEn: `Stage ${stage}`,
+    titlePl: title,
+    titleEn: title,
+    estimatedDurationMin: duration,
+    spokenBriefingPl: briefing,
+    spokenBriefingEn: briefing,
+    keyTakeawaysPl: ["Własny odcinek dodany przez użytkownika."],
+    curatedAudioLinks: extLink ? [{ title: "Materiały zewnętrzne", url: extLink, lang: "PL", type: "podcast" }] : []
+  };
+
+  ms.carAudioRoad.push(newEp);
+  saveState(appState.lang === "en" ? "Car audio episode added." : "Dodano nowy odcinek do trasy samochodowej.");
+  const m = document.getElementById("newCarAudioModal");
+  if (m) m.remove();
+  renderCarAudioView();
+  renderNavCounts();
+}
+
+function renderCarAudioView() {
+  const root = document.getElementById("carAudioRootContainer");
+  if (!root || !appState.data || !appState.data.manhattanSystem) return;
+
+  const isEn = appState.lang === "en";
+  const ms = appState.data.manhattanSystem;
+  const road = ms.carAudioRoad || [];
+  const doneMap = ms.completedCarAudio || {};
+  const doneCount = road.filter((e) => Boolean(doneMap[e.id])).length;
+  const pct = road.length ? Math.round((doneCount / road.length) * 100) : 0;
+  const totalMin = road.reduce((acc, e) => acc + (e.estimatedDurationMin || 15), 0);
+  const totalHrs = Math.floor(totalMin / 60);
+  const remMin = totalMin % 60;
+
+  const isSpeaking = window.speechSynthesis && window.speechSynthesis.speaking && !window.speechSynthesis.paused;
+  const isPaused = window.speechSynthesis && window.speechSynthesis.paused;
+  const currentPlayingEp = road.find((e) => e.id === appState.carAudioPlayingId) || null;
+
+  // Filtrowanie etapów
+  const stageFlt = appState.carAudioStageFilter || "ALL";
+  const filteredRoad = road.filter((e) => {
+    if (stageFlt === "ALL") return true;
+    return e.stage === stageFlt;
+  });
+
+  const stageColors = {
+    "I": "var(--warning)",
+    "II": "var(--accent-blue)",
+    "III": "var(--accent-purple)",
+    "IV": "var(--danger)"
+  };
+
+  root.innerHTML = `
+    <!-- 1. TACTILE CAR PLAYER DECK (Wygodny w samochodzie panel odtwarzacza) -->
+    <div class="car-player-deck">
+      <div class="car-player-hero">
+        <div>
+          <div style="font-size:0.75rem; font-weight:800; color:var(--accent-blue); text-transform:uppercase; letter-spacing:0.06em; margin-bottom:0.25rem;">
+            🎧 ${isEn ? "PURPOSEFUL ROUTE • VEHICLE AUDIO PLAYER (HANDS-FREE TTS)" : "CELOWA DROGA EKOSYSTEMU • SAMOCHODOWY ODTWARZACZ AUDIO (LEKTOR TTS)"}
+          </div>
+          <h2 style="font-size:1.25rem; font-weight:800; color:var(--text-primary); margin:0 0 0.25rem 0;">
+            ${
+              currentPlayingEp
+                ? `▶ ${escapeHtml(isEn ? currentPlayingEp.titleEn : currentPlayingEp.titlePl)}`
+                : (isEn ? "Ready to drive. Select an episode or press Start Road." : "Gotowy do jazdy. Wybierz odcinek lub naciśnij Start.")
+            }
+          </h2>
+          <div style="font-size:0.78rem; color:var(--text-muted);">
+            ${isSpeaking ? "🟢 " + (isEn ? "SpeechSynthesis active • Listening on the road" : "Lektor TTS aktywny • Słuchasz w trasie") : (isPaused ? "⏸️ " + (isEn ? "Paused" : "Wstrzymano") : "⚪ " + (isEn ? "Player standing by" : "Odtwarzacz w gotowości"))}
+          </div>
+        </div>
+
+        <!-- Duże przyciski dotykowe -->
+        <div class="car-btn-group">
+          ${
+            isSpeaking
+              ? `<button class="car-btn-tactile car-btn-play" onclick="pauseCarAudio()">⏸️ ${isEn ? "PAUSE" : "PAUZA"}</button>`
+              : isPaused
+              ? `<button class="car-btn-tactile car-btn-play" onclick="pauseCarAudio()">▶️ ${isEn ? "RESUME" : "WZNÓW"}</button>`
+              : `<button class="car-btn-tactile car-btn-play" onclick="playCarAudioEpisode('${currentPlayingEp ? currentPlayingEp.id : (road[0] ? road[0].id : '')}')">▶️ ${isEn ? "START ROAD" : "START TRASY"}</button>`
+          }
+          <button class="car-btn-tactile btn" style="border:1px solid var(--border-color);" onclick="stopCarAudio()">⏹️ ${isEn ? "STOP" : "ZATRZYMAJ"}</button>
+          
+          <!-- Prędkość odtwarzania -->
+          <div style="display:inline-flex; border:1px solid var(--border-color); border-radius:var(--radius-sm); overflow:hidden;">
+            <button class="btn btn-sm ${appState.carAudioRate === 1.0 ? "btn-primary" : ""}" style="border-radius:0; padding:0.45rem 0.65rem;" onclick="setCarAudioRate(1.0)">1.0x</button>
+            <button class="btn btn-sm ${appState.carAudioRate === 1.15 ? "btn-primary" : ""}" style="border-radius:0; padding:0.45rem 0.65rem;" onclick="setCarAudioRate(1.15)">1.15x</button>
+            <button class="btn btn-sm ${appState.carAudioRate === 1.25 ? "btn-primary" : ""}" style="border-radius:0; padding:0.45rem 0.65rem;" onclick="setCarAudioRate(1.25)">1.25x</button>
+            <button class="btn btn-sm ${appState.carAudioRate === 1.5 ? "btn-primary" : ""}" style="border-radius:0; padding:0.45rem 0.65rem;" onclick="setCarAudioRate(1.5)">1.5x</button>
+          </div>
+
+          <!-- Przełącznik Auto-Play -->
+          <button class="car-btn-tactile btn ${appState.carAudioAutoPlay ? "btn-success" : ""}" style="font-size:0.82rem;" onclick="toggleCarAudioAutoPlay()" title="${isEn ? "Continuous playback on road" : "Ciągłe odtwarzanie kolejnych odcinków w trasie"}">
+            🚘 ${appState.carAudioAutoPlay ? (isEn ? "Auto-Play: ON" : "Auto-Play: WŁ") : (isEn ? "Auto-Play: OFF" : "Auto-Play: WYŁ")}
+          </button>
+          
+          <button class="car-btn-tactile btn" onclick="openNewCarAudioModal()">➕ ${isEn ? "Add Episode" : "Własny odcinek"}</button>
+        </div>
+      </div>
+
+      <!-- Pasek postępu drogi -->
+      <div class="car-road-progress">
+        <div class="car-road-progress-fill" style="width:${pct}%;"></div>
+      </div>
+      <div style="display:flex; justify-content:space-between; align-items:center; font-size:0.75rem; color:var(--text-muted); margin-top:0.35rem;">
+        <span>🎯 ${isEn ? "Roadtrip Progress:" : "Zaliczono w trasie:"} <strong>${doneCount} / ${road.length} ${isEn ? "episodes" : "odcinków"} (${pct}%)</strong></span>
+        <span>⏱️ ${isEn ? "Total Ecosystem Journey:" : "Całkowity czas drogi:"} <strong>~${totalHrs}h ${remMin}min</strong></span>
+      </div>
+    </div>
+
+    <!-- 2. ETAPY DROGI (FILTRACJA) -->
+    <div style="display:flex; gap:0.4rem; flex-wrap:wrap; margin-bottom:1.15rem; align-items:center;">
+      <span style="font-size:0.78rem; font-weight:700; color:var(--text-secondary); margin-right:0.3rem;">🛣️ ${isEn ? "Ecosystem Stages:" : "Etapy Celowej Drogi:"}</span>
+      <button class="topic-selector-chip ${stageFlt === "ALL" ? "selected" : ""}" onclick="selectCarAudioStageFilter('ALL')">
+        ${isEn ? "All 18 Episodes" : "Wszystkie 18 Odcinków"}
+      </button>
+      <button class="topic-selector-chip ${stageFlt === "I" ? "selected" : ""}" onclick="selectCarAudioStageFilter('I')">
+        🏛️ ${isEn ? "Stage I: District W-0 & Law (2)" : "Etap I: Sztab W-0 & Administracja (2)"}
+      </button>
+      <button class="topic-selector-chip ${stageFlt === "II" ? "selected" : ""}" onclick="selectCarAudioStageFilter('II')">
+        🔬 ${isEn ? "Stage II: 8 Core Foundations (8)" : "Etap II: 8 Fundamentów Nauki (8)"}
+      </button>
+      <button class="topic-selector-chip ${stageFlt === "III" ? "selected" : ""}" onclick="selectCarAudioStageFilter('III')">
+        🗺️ ${isEn ? "Stage III: Research Tracks A–G (7)" : "Etap III: Ścieżki Badawcze A–G (7)"}
+      </button>
+      <button class="topic-selector-chip ${stageFlt === "IV" ? "selected" : ""}" onclick="selectCarAudioStageFilter('IV')">
+        ☢️ ${isEn ? "Stage IV: Megaproject H & Fusion (1)" : "Etap IV: Super-Projekt H & Synteza (1)"}
+      </button>
+    </div>
+
+    <!-- 3. LISTA ODCINKÓW DROGI -->
+    <div style="display:flex; flex-direction:column; gap:0.85rem;">
+      ${filteredRoad
+        .map((ep) => {
+          const isDone = Boolean(doneMap[ep.id]);
+          const isPlayingThis = appState.carAudioPlayingId === ep.id;
+          const stageCol = stageColors[ep.stage] || "var(--accent-blue)";
+          const extLinks = ep.curatedAudioLinks || [];
+          const takeaways = (isEn && ep.keyTakeawaysEn ? ep.keyTakeawaysEn : ep.keyTakeawaysPl) || ep.keyTakeawaysPl || [];
+
+          return `
+          <div class="car-episode-card ${isPlayingThis ? "is-playing" : ""} ${isDone ? "is-done" : ""}" style="--stage-color:${stageCol};">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:0.6rem; margin-bottom:0.4rem;">
+              <div>
+                <div style="display:flex; align-items:center; gap:0.45rem; flex-wrap:wrap; margin-bottom:0.25rem;">
+                  <span class="foundation-pill" style="font-size:0.69rem; font-weight:800; color:${stageCol}; border-color:${stageCol};">
+                    ${escapeHtml(isEn ? ep.stageNameEn : ep.stageNamePl)}
+                  </span>
+                  <span class="foundation-pill" style="font-size:0.68rem;">
+                    ROAD #${ep.order}
+                  </span>
+                  <span style="font-size:0.75rem; color:var(--text-muted); font-weight:600;">
+                    ⏱️ ~${ep.estimatedDurationMin || 15} min
+                  </span>
+                  ${isPlayingThis ? `<span class="badge-count" style="background:var(--success); color:#fff; animation:pulse 1.5s infinite;">🔊 ODTWARZANIE</span>` : ""}
+                </div>
+                <h3 style="font-size:1.05rem; font-weight:800; color:var(--text-primary); margin:0;">
+                  ${escapeHtml(isEn ? ep.titleEn : ep.titlePl)}
+                </h3>
+              </div>
+
+              <!-- Checkbox i przyciski akcji -->
+              <div style="display:flex; align-items:center; gap:0.6rem;">
+                <label style="display:inline-flex; align-items:center; gap:0.4rem; font-size:0.82rem; font-weight:700; color:${isDone ? "var(--success)" : "var(--text-secondary)"}; cursor:pointer; background:var(--bg-subtle); padding:0.35rem 0.65rem; border-radius:var(--radius-sm); border:1px solid var(--border-subtle);">
+                  <input type="checkbox" ${isDone ? "checked" : ""} onchange="toggleCarAudioDone('${ep.id}')" style="width:16px; height:16px; accent-color:var(--success); cursor:pointer;" />
+                  <span>${isDone ? (isEn ? "✓ Listened on road" : "✓ Odsłuchane w trasie") : (isEn ? "Mark as listened" : "Oznacz jako odsłuchane")}</span>
+                </label>
+                
+                ${
+                  isPlayingThis && isSpeaking
+                    ? `<button class="btn btn-sm btn-primary" onclick="pauseCarAudio()">⏸️ ${isEn ? "Pause" : "Pauza"}</button>`
+                    : `<button class="btn btn-sm btn-primary" onclick="playCarAudioEpisode('${ep.id}')">▶️ ${isEn ? "Listen (TTS)" : "Słuchaj lektorem"}</button>`
+                }
+              </div>
+            </div>
+
+            <!-- Tekst przemówienia lektora (odsłuchiwany w trasie) -->
+            <div style="background:var(--bg-subtle); border-left:3px solid ${stageCol}; padding:0.7rem 0.9rem; border-radius:0 var(--radius-sm) var(--radius-sm) 0; font-size:0.84rem; color:var(--text-primary); line-height:1.6; margin:0.6rem 0;">
+              ${escapeHtml(isEn && ep.spokenBriefingEn ? ep.spokenBriefingEn : ep.spokenBriefingPl)}
+            </div>
+
+            <!-- Kluczowe wnioski -->
+            ${
+              takeaways.length
+                ? `
+              <div style="margin:0.5rem 0 0.4rem;">
+                <div style="font-size:0.72rem; font-weight:700; color:var(--text-muted); text-transform:uppercase; margin-bottom:0.25rem;">
+                  📌 ${isEn ? "Key Takeaways to Memorize on Road:" : "Kluczowe wnioski do zapamiętania w drodze:"}
+                </div>
+                <ul style="margin:0; padding-left:1.2rem; font-size:0.79rem; color:var(--text-secondary); line-height:1.45;">
+                  ${takeaways.map((t) => `<li>${escapeHtml(t)}</li>`).join("")}
+                </ul>
+              </div>
+            `
+                : ""
+            }
+
+            <!-- Zewnętrzne nagrania / podcasty -->
+            ${
+              extLinks.length
+                ? `
+              <div style="display:flex; gap:0.4rem; flex-wrap:wrap; align-items:center; margin-top:0.55rem; padding-top:0.45rem; border-top:1px dashed var(--border-subtle);">
+                <span style="font-size:0.72rem; color:var(--text-muted); font-weight:700;">🎙️ ${isEn ? "Curated Audio & Lectures:" : "Polecane materiały audio / wykłady zewnętrzne:"}</span>
+                ${extLinks
+                  .map(
+                    (lnk) => `
+                  <a href="${escapeHtml(lnk.url)}" target="_blank" rel="noopener noreferrer" class="alignment-badge" style="text-decoration:none; color:var(--link); border-color:var(--border-subtle);">
+                    ${renderLangBadgeHtml(lnk.lang || "PL")} ${escapeHtml(lnk.title)} ↗
+                  </a>
+                `
+                  )
+                  .join("")}
+              </div>
+            `
+                : ""
+            }
+          </div>
+        `;
+        })
+        .join("")}
+    </div>
+  `;
+}
+
+/* ============================================================================
+   MODUŁ: SUMMA TECHNOLOGIAE 2.0 (STANISŁAW LEM — BIBLIA MOŻLIWOŚCI TECHNIKI)
+   Czytnik i edytor rękopisu, prompty AI dla Golem XV, synteza TTS
+   ============================================================================ */
+
+let bookSpeechUtterance = null;
+
+function selectBookChapter(chId) {
+  appState.bookActiveChapterId = chId;
+  appState.bookIsEditing = false;
+  renderBookView();
+}
+
+function toggleBookEditMode(isEditing) {
+  appState.bookIsEditing = Boolean(isEditing);
+  renderBookView();
+}
+
+function saveBookChapterContent() {
+  const textarea = document.getElementById("bookChapterEditor");
+  if (!textarea || !appState.data || !appState.data.summaBook) return;
+  const ch = (appState.data.summaBook.chapters || []).find((c) => c.id === appState.bookActiveChapterId);
+  if (!ch) return;
+  ch.contentMarkdownPl = textarea.value;
+  ch.lastUpdated = new Date().toISOString().split("T")[0];
+  saveState(appState.lang === "en" ? "Chapter manuscript saved." : "Zapisano zmiany w rękopisie rozdziału.");
+  appState.bookIsEditing = false;
+  renderBookView();
+}
+
+function speakBookChapter(chId) {
+  const ch = ((appState.data.summaBook || {}).chapters || []).find((c) => c.id === chId);
+  if (!ch || !window.speechSynthesis) return;
+
+  window.speechSynthesis.cancel();
+  const rawText = `${ch.titlePl}. Motto: ${ch.lemQuote}. Streszczenie: ${ch.summaryPl || ""}. Treść: ${ch.contentMarkdownPl || ""}`;
+  const cleanText = rawText.replace(/[#*_\(\)\[\]]/g, " ");
+
+  const u = new SpeechSynthesisUtterance(cleanText);
+  u.lang = appState.lang === "en" ? "en-US" : "pl-PL";
+  u.rate = appState.carAudioRate || 1.15;
+
+  const voices = window.speechSynthesis.getVoices() || [];
+  const matchingVoice = voices.find((v) => appState.lang === "en" ? v.lang.startsWith("en") : v.lang.startsWith("pl"));
+  if (matchingVoice) u.voice = matchingVoice;
+
+  u.onend = () => {
+    bookSpeechUtterance = null;
+    renderBookView();
+  };
+  bookSpeechUtterance = u;
+  window.speechSynthesis.speak(u);
+  showToast(appState.lang === "en" ? "Reading chapter aloud..." : "Rozpoczęto lekturę rozdziału głosem TTS...");
+  renderBookView();
+}
+
+function stopBookSpeech() {
+  if (window.speechSynthesis) {
+    window.speechSynthesis.cancel();
+  }
+  bookSpeechUtterance = null;
+  renderBookView();
+}
+
+function openLemAiPromptModal(chId) {
+  const ch = ((appState.data.summaBook || {}).chapters || []).find((c) => c.id === chId);
+  if (!ch) return;
+  const isEn = appState.lang === "en";
+  const promptText = `Jesteś Stanisławem Lemem oraz superinteligencją Golem XV. Piszemy wspólnie dzieło: „Summa Technologiae 2.0: Biblia Możliwości Techniki”.
+Rozdział: ${ch.number}. ${ch.titlePl}
+Motto przewodnie: "${ch.lemQuote}"
+
+Zadanie epistemiczne:
+Rozwiń ten rozdział w chłodnym, precyzyjnym, lemowskim stylu filozoficzno-technologicznym. Uwzględnij:
+1. Fizyczne granice krzemu (prawo Moore'a u kresu, prądy upływu, granica Landauera, koniec skalowania Dennarda).
+2. Zmianę paradygmatu programowania (od klasycznego kodu von Neumanna do obliczeń tensorowych, kwantowych QPU oraz neuromorficznych sieci impulsowych SNN na memrystorach).
+3. Maszyny naśladujące mózg biologiczny i protokół WBE (Whole Brain Emulation).
+4. Etyczne i cywilizacyjne konsekwencje dla ludzkości.
+
+Bieżący zarys rozdziału:
+${ch.summaryPl}
+
+Przygotuj głęboki, 1500-wyrazowy esej stanowiący kolejną podsekcję tego rozdziału.`;
+
+  const modalHtml = `
+    <div id="lemAiModal" class="modal-backdrop" onclick="if(event.target===this) this.remove();">
+      <div class="modal-card" style="max-width:640px;">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
+          <h3 style="margin:0;">✨ ${isEn ? "Lem & Golem XV AI Synthesis Prompt" : "Generator Rozkazu Syntezy (Stanisław Lem & Golem XV)"}</h3>
+          <button class="btn btn-sm" onclick="document.getElementById('lemAiModal').remove();">✕</button>
+        </div>
+        <p style="font-size:0.83rem; color:var(--text-secondary); margin-bottom:0.75rem;">
+          ${isEn ? "Copy this prompt and pass it to your AI model to co-author this chapter in Lem's philosophical rigor:" : "Skopiuj ten gotowy prompt epistemologiczny i przekaż swojemu modelowi AI, aby współtworzyć ten rozdział w stylu Stanisława Lema:"}
+        </p>
+        <textarea id="lemPromptText" class="input-field" rows="11" readonly style="font-family:monospace; font-size:0.8rem; background:var(--bg-subtle);">${escapeHtml(promptText)}</textarea>
+        <div style="display:flex; justify-content:flex-end; gap:0.5rem; margin-top:1rem;">
+          <button class="btn" onclick="document.getElementById('lemAiModal').remove();">${isEn ? "Close" : "Zamknij"}</button>
+          <button class="btn btn-primary" onclick="navigator.clipboard.writeText(document.getElementById('lemPromptText').value); showToast('Skopiowano prompt Lema do schowka!'); document.getElementById('lemAiModal').remove();">📋 ${isEn ? "Copy to Clipboard" : "Kopiuj do schowka"}</button>
+        </div>
+      </div>
+    </div>
+  `;
+  const existing = document.getElementById("lemAiModal");
+  if (existing) existing.remove();
+  document.body.insertAdjacentHTML("beforeend", modalHtml);
+}
+
+function exportBookManuscript() {
+  const book = (appState.data || {}).summaBook;
+  if (!book) return;
+  let md = `# ${book.title}\n\n`;
+  md += `**Współautorzy**: ${book.author} & Golem XV\n`;
+  md += `**Motto dzieła**: *${book.motto}*\n\n`;
+  md += `**Wstęp**: ${book.introductionPl}\n\n---\n\n`;
+
+  (book.chapters || []).forEach((ch) => {
+    md += `## ${ch.number === 0 ? "Wstęp" : "Rozdział " + ch.number}: ${ch.titlePl}\n\n`;
+    md += `> *„${ch.lemQuote}”*\n\n`;
+    md += `**Status epistemiczny**: ${ch.epistemicStatus} | **Czas lektury**: ~${ch.readingTimeMin} min | **Aktualizacja**: ${ch.lastUpdated}\n\n`;
+    md += `### Streszczenie idei:\n${ch.summaryPl}\n\n`;
+    md += `### Rękopis:\n${ch.contentMarkdownPl || ""}\n\n---\n\n`;
+  });
+
+  const blob = new Blob([md], { type: "text/markdown;charset=utf-8" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = `Summa_Technologiae_2_0_Rekopis_${new Date().toISOString().split("T")[0]}.md`;
+  a.click();
+  showToast("Pobrano pełny rękopis książki (.md)");
+}
+
+function renderBookView() {
+  const root = document.getElementById("bookRootContainer");
+  if (!root || !appState.data || !appState.data.summaBook) return;
+
+  const isEn = appState.lang === "en";
+  const book = appState.data.summaBook;
+  const chapters = book.chapters || [];
+  const activeCh = chapters.find((c) => c.id === appState.bookActiveChapterId) || chapters[0];
+
+  const totalWords = chapters.reduce((acc, c) => acc + (c.contentMarkdownPl ? c.contentMarkdownPl.split(/\s+/).filter(Boolean).length : 0), 0);
+  const isSpeaking = Boolean(bookSpeechUtterance);
+
+  root.innerHTML = `
+    <!-- NAGŁÓWEK MODUŁU KSIĄŻKOWEGO -->
+    <div style="background:var(--bg-card); border:1px solid var(--border-color); border-top:4px solid var(--accent-purple); border-radius:var(--radius-md); padding:1.25rem 1.4rem; margin-bottom:1.25rem;">
+      <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:0.75rem;">
+        <div>
+          <span class="manhattan-codename-badge" style="background:rgba(168,85,247,0.12); color:var(--accent-purple); border-color:rgba(168,85,247,0.3);">
+            📖 ${isEn ? "STANISŁAW LEM • SUMMA TECHNOLOGIAE 2.0" : "STANISŁAW LEM • SUMMA TECHNOLOGIAE 2.0"}
+          </span>
+          <h2 style="font-family:Georgia,'Times New Roman',serif; font-size:1.35rem; font-weight:800; color:var(--text-primary); margin:0.35rem 0 0.25rem;">
+            ${escapeHtml(book.title)}
+          </h2>
+          <p style="font-size:0.86rem; color:var(--text-secondary); margin:0; line-height:1.5;">
+            <em>"${escapeHtml(book.motto)}"</em> • <strong>${isEn ? "Authors:" : "Autorzy:"}</strong> ${escapeHtml(book.author)} & Golem XV • <strong>${chapters.length} ${isEn ? "chapters" : "rozdziałów"}</strong> (~${totalWords} ${isEn ? "words" : "słów"})
+          </p>
+        </div>
+        <div style="display:flex; gap:0.4rem; flex-wrap:wrap;">
+          <button class="btn btn-sm" onclick="exportBookManuscript()">📥 ${isEn ? "Export Manuscript (.md)" : "Pobierz rękopis (.md)"}</button>
+          <button class="btn btn-sm" onclick="window.print()">📄 ${isEn ? "Print / PDF" : "Drukuj / PDF"}</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- DWUKOLUMNOWY UKŁAD: SPIS TREŚCI (TOC) + CZYTNIK I EDYTOR RĘKOPISU -->
+    <div class="book-layout">
+      <!-- LEWY PANEL: SPIS ROZDZIAŁÓW -->
+      <div class="book-toc">
+        <h4 style="font-size:0.88rem; font-weight:800; color:var(--text-primary); margin-bottom:0.65rem; text-transform:uppercase; letter-spacing:0.04em;">
+          📑 ${isEn ? "Table of Contents" : "Spis Rozdziałów"}
+        </h4>
+        <div>
+          ${chapters
+            .map((ch) => {
+              const isActive = ch.id === activeCh.id;
+              const words = ch.contentMarkdownPl ? ch.contentMarkdownPl.split(/\s+/).filter(Boolean).length : 0;
+              return `
+              <div class="book-toc-item ${isActive ? "active" : ""}" onclick="selectBookChapter('${ch.id}')">
+                <div style="display:flex; justify-content:space-between; align-items:center; font-size:0.71rem; margin-bottom:0.15rem;">
+                  <strong style="color:${isActive ? "var(--accent-purple)" : "var(--text-muted)"};">
+                    ${ch.number === 0 ? "WSTĘP" : `ROZDZIAŁ ${ch.number}`}
+                  </strong>
+                  <span style="font-size:0.68rem; color:var(--text-muted);">~${ch.readingTimeMin} min</span>
+                </div>
+                <div style="font-size:0.82rem; font-weight:${isActive ? "700" : "500"}; color:var(--text-primary); line-height:1.35;">
+                  ${escapeHtml(isEn ? ch.titleEn : ch.titlePl)}
+                </div>
+                <div style="display:flex; justify-content:space-between; font-size:0.68rem; color:var(--text-muted); margin-top:0.25rem;">
+                  <span>${escapeHtml(ch.epistemicStatus || "W toku")}</span>
+                  <span>${words} słów</span>
+                </div>
+              </div>
+            `;
+            })
+            .join("")}
+        </div>
+      </div>
+
+      <!-- PRAWY PANEL: CZYTNIK / EDYTOR RĘKOPISU -->
+      <div class="book-manuscript-reader">
+        <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:0.6rem; margin-bottom:0.75rem;">
+          <div>
+            <div style="font-size:0.75rem; font-weight:800; color:var(--accent-purple); text-transform:uppercase; margin-bottom:0.2rem;">
+              ${activeCh.number === 0 ? "WSTĘP EPISTEMOLOGICZNY" : `ROZDZIAŁ ${activeCh.number}`} • ${escapeHtml(activeCh.epistemicStatus)}
+            </div>
+            <h2 style="font-family:Georgia,'Times New Roman',serif; font-size:1.38rem; font-weight:800; color:var(--text-primary); margin:0;">
+              ${escapeHtml(isEn ? activeCh.titleEn : activeCh.titlePl)}
+            </h2>
+            <div style="font-size:0.76rem; color:var(--text-muted); margin-top:0.2rem;">
+              ⏱️ ~${activeCh.readingTimeMin} min lektury • 📅 Aktualizacja: ${activeCh.lastUpdated || "2026-10-26"}
+            </div>
+          </div>
+
+          <!-- Przyciski trybu i syntezy -->
+          <div style="display:flex; gap:0.35rem; align-items:center; flex-wrap:wrap;">
+            ${
+              appState.bookIsEditing
+                ? `
+                <button class="btn btn-sm btn-primary" onclick="saveBookChapterContent()">💾 ${isEn ? "Save Manuscript" : "Zapisz rękopis"}</button>
+                <button class="btn btn-sm" onclick="toggleBookEditMode(false)">${isEn ? "Cancel" : "Anuluj"}</button>
+              `
+                : `
+                <button class="btn btn-sm" onclick="toggleBookEditMode(true)">✏️ ${isEn ? "Edit Chapter" : "Edytuj treść"}</button>
+              `
+            }
+            ${
+              isSpeaking
+                ? `<button class="btn btn-sm btn-danger" onclick="stopBookSpeech()">⏹️ ${isEn ? "Stop Audio" : "Zatrzymaj lektora"}</button>`
+                : `<button class="btn btn-sm btn-primary" onclick="speakBookChapter('${activeCh.id}')">🔊 ${isEn ? "Read Chapter (TTS)" : "Odsłuchaj rozdział"}</button>`
+            }
+            <button class="btn btn-sm" onclick="openLemAiPromptModal('${activeCh.id}')">✨ ${isEn ? "Lem AI Prompt" : "Asystent Lema (AI)"}</button>
+          </div>
+        </div>
+
+        <!-- MOTTO LEMOWSKIE ROZDZIAŁU -->
+        <div class="book-lem-quote">
+          „${escapeHtml(activeCh.lemQuote)}”
+        </div>
+
+        <!-- STRESZCZENIE IDEI -->
+        <div style="background:var(--bg-subtle); border:1px solid var(--border-color); border-radius:var(--radius-sm); padding:0.8rem 1rem; margin-bottom:1.25rem;">
+          <div style="font-size:0.74rem; font-weight:800; color:var(--accent-blue); text-transform:uppercase; margin-bottom:0.3rem;">
+            💡 ${isEn ? "Epistemic Core & Conceptual Summary:" : "Rdzeń pojęciowy i synteza rozdziału:"}
+          </div>
+          <div style="font-size:0.85rem; color:var(--text-primary); line-height:1.6;">
+            ${escapeHtml(isEn && activeCh.summaryEn ? activeCh.summaryEn : activeCh.summaryPl)}
+          </div>
+        </div>
+
+        <!-- WŁAŚCIWA TREŚĆ RĘKOPISU -->
+        ${
+          appState.bookIsEditing
+            ? `
+          <div>
+            <label style="display:block; font-size:0.78rem; font-weight:700; color:var(--text-secondary); margin-bottom:0.35rem;">
+              ${isEn ? "Edit Markdown Manuscript for this chapter:" : "Edycja rękopisu rozdziału w formacie Markdown:"}
+            </label>
+            <textarea id="bookChapterEditor" class="input-field" rows="18" style="font-family:monospace; font-size:0.88rem; line-height:1.6; width:100%;">${escapeHtml(activeCh.contentMarkdownPl || "")}</textarea>
+            <div style="display:flex; justify-content:flex-end; gap:0.5rem; margin-top:0.75rem;">
+              <button class="btn" onclick="toggleBookEditMode(false)">${isEn ? "Cancel" : "Anuluj"}</button>
+              <button class="btn btn-primary" onclick="saveBookChapterContent()">💾 ${isEn ? "Save Chapter Changes" : "Zapisz zmiany w rozdziale"}</button>
+            </div>
+          </div>
+        `
+            : `
+          <div class="book-body-prose">
+            ${
+              activeCh.contentMarkdownPl
+                ? activeCh.contentMarkdownPl
+                    .split("\n\n")
+                    .map((para) => {
+                      const trimmed = para.trim();
+                      if (!trimmed) return "";
+                      if (trimmed.startsWith("### ")) {
+                        return `<h3>${escapeHtml(trimmed.slice(4))}</h3>`;
+                      } else if (trimmed.startsWith("## ")) {
+                        return `<h2>${escapeHtml(trimmed.slice(3))}</h2>`;
+                      } else if (trimmed.startsWith("> ")) {
+                        return `<blockquote style="border-left:3px solid var(--accent-purple); padding-left:0.75rem; margin:0.75rem 0; font-style:italic;">${escapeHtml(trimmed.slice(2))}</blockquote>`;
+                      } else if (trimmed.startsWith("- ")) {
+                        const items = trimmed.split("\n- ").map(i => i.replace(/^- /, "")).filter(Boolean);
+                        return `<ul>${items.map(it => `<li>${escapeHtml(it)}</li>`).join("")}</ul>`;
+                      } else {
+                        return `<p>${escapeHtml(trimmed)}</p>`;
+                      }
+                    })
+                    .join("")
+                : `<p style="color:var(--text-muted); font-style:italic;">${isEn ? "No text written yet. Click 'Edit Chapter' or use 'Lem AI Prompt' to generate initial manuscript." : "Rozdział oczekuje na rękopis. Kliknij 'Edytuj treść' lub użyj 'Asystent Lema (AI)', aby wygenerować pierwszy szkic."}</p>`
+            }
+          </div>
+        `
+        }
       </div>
     </div>
   `;

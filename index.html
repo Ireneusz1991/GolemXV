@@ -131,32 +131,40 @@
         </div>
       </div>
 
-      <!-- Nawigacja główna (Strona 1: Rozproszony System Manhattan i Graf Rozszczepień AI) -->
+      <!-- Nawigacja główna: Strona 1 (Manhattan) -> Zakładka po prawej (Audio do Samochodu) -> Materiały do nauki -> Mapa -> Środowiska -> Repozytorium -> Summa Technologiae 2.0 -> Graf -> Bezpieczeństwo -->
       <nav class="main-nav">
         <button class="nav-tab active" data-tab="manhattan" onclick="switchTab('manhattan')">
           <span id="navTabManhattanLabel">☢️ 1. System Manhattan i Graf Rozszczepień AI</span>
           <span id="navFissionCount" class="badge-count">0</span>
         </button>
+        <button class="nav-tab" data-tab="caraudio" onclick="switchTab('caraudio')">
+          <span id="navTabCarAudioLabel">🎧 2. Audio do Samochodu (Celowa Droga)</span>
+          <span id="navCarAudioCount" class="badge-count">18</span>
+        </button>
         <button class="nav-tab" data-tab="study" onclick="switchTab('study')">
-          <span id="navTabStudyLabel">🎓 2. Materiały do nauki i Biblioteka</span>
+          <span id="navTabStudyLabel">🎓 3. Materiały do nauki i Biblioteka</span>
           <span id="navStudyCount" class="badge-count">0</span>
         </button>
         <button class="nav-tab" data-tab="map" onclick="switchTab('map')">
-          <span id="navTabMapLabel">🗺️ 3. Mapa Ścieżek (A–H)</span>
+          <span id="navTabMapLabel">🗺️ 4. Mapa Ścieżek (A–H)</span>
         </button>
         <button class="nav-tab" data-tab="workspaces" onclick="switchTab('workspaces')">
-          <span id="navTabWsLabel">🔬 4. Środowiska Badawcze</span>
+          <span id="navTabWsLabel">🔬 5. Środowiska Badawcze</span>
           <span id="navSubprojectsCount" class="badge-count">0</span>
         </button>
         <button class="nav-tab" data-tab="materials" onclick="switchTab('materials')">
-          <span id="navTabMatLabel">📚 5. Repozytorium Badawcze</span>
+          <span id="navTabMatLabel">📚 6. Repozytorium Badawcze</span>
           <span id="navMaterialsCount" class="badge-count">0</span>
         </button>
+        <button class="nav-tab" data-tab="book" onclick="switchTab('book')">
+          <span id="navTabBookLabel">📖 7. Summa Technologiae 2.0 (Książka Lema)</span>
+          <span id="navBookCount" class="badge-count">8</span>
+        </button>
         <button class="nav-tab" data-tab="graph" onclick="switchTab('graph')">
-          <span id="navTabGraphLabel">🕸️ 6. Graf Powiązań (A–H)</span>
+          <span id="navTabGraphLabel">🕸️ 8. Graf Powiązań (A–H)</span>
         </button>
         <button class="nav-tab" data-tab="moderation" onclick="switchTab('moderation')">
-          <span id="navTabSecurityLabel">🛡️ 7. Bezpieczeństwo i Urządzenie</span>
+          <span id="navTabSecurityLabel">🛡️ 9. Bezpieczeństwo i Urządzenie</span>
         </button>
       </nav>
     </header>
@@ -231,6 +239,11 @@
       <!-- STRONA PIERWSZA PROJEKTOWA: ROZPROSZONY SYSTEM MANHATTAN (3 LATA ADMINISTRACJI + 5×N LAT Z RZĘDU) + GRAF ROZSZCZEPIEŃ AI -->
       <section id="view-manhattan" class="tab-view">
         <div id="manhattanRootContainer"></div>
+      </section>
+
+      <!-- ZAKŁADKA PO PRAWEJ STRONIE MANHATTAN: MATERIAŁY DO SAMOCHODU DO SŁUCHANIA CAŁEGO EKOSYSTEMU (CELOWA DROGA) -->
+      <section id="view-caraudio" class="tab-view" style="display:none;">
+        <div id="carAudioRootContainer"></div>
       </section>
 
       <!-- WIDOK 1: MATERIAŁY DO NAUKI -->
@@ -367,6 +380,11 @@
         </div>
 
         <div id="materialsListContainer" style="display:flex; flex-direction:column; gap:0.9rem;"></div>
+      </section>
+
+      <!-- WIDOK 7: MODUŁ KSIĄŻKOWY — SUMMA TECHNOLOGIAE 2.0 (BIBLIA MOŻLIWOŚCI TECHNIKI W DUCHU STANISŁAWA LEMA) -->
+      <section id="view-book" class="tab-view" style="display:none;">
+        <div id="bookRootContainer"></div>
       </section>
 
       <!-- WIDOK 4: INTERAKTYWNY GRAF POWIĄZAŃ (A-G) -->
