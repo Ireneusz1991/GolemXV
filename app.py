@@ -8516,6 +8516,48 @@ Przygotuj głęboki esej stanowiący kolejną sekcję tego rozdziału."""
     with st.expander("📖 Podgląd czytelniczy (sformatowany)"):
         st.markdown(cur_ch.get("contentMarkdownPl", "*Brak treści rozdziału.*"))
 
+    # Możliwość dodania nowego rozdziału do Summy Technologiae 2.0
+    with st.expander("➕ Dodaj nowy rozdział do Summy Technologiae 2.0 (w miarę zdobywania wiedzy)"):
+        st.markdown("Pisz własne dzieło na kanwie zdobywanej wiedzy — każdy rozdział reprezentuje kolejny etap Twojego rozwoju naukowego i filozoficznego w duchu Stanisława Lema.")
+        with st.form("form_add_custom_book_chapter"):
+            new_num = len(chapters)
+            col_nc1, col_nc2 = st.columns([0.7, 0.3])
+            with col_nc1:
+                nc_title = st.text_input("Tytuł nowego rozdziału*", placeholder=f"Rozdział {new_num}: ...")
+            with col_nc2:
+                nc_status = st.selectbox(
+                    "Status epistemiczny",
+                    ["🟢 Potwierdzona metoda badawcza", "🔵 Aktywne prace inżynieryjne", "🟡 Hipoteza inżynieryjna", "🟣 Spekulacja futurologiczna"],
+                    index=1,
+                    key="sb_nc_status"
+                )
+            nc_quote = st.text_input("Motto lub cytat przewodni (Stanisław Lem / myśl własna)*", placeholder="„Technologia jest to domena...”")
+            nc_summary = st.text_area("Rdzeń pojęciowy i synteza idei rozdziału*", placeholder="Główne tezy, granice materii, nowe paradygmaty...")
+            nc_content = st.text_area("Początkowy szkic rękopisu (Markdown, opcjonalnie)", placeholder="# Tytuł rozdziału\n\nPierwsze przemyślenia...", height=180)
+
+            if st.form_submit_button("💾 Dodaj i zapisz rozdział w Summie 2.0", type="primary"):
+                if nc_title.strip() and nc_quote.strip() and nc_summary.strip():
+                    new_ch_dict = {
+                        "id": f"ch-custom-{new_num}-{datetime.utcnow().strftime('%s') if hasattr(datetime.utcnow(), 'strftime') else 'new'}",
+                        "number": new_num,
+                        "titlePl": nc_title.strip(),
+                        "titleEn": nc_title.strip(),
+                        "lemQuote": nc_quote.strip(),
+                        "epistemicStatus": nc_status,
+                        "readingTimeMin": 20,
+                        "lastUpdated": datetime.utcnow().strftime("%Y-%m-%d"),
+                        "summaryPl": nc_summary.strip(),
+                        "summaryEn": nc_summary.strip(),
+                        "contentMarkdownPl": nc_content.strip() or f"# {nc_title.strip()}\n\n> *„{nc_quote.strip()}”*\n\n{nc_summary.strip()}",
+                        "contentMarkdownEn": nc_content.strip() or f"# {nc_title.strip()}\n\n> *„{nc_quote.strip()}”*\n\n{nc_summary.strip()}"
+                    }
+                    chapters.append(new_ch_dict)
+                    save_db(db)
+                    st.success(f"Pomyślnie dodano '{nc_title}' do Twojej Summy Technologiae 2.0!")
+                    st.rerun()
+                else:
+                    st.error("Proszę wypełnić wymagane pola: Tytuł, Motto oraz Rdzeń pojęciowy.")
+
 with tab_new:
     col_form_sp, col_form_mat = st.columns(2)
 

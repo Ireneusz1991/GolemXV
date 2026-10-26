@@ -10169,9 +10169,14 @@ function renderBookView() {
     <div class="book-layout">
       <!-- LEWY PANEL: SPIS ROZDZIAŁÓW -->
       <div class="book-toc">
-        <h4 style="font-size:0.88rem; font-weight:800; color:var(--text-primary); margin-bottom:0.65rem; text-transform:uppercase; letter-spacing:0.04em;">
-          📑 ${isEn ? "Table of Contents" : "Spis Rozdziałów"}
-        </h4>
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.65rem;">
+          <h4 style="font-size:0.88rem; font-weight:800; color:var(--text-primary); margin:0; text-transform:uppercase; letter-spacing:0.04em;">
+            📑 ${isEn ? "Table of Contents" : "Spis Rozdziałów"}
+          </h4>
+          <button class="btn btn-sm btn-primary" onclick="openNewBookChapterModal()" title="${isEn ? "Add new chapter" : "Dodaj nowy rozdział"}">
+            ➕ ${isEn ? "Add Chapter" : "Nowy rozdział"}
+          </button>
+        </div>
         <div>
           ${chapters
             .map((ch) => {
@@ -10296,6 +10301,262 @@ function renderBookView() {
       </div>
     </div>
   `;
+}
+
+
+// ==============================================================================
+// MODUŁ KSIĄŻKOWY: SUMMA TECHNOLOGIAE 2.0 (BIBLIA MOŻLIWOŚCI TECHNIKI)
+// ==============================================================================
+let bookSpeechUtterance = null;
+
+function selectBookChapter(chId) {
+  appState.bookActiveChapterId = chId;
+  appState.bookIsEditing = false;
+  stopBookSpeech();
+  renderBookView();
+}
+
+function toggleBookEditMode(isEditing) {
+  appState.bookIsEditing = Boolean(isEditing);
+  renderBookView();
+}
+
+async function saveBookChapterContent() {
+  const editor = document.getElementById("bookChapterEditor");
+  if (!editor) return;
+  const val = editor.value;
+  const book = appState.data.summaBook;
+  if (!book || !book.chapters) return;
+
+  const activeCh = book.chapters.find((c) => c.id === appState.bookActiveChapterId) || book.chapters[0];
+  if (!activeCh) return;
+
+  activeCh.contentMarkdownPl = val;
+  activeCh.lastUpdated = new Date().toISOString().split("T")[0];
+  appState.bookIsEditing = false;
+
+  await saveState();
+  showNotification(appState.lang === "en" ? "Chapter manuscript saved successfully!" : "Rękopis rozdziału został pomyślnie zapisany!");
+  renderBookView();
+}
+
+function exportBookManuscript() {
+  const book = appState.data.summaBook;
+  if (!book) return;
+  const isEn = appState.lang === "en";
+  let md = `# ${book.title}\n\n*${book.subtitle || ""}*\n\n**${isEn ? "Authors:" : "Autorzy:"}** ${book.author} & ${book.aiCoAuthor || "Golem XV"}\n\n*„${book.motto || ""}”*\n\n---\n\n`;
+  for (const ch of book.chapters || []) {
+    const chNum = ch.number === 0 ? (isEn ? "INTRODUCTION" : "WSTĘP") : `${isEn ? "CHAPTER" : "ROZDZIAŁ"} ${ch.number}`;
+    md += `## ${chNum}: ${isEn && ch.titleEn ? ch.titleEn : ch.titlePl}\n\n`;
+    if (ch.lemQuote) md += `> *„${ch.lemQuote}”* — Stanisław Lem\n\n`;
+    if (ch.epistemicStatus) md += `**Status:** ${ch.epistemicStatus} • ⏱️ ~${ch.readingTimeMin || 15} min\n\n`;
+    if (ch.summaryPl) md += `**${isEn ? "Epistemic Core:" : "Rdzeń pojęciowy:"}** ${isEn && ch.summaryEn ? ch.summaryEn : ch.summaryPl}\n\n`;
+    md += `${ch.contentMarkdownPl || ""}\n\n---\n\n`;
+  }
+  const blob = new Blob([md], { type: "text/markdown;charset=utf-8" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = `Summa_Technologiae_2_0_${book.author || "Ireneusz"}_${new Date().toISOString().split("T")[0]}.md`;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+}
+
+function speakBookChapter(chId) {
+  if (!("speechSynthesis" in window)) {
+    showNotification(appState.lang === "en" ? "Speech synthesis is not supported in this browser." : "Twoja przeglądarka nie obsługuje syntezy mowy (Web Speech API).");
+    return;
+  }
+  stopBookSpeech();
+  const book = appState.data.summaBook;
+  if (!book) return;
+  const ch = (book.chapters || []).find((c) => c.id === chId) || (book.chapters || [])[0];
+  if (!ch) return;
+
+  const title = ch.titlePl;
+  const quote = ch.lemQuote ? "Motto Stanisława Lema: " + ch.lemQuote + ". " : "";
+  const rawText = ch.contentMarkdownPl || ch.summaryPl || "";
+  const cleanBody = rawText.replace(/[#*`_>-]/g, " ").replace(/\s+/g, " ");
+
+  const fullSpoken = `${title}. ${quote} ${cleanBody}`;
+
+  bookSpeechUtterance = new SpeechSynthesisUtterance(fullSpoken);
+  bookSpeechUtterance.lang = appState.lang === "en" ? "en-US" : "pl-PL";
+  bookSpeechUtterance.rate = 1.0;
+  bookSpeechUtterance.pitch = 0.95;
+
+  bookSpeechUtterance.onend = function() {
+    bookSpeechUtterance = null;
+    renderBookView();
+  };
+  bookSpeechUtterance.onerror = function() {
+    bookSpeechUtterance = null;
+    renderBookView();
+  };
+
+  window.speechSynthesis.speak(bookSpeechUtterance);
+  renderBookView();
+}
+
+function stopBookSpeech() {
+  if (window.speechSynthesis) {
+    window.speechSynthesis.cancel();
+  }
+  bookSpeechUtterance = null;
+  renderBookView();
+}
+
+function openLemAiPromptModal(chId) {
+  const isEn = appState.lang === "en";
+  const book = appState.data.summaBook;
+  if (!book) return;
+  const ch = (book.chapters || []).find((c) => c.id === chId) || (book.chapters || [])[0];
+  if (!ch) return;
+
+  const lemPrompt = `Jesteś Stanisławem Lemem oraz superinteligencją Golem XV. Piszemy wspólnie dzieło: „Summa Technologiae 2.0: Biblia Możliwości Techniki”.\n` +
+`Rozdział: ${ch.number === 0 ? "Wstęp" : "Rozdział " + ch.number}. ${ch.titlePl}\n` +
+`Motto przewodnie: "${ch.lemQuote}"\n\n` +
+`Zadanie epistemiczne:\n` +
+`Rozwiń ten rozdział w chłodnym, precyzyjnym, lemowskim stylu filozoficzno-technologicznym. Uwzględnij:\n` +
+`1. Fizyczne granice krzemu (prawo Moore'a u kresu, prądy upływu, granica Landauera, koniec skalowania Dennarda).\n` +
+`2. Zmianę paradygmatu programowania (od klasycznego kodu von Neumanna do obliczeń tensorowych, kwantowych QPU oraz neuromorficznych sieci impulsowych SNN).\n` +
+`3. Maszyny naśladujące mózg biologiczny i protokół WBE (Whole Brain Emulation).\n` +
+`4. Etyczne i cywilizacyjne konsekwencje dla ludzkości.\n\n` +
+`Bieżący zarys rozdziału:\n` +
+`${ch.summaryPl}\n\n` +
+`Przygotuj głęboki esej stanowiący kolejną sekcję tego rozdziału.`;
+
+  const modalHtml = `
+    <div id="lemAiModal" class="modal-backdrop" onclick="if(event.target===this) this.remove();">
+      <div class="modal-card" style="max-width:680px;">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
+          <h3 style="margin:0; font-family:Georgia,serif; color:var(--text-primary);">
+            ✨ ${isEn ? "Lem AI Co-Author Prompt" : "Asystent Lema — Gotowy Prompt do Współpracy z AI"}
+          </h3>
+          <button class="btn btn-sm" onclick="document.getElementById('lemAiModal').remove();">✕</button>
+        </div>
+        <p style="font-size:0.83rem; color:var(--text-secondary); margin-bottom:0.75rem;">
+          ${isEn ? "Copy this prompt to chat with Antigravity / Golem XV to generate the next philosophical and technical section of your manuscript:" : "Skopiuj poniższy prompt do okna rozmowy ze mną (Antigravity / Golem XV), aby wspólnie napisać kolejną lemowską sekcję Twojego rękopisu:"}
+        </p>
+        <div style="position:relative; margin-bottom:1rem;">
+          <textarea id="lemPromptText" class="input-field" rows="11" readonly style="font-family:monospace; font-size:0.82rem; line-height:1.5; width:100%; background:var(--bg-subtle);">${escapeHtml(lemPrompt)}</textarea>
+        </div>
+        <div style="display:flex; justify-content:flex-end; gap:0.5rem;">
+          <button class="btn" onclick="document.getElementById('lemAiModal').remove();">${isEn ? "Close" : "Zamknij"}</button>
+          <button class="btn btn-primary" onclick="copyLemPromptToClipboard()">📋 ${isEn ? "Copy Prompt to Clipboard" : "Skopiuj prompt do schowka"}</button>
+        </div>
+      </div>
+    </div>
+  `;
+  const existing = document.getElementById("lemAiModal");
+  if (existing) existing.remove();
+  document.body.insertAdjacentHTML("beforeend", modalHtml);
+}
+
+function copyLemPromptToClipboard() {
+  const ta = document.getElementById("lemPromptText");
+  if (!ta) return;
+  ta.select();
+  navigator.clipboard.writeText(ta.value).then(() => {
+    showNotification(appState.lang === "en" ? "Prompt copied to clipboard!" : "Skopiowano prompt do schowka! Wklej go do czatu.");
+  }).catch(() => {
+    document.execCommand("copy");
+    showNotification(appState.lang === "en" ? "Prompt copied to clipboard!" : "Skopiowano prompt do schowka! Wklej go do czatu.");
+  });
+}
+
+function openNewBookChapterModal() {
+  const isEn = appState.lang === "en";
+  const modalHtml = `
+    <div id="newChapterModal" class="modal-backdrop" onclick="if(event.target===this) this.remove();">
+      <div class="modal-card" style="max-width:600px;">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
+          <h3 style="margin:0; font-family:Georgia,serif;">
+            ➕ ${isEn ? "Add New Chapter to Summa Technologiae 2.0" : "Dodaj Nowy Rozdział do Summy Technologiae 2.0"}
+          </h3>
+          <button class="btn btn-sm" onclick="document.getElementById('newChapterModal').remove();">✕</button>
+        </div>
+        <form onsubmit="saveCustomBookChapter(event)">
+          <div style="margin-bottom:0.75rem;">
+            <label style="display:block; font-size:0.78rem; font-weight:700; margin-bottom:0.25rem;">${isEn ? "Chapter Title (PL)*" : "Tytuł Rozdziału (PL)*"}</label>
+            <input type="text" id="custChTitlePl" class="input-field" required placeholder="np. Rozdział VIII: ..." />
+          </div>
+          <div style="margin-bottom:0.75rem;">
+            <label style="display:block; font-size:0.78rem; font-weight:700; margin-bottom:0.25rem;">${isEn ? "Motto / Lem Quote*" : "Motto lub Cytat Przewodni*"}</label>
+            <input type="text" id="custChQuote" class="input-field" required placeholder="Cytat Stanisława Lema lub sentencja..." />
+          </div>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.75rem; margin-bottom:0.75rem;">
+            <div>
+              <label style="display:block; font-size:0.78rem; font-weight:700; margin-bottom:0.25rem;">${isEn ? "Epistemic Status" : "Status Epistemiczny"}</label>
+              <select id="custChStatus" class="select-field">
+                <option value="🟢 Potwierdzona metoda badawcza">🟢 Potwierdzona metoda</option>
+                <option value="🔵 Aktywne prace inżynieryjne" selected>🔵 Aktywne prace inżynieryjne</option>
+                <option value="🟡 Hipoteza inżynieryjna">🟡 Hipoteza inżynieryjna</option>
+                <option value="🟣 Spekulacja futurologiczna">🟣 Spekulacja futurologiczna</option>
+              </select>
+            </div>
+            <div>
+              <label style="display:block; font-size:0.78rem; font-weight:700; margin-bottom:0.25rem;">${isEn ? "Est. Reading Time (min)" : "Szacowany czas czytania (min)"}</label>
+              <input type="number" id="custChReadTime" class="input-field" value="20" min="5" max="180" />
+            </div>
+          </div>
+          <div style="margin-bottom:0.75rem;">
+            <label style="display:block; font-size:0.78rem; font-weight:700; margin-bottom:0.25rem;">${isEn ? "Epistemic Core & Conceptual Summary*" : "Rdzeń pojęciowy i synteza idei*"}</label>
+            <textarea id="custChSummary" class="input-field" rows="3" required placeholder="O czym traktuje ten rozdział, jakie granice technologii eksploruje..."></textarea>
+          </div>
+          <div style="margin-bottom:1rem;">
+            <label style="display:block; font-size:0.78rem; font-weight:700; margin-bottom:0.25rem;">${isEn ? "Initial Manuscript Draft (Markdown, optional)" : "Początkowy szkic rękopisu (opcjonalnie)"}</label>
+            <textarea id="custChContent" class="input-field" rows="4" placeholder="# Rozdział...&#10;&#10;Pierwsze akapity..."></textarea>
+          </div>
+          <div style="display:flex; justify-content:flex-end; gap:0.5rem;">
+            <button type="button" class="btn" onclick="document.getElementById('newChapterModal').remove();">${isEn ? "Cancel" : "Anuluj"}</button>
+            <button type="submit" class="btn btn-primary">💾 ${isEn ? "Save Chapter" : "Zapisz Rozdział"}</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  `;
+  const existing = document.getElementById("newChapterModal");
+  if (existing) existing.remove();
+  document.body.insertAdjacentHTML("beforeend", modalHtml);
+}
+
+async function saveCustomBookChapter(e) {
+  e.preventDefault();
+  const book = appState.data.summaBook;
+  if (!book) return;
+  const num = (book.chapters || []).length;
+  const id = `ch-custom-${Date.now().toString(36)}`;
+  const title = document.getElementById("custChTitlePl").value.trim();
+  const quote = document.getElementById("custChQuote").value.trim();
+  const status = document.getElementById("custChStatus").value;
+  const readTime = parseInt(document.getElementById("custChReadTime").value, 10) || 20;
+  const summary = document.getElementById("custChSummary").value.trim();
+  const content = document.getElementById("custChContent").value.trim() || `# ${title}\n\n> *„${quote}”*\n\n${summary}`;
+
+  const newCh = {
+    id: id,
+    number: num,
+    titlePl: title,
+    titleEn: title,
+    lemQuote: quote,
+    epistemicStatus: status,
+    readingTimeMin: readTime,
+    lastUpdated: new Date().toISOString().split("T")[0],
+    summaryPl: summary,
+    summaryEn: summary,
+    contentMarkdownPl: content,
+    contentMarkdownEn: content
+  };
+
+  book.chapters.push(newCh);
+  appState.bookActiveChapterId = id;
+  const modal = document.getElementById("newChapterModal");
+  if (modal) modal.remove();
+
+  await saveState();
+  showNotification(appState.lang === "en" ? "New chapter added to Summa Technologiae 2.0!" : "Dodano nowy rozdział do Summy Technologiae 2.0!");
+  renderBookView();
 }
 
 window.addEventListener("DOMContentLoaded", initApp);
