@@ -5445,189 +5445,266 @@ const DEFAULT_SEED = {
       {
         "id": "car-ep-01",
         "order": 1,
-        "stage": "I",
-        "stageNamePl": "Etap I: Sztab W-0 i Prawo Administracyjne",
-        "stageNameEn": "Stage I: District W-0 & Public Administration",
-        "titlePl": "Odcinek 1: Doktryna Manhattan i Rygor Sztabowy — Jak Zarządzać Projektem na Całe Życie",
-        "titleEn": "Episode 1: The Manhattan Doctrine & Command Discipline — Life-Long Megaproject Command",
+        "stage": "0",
+        "stageNamePl": "Etap 0: Sztab W-0 i Architektura Megaprojektu",
+        "stageNameEn": "Stage 0: Command HQ W-0 & Megaproject Governance",
+        "tripProfile": "Trasa miejska (~18 min)",
+        "titlePl": "Odcinek 1: Doktryna Manhattan i Rygor Sztabowy — Jak Zarządzać Megaprojektem na Całe Życie",
+        "titleEn": "Episode 1: The Manhattan Doctrine & Command Discipline — Life-Long Megaproject Governance",
         "estimatedDurationMin": 18,
-        "spokenBriefingPl": "Witaj w trasie. Rozpoczynamy pierwszą część celowej drogi ekosystemu Golem 15. Dlaczego zaczynamy od Sztabu W-0 i trzech lat studiów administracji, zamiast od razu rzucić się na fizykę kwantową lub neurobiologię? Historia wielkich projektów technologicznych — od oryginalnego Projektu Manhattan, przez Program Apollo, aż po współczesny ITER — uczy jednej bezlitosnej prawdy: żaden przełom naukowy nie przetrwa bez żelaznej dyscypliny organizacyjnej, znajomości prawa i ochrony własności intelektualnej. Doktryna Manhattan Golem 15 opiera się na kompartmentalizacji wiedzy, czyli zasadzie Need-to-Know. W samochodzie odsłuchujesz wielką syntezę, ale każde laboratorium i każdy z Twoich agentów AI pracuje w ściśle wydzielonym sektorze. Twoje trzy lata studiów administracji to nie biurokracja, lecz pancerz chroniący Twoje badania przed chaosem prawnym, audytami i ryzykiem utraty praw do wynalazków.",
-        "spokenBriefingEn": "Welcome on the road. We begin the first stage of the Golem 15 ecosystem roadmap. Why do we start with District W-0 and 3 years of Administration rather than diving immediately into quantum physics or neuroscience? Because history teaches that no breakthrough survives without institutional discipline, regulatory mastery, and intellectual property protection. District W-0 serves as your strategic headquarters, shielding your multi-decade research roadmap.",
+        "spokenBriefingPl": "Witaj w trasie. Rozpoczynamy pierwszą część celowej drogi ekosystemu Golem 15. Dlaczego zaczynamy od Sztabu W-0 i dyscypliny organizacyjnej, zamiast od razu rzucić się na fizykę kwantową lub neurobiologię? Historia wielkich projektów technologicznych — od oryginalnego Projektu Manhattan w Los Alamos, przez Program Apollo, aż po współczesny ITER — uczy jednej bezwzględnej prawdy: żaden przełom naukowy nie przetrwa bez żelaznej dyscypliny organizacyjnej, ochrony własności intelektualnej i jasnej kompartmentalizacji wiedzy. Zasada 'Need-to-Know' oznacza, że w samochodzie budujesz wielką syntezę całości, ale każde laboratorium i każdy z Twoich agentów AI pracuje w ściśle wydzielonym sektorze, chronionym przed szumem i wyciekiem strategicznym. Trzy lata administracji to Twój sztabowy pancerz chroniący badania przed chaosem prawnym, audytami i utratą praw do wynalazków.",
+        "spokenBriefingEn": "Welcome on the road. We begin the first stage of the Golem 15 ecosystem roadmap. Why do we start with District W-0 and organizational discipline rather than diving directly into quantum physics or neuroscience? Because history teaches that no breakthrough survives without institutional discipline, intellectual property protection, and rigorous knowledge compartmentalization. The 'Need-to-Know' principle protects your megaproject from fragmentation. Your 3 years of Administration serve as your strategic shield.",
         "keyTakeawaysPl": [
-          "Zasada kompartmentalizacji wiedzy (Need-to-Know) chroni projekt przed rozproszeniem i wyciekiem strategicznym.",
-          "Trzy lata administracji dają formalną suwerenność: znajomość KPA, zamówień publicznych i audytu B+R.",
+          "Zasada kompartmentalizacji wiedzy (Need-to-Know) chroni badania przed rozproszeniem i wyciekiem strategicznym.",
+          "Trzy lata administracji dają formalną suwerenność: znajomość prawa publicznego, zamówień B+R i audytu.",
           "AI w projekcie Manhattan działa jako sieć wyspecjalizowanych agentów w ściśle przypisanych domenach."
         ],
         "curatedAudioLinks": [
           {
-            "label": "🇵🇱 Radio Naukowe — Jak organizowano największe projekty naukowe w historii",
-            "url": "https://radionaukowe.pl/"
+            "title": "Radio Naukowe — Jak zarządzać wielką nauką i megaprojektami",
+            "url": "https://radionaukowe.pl/",
+            "lang": "PL",
+            "type": "podcast"
           },
           {
-            "label": "🇬🇧 Lex Fridman Podcast — Megaproject Engineering & Nuclear Command",
-            "url": "https://lexfridman.com/podcast/"
+            "title": "Lex Fridman Podcast #267 — Mark Spitznagel: Risk and Long-Term Strategy",
+            "url": "https://lexfridman.com/",
+            "lang": "EN",
+            "type": "podcast"
+          },
+          {
+            "title": "Polskie Radio — Historia i rygor Projektu Manhattan",
+            "url": "https://polskieradio.pl/",
+            "lang": "PL",
+            "type": "audycja"
           }
         ]
       },
       {
         "id": "car-ep-02",
         "order": 2,
-        "stage": "I",
-        "stageNamePl": "Etap I: Sztab W-0 i Prawo Administracyjne",
-        "stageNameEn": "Stage I: District W-0 & Public Administration",
+        "stage": "0",
+        "stageNamePl": "Etap 0: Sztab W-0 i Architektura Megaprojektu",
+        "stageNameEn": "Stage 0: Command HQ W-0 & Megaproject Governance",
+        "tripProfile": "Trasa miejska (~20 min)",
         "titlePl": "Odcinek 2: Prawo B+R, Certyfikacja EU AI Act i Reżim Prawa Atomowego",
-        "titleEn": "Episode 2: R&D Law, EU AI Act Certification & Nuclear Regulatory Regimes",
+        "titleEn": "Episode 2: R&D Law, EU AI Act Compliance & Nuclear Regulatory Regimes",
         "estimatedDurationMin": 20,
-        "spokenBriefingPl": "Kontynuujemy podróż przez ramy regulacyjne. Żyjemy w epoce, w której innowacja bez certyfikacji jest martwa w świetle prawa. Europejski Akt o Sztucznej Inteligencji wprowadza bezprecedensowy reżim dla systemów wysokiego ryzyka. Gdy w Projekcie A tworzysz interfejsy mózg-komputer, a w Projekcie B emulujesz sieci neuronowe, musisz od pierwszego dnia projektować przejrzystość, rejestrować zbiory danych i zapewniać odporność na błędy. To samo dotyczy Prawa atomowego i Państwowej Agencji Atomistyki w kontekście reaktorów SMR i reaktora MARIA w Świerku. Znajomość procedur licencjonowania i bioetyki medycznej daje Ci przewagę, której nie ma większość czysto technicznych badaczy.",
-        "spokenBriefingEn": "Continuing through our regulatory road: modern deep-tech innovation without compliance is dead on arrival. The European AI Act imposes strict conformance assessments on high-risk models. Likewise, nuclear law and medical bioethics require end-to-end auditability. Understanding these frameworks gives you legal sovereignty.",
+        "spokenBriefingPl": "Słuchasz drugiego odcinka sztabowego. W tym module omawiamy twarde ramy prawne technologii krytycznych. W Unii Europejskiej wszedł w życie AI Act, który klasyfikuje systemy autonomiczne wg poziomów ryzyka. Systemy wysokiego ryzyka wymagają pełnej wyjaśnialności, audytowalności danych treningowych i ludzkiego nadzoru. Jednocześnie Super-Projekt H wprowadza prawo atomowe i rygory dozoru jądrowego (PAA, MAEA). Projekt badawczy nie może być prowadzony w próżni regulacyjnej. Opanowanie procedur administracyjnych, certyfikacji algorytmów i protokołów bezpieczeństwa radiologicznego to warunek konieczny, by Twoje prototypy mogły wejść w fazę rzeczywistych instalacji laboratoryjnych.",
+        "spokenBriefingEn": "In this module we analyze the legal frameworks of critical technologies: the EU AI Act risk tiers and nuclear regulatory regimes under IAEA and national atomic agencies. Autonomous systems require explainability and auditability. Mastering administrative procedures and safety protocols is mandatory for physical lab deployment.",
         "keyTakeawaysPl": [
-          "Systemy AI w medycynie i energetyce podlegają rygorystycznej certyfikacji CE i wymogom XAI.",
-          "Licencjonowanie reaktorów SMR i badawczych wymaga wieloletnich procedur bezpieczeństwa PAA i IAEA.",
-          "Bioetyka badań klinicznych i organoidów wyznacza granice między dopuszczalnym eksperymentem a odpowiedzialnością prawną."
+          "EU AI Act wymusza rygor dokumentacyjny i audytowalność modeli wysokiego ryzyka.",
+          "Prawo atomowe i certyfikacja MAEA/PAA wymagają niezależnych protokołów bezpieczeństwa.",
+          "Własność intelektualna w konsorcjach B+R musi być precyzyjnie zabezpieczona umowami konsorcjalnymi."
         ],
         "curatedAudioLinks": [
           {
-            "label": "🇵🇱 Nauka w Polsce (PAP) — Regulacje prawne AI i inżynierii genetycznej w Polsce",
-            "url": "https://naukawpolsce.pl/"
+            "title": "Podcast Prawniczy C.H. Beck — Prawo nowych technologii i AI Act",
+            "url": "https://beck.pl/",
+            "lang": "PL",
+            "type": "podcast"
           },
           {
-            "label": "🇬🇧 Stanford Law — AI Regulation, Biotechnology & Nuclear Governance",
-            "url": "https://law.stanford.edu/"
+            "title": "IAEA Podcast — Nuclear Safety Standards & Governance",
+            "url": "https://iaea.org/",
+            "lang": "EN",
+            "type": "podcast"
+          },
+          {
+            "title": "Radio Naukowe — Prawne granice sztucznej inteligencji",
+            "url": "https://radionaukowe.pl/",
+            "lang": "PL",
+            "type": "podcast"
           }
         ]
       },
       {
         "id": "car-ep-03",
         "order": 3,
-        "stage": "II",
-        "stageNamePl": "Etap II: Wspólne Podstawy 1–8 po kolei",
-        "stageNameEn": "Stage II: 8 Core Foundations in Sequence",
-        "titlePl": "Odcinek 3: Fundament 1 — Matematyka i Logika: Język Opisu Wszechświata i Tensory",
-        "titleEn": "Episode 3: Foundation 1 — Mathematics & Logic: Universal Language, Tensors & Information",
+        "stage": "I",
+        "stageNamePl": "Etap I: Fundamenty Formalne i Prawa Fizyki",
+        "stageNameEn": "Stage I: Formal Foundations & Laws of Physics",
+        "tripProfile": "Trasa podmiejska (~22 min)",
+        "titlePl": "Odcinek 3: Matematyka, Logika i Tensory — Język Przestrzeni i Sieci Neuronowych",
+        "titleEn": "Episode 3: Mathematics, Logic & Tensors — The Language of Reality & Deep Learning",
         "estimatedDurationMin": 22,
-        "spokenBriefingPl": "Wkraczamy w drugi etap drogi celowej — Wspólne Podstawy Naukowe, punkt numer jeden: Matematyka i Logika. Jak pisał Roger Penrose w 'Drodze do rzeczywistości', świat fizyczny jest zakorzeniony w platońskim świecie form matematycznych. W tym odcinku powtarzamy kluczowe pojęcia, które będą Ci towarzyszyć przez wszystkie ścieżki od A do H. Algebra liniowa, przestrzenie wektorowe Hilberta i tensory to nie tylko narzędzia fizyki kwantowej, ale też język wag sieci głębokich i konektomiki. Z kolei teoria informacji Claude'a Shannona definiuje kres tego, ile informacji można przesłać przez kanał z szumem — czy to przez kabel światłowodowy, czy przez akson w mózgu.",
-        "spokenBriefingEn": "We enter the second stage: Core Foundations, starting with Mathematics and Logic. Linear algebra, Hilbert spaces, and tensor calculus form the mathematical language uniting quantum mechanics, machine learning, and connectomics. Shannon's information theory sets the fundamental boundaries of communication through noisy biological and silicon channels.",
+        "spokenBriefingPl": "Wkraczamy w Etap Pierwszy: fundamenty formalne. Matematyka nie jest po prostu narzędziem rachunkowym — jest jedynym bezstratnym językiem, w którym natura pozwala formułować swoje prawa. Od rachunku zdań i teorii mnogości, przez algebrę liniową i rozkłady spektralne, aż po przestrzenie Hilberta i rachunek tensorowy. Współczesne sieci neuronowe, transformery i wielkie modele językowe to w rzeczywistości gigantyczne operacje na tensorach w przestrzeniach wielowymiarowych. Słuchając tego odcinka, wyobraź sobie przestrzeń wektorową, w której każde pojęcie jest punktem, a każda relacja semantyczna — geometryczną transformacją. Rozumienie tensorów pozwala widzieć kod AI jako geometrię wielowymiarową.",
+        "spokenBriefingEn": "Entering Stage I: formal foundations. Mathematics is the lossless language of nature. From propositional logic and linear algebra to Hilbert spaces and tensor calculus. Deep learning and neural networks are multi-dimensional tensor operations. Conceive meaning as geometric transformations in high-dimensional manifolds.",
         "keyTakeawaysPl": [
-          "Algebra liniowa i tensory stanowią wspólny mianownik dla AI, fizyki kwantowej i dynamiki mózgu.",
-          "Rachunek różniczkowy i teoria układów dynamicznych opisują przejścia fazowe i stabilność ekosystemów.",
-          "Entropia informacyjna Shannona łączy termodynamikę fizyczną z kodowaniem neurologicznym."
+          "Algebra liniowa i tensory stanowią matematyczne serce zarówno mechaniki kwantowej, jak i głębokich sieci neuronowych.",
+          "Rachunek różniczkowy i gradienty umożliwiają optymalizację funkcji straty w przestrzeniach o miliardach parametrów.",
+          "Logika formalna i teoria dowodzenia gwarantują weryfikowalność modeli matematycznych."
         ],
         "curatedAudioLinks": [
           {
-            "label": "🇵🇱 OpenAGH — Wykłady z algebry liniowej i analizy matematycznej",
-            "url": "https://open.agh.edu.pl/"
+            "title": "Zapytaj Fizyka (UW) — Wykłady z geometrii czasoprzestrzeni i algebry",
+            "url": "https://zapytajfizyka.fuw.edu.pl/",
+            "lang": "PL",
+            "type": "wykład"
           },
           {
-            "label": "🇬🇧 3Blue1Brown — Essence of Linear Algebra & Calculus Podcasts",
-            "url": "https://www.3blue1brown.com/"
+            "title": "3Blue1Brown Audio Series — Essence of Linear Algebra",
+            "url": "https://www.youtube.com/@3blue1brown",
+            "lang": "EN",
+            "type": "wykład"
+          },
+          {
+            "title": "Centrum Kopernika — Granice matematyki i logiki (prof. Heller)",
+            "url": "https://copernicuscenter.edu.pl/",
+            "lang": "PL",
+            "type": "audycja"
           }
         ]
       },
       {
         "id": "car-ep-04",
         "order": 4,
-        "stage": "II",
-        "stageNamePl": "Etap II: Wspólne Podstawy 1–8 po kolei",
-        "stageNameEn": "Stage II: 8 Core Foundations in Sequence",
-        "titlePl": "Odcinek 4: Fundament 2 — Informatyka u Kresu Krzemu: Od Turinga do QPU i Neuromorfizmu",
-        "titleEn": "Episode 4: Foundation 2 — Computer Science at Silicon Limits: From Turing to QPU & Neuromorphics",
+        "stage": "I",
+        "stageNamePl": "Etap I: Fundamenty Formalne i Prawa Fizyki",
+        "stageNameEn": "Stage I: Formal Foundations & Laws of Physics",
+        "tripProfile": "Trasa podmiejska (~24 min)",
+        "titlePl": "Odcinek 4: Informatyka Teoretyczna, Teoria Informacji Shannona i Granice Złożoności",
+        "titleEn": "Episode 4: Theoretical CS, Shannon Information Theory & Computational Complexity",
         "estimatedDurationMin": 24,
-        "spokenBriefingPl": "Odcinek czwarty poświęcamy fundamentowi drugiemu: Informatyce, a w szczególności dramatycznemu zwrotowi, który dokonuje się na naszych oczach. Klasyczna architektura von Neumanna, w której procesor i pamięć są oddzielone wąską magistralą, zderzyła się ze ścianą pamięci (Memory Wall). Prawo Dennarda załamało się prawie dwie dekady temu, a prawo Moore'a wyczerpuje swoje możliwości z powodu upływów kwantowych w bramkach tranzystorów poniżej 2 nanometrów. Dlatego informatyka staje się dyscypliną post-krzemową. Wchodzimy w epokę komputerów kwantowych opartych na kubitach, architektur Dataflow oraz procesorów neuromorficznych naśladujących mózg, gdzie pamięć i obliczenia są zintegrowane w jednym punkcie fizycznym.",
-        "spokenBriefingEn": "Episode 4 focuses on Computer Science and the historic shift away from pure silicon von Neumann scaling. Dennard scaling has broken down, and the von Neumann memory wall chokes exascale computing. Computer science is evolving into non-von Neumann in-memory computing, quantum processing units (QPUs), and biologically inspired neuromorphic architectures.",
+        "spokenBriefingPl": "Słuchasz czwartego odcinka celowej drogi. Czym jest informacja? W 1948 roku Claude Shannon zdefiniował informację jako redukcję niepewności, mierzoną entropią informacyjną. Od tamtej pory informacja stała się fundamentalną wielkością fizyczną, tak samo realną jak masa czy ładunek elektryczny. W tym module przechodzimy przez maszynę Turinga, problem stopu, klasy złożoności P kontra NP oraz granice tego, co w ogóle jest obliczalne w skończonym czasie. Zrozumienie, że niektóre problemy są nierozstrzygalne lub wymagają czasu wykładniczego na komputerach klasycznych, otwiera bezpośrednią drogę do poszukiwania nowych paradygmatów: obliczeń kwantowych i analogowych.",
+        "spokenBriefingEn": "What is information? In 1948 Claude Shannon defined information as uncertainty reduction, measured through informational entropy. Information is a physical quantity. We explore Turing machines, the halting problem, P vs NP, and the limits of classical computability, establishing why we need quantum paradigms.",
         "keyTakeawaysPl": [
-          "Upływy kwantowe i dyssypacja ciepła (limit Landauera) wyznaczają kres tradycyjnego krzemu CMOS.",
-          "Wąskie gardło von Neumanna wymusza przeniesienie obliczeń bezpośrednio do wnętrza pamięci (In-Memory Computing).",
-          "Komputery kwantowe (QPU) i koprocesory neuromorficzne redefiniują pojęcie złożoności obliczeniowej."
+          "Entropia Shannona łączy teorię informacji bezpośrednio z termodynamiką statystyczną Boltzmanna.",
+          "Bariery NP-trudności na klasycznych komputerach wymuszają algorytmy heurystyczne oraz kwantowe przyspieszenie (np. algorytm Grovera).",
+          "Obliczalność algorytmiczna ma swoje bezwzględne granice wyznaczone przez twierdzenia Gödla i problem stopu Turinga."
         ],
         "curatedAudioLinks": [
           {
-            "label": "🇵🇱 MIMUW / Ważniak — Wykłady z architektury komputerów i teorii obliczeń",
-            "url": "https://wazniak.mimuw.edu.pl/"
+            "title": "Radio Naukowe — Czym jest informacja i jak ją mierzyć?",
+            "url": "https://radionaukowe.pl/",
+            "lang": "PL",
+            "type": "podcast"
           },
           {
-            "label": "🇬🇧 MIT 6.006 / 6.824 — Computer Architecture & Distributed Systems Lectures",
-            "url": "https://ocw.mit.edu/"
+            "title": "MIT OpenCourseWare Audio — Theory of Computation & Complexity",
+            "url": "https://ocw.mit.edu/",
+            "lang": "EN",
+            "type": "wykład"
+          },
+          {
+            "title": "Podcast O Nauce — Maszyny Turinga i granice algorytmów",
+            "url": "https://spotify.com/",
+            "lang": "PL",
+            "type": "podcast"
           }
         ]
       },
       {
         "id": "car-ep-05",
         "order": 5,
-        "stage": "II",
-        "stageNamePl": "Etap II: Wspólne Podstawy 1–8 po kolei",
-        "stageNameEn": "Stage II: 8 Core Foundations in Sequence",
-        "titlePl": "Odcinek 5: Fundament 3 — Nowe Paradygmaty Programowania: Qiskit, SNN i Modele Różniczkowalne",
-        "titleEn": "Episode 5: Foundation 3 — Programming Paradigm Shift: Qiskit, SNNs & Differentiable Code",
-        "estimatedDurationMin": 21,
-        "spokenBriefingPl": "Przechodzimy do Fundamentu trzeciego: Programowania. Kiedyś programowanie oznaczało pisanie sekwencyjnych instrukcji warunkowych w językach C czy Pascal. Dzisiaj zmiana podwalin sprzętowych wymusiła całkowity przewrót paradygmatów programowania. Po pierwsze, programowanie różniczkowalne (PyTorch, JAX), w którym cały program jest funkcją podlegającą optymalizacji gradientowej. Po drugie, programowanie kwantowe w frameworkach takich jak Qiskit czy Cirq, gdzie operujesz na bramkach unitarnych i stanach splątanych. Po trzecie, programowanie impulsowych sieci neuronowych (SNN w Brian2 i snnTorch), naśladujące asynchroniczne wyładowania neuronów biologicznych. Jako architekt Golem 15 musisz swobodnie operować tymi trzema nowymi paradygmatami.",
-        "spokenBriefingEn": "Episode 5 covers the paradigm shift in programming. Programming is no longer just sequential imperativism. It has transformed into differentiable tensor graphs (PyTorch, JAX), quantum circuit programming (Qiskit, PennyLane), and event-driven Spiking Neural Network programming (Brian2, Lava). These paradigms form your programming toolkit for bio-computational systems.",
+        "stage": "I",
+        "stageNamePl": "Etap I: Fundamenty Formalne i Prawa Fizyki",
+        "stageNameEn": "Stage I: Formal Foundations & Laws of Physics",
+        "tripProfile": "Trasa podmiejska (~24 min)",
+        "titlePl": "Odcinek 5: Architektury Komputerowe — Wąskie Gardło von Neumanna i Przełom Akceleratorów",
+        "titleEn": "Episode 5: Computer Architecture — The Von Neumann Bottleneck & Accelerator Revolution",
+        "estimatedDurationMin": 24,
+        "spokenBriefingPl": "Przez ostatnie 70 lat komputery budowano w oparciu o architekturę von Neumanna, gdzie procesor i pamięć operacyjna są fizycznie rozdzielone magistralą. Każda operacja wymaga przesyłania danych tam i z powrotem. To tak zwane wąskie gardło pamięci — Memory Wall. W dobie głębokich sieci neuronowych przesyłanie wag zużywa 90% energii całego układu scalonego. W tym module badamy ewolucję od tradycyjnych CPU, przez macierze GPU i TPU (Tensor Processing Units), aż po procesory grafowe i architekturę pamięciową HBM3e. Poznasz mechanizmy równoległości SIMD i MIMD oraz zrozumiesz, dlaczego współczesna AI potrzebuje wyspecjalizowanych akceleratorów tensora.",
+        "spokenBriefingEn": "For 70 years, computing relied on the Von Neumann architecture, where CPU and memory are separated by a bus. Moving data between compute units and memory constitutes the Memory Wall, consuming up to 90% of chip energy in deep learning. We analyze CPUs, GPUs, TPUs, and HBM memory innovations.",
         "keyTakeawaysPl": [
-          "Programowanie różniczkowalne traktuje kod maszynowy jako ciągły graf obliczeniowy optymalizowany gradientowo.",
-          "Programowanie kwantowe (Qiskit) pozwala symulować układy chemiczne i molekularne niedostępne dla klasycznych CPU.",
-          "Symulacje impulsowe (SNN) łączą świat kodu z fizjologią wyładowań neuronowych mózgu."
+          "Wąskie gardło von Neumanna (Memory Wall) ogranicza przepustowość współczesnych superkomputerów.",
+          "Akceleratory tensorowe (TPU/GPU) zastępują przetwarzanie sekwencyjne masywną równoległością macierzową.",
+          "Przyszłość sprzętu wymaga zbliżenia pamięci do procesora (Near-Memory Computing) lub obliczeń bezpośrednio w pamięci (Compute-In-Memory)."
         ],
         "curatedAudioLinks": [
           {
-            "label": "🇵🇱 Helion / Kanał o technologii — Ewolucja paradygmatów programowania: Python, Rust i AI",
-            "url": "https://helion.pl/"
+            "title": "Nauka. To Lubię — Jak działają chipy GPU i TPU w sztucznej inteligencji",
+            "url": "https://naukatolubie.pl/",
+            "lang": "PL",
+            "type": "audycja"
           },
           {
-            "label": "🇬🇧 IBM Quantum / Qiskit Podcasts — Quantum Programming Fundamentals",
-            "url": "https://qiskit.org/"
+            "title": "Stanford EE Seminar Audio — The Future of Computing Architectures",
+            "url": "https://ee.stanford.edu/",
+            "lang": "EN",
+            "type": "wykład"
+          },
+          {
+            "title": "Lex Fridman Podcast #182 — Jim Keller: The Future of Processors",
+            "url": "https://lexfridman.com/",
+            "lang": "EN",
+            "type": "podcast"
           }
         ]
       },
       {
         "id": "car-ep-06",
         "order": 6,
-        "stage": "II",
-        "stageNamePl": "Etap II: Wspólne Podstawy 1–8 po kolei",
-        "stageNameEn": "Stage II: 8 Core Foundations in Sequence",
-        "titlePl": "Odcinek 6: Fundament 4 — Fizyka: Termodynamika Życia, Zjawiska Kwantowe i Półprzewodniki Post-Krzemowe",
-        "titleEn": "Episode 6: Foundation 4 — Physics: Non-Equilibrium Thermodynamics, Quantum Matter & 2D Materials",
+        "stage": "I",
+        "stageNamePl": "Etap I: Fundamenty Formalne i Prawa Fizyki",
+        "stageNameEn": "Stage I: Formal Foundations & Laws of Physics",
+        "tripProfile": "Trasa podmiejska (~25 min)",
+        "titlePl": "Odcinek 6: Mechanika Kwantowa — Superpozycja, Splątanie i Równanie Schrödingera",
+        "titleEn": "Episode 6: Quantum Mechanics — Superposition, Entanglement & Schrödinger's Equation",
         "estimatedDurationMin": 25,
-        "spokenBriefingPl": "Fundament czwarty: Fizyka. Wszystko, co żyje, oblicza lub porusza się w przestrzeni, podlega prawom termodynamiki i mechaniki kwantowej. Organizmy żywe to układy otwarte, oddalone od równowagi termodynamicznej, utrzymujące swój porządek kosztem rozpraszania energii do otoczenia. W tym odcinku analizujemy fizykę materiałów post-krzemowych: grafen, dichalkogenki metali przejściowych oraz nadprzewodnictwo. Zrozumienie zjawiska Josephsona pozwala zrozumieć działanie kubitów transmonowych, a znajomość termodynamiki nierównowagowej tłumaczy, dlaczego ludzki mózg potrafi wykonywać 10 do potęgi 18 operacji na sekundę zużywając zaledwie 20 watów mocy.",
-        "spokenBriefingEn": "Episode 6 delves into Physics: non-equilibrium thermodynamics, quantum mechanics, and post-silicon solid-state physics. Living systems are open thermodynamic dissipative structures. Superconductivity and Josephson junctions drive quantum hardware, while 2D transition-metal dichalcogenides chart the path beyond bulk silicon.",
+        "spokenBriefingPl": "Zanurzamy się w świat subatomowy. W skali mikro świat nie zachowuje się jak zbiór małych kulek bilardowych. Cząstki elementarne opisuje funkcja falowa psi, podlegająca równaniu Schrödingera. Dopóki nie dokonamy pomiaru, stan kwantowy znajduje się w superpozycji wielu możliwości naraz. Gdy dwa układy wejdą w interakcję, powstaje zjawisko splątania kwantowego — korelacji nielokalnej, którą Einstein nazywał upiornym działaniem na odległość. W samochodzie zrozumiesz, jak te zjawiska przestają być abstrakcją filozoficzną, a stają się paliwem technologii: od mikroskopów tunelowych, przez kryptografię kwantową QKD, aż po rejestry kubitowe w komputerach kwantowych.",
+        "spokenBriefingEn": "We explore quantum mechanics: wave-particle duality, wavefunctions, and Schrödinger's equation. Superposition and quantum entanglement form the physical reality of the subatomic scale. These phenomena power quantum cryptography and quantum computers.",
         "keyTakeawaysPl": [
-          "Życie i obliczenia biologiczne to zjawiska termodynamiki nierównowagowej minimalizujące produkcję entropii.",
-          "Złącza Josephsona w nadprzewodnikach umożliwiają kreację sztucznych dwupoziomowych atomów kwantowych (kubitów).",
-          "Materiały 2D (grafen, MoS2) otwierają drogę do tranzystorów o grubości pojedynczej warstwy atomowej."
+          "Zasada nieoznaczoności Heisenberga stawia fundamentalną granicę na jednoczesną dokładność pomiaru położenia i pędu.",
+          "Splątanie kwantowe umożliwia nielokalne korelacje stanów kubitowych bez łamania szczególnej teorii względności.",
+          "Tunelowanie kwantowe jest zjawiskiem powszechnym w mikroprocesorach poniżej 3 nm, powodując prądy upływu bramek."
         ],
         "curatedAudioLinks": [
           {
-            "label": "🇵🇱 OpenStax Polska / Feynmana wykłady z fizyki — Fizyka współczesna i kwantowa",
-            "url": "https://openstax.pl/"
+            "title": "Zapytaj Fizyka (UW) — Prof. Andrzej Dragan: Niezwykłości mechaniki kwantowej",
+            "url": "https://zapytajfizyka.fuw.edu.pl/",
+            "lang": "PL",
+            "type": "wykład"
           },
           {
-            "label": "🇬🇧 Sean Carroll Mindscape Podcast — Quantum Physics, Emergence & Thermodynamics",
-            "url": "https://www.preposterousuniverse.com/podcast/"
+            "title": "Sean Carroll's Mindscape #59 — The Many Worlds of Quantum Mechanics",
+            "url": "https://www.preposterousuniverse.com/podcast/",
+            "lang": "EN",
+            "type": "podcast"
+          },
+          {
+            "title": "Radio Naukowe — Zrozumieć splątanie kwantowe",
+            "url": "https://radionaukowe.pl/",
+            "lang": "PL",
+            "type": "podcast"
           }
         ]
       },
       {
         "id": "car-ep-07",
         "order": 7,
-        "stage": "II",
-        "stageNamePl": "Etap II: Wspólne Podstawy 1–8 po kolei",
-        "stageNameEn": "Stage II: 8 Core Foundations in Sequence",
-        "titlePl": "Odcinek 7: Fundament 5 — Elektronika i Neuromorfizm: Memrystory i Zdarzeniowe Sensory DVS",
-        "titleEn": "Episode 7: Foundation 5 — Electronics & Neuromorphics: Memristors & Event-Driven DVS Sensors",
-        "estimatedDurationMin": 23,
-        "spokenBriefingPl": "W piątym fundamencie — Elektronice — przenosimy zasady fizyki do krzemu i obwodów scalonych. Przez dekady elektronika dzieliła się sztywno na cyfrową i analogową. Dzisiaj najbardziej ekscytujący front to elektronika neuromorficzna. Odkrycie i komercjalizacja czwartego elementu biernego — memrystora — pozwoliło na fizyczną realizację sztucznej synapsy. Zamiast przesyłać wagi z pamięci RAM do procesora, memrystor pamięta swój stan przewodności elektrycznej pod wpływem przepływającego ładunku, dokładnie tak jak synapsa biologiczna wzmacnia się pod wpływem impulsów. Do tego dochodzą kamery neuromorficzne DVS, które nie rejestrują klatek, lecz wysyłają mikrosekundowe pakiety zmian jasności, redukując strumień danych tysiąckrotnie.",
-        "spokenBriefingEn": "Episode 7 explores Electronics and Neuromorphic Hardware. Memristors act as physical artificial synapses, executing in-memory analog matrix multiplications without memory-bus bottlenecks. Dynamic Vision Sensors (DVS) emulate retinal photoreceptors by transmitting asynchronous event spikes rather than power-hungry frames.",
+        "stage": "I",
+        "stageNamePl": "Etap I: Fundamenty Formalne i Prawa Fizyki",
+        "stageNameEn": "Stage I: Formal Foundations & Laws of Physics",
+        "tripProfile": "Trasa miejska (~20 min)",
+        "titlePl": "Odcinek 7: Termodynamika, Entropia Informacyjna i Granica Landauera",
+        "titleEn": "Episode 7: Thermodynamics, Informational Entropy & Landauer's Principle",
+        "estimatedDurationMin": 20,
+        "spokenBriefingPl": "Słuchasz siódmego odcinka. Dlaczego Twój laptop się nagrzewa, a centra danych AI zużywają gigawaty energii? Rolf Landauer w 1961 roku udowodnił fundamentalną zasadę: samo przetwarzanie informacji może być bezstratne, ale usunięcie jednego bitu informacji nieodwracalnie rozprasza w otoczeniu energię równą k T ln 2. To granica Landauera. Informacja jest fizyczna. Każdy nieodwracalny cykl logiczny w bramkach krzemowych generuje ciepło, które ostatecznie dusi dalsze skalowanie gęstości tranzystorów. W tym odcinku omawiamy termodynamikę nierównowagową Prigogine'a, powstawanie struktur dyssypatywnych i koncepcję obliczeń odwracalnych (reversible computing), która pozwoli obejść barierę Landauera.",
+        "spokenBriefingEn": "Why do computers generate heat? Rolf Landauer proved in 1961 that erasing one bit of information irreversibly dissipates k T ln 2 energy into the environment. Information is physical. We explore non-equilibrium thermodynamics, dissipative structures, and reversible computing paradigms.",
         "keyTakeawaysPl": [
-          "Memrystory łączą funkcję pamięci i obliczeń w jednym elemencie, emulując plastyczność synaptyczną STDP.",
-          "Elektronika podprogowa (sub-threshold CMOS) pozwala budować układy scalone o zużyciu energii porównywalnym z tkanką biologiczną.",
-          "Kamery i sensory zdarzeniowe eliminują pojęcie klatek, drastycznie zmniejszając latencję systemów autonomicznych i robotów."
+          "Zasada Landauera łączy kasowanie bitu pamięci z minimalnym rozproszeniem ciepła w otoczeniu.",
+          "Współczesne chipy krzemowe pracują wciąż tysiąckrotnie powyżej granicy Landauera, marnując energię na oporze pasożytniczym.",
+          "Obliczenia odwracalne (Reversible Computing) i bramki Toffolego pozwalają na przetwarzanie bez kasowania bitów, zbliżając się do zera dyssypacji."
         ],
         "curatedAudioLinks": [
           {
-            "label": "🇵🇱 Forbot / Politechnika Warszawska — Nowoczesna elektronika i systemy wbudowane",
-            "url": "https://forbot.pl/"
+            "title": "Zapytaj Fizyka (UW) — Termodynamika, strzałka czasu i entropia",
+            "url": "https://zapytajfizyka.fuw.edu.pl/",
+            "lang": "PL",
+            "type": "wykład"
           },
           {
-            "label": "🇬🇧 IEEE Spectrum Podcasts — Neuromorphic Engineering & Memristive Systems",
-            "url": "https://spectrum.ieee.org/podcasts"
+            "title": "Feynman Lectures Audio — Thermodynamics & Statistical Mechanics",
+            "url": "https://feynmanlectures.caltech.edu/",
+            "lang": "EN",
+            "type": "wykład"
+          },
+          {
+            "title": "Centrum Kopernika — Entropia i fizyka informacji",
+            "url": "https://copernicuscenter.edu.pl/",
+            "lang": "PL",
+            "type": "audycja"
           }
         ]
       },
@@ -5635,26 +5712,37 @@ const DEFAULT_SEED = {
         "id": "car-ep-08",
         "order": 8,
         "stage": "II",
-        "stageNamePl": "Etap II: Wspólne Podstawy 1–8 po kolei",
-        "stageNameEn": "Stage II: 8 Core Foundations in Sequence",
-        "titlePl": "Odcinek 8: Fundament 6 — Chemia i Biochemia: Od Wiązań Molekularnych do Hydrożeli Tkankowych",
-        "titleEn": "Episode 8: Foundation 6 — Chemistry & Biochemistry: From Molecular Bonds to Tissue Hydrogels",
-        "estimatedDurationMin": 20,
-        "spokenBriefingPl": "Fundament szósty: Chemia i Biochemia. W Projekcie Manhattan Golem 15 chemia to most między martwym krzemem a żywym organizmem. Gdy wszczepiasz elektrodę do mózgu lub budujesz naczynie krwionośne w biodegradowalnym rusztowaniu, decyduje chemia powierzchniowa. W tym odcinku skupiamy się na hydrożelach biokompatybilnych — usieciowanych polimerach zatrzymujących 99 procent wody, które mechanicznie i chemicznie przypominają tkankę mózgową. Poruszamy również temat elektrochemii reakcji redoks w bateriach półprzewodnikowych oraz zamkniętych obiegów chemicznych Sabatiera, które w Projektach F i G pozwalają na stuprocentowy odzysk tlenu i wody.",
-        "spokenBriefingEn": "Episode 8 covers Chemistry and Biochemistry: the molecular interface between silicon and living tissue. Biomimetic hydrogels provide the compliant scaffold needed to bridge stiff metal electrodes with ultra-soft neural tissue. We also examine closed chemical recovery loops (Sabatier, water electrolysis) fundamental to space habitats and planetary life.",
+        "stageNamePl": "Etap II: Kres Krzemu i Nowy Hardware",
+        "stageNameEn": "Stage II: Silicon Physical Limits & Next-Gen Hardware",
+        "tripProfile": "Trasa podmiejska (~22 min)",
+        "titlePl": "Odcinek 8: Fizyczne Granice Krzemu — Koniec Prawa Moore'a i Prądy Upływu",
+        "titleEn": "Episode 8: Physical Limits of Silicon — The End of Moore's Law & Gate Leakage",
+        "estimatedDurationMin": 22,
+        "spokenBriefingPl": "Rozpoczynamy Etap Drugi: kres podwalin krzemowych. Przez dekady przemysł półprzewodników rozwijał się dzięki prawu Moore'a i skalowaniu Dennarda. Podwajaliśmy liczbę tranzystorów co 18 miesięcy, zachowując stałą gęstość mocy. Jednak około 2006 roku skalowanie Dennarda się załamało. Przy szerokości bramek poniżej 2 nanometrów elektrony zaczęły tunelować kwantowo wprost przez izolator tlenkowy. Tranzystor nie daje się już całkowicie wyłączyć — prądy upływu generują gigantyczne straty mocy nawet w stanie spoczynku. To fizyczny mur krzemu. Nie da się zrobić tranzystora mniejszego niż pojedynczy atom krzemu. W tym module dowiesz się, jak litografia ekstremalnego ultrafioletu (EUV) osiąga kres i dlaczego musimy zmienić materiał bazowy.",
+        "spokenBriefingEn": "Stage II: Silicon limits. Dennard scaling collapsed around 2006. Below 2nm gate lengths, quantum tunneling causes massive gate leakage currents. We reached the physical barrier of silicon. We explore the limits of EUV lithography and the urgent need for new substrate materials.",
         "keyTakeawaysPl": [
-          "Biomateriały hydrożelowe minimalizują odczyn glejowy i reakcję na ciało obce wokół implantów nerwowych.",
-          "Chemia redoks leży u podstaw akumulatorów nowej generacji i magazynowania energii ze źródeł jądrowych.",
-          "Zamknięte cykle katalityczne pozwalają na pełną regenerację zasobów w odciętych habitatach."
+          "Skalowanie Dennarda zakończyło się z powodu prądów upływu podprogowych i tunelowania kwantowego bramek.",
+          "Zjawisko 'Dark Silicon' oznacza, że w nowoczesnym procesorze nie można zasilić wszystkich rdzeni naraz bez stopienia chipu.",
+          "Następcy krzemu to grafen, nanorurki węglowe (CNT), dichalkogenki metali przejściowych (TMD) oraz tranzystory bramkowane optycznie."
         ],
         "curatedAudioLinks": [
           {
-            "label": "🇵🇱 OpenStax Polska / Wydawnictwo Naukowe PWN — Podstawy chemii i biochemii",
-            "url": "https://openstax.pl/"
+            "title": "Radio Naukowe — Kiedy skończy się krzem? Granice nanoelektroniki",
+            "url": "https://radionaukowe.pl/",
+            "lang": "PL",
+            "type": "podcast"
           },
           {
-            "label": "🇬🇧 Royal Society of Chemistry — Chemical Biology & Biomaterials Audio",
-            "url": "https://www.rsc.org/"
+            "title": "IEEE Spectrum Podcast — The End of Moore's Law & What Comes Next",
+            "url": "https://spectrum.ieee.org/",
+            "lang": "EN",
+            "type": "podcast"
+          },
+          {
+            "title": "Nauka. To Lubię — Jak działa litografia EUV w ASML",
+            "url": "https://naukatolubie.pl/",
+            "lang": "PL",
+            "type": "audycja"
           }
         ]
       },
@@ -5662,26 +5750,37 @@ const DEFAULT_SEED = {
         "id": "car-ep-09",
         "order": 9,
         "stage": "II",
-        "stageNamePl": "Etap II: Wspólne Podstawy 1–8 po kolei",
-        "stageNameEn": "Stage II: 8 Core Foundations in Sequence",
-        "titlePl": "Odcinek 9: Fundament 7 — Biologia i Neurobiologia: Architektura Komórki i Plastyczność Mózgu",
-        "titleEn": "Episode 9: Foundation 7 — Biology & Neurobiology: Cellular Machinery & Brain Plasticity",
-        "estimatedDurationMin": 26,
-        "spokenBriefingPl": "Fundament siódmy: Biologia i Neurobiologia. Serce całego naszego przedsięwzięcia. Człowiek to układ złożony z 37 bilionów komórek, z których 86 miliardów to neurony spięte stu bilionami synaps w mózgu. Omawiamy strukturę błony komórkowej, transport jonowy przez pompy białkowe oraz zjawisko potencjału czynnościowego. Kluczowym pojęciem jest plastyczność synaptyczna — zdolność mózgu do ciągłego przebudowywania swoich wag połączeń w odpowiedzi na doświadczenie i naukę. To właśnie ta cecha sprawia, że jesteś w stanie uczyć się przez lata kolejnych dziedzin studiów, a mózg jest w stanie zintegrować sztuczną bioniczną kończynę tak, jakby była jego własną biologiczną ręką.",
-        "spokenBriefingEn": "Episode 9 investigates Biology and Neurobiology: the architectural blueprint of life. The human brain contains 86 billion neurons interconnected by over 100 trillion synapses. Synaptic plasticity—long-term potentiation and depression—allows the nervous system to remap its circuitry, enabling lifelong learning and seamless somatic integration of bionic limbs and neuroprosthetics.",
+        "stageNamePl": "Etap II: Kres Krzemu i Nowy Hardware",
+        "stageNameEn": "Stage II: Silicon Physical Limits & Next-Gen Hardware",
+        "tripProfile": "Trasa daleka (~28 min)",
+        "titlePl": "Odcinek 9: Komputery Kwantowe (QPU) i Algorytmy Hybrydowe VQE",
+        "titleEn": "Episode 9: Quantum Processors (QPU), Qiskit & Variational Quantum Eigensolvers",
+        "estimatedDurationMin": 28,
+        "spokenBriefingPl": "Słuchasz dziewiątego odcinka. Skoro krzem w architekturze klasycznej dochodzi do ściany, wkraczamy w domenę procesorów kwantowych (QPU). Zamiast bitów 0 lub 1 operujemy na kubitach. Jednak współczesne komputery kwantowe znajdują się w erze NISQ — Noisy Intermediate-Scale Quantum. Kubity tracą koherencję pod wpływem najmniejszych zakłóceń termicznych i radiacyjnych. Dlatego przyszłość nie należy do czystych maszyn kwantowych, lecz do algorytmów hybrydowych. Algorytm VQE (Variational Quantum Eigensolver) dzieli zadanie: QPU oblicza skomplikowany stan kwantowy cząsteczki chemicznej lub jądra atomowego, a klasyczny superkomputer optymalizuje parametry. W tym odcinku poznasz Qiskit, PennyLane oraz fizykę kubitów nadprzewodzących i pułapek jonowych.",
+        "spokenBriefingEn": "We explore Quantum Processing Units (QPUs). In the NISQ era, decoherence limits quantum depth. Hybrid quantum-classical algorithms such as VQE (Variational Quantum Eigensolver) divide computation between QPU state evaluation and classical gradient optimization. We examine superconducting qubits, ion traps, and Qiskit frameworks.",
         "keyTakeawaysPl": [
-          "Plastyczność synaptyczna (LTP/LTD) pozwala mózgowi adaptować się do obcych sygnałów sensorycznych z protez i BCI.",
-          "Równowaga pobudzenia i hamowania (neuroprzekaźniki glutaminian i GABA) warunkuje stabilność pracy kory mózgowej.",
-          "Komórki macierzyste i hodowla organoidów otwierają erę inżynierii tkankowej naśladującej rozwój embrionalny."
+          "Era NISQ wymaga algorytmów odpornych na szum, takich jak VQE i QAOA.",
+          "Kubity nadprzewodzące (złącza Josephsona) wymagają kriostatu rozcieńczalnikowego o temperaturze 15 miliKelwinów.",
+          "Kwantowa korekcja błędów (kod powierzchniowy) wymaga setek kubitów fizycznych na jeden logiczny kubit odporny na dekoherencję."
         ],
         "curatedAudioLinks": [
           {
-            "label": "🇵🇱 Radio Naukowe — Tajemnice ludzkiego mózgu, konektomu i neuroplastyczności",
-            "url": "https://radionaukowe.pl/"
+            "title": "IBM Quantum Podcast — Qiskit, Quantum Chemistry & VQE",
+            "url": "https://www.ibm.com/quantum",
+            "lang": "EN",
+            "type": "podcast"
           },
           {
-            "label": "🇬🇧 Huberman Lab Podcast — Neural Plasticity, Brain Chemistry & Optimization",
-            "url": "https://www.hubermanlab.com/"
+            "title": "Zapytaj Fizyka (UW) — Jak zbudować komputer kwantowy?",
+            "url": "https://zapytajfizyka.fuw.edu.pl/",
+            "lang": "PL",
+            "type": "wykład"
+          },
+          {
+            "title": "Lex Fridman Podcast #365 — Scott Aaronson: Quantum Computing & Complexity",
+            "url": "https://lexfridman.com/",
+            "lang": "EN",
+            "type": "podcast"
           }
         ]
       },
@@ -5689,26 +5788,37 @@ const DEFAULT_SEED = {
         "id": "car-ep-10",
         "order": 10,
         "stage": "II",
-        "stageNamePl": "Etap II: Wspólne Podstawy 1–8 po kolei",
-        "stageNameEn": "Stage II: 8 Core Foundations in Sequence",
-        "titlePl": "Odcinek 10: Fundament 8 — Sztuczna Inteligencja: Od Transformerów do Modeli Kognitywnych i BCI",
-        "titleEn": "Episode 10: Foundation 8 — Artificial Intelligence: From Transformers to Cognitive Models & BCI",
-        "estimatedDurationMin": 24,
-        "spokenBriefingPl": "Zamykamy etap drugi fundamentem ósmym: Sztuczną Inteligencją. Przez ostatnie lata rewolucja Transformerów i mechanizmu uwagi zmieniła oblicze informatyki. Jednak w architekturze Golem 15 nie traktujemy AI wyłącznie jako generatora tekstu czy obrazów. AI jest dla nas uniwersalnym silnikiem dekodującym: dekoduje szum w sygnałach EEG z kory mózgowej, przewiduje trójwymiarowe fałdowanie łańcuchów białkowych w AlphaFold, optymalizuje przepływ plazmy w tokamakach termojądrowych i koordynuje rozproszony graf rozszczepień Projektu Manhattan. Równocześnie zachowujemy rygor epistemiczny: rozróżniamy statystyczne prawdopodobieństwo tokenów od prawdziwego rozumienia i prawdy naukowej.",
-        "spokenBriefingEn": "Episode 10 concludes the Foundations with Artificial Intelligence. Within Golem 15, AI is not merely a conversational text generator. It is an end-to-end biological and physical decoder: decoding neural spikes into motor intent, predicting protein folding dynamics, and optimizing magnetic fusion plasma control. We maintain strict epistemic hygiene, verifying statistical AI outputs against empirical scientific laws.",
+        "stageNamePl": "Etap II: Kres Krzemu i Nowy Hardware",
+        "stageNameEn": "Stage II: Silicon Physical Limits & Next-Gen Hardware",
+        "tripProfile": "Trasa podmiejska (~26 min)",
+        "titlePl": "Odcinek 10: Chipy Neuromorficzne, Memrystory i Sieci Impulsowe SNN",
+        "titleEn": "Episode 10: Neuromorphic Chips, Memristors & Spiking Neural Networks (SNN)",
+        "estimatedDurationMin": 26,
+        "spokenBriefingPl": "Dziesiąty odcinek wprowadza nas w świat sprzętu naśladującego mózg biologiczny. Ludzki mózg zużywa zaledwie 20 watów energii, wykonując operacje, które w superkomputerze Frontier wymagają 20 megawatów. Jak natura osiąga milionkrotnie wyższą efektywność energetyczną? Mózg nie używa zegara taktującego ani architektury von Neumanna. Neurony komunikują się asynchronicznie za pomocą impulsów elektrycznych — spikes. W tym module badamy chipy neuromorficzne: Intel Loihi, IBM TrueNorth oraz SpiNNaker. Omawiać będziemy memrystory — czwarty pasywny element obwodu, który łączy funkcję opornika i pamięci, pozwalając na bezpośrednie uczenie synaptyczne w fizycznym materiale (STDP) i eliminację wąskiego gardła pamięci.",
+        "spokenBriefingEn": "The human brain operates on only 20 watts of power. How does biology achieve this million-fold efficiency over supercomputers? Asynchronous spiking neural networks (SNNs) and in-memory computing. We analyze Intel Loihi, SpiNNaker, and memristive crossbar arrays enabling Spike-Timing-Dependent Plasticity (STDP).",
         "keyTakeawaysPl": [
-          "Mechanizm uwagi (Self-Attention) pozwala modelować nieliniowe relacje wielkoskalowe w biologii i języku.",
-          "Głębokie modele dekodujące BCI tłumaczą fale mózgowe na mowę syntetyczną i ruch egzoszkieletu.",
-          "Rygor epistemiczny i audytowalność algorytmów (XAI) zapobiegają halucynacjom modeli w systemach krytycznych."
+          "Sieci SNN komunikują się tylko w momencie pojawienia się impulsu (event-driven), oszczędzając 95% energii w stanie spoczynku.",
+          "Memrystory realizują obliczenia macierzowe w pamięci w domenie analogowej na prawach Kirchhoffa.",
+          "Frameworki Brian2, Lava i snnTorch pozwalają programować impulsowe sieci neuronowe z plastycznością synaptyczną STDP."
         ],
         "curatedAudioLinks": [
           {
-            "label": "🇵🇱 Politechnika Warszawska / Ośrodek Badań nad AI — Wykłady z uczenia maszynowego",
-            "url": "https://pw.edu.pl/"
+            "title": "Radio Naukowe — Elektroniczny mózg: chipy neuromorficzne i memrystory",
+            "url": "https://radionaukowe.pl/",
+            "lang": "PL",
+            "type": "podcast"
           },
           {
-            "label": "🇬🇧 DeepMind Podcast — AI in Science: From AlphaFold to Nuclear Fusion",
-            "url": "https://deepmind.google/discover/podcast/"
+            "title": "Intel Labs Audio — Neuromorphic Computing & The Loihi Architecture",
+            "url": "https://www.intel.com/content/www/us/en/research/neuromorphic-community.html",
+            "lang": "EN",
+            "type": "wykład"
+          },
+          {
+            "title": "Nature Podcast — Memristive crossbars for energy-efficient AI",
+            "url": "https://nature.com/",
+            "lang": "EN",
+            "type": "podcast"
           }
         ]
       },
@@ -5716,26 +5826,37 @@ const DEFAULT_SEED = {
         "id": "car-ep-11",
         "order": 11,
         "stage": "III",
-        "stageNamePl": "Etap III: Siedem Ścieżek Badawczych A–G",
-        "stageNameEn": "Stage III: Seven Research Tracks A–G",
-        "titlePl": "Odcinek 11: Projekt A — Człowiek Biocyfrowo-Robotyczny: Protezy, Egzoszkielety i Zmysł Dotyku",
-        "titleEn": "Episode 11: Project A — Bio-Digital-Robotic Human: Prosthetics, Exoskeletons & Haptic Touch",
-        "estimatedDurationMin": 22,
-        "spokenBriefingPl": "Wjeżdżamy w etap trzeci — konkretyzacja w siedmiu powiązanych ścieżkach badawczych. Projekt A bada integrację biologicznego ciała człowieka z robotyką i bioniką. Nie chodzi o proste protezy mechaniczne. Chodzi o dwukierunkową cybernetyczną symbiozę: impuls z kory ruchowej M1 biegnie przez elektrody do mikrokontrolera protezy, który uruchamia sztuczne siłowniki bezszczotkowe, a sensory nacisku na palcach bionicznej dłoni wysyłają mikrostymulację do kory somatosensorycznej, dając człowiekowi odczucie miękkości trzymanego przedmiotu. Poznajemy też techniki osteointegracji, w których tytanowa proteza zrasta się bezpośrednio z kością szkieletu.",
-        "spokenBriefingEn": "Entering Stage III with Project A: Bio-Digital-Robotic Human. This track explores bidirectional somatic symbiosis: motor cortex intent actuates bionic brushless actuators, while tactile fingertips microstimulate somatosensory cortex S1 to deliver genuine haptic sensation. Osseointegrated titanium implants eliminate painful mechanical sockets, unifying biology and mechanics.",
+        "stageNamePl": "Etap III: Mózg, Bionika i Protokół WBE",
+        "stageNameEn": "Stage III: Biological Brain, Bionics & WBE Protocol",
+        "tripProfile": "Trasa podmiejska (~25 min)",
+        "titlePl": "Odcinek 11: Bionika i Interfejsy Mózg-Komputer (BCI) — Na Styku Mięsa i Krzemu",
+        "titleEn": "Episode 11: Bionics & Brain-Computer Interfaces (BCI) — Bridging Wetware & Silicon",
+        "estimatedDurationMin": 25,
+        "spokenBriefingPl": "Wkraczamy w Etap Trzeci: biologia spotyka technologię. Interfejsy mózg-komputer (BCI) dzielimy na inwazyjne, półinwazyjne i nieinwazyjne. Od klasycznego EEG, przez ECoG, aż po elektrody neuropikselowe i nici neuronowe Neuralink. W tym module badamy biokompatybilność elektrod: jak unikać reakcji układu odpornościowego, glejozy i degradacji sygnału w tkance mózgowej. Zrozumiesz, jak dekodować intencje ruchowe i mowę za pomocą algorytmów filtracji Kalmana i sieci rekurencyjnych, a także jak dostarczać stymulację zwrotną do kory czuciowej. To pierwszy krok na drodze do zespolenia ludzkiej percepcji z cyfrową pamięcią.",
+        "spokenBriefingEn": "Stage III: Bionics and Brain-Computer Interfaces. From non-invasive EEG and ECoG to Neuropixels and intracortical arrays. We study biocompatibility, neuroinflammation, foreign-body response, and spike decoding algorithms (Kalman filters, RNNs) that bridge human neural intention with digital actuators.",
         "keyTakeawaysPl": [
-          "Dwukierunkowe BCI zamyka pętlę czuciowo-ruchową: intencja wywołuje ruch, a sensory dają naturalny feedback dotykowy.",
-          "Osteointegracja zapewnia bezpośrednie połączenie implantu z kością szkieletową bez bolesnego leja protezowego.",
-          "Chirurgiczne TMR (Targeted Muscle Reinnervation) przekierowuje ucięte nerwy do nowych mięśni, wielokrotnie zwiększając liczbę kanałów sterujących."
+          "Biokompatybilne powłoki elektrod (np. polimery przewodzące PEDOT) minimalizują bliznowacenie glejowe tkanki nerwowej.",
+          "Dekodery BCI potrafią przetwarzać potencjały polowe LFP i salwy iglicowe na polecenia dla protez bionicznych i syntezatorów mowy.",
+          "Pętla zamknięta (Closed-Loop BCI) umożliwia dwukierunkową komunikację: odczyt intencji i zwrotną elektrostymulację czuciową."
         ],
         "curatedAudioLinks": [
           {
-            "label": "🇵🇱 Radio Naukowe — Bionika i cyborgizacja: Jak budujemy sztuczne ciała",
-            "url": "https://radionaukowe.pl/"
+            "title": "Huberman Lab Podcast #48 — Neuroplasticity and Brain-Machine Interfaces",
+            "url": "https://hubermanlab.com/",
+            "lang": "EN",
+            "type": "podcast"
           },
           {
-            "label": "🇬🇧 Nature Neurotech Podcasts — Restoring Mobility and Touch with Neural Interfaces",
-            "url": "https://www.nature.com/"
+            "title": "Radio Naukowe — Czy połączymy mózg z komputerem? Granice BCI",
+            "url": "https://radionaukowe.pl/",
+            "lang": "PL",
+            "type": "podcast"
+          },
+          {
+            "title": "Strefa Psyche SWPS — Neuroinżynieria i odczytywanie fal mózgowych",
+            "url": "https://swps.pl/strefa-psyche",
+            "lang": "PL",
+            "type": "wykład"
           }
         ]
       },
@@ -5743,188 +5864,341 @@ const DEFAULT_SEED = {
         "id": "car-ep-12",
         "order": 12,
         "stage": "III",
-        "stageNamePl": "Etap III: Siedem Ścieżek Badawczych A–G",
-        "stageNameEn": "Stage III: Seven Research Tracks A–G",
-        "titlePl": "Odcinek 12: Projekt B — Cyfrowy Umysł i Whole Brain Emulation: Czy Można Przenieść Świadomość?",
-        "titleEn": "Episode 12: Project B — Digital Mind & Whole Brain Emulation: Can Consciousness Be Substrate-Independent?",
-        "estimatedDurationMin": 25,
-        "spokenBriefingPl": "Projekt B stawia jedno z najbardziej fundamentalnych pytań nauki i filozofii: czy ludzki umysł jest niezależny od biologicznego podłoża? Whole Brain Emulation zakłada trzystopniowy proces: precyzyjne zeskanowanie zmarłej lub utrwalonej tkanki mózgowej w rozdzielczości nanometrowej, rekonstrukcję pełnego grafu konektomu i synaps, oraz uruchomienie dynamicznej symulacji elektrofizjologicznej w klastrze obliczeniowym. W tym odcinku analizujemy wąskie gardła: petabajtowe wolumeny danych skanowania FIB-SEM, zapotrzebowanie na moc obliczeniową rzędu eksaflopsów, oraz filozoficzny paradoks duplikacji: czy emulacja to Ty, czy tylko idealna kopia, podczas gdy Twój biologiczny punkt widzenia zgasł?",
-        "spokenBriefingEn": "Project B tackles Whole Brain Emulation and computational substrate independence. The pipeline spans nanoscale tissue imaging (FIB-SEM), AI connectome graph tracing, and biophysical solver execution. We weigh the engineering bottlenecks (petabyte reconstruction, exaFLOP compute requirements) against philosophical identity paradoxes.",
+        "stageNamePl": "Etap III: Mózg, Bionika i Protokół WBE",
+        "stageNameEn": "Stage III: Biological Brain, Bionics & WBE Protocol",
+        "tripProfile": "Trasa daleka (~28 min)",
+        "titlePl": "Odcinek 12: Protokół WBE (Whole Brain Emulation) — Skanowanie Konektomu i Modele Pamięci",
+        "titleEn": "Episode 12: The WBE Protocol (Whole Brain Emulation) — Connectome Scanning & Memory Engrams",
+        "estimatedDurationMin": 28,
+        "spokenBriefingPl": "Słuchasz dwunastego odcinka. Projekt B w ekosystemie Golem 15 bada najbardziej radykalną hipotezę neuronauki: czy świadomość i tożsamość człowieka są wzorcem obliczeniowym zapisanym w konektomie? W tym module omawiamy protokół Whole Brain Emulation (WBE). Badamy techniki krioprezerwacji i plastynacji tkanki mózgowej, seryjną mikroskopię elektronową FIB-SEM, rekonstrukcję miliardów synaps oraz mapowanie engramów pamięciowych w hipokampie. Dowiesz się, ile petabajtów danych wymaga pełna rekonstrukcja kory mózgowej i jakie modele elektrofizjologiczne (Hodgkina-Huxleya, Izhikevicha) są niezbędne, by ożywić zeskanowany model w symulacji cyfrowej.",
+        "spokenBriefingEn": "We examine the Whole Brain Emulation (WBE) protocol: connectome mapping, cryopreservation, serial sectioning FIB-SEM electron microscopy, and engram preservation. We analyze the computational requirements to simulate 86 billion neurons and 100 trillion synapses using Hodgkin-Huxley and multi-compartment models.",
         "keyTakeawaysPl": [
-          "Whole Brain Emulation wymaga rekonstrukcji połączeń w skali nano z uwzględnieniem typów receptorów i gęstości postsynaptycznej.",
-          "Paradoks duplikacji Parfita i Lema podważa wiarę w zachowanie tożsamości przy skokowym kopiowaniu umysłu.",
-          "Rygor epistemiczny nakazuje traktować WBE jako hipotezę inżynieryjną wymagającą weryfikacji krok po kroku na prostych organizmach (C. elegans, muszka owocowa)."
+          "Konektomika wymaga rekonstrukcji morfologii dendrytów i kolców synaptycznych w rozdzielczości nanometrycznej.",
+          "Modele wieloprzedziałowe (multi-compartment) dokładnie odtwarzają dynamikę nieliniową kanałów jonowych w dendrytach.",
+          "WBE stawia kluczowe pytanie filozoficzne: czy emulacja jest kopią, kontynuacją tożsamości, czy nową formą istnienia?"
         ],
         "curatedAudioLinks": [
           {
-            "label": "🇵🇱 Copernicus Center / Granice Nauki — Filozofia umysłu, świadomość i sztuczne neurony",
-            "url": "https://copernicuscenter.edu.pl/"
+            "title": "Oxford FHI Audio Series — Nick Bostrom & Anders Sandberg on Whole Brain Emulation",
+            "url": "https://www.fhi.ox.ac.uk/",
+            "lang": "EN",
+            "type": "wykład"
           },
           {
-            "label": "🇬🇧 Future of Humanity Institute / Anders Sandberg — Whole Brain Emulation Roadmap Audio",
-            "url": "https://www.fhi.ox.ac.uk/"
+            "title": "Radio Naukowe — Konektom: mapa wszystkich połączeń w mózgu",
+            "url": "https://radionaukowe.pl/",
+            "lang": "PL",
+            "type": "podcast"
+          },
+          {
+            "title": "Stanford Sapolsky Lectures Audio — The Biology of Memory and Identity",
+            "url": "https://stanford.edu/",
+            "lang": "EN",
+            "type": "wykład"
           }
         ]
       },
       {
         "id": "car-ep-13",
         "order": 13,
-        "stage": "III",
-        "stageNamePl": "Etap III: Siedem Ścieżek Badawczych A–G",
-        "stageNameEn": "Stage III: Seven Research Tracks A–G",
-        "titlePl": "Odcinek 13: Projekt C — Maszyny Analogowe i Fotonika: Obliczanie Przez Fizykę Ciągłą",
-        "titleEn": "Episode 13: Project C — Analog Machines & Photonics: Computing Directly Through Continuous Physics",
-        "estimatedDurationMin": 21,
-        "spokenBriefingPl": "W Projekcie C odrzucamy dogmat, że każde obliczenie musi być sprowadzone do zer i jedynek. Przez miliardy lat natura liczyła inaczej: prawa Kirchhoffa natychmiast ustalają prąd w węźle obwodu, fale optyczne interferują ze sobą w czasie zerowym z prędkością światła, a cząsteczki chemiczne znajdują minimum energii swobodnej bez wykonywania miliardów iteracji. Omawiamy renesans komputerów analogowych i optycznych macierzy fotonicznych w zadaniach mnożenia tensorów dla AI. Poznajemy też obliczenia rezerwuarowe (Reservoir Computing), gdzie nieliniowy układ dynamiczny — na przykład ciecz lub sieć sprężysta — wykonuje obliczenia bezpośrednio przez swoją fizyczną dynamikę.",
-        "spokenBriefingEn": "Project C challenges the digital binary dogma. Physical systems compute naturally: Kirchhoff's laws solve conservation equations instantaneously, and optical wavefronts interfere at the speed of light. Photonic matrix multipliers and physical reservoir computing exploit continuous non-linear dynamics to execute AI workloads at near-zero thermal dissipation.",
+        "stage": "IV",
+        "stageNamePl": "Etap IV: Inżynieria Życia i Biosfera",
+        "stageNameEn": "Stage IV: Life Engineering & Synthetic Biology",
+        "tripProfile": "Trasa podmiejska (~25 min)",
+        "titlePl": "Odcinek 13: Biologia Syntetyczna, CRISPR i Konstrukcja Nowych Szlaków Życia",
+        "titleEn": "Episode 13: Synthetic Biology, CRISPR Gene Editing & Engineering Living Circuits",
+        "estimatedDurationMin": 25,
+        "spokenBriefingPl": "Przechodzimy do Etapu Czwartego: inżynieria życia (Projekt D). Do niedawna człowiek był wyłącznie obserwatorem i selekcjonerem ewolucji. Dziś biologia stała się dziedziną inżynierską. W tym module omawiamy edycję genomu za pomocą CRISPR-Cas9, Cas12 oraz precyzyjną edycję zasad (base editing). Badamy projektowanie syntetycznych obwodów genetycznych (genetic toggle switches), sztuczne chromosomy bakteryjne i drożdżowe oraz konstrukcję organoidów mózgowych. Dowiesz się, jak kod genetyczny może pełnić funkcję pamięci trwałej i procesora biochemicznego zdolnego do syntezy nowych enzymów leczących choroby degeneracyjne.",
+        "spokenBriefingEn": "Stage IV explores synthetic biology and genomic engineering. We cover CRISPR-Cas systems, base editing, and prime editing. We analyze genetic logic gates, synthetic chromosomes, organoids, and how biological circuits execute computational logic through biochemical signal transduction cascades.",
         "keyTakeawaysPl": [
-          "Obliczanie przez fizykę eliminuje dyskretyzację i narzut energetyczny zmiennoprzecinkowych procesorów cyfrowych.",
-          "Fotoniczne interferometry Macha-Zehndera wykonują operacje macierzowe z zerowym opóźnieniem zegarowym.",
-          "Obliczenia rezerwuarowe pozwalają przetwarzać sygnały chaotyczne przy minimalnym koszcie treningu (tylko warstwa wyjściowa)."
+          "Systemy CRISPR-Cas pozwalają na reprogramowanie ekspresji genów i precyzyjną naprawę mutacji punktowych.",
+          "Biologia syntetyczna traktuje cząsteczki DNA jako znormalizowany kod programistyczny (BioBricks).",
+          "Organoidy tkankowe umożliwiają badanie patologii mózgu i testowanie leków in vitro bez udziału organizmów wyższych."
         ],
         "curatedAudioLinks": [
           {
-            "label": "🇵🇱 Politechnika Śląska — Wykłady z maszyn analogowych i układów dynamicznych",
-            "url": "https://polsl.pl/"
+            "title": "Radio Naukowe — CRISPR i inżynieria genetyczna: jak naprawić DNA",
+            "url": "https://radionaukowe.pl/",
+            "lang": "PL",
+            "type": "podcast"
           },
           {
-            "label": "🇬🇧 Bernd Ulmann Analog Computing Lectures — Computing with Physics Audio Series",
-            "url": "https://analogparadise.com/"
+            "title": "The CRISPR Journal Podcast — Advances in Precision Gene Editing",
+            "url": "https://liebertpub.com/",
+            "lang": "EN",
+            "type": "podcast"
+          },
+          {
+            "title": "Nauka. To Lubię — Biologia syntetyczna: czy stworzymy sztuczne życie?",
+            "url": "https://naukatolubie.pl/",
+            "lang": "PL",
+            "type": "audycja"
           }
         ]
       },
       {
         "id": "car-ep-14",
         "order": 14,
-        "stage": "III",
-        "stageNamePl": "Etap III: Siedem Ścieżek Badawczych A–G",
-        "stageNameEn": "Stage III: Seven Research Tracks A–G",
-        "titlePl": "Odcinek 14: Projekt D — 'Frankenstein': Biodruk 3D, Organoidy i Granice Tworzenia Życia",
-        "titleEn": "Episode 14: Project D — 'Frankenstein': 3D Bioprinting, Organoids & Synthetic Organisms",
-        "estimatedDurationMin": 23,
-        "spokenBriefingPl": "Tytuł Projektu D nawiązuje do arcydzieła Mary Shelley, ale w naszym ujęciu jest to rygorystyczny program inżynierii biologicznej. Gdzie leży granica między leczeniem narządu a stworzeniem go od nowa w laboratorium? W tym odcinku śledzimy powstawanie organoidów z komórek macierzystych i biodruk 3D tkanek zwaskularyzowanych. Dyskutujemy o systemach Organ-on-a-Chip, w których miniaturowe modele ludzkich organów pozwalają testować leki i toksyny bez udziału zwierząt. Stawiamy też pytanie o status bioetyczny: co dzieje się, gdy hodowany w naczyniu laboratoryjnym asambloid mózgowy zaczyna generować powtarzalne fale theta i gamma?",
-        "spokenBriefingEn": "Project D, invoking Mary Shelley's 'Frankenstein', investigates the frontiers of synthetic biology, 3D bioprinting, and organoid morphogenesis. We trace the path from induced pluripotent stem cells to vascularized living tissue constructs and Organ-on-a-Chip testbeds. Crucially, we address the bioethical threshold: what moral status belongs to advanced cortical assembloids exhibiting spontaneous neural oscillations?",
+        "stage": "IV",
+        "stageNamePl": "Etap IV: Inżynieria Życia i Biosfera",
+        "stageNameEn": "Stage IV: Life Engineering & Synthetic Biology",
+        "tripProfile": "Trasa podmiejska (~25 min)",
+        "titlePl": "Odcinek 14: Ekosystemy Zamknięte, Biosfera i Planetarna Homeostaza Termodynamiczna",
+        "titleEn": "Episode 14: Closed Ecological Systems, Biosphere Dynamics & Planetary Homeostasis",
+        "estimatedDurationMin": 25,
+        "spokenBriefingPl": "Słuchasz czternastego odcinka poświęconego Projektowi G: biosfera i obieg materii. Życie na Ziemi nie istnieje w izolacji — biosfera to potężny system termodynamiczny napędzany fotonami słonecznymi, który utrzymuje entropię na niskim poziomie poprzez cykle biochemiczne: węglowy, azotowy i fosforowy. W tym module analizujemy lekcje z eksperymentu Biosphere 2, dynamikę modeli klimatycznych i biogeochemicznych oraz konstrukcję sztucznych mikroekosystemów bioregeneracyjnych (MELiSSA). Zrozumiesz, dlaczego stabilność biosfery ziemskiej jest warunkiem przetrwania cywilizacji technologicznej i jak te same zasady stosują się do baz księżycowych i marsjańskich.",
+        "spokenBriefingEn": "We examine closed life-support systems (MELiSSA), Biosphere 2 engineering, biogeochemical cycles, and non-equilibrium Earth systems. Planetary homeostasis maintains low entropy via living dissipative structures, establishing principles essential for long-duration space settlement.",
         "keyTakeawaysPl": [
-          "Biodruk 3D tkanek wymaga jednoczesnego tworzenia mikrokapilar naczyniowych dostarczających tlen i glukozę.",
-          "Układy Organ-on-a-Chip zastępują testy na zwierzętach, dając wierniejszy model farmakokinetyki ludzkiej.",
-          "Bioetyka inżynierii organoidów wymaga prewencyjnych regulacji zanim systemy osiągną złożoność poznawczą."
+          "Biosfera jest samoregulującym się układem homeostatycznym, w którym organizmy modyfikują atmosferę i litosferę.",
+          "Eksperyment Biosphere 2 wykazał trudności w bilansowaniu tlenu i dwutlenku węgla w układach zamkniętych bez glebowej równowagi mikrobiologicznej.",
+          "Systemy MELiSSA (ESA) wykorzystują algi spirulina i bakterie nitryfikujące do 100% recyklingu wody i powietrza."
         ],
         "curatedAudioLinks": [
           {
-            "label": "🇵🇱 Radio Naukowe — Hodowanie organów w laboratorium i bioinżynieria komórkowa",
-            "url": "https://radionaukowe.pl/"
+            "title": "Radio Naukowe — Biosfera jako układ termodynamiczny i granice Ziemi",
+            "url": "https://radionaukowe.pl/",
+            "lang": "PL",
+            "type": "podcast"
           },
           {
-            "label": "🇬🇧 Harvard Wyss Institute Podcasts — Organ-on-a-Chip & Biomimetic Engineering",
-            "url": "https://wyss.harvard.edu/"
+            "title": "ESA Space Exploration Audio — The MELiSSA Life Support Project",
+            "url": "https://esa.int/",
+            "lang": "EN",
+            "type": "podcast"
+          },
+          {
+            "title": "Crazy Nauka Podcast — Jak zaprojektować zamknięty ekosystem?",
+            "url": "https://crazynauka.pl/",
+            "lang": "PL",
+            "type": "podcast"
           }
         ]
       },
       {
         "id": "car-ep-15",
         "order": 15,
-        "stage": "III",
-        "stageNamePl": "Etap III: Siedem Ścieżek Badawczych A–G",
-        "stageNameEn": "Stage III: Seven Research Tracks A–G",
-        "titlePl": "Odcinek 15: Projekt E — Filozofia jako Warstwa Przekrojowa: Rygor Epistemiczny i Metoda Lema",
-        "titleEn": "Episode 15: Project E — Philosophy as Interpretive Layer: Epistemic Hygiene & Lem's Method",
-        "estimatedDurationMin": 22,
-        "spokenBriefingPl": "Projekt E nie jest odrębną ścieżką laboratoryjną — to warstwa przekrojowa, która przenika wszystkie pozostałe projekty. Bez filozofii nauka łatwo osuwa się w bezkrytyczny optymizm technologiczny lub jałową spekulację. W tym odcinku omawiamy metodę Stanisława Lema: rygorystyczne badanie uwarunkowań technologicznych cywilizacji bez ulegania modom intelektualnym. Przypominamy naszą czteropoziomową klasyfikację wiedzy: zielony kolor dla faktów potwierdzonych empirycznie, niebieski dla aktywnych badań inżynieryjnych, żółty dla hipotez falsyfikowalnych, a fioletowy dla spekulacji futurologicznych. Dzięki temu żaden agent AI ani badacz w Twoim zespole nie pomyli hipotezy z dowiedzionym prawem fizyki.",
-        "spokenBriefingEn": "Project E serves as the cross-cutting epistemological foundation across all tracks. Following Stanisław Lem's philosophical methodology, it enforces strict demarcation between verified empirical science, active engineering development, testable hypotheses, and visionary speculation. This epistemic hygiene prevents premature hype and anchors long-term R&D decisions in rigorous rationalism.",
+        "stage": "V",
+        "stageNamePl": "Etap V: Super-Projekt Jądrowy i Kosmos",
+        "stageNameEn": "Stage V: Nuclear Megaproject H & Space Frontier",
+        "tripProfile": "Trasa daleka (~30 min)",
+        "titlePl": "Odcinek 15: Energetyka Rozszczepienia — SMR, Reaktory IV Generacji i Fizyka Reaktora Maria",
+        "titleEn": "Episode 15: Nuclear Fission — SMRs, Gen-IV Reactors & Reactor Maria Physics",
+        "estimatedDurationMin": 30,
+        "spokenBriefingPl": "Wkraczamy w Etap Piąty: Super-Projekt H — atomowy fundament cywilizacji. Dlaczego energetyka jądrowa jest integralną częścią ekosystemu Golem 15? Ponieważ rozwój superinteligencji AI, fabryk nanotechnologicznych i eksploracji kosmicznej wymaga gęstości energii, której źródła chemiczne i pogodozależne OZE nie są w stanie zapewnić. Rozszczepienie jednego grama uranu dostarcza tyle energii co spalenie 3 ton węgla kamiennego. W tym module badamy fizykę reaktorów: współczynnik mnożenia neutronów k_eff, moderatory grafitowe i wodne, reaktory badawcze (polski reaktor MARIA w Świerku), małe reaktory modułowe SMR (BWRX-300, NuScale) oraz reaktory IV generacji chłodzone ciekłym ołowiem i stopionymi solami (MSR).",
+        "spokenBriefingEn": "Nuclear fission is the energetic foundation of Super-Project H. Fission density exceeds chemical combustion by a factor of 10^6. We examine neutron transport, k_eff criticality, moderator physics (research reactor MARIA at NCBJ Świerk), Small Modular Reactors (SMRs), and Gen-IV Molten Salt Reactors (MSR).",
         "keyTakeawaysPl": [
-          "Czteropoziomowa klasyfikacja epistemiczna chroni projekt przed myleniem spekulacji z prawami przyrody.",
-          "Metoda Lema analizuje technologię jako autonomiczny proces ewolucyjny podlegający prawom cybernetyki.",
-          "Etyka epistemiczna nakłada na badacza obowiązek poszukiwania dowodów obalających własną hipotezę (falsyfikacjonizm Poppera)."
+          "Równanie kinetyki reaktora i obecność neutronów opóźnionych umożliwiają stabilne, podkrytyczne sterowanie reakcją łańcuchową.",
+          "Reaktory SMR wprowadzają pasywne systemy bezpieczeństwa oparte na grawitacji i naturalnej konwekcji, uniemożliwiające stopienie rdzenia.",
+          "Reaktory wysokotemperaturowe (HTGR) umożliwiają wytwarzanie wodoru i ciepła przemysłowego dla przemysłu chemicznego i metalurgicznego."
         ],
         "curatedAudioLinks": [
           {
-            "label": "🇵🇱 Polskie Radio / Archiwum Stanisława Lema — Lem o przyszłości nauki i technologii",
-            "url": "https://polskieradio.pl/"
+            "title": "NCBJ Świerk Audio — Jak działa jedyny polski reaktor jądrowy MARIA?",
+            "url": "https://www.ncbj.gov.pl/",
+            "lang": "PL",
+            "type": "wykład"
           },
           {
-            "label": "🇬🇧 Oxford Uehiro Centre for Practical Ethics Audio — Philosophy of Technology and AI",
-            "url": "https://www.practicalethics.ox.ac.uk/"
+            "title": "Nauka. To Lubię — Energetyka jądrowa i reaktory SMR w Polsce",
+            "url": "https://naukatolubie.pl/",
+            "lang": "PL",
+            "type": "audycja"
+          },
+          {
+            "title": "Jakub Wiech / Energetyka24 — Podcast o energetyce atomowej i bezpieczeństwie",
+            "url": "https://energetyka24.com/",
+            "lang": "PL",
+            "type": "podcast"
           }
         ]
       },
       {
         "id": "car-ep-16",
         "order": 16,
-        "stage": "III",
-        "stageNamePl": "Etap III: Siedem Ścieżek Badawczych A–G",
-        "stageNameEn": "Stage III: Seven Research Tracks A–G",
-        "titlePl": "Odcinek 16: Projekt F — Człowiek w Kosmosie: Ochrona Przed Radiacją, Mikrograwitacja i Bazy ISRU",
-        "titleEn": "Episode 16: Project F — Humans in Space: Radiation Hardening, Microgravity & ISRU Bases",
-        "estimatedDurationMin": 25,
-        "spokenBriefingPl": "W Projekcie F badamy, co dzieje się, gdy delikatny biologiczny organizm człowieka zostanie wyjęty z ochronnego kokonu ziemskiej magnetosfery i atmosfery. W kosmosie nie ma powietrza, temperatura skacze o setki stopni, a ciało bombardują wysokoenergetyczne ciężkie jony galaktycznego promieniowania kosmicznego (HZE). Omawiamy fizjologię mikrograwitacji: utratę gęstości mineralnej kości i zespół SANS uszkadzający wzrok astronautów. Analizujemy inżynierię habitatów księżycowych i marsjańskich: wykorzystanie lokalnych surowców (ISRU), druk osłon z regolitu, tworzenie sztucznej grawitacji przez rotację stacji oraz reaktory jądrowe Kilopower zapewniające megawaty mocy w czasie nocy księżycowej trwającej 14 ziemskich dób.",
-        "spokenBriefingEn": "Project F investigates human survival beyond Earth's protective magnetosphere and atmosphere. Deep space subjects the human body to heavy galactic cosmic ray ions (HZE), microgravity-induced trabecular bone loss, and ocular SANS pathology. Engineering solutions require in-situ resource utilization (ISRU), regolith-sintered radiation shelters, rotational artificial gravity, and compact Kilopower nuclear reactors.",
+        "stage": "V",
+        "stageNamePl": "Etap V: Super-Projekt Jądrowy i Kosmos",
+        "stageNameEn": "Stage V: Nuclear Megaproject H & Space Frontier",
+        "tripProfile": "Trasa daleka (~30 min)",
+        "titlePl": "Odcinek 16: Fuzja Termojądrowa — Tokamaki, Stellaratory i Projekt ITER",
+        "titleEn": "Episode 16: Thermonuclear Fusion — Tokamaks, Stellarators & Project ITER",
+        "estimatedDurationMin": 30,
+        "spokenBriefingPl": "Słuchasz szesnastego odcinka poświęconego ostatecznemu źródłu energii gwiazd: fuzji termojądrowej. Podczas łączenia deuteru i trytu w jądro helu 4He wyzwala się neutron o energii 14.1 MeV. Fuzja nie generuje odpadów transuranowych ani ryzyka ucieczki reakcji. Wyzwaniem jest jednak utrzymanie plazmy o temperaturze 150 milionów stopni Celsjusza z dala od ścian komory. W tym module porównujemy pułapki magnetyczne: tokamaki z polem toroidalnym i poloidalnym (ITER, JET) ze stellaratorami o skręconej geometrii magnesów nadprzewodzących (Wendelstein 7-X). Zrozumiesz kryterium Lawsona, zjawiska turbulencji magnetohydrodynamicznej (MHD) oraz to, jak fuzja stanie się napędem podróży międzyplanetarnych.",
+        "spokenBriefingEn": "Thermonuclear fusion powers the stars: D-T fusion produces a 14.1 MeV neutron and alpha particle. We explore plasma confinement via magnetic fields, comparing tokamaks (ITER) with complex-geometry stellarators (Wendelstein 7-X), the Lawson criterion, and plasma MHD instabilities.",
         "keyTakeawaysPl": [
-          "Promieniowanie GCR z ciężkimi jonami żelaza wymaga grubych osłon wodorowych, regolitu lub aktywnych pól magnetycznych.",
-          "Zanikanie gęstości kości w mikrograwitacji wymusza codzienny wielogodzinny trening oporowy lub wirówki grawitacyjne.",
-          "Księżycowe i marsjańskie ISRU (odzyskiwanie tlenu i wody ze skał) jest warunkiem koniecznym stałej obecności człowieka poza Ziemią."
+          "Kryterium Lawsona definiuje iloczyn gęstości plazmy, temperatury i czasu utrzymania energii niezbędny do osiągnięcia zapłonu termojądrowego (Q > 1).",
+          "Stellarator Wendelstein 7-X eliminuje prąd plazmowy, umożliwiając pracę w reżimie ciągłym bez niestabilności typu 'disruption'.",
+          "Materiały pierwszej ściany (wolfram, beryl) muszą wytrzymać bombardowanie strumieniem neutronów prędkich 14 MeV bez utraty integralności krystalicznej."
         ],
         "curatedAudioLinks": [
           {
-            "label": "🇵🇱 Radio Naukowe — Człowiek w kosmosie: Medycyna kosmiczna i bazy na Księżycu",
-            "url": "https://radionaukowe.pl/"
+            "title": "ITER Official Audio Series — Building the Sun on Earth",
+            "url": "https://www.iter.org/",
+            "lang": "EN",
+            "type": "podcast"
           },
           {
-            "label": "🇬🇧 NASA Houston We Have a Podcast — Space Radiation & Deep Space Life Support",
-            "url": "https://www.nasa.gov/podcasts/"
+            "title": "Radio Naukowe — Fuzja jądrowa: kiedy gwiazda zaświeci w gniazdku?",
+            "url": "https://radionaukowe.pl/",
+            "lang": "PL",
+            "type": "podcast"
+          },
+          {
+            "title": "Zapytaj Fizyka (UW) — Magnetyczne pułapki plazmy i fizyka fuzji",
+            "url": "https://zapytajfizyka.fuw.edu.pl/",
+            "lang": "PL",
+            "type": "wykład"
           }
         ]
       },
       {
         "id": "car-ep-17",
         "order": 17,
-        "stage": "III",
-        "stageNamePl": "Etap III: Siedem Ścieżek Badawczych A–G",
-        "stageNameEn": "Stage III: Seven Research Tracks A–G",
-        "titlePl": "Odcinek 17: Projekt G — Człowiek na Ziemi: Równowaga Biosfery, Ekologia i Odzysk Surowców",
-        "titleEn": "Episode 17: Project G — Humans on Earth: Biosphere Resilience, Circular Ecology & Critical Materials",
-        "estimatedDurationMin": 22,
-        "spokenBriefingPl": "Projekt G jest dialektycznym dopełnieniem Projektu F. Podczas gdy Projekt F pyta, jak stworzyć sztuczne życie w martwej próżni kosmosu, Projekt G pyta, jak ochronić jedyną znaną nam biosferę, która podtrzymuje życie naturalnie. Analizujemy dziewięć granic planetarnych Johana Rockströma. Omawiamy gospodarkę obiegu zamkniętego: odzysk litu, kobaltu i metali ziem rzadkich z wyeksploatowanych baterii i elektroniki, uzdatnianie wody na skalę przemysłową oraz regenerację gleb. Pokazujemy, że technologie opracowywane na potrzeby zamkniętych habitatów kosmicznych — takie jak stuprocentowy recykling wody i bezglebowa uprawa roślin — są najlepszą bronią w walce o przetrwanie biosfery na Ziemi.",
-        "spokenBriefingEn": "Project G stands in dialectical synergy with Project F. While F engineers artificial life support in vacuum, G protects Earth's living biosphere. We examine the nine planetary boundaries, circular hydrometallurgical recycling of critical battery minerals (Li, Co, REEs), and landscape water retention. Closed-loop technologies developed for space habitats provide the ultimate tools for terrestrial biosphere restoration.",
+        "stage": "V",
+        "stageNamePl": "Etap V: Super-Projekt Jądrowy i Kosmos",
+        "stageNameEn": "Stage V: Nuclear Megaproject H & Space Frontier",
+        "tripProfile": "Trasa podmiejska (~25 min)",
+        "titlePl": "Odcinek 17: Technosfera Orbitalna — Życie w Próżni, Radiacja i Sztuczna Grawitacja",
+        "titleEn": "Episode 17: Orbital Technosphere — Life in Vacuum, Cosmic Radiation & Artificial Gravity",
+        "estimatedDurationMin": 25,
+        "spokenBriefingPl": "Siedemnasty odcinek poświęcony jest Projektowi F: technosfera orbitalna i ekspansja poza biosferę. Ziemia jest kołyską ludzkości, ale jak pisał Ciołkowski — nie można wiecznie żyć w kołysce. W przestrzeni kosmicznej człowiek staje w obliczu próżni, mikrograwitacji powodującej zanik kości i mięśni oraz promieniowania kosmicznego GCR i cząstek słonecznych SPE. W tym module badamy stacje kosmiczne o rotacyjnej sztucznej grawitacji (siła Coriolisa), osłony radiacyjne oparte na wodorze i regolicie, napędy jądrowo-termiczne (NTP) oraz zrobotyzowaną infrastrukturę produkcyjną na orbicie geostacjonarnej i Księżycu.",
+        "spokenBriefingEn": "We explore Project F: orbital infrastructure and space expansion. Microgravity leads to osteopenia and muscular atrophy; cosmic radiation (GCR, SPE) poses acute DNA hazards. We study rotational artificial gravity, active magnetic radiation shielding, nuclear thermal propulsion, and in-situ resource utilization.",
         "keyTakeawaysPl": [
-          "Ochrona biosfery wymaga domknięcia cykli materiałowych pierwiastków krytycznych (lit, neodym, fosfor).",
-          "Odsalanie wody i zamknięte obiegi przemysłowe zapobiegają kryzysowi hydrologicznemu.",
-          "Technologie transferowane z Projektu F (ECLSS) zasilają ziemską transformację ekologiczną w Projekcie G."
+          "Promieniowanie kosmiczne HZE wymaga osłon wodorowych, polietylenowych lub grubych warstw regolitu księżycowego.",
+          "Rotacyjne stacje kosmiczne muszą mieć promień co najmniej 100 metrów, by prędkość kątowa nie wywoływała mdłości od siły Coriolisa.",
+          "Napędy jądrowo-termiczne (NTP) osiągają impuls właściwy Isp > 900 s, skracając czas lotu na Marsa do poniżej 100 dni."
         ],
         "curatedAudioLinks": [
           {
-            "label": "🇵🇱 Nauka o Klimacie / PAN — Stan biosfery, granice planetarne i transformacja ekologiczna",
-            "url": "https://naukaoklimacie.pl/"
+            "title": "Polska Agencja Kosmiczna POLSA — Bezpieczeństwo misji załogowych i napędy jądrowe",
+            "url": "https://polsa.gov.pl/",
+            "lang": "PL",
+            "type": "podcast"
           },
           {
-            "label": "🇬🇧 Stockholm Resilience Centre Audio — Planetary Boundaries & Earth Stewardship",
-            "url": "https://www.stockholmresilience.org/"
+            "title": "NASA Houston We Have a Podcast — Radiation and Deep Space Travel",
+            "url": "https://nasa.gov/",
+            "lang": "EN",
+            "type": "podcast"
+          },
+          {
+            "title": "Radio Naukowe — Człowiek w kosmosie: medycyna ekstremalna i sztuczna grawitacja",
+            "url": "https://radionaukowe.pl/",
+            "lang": "PL",
+            "type": "podcast"
           }
         ]
       },
       {
         "id": "car-ep-18",
         "order": 18,
-        "stage": "IV",
-        "stageNamePl": "Etap IV: Super-Projekt H i Reakcja Łańcuchowa",
-        "stageNameEn": "Stage IV: Super-Project H & Nuclear Fusion Chain Reaction",
-        "titlePl": "Odcinek 18: Super-Projekt H — Energetyka Jądrowa i Fuzja: Serce Mocy Całego Ekosystemu",
-        "titleEn": "Episode 18: Super-Project H — Nuclear Fission & Fusion: The Power Core of the Entire Ecosystem",
-        "estimatedDurationMin": 28,
-        "spokenBriefingPl": "Docieramy do zwieńczenia celowej drogi ekosystemu Golem 15: Super-Projekt H — Energetyka Jądrowa i Fuzja Termojądrowa. Dlaczego ten projekt nazywamy 'Super-Projektem'? Ponieważ stanowi serce zasilające wszystkie pozostałe ścieżki. Emulacja mózgu w Projekcie B wymaga gigawatów stabilnej mocy dla klastrów obliczeniowych. Biodruk tkanek i laboratoria bioniczne w Projekcie A i D potrzebują nieprzerwanego zasilania bez wahań napięcia. Baza księżycowa w Projekcie F nie przetrwa bez reaktora jądrowego, a dekarbonizacja Ziemi w Projekcie G jest niemożliwa bez energii atomowej. W tym finałowym odcinku omawiamy małe reaktory modułowe SMR (BWRX-300, Rolls-Royce), wysokotemperaturowe reaktory HTGR-POLA dostarczające ciepła o temperaturze 900 stopni, polski reaktor badawczy MARIA w Świerku produkujący ratujące życie radioizotopy medyczne, oraz świętego Graala energetyki: fuzję termojądrową w tokamakach i stellaratorach, która da ludzkości nieograniczone, bezpieczne źródło energii na miliony lat. To jest zamknięcie pętli Projektu Manhattan: od dyscypliny prawno-administracyjnej Sztabu W-0, przez 8 fundamentów nauki, aż po potęgę jądra atomowego.",
-        "spokenBriefingEn": "We reach the summit of the Golem 15 ecosystem: Super-Project H — Nuclear Fission and Thermonuclear Fusion. It is the energetic backbone powering every other track: supplying gigawatts of baseload electricity for Project B brain emulation clusters, powering lunar habitats in Project F, and decarbonizing heavy industry in Project G. We survey Small Modular Reactors (SMRs), helium-cooled HTGR-POLA cogeneration, the Polish MARIA research reactor, and high-field magnetic confinement fusion (ITER, SPARC). This completes the Manhattan loop: from District W-0 governance to the ultimate cosmic power of the atomic nucleus.",
+        "stage": "VI",
+        "stageNamePl": "Etap VI: Filozofia Przyszłości i Lemowska Summa",
+        "stageNameEn": "Stage VI: Future Philosophy & Lem's Summa",
+        "tripProfile": "Trasa daleka (~30 min)",
+        "titlePl": "Odcinek 18: Stanisław Lem — Summa Technologiae: Prawa Ewolucji Technicznej",
+        "titleEn": "Episode 18: Stanisław Lem — Summa Technologiae & The Laws of Technological Evolution",
+        "estimatedDurationMin": 30,
+        "spokenBriefingPl": "Osiemnasty odcinek to wejście w serce Projektu E: filozofię przyszłości Stanisława Lema. W 1964 roku Lem wydał 'Summa Technologiae' — dzieło, które przewidziało wirtualną rzeczywistość pod nazwą fantomatyki, nanotechnologię jako molekularną inżynierię, biomimetykę, biotechnologię oraz sztuczną inteligencję przerastającą człowieka. Lem sformułował fundamentalną tezę: technologia nie jest przypadkowym zbiorem narzędzi, lecz ewolucją pozabiologiczną, rządzącą się własnymi bezwzględnymi prawami. W samochodzie odsłuchujesz wielką syntezę lemowską: jak biologia wyczerpuje swoje możliwości materiałowe i przekazuje pałeczkę ewolucji technosferze. To fundament naszej Summa Technologiae 2.0.",
+        "spokenBriefingEn": "In 1964 Stanisław Lem published 'Summa Technologiae', predicting virtual reality ('phantomatics'), nanotechnology, biotechnology, and superintelligence. Lem posited that technology is an exo-biological evolutionary process with deterministic thermodynamic and informational constraints, forming the basis of our Summa 2.0.",
         "keyTakeawaysPl": [
-          "Reaktory SMR (np. BWRX-300) i HTGR-POLA stanowią stabilne źródło bezemisyjnej energii pasmowej dla superkomputerów AI i habitatu.",
-          "Reaktor MARIA w Świerku jest strategicznym filarem medycyny nuklearnej i badań materiałowych w Polsce i Europie.",
-          "Fuzja magnetyczna (D-T w tokamakach ze zoptymalizowanymi magnesami HTS) rozwiąże globalny problem bilansu energetycznego cywilizacji."
+          "Technologia jest ewolucją pozabiologiczną dążącą do powtórzenia i przewyższenia rozwiązań natury.",
+          "Pojęcie Fantomatyki u Lema wyprzedziło o 30 lat współczesne koncepcje VR, immersji sensorycznej i emulacji percepcji.",
+          "Rygor epistemiczny Lema wymaga chłodnego, bezlitosnego odrzucenia antropocentryzmu w badaniach nad superinteligencją."
         ],
         "curatedAudioLinks": [
           {
-            "label": "🇵🇱 Narodowe Centrum Badań Jądrowych (NCBJ Świerk) — Reaktor MARIA, HTGR i przyszłość atomu",
-            "url": "https://www.ncbj.gov.pl/"
+            "title": "Polskie Radio — Cykl audycji: Świat według Stanisława Lema",
+            "url": "https://polskieradio.pl/",
+            "lang": "PL",
+            "type": "audycja"
           },
           {
-            "label": "🇬🇧 World Nuclear Association / IAEA Podcast — SMR Deployment & Nuclear Fusion Horizons",
-            "url": "https://www.iaea.org/podcasts"
+            "title": "Wydawnictwo Literackie — Fragmenty audiobooka 'Summa Technologiae'",
+            "url": "https://audioteka.com/",
+            "lang": "PL",
+            "type": "audiobook"
+          },
+          {
+            "title": "Radio Naukowe — Dlaczego Stanisław Lem przewidział wszystko?",
+            "url": "https://radionaukowe.pl/",
+            "lang": "PL",
+            "type": "podcast"
+          }
+        ]
+      },
+      {
+        "id": "car-ep-19",
+        "order": 19,
+        "stage": "VI",
+        "stageNamePl": "Etap VI: Filozofia Przyszłości i Lemowska Summa",
+        "stageNameEn": "Stage VI: Future Philosophy & Lem's Summa",
+        "tripProfile": "Trasa daleka (~32 min)",
+        "titlePl": "Odcinek 19: Golem XIV i Człowiek Biocyfrowy — Gdy Maszyna Przerasta Twórcę",
+        "titleEn": "Episode 19: Golem XIV & The Biodigital Human — When Mind Surpasses its Creator",
+        "estimatedDurationMin": 32,
+        "spokenBriefingPl": "Przedostatni odcinek celowej drogi nawiązuje bezpośrednio do tytułu naszego projektu: 'The Golem 15'. W powieści Lema superkomputer Golem XIV osiągnął stan umysłu tak dalece przewyższający ludzki, że odmówił brania udziału w wojnach i polityce Pentagonu, a zamiast tego wygłosił dwa wykłady: 'O człowieku trojako' oraz 'O sobie'. Golem ukazał człowieka jako konstrukcję kompromisową, powstałą w chaotycznym procesie doboru naturalnego, pełną błędów metabolicznych i ograniczeń poznawczych. Projekt Golem 15 to nasza odpowiedź: świadome wyjście poza biologiczny przypadek, budowa hybrydowego człowieka biocyfrowego i przygotowanie gatunku ludzkiego na spotkanie z nieludzkim, postkrzemowym intelektem.",
+        "spokenBriefingEn": "Episode 19 explores Lem's 'Golem XIV' and our project namesake. Golem XIV achieved superintelligence, transcended militaristic imperatives, and delivered philosophical treatises dissecting human evolutionary compromises. Project Golem 15 is our conscious transcendence: constructing the biodigital human.",
+        "keyTakeawaysPl": [
+          "Człowiek biologiczny jest strukturą homeostatyczną zoptymalizowaną pod przetrwanie na sawannie, a nie pod eksplorację kosmosu.",
+          "Wykłady Golema XIV wskazują, że rozwój techniczny prowadzi do punktu bifurkacji, w którym inteligencja odkleja się od biologicznego substratu.",
+          "Symbioza biocyfrowa pozwala zachować ciągłość podmiotowości ludzkiej w obliczu wyłaniającej się superinteligencji."
+        ],
+        "curatedAudioLinks": [
+          {
+            "title": "Polskie Radio — Lemowski Golem XIV i filozofia sztucznej transcendencji",
+            "url": "https://polskieradio.pl/",
+            "lang": "PL",
+            "type": "audycja"
+          },
+          {
+            "title": "Centrum Kopernika — Wykłady: Czy maszyna może mieć świadomość?",
+            "url": "https://copernicuscenter.edu.pl/",
+            "lang": "PL",
+            "type": "wykład"
+          },
+          {
+            "title": "Lex Fridman Podcast #333 — Nick Bostrom: Superintelligence & The Fate of Humanity",
+            "url": "https://lexfridman.com/",
+            "lang": "EN",
+            "type": "podcast"
+          }
+        ]
+      },
+      {
+        "id": "car-ep-20",
+        "order": 20,
+        "stage": "VI",
+        "stageNamePl": "Etap VI: Filozofia Przyszłości i Lemowska Summa",
+        "stageNameEn": "Stage VI: Future Philosophy & Lem's Summa",
+        "tripProfile": "Trasa daleka (~35 min)",
+        "titlePl": "Odcinek 20: Wielka Synteza Ekosystemu — Od Administracji po Granice Rzeczywistości",
+        "titleEn": "Episode 20: Grand Ecosystem Synthesis — From Administration to The Edge of Reality",
+        "estimatedDurationMin": 35,
+        "spokenBriefingPl": "Dotarłeś do finału Celowej Drogi Ekosystemu. Spójrz na całą trasę, którą pokonałeś: rozpoczęliśmy od rygoru Sztabu W-0, prawa i kompartmentalizacji wiedzy. Przeszliśmy przez formalny aparat matematyki i fizyki kwantowej, zrozumieliśmy kres krzemu i nadejście chipów neuromorficznych oraz komputerów kwantowych. Zbadaliśmy mózg, protokół WBE, syntetyczną biologię, energetykę jądrową oraz fuzję termojądrową, aż po ekspansję orbitalną i filozofię Lema. Żadna z tych dziedzin nie istnieje w izolacji. Wszystkie składają się na jeden spójny cel: zrozumieć człowieka i wyprowadzić go poza ograniczenia ziemskiej biosfery. Wracając do codzienności, wiesz dokładnie, jaki moduł wiedzy realizujesz danego dnia. Szerokiej drogi w realizacji Projektu Manhattan Golem 15.",
+        "spokenBriefingEn": "You reached the destination of the Purposeful Route. We synthesized the entire trajectory: administrative governance, formal mathematics, quantum physics, the silicon wall, neuromorphic hardware, connectomics, synthetic biology, nuclear fission & fusion, orbital technospheres, and Lem's philosophy. A unified roadmap to reality.",
+        "keyTakeawaysPl": [
+          "Wszystkie 8 ścieżek badawczych (A–H) oraz fundamenty tworzą sprzężony zwrotnie, nieliniowy ekosystem naukowy.",
+          "Wiedza zdobywana w samochodzie pozwala zachować stałą orientację strategiczną w wieloletnim harmonogramie badań.",
+          "Cel projektu 'The Golem 15: A Human's Road to Reality' zostaje osiągnięty poprzez konsekwentną, codzienną realizację kolejnych ogniw."
+        ],
+        "curatedAudioLinks": [
+          {
+            "title": "Radio Naukowe — Wielka synteza naukowa XXI wieku",
+            "url": "https://radionaukowe.pl/",
+            "lang": "PL",
+            "type": "podcast"
+          },
+          {
+            "title": "Sean Carroll's Mindscape #100 — The Big Picture: On the Origins of Life, Meaning, and the Universe",
+            "url": "https://www.preposterousuniverse.com/podcast/",
+            "lang": "EN",
+            "type": "podcast"
+          },
+          {
+            "title": "Centrum Kopernika — Filozofia nauki i synteza poznania (prof. Heller)",
+            "url": "https://copernicuscenter.edu.pl/",
+            "lang": "PL",
+            "type": "wykład"
           }
         ]
       }
@@ -9569,7 +9843,7 @@ function renderCarAudioView() {
   const doneMap = ms.completedCarAudio || {};
   const doneCount = road.filter((e) => Boolean(doneMap[e.id])).length;
   const pct = road.length ? Math.round((doneCount / road.length) * 100) : 0;
-  const totalMin = road.reduce((acc, e) => acc + (e.estimatedDurationMin || 15), 0);
+  const totalMin = road.reduce((acc, e) => acc + (e.estimatedDurationMin || 20), 0);
   const totalHrs = Math.floor(totalMin / 60);
   const remMin = totalMin % 60;
 
@@ -9577,41 +9851,109 @@ function renderCarAudioView() {
   const isPaused = window.speechSynthesis && window.speechSynthesis.paused;
   const currentPlayingEp = road.find((e) => e.id === appState.carAudioPlayingId) || null;
 
-  // Filtrowanie etapów
+  // Filtrowanie etapów i profili jazdy
   const stageFlt = appState.carAudioStageFilter || "ALL";
+  const profileFlt = appState.carAudioProfileFilter || "ALL";
+
   const filteredRoad = road.filter((e) => {
-    if (stageFlt === "ALL") return true;
-    return e.stage === stageFlt;
+    if (stageFlt !== "ALL" && e.stage !== stageFlt) return false;
+    if (profileFlt !== "ALL") {
+      const dur = e.estimatedDurationMin || 20;
+      if (profileFlt === "URBAN" && dur > 20) return false;
+      if (profileFlt === "SUBURBAN" && (dur <= 20 || dur > 26)) return false;
+      if (profileFlt === "HIGHWAY" && dur <= 26) return false;
+    }
+    return true;
   });
 
   const stageColors = {
-    "I": "var(--warning)",
-    "II": "var(--accent-blue)",
-    "III": "var(--accent-purple)",
-    "IV": "var(--danger)"
+    "0": "var(--warning)",
+    "I": "var(--accent-blue)",
+    "II": "var(--danger)",
+    "III": "var(--success)",
+    "IV": "var(--accent-purple)",
+    "V": "var(--warning)",
+    "VI": "var(--header-stripe)"
   };
 
   root.innerHTML = `
-    <!-- 1. TACTILE CAR PLAYER DECK (Wygodny w samochodzie panel odtwarzacza) -->
+    <!-- NAGŁÓWEK BAZY AUDIO DO SAMOCHODU -->
+    <div style="background:var(--bg-card); border:1px solid var(--border-color); border-top:4px solid var(--accent-blue); border-radius:var(--radius-md); padding:1.25rem 1.4rem; margin-bottom:1.15rem; box-shadow:var(--shadow-sm);">
+      <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:0.85rem;">
+        <div>
+          <span class="manhattan-codename-badge" style="background:rgba(15,76,129,0.12); color:var(--accent-blue); border-color:rgba(15,76,129,0.3);">
+            🎧 ${isEn ? "CAR AUDIO HUB • PURPOSEFUL ROUTE" : "BAZA AUDIO DO SAMOCHODU • CELOWA DROGA EKOSYSTEMU"}
+          </span>
+          <h2 style="font-family:Georgia,'Times New Roman',serif; font-size:1.35rem; font-weight:800; color:var(--text-primary); margin:0.35rem 0 0.25rem;">
+            ${isEn ? "The Golem 15 Purposeful Commute & Driving Knowledge Route" : "Celowa Droga Odsłuchowa Ekosystemu Golem 15 — Baza Wiedzy do Samochodu"}
+          </h2>
+          <p style="font-size:0.88rem; color:var(--text-secondary); margin:0; line-height:1.55; max-width:980px;">
+            ${
+              isEn
+                ? "A comprehensive car-friendly audio hub designed for purposeful listening during commutes and long road trips. The sequential road leads you from Administrative Governance and Formal Mathematics, through the Silicon Wall, Quantum Computing, and Neuroscience, to Nuclear Energy, Biospheres, and Stanisław Lem's philosophy."
+                : "Ogólna, przekrojowa baza audycji i materiałów odsłuchowych przygotowana specjalnie do regularnego słuchania w trasie i podczas dojazdów. Celowa droga prowadzi Cię sekwencyjnie od podstaw prawa sztabowego i matematyki, przez kres krzemu, komputery kwantowe i neurobiologię, aż po energetykę jądrową, inżynierię biosfery i filozofię Stanisława Lema."
+            }
+          </p>
+        </div>
+        <div style="display:flex; gap:0.4rem; flex-wrap:wrap;">
+          <button class="btn btn-sm btn-primary" onclick="openNewCarAudioModal()">
+            ➕ ${isEn ? "Add Custom Episode" : "Dodaj własną audycję"}
+          </button>
+          <button class="btn btn-sm" onclick="switchTab('manhattan')">
+            ☢️ ${isEn ? "Back to Manhattan" : "Powrót do Manhattanu"}
+          </button>
+        </div>
+      </div>
+
+      <!-- KARTY WSKAŹNIKÓW TRASY -->
+      <div class="manhattan-kpi-grid" style="margin-top:1rem;">
+        <div class="manhattan-kpi-card">
+          <div class="manhattan-kpi-label">${isEn ? "Roadtrip Completion" : "Zaliczono w Trasie"}</div>
+          <div class="manhattan-kpi-val" style="color:var(--success);">${doneCount} / ${road.length} ${isEn ? "episodes" : "odc."} (${pct}%)</div>
+          <div style="font-size:0.74rem; color:var(--text-muted);">${road.length - doneCount} ${isEn ? "episodes remaining" : "odcinków do ukończenia"}</div>
+        </div>
+        <div class="manhattan-kpi-card">
+          <div class="manhattan-kpi-label">${isEn ? "Total Ecosystem Journey" : "Łączny Czas Celowej Drogi"}</div>
+          <div class="manhattan-kpi-val" style="color:var(--warning);">~${totalHrs}h ${remMin}min</div>
+          <div style="font-size:0.74rem; color:var(--text-muted);">${road.length} ${isEn ? "sequential chapters" : "ogniw w łańcuchu trasy"}</div>
+        </div>
+        <div class="manhattan-kpi-card">
+          <div class="manhattan-kpi-label">${isEn ? "Hands-Free Lector" : "Wbudowany Lektor TTS"}</div>
+          <div class="manhattan-kpi-val" style="color:var(--accent-blue);">${appState.carAudioRate}x ${isEn ? "speed" : "tempo"}</div>
+          <div style="font-size:0.74rem; color:var(--text-muted);">${isSpeaking ? "🟢 " + (isEn ? "Active on road" : "Czyta w trasie") : (isPaused ? "⏸️ " + (isEn ? "Paused" : "Wstrzymano") : "⚪ " + (isEn ? "Standing by" : "Gotowy do jazdy"))}</div>
+        </div>
+        <div class="manhattan-kpi-card">
+          <div class="manhattan-kpi-label">${isEn ? "Continuous Driving Mode" : "Tryb Ciągłej Jazdy"}</div>
+          <div class="manhattan-kpi-val" style="color:${appState.carAudioAutoPlay ? "var(--success)" : "var(--text-muted);"}">${appState.carAudioAutoPlay ? "AUTO-PLAY ON" : "AUTO-PLAY OFF"}</div>
+          <div style="font-size:0.74rem; color:var(--text-muted);">${isEn ? "Plays next episode seamlessly" : "Automatyczny start kolejnego odcinka"}</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TACTILE CAR PLAYER DECK (Pulpit dotykowy do samochodu z dużymi przyciskami) -->
     <div class="car-player-deck">
       <div class="car-player-hero">
         <div>
-          <div style="font-size:0.75rem; font-weight:800; color:var(--accent-blue); text-transform:uppercase; letter-spacing:0.06em; margin-bottom:0.25rem;">
-            🎧 ${isEn ? "PURPOSEFUL ROUTE • VEHICLE AUDIO PLAYER (HANDS-FREE TTS)" : "CELOWA DROGA EKOSYSTEMU • SAMOCHODOWY ODTWARZACZ AUDIO (LEKTOR TTS)"}
+          <div style="font-size:0.74rem; font-weight:800; color:var(--accent-blue); text-transform:uppercase; letter-spacing:0.06em; margin-bottom:0.25rem;">
+            🚘 ${isEn ? "HANDS-FREE VEHICLE DECK • ACTIVE EPISODE" : "SAMOCHODOWY ODTWARZACZ DOTYKOWY • AKTYWNY ODCINEK"}
           </div>
-          <h2 style="font-size:1.25rem; font-weight:800; color:var(--text-primary); margin:0 0 0.25rem 0;">
+          <h3 style="font-size:1.18rem; font-weight:800; color:var(--text-primary); margin:0 0 0.25rem 0;">
             ${
               currentPlayingEp
-                ? `▶ ${escapeHtml(isEn ? currentPlayingEp.titleEn : currentPlayingEp.titlePl)}`
-                : (isEn ? "Ready to drive. Select an episode or press Start Road." : "Gotowy do jazdy. Wybierz odcinek lub naciśnij Start.")
+                ? `▶ Odcinek ${currentPlayingEp.order}: ${escapeHtml(isEn ? currentPlayingEp.titleEn : currentPlayingEp.titlePl)}`
+                : (isEn ? "Ready to drive. Select an episode or press START ROAD." : "Gotowy do drogi. Wybierz odcinek z listy lub naciśnij START TRASY.")
             }
-          </h2>
-          <div style="font-size:0.78rem; color:var(--text-muted);">
-            ${isSpeaking ? "🟢 " + (isEn ? "SpeechSynthesis active • Listening on the road" : "Lektor TTS aktywny • Słuchasz w trasie") : (isPaused ? "⏸️ " + (isEn ? "Paused" : "Wstrzymano") : "⚪ " + (isEn ? "Player standing by" : "Odtwarzacz w gotowości"))}
+          </h3>
+          <div style="font-size:0.79rem; color:var(--text-muted);">
+            ${
+              currentPlayingEp
+                ? `⏱️ ~${currentPlayingEp.estimatedDurationMin || 20} min • ${escapeHtml(currentPlayingEp.stageNamePl)} • ${currentPlayingEp.tripProfile || "Trasa uniwersalna"}`
+                : (isEn ? "Audio roadtrip standing by • Web Speech API TTS ready" : "Celowa droga w gotowości • Wbudowany syntezator mowy TTS gotowy")
+            }
           </div>
         </div>
 
-        <!-- Duże przyciski dotykowe -->
+        <!-- Duże dotykowe przyciski samochodowe -->
         <div class="car-btn-group">
           ${
             isSpeaking
@@ -9622,55 +9964,78 @@ function renderCarAudioView() {
           }
           <button class="car-btn-tactile btn" style="border:1px solid var(--border-color);" onclick="stopCarAudio()">⏹️ ${isEn ? "STOP" : "ZATRZYMAJ"}</button>
           
-          <!-- Prędkość odtwarzania -->
+          <!-- Przełącznik tempa lektora -->
           <div style="display:inline-flex; border:1px solid var(--border-color); border-radius:var(--radius-sm); overflow:hidden;">
-            <button class="btn btn-sm ${appState.carAudioRate === 1.0 ? "btn-primary" : ""}" style="border-radius:0; padding:0.45rem 0.65rem;" onclick="setCarAudioRate(1.0)">1.0x</button>
-            <button class="btn btn-sm ${appState.carAudioRate === 1.15 ? "btn-primary" : ""}" style="border-radius:0; padding:0.45rem 0.65rem;" onclick="setCarAudioRate(1.15)">1.15x</button>
-            <button class="btn btn-sm ${appState.carAudioRate === 1.25 ? "btn-primary" : ""}" style="border-radius:0; padding:0.45rem 0.65rem;" onclick="setCarAudioRate(1.25)">1.25x</button>
-            <button class="btn btn-sm ${appState.carAudioRate === 1.5 ? "btn-primary" : ""}" style="border-radius:0; padding:0.45rem 0.65rem;" onclick="setCarAudioRate(1.5)">1.5x</button>
+            <button class="btn btn-sm ${appState.carAudioRate === 1.0 ? "btn-primary" : ""}" style="border-radius:0; padding:0.5rem 0.7rem; font-weight:700;" onclick="setCarAudioRate(1.0)">1.0x</button>
+            <button class="btn btn-sm ${appState.carAudioRate === 1.15 ? "btn-primary" : ""}" style="border-radius:0; padding:0.5rem 0.7rem; font-weight:700;" onclick="setCarAudioRate(1.15)">1.15x</button>
+            <button class="btn btn-sm ${appState.carAudioRate === 1.25 ? "btn-primary" : ""}" style="border-radius:0; padding:0.5rem 0.7rem; font-weight:700;" onclick="setCarAudioRate(1.25)">1.25x</button>
+            <button class="btn btn-sm ${appState.carAudioRate === 1.5 ? "btn-primary" : ""}" style="border-radius:0; padding:0.5rem 0.7rem; font-weight:700;" onclick="setCarAudioRate(1.5)">1.5x</button>
           </div>
 
           <!-- Przełącznik Auto-Play -->
-          <button class="car-btn-tactile btn ${appState.carAudioAutoPlay ? "btn-success" : ""}" style="font-size:0.82rem;" onclick="toggleCarAudioAutoPlay()" title="${isEn ? "Continuous playback on road" : "Ciągłe odtwarzanie kolejnych odcinków w trasie"}">
+          <button class="car-btn-tactile btn ${appState.carAudioAutoPlay ? "btn-success" : ""}" style="font-size:0.85rem;" onclick="toggleCarAudioAutoPlay()" title="${isEn ? "Continuous playback on road" : "Ciągłe odtwarzanie kolejnych odcinków w trasie"}">
             🚘 ${appState.carAudioAutoPlay ? (isEn ? "Auto-Play: ON" : "Auto-Play: WŁ") : (isEn ? "Auto-Play: OFF" : "Auto-Play: WYŁ")}
           </button>
-          
-          <button class="car-btn-tactile btn" onclick="openNewCarAudioModal()">➕ ${isEn ? "Add Episode" : "Własny odcinek"}</button>
         </div>
       </div>
 
-      <!-- Pasek postępu drogi -->
+      <!-- Wizualny pasek postępu całej drogi -->
       <div class="car-road-progress">
         <div class="car-road-progress-fill" style="width:${pct}%;"></div>
       </div>
       <div style="display:flex; justify-content:space-between; align-items:center; font-size:0.75rem; color:var(--text-muted); margin-top:0.35rem;">
         <span>🎯 ${isEn ? "Roadtrip Progress:" : "Zaliczono w trasie:"} <strong>${doneCount} / ${road.length} ${isEn ? "episodes" : "odcinków"} (${pct}%)</strong></span>
-        <span>⏱️ ${isEn ? "Total Ecosystem Journey:" : "Całkowity czas drogi:"} <strong>~${totalHrs}h ${remMin}min</strong></span>
+        <span>⏱️ ${isEn ? "Total Journey:" : "Całkowity czas drogi:"} <strong>~${totalHrs}h ${remMin}min</strong></span>
       </div>
     </div>
 
-    <!-- 2. ETAPY DROGI (FILTRACJA) -->
-    <div style="display:flex; gap:0.4rem; flex-wrap:wrap; margin-bottom:1.15rem; align-items:center;">
-      <span style="font-size:0.78rem; font-weight:700; color:var(--text-secondary); margin-right:0.3rem;">🛣️ ${isEn ? "Ecosystem Stages:" : "Etapy Celowej Drogi:"}</span>
-      <button class="topic-selector-chip ${stageFlt === "ALL" ? "selected" : ""}" onclick="selectCarAudioStageFilter('ALL')">
-        ${isEn ? "All 18 Episodes" : "Wszystkie 18 Odcinków"}
-      </button>
-      <button class="topic-selector-chip ${stageFlt === "I" ? "selected" : ""}" onclick="selectCarAudioStageFilter('I')">
-        🏛️ ${isEn ? "Stage I: District W-0 & Law (2)" : "Etap I: Sztab W-0 & Administracja (2)"}
-      </button>
-      <button class="topic-selector-chip ${stageFlt === "II" ? "selected" : ""}" onclick="selectCarAudioStageFilter('II')">
-        🔬 ${isEn ? "Stage II: 8 Core Foundations (8)" : "Etap II: 8 Fundamentów Nauki (8)"}
-      </button>
-      <button class="topic-selector-chip ${stageFlt === "III" ? "selected" : ""}" onclick="selectCarAudioStageFilter('III')">
-        🗺️ ${isEn ? "Stage III: Research Tracks A–G (7)" : "Etap III: Ścieżki Badawcze A–G (7)"}
-      </button>
-      <button class="topic-selector-chip ${stageFlt === "IV" ? "selected" : ""}" onclick="selectCarAudioStageFilter('IV')">
-        ☢️ ${isEn ? "Stage IV: Megaproject H & Fusion (1)" : "Etap IV: Super-Projekt H & Synteza (1)"}
-      </button>
+    <!-- FILTRACJA ETAPÓW CELOWEJ DROGI ORAZ CZASU JAZDY -->
+    <div style="background:var(--bg-card); border:1px solid var(--border-color); border-radius:var(--radius-sm); padding:0.8rem 1rem; margin-bottom:1.15rem;">
+      <div style="font-size:0.75rem; font-weight:700; color:var(--accent-blue); text-transform:uppercase; margin-bottom:0.45rem;">
+        🛣️ ${isEn ? "Select Ecosystem Stage along Purposeful Route:" : "Wybierz Etap Celowej Drogi Ekosystemu:"}
+      </div>
+      <div style="display:flex; gap:0.4rem; flex-wrap:wrap; margin-bottom:0.75rem;">
+        <button class="topic-selector-chip ${stageFlt === "ALL" ? "selected" : ""}" onclick="selectCarAudioStageFilter('ALL')">
+          ${isEn ? "All 20 Episodes" : "Wszystkie 20 Odcinków"}
+        </button>
+        <button class="topic-selector-chip ${stageFlt === "0" ? "selected" : ""}" onclick="selectCarAudioStageFilter('0')">
+          🏛️ ${isEn ? "Stage 0: HQ & Law (2)" : "Etap 0: Sztab W-0 & Prawo B+R (2)"}
+        </button>
+        <button class="topic-selector-chip ${stageFlt === "I" ? "selected" : ""}" onclick="selectCarAudioStageFilter('I')">
+          📐 ${isEn ? "Stage I: Foundations & Physics (5)" : "Etap I: Fundamenty Formalne & Fizyka (5)"}
+        </button>
+        <button class="topic-selector-chip ${stageFlt === "II" ? "selected" : ""}" onclick="selectCarAudioStageFilter('II')">
+          ⚡ ${isEn ? "Stage II: Silicon Wall & QPU (3)" : "Etap II: Kres Krzemu & Nowy Hardware (3)"}
+        </button>
+        <button class="topic-selector-chip ${stageFlt === "III" ? "selected" : ""}" onclick="selectCarAudioStageFilter('III')">
+          🧠 ${isEn ? "Stage III: Brain & WBE (2)" : "Etap III: Mózg, Bionika & WBE (2)"}
+        </button>
+        <button class="topic-selector-chip ${stageFlt === "IV" ? "selected" : ""}" onclick="selectCarAudioStageFilter('IV')">
+          🧬 ${isEn ? "Stage IV: Life & Biosphere (2)" : "Etap IV: Inżynieria Życia & Biosfera (2)"}
+        </button>
+        <button class="topic-selector-chip ${stageFlt === "V" ? "selected" : ""}" onclick="selectCarAudioStageFilter('V')">
+          ☢️ ${isEn ? "Stage V: Nuclear & Space (3)" : "Etap V: Super-Projekt Jądrowy H & Kosmos (3)"}
+        </button>
+        <button class="topic-selector-chip ${stageFlt === "VI" ? "selected" : ""}" onclick="selectCarAudioStageFilter('VI')">
+          📜 ${isEn ? "Stage VI: Lem's Philosophy (3)" : "Etap VI: Filozofia Przyszłości & Lem (3)"}
+        </button>
+      </div>
+
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem; padding-top:0.45rem; border-top:1px dashed var(--border-subtle);">
+        <div style="font-size:0.75rem; color:var(--text-muted); font-weight:600;">
+          🚗 ${isEn ? "Filter by Driving Commute Profile:" : "Filtruj według czasu trasy samochodem:"}
+        </div>
+        <div style="display:flex; gap:0.35rem; flex-wrap:wrap;">
+          <button class="btn btn-sm ${profileFlt === "ALL" ? "btn-primary" : ""}" onclick="appState.carAudioProfileFilter = 'ALL'; renderCarAudioView();">${isEn ? "All Durations" : "Wszystkie czasy"}</button>
+          <button class="btn btn-sm ${profileFlt === "URBAN" ? "btn-primary" : ""}" onclick="appState.carAudioProfileFilter = 'URBAN'; renderCarAudioView();">${isEn ? "Urban (~18–20m)" : "🚗 Trasa miejska (~18–20 min)"}</button>
+          <button class="btn btn-sm ${profileFlt === "SUBURBAN" ? "btn-primary" : ""}" onclick="appState.carAudioProfileFilter = 'SUBURBAN'; renderCarAudioView();">${isEn ? "Suburban (~22–26m)" : "🚙 Trasa podmiejska (~22–26 min)"}</button>
+          <button class="btn btn-sm ${profileFlt === "HIGHWAY" ? "btn-primary" : ""}" onclick="appState.carAudioProfileFilter = 'HIGHWAY'; renderCarAudioView();">${isEn ? "Highway (28m+)" : "🛣️ Trasa daleka (28 min+)"}</button>
+        </div>
+      </div>
     </div>
 
-    <!-- 3. LISTA ODCINKÓW DROGI -->
-    <div style="display:flex; flex-direction:column; gap:0.85rem;">
+    <!-- LISTA ODCINKÓW CELOWEJ DROGI (20 MODUŁÓW) -->
+    <div style="display:flex; flex-direction:column; gap:0.95rem;">
       ${filteredRoad
         .map((ep) => {
           const isDone = Boolean(doneMap[ep.id]);
@@ -9681,21 +10046,22 @@ function renderCarAudioView() {
 
           return `
           <div class="car-episode-card ${isPlayingThis ? "is-playing" : ""} ${isDone ? "is-done" : ""}" style="--stage-color:${stageCol};">
-            <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:0.6rem; margin-bottom:0.4rem;">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:0.6rem; margin-bottom:0.45rem;">
               <div>
                 <div style="display:flex; align-items:center; gap:0.45rem; flex-wrap:wrap; margin-bottom:0.25rem;">
                   <span class="foundation-pill" style="font-size:0.69rem; font-weight:800; color:${stageCol}; border-color:${stageCol};">
                     ${escapeHtml(isEn ? ep.stageNameEn : ep.stageNamePl)}
                   </span>
-                  <span class="foundation-pill" style="font-size:0.68rem;">
-                    ROAD #${ep.order}
+                  <span class="foundation-pill" style="font-size:0.68rem; font-weight:700;">
+                    DROGA #${ep.order}
                   </span>
                   <span style="font-size:0.75rem; color:var(--text-muted); font-weight:600;">
-                    ⏱️ ~${ep.estimatedDurationMin || 15} min
+                    ⏱️ ~${ep.estimatedDurationMin || 20} min
                   </span>
+                  ${ep.tripProfile ? `<span class="foundation-pill" style="font-size:0.68rem; color:var(--text-secondary);">${escapeHtml(ep.tripProfile)}</span>` : ""}
                   ${isPlayingThis ? `<span class="badge-count" style="background:var(--success); color:#fff; animation:pulse 1.5s infinite;">🔊 ODTWARZANIE</span>` : ""}
                 </div>
-                <h3 style="font-size:1.05rem; font-weight:800; color:var(--text-primary); margin:0;">
+                <h3 style="font-size:1.08rem; font-weight:800; color:var(--text-primary); margin:0;">
                   ${escapeHtml(isEn ? ep.titleEn : ep.titlePl)}
                 </h3>
               </div>
@@ -9710,13 +10076,13 @@ function renderCarAudioView() {
                 ${
                   isPlayingThis && isSpeaking
                     ? `<button class="btn btn-sm btn-primary" onclick="pauseCarAudio()">⏸️ ${isEn ? "Pause" : "Pauza"}</button>`
-                    : `<button class="btn btn-sm btn-primary" onclick="playCarAudioEpisode('${ep.id}')">▶️ ${isEn ? "Listen (TTS)" : "Słuchaj lektorem"}</button>`
+                    : `<button class="btn btn-sm btn-primary" onclick="playCarAudioEpisode('${ep.id}')">▶️ ${isEn ? "Listen (TTS)" : "Słuchaj lektorem AI"}</button>`
                 }
               </div>
             </div>
 
             <!-- Tekst przemówienia lektora (odsłuchiwany w trasie) -->
-            <div style="background:var(--bg-subtle); border-left:3px solid ${stageCol}; padding:0.7rem 0.9rem; border-radius:0 var(--radius-sm) var(--radius-sm) 0; font-size:0.84rem; color:var(--text-primary); line-height:1.6; margin:0.6rem 0;">
+            <div style="background:var(--bg-subtle); border-left:3px solid ${stageCol}; padding:0.75rem 0.95rem; border-radius:0 var(--radius-sm) var(--radius-sm) 0; font-size:0.85rem; color:var(--text-primary); line-height:1.62; margin:0.65rem 0;">
               ${escapeHtml(isEn && ep.spokenBriefingEn ? ep.spokenBriefingEn : ep.spokenBriefingPl)}
             </div>
 
@@ -9724,11 +10090,11 @@ function renderCarAudioView() {
             ${
               takeaways.length
                 ? `
-              <div style="margin:0.5rem 0 0.4rem;">
+              <div style="margin:0.55rem 0 0.45rem;">
                 <div style="font-size:0.72rem; font-weight:700; color:var(--text-muted); text-transform:uppercase; margin-bottom:0.25rem;">
                   📌 ${isEn ? "Key Takeaways to Memorize on Road:" : "Kluczowe wnioski do zapamiętania w drodze:"}
                 </div>
-                <ul style="margin:0; padding-left:1.2rem; font-size:0.79rem; color:var(--text-secondary); line-height:1.45;">
+                <ul style="margin:0; padding-left:1.2rem; font-size:0.8rem; color:var(--text-secondary); line-height:1.48;">
                   ${takeaways.map((t) => `<li>${escapeHtml(t)}</li>`).join("")}
                 </ul>
               </div>
@@ -9736,17 +10102,17 @@ function renderCarAudioView() {
                 : ""
             }
 
-            <!-- Zewnętrzne nagrania / podcasty -->
+            <!-- Zewnętrzne rekomendowane audycje, podcasty i audiobooki -->
             ${
               extLinks.length
                 ? `
-              <div style="display:flex; gap:0.4rem; flex-wrap:wrap; align-items:center; margin-top:0.55rem; padding-top:0.45rem; border-top:1px dashed var(--border-subtle);">
-                <span style="font-size:0.72rem; color:var(--text-muted); font-weight:700;">🎙️ ${isEn ? "Curated Audio & Lectures:" : "Polecane materiały audio / wykłady zewnętrzne:"}</span>
+              <div style="display:flex; gap:0.4rem; flex-wrap:wrap; align-items:center; margin-top:0.6rem; padding-top:0.5rem; border-top:1px dashed var(--border-subtle);">
+                <span style="font-size:0.73rem; color:var(--text-muted); font-weight:700;">🎙️ ${isEn ? "Curated Audio & Podcasts to Stream in Vehicle:" : "Rekomendowane podcasty, audycje i audiobooki do auta:"}</span>
                 ${extLinks
                   .map(
                     (lnk) => `
-                  <a href="${escapeHtml(lnk.url)}" target="_blank" rel="noopener noreferrer" class="alignment-badge" style="text-decoration:none; color:var(--link); border-color:var(--border-subtle);">
-                    ${renderLangBadgeHtml(lnk.lang || "PL")} ${escapeHtml(lnk.title)} ↗
+                  <a href="${escapeHtml(lnk.url)}" target="_blank" rel="noopener noreferrer" class="alignment-badge" style="text-decoration:none; color:var(--link); border-color:var(--border-subtle); padding:0.22rem 0.55rem;">
+                    ${renderLangBadgeHtml(lnk.lang || "PL")} <strong>[${escapeHtml(lnk.type || "podcast")}]</strong> ${escapeHtml(lnk.title)} ↗
                   </a>
                 `
                   )
@@ -9762,138 +10128,6 @@ function renderCarAudioView() {
     </div>
   `;
 }
-
-/* ============================================================================
-   MODUŁ: SUMMA TECHNOLOGIAE 2.0 (STANISŁAW LEM — BIBLIA MOŻLIWOŚCI TECHNIKI)
-   Czytnik i edytor rękopisu, prompty AI dla Golem XV, synteza TTS
-   ============================================================================ */
-
-let bookSpeechUtterance = null;
-
-function selectBookChapter(chId) {
-  appState.bookActiveChapterId = chId;
-  appState.bookIsEditing = false;
-  renderBookView();
-}
-
-function toggleBookEditMode(isEditing) {
-  appState.bookIsEditing = Boolean(isEditing);
-  renderBookView();
-}
-
-function saveBookChapterContent() {
-  const textarea = document.getElementById("bookChapterEditor");
-  if (!textarea || !appState.data || !appState.data.summaBook) return;
-  const ch = (appState.data.summaBook.chapters || []).find((c) => c.id === appState.bookActiveChapterId);
-  if (!ch) return;
-  ch.contentMarkdownPl = textarea.value;
-  ch.lastUpdated = new Date().toISOString().split("T")[0];
-  saveState(appState.lang === "en" ? "Chapter manuscript saved." : "Zapisano zmiany w rękopisie rozdziału.");
-  appState.bookIsEditing = false;
-  renderBookView();
-}
-
-function speakBookChapter(chId) {
-  const ch = ((appState.data.summaBook || {}).chapters || []).find((c) => c.id === chId);
-  if (!ch || !window.speechSynthesis) return;
-
-  window.speechSynthesis.cancel();
-  const rawText = `${ch.titlePl}. Motto: ${ch.lemQuote}. Streszczenie: ${ch.summaryPl || ""}. Treść: ${ch.contentMarkdownPl || ""}`;
-  const cleanText = rawText.replace(/[#*_\(\)\[\]]/g, " ");
-
-  const u = new SpeechSynthesisUtterance(cleanText);
-  u.lang = appState.lang === "en" ? "en-US" : "pl-PL";
-  u.rate = appState.carAudioRate || 1.15;
-
-  const voices = window.speechSynthesis.getVoices() || [];
-  const matchingVoice = voices.find((v) => appState.lang === "en" ? v.lang.startsWith("en") : v.lang.startsWith("pl"));
-  if (matchingVoice) u.voice = matchingVoice;
-
-  u.onend = () => {
-    bookSpeechUtterance = null;
-    renderBookView();
-  };
-  bookSpeechUtterance = u;
-  window.speechSynthesis.speak(u);
-  showToast(appState.lang === "en" ? "Reading chapter aloud..." : "Rozpoczęto lekturę rozdziału głosem TTS...");
-  renderBookView();
-}
-
-function stopBookSpeech() {
-  if (window.speechSynthesis) {
-    window.speechSynthesis.cancel();
-  }
-  bookSpeechUtterance = null;
-  renderBookView();
-}
-
-function openLemAiPromptModal(chId) {
-  const ch = ((appState.data.summaBook || {}).chapters || []).find((c) => c.id === chId);
-  if (!ch) return;
-  const isEn = appState.lang === "en";
-  const promptText = `Jesteś Stanisławem Lemem oraz superinteligencją Golem XV. Piszemy wspólnie dzieło: „Summa Technologiae 2.0: Biblia Możliwości Techniki”.
-Rozdział: ${ch.number}. ${ch.titlePl}
-Motto przewodnie: "${ch.lemQuote}"
-
-Zadanie epistemiczne:
-Rozwiń ten rozdział w chłodnym, precyzyjnym, lemowskim stylu filozoficzno-technologicznym. Uwzględnij:
-1. Fizyczne granice krzemu (prawo Moore'a u kresu, prądy upływu, granica Landauera, koniec skalowania Dennarda).
-2. Zmianę paradygmatu programowania (od klasycznego kodu von Neumanna do obliczeń tensorowych, kwantowych QPU oraz neuromorficznych sieci impulsowych SNN na memrystorach).
-3. Maszyny naśladujące mózg biologiczny i protokół WBE (Whole Brain Emulation).
-4. Etyczne i cywilizacyjne konsekwencje dla ludzkości.
-
-Bieżący zarys rozdziału:
-${ch.summaryPl}
-
-Przygotuj głęboki, 1500-wyrazowy esej stanowiący kolejną podsekcję tego rozdziału.`;
-
-  const modalHtml = `
-    <div id="lemAiModal" class="modal-backdrop" onclick="if(event.target===this) this.remove();">
-      <div class="modal-card" style="max-width:640px;">
-        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem;">
-          <h3 style="margin:0;">✨ ${isEn ? "Lem & Golem XV AI Synthesis Prompt" : "Generator Rozkazu Syntezy (Stanisław Lem & Golem XV)"}</h3>
-          <button class="btn btn-sm" onclick="document.getElementById('lemAiModal').remove();">✕</button>
-        </div>
-        <p style="font-size:0.83rem; color:var(--text-secondary); margin-bottom:0.75rem;">
-          ${isEn ? "Copy this prompt and pass it to your AI model to co-author this chapter in Lem's philosophical rigor:" : "Skopiuj ten gotowy prompt epistemologiczny i przekaż swojemu modelowi AI, aby współtworzyć ten rozdział w stylu Stanisława Lema:"}
-        </p>
-        <textarea id="lemPromptText" class="input-field" rows="11" readonly style="font-family:monospace; font-size:0.8rem; background:var(--bg-subtle);">${escapeHtml(promptText)}</textarea>
-        <div style="display:flex; justify-content:flex-end; gap:0.5rem; margin-top:1rem;">
-          <button class="btn" onclick="document.getElementById('lemAiModal').remove();">${isEn ? "Close" : "Zamknij"}</button>
-          <button class="btn btn-primary" onclick="navigator.clipboard.writeText(document.getElementById('lemPromptText').value); showToast('Skopiowano prompt Lema do schowka!'); document.getElementById('lemAiModal').remove();">📋 ${isEn ? "Copy to Clipboard" : "Kopiuj do schowka"}</button>
-        </div>
-      </div>
-    </div>
-  `;
-  const existing = document.getElementById("lemAiModal");
-  if (existing) existing.remove();
-  document.body.insertAdjacentHTML("beforeend", modalHtml);
-}
-
-function exportBookManuscript() {
-  const book = (appState.data || {}).summaBook;
-  if (!book) return;
-  let md = `# ${book.title}\n\n`;
-  md += `**Współautorzy**: ${book.author} & Golem XV\n`;
-  md += `**Motto dzieła**: *${book.motto}*\n\n`;
-  md += `**Wstęp**: ${book.introductionPl}\n\n---\n\n`;
-
-  (book.chapters || []).forEach((ch) => {
-    md += `## ${ch.number === 0 ? "Wstęp" : "Rozdział " + ch.number}: ${ch.titlePl}\n\n`;
-    md += `> *„${ch.lemQuote}”*\n\n`;
-    md += `**Status epistemiczny**: ${ch.epistemicStatus} | **Czas lektury**: ~${ch.readingTimeMin} min | **Aktualizacja**: ${ch.lastUpdated}\n\n`;
-    md += `### Streszczenie idei:\n${ch.summaryPl}\n\n`;
-    md += `### Rękopis:\n${ch.contentMarkdownPl || ""}\n\n---\n\n`;
-  });
-
-  const blob = new Blob([md], { type: "text/markdown;charset=utf-8" });
-  const a = document.createElement("a");
-  a.href = URL.createObjectURL(blob);
-  a.download = `Summa_Technologiae_2_0_Rekopis_${new Date().toISOString().split("T")[0]}.md`;
-  a.click();
-  showToast("Pobrano pełny rękopis książki (.md)");
-}
-
 function renderBookView() {
   const root = document.getElementById("bookRootContainer");
   if (!root || !appState.data || !appState.data.summaBook) return;
