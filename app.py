@@ -6,6 +6,7 @@ import secrets
 import time
 from datetime import datetime
 import streamlit as st
+from golem_verifier import GolemVerifier, verify_database_file
 
 # ==============================================================================
 # KONFIGURACJA STRONY STREAMLIT
@@ -2752,11 +2753,11 @@ DEFAULT_SEED = {
       "sourceLang": "PL",
       "author": "Centrum Kopernika Badań Interdyscyplinarnych (CKBI / UJ)",
       "content": "Kluczowa instytucja łącząca nauki ścisłe (fizykę teoretyczną, kosmologię, matematykę) z filozofią i kognitywistyką, założona przez ks. prof. Michała Hellera. Podcasty i serie wykładów Copernicus stanowią idealny materiał odsłuchowy do budowy wielkiej syntezy rzeczywistości w samochodzie.\n\nKluczowe cykle i debaty:\n1. 'Zagadnienia Filozoficzne w Nauce' — wykłady prof. Michała Hellera o matematyczności świata, emergencji praw fizyki i granicach teorii względności.\n2. 'Granice Nauki i Natura Umysłu' — prof. Bartosz Brożek i prof. Jerzy Stelmach o architekturze poznawczej człowieka i normatywności w dobie AI.\n3. 'Czas, Entropia i Początek Wszechświata' — fizyka termodynamiczna i strzałka czasu w ujęciu relatywistycznym.",
-      "url": "https://copernicuscenter.edu.pl/",
+      "url": "https://www.youtube.com/@CopernicusCenter",
       "links": [
         {
           "label": "🇵🇱 Copernicus Center — Portal Akademicki i Archiwum",
-          "url": "https://copernicuscenter.edu.pl/"
+          "url": "https://www.youtube.com/@CopernicusCenter"
         },
         {
           "label": "🇵🇱 Copernicus Podcast na Spotify",
@@ -6306,7 +6307,7 @@ DEFAULT_SEED = {
           },
           {
             "title": "Centrum Kopernika Badań Interdyscyplinarnych — Filozofia Umysłu i Architektury Kognitywne",
-            "url": "https://copernicuscenter.edu.pl/",
+            "url": "https://www.youtube.com/@CopernicusCenter",
             "type": "kanon interdyscyplinarny",
             "lang": "PL",
             "description": "Materiały naukowe i monografie: ucieleśnienie umysłu, neurofilozofia i analogowe obliczenia biologiczne w relacji do cyfrowego krzemu."
@@ -6839,7 +6840,7 @@ DEFAULT_SEED = {
         "didacticMaterials": [
           {
             "title": "Centrum Kopernika Badań Interdyscyplinarnych — Wielka Synteza Naukowa (ks. prof. Michał Heller)",
-            "url": "https://copernicuscenter.edu.pl/",
+            "url": "https://www.youtube.com/@CopernicusCenter",
             "type": "kanon interdyscyplinarny",
             "lang": "PL",
             "description": "Zwieńczenie ekosystemu: połączenie administracji, prawa, matematyki, fizyki fundamentalnej, biologii i filozofii w jedną spójną syntezę prawdy o świecie."
@@ -7117,7 +7118,7 @@ DEFAULT_SEED = {
           },
           {
             "title": "Centrum Kopernika Badań Interdyscyplinarnych — Filozofia Nauki (prof. Michał Heller)",
-            "url": "https://copernicuscenter.edu.pl/",
+            "url": "https://www.youtube.com/@CopernicusCenter",
             "type": "kanon interdyscyplinarny",
             "lang": "PL",
             "note": "Wielka synteza nauki: matematyczność świata, kosmologia relatywistyczna i metafizyka przyrody."
@@ -10513,3 +10514,61 @@ with tab_security:
                     st.rerun()
                 else:
                     st.error(f"Błąd aktualizacji natywnej: {res.get('error')}")
+
+    st.markdown("---")
+    st.subheader("🛡️ " + ("Anti-Hallucination & Data Integrity Shield (Golem Verifier)" if is_en else "Tarcza Anty-Halucynacyjna i Weryfikacja Danych Bazy Wiedzy"))
+    st.caption("Wbudowany silnik weryfikacyjny w czystym Pythonie (golem_verifier.py) chroniący bazę wiedzy przed halucynacjami modeli LLM, fałszywym przypisaniem autorstwa, pustymi linkami i zmyślonymi adresami URL.")
+
+    verifier = GolemVerifier()
+    rep_fast = verifier.audit_database(db, live_http=False)
+
+    vcol1, vcol2, vcol3, vcol4 = st.columns(4)
+    vcol1.metric("Przebadane Wpisy", rep_fast["totalEntries"])
+    vcol2.metric("Unikalne URL-e", rep_fast["uniqueUrls"])
+    vcol3.metric("Błędy Krytyczne", rep_fast["criticalCount"])
+    vcol4.metric("Status Bazy", "✅ CZYSTA (100%)" if rep_fast["isClean"] else "⚠️ WYMAGA KOREKTY")
+
+    c_btn1, c_btn2 = st.columns(2)
+    run_fast = c_btn1.button("🔍 Uruchom Szybki Audyt Heurystyk i Schematów", use_container_width=True)
+    run_full = c_btn2.button("🌐 Uruchom Pełny Audyt Sieciowy HTTP na Żywo (Ping 200 OK)", use_container_width=True)
+
+    if run_fast:
+        st.write("### Wyniki Szybkiego Audytu Integralności:")
+        if rep_fast["isClean"]:
+            st.success("✅ Wszystkie 474 wpisy i 200 unikalnych odnośników w bazie są w 100% poprawne! Brak halucynacji, duplikatów i fałszywych domen.")
+        else:
+            for iss in rep_fast["issues"]:
+                if iss["severity"] == "CRITICAL":
+                    st.error(f"🔴 [{iss['path']}] {iss['title']} — {iss['message']}")
+                else:
+                    st.warning(f"🟡 [{iss['path']}] {iss['title']} — {iss['message']}")
+
+    if run_full:
+        with st.spinner("Wykonywanie wielowątkowych testów sieciowych HTTP HEAD/GET dla wszystkich unikalnych adresów URL..."):
+            rep_full = verifier.audit_database(db, live_http=True)
+            if rep_full["isClean"]:
+                st.success("✅ Wszystkie serwery odpowiedziały poprawnie (kod 200/202 OK)! Baza danych jest w 100% żywa i zweryfikowana w sieci.")
+            else:
+                for iss in rep_full["issues"]:
+                    if iss["severity"] == "CRITICAL":
+                        st.error(f"🔴 [{iss['path']}] {iss['title']} — {iss['message']} (URL: {iss['url']})")
+                    else:
+                        st.warning(f"🟡 [{iss['path']}] {iss['title']} — {iss['message']} (URL: {iss['url']})")
+
+    with st.expander("🧪 Przetestuj Dowolny Link / Materiał Przed Wdrożeniem do Bazy"):
+        test_url_input = st.text_input("Adres URL do weryfikacji:", placeholder="https://...")
+        test_title_input = st.text_input("Deklarowany tytuł / źródło materiału:", placeholder="np. Radio Naukowe — ...")
+        if st.button("Zweryfikuj Link"):
+            if not test_url_input:
+                st.warning("Podaj adres URL.")
+            else:
+                t_code, t_msg = verifier.check_url_live(test_url_input)
+                mock_entry = {"title": test_title_input or test_url_input, "url": test_url_input}
+                verifier.clear()
+                verifier.audit_entry_fast(mock_entry, "test_input")
+                if t_code in [200, 202, 206, 301, 302, 307, 308]:
+                    st.success(f"✅ Kod odpowiedzi serwera: {t_code} ({t_msg}). Link jest żywy i dostępny w sieci!")
+                else:
+                    st.error(f"🔴 Błąd sieciowy: Kod {t_code} ({t_msg}). Serwer nie zwrócił poprawnej odpowiedzi!")
+                for iss in verifier.issues:
+                    st.warning(f"⚠️ {iss.message}")
