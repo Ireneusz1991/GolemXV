@@ -10572,3 +10572,39 @@ with tab_security:
                     st.error(f"🔴 Błąd sieciowy: Kod {t_code} ({t_msg}). Serwer nie zwrócił poprawnej odpowiedzi!")
                 for iss in verifier.issues:
                     st.warning(f"⚠️ {iss.message}")
+
+    st.markdown("---")
+    st.subheader("📡 " + ("Continuous Broadcast, Local Network & 24/7 Cloud Resilience" if is_en else "Ciągłość Nadawania, Dostęp w Sieci i Odporność 24/7"))
+    st.caption("Konfiguracja i mechanizmy chroniące platformę przed przerwami w nadawaniu, uśpieniem systemu oraz brakiem dostępu z urządzeń mobilnych.")
+
+    wcol1, wcol2 = st.columns(2)
+    with wcol1:
+        with st.container(border=True):
+            st.markdown("#### 📱 " + ("Local Network & Car Audio Access" if is_en else "Dostęp w Sieci Lokalnej i Odsłuch w Trasie"))
+            try:
+                import golem_watchdog
+                curr_ip = golem_watchdog.get_local_ip()
+            except Exception:
+                curr_ip = "127.0.0.1"
+
+            st.write("Twoje urządzenia (smartfon, tablet, system w samochodzie podłączony do hotspotu) mogą łączyć się bezpośrednio pod adresem:")
+            st.code(f"http://{curr_ip}:8501", language="bash")
+            st.caption("Serwer nasłuchuje na interfejsie `0.0.0.0:8501` z wyłączonymi blokadami CORS, co umożliwia płynne przesyłanie strumieniowe i sterowanie w aucie.")
+
+    with wcol2:
+        with st.container(border=True):
+            st.markdown("#### 🔄 " + ("Self-Healing Watchdog & Autostart" if is_en else "Samonaprawczy Strażnik i Autostart"))
+            st.write("W katalogu projektu zainstalowane są skrypty gwarantujące ciągłą pracę:")
+            st.markdown("- `run.bat` — uruchamia aplikację w pętli strażnika z automatycznym wznawianiem.")
+            st.markdown("- `uruchom_w_tle.vbs` — startuje serwer bez widocznego okna konsoli (zapobiega przypadkowemu zamknięciu).")
+            st.markdown("- `instaluj_autostart_windows.bat` — rejestruje Golema w autostarcie Windowsa (serwer włącza się sam po restarcie komputera).")
+            st.markdown("- `zatrzymaj_golema.bat` — bezpieczne, czyste zatrzymanie procesów.")
+
+    with st.expander("☁️ Jak uruchomić Golema w 100% bezpłatnie i 24/7 w chmurze (Streamlit Community Cloud)?"):
+        st.markdown("""
+        Projekt **Ireneusz1991/GolemXV** na GitHubie jest w pełni przygotowany do działania w globalnej chmurze:
+        1. Wejdź na [share.streamlit.io](https://share.streamlit.io) i zaloguj się swoim kontem GitHub.
+        2. Kliknij **New app**, wybierz repozytorium `Ireneusz1991/GolemXV`, gałąź `main` oraz główny plik `app.py`.
+        3. Kliknij **Deploy!**
+        4. Otrzymasz stały, bezpieczny publiczny adres HTTPS (np. `https://golemxv.streamlit.app`), który **działa 24 godziny na dobę, 7 dni w tygodniu**, niezależnie od tego, czy Twój komputer domowy jest włączony, wyłączony czy restartowany!
+        """)
