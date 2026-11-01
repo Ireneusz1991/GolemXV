@@ -2998,6 +2998,15 @@ DEFAULT_SEED = {
       ],
       "status": "approved",
       "createdAt": "2026-10-26T22:54:00Z"
+    },
+    {
+      "id": "mat-tarski-logika",
+      "title": "Alfred Tarski — Semantyczna Teoria Prawdy, Szkoła Lwowsko-Warszawska i Metodologia Nauk Dedukcyjnych [Kanon Logiki]",
+      "category": "Matematyka i Logika Formalna",
+      "url": "https://plato.stanford.edu/entries/tarski-truth/",
+      "type": "monografia/audio",
+      "description": "Zbiór dzieł i audycji Alfreda Tarskiego: definicja prawdy, teoria modeli, paradoks Banacha-Tarskiego oraz monografia 'Introduction to Logic'.",
+      "lang": "PL/EN"
     }
   ],
   "graphLinks": [
@@ -5896,6 +5905,24 @@ DEFAULT_SEED = {
             "url": "https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab",
             "lang": "EN",
             "type": "kurs audio/wideo"
+          },
+          {
+            "title": "Polskie Radio Dwójka — Alfred Tarski: Człowiek, który zdefiniował prawdę [Audycja Audio]",
+            "url": "https://www.polskieradio.pl/8/402/artykul/963612,alfred-tarski-czlowiek-ktory-zdefiniowal-prawde",
+            "lang": "PL",
+            "type": "audycja"
+          },
+          {
+            "title": "Prof. Jan Woleński — O Szkole Lwowsko-Warszawskiej i Logice Alfreda Tarskiego [Wykład Audio]",
+            "url": "https://www.youtube.com/watch?v=ufm_xJmwNCk",
+            "lang": "PL",
+            "type": "wykład/audio"
+          },
+          {
+            "title": "Vsauce — The Banach–Tarski Paradox: Teoria Mnogości i Paradoks Kuli [Wideo/Audio]",
+            "url": "https://www.youtube.com/watch?v=s86-Z-CbaHA",
+            "lang": "EN",
+            "type": "wideo/audio"
           }
         ],
         "didacticMaterials": [
@@ -5919,6 +5946,20 @@ DEFAULT_SEED = {
             "type": "kompendium filozofii matematyki",
             "lang": "EN",
             "description": "Fundamenty ontologii matematycznej: platonizm, formalizm hilbertowski i granice aksjomatyzacji rzeczywistości."
+          },
+          {
+            "title": "Alfred Tarski — Introduction to Logic and to the Methodology of Deductive Sciences (Internet Archive Open-Access)",
+            "url": "https://archive.org/details/introductiontolo00tars",
+            "type": "monografia akademicka",
+            "lang": "EN",
+            "description": "Klasyczna monografia Alfreda Tarskiego: rachunek zdań, teoria predykatów, budowa systemów dedukcyjnych i metodologia nauk ścisłych."
+          },
+          {
+            "title": "Stanford Encyclopedia of Philosophy — Alfred Tarski & Tarski's Truth Definitions (Konwencja T, Metajęzyk i Teoria Modeli)",
+            "url": "https://plato.stanford.edu/entries/tarski-truth/",
+            "type": "kompendium filozoficzne",
+            "lang": "EN",
+            "description": "Formalna definicja prawdy w językach sformalizowanych, rozróżnienie języka przedmiotowego od metajęzyka i teoria modeli."
           }
         ]
       },
@@ -6919,6 +6960,27 @@ DEFAULT_SEED = {
             "type": "kompendium filozoficzne",
             "lang": "EN",
             "note": "Fundamenty aksjomatyzacji, formalizm matematyczny i granice dowodzenia prawdy."
+          },
+          {
+            "title": "Alfred Tarski — Introduction to Logic and Deductive Methodology (Archive.org)",
+            "url": "https://archive.org/details/introductiontolo00tars",
+            "type": "monografia akademicka",
+            "lang": "EN",
+            "note": "Klasyczny kanon logiki matematycznej i teorii systemów dedukcyjnych autorstwa Alfreda Tarskiego."
+          },
+          {
+            "title": "Stanford Encyclopedia of Philosophy — Alfred Tarski & Truth Definitions",
+            "url": "https://plato.stanford.edu/entries/tarski-truth/",
+            "type": "kompendium filozoficzne",
+            "lang": "EN",
+            "note": "Semantyczna teoria prawdy, warunek materialnej adekwatności (Konwencja T) i metamatematyka."
+          },
+          {
+            "title": "Polskie Radio Dwójka — Alfred Tarski: Człowiek, który zdefiniował prawdę",
+            "url": "https://www.polskieradio.pl/8/402/artykul/963612,alfred-tarski-czlowiek-ktory-zdefiniowal-prawde",
+            "type": "audycja radiowa",
+            "lang": "PL",
+            "note": "Audycja Programu 2 Polskiego Radia o życiu, Szkole Lwowsko-Warszawskiej i rewolucji logicznej Tarskiego."
           }
         ]
       },
@@ -10098,6 +10160,28 @@ Przygotuj głęboki esej stanowiący kolejną sekcję tego rozdziału."""
 
 with tab_new:
     st.header("💡 " + ("Autonomous AI Researcher & Project Generator" if is_en else "Autonomiczne Badania Naukowe, Odkrycia AI i Nowe Projekty"))
+
+    # Pasek Szybkiej Aktualizacji Lokalnej
+    import golem_updater
+    upd_stat = golem_updater.get_last_update_status()
+
+    top_u1, top_u2, top_u3 = st.columns([2, 2, 3])
+    with top_u1:
+        st.metric("Ostatnia Aktualizacja", upd_stat.get("lastUpdateTimestamp", "Nigdy")[:19].replace("T", " "))
+    with top_u2:
+        st.metric("Propozycje w Bazie", len(db.get("autonomousResearchProposals", [])))
+    with top_u3:
+        st.write("")
+        if st.button("🔄 Zaktualizuj Golema (arXiv bez commita)", type="primary", use_container_width=True, key="btn_quick_update_top"):
+            with st.spinner("Pobieranie najświeższych publikacji arXiv i synteza hipotez badawczych..."):
+                res = golem_updater.update_golem_locally(force_arxiv=True, max_papers_per_topic=1)
+                if res["success"]:
+                    st.success(f"✅ Zaktualizowano! Dodano {res['new_added']} nowych prac. Kopia: `{os.path.basename(res['backup_path'])}` (Bez commita w Git).")
+                    db = load_db()
+                    st.session_state.db = db
+                    st.rerun()
+                else:
+                    st.error(f"Błąd aktualizacji: {res.get('error')}")
     st.markdown(
         "**Golem XV — Autonomiczny Odkrywca Wiedzy:** System samoczynnie bada literaturę akademicką (otwarte API arXiv.org), "
         "rotuje darmowymi modelami kognitywnymi (Google Gemini 2.0 Flash / Groq Llama 3.3) z natychmiastowym przełączeniem do wbudowanego silnika epistemologicznego Lema. "
@@ -10599,6 +10683,37 @@ with tab_security:
             st.markdown("- `uruchom_w_tle.vbs` — startuje serwer bez widocznego okna konsoli (zapobiega przypadkowemu zamknięciu).")
             st.markdown("- `instaluj_autostart_windows.bat` — rejestruje Golema w autostarcie Windowsa (serwer włącza się sam po restarcie komputera).")
             st.markdown("- `zatrzymaj_golema.bat` — bezpieczne, czyste zatrzymanie procesów.")
+
+    st.markdown("---")
+    st.subheader("🔄 " + ("Autonomous Cron & One-Click Local Updates (No Git Commit)" if is_en else "Autonomiczna Aktualizacja Cronem i Przyciskiem (Bez Nowego Commita)"))
+    st.caption("Umożliwia cykliczne lub natychmiastowe odświeżanie wiedzy, pobieranie nowych preprintów z arXiv i tworzenie kopii zapasowych bezpośrednio na dysku lokalnym — bez zanieczyszczania historii repozytorium Git nowymi commitami.")
+
+    import golem_updater
+    last_upd = golem_updater.get_last_update_status()
+
+    ucol1, ucol2, ucol3 = st.columns(3)
+    ucol1.metric("Ostatnia Aktualizacja", last_upd.get("lastUpdateTimestamp", "Nigdy")[:19].replace("T", " "))
+    ucol2.metric("Nowe Prace (ostatni cykl)", last_upd.get("newProposalsAdded", 0))
+    ucol3.metric("Tryb Zapisu", "Dysk Lokalny (Bez commita)")
+
+    if st.button("🔄 Zaktualizuj Golema Teraz (Pobierz Nowe Badania i Sprawdź Bazę)", type="primary", use_container_width=True, key="btn_manual_update_sec"):
+        with st.spinner("Wykonywanie autonomicznej aktualizacji Golema: odpytywanie arXiv, synteza hipotez i audyt integralności..."):
+            res = golem_updater.update_golem_locally(force_arxiv=True, max_papers_per_topic=1)
+            if res["success"]:
+                st.success(f"✅ Golem został pomyślnie zaktualizowany! Dodano {res['new_added']} nowych prac. Zapisano bezpośrednio w data/database.json. Kopia: `{os.path.basename(res['backup_path'])}`.")
+                db = load_db()
+                st.session_state.db = db
+                st.rerun()
+            else:
+                st.error(f"Błąd aktualizacji: {res.get('error')}")
+
+    with st.expander("⏰ Jak skonfigurować automatyczną aktualizację cykliczną (Cron / Harmonogram Windows)?"):
+        st.markdown("""
+        W katalogu głównym projektu przygotowane są gotowe skrypty:
+        1. **`cron_aktualizacja.bat`** — wykonuje pełną aktualizację z arXiv, sprawdza integralność tarczy i dopisuje log do `archives/cron_update.log`.
+        2. **`instaluj_cron_harmonogram.bat`** — uruchom ten plik raz, aby dodać zadanie do **Harmonogramu Zadań Windows (Task Scheduler)**. Od tej pory system raz na dobę automatycznie odpyta światowe archiwa naukowe i odświeży bazę Golema.
+        3. **`odinstaluj_cron_harmonogram.bat`** — usuwa zadanie z harmonogramu Windows.
+        """)
 
     with st.expander("☁️ Jak uruchomić Golema w 100% bezpłatnie i 24/7 w chmurze (Streamlit Community Cloud)?"):
         st.markdown("""

@@ -2971,6 +2971,15 @@
       ],
       "status": "approved",
       "createdAt": "2026-10-26T22:54:00Z"
+    },
+    {
+      "id": "mat-tarski-logika",
+      "title": "Alfred Tarski — Semantyczna Teoria Prawdy, Szkoła Lwowsko-Warszawska i Metodologia Nauk Dedukcyjnych [Kanon Logiki]",
+      "category": "Matematyka i Logika Formalna",
+      "url": "https://plato.stanford.edu/entries/tarski-truth/",
+      "type": "monografia/audio",
+      "description": "Zbiór dzieł i audycji Alfreda Tarskiego: definicja prawdy, teoria modeli, paradoks Banacha-Tarskiego oraz monografia 'Introduction to Logic'.",
+      "lang": "PL/EN"
     }
   ],
   "graphLinks": [
@@ -5869,6 +5878,24 @@
             "url": "https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab",
             "lang": "EN",
             "type": "kurs audio/wideo"
+          },
+          {
+            "title": "Polskie Radio Dwójka — Alfred Tarski: Człowiek, który zdefiniował prawdę [Audycja Audio]",
+            "url": "https://www.polskieradio.pl/8/402/artykul/963612,alfred-tarski-czlowiek-ktory-zdefiniowal-prawde",
+            "lang": "PL",
+            "type": "audycja"
+          },
+          {
+            "title": "Prof. Jan Woleński — O Szkole Lwowsko-Warszawskiej i Logice Alfreda Tarskiego [Wykład Audio]",
+            "url": "https://www.youtube.com/watch?v=ufm_xJmwNCk",
+            "lang": "PL",
+            "type": "wykład/audio"
+          },
+          {
+            "title": "Vsauce — The Banach–Tarski Paradox: Teoria Mnogości i Paradoks Kuli [Wideo/Audio]",
+            "url": "https://www.youtube.com/watch?v=s86-Z-CbaHA",
+            "lang": "EN",
+            "type": "wideo/audio"
           }
         ],
         "didacticMaterials": [
@@ -5892,6 +5919,20 @@
             "type": "kompendium filozofii matematyki",
             "lang": "EN",
             "description": "Fundamenty ontologii matematycznej: platonizm, formalizm hilbertowski i granice aksjomatyzacji rzeczywistości."
+          },
+          {
+            "title": "Alfred Tarski — Introduction to Logic and to the Methodology of Deductive Sciences (Internet Archive Open-Access)",
+            "url": "https://archive.org/details/introductiontolo00tars",
+            "type": "monografia akademicka",
+            "lang": "EN",
+            "description": "Klasyczna monografia Alfreda Tarskiego: rachunek zdań, teoria predykatów, budowa systemów dedukcyjnych i metodologia nauk ścisłych."
+          },
+          {
+            "title": "Stanford Encyclopedia of Philosophy — Alfred Tarski & Tarski's Truth Definitions (Konwencja T, Metajęzyk i Teoria Modeli)",
+            "url": "https://plato.stanford.edu/entries/tarski-truth/",
+            "type": "kompendium filozoficzne",
+            "lang": "EN",
+            "description": "Formalna definicja prawdy w językach sformalizowanych, rozróżnienie języka przedmiotowego od metajęzyka i teoria modeli."
           }
         ]
       },
@@ -6892,6 +6933,27 @@
             "type": "kompendium filozoficzne",
             "lang": "EN",
             "note": "Fundamenty aksjomatyzacji, formalizm matematyczny i granice dowodzenia prawdy."
+          },
+          {
+            "title": "Alfred Tarski — Introduction to Logic and Deductive Methodology (Archive.org)",
+            "url": "https://archive.org/details/introductiontolo00tars",
+            "type": "monografia akademicka",
+            "lang": "EN",
+            "note": "Klasyczny kanon logiki matematycznej i teorii systemów dedukcyjnych autorstwa Alfreda Tarskiego."
+          },
+          {
+            "title": "Stanford Encyclopedia of Philosophy — Alfred Tarski & Truth Definitions",
+            "url": "https://plato.stanford.edu/entries/tarski-truth/",
+            "type": "kompendium filozoficzne",
+            "lang": "EN",
+            "note": "Semantyczna teoria prawdy, warunek materialnej adekwatności (Konwencja T) i metamatematyka."
+          },
+          {
+            "title": "Polskie Radio Dwójka — Alfred Tarski: Człowiek, który zdefiniował prawdę",
+            "url": "https://www.polskieradio.pl/8/402/artykul/963612,alfred-tarski-czlowiek-ktory-zdefiniowal-prawde",
+            "type": "audycja radiowa",
+            "lang": "PL",
+            "note": "Audycja Programu 2 Polskiego Radia o życiu, Szkole Lwowsko-Warszawskiej i rewolucji logicznej Tarskiego."
           }
         ]
       },

@@ -76,6 +76,8 @@ DOMAIN_AFFINITIES = {
     re.compile(r"\bstanford\b", re.I): ["stanford.edu", "plato.stanford.edu"],
     re.compile(r"\barxiv\b", re.I): ["arxiv.org"],
     re.compile(r"\bstanisław\s+lem\b", re.I): ["lem.pl", "radio.katowice.pl", "podcasty.radio.katowice.pl", "radio357.pl", "polskieradio.pl", "bioetyka.pan.pl", "plato.stanford.edu", "youtube.com"],
+    re.compile(r"\b(?:alfred\s+)?tarski(?:ego)?\b", re.I): ["plato.stanford.edu", "archive.org", "polskieradio.pl", "youtube.com", "culture.pl"],
+    re.compile(r"\bbanach[\s\-]+tarski\b", re.I): ["youtube.com", "plato.stanford.edu", "archive.org", "wikipedia.org"],
 }
 
 # Heurystyka konkretnego dzieła/odcinka
