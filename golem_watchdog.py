@@ -23,8 +23,43 @@ WORKSPACE = os.path.dirname(os.path.abspath(__file__))
 APP_FILE = os.path.join(WORKSPACE, "app.py")
 STATUS_FILE = os.path.join(WORKSPACE, "data", "golem_watchdog_status.json")
 STREAMLIT_PORT = 8501
-HEALTH_URL = f"http://localhost:{STREAMLIT_PORT}/_stcore/health"
 CHECK_INTERVAL_SEC = 8
+
+def get_process_cmdline(pid: int) -> str:
+    try:
+        res = subprocess.run(
+            ['powershell', '-Command', f'(Get-CimInstance Win32_Process -Filter "ProcessId = {pid}").CommandLine'],
+            capture_output=True,
+            text=True,
+            timeout=3
+        )
+        return res.stdout.strip()
+    except Exception:
+        return ""
+
+def is_golem_process(pid: int) -> bool:
+    cmd = get_process_cmdline(pid)
+    return ("Golem XV" in cmd or "GolemXV" in cmd) or ("app.py" in cmd and "Bielik" not in cmd)
+
+def resolve_target_port() -> int:
+    global STREAMLIT_PORT
+    if "GOLEM_PORT" in os.environ:
+        try:
+            STREAMLIT_PORT = int(os.environ["GOLEM_PORT"])
+            return STREAMLIT_PORT
+        except ValueError:
+            pass
+
+    for candidate_port in [8501, 8502, 8503, 8505]:
+        pids = find_process_on_port(candidate_port)
+        if not pids:
+            STREAMLIT_PORT = candidate_port
+            return STREAMLIT_PORT
+        if any(is_golem_process(p) for p in pids):
+            STREAMLIT_PORT = candidate_port
+            return STREAMLIT_PORT
+    STREAMLIT_PORT = 8502
+    return STREAMLIT_PORT
 
 def get_local_ip() -> str:
     """Wykrywa lokalny adres IP w sieci domowej/Wi-Fi."""
@@ -39,10 +74,13 @@ def get_local_ip() -> str:
     except Exception:
         return "127.0.0.1"
 
-def is_server_healthy(timeout: float = 3.0) -> bool:
-    """Sprawdza czy Streamlit odpowiada kodem HTTP 200 na endpoincie health."""
+def is_server_healthy(port: int = None, timeout: float = 3.0) -> bool:
+    """Sprawdza czy Streamlit odpowiada kodem HTTP 200 na endpoincie health dla portu Golem XV."""
+    if port is None:
+        port = STREAMLIT_PORT
+    url = f"http://localhost:{port}/_stcore/health"
     try:
-        req = urllib.request.Request(HEALTH_URL, headers={"User-Agent": "GolemWatchdog/1.0"})
+        req = urllib.request.Request(url, headers={"User-Agent": "GolemWatchdog/1.0"})
         with urllib.request.urlopen(req, timeout=timeout) as resp:
             return resp.getcode() == 200
     except Exception:
@@ -64,11 +102,11 @@ def find_process_on_port(port: int):
     return pids
 
 def kill_processes_on_port(port: int):
-    """Usuwa zawieszone procesy blokujące port."""
+    """Usuwa zawieszone procesy blokujące port, wyłącznie jeśli należą do Golem XV."""
     pids = find_process_on_port(port)
     current_pid = os.getpid()
     for pid in pids:
-        if pid != current_pid:
+        if pid != current_pid and is_golem_process(pid):
             try:
                 subprocess.run(f"taskkill /F /PID {pid}", shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
             except Exception:
@@ -124,6 +162,7 @@ def launch_streamlit() -> subprocess.Popen:
 def run_watchdog():
     """Główna pętla samonaprawcza Watchdoga."""
     sys.stdout.reconfigure(encoding="utf-8")
+    resolve_target_port()
     local_ip = get_local_ip()
     started_at = datetime.now().isoformat()
     restart_count = 0
