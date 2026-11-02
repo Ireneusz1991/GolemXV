@@ -3000,13 +3000,41 @@ DEFAULT_SEED = {
       "createdAt": "2026-10-26T22:54:00Z"
     },
     {
-      "id": "mat-tarski-logika",
-      "title": "Alfred Tarski — Semantyczna Teoria Prawdy, Szkoła Lwowsko-Warszawska i Metodologia Nauk Dedukcyjnych [Kanon Logiki]",
-      "category": "Matematyka i Logika Formalna",
-      "url": "https://plato.stanford.edu/entries/tarski-truth/",
-      "type": "monografia/audio",
-      "description": "Zbiór dzieł i audycji Alfreda Tarskiego: definicja prawdy, teoria modeli, paradoks Banacha-Tarskiego oraz monografia 'Introduction to Logic'.",
-      "lang": "PL/EN"
+          "id": "mat-tarski-logika",
+          "trackId": "B",
+          "branchTopic": "Logika Matematyczna, Semantyka i Metodologia Nauk Dedukcyjnych",
+          "subprojectId": None,
+          "title": "Alfred Tarski — Semantyczna Teoria Prawdy, Szkoła Lwowsko-Warszawska i Metodologia Nauk Dedukcyjnych [Kanon Logiki]",
+          "category": "Matematyka i Logika Formalna",
+          "type": "Monografia / Audycje audio",
+          "sourceLang": "PL+EN",
+          "author": "Alfred Tarski / Szkoła Lwowsko-Warszawska",
+          "content": "Kanon prac Alfreda Tarskiego obejmujący semantyczną definicję prawdy (Konwencja T), zarys teorii modeli, rachunek zdań i predykatów, paradoks Banacha-Tarskiego oraz monografię 'Introduction to Logic and to the Methodology of Deductive Sciences'. Zawiera audycję Polskiego Radia Dwójka, wykład prof. Jana Woleńskiego, wideo Vsauce oraz otwarty dostęp do monografii w Internet Archive.",
+          "url": "https://plato.stanford.edu/entries/tarski-truth/",
+          "links": [
+                {
+                      "label": "🇵🇱 Polskie Radio Dwójka — Alfred Tarski: Człowiek, który zdefiniował prawdę [Audycja Audio]",
+                      "url": "https://www.polskieradio.pl/8/402/artykul/963612,alfred-tarski-czlowiek-ktory-zdefiniowal-prawde"
+                },
+                {
+                      "label": "🇵🇱 Prof. Jan Woleński — O Szkole Lwowsko-Warszawskiej i Logice Alfreda Tarskiego [Wykład Audio]",
+                      "url": "https://www.youtube.com/watch?v=0h9Vq1pZ0wQ"
+                },
+                {
+                      "label": "🇬🇧 Vsauce — The Banach–Tarski Paradox [Wideo/Audio]",
+                      "url": "https://www.youtube.com/watch?v=s86-Z-CbaHA"
+                },
+                {
+                      "label": "🇬🇧 Stanford Encyclopedia of Philosophy — Alfred Tarski & Truth Definitions",
+                      "url": "https://plato.stanford.edu/entries/tarski-truth/"
+                },
+                {
+                      "label": "🇬🇧 Internet Archive — Introduction to Logic and Deductive Methodology (Monografia)",
+                      "url": "https://archive.org/details/introductiontolo00tars"
+                }
+          ],
+          "status": "approved",
+          "createdAt": "2026-11-01T21:50:00Z"
     }
   ],
   "graphLinks": [
@@ -9034,12 +9062,12 @@ if global_search_q.strip():
         blob = f"{sm.get('title','')} {sm.get('content','')} {sm.get('topic','')} {json.dumps(sm.get('links',[]), ensure_ascii=False)}"
         l_info = detect_source_lang_info(blob, sm.get("sourceLang", ""), st.session_state.lang)
         if matches_lang_filter(l_info["code"], source_lang_filter) and q_low in blob.lower():
-            search_hits.append(f"🎓 `{l_info['label']}` **[{sm.get('targetId')}] {sm['title']}** — {sm['content'][:160]}...")
+            search_hits.append(f"🎓 `{l_info['label']}` **[{sm.get('targetId', '')}] {sm.get('title', '')}** — {(sm.get('content') or sm.get('description') or '')[:160]}...")
     for m in db.get("materials", []):
         blob = f"{m.get('title','')} {m.get('content','')} {m.get('branchTopic','')} {json.dumps(m.get('links',[]), ensure_ascii=False)}"
         l_info = detect_source_lang_info(blob, m.get("sourceLang", ""), st.session_state.lang)
         if matches_lang_filter(l_info["code"], source_lang_filter) and q_low in blob.lower():
-            search_hits.append(f"📚 `{l_info['label']}` **[Projekt {m.get('trackId')}] {m['title']}** — {m['content'][:160]}...")
+            search_hits.append(f"📚 `{l_info['label']}` **[Projekt {m.get('trackId', '-')}] {m.get('title', '')}** — {(m.get('content') or m.get('description') or '')[:160]}...")
     with st.container(border=True):
         if search_hits:
             st.markdown(f"**{'Search results' if is_en else 'Wyniki wyszukiwania'} ({len(search_hits)}):**")
@@ -9694,7 +9722,7 @@ with tab_study:
     )
 
     supp_lib = db.get("supplementaryLibrary", DEFAULT_SEED["supplementaryLibrary"])
-    supp_by_track = {p["trackId"]: p for p in supp_lib.get("projects", [])}
+    supp_by_track = {p["trackId"]: p for p in supp_lib.get("projects", []) if p.get("trackId")}
 
     if mode_study == L["studyMode1"]:
         for fnd in sorted(db["foundationDisciplines"], key=lambda x: x["order"]):
@@ -9884,8 +9912,8 @@ with tab_map:
         t_name = TRACK_EN[tid]["name"] if is_en else track["name"]
         t_goal = TRACK_EN[tid]["goal"] if is_en else track["goal"]
         t_q = TRACK_EN[tid]["guidingQuestion"] if is_en else track["guidingQuestion"]
-        sub_list = [s for s in db["subprojects"] if s["trackId"] == tid]
-        mat_list = [m for m in db["materials"] if m["trackId"] == tid]
+        sub_list = [s for s in db.get("subprojects", []) if s.get("trackId") == tid]
+        mat_list = [m for m in db.get("materials", []) if m.get("trackId") == tid]
 
         with st.container(border=True):
             c_head1, c_head2 = st.columns([4, 1])
@@ -9918,14 +9946,14 @@ with tab_ws:
         selected_sp_id = st.selectbox(
             "Wybierz środowisko badawcze / Select research workspace:",
             options=[sp["id"] for sp in all_sps],
-            format_func=lambda sid: next((f"[{s['trackId']}] {s['title']}" for s in all_sps if s["id"] == sid), sid),
+            format_func=lambda sid: next((f"[{s.get('trackId', '?')}] {s.get('title', sid)}" for s in all_sps if s.get("id") == sid), sid),
         )
-        active_sp = next((s for s in all_sps if s["id"] == selected_sp_id), all_sps[0])
+        active_sp = next((s for s in all_sps if s.get("id") == selected_sp_id), all_sps[0])
         ws = active_sp.setdefault("workspace", {"hypotheses": [], "notes": [], "bibliography": []})
 
         with st.container(border=True):
-            st.markdown(f"## {active_sp['title']}")
-            st.caption(f"**{'Track' if is_en else 'Ścieżka'}:** {active_sp['trackId']} | **{'Branch' if is_en else 'Odnoga'}:** {active_sp.get('branchTopic', '')}")
+            st.markdown(f"## {active_sp.get('title', 'Środowisko')}")
+            st.caption(f"**{'Track' if is_en else 'Ścieżka'}:** {active_sp.get('trackId', '-')} | **{'Branch' if is_en else 'Odnoga'}:** {active_sp.get('branchTopic', '')}")
             st.write(active_sp.get("description", ""))
             if active_sp.get("philosophicalNote"):
                 st.info(f"**Projekt E (Filozofia):** {active_sp['philosophicalNote']}")
@@ -10019,7 +10047,7 @@ with tab_mat:
         m_search = st.text_input("Filter repository..." if is_en else "Filtruj repozytorium (tytuł, treść, odnoga)...")
 
     for m in db.get("materials", []):
-        if m_track_filter != "ALL" and m["trackId"] != m_track_filter:
+        if m_track_filter != "ALL" and m.get("trackId") != m_track_filter:
             continue
         blob = f"{m.get('title','')} {m.get('content','')} {m.get('branchTopic','')} {json.dumps(m.get('links',[]), ensure_ascii=False)}"
         l_info = detect_source_lang_info(blob, m.get("sourceLang", ""), st.session_state.lang)
@@ -10031,11 +10059,11 @@ with tab_mat:
         with st.container(border=True):
             st.markdown(
                 f"<span class='golem-lang-tag {'en' if l_info['code']=='EN' else ('bi' if l_info['code']=='PL+EN' else '')}'>{l_info['label']}</span> "
-                f"<span style='font-size:0.8rem; color:#94a3b8; margin-left:0.5rem;'><strong>Projekt {m['trackId']}</strong> • {m.get('type', 'Materiał')} • {m.get('branchTopic') or ''}</span>",
+                f"<span style='font-size:0.8rem; color:#94a3b8; margin-left:0.5rem;'><strong>Projekt {m.get('trackId', '-')}</strong> • {m.get('type', 'Materiał')} • {m.get('branchTopic') or ''}</span>",
                 unsafe_allow_html=True,
             )
-            st.markdown(f"### {m['title']}")
-            st.write(m["content"])
+            st.markdown(f"### {m.get('title', 'Materiał')}")
+            st.write(m.get('content') or m.get('description') or '')
             if m.get("links"):
                 st.markdown(f"**{L['sourceLinks']}**")
                 for lnk in m["links"]:

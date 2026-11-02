@@ -2974,12 +2974,40 @@
     },
     {
       "id": "mat-tarski-logika",
+      "trackId": "B",
+      "branchTopic": "Logika Matematyczna, Semantyka i Metodologia Nauk Dedukcyjnych",
+      "subprojectId": null,
       "title": "Alfred Tarski — Semantyczna Teoria Prawdy, Szkoła Lwowsko-Warszawska i Metodologia Nauk Dedukcyjnych [Kanon Logiki]",
       "category": "Matematyka i Logika Formalna",
+      "type": "Monografia / Audycje audio",
+      "sourceLang": "PL+EN",
+      "author": "Alfred Tarski / Szkoła Lwowsko-Warszawska",
+      "content": "Kanon prac Alfreda Tarskiego obejmujący semantyczną definicję prawdy (Konwencja T), zarys teorii modeli, rachunek zdań i predykatów, paradoks Banacha-Tarskiego oraz monografię 'Introduction to Logic and to the Methodology of Deductive Sciences'. Zawiera audycję Polskiego Radia Dwójka, wykład prof. Jana Woleńskiego, wideo Vsauce oraz otwarty dostęp do monografii w Internet Archive.",
       "url": "https://plato.stanford.edu/entries/tarski-truth/",
-      "type": "monografia/audio",
-      "description": "Zbiór dzieł i audycji Alfreda Tarskiego: definicja prawdy, teoria modeli, paradoks Banacha-Tarskiego oraz monografia 'Introduction to Logic'.",
-      "lang": "PL/EN"
+      "links": [
+        {
+          "label": "🇵🇱 Polskie Radio Dwójka — Alfred Tarski: Człowiek, który zdefiniował prawdę [Audycja Audio]",
+          "url": "https://www.polskieradio.pl/8/402/artykul/963612,alfred-tarski-czlowiek-ktory-zdefiniowal-prawde"
+        },
+        {
+          "label": "🇵🇱 Prof. Jan Woleński — O Szkole Lwowsko-Warszawskiej i Logice Alfreda Tarskiego [Wykład Audio]",
+          "url": "https://www.youtube.com/watch?v=0h9Vq1pZ0wQ"
+        },
+        {
+          "label": "🇬🇧 Vsauce — The Banach–Tarski Paradox [Wideo/Audio]",
+          "url": "https://www.youtube.com/watch?v=s86-Z-CbaHA"
+        },
+        {
+          "label": "🇬🇧 Stanford Encyclopedia of Philosophy — Alfred Tarski & Truth Definitions",
+          "url": "https://plato.stanford.edu/entries/tarski-truth/"
+        },
+        {
+          "label": "🇬🇧 Internet Archive — Introduction to Logic and Deductive Methodology (Monografia)",
+          "url": "https://archive.org/details/introductiontolo00tars"
+        }
+      ],
+      "status": "approved",
+      "createdAt": "2026-11-01T21:50:00Z"
     }
   ],
   "graphLinks": [
