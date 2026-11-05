@@ -15,7 +15,7 @@ st.set_page_config(
     page_title="The Golem 15: A Human's Road to Reality",
     page_icon="🧬",
     layout="wide",
-    initial_sidebar_state="expanded",
+    initial_sidebar_state="auto",
 )
 
 # ==============================================================================
@@ -8440,6 +8440,15 @@ def authorize_local_owner_device(db_data: dict):
         pass
 
 
+def safe_segmented_control(label, options, default=None, format_func=None, label_visibility="visible", key=None):
+    """Bezpieczny wrapper dla st.segmented_control kompatybilny ze starszymi i nowszymi wersjami Streamlita."""
+    if hasattr(st, "segmented_control"):
+        return st.segmented_control(label, options=options, default=default, format_func=format_func, label_visibility=label_visibility, key=key)
+    else:
+        idx = options.index(default) if (default and default in options) else 0
+        return st.radio(label, options=options, index=idx, format_func=format_func, horizontal=True, label_visibility=label_visibility, key=key)
+
+
 def detect_source_lang_info(text_blob: str, explicit_lang: str = "", ui_lang: str = "pl") -> dict:
     """Wykrywa język materiału źródłowego (PL, EN, lub PL+EN) i zwraca czytelne oznaczenie."""
     if explicit_lang in ("PL", "EN", "PL+EN"):
@@ -8780,38 +8789,45 @@ st.markdown(
        ========================================================================== */
     @media (max-width: 960px) {{
         .block-container {{
-            padding-left: 0.75rem !important;
-            padding-right: 0.75rem !important;
-            padding-top: 0.8rem !important;
-            padding-bottom: 4rem !important;
+            padding-left: 0.6rem !important;
+            padding-right: 0.6rem !important;
+            padding-top: 0.6rem !important;
+            padding-bottom: 3.5rem !important;
+            max-width: 100% !important;
         }}
-        [data-baseweb="tab-list"] {{
-            overflow-x: auto !important;
-            flex-wrap: nowrap !important;
-            -webkit-overflow-scrolling: touch !important;
-            scrollbar-width: none !important;
-            padding-bottom: 0.35rem !important;
-            gap: 0.3rem !important;
-        }}
-        [data-baseweb="tab-list"]::-webkit-scrollbar {{
-            display: none !important;
-        }}
-        [data-baseweb="tab"] {{
-            white-space: nowrap !important;
-            min-height: 48px !important;
-            padding: 0.65rem 0.95rem !important;
-            font-size: 0.88rem !important;
-            flex-shrink: 0 !important;
-            touch-action: manipulation !important;
+        /* Pełne zawijanie kolumn zapobiegające poziomemu rozciąganiu na mobile */
+        div[data-testid="stHorizontalBlock"], div[data-testid="stColumns"] {{
+            flex-wrap: wrap !important;
+            gap: 0.5rem !important;
         }}
         div[data-testid="column"] {{
             width: 100% !important;
             flex: 1 1 100% !important;
             min-width: 100% !important;
         }}
+        [data-baseweb="tab-list"] {{
+            overflow-x: auto !important;
+            flex-wrap: nowrap !important;
+            -webkit-overflow-scrolling: touch !important;
+            scrollbar-width: thin !important;
+            padding-bottom: 0.45rem !important;
+            gap: 0.35rem !important;
+        }}
+        [data-baseweb="tab-list"]::-webkit-scrollbar {{
+            display: none !important;
+        }}
+        [data-baseweb="tab"] {{
+            white-space: nowrap !important;
+            min-height: 44px !important;
+            padding: 0.55rem 0.85rem !important;
+            font-size: 0.86rem !important;
+            flex-shrink: 0 !important;
+            touch-action: manipulation !important;
+            border-radius: 6px !important;
+        }}
         .stButton > button {{
-            min-height: 48px !important;
-            font-size: 0.96rem !important;
+            min-height: 44px !important;
+            font-size: 0.94rem !important;
             width: 100% !important;
             touch-action: manipulation !important;
         }}
@@ -8821,15 +8837,31 @@ st.markdown(
             align-items: center !important;
         }}
         .stCheckbox input {{
-            transform: scale(1.3) !important;
+            transform: scale(1.2) !important;
             margin-right: 0.4rem !important;
         }}
         div[data-testid="stMetricValue"] {{
-            font-size: 1.3rem !important;
+            font-size: 1.25rem !important;
         }}
-        .stTextInput input, .stSelectbox select, .stTextArea textarea {{
+        input, select, textarea, .stTextInput input, .stSelectbox select, .stTextArea textarea {{
             font-size: 16px !important;
             min-height: 44px !important;
+        }}
+        .editorial-ribbon {{
+            font-size: 0.72rem !important;
+            padding: 0.35rem 0.6rem !important;
+        }}
+        .golem-main-title {{
+            font-size: 1.15rem !important;
+        }}
+        .golem-logo-badge {{
+            width: 38px !important;
+            height: 38px !important;
+            font-size: 0.95rem !important;
+        }}
+        .g15-svg-box {{
+            padding: 0.4rem !important;
+            -webkit-overflow-scrolling: touch !important;
         }}
     }}
     </style>
@@ -8847,7 +8879,7 @@ if not st.session_state.owner_authenticated:
     with col_gate:
         gate_c1, gate_c2, gate_c3 = st.columns([1.4, 1.3, 1.1])
         with gate_c2:
-            sel_theme_gate = st.segmented_control(
+            sel_theme_gate = safe_segmented_control(
                 "Theme",
                 options=["light", "dark"],
                 default=st.session_state.theme,
@@ -8864,7 +8896,7 @@ if not st.session_state.owner_authenticated:
                 save_db(db)
                 st.rerun()
         with gate_c3:
-            sel_lang = st.segmented_control(
+            sel_lang = safe_segmented_control(
                 "Language",
                 options=["pl", "en"],
                 default=st.session_state.lang,
@@ -8892,6 +8924,11 @@ if not st.session_state.owner_authenticated:
                 <p style="color:var(--text-muted); font-size:0.85rem; margin-top:0.45rem; line-height:1.5;">
                     {L['lockDesc']}
                 </p>
+                <div style="margin-top:0.85rem; padding:0.65rem 0.85rem; background:var(--bg-subtle); border-radius:6px; font-size:0.82rem; border:1px solid var(--border-color); text-align:center;">
+                    📲 <strong>Oglądasz na smartfonie lub tablecie?</strong><br>
+                    Możesz natychmiast otworzyć ultralekką wersję mobilną PWA (bez logowania):<br>
+                    <a href="https://ireneusz1991.github.io/GolemXV/" target="_blank" style="color:var(--accent-blue); font-weight:700; text-decoration:none;">👉 Otwórz wersję mobilną PWA (GitHub Pages)</a>
+                </div>
             </div>
             """,
             unsafe_allow_html=True,
@@ -8955,7 +8992,7 @@ with top_c1:
         unsafe_allow_html=True,
     )
 with top_c_theme:
-    new_theme = st.segmented_control(
+    new_theme = safe_segmented_control(
         "Motyw / Theme",
         options=["light", "dark"],
         default=st.session_state.theme,
@@ -8972,7 +9009,7 @@ with top_c_theme:
         save_db(db)
         st.rerun()
 with top_c2:
-    new_lang = st.segmented_control(
+    new_lang = safe_segmented_control(
         "Język / Language",
         options=["pl", "en"],
         default=st.session_state.lang,
@@ -8989,11 +9026,23 @@ with top_c2:
         save_db(db)
         st.rerun()
 with top_c3:
-    if st.button(L["lockSessionBtn"], use_container_width=True, key="btn_lock_vault"):
-        st.session_state.owner_authenticated = False
-        st.session_state.manual_locked = True
-        st.query_params.clear()
-        st.rerun()
+    top_btn_c1, top_btn_c2 = st.columns([1, 1])
+    with top_btn_c1:
+        if st.button(L["lockSessionBtn"], use_container_width=True, key="btn_lock_vault"):
+            st.session_state.owner_authenticated = False
+            st.session_state.manual_locked = True
+            st.query_params.clear()
+            st.rerun()
+    with top_btn_c2:
+        with st.popover("📱 Mobile / PWA", use_container_width=True):
+            st.markdown("#### 📱 Szybki dostęp mobilny")
+            st.markdown(
+                f"- **Wersja PWA (GitHub Pages — super szybka, offline):**\n"
+                f"  [https://ireneusz1991.github.io/GolemXV/](https://ireneusz1991.github.io/GolemXV/)\n\n"
+                f"- **Streamlit Cloud z tokenem autoryzacji urządzenia:**\n"
+                f"  [Otwórz z tokenem na smartfonie](https://golemxv.streamlit.app/?device_token={expected_dev_token})\n"
+                f"  *(Kliknięcie tego linku na telefonie autoryzuje urządzenie bez wpisywania hasła)*"
+            )
 
 L = I18N[st.session_state.lang]
 is_en = st.session_state.lang == "en"
