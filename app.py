@@ -9770,8 +9770,8 @@ with tab_study:
         horizontal=True,
     )
 
-    supp_lib = db.get("supplementaryLibrary", DEFAULT_SEED["supplementaryLibrary"])
-    supp_by_track = {p["trackId"]: p for p in supp_lib.get("projects", []) if p.get("trackId")}
+    supp_lib = db.get("supplementaryLibrary", DEFAULT_SEED.get("supplementaryLibrary", {}))
+    supp_by_track = {p.get("trackId"): p for p in supp_lib.get("projects", []) if p.get("trackId")}
 
     if mode_study == L["studyMode1"]:
         for fnd in sorted(db["foundationDisciplines"], key=lambda x: x["order"]):
@@ -9895,13 +9895,15 @@ with tab_study:
                 if tid in supp_by_track:
                     with st.expander(f"📚 {'Supplementary Library & Source Links' if is_en else 'Biblioteka materiałów uzupełniających i linki źródłowe'} ({t_code})", expanded=True):
                         sp_proj = supp_by_track[tid]
-                        cols_g = st.columns(len(sp_proj["groups"]))
-                        for g_idx, grp in enumerate(sp_proj["groups"]):
-                            with cols_g[g_idx]:
-                                g_lang_badge = "🇵🇱 `[PL]`" if "polsku" in grp["heading"].lower() else ("🇬🇧 `[EN]`" if "angielsku" in grp["heading"].lower() else "🌐 `[PL/EN]`")
-                                st.markdown(f"**{g_lang_badge} {grp['heading']}:**")
-                                for itm in grp["items"]:
-                                    st.markdown(f"- {itm}")
+                        groups_list = sp_proj.get("groups", [])
+                        if groups_list:
+                            cols_g = st.columns(len(groups_list))
+                            for g_idx, grp in enumerate(groups_list):
+                                with cols_g[g_idx]:
+                                    g_lang_badge = "🇵🇱 `[PL]`" if "polsku" in grp.get("heading", "").lower() else ("🇬🇧 `[EN]`" if "angielsku" in grp.get("heading", "").lower() else "🌐 `[PL/EN]`")
+                                    st.markdown(f"**{g_lang_badge} {grp.get('heading', '')}:**")
+                                    for itm in grp.get("items", []):
+                                        st.markdown(f"- {itm}")
                         if sp_proj.get("links"):
                             st.markdown(f"**{L['sourceLinks']}**")
                             for lnk in sp_proj["links"]:
@@ -9920,12 +9922,14 @@ with tab_study:
         if reading_order:
             with st.container(border=True):
                 st.markdown(f"### 🧭 {reading_order.get('title', 'VI. KOLEJNOŚĆ CZYTANIA')}")
-                ro_cols = st.columns(len(reading_order.get("stages", [])))
-                for s_idx, stage in enumerate(reading_order.get("stages", [])):
-                    with ro_cols[s_idx]:
-                        st.markdown(f"#### {stage['stage']}")
-                        for b_item in stage.get("items", []):
-                            st.markdown(f"- {b_item}")
+                stages_list = reading_order.get("stages", [])
+                if stages_list:
+                    ro_cols = st.columns(len(stages_list))
+                    for s_idx, stage in enumerate(stages_list):
+                        with ro_cols[s_idx]:
+                            st.markdown(f"#### {stage.get('stage', '')}")
+                            for b_item in stage.get("items", []):
+                                st.markdown(f"- {b_item}")
                 if reading_order.get("principle"):
                     st.info(f"**{'Principle' if is_en else 'Zasada'}:** {reading_order['principle']}")
 
@@ -9933,13 +9937,15 @@ with tab_study:
             with st.container(border=True):
                 st.markdown(f"### {sp_proj['title']}")
                 st.info(f"**{sp_proj['sequenceLabel']}:** {sp_proj['sequence']}")
-                cols_grp = st.columns(len(sp_proj["groups"]))
-                for g_idx, grp in enumerate(sp_proj["groups"]):
-                    with cols_grp[g_idx]:
-                        g_lang_badge = "🇵🇱 `[PL]`" if "polsku" in grp["heading"].lower() else ("🇬🇧 `[EN]`" if "angielsku" in grp["heading"].lower() else "🌐 `[PL/EN]`")
-                        st.markdown(f"#### {g_lang_badge} {grp['heading']}")
-                        for item_txt in grp["items"]:
-                            st.markdown(f"- {item_txt}")
+                proj_groups = sp_proj.get("groups", [])
+                if proj_groups:
+                    cols_grp = st.columns(len(proj_groups))
+                    for g_idx, grp in enumerate(proj_groups):
+                        with cols_grp[g_idx]:
+                            g_lang_badge = "🇵🇱 `[PL]`" if "polsku" in grp.get("heading", "").lower() else ("🇬🇧 `[EN]`" if "angielsku" in grp.get("heading", "").lower() else "🌐 `[PL/EN]`")
+                            st.markdown(f"#### {g_lang_badge} {grp.get('heading', '')}")
+                            for item_txt in grp.get("items", []):
+                                st.markdown(f"- {item_txt}")
                 if sp_proj.get("links"):
                     st.markdown(f"#### {L['sourceLinks']}")
                     for lnk in sp_proj["links"]:
@@ -9976,12 +9982,14 @@ with tab_map:
                 st.metric("Workspaces" if is_en else "Środowiska", len(sub_list))
                 st.metric("Materials" if is_en else "Materiały", len(mat_list))
 
-            cols_sec = st.columns(len(track["sections"]))
-            for idx, sec in enumerate(track["sections"]):
-                with cols_sec[idx]:
-                    st.markdown(f"**{sec['title']}:**")
-                    for item in sec["items"]:
-                        st.markdown(f"- {item}")
+            sec_list = track.get("sections", [])
+            if sec_list:
+                cols_sec = st.columns(len(sec_list))
+                for idx, sec in enumerate(sec_list):
+                    with cols_sec[idx]:
+                        st.markdown(f"**{sec.get('title', '')}:**")
+                        for item in sec.get("items", []):
+                            st.markdown(f"- {item}")
 
 
 # ------------------------------------------------------------------------------
